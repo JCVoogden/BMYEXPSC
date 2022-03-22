@@ -1,0 +1,9 @@
+{
+  "type" : "TDI",
+  "name" : "MAJ_INF_PARM",
+  "description" : "Mise à jour des informations après un paramètre",
+  "creationDate" : "1995-06-08 06:53:00",
+  "updateDate" : "1995-06-08 06:53:00",
+  "visibility" : "PUBLIC",
+  "templateType" : "I"
+}

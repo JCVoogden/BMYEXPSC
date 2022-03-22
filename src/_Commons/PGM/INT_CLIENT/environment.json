@@ -1,0 +1,98 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "*1"
+    },
+    "guideWord" : "CLIENTS_S1",
+    "fileName" : "CLIENTL1",
+    "access" : "SEQUENTIAL_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "*1",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZWMOT_DIRECTEUR",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "CLIENTS_DA",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DB"
+    },
+    "guideWord" : "PERSONN_DB",
+    "fileName" : "PERSONNL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DB",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_MAT_PERS",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DC"
+    },
+    "guideWord" : "REGLEMT_DC",
+    "fileName" : "REGLEMTL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DC",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_REGLEMENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "WCOD_FIN",
+      "fileName" : ""
+    },
+    "shortName" : "WCFIN",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "WCOD_FIN",
+    "rename" : "WCFIN",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "WW_PREMIER",
+      "fileName" : ""
+    },
+    "shortName" : "WPREMI",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "WW_PREMIER",
+    "rename" : "WPREMI",
+    "generation" : "LEVEL1"
+  } ]
+}

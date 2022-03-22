@@ -1,0 +1,33 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "FICHIEL1_DA",
+    "fileName" : "FICHIEL3",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "FI_NOM_ENTITE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCRET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_RETOUR",
+    "rename" : "PCRET",
+    "generation" : "LEVEL1"
+  } ]
+}

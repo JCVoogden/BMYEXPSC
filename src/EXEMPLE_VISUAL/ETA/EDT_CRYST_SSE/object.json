@@ -1,0 +1,10 @@
+{
+  "type" : "ETA",
+  "name" : "EDT_CRYST_SSE",
+  "description" : "Exemple edition Crystal (c) report avec sous-états",
+  "creationDate" : "2004-06-21 16:04:30",
+  "updateDate" : "2004-07-06 13:25:05",
+  "visibility" : "PRIVATE",
+  "layoutCode" : "EDTSSE",
+  "nature" : "CRYSTAL"
+}

@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "CAN_BAS",
+  "description" : "Canevas partie basse",
+  "creationDate" : "2004-08-23 15:18:36",
+  "updateDate" : "2004-09-01 08:33:13",
+  "visibility" : "PRIVATE",
+  "ibmName" : "CANBAS",
+  "programType" : "I",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "CANBAS",
+  "level2GenType" : 2,
+  "level2DatabaseGenMode" : "SQL",
+  "keepState" : true
+}

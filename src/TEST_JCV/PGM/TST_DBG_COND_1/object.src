@@ -1,0 +1,153 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20110407)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20210125)      * un commentaire ne fait jamais de mal
+*ROW_METADATA(ADELIA         20210125)      
+*ROW_METADATA(ADELIA         20210125)      num_bin_2 bin2_1
+*ROW_METADATA(ADELIA         20110407)      num_bin_2 bin2_2
+*ROW_METADATA(ADELIA         20110407)      
+*ROW_METADATA(ADELIA         20110407)      num_bin_4 bin4_1
+*ROW_METADATA(ADELIA         20110407)      num_bin_4 bin4_2
+*ROW_METADATA(ADELIA         20110407)      
+*ROW_METADATA(ADELIA         20110407)      num_bin_8 bin8_1
+*ROW_METADATA(ADELIA         20110407)      num_bin_8 bin8_2
+*ROW_METADATA(ADELIA         20110407)      
+*ROW_METADATA(ADELIA         20110412)      num_p(10,0) ent_1
+*ROW_METADATA(ADELIA         20110412)      num_p(10,0) ent_2
+*ROW_METADATA(ADELIA         20110407)      
+*ROW_METADATA(ADELIA         20110407)      num_e(15,9) dec_1
+*ROW_METADATA(ADELIA         20110407)      num_e(15,9) dec_2
+*ROW_METADATA(ADELIA         20110407)      
+*ROW_METADATA(ADELIA         20110407)      date date_1
+*ROW_METADATA(ADELIA         20110407)      date date_2
+*ROW_METADATA(ADELIA         20110407)      
+*ROW_METADATA(ADELIA         20110407)      time time_1
+*ROW_METADATA(ADELIA         20110407)      time time_2
+*ROW_METADATA(ADELIA         20110407)      
+*ROW_METADATA(ADELIA         20110407)      timestamp timestamp_1
+*ROW_METADATA(ADELIA         20110407)      timestamp timestamp_2
+*ROW_METADATA(ADELIA         20110407)      
+*ROW_METADATA(ADELIA         20110407)      alpha(50) alpha_1
+*ROW_METADATA(ADELIA         20110407)      alpha(50) alpha_2
+*ROW_METADATA(ADELIA         20110408)      
+*ROW_METADATA(ADELIA         20110408)      
+*ROW_METADATA(ADELIA         20110408)      num_bin_2 tableb2_1(10)
+*ROW_METADATA(ADELIA         20110408)      num_bin_2 tableb2_2(10,10)
+*ROW_METADATA(ADELIA         20110408)      
+*ROW_METADATA(ADELIA         20110408)      
+*ROW_METADATA(ADELIA         20110408)      
+*ROW_METADATA(ADELIA         20110407)   FIN_DECL
+*ROW_METADATA(ADELIA         20110407)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20110407)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20110407)      executer    id_fen0
+*ROW_METADATA(ADELIA         20110407)   FIN_INIT
+*ROW_METADATA(ADELIA         20110407)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20110407)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20110407)         
+*ROW_METADATA(ADELIA         20110407)      FIN_DECL
+*ROW_METADATA(ADELIA         20110407)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20110408)         bin2_1 = 1
+*ROW_METADATA(ADELIA         20110408)         
+*ROW_METADATA(ADELIA         20110408)         tant_que bin2_1 <= 10
+*ROW_METADATA(ADELIA         20110408)            tableb2_1(bin2_1) = bin2_1
+*ROW_METADATA(ADELIA         20110408)            bin2_2 = 1
+*ROW_METADATA(ADELIA         20110408)            tant_que bin2_2 <= 10
+*ROW_METADATA(ADELIA         20110408)               tableb2_2(bin2_1,bin2_2) = bin2_1
+*ROW_METADATA(ADELIA         20110408)         
+*ROW_METADATA(ADELIA         20110408)               bin2_2 = bin2_2 + 1
+*ROW_METADATA(ADELIA         20110408)            refaire
+*ROW_METADATA(ADELIA         20110408)            bin2_1 = bin2_1 + 1
+*ROW_METADATA(ADELIA         20110408)         refaire
+*ROW_METADATA(ADELIA         20110408)         
+*ROW_METADATA(ADELIA         20110408)         
+*ROW_METADATA(ADELIA         20110408)         bin2_1        = 2
+*ROW_METADATA(ADELIA         20110407)         bin4_1        = 4
+*ROW_METADATA(ADELIA         20110407)         bin8_1        = 8
+*ROW_METADATA(ADELIA         20110407)         ent_1         = 10
+*ROW_METADATA(ADELIA         20110407)         dec_1         = 15.999999999
+*ROW_METADATA(ADELIA         20110407)         date_1        = &alpha_date('*ISO';'2012-12-21')
+*ROW_METADATA(ADELIA         20110407)         time_1        = &alpha_time('*ISO';'12.00.59')
+*ROW_METADATA(ADELIA         20110407)         timestamp_1   = &alpha_timestamp('2012-12-21-12.00.59.123456')
+*ROW_METADATA(ADELIA         20110407)         alpha_1       = 'bbbbb'
+*ROW_METADATA(ADELIA         20110407)         
+*ROW_METADATA(ADELIA         20110407)         id_bin2:      = 22
+*ROW_METADATA(ADELIA         20110407)         id_bin4:      = 44
+*ROW_METADATA(ADELIA         20110407)         id_bin8:      = 88
+*ROW_METADATA(ADELIA         20110407)         id_ent:       = 1010
+*ROW_METADATA(ADELIA         20110407)         id_dec:       = 1515.111111111
+*ROW_METADATA(ADELIA         20110407)         id_date:      = &alpha_date('*ISO';'2012-12-22')
+*ROW_METADATA(ADELIA         20110407)         id_time:      = &alpha_time('*ISO';'12.01.00')
+*ROW_METADATA(ADELIA         20110407)         id_timestamp: = &alpha_timestamp('2012-12-22-12.00.01.654321')
+*ROW_METADATA(ADELIA         20110407)         id_alpha:     = 'bbbbb'
+*ROW_METADATA(ADELIA         20110407)         
+*ROW_METADATA(ADELIA         20110407)      FIN_INIT
+*ROW_METADATA(ADELIA         20110407)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20110407)         DEBUT_OBJET ID_OBJ15
+*ROW_METADATA(ADELIA         20110407)            DEBUT_EVT ID_OBJ15:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20110412)               traiter_proc proc
+*ROW_METADATA(ADELIA         20110407)            FIN_EVT
+*ROW_METADATA(ADELIA         20110407)         FIN_OBJET
+*ROW_METADATA(ADELIA         20110412)         DEBUT_OBJET ID_OBJ16
+*ROW_METADATA(ADELIA         20110412)            DEBUT_EVT ID_OBJ16:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20110412)                  traiter_proc proc
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20110412)            FIN_EVT
+*ROW_METADATA(ADELIA         20110412)         FIN_OBJET
+*ROW_METADATA(ADELIA         20110407)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20110407)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20110407)         
+*ROW_METADATA(ADELIA         20110407)      FIN_VERIF
+*ROW_METADATA(ADELIA         20110407)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20110407)         
+*ROW_METADATA(ADELIA         20110407)      FIN_VALID
+*ROW_METADATA(ADELIA         20110407)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20110407)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20110407)   FIN_FENETRE
+*ROW_METADATA(ADELIA         20110407)   DEBUT_PROCEDURE PROC *COMMON
+*ROW_METADATA(ADELIA         20110407)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20110407)         
+*ROW_METADATA(ADELIA         20110407)      FIN_DECL
+*ROW_METADATA(ADELIA         20110407)      bin2_2      = bin2_1 - 1
+*ROW_METADATA(ADELIA         20110407)      bin4_2      = bin4_1 - 1
+*ROW_METADATA(ADELIA         20110407)      bin8_2      = bin8_1 - 1
+*ROW_METADATA(ADELIA         20110407)      ent_2       = ent_1  - 1
+*ROW_METADATA(ADELIA         20110407)      dec_2       = dec_1  - 1
+*ROW_METADATA(ADELIA         20110407)      date_2      = &calcul_date(date_1;-1;'D')
+*ROW_METADATA(ADELIA         20110407)      time_2      = &calcul_heure(time_1;-1;'H')
+*ROW_METADATA(ADELIA         20110407)      timestamp_2 = &calcul_timestp(timestamp_1;-1;'H ')
+*ROW_METADATA(ADELIA         20110407)      alpha_2     = 'aaaaa'
+*ROW_METADATA(ADELIA         20110407)      
+*ROW_METADATA(ADELIA         20110407)      bin2_2      = bin2_1
+*ROW_METADATA(ADELIA         20110407)      bin4_2      = bin4_1
+*ROW_METADATA(ADELIA         20110407)      bin8_2      = bin8_1
+*ROW_METADATA(ADELIA         20110407)      ent_2       = ent_1
+*ROW_METADATA(ADELIA         20110407)      dec_2       = dec_1
+*ROW_METADATA(ADELIA         20110407)      date_2      = date_1
+*ROW_METADATA(ADELIA         20110407)      time_2      = time_1
+*ROW_METADATA(ADELIA         20110407)      timestamp_2 = timestamp_1
+*ROW_METADATA(ADELIA         20110407)      alpha_2     = 'bbbbb'
+*ROW_METADATA(ADELIA         20110407)      
+*ROW_METADATA(ADELIA         20110407)      
+*ROW_METADATA(ADELIA         20110407)      bin2_2      = bin2_1 + 1
+*ROW_METADATA(ADELIA         20110407)      bin4_2      = bin4_1 + 1
+*ROW_METADATA(ADELIA         20110407)      bin8_2      = bin8_1 + 1
+*ROW_METADATA(ADELIA         20110407)      ent_2       = ent_1  + 1
+*ROW_METADATA(ADELIA         20110407)      dec_2       = dec_1  + 1
+*ROW_METADATA(ADELIA         20110407)      date_2      = &calcul_date(date_1;1;'D')
+*ROW_METADATA(ADELIA         20110407)      time_2      = &calcul_heure(time_1;1;'H')
+*ROW_METADATA(ADELIA         20110407)      timestamp_2 = &calcul_timestp(timestamp_1;1;'H ')
+*ROW_METADATA(ADELIA         20110408)      alpha_2     = 'ccccc'
+*ROW_METADATA(ADELIA         20110408)      
+*ROW_METADATA(ADELIA         20110408)      
+*ROW_METADATA(ADELIA         20110408)      id_fen0.id_bin2:      = bin2_1
+*ROW_METADATA(ADELIA         20110408)      id_fen0.id_bin4:      = bin4_1
+*ROW_METADATA(ADELIA         20110408)      id_fen0.id_bin8:      = bin8_1
+*ROW_METADATA(ADELIA         20110408)      id_fen0.id_ent:       = ent_1
+*ROW_METADATA(ADELIA         20110408)      id_fen0.id_dec:       = dec_1
+*ROW_METADATA(ADELIA         20110408)      id_fen0.id_date:      = date_1
+*ROW_METADATA(ADELIA         20110408)      id_fen0.id_time:      = time_1
+*ROW_METADATA(ADELIA         20110408)      id_fen0.id_timestamp: = timestamp_1
+*ROW_METADATA(ADELIA         20110408)      id_fen0.id_alpha:     = alpha_1
+*ROW_METADATA(ADELIA         20110408)      
+*ROW_METADATA(ADELIA         20110407)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

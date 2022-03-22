@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Unicode Test 6" help="" id="0" name="ID_FEN0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="96"/>
+        <property id="-45" intValue="96"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="301"/>
+        <property id="-3" intValue="400"/>
+        <property id="-2" intValue="220"/>
+        <property id="-1" intValue="236"/>
+        <property id="2" intValue="32896"/>
+        <property id="3" stringValue="Unicode Test 6"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="22" intValue="392"/>
+        <property id="23" intValue="269"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ2">
+            <properties>
+                <property id="-8" stringValue="Ouvrir"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="60"/>
+                <property id="-2" intValue="48"/>
+                <property id="-1" intValue="60"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ3">
+            <properties>
+                <property id="-8" stringValue="Lire"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="60"/>
+                <property id="-2" intValue="48"/>
+                <property id="-1" intValue="130"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ4">
+            <properties>
+                <property id="-8" stringValue="Fermer"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="60"/>
+                <property id="-2" intValue="48"/>
+                <property id="-1" intValue="200"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ5">
+            <properties>
+                <property id="-8" stringValue="Quitter"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="60"/>
+                <property id="-2" intValue="48"/>
+                <property id="-1" intValue="270"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_ANSI">
+            <properties>
+                <property id="-21" stringValue="Arial Unicode MS;8;1;1"/>
+                <property id="-8" stringValue="Texte"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="107"/>
+                <property id="-2" intValue="14"/>
+                <property id="-1" intValue="14"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_UNICODE">
+            <properties>
+                <property id="-21" stringValue="Arial Unicode MS;8;1;1"/>
+                <property id="-8" stringValue="Texte"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="87"/>
+                <property id="-2" intValue="14"/>
+                <property id="-1" intValue="133"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="SQLCODE">
+            <properties>
+                <property id="-21" stringValue="@Arial Unicode MS;8;1;1"/>
+                <property id="-8" stringValue="Texte"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="99"/>
+                <property id="-2" intValue="14"/>
+                <property id="-1" intValue="227"/>
+                <property id="4" intValue="255"/>
+                <property id="5" intValue="16776960"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="ACLABEL" dll="ACLABEL" help="" kinematic="0" name="ACL">
+            <properties>
+                <property binaryType="bin" id="-43">AAIUACMAAAAAAAAA7+/vAGwcAAARAgAAAAIcADUAAAAMAACApQAAAAACAABNUyBTaGVsbCBEbGc=</property>
+                <property id="-16" intValue="1864397684"/>
+                <property id="-4" intValue="20"/>
+                <property id="-3" intValue="275"/>
+                <property id="-2" intValue="123"/>
+                <property id="-1" intValue="59"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="STATUS_BAR" dll="STATUS" help="" kinematic="0" name="STT">
+            <properties>
+                <property binaryType="bin" id="-43">IUM0EggAAAAsJwAAhAMAAIh+4eYAAAYAZAAAAAAAAAD//xEAAe/NqwAABQBTaEx3BgBsAP//////////AAAAAAAAAAABAAAAoAVXAPcmAADsCQAAEwAAAAYAAABCAGwAYQBiAGwAYQAGAAAAQgBsAGEAYgBsAGEABgAAAGIAbABhAGwAYgBsAAAAAAAf3uy9AQAFAAEAAAADUuMLkY/OEZ3jAKoAS7hRAQAAAJABREIBABBBcmlhbCBVbmljb2RlIE1T</property>
+                <property id="-16" intValue="1730175264"/>
+                <property id="-4" intValue="34"/>
+                <property id="-3" intValue="379"/>
+                <property id="-2" intValue="154"/>
+                <property id="-1" intValue="7"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="ACENTFIELD" dll="ACENTFLD" help="" kinematic="0" name="ACE">
+            <properties>
+                <property binaryType="bin" id="-43">AAABAFYKAADcAQAATQAAAAAAAADv7+8AAANS4wuRj84RneMAqgBLuFEBAAAAkAFEQgEAEEFyaWFsIFVuaWNvZGUgTVMB/wD/AAAAAAAAAAYAAIAAAA8AAIAFAACAEAAAgAgAAIAAAAAAAAAAAAAAAAD/</property>
+                <property id="-16" intValue="1864397684"/>
+                <property id="-4" intValue="18"/>
+                <property id="-3" intValue="100"/>
+                <property id="-2" intValue="89"/>
+                <property id="-1" intValue="132"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="VKLABEL" dll="VKLABEL" help="" kinematic="0" name="VKL">
+            <properties>
+                <property binaryType="bin" id="-43">k7IAAEgAAAADAAgAC/JXRyAAAABfAGUAeAB0AGUAbgB0AHgAAhwAAAMACAAK8ldH4P///18AZQB4AHQAZQBuAHQAeQAaAwAA</property>
+                <property id="-16" intValue="1010721335"/>
+                <property id="-4" intValue="30"/>
+                <property id="-3" intValue="271"/>
+                <property id="-2" intValue="219"/>
+                <property id="-1" intValue="59"/>
+            </properties>
+        </control>
+    </controls>
+</window>

@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CTR_DATE_MJSA",
+  "description" : "Controle date MM/JJ/SSAA",
+  "creationDate" : "1995-06-29 07:22:52",
+  "updateDate" : "1995-12-12 12:46:26",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

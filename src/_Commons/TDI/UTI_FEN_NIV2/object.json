@@ -1,0 +1,9 @@
+{
+  "type" : "TDI",
+  "name" : "UTI_FEN_NIV2",
+  "description" : "Utilisation d'une fenêtre Niveau I et II",
+  "creationDate" : "1995-06-08 06:54:08",
+  "updateDate" : "1995-06-08 06:54:08",
+  "visibility" : "PUBLIC",
+  "templateType" : "I"
+}

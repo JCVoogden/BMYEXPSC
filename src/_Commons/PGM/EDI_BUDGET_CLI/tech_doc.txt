@@ -1,0 +1,8 @@
+               Aide pour les editions
+
+Attention:
+         L'ordre IMPRIMER <format> est lié à la cinématique.
+         Si vous l'utilisez dans des ruptures totales (TRT_TOTAL).
+         pensez que vous avez déjà lu l'enregistrement suivant.
+         Cette ordre affecte les zones maquettes (Celles du format)
+         par le contenu des zones fichiers liées en cinématique.

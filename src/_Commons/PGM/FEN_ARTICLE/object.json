@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "FEN_ARTICLE",
+  "description" : "Fenêtre d'interrogation des articles par code",
+  "creationDate" : "1995-06-08 07:13:21",
+  "updateDate" : "2005-08-01 12:59:28",
+  "visibility" : "PUBLIC",
+  "ibmName" : "INTART",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "INTART",
+  "programTemplateName" : "UTI_FEN_NIV2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Affichage des clients" format1="02" format2="03" format3="*1" format4="04" functionKeys="  A        A            " transactionType="GEST_SFL_02" updateDate="1753-01-01" updateTime="00:00:00" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="*1" eraseInput="false" guideWord="SFL01" help="false" jumpLinesBefore="10" keep="false" lock="false" nbColumns="1" nbLines="12" overlay="false" pagination="DYNAMIC" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="SFL01" subFilePageSize="12" subFileSize="13" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="02" eraseInput="false" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="8" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR02" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="03" eraseInput="false" help="false" jumpLinesBefore="9" keep="false" lock="false" nbColumns="1" nbLines="1" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="CTL01" subFileCode="*1" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="04" eraseInput="false" help="false" jumpLinesBefore="22" keep="false" lock="false" nbColumns="1" nbLines="2" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR04" truncate="false"/>
+    </formats>
+    <entities>
+        <entity access="SQL" format="*1" name="CLIENTS"/>
+        <entity format="02" name="REGLEMT">
+            <properties>
+                <property access="1" name="COD_REGLEMENT"/>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="NOM DU PROGRAMME." formatCode="02" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field formatCode="02" hilight="true" kind="CONSTANT" layoutCode="*" length="21" x="30" y="1">
+            <text text="Affichage des clients"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="N00048" formatCode="02" guideWord="N00048" hilight="true" kind="DATE" layoutCode="N00048" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" x="71" y="1">
+            <parameters>
+                <parameter key="EDW" value="'  /  /  '"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="N00049" formatCode="02" guideWord="N00049" hilight="true" kind="TIME" layoutCode="N00049" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" x="71" y="2">
+            <parameters>
+                <parameter key="EDW" value="'  :  :  '"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" layoutCode="*" length="30" x="16" y="4">
+            <text text="Pour le code règlement. . . .:"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code règlement" formatCode="02" guideWord="ZZCOD_REGLEMENT" kind="VARIABLE" layoutCode="ZZCRGT" length="2" logicalProperty="REGLEMT.COD_REGLEMENT" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="18" type="STRING" validExtendedFieldName="false" validFieldName="false" x="47" y="4"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Libelle de réglement" formatCode="02" guideWord="ZZLIB_REGLEMT" kind="VARIABLE" kinematicLogicalProperty="REGLEMT.LIB_REGLEMT" layoutCode="ZZLRGT" length="10" logicalProperty="REGLEMT.LIB_REGLEMT" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="DA" x="51" y="4"/>
+        <field formatCode="02" kind="CONSTANT" layoutCode="*" length="22" x="16" y="6">
+            <text text="Trié par . . . . . . ."/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code du choix de tri" formatCode="02" guideWord="ZWCOD_TRI" kind="USER_VARIABLE" layoutCode="ZWCTRI" length="1" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="40" y="6"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Libellé du tri" formatCode="02" guideWord="ZWLIB_TRI" kind="USER_VARIABLE" layoutCode="ZWLTRI" length="7" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="46" y="6"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="A00039" formatCode="02" guideWord="A00039" hidden="true" kind="USER_VARIABLE" layoutCode="A00039" length="1" lowerCase="false" mandatoryFieldEnd="true" mode="INPUT_OUTPUT" protect="true" type="STRING" validExtendedFieldName="false" validFieldName="false" x="3" y="8"/>
+        <field formatCode="03" hilight="true" kind="CONSTANT" layoutCode="*" length="6" x="2" y="9">
+            <text text="Client"/>
+        </field>
+        <field formatCode="03" hilight="true" kind="CONSTANT" layoutCode="*" length="20" x="14" y="9">
+            <text text="Nom    du     client"/>
+        </field>
+        <field formatCode="03" hilight="true" kind="CONSTANT" layoutCode="*" length="19" x="45" y="9">
+            <text text="Bureau distributeur"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="A00038" formatCode="03" guideWord="A00038" hidden="true" kind="USER_VARIABLE" layoutCode="A00038" length="1" lowerCase="false" mandatoryFieldEnd="true" mode="INPUT_OUTPUT" protect="true" type="STRING" validExtendedFieldName="false" validFieldName="false" x="71" y="9"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code client" formatCode="*1" guideWord="ZZCOD_CLIENT" kind="VARIABLE" layoutCode="ZZCCLI" length="6" logicalProperty="CLIENTS.COD_CLIENT" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="26" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="10"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom client" formatCode="*1" guideWord="ZZNOM_CLIENT" kind="VARIABLE" layoutCode="ZZLCLI" length="30" logicalProperty="CLIENTS.NOM_CLIENT" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="27" type="STRING" validExtendedFieldName="false" validFieldName="false" x="10" y="10"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Bureau distributeur" formatCode="*1" guideWord="ZZBUR_DIS_CLI" kind="VARIABLE" layoutCode="ZZBDCL" length="30" logicalProperty="CLIENTS.BUR_DIS_CLI" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="41" y="10"/>
+        <field color="BLUE" formatCode="04" kind="CONSTANT" layoutCode="*" length="7" x="2" y="22">
+            <text text="F3=Exit"/>
+        </field>
+        <field color="BLUE" formatCode="04" kind="CONSTANT" layoutCode="*" length="13" x="11" y="22">
+            <text text="F12=Précédent"/>
+        </field>
+    </fields>
+</transaction>

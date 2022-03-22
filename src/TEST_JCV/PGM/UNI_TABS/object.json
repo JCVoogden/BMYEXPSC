@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "UNI_TABS",
+  "description" : "UNI_TABS",
+  "creationDate" : "2008-04-02 07:52:37",
+  "updateDate" : "2008-08-29 08:53:43",
+  "visibility" : "PRIVATE",
+  "ibmName" : "UNTABS",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "UNTABS",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "unicode" : true
+}

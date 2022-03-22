@@ -1,0 +1,27 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         00010101)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20080214)      liste liste1 *ref_mld(ansi_unicode)
+*ROW_METADATA(ADELIA         20080214)      
+*ROW_METADATA(ADELIA         00010101)   FIN_DECL
+*ROW_METADATA(ADELIA         00010101)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080214)      
+*ROW_METADATA(ADELIA         20080214)      editer sor01
+*ROW_METADATA(ADELIA         20080214)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV UNICODE
+*ROW_METADATA(ADELIA         20080214)         charger_sql_lst liste1 ansi_unicode
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080214)      
+*ROW_METADATA(ADELIA         20080214)      lecture_lst liste1
+*ROW_METADATA(ADELIA         20080214)         zansi    = ansi
+*ROW_METADATA(ADELIA         20080214)         zunicode = unicode
+*ROW_METADATA(ADELIA         20080214)         editer sor02
+*ROW_METADATA(ADELIA         20080214)      fin_lecture_lst
+*ROW_METADATA(ADELIA         20080214)      
+*ROW_METADATA(ADELIA         20080214)      editer sor03
+*ROW_METADATA(ADELIA         20080214)      
+*ROW_METADATA(ADELIA         00010101)   FIN_INIT
+*ROW_METADATA(ADELIA         20080214)   CHANGEMENT_PAGE PRTST2
+*ROW_METADATA(ADELIA         20080214)      editer sor03
+*ROW_METADATA(ADELIA         20080214)      editer sor01
+*ROW_METADATA(ADELIA         20080214)   FIN_TRAITEMENT
+*ROW_METADATA(ADELIA                 )FIN_PGM

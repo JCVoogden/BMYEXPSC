@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Visualisation des articles" format1="01" format2="*1" format3="02" functionKeys="  A        A            " transactionType="FEN_INTERRO_OPT" updateDate="1753-01-01" updateTime="00:00:00" windowType="WINDOW" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="*1" eraseInput="false" guideWord="SFL01" help="false" jumpLinesBefore="6" keep="true" lock="false" nbColumns="1" nbLines="5" overlay="true" pagination="DYNAMIC" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="SFL01" subFilePageSize="5" subFileSize="6" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="01" eraseInput="false" guideWord="FOR01" help="false" jumpLinesBefore="1" keep="true" lock="false" nbColumns="1" nbLines="5" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR01" subFileCode="*1" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="02" eraseInput="false" guideWord="FOR02" help="false" jumpLinesBefore="11" keep="true" lock="false" nbColumns="1" nbLines="13" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR02" truncate="false"/>
+    </formats>
+    <entities>
+        <entity access="SEQUENTIAL_WITH_KEY" format="*1" name="ARTICLE">
+            <properties>
+                <property access="1" name="COD_ARTICLE"/>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="45" x="5" y="3">
+            <text text="Indiquez vos options, puis appuyez sur ENTREE"/>
+        </field>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="9" x="7" y="4">
+            <text text="1=Choisir"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="3" x="4" y="5">
+            <text text="Opt"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="7" x="10" y="5">
+            <text text="Article"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="7" x="32" y="5">
+            <text text="Libellé"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code de l'option" formatCode="*1" guideWord="ZW_COD_OPTION" kind="USER_VARIABLE" layoutCode="ZWCOPT" length="1" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="5" y="6"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code article" formatCode="*1" guideWord="ZZCOD_ARTICLE" kind="VARIABLE" kinematicLogicalProperty="ARTICLE.COD_ARTICLE" layoutCode="ZZCART" length="10" logicalProperty="ARTICLE.COD_ARTICLE" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="9" y="6"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Libellé article" formatCode="*1" guideWord="ZZLIB_ARTICLE" kind="VARIABLE" kinematicLogicalProperty="ARTICLE.LIB_ARTICLE" layoutCode="ZZLART" length="30" logicalProperty="ARTICLE.LIB_ARTICLE" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="21" y="6"/>
+        <field color="BLUE" formatCode="02" kind="CONSTANT" layoutCode="*" length="7" x="8" y="11">
+            <text text="F3=Exit"/>
+        </field>
+        <field color="BLUE" formatCode="02" kind="CONSTANT" layoutCode="*" length="13" x="17" y="11">
+            <text text="F12=Précédent"/>
+        </field>
+        <field color="TURQUOISE" formatCode="01" kind="FRAME" layoutCode="*" length="51" reverseImage="true" x="2" y="2">
+            <text text="            Visualisation des articles"/>
+        </field>
+        <field color="TURQUOISE" formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="2" y="3">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="52" y="3">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="2" y="4">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="52" y="4">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="2" y="5">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="52" y="5">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="2" y="6">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="52" y="6">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="2" y="7">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="52" y="7">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="2" y="8">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="52" y="8">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="2" y="9">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="52" y="9">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="2" y="10">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="52" y="10">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="02" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="2" y="11">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="02" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="52" y="11">
+            <text/>
+        </field>
+        <field color="TURQUOISE" formatCode="02" kind="WINDOW" layoutCode="*" length="51" reverseImage="true" x="2" y="12">
+            <text/>
+        </field>
+    </fields>
+</transaction>

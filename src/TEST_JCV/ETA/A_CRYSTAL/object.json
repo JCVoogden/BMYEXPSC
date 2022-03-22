@@ -1,0 +1,10 @@
+{
+  "type" : "ETA",
+  "name" : "A_CRYSTAL",
+  "description" : "A_CRYSTAL",
+  "creationDate" : "2011-02-21 16:44:39",
+  "updateDate" : "2011-02-21 16:49:03",
+  "visibility" : "PRIVATE",
+  "layoutCode" : "CRYSTA",
+  "nature" : "CRYSTAL"
+}

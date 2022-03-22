@@ -1,0 +1,8 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   * Guide d'affichage de la fenêtre des PERSONNES
+*ROW_METADATA(ADELIA                 )   DECLARER PCRET;P_COD_RETOUR 1
+*ROW_METADATA(ADELIA                 )   DECLARER PCACT;P_COD_ACTION 2
+*ROW_METADATA(ADELIA                 )   GUIDE $$FEN
+*ROW_METADATA(ADELIA                 )   APPELER FEN_PERSONNE P_COD_RETOUR P_COD_ACTION $$FEN
+*ROW_METADATA(ADELIA                 )   FIN_GUIDE
+*ROW_METADATA(ADELIA                 )FIN_RGG

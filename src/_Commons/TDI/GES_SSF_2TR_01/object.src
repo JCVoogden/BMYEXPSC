@@ -1,0 +1,76 @@
+*
+* Gestion avec option 4
+*
+* Créer une vue VUE_SUPPRESSION sur le fichier à gérer avec la bonne
+* clé d'accès
+*
+DECLARER WRAN02;CLE_RANG_SFL2 4;0  *NODEF
+DECLARER WRAN01;CLE_RANG_SFL1 4;0  *NODEF
+IDENTIFIER VUE_MANUEL_SFL1 *1 DIRECT ;CLE_RANG_SFL1
+IDENTIFIER VUE_MANUEL_SFL2 *2 DIRECT ;CLE_RANG_SFL2
+* Début
+INITIALISER 01
+TRAITER 01
+*-------------------------
+* Début transaction 01
+TRANSACTION 01
+SI *F03 OU *F12
+  TERMINER
+FIN
+SI *PAGAV
+  PAGINER_AVANT
+FIN
+VERIFIER 01
+SI *DEL02 > 0
+  *IN82 = '1'
+  TRAITER 02
+SINON
+  TRAITER 01
+FIN
+*-------------------------
+* Début transaction 02
+TRANSACTION 02
+SI *F12
+  TRAITER 01
+FIN
+VALIDER  02
+INITIALISER 01
+TRAITER 01
+**********************
+INITIALISATION  01
+**********************
+INSERER_STD
+EFFACER         1
+GESTION_SFL     1
+INSERER_STD
+MAJ_SFL
+FIN_GESTION_SFL
+**********************
+VERIFICATION    01
+**********************
+EFFACER         2
+CLE_RANG_SFL2 = 0
+*DEL02 = 0
+CLE_RANG_SFL1 = 1
+TANT_QUE       CLE_RANG_SFL1 <= *DEL01
+  LIRE           VUE_MANUEL_SFL1
+  SI ZW_COD_OPTION = '4'
+    CLE_RANG_SFL2 = CLE_RANG_SFL2 + 1
+    *DEL02 = *DEL02 + 1
+    *IN08  = '1'
+    CREER          VUE_MANUEL_SFL2
+    *IN08  = '0'
+  FIN
+  CLE_RANG_SFL1 = CLE_RANG_SFL1 + 1
+REFAIRE
+CLE_RANG_SFL2 = 1
+CLE_RANG_SFL1 = 1
+**********************
+VALIDATION      02
+**********************
+GESTION_SFL     2
+LIRE            VUE_SUPPRESSION
+SI              VUE_SUPPRESSION  EXISTE
+  SUPPRIMER       VUE_SUPPRESSION
+FIN
+FIN_GESTION_SFL

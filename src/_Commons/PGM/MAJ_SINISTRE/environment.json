@@ -1,0 +1,292 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "SINIST_DA",
+    "fileName" : "SINISTL",
+    "access" : "BY_KEY",
+    "update" : "CREATE_AND_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZNUM_SINISTRE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DB"
+    },
+    "guideWord" : "CLIENTS_DB",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DB",
+        "ordinal" : 1
+      },
+      "guideWord" : "PWCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DC"
+    },
+    "guideWord" : "EXPERT_DC",
+    "fileName" : "EXPERTL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DC",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_EXPERT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DD"
+    },
+    "guideWord" : "POLICE_DD",
+    "fileName" : "POLICEL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 2,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DD",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    }, {
+      "id" : {
+        "code" : "DD",
+        "ordinal" : 2
+      },
+      "guideWord" : "ZZNUM_POLICE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DE"
+    },
+    "guideWord" : "TYPSIN_DE",
+    "fileName" : "TYPSINL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DE",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_SINISTRE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DF"
+    },
+    "guideWord" : "VEHICU_DF",
+    "fileName" : "VEHICUL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DF",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZNUM_IMA_VEHIC",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "JA"
+    },
+    "guideWord" : "RSINISTL_COD",
+    "fileName" : "SINISTL",
+    "access" : "BY_KEY",
+    "update" : "UPDATE_ONLY",
+    "generation" : "LEVEL2",
+    "accesses" : [ {
+      "id" : {
+        "code" : "JA",
+        "ordinal" : 1
+      },
+      "guideWord" : "WG_NUM_SIN",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "JB"
+    },
+    "guideWord" : "RPOLICEL_COD",
+    "fileName" : "POLICEL",
+    "access" : "BY_KEY",
+    "update" : "UPDATE_ONLY",
+    "generation" : "LEVEL2",
+    "accesses" : [ {
+      "id" : {
+        "code" : "JB",
+        "ordinal" : 1
+      },
+      "guideWord" : "WG_COD_CLI",
+      "type" : "ALPHANUMERIC"
+    }, {
+      "id" : {
+        "code" : "JB",
+        "ordinal" : 2
+      },
+      "guideWord" : "WG_COD_POL",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "JC"
+    },
+    "guideWord" : "RTYPSINL_COD",
+    "fileName" : "TYPSINL",
+    "access" : "BY_KEY",
+    "update" : "UPDATE_ONLY",
+    "generation" : "LEVEL2",
+    "accesses" : [ {
+      "id" : {
+        "code" : "JC",
+        "ordinal" : 1
+      },
+      "guideWord" : "WG_COD_SIN",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "JD"
+    },
+    "guideWord" : "REXPERTL_COD",
+    "fileName" : "EXPERTL",
+    "access" : "BY_KEY",
+    "update" : "UPDATE_ONLY",
+    "generation" : "LEVEL2",
+    "accesses" : [ {
+      "id" : {
+        "code" : "JD",
+        "ordinal" : 1
+      },
+      "guideWord" : "WG_COD_EXP",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "P_COD_ACTION",
+      "fileName" : ""
+    },
+    "shortName" : "PCACT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_ACTION",
+    "rename" : "PCACT",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCRET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_RETOUR",
+    "rename" : "PCRET",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "PWCOD_CLIENT",
+      "fileName" : ""
+    },
+    "shortName" : "PWCLI",
+    "length" : 6,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PWCLI",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "PWNUM_SINISTRE",
+      "fileName" : ""
+    },
+    "shortName" : "PWNSI",
+    "length" : 5,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PWNSI",
+    "generation" : "NONE",
+    "fileName" : "MAJSIN"
+  }, {
+    "id" : {
+      "guideWord" : "WG_COD_CLI",
+      "fileName" : ""
+    },
+    "shortName" : "WGCCLI",
+    "length" : 6,
+    "type" : "ALPHANUMERIC",
+    "designation" : "WG_COD_CLI",
+    "rename" : "WGCCLI",
+    "generation" : "LEVEL2"
+  }, {
+    "id" : {
+      "guideWord" : "WG_COD_EXP",
+      "fileName" : ""
+    },
+    "shortName" : "WGCEXP",
+    "length" : 6,
+    "type" : "ALPHANUMERIC",
+    "designation" : "WG_COD_EXP",
+    "rename" : "WGCEXP",
+    "generation" : "LEVEL2"
+  }, {
+    "id" : {
+      "guideWord" : "WG_COD_POL",
+      "fileName" : ""
+    },
+    "shortName" : "WGCPOL",
+    "length" : 5,
+    "type" : "ALPHANUMERIC",
+    "designation" : "WG_COD_POL",
+    "rename" : "WGCPOL",
+    "generation" : "LEVEL2"
+  }, {
+    "id" : {
+      "guideWord" : "WG_COD_SIN",
+      "fileName" : ""
+    },
+    "shortName" : "WGCSIN",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "designation" : "WG_COD_SIN",
+    "rename" : "WGCSIN",
+    "generation" : "LEVEL2"
+  }, {
+    "id" : {
+      "guideWord" : "WG_NUM_SIN",
+      "fileName" : ""
+    },
+    "shortName" : "WGNSIN",
+    "length" : 5,
+    "type" : "ALPHANUMERIC",
+    "designation" : "WG_NUM_SIN",
+    "rename" : "WGNSIN",
+    "generation" : "LEVEL2"
+  } ]
+}

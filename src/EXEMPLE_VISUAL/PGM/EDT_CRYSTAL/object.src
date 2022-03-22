@@ -1,0 +1,73 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20040611)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20040628)      * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040628)      * ! Exemple d'edition Crystal Report        !
+*ROW_METADATA(ADELIA         20040628)      * ! Version Compatible : V9.0 et Supérieur  !
+*ROW_METADATA(ADELIA         20040628)      * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20050620)      
+*ROW_METADATA(ADELIA         20050620)      objet_graphique(bouton) test
+*ROW_METADATA(ADELIA         20050620)      
+*ROW_METADATA(ADELIA         20040614)      image LOGO
+*ROW_METADATA(ADELIA         20040611)      alpha(80) TITRE_ETAT
+*ROW_METADATA(ADELIA         20040614)      alpha(80) TITRE_PAGE
+*ROW_METADATA(ADELIA         20040614)      alpha(80) PIED_PAGE
+*ROW_METADATA(ADELIA         20080911)      flùsl f
+*ROW_METADATA(ADELIA         20080911)      
+*ROW_METADATA(ADELIA         20040614)      num_bin_2 ID
+*ROW_METADATA(ADELIA         20040614)      alpha(20) CLIENT
+*ROW_METADATA(ADELIA         20040614)      alpha(15) PAYS
+*ROW_METADATA(ADELIA         20040614)      alpha(10) CODE_POSTAL
+*ROW_METADATA(ADELIA         20040614)      alpha(15) CONTACT   
+*ROW_METADATA(ADELIA         20040628)      alpha(15) FONCTION
+*ROW_METADATA(ADELIA         20040628)      liste lstClient ID CLIENT PAYS CODE_POSTAL CONTACT FONCTION
+*ROW_METADATA(ADELIA         20040614)      
+*ROW_METADATA(ADELIA         20040614)      num_bin_2 idCmd
+*ROW_METADATA(ADELIA         20040614)      num_bin_2 idClient
+*ROW_METADATA(ADELIA         20040621)      date      dateCmd
+*ROW_METADATA(ADELIA         20040621)      num_e(8,2) MONTANT
+*ROW_METADATA(ADELIA         20040628)      alpha(10) etat
+*ROW_METADATA(ADELIA         20040628)      liste lstCmd idCmd idClient dateCmd MONTANT etat
+*ROW_METADATA(ADELIA         20080911)      
+*ROW_METADATA(ADELIA         20080911)      
+*ROW_METADATA(ADELIA         20080911)      flsqk mq
+*ROW_METADATA(ADELIA         20080911)      
+*ROW_METADATA(ADELIA         20080911)      
+*ROW_METADATA(ADELIA         20080911)      fgsdm k
+*ROW_METADATA(ADELIA         20080911)      
+*ROW_METADATA(ADELIA         20040614)      bool impDirect
+*ROW_METADATA(ADELIA         20040622)      num_bin_2 numEtat
+*ROW_METADATA(ADELIA         20040707)      param LOGO TITRE_ETAT TITRE_PAGE PIED_PAGE lstClient lstCmd impDirect numEtat
+*ROW_METADATA(ADELIA         20040611)   FIN_DECL
+*ROW_METADATA(ADELIA         20040611)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20040628)      choix_selon numetat
+*ROW_METADATA(ADELIA         20040614)         SI_VALEUR 1
+*ROW_METADATA(ADELIA         20040614)            ouvrir EDTCR
+*ROW_METADATA(ADELIA         20040614)      
+*ROW_METADATA(ADELIA         20040628)            lecture_lst lstClient
+*ROW_METADATA(ADELIA         20040614)               EDITER EDTCR
+*ROW_METADATA(ADELIA         20040614)            fin_lecture_lst
+*ROW_METADATA(ADELIA         20040614)      
+*ROW_METADATA(ADELIA         20040614)            si impDirect
+*ROW_METADATA(ADELIA         20040614)               fermer EDTCR
+*ROW_METADATA(ADELIA         20040614)            sinon
+*ROW_METADATA(ADELIA         20040614)               fermer EDTCR *prv
+*ROW_METADATA(ADELIA         20040614)            fin
+*ROW_METADATA(ADELIA         20040614)         SI_VALEUR 2
+*ROW_METADATA(ADELIA         20040622)            ouvrir EDTSSE
+*ROW_METADATA(ADELIA         20040614)      
+*ROW_METADATA(ADELIA         20040628)            lecture_lst lstClient
+*ROW_METADATA(ADELIA         20040622)               EDITER EDTSSE
+*ROW_METADATA(ADELIA         20040614)            fin_lecture_lst
+*ROW_METADATA(ADELIA         20040614)            
+*ROW_METADATA(ADELIA         20040628)            lecture_lst lstCmd
+*ROW_METADATA(ADELIA         20050628)               EDITER EDTSSE *SOUS_ETAT(commandesClient)
+*ROW_METADATA(ADELIA         20040621)            fin_lecture_lst
+*ROW_METADATA(ADELIA         20040614)      
+*ROW_METADATA(ADELIA         20040614)            si impDirect
+*ROW_METADATA(ADELIA         20040622)               fermer EDTSSE
+*ROW_METADATA(ADELIA         20040614)            sinon
+*ROW_METADATA(ADELIA         20040622)               fermer EDTSSE *prv
+*ROW_METADATA(ADELIA         20040622)            fin
+*ROW_METADATA(ADELIA         20040614)      FIN_CHOIX_SELON
+*ROW_METADATA(ADELIA         20040611)   FIN_INIT
+*ROW_METADATA(ADELIA                 )FIN_PGM

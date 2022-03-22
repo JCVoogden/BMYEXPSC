@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "LIRE_LIGNE_SFL",
+  "description" : "lire une ligne d'un sous-fichier",
+  "creationDate" : "1996-07-05 09:06:58",
+  "updateDate" : "1996-07-05 09:19:50",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

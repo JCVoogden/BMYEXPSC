@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "EXIST_COD_SINIS",
+  "description" : "Contrôle existence du type de sinistre",
+  "creationDate" : "1995-06-07 12:47:10",
+  "updateDate" : "1995-06-29 07:23:50",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

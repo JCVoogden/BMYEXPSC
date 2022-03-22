@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "TR_ADD_REPORT",
+  "description" : "Ajout d'une ligne dans le rapport - v2.0",
+  "creationDate" : "2008-06-16 12:17:14",
+  "updateDate" : "2008-06-23 15:42:26",
+  "visibility" : "PUBLIC",
+  "ibmName" : "TRADRP",
+  "programType" : "B",
+  "sourceType" : "SADELIA",
+  "layoutCode" : "TRADRP",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

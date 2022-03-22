@@ -1,0 +1,48 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20100521)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20100521)      sw_nom_export *service(licenceManagement)
+*ROW_METADATA(ADELIA         20100521)   FIN_DECL
+*ROW_METADATA(ADELIA         20100521)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)   FIN_INIT
+*ROW_METADATA(ADELIA         20100521)   DEBUT_PROCEDURE ACTIVATE_KEY *PUBLIC
+*ROW_METADATA(ADELIA         20100521)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20100524)         num_bin_4   licence
+*ROW_METADATA(ADELIA         20100521)         alpha(128)  serial
+*ROW_METADATA(ADELIA         20100521)         bool        returnCode
+*ROW_METADATA(ADELIA         20100521)         alpha(8000) licenceData
+*ROW_METADATA(ADELIA         20100521)         
+*ROW_METADATA(ADELIA         20100521)         bool        entreprise
+*ROW_METADATA(ADELIA         20100521)         num_bin_2   modules(4)
+*ROW_METADATA(ADELIA         20100524)         num_bin_4   dateexp(4)
+*ROW_METADATA(ADELIA         20100524)         
+*ROW_METADATA(ADELIA         20100521)         sw_nom_export *operation(activateKey)
+*ROW_METADATA(ADELIA         20100521)         
+*ROW_METADATA(ADELIA         20100521)         param licence,I,licenceNumber serial,I,serialNumber returnCode,O,returnCode licenceData,O,licenceData
+*ROW_METADATA(ADELIA         20100521)      FIN_DECL
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100524)      modules(1) = 5
+*ROW_METADATA(ADELIA         20100521)      modules(2) = 5
+*ROW_METADATA(ADELIA         20100521)      modules(3) = 5
+*ROW_METADATA(ADELIA         20100521)      modules(4) = 5
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      dateexp(1) = 14822
+*ROW_METADATA(ADELIA         20100521)      dateexp(2) = 14822
+*ROW_METADATA(ADELIA         20100521)      dateexp(3) = 14822
+*ROW_METADATA(ADELIA         20100521)      dateexp(4) = 14822
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      licenceData = *blank
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20100524)         appeler_dll 'fctcle' 'EncrypterLicence' serial licence entreprise modules(1) dateexp(1) modules(2) dateexp(2) modules(3) dateexp(3) modules(4) dateexp(4) licenceData 8000
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      returnCode = (*code_retour = 0 et licenceData <> *blank)
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      si non returnCode
+*ROW_METADATA(ADELIA         20100521)         licenceData = 'La configuration de la clé a échoué'
+*ROW_METADATA(ADELIA         20100521)      fin
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

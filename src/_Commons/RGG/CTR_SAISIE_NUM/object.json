@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CTR_SAISIE_NUM",
+  "description" : "Numérique obligatoire",
+  "creationDate" : "1995-06-07 12:46:51",
+  "updateDate" : "1995-06-29 07:22:59",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

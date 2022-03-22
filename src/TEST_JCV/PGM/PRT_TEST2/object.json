@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "PRT_TEST2",
+  "description" : "Impression contenu Unicode",
+  "creationDate" : "2008-02-14 11:06:12",
+  "updateDate" : "2008-02-27 14:22:24",
+  "visibility" : "PRIVATE",
+  "ibmName" : "PRTST2",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "PRTST2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT",
+  "unicode" : true
+}

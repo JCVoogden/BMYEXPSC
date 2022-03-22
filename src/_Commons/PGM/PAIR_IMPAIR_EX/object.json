@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "PAIR_IMPAIR_EX",
+  "description" : "Utilisation de la propriété Paire/Impaire",
+  "creationDate" : "2004-02-25 13:55:08",
+  "updateDate" : "2004-03-03 09:51:53",
+  "visibility" : "PUBLIC",
+  "ibmName" : "P_IMP",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "P_IMP",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Aide sur zone code de la famille" format1="06" functionKeys="  A        A            " transactionType="FEN_AIDE" updateDate="1753-01-01" updateTime="00:00:00" windowType="WINDOW" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="06" eraseInput="false" guideWord="FOR06" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="23" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR06" truncate="false"/>
+    </formats>
+    <entities/>
+    <fields>
+        <field formatCode="06" hilight="true" kind="CONSTANT" layoutCode="*" length="32" x="12" y="15">
+            <text text="Aide sur zone code de la famille"/>
+        </field>
+        <field color="BLUE" formatCode="06" kind="CONSTANT" layoutCode="*" length="54" x="4" y="17">
+            <text text="Le code de la famille est pris dans le fichier FAMILLE"/>
+        </field>
+        <field color="YELLOW" formatCode="06" kind="CONSTANT" layoutCode="*" length="53" x="4" y="18">
+            <text text="Il existe un guide par F4 sur le fichier des familles"/>
+        </field>
+        <field formatCode="06" kind="FRAME" layoutCode="*" length="58" reverseImage="true" x="2" y="14">
+            <text/>
+        </field>
+        <field formatCode="06" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="2" y="15">
+            <text/>
+        </field>
+        <field formatCode="06" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="59" y="15">
+            <text/>
+        </field>
+        <field formatCode="06" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="2" y="16">
+            <text/>
+        </field>
+        <field formatCode="06" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="59" y="16">
+            <text/>
+        </field>
+        <field formatCode="06" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="2" y="17">
+            <text/>
+        </field>
+        <field formatCode="06" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="59" y="17">
+            <text/>
+        </field>
+        <field formatCode="06" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="2" y="18">
+            <text/>
+        </field>
+        <field formatCode="06" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="59" y="18">
+            <text/>
+        </field>
+        <field formatCode="06" kind="WINDOW" layoutCode="*" length="58" reverseImage="true" x="2" y="19">
+            <text text=" F3=Exit F12=Précédent"/>
+        </field>
+    </fields>
+</transaction>

@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "MSETUP_TRAD",
+  "description" : "Pgm de traduction des chaînes du pgm d'install",
+  "creationDate" : "2000-08-23 15:30:01",
+  "updateDate" : "2001-05-16 07:48:29",
+  "visibility" : "PUBLIC",
+  "ibmName" : "MSTRAD",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "MSTRAD",
+  "level2GenType" : 1,
+  "implicitMR" : true,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

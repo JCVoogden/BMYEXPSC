@@ -1,0 +1,18 @@
+DEBUT_STD
+XNOM_PGM        = *NOM_PGM
+XUSER           = *USER
+FIN_STD
+*--------------------------* Réception du paramètre
+RECEVOIR PNUM_SINISTRE
+*--------------------------* Edition en-tête
+EDITER ENTETE
+*--------------------------* Edition Détail
+LIRE SINISTRE_DC
+LIRE CLIENTS_DA
+LIRE EXPERT_DB
+LIRE TYPE_SINISTR_DD
+LIRE POLICE_DF
+LIRE VEHICULE_DE
+IMPRIMER DETAIL
+*--------------------------* Edition Fin de page
+EDITER FIN

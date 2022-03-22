@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "FEN_ECHEANCE",
+  "description" : "Fenêtre d'affichage du code échéance",
+  "creationDate" : "1995-06-08 07:16:35",
+  "updateDate" : "1995-06-08 07:16:35",
+  "visibility" : "PUBLIC",
+  "ibmName" : "FENECH",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "FENECH",
+  "programTemplateName" : "UTI_FEN_NIV2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

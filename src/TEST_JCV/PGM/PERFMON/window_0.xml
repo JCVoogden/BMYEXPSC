@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Performances" help="" id="0" name="ID_FEN0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="96"/>
+        <property id="-45" intValue="96"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="212"/>
+        <property id="-3" intValue="328"/>
+        <property id="-2" intValue="219"/>
+        <property id="-1" intValue="677"/>
+        <property id="3" stringValue="Performances"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="22" intValue="320"/>
+        <property id="23" intValue="178"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="CD_CPU">
+            <properties>
+                <property id="-8" stringValue="Processeur"/>
+                <property id="-4" intValue="51"/>
+                <property id="-3" intValue="303"/>
+                <property id="-2" intValue="6"/>
+                <property id="-1" intValue="7"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="JAUGE" dll="PROGRESS" help="" kinematic="0" name="ID_CPU">
+            <properties>
+                <property id="-4" intValue="16"/>
+                <property id="-3" intValue="273"/>
+                <property id="-2" intValue="29"/>
+                <property id="-1" intValue="21"/>
+                <property id="11" intValue="1"/>
+                <property id="13" intValue="8421376"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="CD_MEM">
+            <properties>
+                <property id="-8" stringValue="Mémoire"/>
+                <property id="-4" intValue="51"/>
+                <property id="-3" intValue="303"/>
+                <property id="-2" intValue="61"/>
+                <property id="-1" intValue="7"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="JAUGE" dll="PROGRESS" help="" kinematic="0" name="ID_MEM">
+            <properties>
+                <property id="-4" intValue="16"/>
+                <property id="-3" intValue="273"/>
+                <property id="-2" intValue="84"/>
+                <property id="-1" intValue="21"/>
+                <property id="11" intValue="1"/>
+                <property id="13" intValue="8421376"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TIMER" dll="TIMER" help="" kinematic="0" name="ID_TIMER">
+            <properties>
+                <property id="-38"/>
+                <property id="-2" intValue="50"/>
+                <property id="-1" intValue="270"/>
+                <property id="1" intValue="500"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="CD_MEM0">
+            <properties>
+                <property id="-8" stringValue="Processus"/>
+                <property id="-4" intValue="51"/>
+                <property id="-3" intValue="303"/>
+                <property id="-2" intValue="116"/>
+                <property id="-1" intValue="7"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ">
+            <properties>
+                <property id="-8" stringValue="ID:"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="20"/>
+                <property id="-2" intValue="139"/>
+                <property id="-1" intValue="17"/>
+            </properties>
+        </control>
+        <control associatedVariable="PID" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="ID_PID">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-12" intValue="3"/>
+                <property id="-9" stringValue="6 -1 -1"/>
+                <property id="-4" intValue="20"/>
+                <property id="-3" intValue="56"/>
+                <property id="-2" intValue="136"/>
+                <property id="-1" intValue="43"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_START">
+            <properties>
+                <property id="-8" stringValue="Start"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="59"/>
+                <property id="-2" intValue="134"/>
+                <property id="-1" intValue="241"/>
+            </properties>
+        </control>
+        <control associatedVariable="PPID" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_OBJ3">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="6 -1 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="90"/>
+                <property id="-2" intValue="139"/>
+                <property id="-1" intValue="130"/>
+            </properties>
+        </control>
+    </controls>
+</window>

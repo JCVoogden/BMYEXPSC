@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "MULTISELF",
+  "description" : "MULTISELF",
+  "creationDate" : "2007-11-15 08:38:08",
+  "updateDate" : "2007-11-15 10:11:43",
+  "visibility" : "PRIVATE",
+  "ibmName" : "MULTIS",
+  "programType" : "I",
+  "sourceType" : "MADELIA",
+  "layoutCode" : "MULTIS",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

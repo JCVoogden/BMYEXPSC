@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction format1="01" functionKeys="                        " updateDate="2021-04-30" updateTime="14:30:21" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="01" eraseInput="false" guideWord="FOR01" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="23" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR01" truncate="false"/>
+    </formats>
+    <entities>
+        <entity format="01" name="ANSI_UNICODE"/>
+    </entities>
+    <fields>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="01" kind="CONSTANT" layoutCode="*" length="30" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="7" y="4">
+            <text text="Créée par l'importation du MLD"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Créée par l'importation du MLD" formatCode="01" guideWord="ZUNICODE" kind="VARIABLE" layoutCode="ZUNICODE" length="25" logicalProperty="ANSI_UNICODE.UNICODE" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" underscore="true" validExtendedFieldName="false" validFieldName="false" x="38" y="4"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="30" lowerCase="false" mandatoryFieldEnd="false" reverseImage="true" validExtendedFieldName="false" validFieldName="false" x="7" y="6">
+            <text text="Créée par l'importation du MLD"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Créée par l'importation du MLD" formatCode="01" guideWord="ZANSI" kind="VARIABLE" layoutCode="ZANSI" length="25" logicalProperty="ANSI_UNICODE.ANSI" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="38" y="6"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="VAR001" formatCode="01" guideWord="VAR001" hilight="true" kind="USER_VARIABLE" layoutCode="VAR001" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT" reverseImage="true" type="STRING" validExtendedFieldName="false" validFieldName="false" x="32" y="8"/>
+    </fields>
+</transaction>

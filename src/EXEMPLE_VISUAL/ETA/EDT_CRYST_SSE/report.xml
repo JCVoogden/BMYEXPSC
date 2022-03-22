@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml report.xsd">
+    <entities/>
+    <fields>
+        <field description="EDTSSE" guideWord="CLIENT" kind="VARIABLE" layoutCode="_data" length="41" type="STRING"/>
+        <field description="EDTSSE" guideWord="ID" kind="VARIABLE" layoutCode="_data" type="INT"/>
+        <field description="EDTSSE" guideWord="PIED_PAGE" kind="VARIABLE" layoutCode="_data" length="161" type="STRING"/>
+        <field description="EDTSSE" guideWord="TITRE_ETAT" kind="VARIABLE" layoutCode="_data" length="161" type="STRING"/>
+        <field description="EDTSSE" guideWord="TITRE_PAGE" kind="VARIABLE" layoutCode="_data" length="161" type="STRING"/>
+        <field description="EDTSSE" guideWord="*PGM" kind="VARIABLE" layoutCode="_data" length="21" type="STRING"/>
+        <field description="EDTSSE" guideWord="*USER" kind="VARIABLE" layoutCode="_data" length="65" type="STRING"/>
+        <field description="commandesClient" guideWord="DATECMD" kind="VARIABLE" layoutCode="_data" type="DATE"/>
+        <field description="commandesClient" guideWord="ETAT" kind="VARIABLE" layoutCode="_data" length="21" type="STRING"/>
+        <field description="commandesClient" guideWord="IDCLIENT" kind="VARIABLE" layoutCode="_data" type="INT"/>
+        <field description="commandesClient" guideWord="IDCMD" kind="VARIABLE" layoutCode="_data" type="INT"/>
+        <field description="commandesClient" guideWord="MONTANT" kind="VARIABLE" layoutCode="_data" type="NUMBER"/>
+        <field description="EDTSSE" kind="CONSTANT" length="2" scale="2">
+            <text text="Client"/>
+        </field>
+        <field description="EDTSSE" kind="CONSTANT" length="3" scale="2">
+            <text text="Id."/>
+        </field>
+        <field description="EDTSSE" kind="CONSTANT" length="8" scale="7">
+            <text text="Ref : "/>
+        </field>
+        <field description="EDTSSE" kind="CONSTANT" length="10" scale="7">
+            <text text="Date/Heure impression : "/>
+        </field>
+        <field description="commandesClient" kind="CONSTANT" length="1" scale="1">
+            <text text="Commande N°"/>
+        </field>
+        <field description="commandesClient" kind="CONSTANT" length="2" scale="1">
+            <text text="Date"/>
+        </field>
+        <field description="commandesClient" kind="CONSTANT" length="3" scale="1">
+            <text text="Montant"/>
+        </field>
+        <field description="commandesClient" kind="CONSTANT" length="4" scale="1">
+            <text text="Etat"/>
+        </field>
+        <field description="commandesClient" kind="CONSTANT" length="12" scale="501">
+            <text text="Sous total/Mois :"/>
+        </field>
+        <field description="commandesClient" kind="CONSTANT" length="14" scale="8">
+            <text text="Total général :"/>
+        </field>
+    </fields>
+</report>

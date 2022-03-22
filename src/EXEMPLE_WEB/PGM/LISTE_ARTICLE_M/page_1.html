@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Liste des articles</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<adelia:css_link/>
+<style type="text/css">
+<!--
+tr.HIGHLIGHT {
+  background-color:#FFFF99;
+}
+-->
+</style>
+<script language="JavaScript" type="text/javascript" src="../js/menu.js">/* */</script>
+</head>
+
+<body>
+<div id="MENU" onMouseOver="voir(); return(false);" onMouseOut="masquer(); return(false);" style="position: absolute; display: none; font-size:12px"></div>
+<p class="titre_boite">Liste des articles </p>
+<form name="LISTE_ARTICLE_1_FORM_1" id="LISTE_ARTICLE_1_FORM_1" method="post">
+<script language="JavaScript" type="text/javascript">
+var vectorMenu = [["::ADELIA_EVT(MODIFIER)",'Modifier','ALL', ''],
+                  ["::ADELIA_EVT(SUPPRIMER)",'Supprimer','ALL', '']]; 
+</script>
+<table cols="4" width="600" border="1" cellpadding="1" cellspacing="1">
+<tr align="center" class="entete">
+<td >Action</td>
+<td >Code article</td>
+<td>Libell&eacute; article</td>
+<td>Code famille</td>
+</tr>
+<adelia:tablelist name="TBL_ARTICLE" step="10" eveneltcolor="#97B3EA" oddeltcolor="#eeeeee">
+<tr class="txtinfo" onmouseover="HilightLine(this);ZZCOD_ARTICLE_SEL.value='::ZZCOD_ARTICLE_LIG(10)'">
+<td align="center" ><img src="../images/execute.gif" alt="Menu" width="16" height="16" onmouseover="show_menu('','ALL',vectorMenu,this); return(false);" /></td>
+<td><adelia:outputfield name="ZZCOD_ARTICLE" type="ALPHA" length="10" lentity="ARTICLE" lproperty="COD_ARTICLE" dataflow="yes" /></td>
+<td><adelia:outputfield name="ZZLIB_ARTICLE" type="ALPHA" length="30" lentity="ARTICLE" lproperty="LIB_ARTICLE" dataflow="yes" /></td>
+<td align="center"><adelia:outputfield name="ZZCOD_FAMILLE" type="ALPHA" length="2" lentity="ARTICLE" lproperty="COD_FAMILLE" dataflow="yes" /></td>
+</tr>
+</adelia:tablelist>
+</table>
+<table width="600" border="0" cellspacing="2" cellpadding="0">
+  <tr>
+    <td align="left"><adelia:hlink><a name="HLK_PRECEDENT" id="HLK_PRECEDENT" href="::ADELIA_ONROLLDOWN(TBL_ARTICLE)">Pr&eacute;cedent</a></adelia:hlink></td>
+    <td align="right"><adelia:hlink><a name="HLK_SUIVANT" id="HLK_SUIVANT" href="::ADELIA_ONROLLUP(TBL_ARTICLE)">Suivant</a></adelia:hlink></td>
+  </tr>
+</table>
+<p><adelia:entryfield type="ALPHA" length="10" lentity="ARTICLE" lproperty="COD_ARTICLE" dataflow="yes" ><input type="hidden" name="ZZCOD_ARTICLE_SEL" id="ZZCOD_ARTICLE_SEL" /></adelia:entryfield></p>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "type" : "TDI",
+  "name" : "UTI_EXECUTER",
+  "description" : "Utilisation de l'ordre EXECUTER",
+  "creationDate" : "1995-06-08 06:53:51",
+  "updateDate" : "1995-06-08 06:53:51",
+  "visibility" : "PUBLIC",
+  "templateType" : "I"
+}

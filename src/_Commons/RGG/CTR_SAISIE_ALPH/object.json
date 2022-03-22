@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CTR_SAISIE_ALPH",
+  "description" : "Alphabétique obligatoire",
+  "creationDate" : "1995-06-07 12:46:48",
+  "updateDate" : "1995-12-12 12:46:31",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

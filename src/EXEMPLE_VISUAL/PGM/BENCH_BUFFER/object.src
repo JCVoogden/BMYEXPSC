@@ -1,0 +1,132 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20060706)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20060706)      num_bin_4 echantillon
+*ROW_METADATA(ADELIA         20060706)      param echantillon
+*ROW_METADATA(ADELIA         20060706)   FIN_DECL
+*ROW_METADATA(ADELIA         20060706)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20060706)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20060706)      executer    id_fen0
+*ROW_METADATA(ADELIA         20060706)      
+*ROW_METADATA(ADELIA         20060706)      initialiser id_fen1
+*ROW_METADATA(ADELIA         20091030)      executer    id_fen1
+*ROW_METADATA(ADELIA         20091030)      
+*ROW_METADATA(ADELIA         20091030)      terminer
+*ROW_METADATA(ADELIA         20091030)      
+*ROW_METADATA(ADELIA         20091030)      
+*ROW_METADATA(ADELIA         20091030)      
+*ROW_METADATA(ADELIA         20060706)   FIN_INIT
+*ROW_METADATA(ADELIA         20060706)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20060706)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20060706)         num_bin_4 i
+*ROW_METADATA(ADELIA         20060706)      FIN_DECL
+*ROW_METADATA(ADELIA         20060706)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20060706)         appeler_dll 'vatoolbx.dll' 'VaToolBxCenterWindow' %fenetre
+*ROW_METADATA(ADELIA         20060706)      FIN_INIT
+*ROW_METADATA(ADELIA         20060706)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20060706)         DEBUT_OBJET ID_FEN0
+*ROW_METADATA(ADELIA         20060706)            DEBUT_EVT ID_FEN0:Activation
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV SERV_LOG_1
+*ROW_METADATA(ADELIA         20060706)                  supprimer_sql HLPRPLP
+*ROW_METADATA(ADELIA         20060706)                  
+*ROW_METADATA(ADELIA         20060706)                  valider_maj
+*ROW_METADATA(ADELIA         20060706)                  
+*ROW_METADATA(ADELIA         20060706)                  i = 0
+*ROW_METADATA(ADELIA         20060706)                  
+*ROW_METADATA(ADELIA         20060706)                  tant_que i <= echantillon
+*ROW_METADATA(ADELIA         20060706)                     P1CACT = 'PGC' 
+*ROW_METADATA(ADELIA         20060706)                     P1CDPO = 'P02' 
+*ROW_METADATA(ADELIA         20060706)                     P1NANP = 1 
+*ROW_METADATA(ADELIA         20060707)                     P1NLPR = i
+*ROW_METADATA(ADELIA         20060707)                     P1NPRE = i
+*ROW_METADATA(ADELIA         20060707)                     P1TVLP = '0'
+*ROW_METADATA(ADELIA         20060706)                     creer_sql HLPRPLP
+*ROW_METADATA(ADELIA         20060706)                     i      = i + 1
+*ROW_METADATA(ADELIA         20060706)                  refaire
+*ROW_METADATA(ADELIA         20060706)                  
+*ROW_METADATA(ADELIA         20060706)                  valider_maj
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20060706)               
+*ROW_METADATA(ADELIA         20060706)               terminer
+*ROW_METADATA(ADELIA         20060706)            FIN_EVT
+*ROW_METADATA(ADELIA         20060706)         FIN_OBJET
+*ROW_METADATA(ADELIA         20060706)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20060706)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20060706)         
+*ROW_METADATA(ADELIA         20060706)      FIN_VERIF
+*ROW_METADATA(ADELIA         20060706)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20060706)         
+*ROW_METADATA(ADELIA         20060706)      FIN_VALID
+*ROW_METADATA(ADELIA         20060706)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20060706)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20060706)   FIN_FENETRE
+*ROW_METADATA(ADELIA         20060706)   DEBUT_FENETRE ID_FEN1
+*ROW_METADATA(ADELIA         20060706)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20060707)         num_bin_4    i
+*ROW_METADATA(ADELIA         20060707)         num_bin_4    t
+*ROW_METADATA(ADELIA         20060707)         num_bin_4    rc
+*ROW_METADATA(ADELIA         20060706)         num_e(2,0)   exec
+*ROW_METADATA(ADELIA         20060707)         num_e(15,0)  base
+*ROW_METADATA(ADELIA         20060707)         num_e(15,0)  current
+*ROW_METADATA(ADELIA         20060707)         
+*ROW_METADATA(ADELIA         20060707)         curseur      c1  HLPRPLP *cond(P1NPRE > :t et P1NPRE < :t + :rssz)
+*ROW_METADATA(ADELIA         20060707)         
+*ROW_METADATA(ADELIA         20060707)         
+*ROW_METADATA(ADELIA         20060707)         
+*ROW_METADATA(ADELIA         20060706)      FIN_DECL
+*ROW_METADATA(ADELIA         20060706)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20060706)         appeler_dll 'vatoolbx.dll' 'VaToolBxCenterWindow' %fenetre
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV SERV_LOG_1
+*ROW_METADATA(ADELIA         20060706)            appeler_dll 'vatoolbx.dll' 'VaToolBxSetDriverAttribute' 82 1 rc
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20060706)         
+*ROW_METADATA(ADELIA         20060706)         exec  = 1
+*ROW_METADATA(ADELIA         20060706)         bufsz = 0
+*ROW_METADATA(ADELIA         20060706)         rssz  = 20
+*ROW_METADATA(ADELIA         20060707)         
+*ROW_METADATA(ADELIA         20060707)         id_fen1.id_lst:hauteur_entete = 0
+*ROW_METADATA(ADELIA         20060706)         
+*ROW_METADATA(ADELIA         20060706)         
+*ROW_METADATA(ADELIA         20060706)      FIN_INIT
+*ROW_METADATA(ADELIA         20060706)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20060706)         DEBUT_OBJET ID_OBJ
+*ROW_METADATA(ADELIA         20060706)            DEBUT_EVT ID_OBJ:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20060706)               i = 0
+*ROW_METADATA(ADELIA         20060706)               
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV SERV_LOG_1
+*ROW_METADATA(ADELIA         20060707)                  appeler_dll 'vatoolbx.dll' 'VaToolBxOptionCurseur' 'BENCBFC1' 0 bufsz rc
+*ROW_METADATA(ADELIA         20060706)                  
+*ROW_METADATA(ADELIA         20060706)                  appeler_dll 'vatoolbx.dll' 'VaToolBxQueryDriverAttribute' 50 base 8 rc
+*ROW_METADATA(ADELIA         20060706)                  
+*ROW_METADATA(ADELIA         20060707)                  tant_que i <= echantillon
+*ROW_METADATA(ADELIA         20060707)                     t = (echantillon / rssz) * (i / 200)
+*ROW_METADATA(ADELIA         20060706)                     ouvrir_sql_c c1
+*ROW_METADATA(ADELIA         20060706)                     tant_que *sqlcode = *normal
+*ROW_METADATA(ADELIA         20060706)                        lire_av_sql_c c1
+*ROW_METADATA(ADELIA         20060706)                     refaire
+*ROW_METADATA(ADELIA         20060706)                     fermer_sql_c c1
+*ROW_METADATA(ADELIA         20060707)                     i = i + echantillon / 200
+*ROW_METADATA(ADELIA         20060706)                  refaire
+*ROW_METADATA(ADELIA         20060706)                  
+*ROW_METADATA(ADELIA         20060707)                  appeler_dll 'vatoolbx.dll' 'VaToolBxQueryDriverAttribute' 50 current 8 rc
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20060707)               
+*ROW_METADATA(ADELIA         20060707)               exectime = (current - base) / 1000000000
+*ROW_METADATA(ADELIA         20060707)               
+*ROW_METADATA(ADELIA         20060706)               titre = 'Exécution ' // exec
+*ROW_METADATA(ADELIA         20060706)               exec  = exec + 1
+*ROW_METADATA(ADELIA         20060706)               
+*ROW_METADATA(ADELIA         20060706)               inserer_elt id_fen1.id_lst:liste
+*ROW_METADATA(ADELIA         20060706)               
+*ROW_METADATA(ADELIA         20060706)            FIN_EVT
+*ROW_METADATA(ADELIA         20060706)         FIN_OBJET
+*ROW_METADATA(ADELIA         20060706)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20060706)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20060706)         
+*ROW_METADATA(ADELIA         20060706)      FIN_VERIF
+*ROW_METADATA(ADELIA         20060706)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20060706)         
+*ROW_METADATA(ADELIA         20060706)      FIN_VALID
+*ROW_METADATA(ADELIA         20060706)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20060706)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20060706)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

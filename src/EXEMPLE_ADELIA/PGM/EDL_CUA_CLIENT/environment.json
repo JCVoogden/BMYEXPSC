@@ -1,0 +1,21 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "CLIENTS",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "CCOD_CLIENT",
+      "type" : "DEFAULT"
+    } ]
+  } ]
+}

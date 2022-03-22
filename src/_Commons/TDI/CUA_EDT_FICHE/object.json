@@ -1,0 +1,9 @@
+{
+  "type" : "TDI",
+  "name" : "CUA_EDT_FICHE",
+  "description" : "Edition Fiche (contexte gestion par liste CUA)",
+  "creationDate" : "1995-06-07 12:11:16",
+  "updateDate" : "1995-06-08 06:49:34",
+  "visibility" : "PUBLIC",
+  "templateType" : "B"
+}

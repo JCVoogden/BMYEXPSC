@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "CALL_TESTB",
+  "description" : "CALL_TEST",
+  "creationDate" : "2009-02-05 09:05:17",
+  "updateDate" : "2009-03-18 15:23:44",
+  "visibility" : "PRIVATE",
+  "ibmName" : "CALLB",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "CALLB",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

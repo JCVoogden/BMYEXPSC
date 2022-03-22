@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Aide sur zone désignation article" format1="04" functionKeys="  A        A            " transactionType="FEN_AIDE" updateDate="1753-01-01" updateTime="00:00:00" windowType="WINDOW" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="04" eraseInput="false" guideWord="FOR04" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="23" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR04" truncate="false"/>
+    </formats>
+    <entities/>
+    <fields>
+        <field formatCode="04" hilight="true" kind="CONSTANT" layoutCode="*" length="33" x="15" y="11">
+            <text text="Aide sur zone désignation article"/>
+        </field>
+        <field formatCode="04" kind="CONSTANT" layoutCode="*" length="43" reverseImage="true" x="11" y="13">
+            <text text="La désignation d'un article est obligatoire"/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="FRAME" layoutCode="*" length="-3" x="4" y="10">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="-3" x="4">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="FRAME" layoutCode="*" length="-3" x="4" y="11">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="-3" x="4">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="FRAME" layoutCode="*" length="-61" x="62" y="11">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="-61" x="62">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="FRAME" layoutCode="*" length="-3" x="4" y="12">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="-3" x="4">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="FRAME" layoutCode="*" length="-61" x="62" y="12">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="-61" x="62">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="FRAME" layoutCode="*" length="-3" x="4" y="13">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="-3" x="4">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="FRAME" layoutCode="*" length="-61" x="62" y="13">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="-61" x="62">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="FRAME" layoutCode="*" length="75" x="4" y="14">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="4" y="15">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="78" y="15">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="4" y="16">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="78" y="16">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="4" y="17">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="78" y="17">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="4" y="18">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="78" y="18">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="4" y="19">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="78" y="19">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="4" y="20">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="78" y="20">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="4" y="21">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="78" y="21">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="4" y="22">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="1" x="78" y="22">
+            <text/>
+        </field>
+        <field color="YELLOW" formatCode="04" kind="WINDOW" layoutCode="*" length="75" x="4" y="23">
+            <text/>
+        </field>
+    </fields>
+</transaction>

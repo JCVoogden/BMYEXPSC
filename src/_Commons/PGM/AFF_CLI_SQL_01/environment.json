@@ -1,0 +1,133 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "*1"
+    },
+    "guideWord" : "CLIENTS_S1",
+    "access" : "SQL",
+    "update" : "NO_UPDATE",
+    "generation" : "KINEMATIC"
+  }, {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "REGLEMT_DA",
+    "fileName" : "REGLEMTL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_REGLEMENT",
+      "type" : "DEFAULT"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "EEE",
+      "fileName" : ""
+    },
+    "shortName" : "ZZZ",
+    "length" : 1,
+    "scale" : 1,
+    "type" : "NUMERIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_ACTION",
+      "fileName" : ""
+    },
+    "shortName" : "PCACT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCACT",
+    "generation" : "NONE",
+    "fileName" : "SQLCLI"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCRET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCRET",
+    "generation" : "NONE",
+    "fileName" : "SQLCLI"
+  }, {
+    "id" : {
+      "guideWord" : "PTR1",
+      "fileName" : ""
+    },
+    "shortName" : "PTR1",
+    "length" : 16,
+    "type" : "POINTER",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "PTR2",
+      "fileName" : ""
+    },
+    "shortName" : "PTR2",
+    "length" : 16,
+    "type" : "POINTER",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "TEST1",
+      "fileName" : ""
+    },
+    "shortName" : "TEST1",
+    "length" : 16,
+    "type" : "POINTER",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "VARI1",
+      "fileName" : ""
+    },
+    "shortName" : "VARI1",
+    "length" : 9,
+    "type" : "BINARY",
+    "generation" : "NONE",
+    "dim1" : 5,
+    "dim2" : 5
+  }, {
+    "id" : {
+      "guideWord" : "VARI2",
+      "fileName" : ""
+    },
+    "shortName" : "VARI2",
+    "length" : 9,
+    "type" : "BINARY",
+    "generation" : "NONE",
+    "reference" : "VARI1",
+    "dim1" : 5,
+    "dim2" : 5
+  }, {
+    "id" : {
+      "guideWord" : "WG_COD_RGT",
+      "fileName" : ""
+    },
+    "shortName" : "WGCRGT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "designation" : "WG_COD_RGT",
+    "rename" : "WGCRGT",
+    "generation" : "LEVEL2"
+  }, {
+    "id" : {
+      "guideWord" : "ZORGLUB",
+      "fileName" : "REGLEMTL"
+    },
+    "shortName" : "RCRGT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "rename" : "BULGRO",
+    "generation" : "NONE"
+  } ]
+}

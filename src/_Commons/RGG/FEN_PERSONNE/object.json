@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "FEN_PERSONNE",
+  "description" : "Guide de saisie du personnel",
+  "creationDate" : "1995-06-07 12:47:26",
+  "updateDate" : "1995-06-29 07:24:02",
+  "visibility" : "PUBLIC",
+  "mrClass" : "GS",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

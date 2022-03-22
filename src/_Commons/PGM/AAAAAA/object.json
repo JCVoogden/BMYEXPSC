@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AAAAAA",
+  "description" : "AAAAAA",
+  "creationDate" : "2005-10-14 15:27:15",
+  "updateDate" : "2008-03-05 09:37:23",
+  "visibility" : "PUBLIC",
+  "ibmName" : "AAAAAA",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "AAAAAA",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

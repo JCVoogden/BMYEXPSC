@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CONTROLES_FICH",
+  "description" : "Controles effectués sur les fichiers",
+  "creationDate" : "1995-06-29 07:22:14",
+  "updateDate" : "1995-06-29 07:22:14",
+  "visibility" : "PUBLIC",
+  "mrClass" : "IE",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

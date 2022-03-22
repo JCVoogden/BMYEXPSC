@@ -1,0 +1,136 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "CLIENTS_DA",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "CREATE_AND_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DB"
+    },
+    "guideWord" : "PERSONN_DB",
+    "fileName" : "PERSONNL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DB",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_MAT_PERS",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DC"
+    },
+    "guideWord" : "REGLEMT_DC",
+    "fileName" : "REGLEMTL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DC",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_REGLEMENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "JA"
+    },
+    "guideWord" : "RPERSONNL_COD",
+    "fileName" : "PERSONNL",
+    "access" : "BY_KEY",
+    "update" : "UPDATE_ONLY",
+    "generation" : "LEVEL2",
+    "accesses" : [ {
+      "id" : {
+        "code" : "JA",
+        "ordinal" : 1
+      },
+      "guideWord" : "WG_COD_PER",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "JB"
+    },
+    "guideWord" : "RREGLEMT_COD",
+    "fileName" : "REGLEMTL",
+    "access" : "BY_KEY",
+    "update" : "UPDATE_ONLY",
+    "generation" : "LEVEL2",
+    "accesses" : [ {
+      "id" : {
+        "code" : "JB",
+        "ordinal" : 1
+      },
+      "guideWord" : "WG_COD_RGT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "P_COD_ACTION",
+      "fileName" : ""
+    },
+    "shortName" : "PCACT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_ACTION",
+    "rename" : "PCACT",
+    "generation" : "LEVEL2"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCRET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_RETOUR",
+    "rename" : "PCRET",
+    "generation" : "LEVEL2"
+  }, {
+    "id" : {
+      "guideWord" : "WG_COD_PER",
+      "fileName" : ""
+    },
+    "shortName" : "WGCPER",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "designation" : "WG_COD_PER",
+    "rename" : "WGCPER",
+    "generation" : "LEVEL2"
+  }, {
+    "id" : {
+      "guideWord" : "WG_COD_RGT",
+      "fileName" : ""
+    },
+    "shortName" : "WGCRGT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "designation" : "WG_COD_RGT",
+    "rename" : "WGCRGT",
+    "generation" : "LEVEL2"
+  } ]
+}

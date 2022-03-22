@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "MAJ_LIGNE_SFL",
+  "description" : "Mise à jour d'une ligne de sous-fichier",
+  "creationDate" : "1996-07-05 09:06:59",
+  "updateDate" : "1996-07-05 09:20:12",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

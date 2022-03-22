@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="" help="" id="0" name="ID_FEN0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="300"/>
+        <property id="-3" intValue="400"/>
+        <property id="-2" intValue="115"/>
+        <property id="-1" intValue="493"/>
+        <property id="3"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAw0lEQVR4Xu2OCwqDQAwF9/DSo9ljWQaqLI9umjUJ/eBAQM17cVq7+EK2hAmxRaD/nNPozSnor/c1JKE3p6CPQERCb06x9yMScnKOvn9Wojs3D31jXOjNFLirPxqh3QNr9w66y21xSWj3gJ21t6CXJmBlRtBJFbByryCfLmBlFbIlAla+h1yZgNXZIVMqYPWAfYmAF7JpAvrsgWyKgL7rtxHkwgIKWW+eXLoAkPd0yPyngBfuXgK/I1A1XoFGsGr0Xx/nAcvm7lfXqc4jAAAAAElFTkSuQmCC</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbUlEQVR4Xq2MUQrAMAxCe/+DdcfqyJARE6Vl7IE/5sUxfmIdxrJ2hINIqt8IZ17TjjS5El0MuJEmuy6FsLICN0IJdgQ9oQQ7go5QQku5E+m9D1TQE01IIt1ST1TnBbLqCBIykFVHkLBDDnzIww3Nu+sjMeaOXAAAAABJRU5ErkJggg==</property>
+        <property id="22" intValue="392"/>
+        <property id="23" intValue="273"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ">
+            <properties>
+                <property id="-8" stringValue="Bouton"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="55"/>
+                <property id="-1" intValue="177"/>
+            </properties>
+        </control>
+        <control associatedVariable="ID_OBJ0" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="ID_OBJ0">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 15 -1"/>
+                <property id="-4" intValue="20"/>
+                <property id="-3" intValue="90"/>
+                <property id="-2" intValue="98"/>
+                <property id="-1" intValue="27"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="LISTE" dll="CONTAINR" help="" kinematic="0" name="ID_OBJ1">
+            <properties>
+                <property id="-4" intValue="72"/>
+                <property id="-3" intValue="150"/>
+                <property id="-2" intValue="148"/>
+                <property id="-1" intValue="213"/>
+                <property id="6" stringValue="ID_OBJ2 -6 2 15 -1"/>
+            </properties>
+            <controls>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="ID_OBJ2">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 15 -1"/>
+                        <property id="-8" stringValue="Colonne"/>
+                        <property id="-3" intValue="75"/>
+                        <property id="11" stringValue="ID_OBJ2 9 2 15 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+            </controls>
+        </control>
+    </controls>
+</window>

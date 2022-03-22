@@ -1,0 +1,50 @@
+{
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCORET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_CODE_FICHIER",
+      "fileName" : ""
+    },
+    "shortName" : "PCOFIC",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCOFIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_MOT_DIR_ASSOC",
+      "fileName" : ""
+    },
+    "shortName" : "PLMDA",
+    "length" : 128,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_MOT_DIR_DEPAR",
+      "fileName" : ""
+    },
+    "shortName" : "PLMDD",
+    "length" : 128,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "W_LIB_SOULIGN",
+      "fileName" : ""
+    },
+    "shortName" : "WLSOUL",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "rename" : "WLSOUL",
+    "generation" : "NONE"
+  } ]
+}

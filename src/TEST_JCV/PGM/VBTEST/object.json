@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "VBTEST",
+  "description" : "VBTEST",
+  "creationDate" : "2008-04-14 07:38:21",
+  "updateDate" : "2011-02-09 13:27:08",
+  "visibility" : "PRIVATE",
+  "ibmName" : "VBTEST",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "VBTEST",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

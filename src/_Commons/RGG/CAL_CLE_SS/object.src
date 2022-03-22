@@ -1,0 +1,12 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   *
+*ROW_METADATA(ADELIA                 )   * Calcul de la clé SS dans une variable de travail par
+*ROW_METADATA(ADELIA                 )   * programme externe
+*ROW_METADATA(ADELIA                 )   *
+*ROW_METADATA(ADELIA                 )   DECLARER WCSSO;W_CLE_SS 2
+*ROW_METADATA(ADELIA                 )   DECLARER WCERR;W_COD_ERR 1
+*ROW_METADATA(ADELIA                 )   DECLARER WNSSO;W_NUM_SS 13;0
+*ROW_METADATA(ADELIA                 )   W_NUM_SS = $$NUM_SS
+*ROW_METADATA(ADELIA                 )   W_CLE_SS = '00'
+*ROW_METADATA(ADELIA                 )   APPELER HP£NSS W_NUM_SS W_CLE_SS W_COD_ERR
+*ROW_METADATA(ADELIA                 )FIN_RGG

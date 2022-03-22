@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="1" name="ID_WPAGE1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml page.xsd">
+    <properties/>
+    <controls>
+        <control classId="0" className="ENTRYFIELD" error="16" guide="0" kinematic="0" name="CAL_1">
+            <properties>
+                <property id="-9" stringValue="0 0 0"/>
+            </properties>
+        </control>
+    </controls>
+</page>

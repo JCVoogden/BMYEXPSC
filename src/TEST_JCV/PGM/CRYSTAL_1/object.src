@@ -1,0 +1,22 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20080430)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20080430)      liste liste1 *ref_mld(ansi_unicode)
+*ROW_METADATA(ADELIA         20080430)      
+*ROW_METADATA(ADELIA         20080430)   FIN_DECL
+*ROW_METADATA(ADELIA         20080430)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080430)      ouvrir crys01
+*ROW_METADATA(ADELIA         20080430)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV UNICODE
+*ROW_METADATA(ADELIA         20080430)         charger_sql_lst liste1 ansi_unicode
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080430)      
+*ROW_METADATA(ADELIA         20080430)      lecture_lst liste1
+*ROW_METADATA(ADELIA         20080430)         zansi    = ansi
+*ROW_METADATA(ADELIA         20080430)         zunicode = unicode
+*ROW_METADATA(ADELIA         20080430)         editer
+*ROW_METADATA(ADELIA         20080430)      fin_lecture_lst
+*ROW_METADATA(ADELIA         20080430)      
+*ROW_METADATA(ADELIA         20080430)      fermer crys01 *prv
+*ROW_METADATA(ADELIA         20080430)      
+*ROW_METADATA(ADELIA         20080430)   FIN_INIT
+*ROW_METADATA(ADELIA                 )FIN_PGM

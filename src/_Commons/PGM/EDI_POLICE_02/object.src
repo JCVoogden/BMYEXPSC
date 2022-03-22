@@ -1,0 +1,35 @@
+DEBUT_STD
+XNOM_PGM        = *NOM_PGM
+XUSER           = *USER
+FIN_STD
+*--------------------------* Lecture 1er enreg du fichier
+LIRE_AVANT POLICE_DB
+TANT_QUE POLICE_DB EXISTE
+  *--------------------------* Détection des ruptures en-tête
+  TRAITER_CHG RUPT_CLIENT
+  *--------------------------* Appel du traitement détail
+  TRAITER_PROC SBRDET
+  *--------------------------* Lecture enreg suivant du fichier
+  LIRE_AVANT POLICE_DB
+  *--------------------------* Détection des ruptures totales
+  TRAITER_TOTAL RUPT_CLIENT
+REFAIRE
+*--------------------------* Edition Fin de cet état
+EDITER FIN
+TRT_CHANGEMENT RUPT_CLIENT
+*--------------------------* Procédure en-tête
+LIRE CLIENTS_DA
+IMPRIMER ENTETE
+FIN_TRAITEMENT
+TRT_TOTAL RUPT_CLIENT
+*--------------------------* Procédure totale
+FIN_TRAITEMENT
+CHANGEMENT_PAGE
+*--------------------------* Procédure changement page
+EDITER   ENTETE
+FIN_TRAITEMENT
+DEBUT_PROCEDURE SBRDET
+*--------------------------* Procédure détail
+LIRE VEHICULE_DC
+IMPRIMER DETAIL
+FIN_PROCEDURE

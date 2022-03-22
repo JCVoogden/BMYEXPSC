@@ -1,0 +1,9 @@
+{
+  "type" : "TDI",
+  "name" : "GES_SFF_1TR_01",
+  "description" : "Gestion s/fichier rempli par 2 fichiers A partir",
+  "creationDate" : "1995-06-08 06:51:48",
+  "updateDate" : "1995-06-08 06:51:48",
+  "visibility" : "PUBLIC",
+  "templateType" : "I"
+}

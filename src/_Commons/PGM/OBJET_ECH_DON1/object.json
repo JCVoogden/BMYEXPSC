@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "OBJET_ECH_DON1",
+  "description" : "Utilisation de l'objet échange de données (env.)",
+  "creationDate" : "2002-10-24 15:48:29",
+  "updateDate" : "2002-10-24 16:13:40",
+  "visibility" : "PUBLIC",
+  "ibmName" : "OBJED1",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "OBJED1",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "SQL"
+}

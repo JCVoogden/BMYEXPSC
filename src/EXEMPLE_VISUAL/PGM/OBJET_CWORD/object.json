@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "OBJET_CWORD",
+  "description" : "Utilisation de l'objet Client Word ",
+  "creationDate" : "2000-07-24 09:07:27",
+  "updateDate" : "2006-09-29 14:46:10",
+  "visibility" : "PRIVATE",
+  "ibmName" : "OBJCWO",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "OBJCWO",
+  "level2GenType" : 1,
+  "implicitMR" : true,
+  "level2DatabaseGenMode" : "SQL"
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "A_TEST",
+  "description" : "A_TEST",
+  "creationDate" : "2007-04-20 13:40:17",
+  "updateDate" : "2007-04-25 09:03:08",
+  "visibility" : "PRIVATE",
+  "ibmName" : "A_TEST",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "A_TEST",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

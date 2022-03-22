@@ -1,0 +1,104 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "*1"
+    },
+    "guideWord" : "CLIENTS_S1",
+    "fileName" : "CLIENTL1",
+    "access" : "STARTS_WITH",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "*1",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZWAFF_PARTIR",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "01"
+    },
+    "guideWord" : "PROSPE_01",
+    "fileName" : "PROSPEL1",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "generation" : "NONE",
+    "accesses" : [ {
+      "id" : {
+        "code" : "01",
+        "ordinal" : 1
+      },
+      "guideWord" : "PNOM_PROSPE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "GA"
+    },
+    "guideWord" : "VUE_MANUEL_SFL1",
+    "fileName" : "*1",
+    "access" : "DIRECT",
+    "update" : "UPDATE_ONLY",
+    "generation" : "LEVEL1",
+    "accesses" : [ {
+      "id" : {
+        "code" : "GA",
+        "ordinal" : 1
+      },
+      "guideWord" : "CLE_RANG_SFL1",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "àPA1",
+      "fileName" : ""
+    },
+    "shortName" : "àPA1",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "Afficher à partir de",
+    "rename" : "àPA1",
+    "generation" : "NONE",
+    "fileName" : "INTCL2",
+    "nbElementsTabV4" : 999
+  }, {
+    "id" : {
+      "guideWord" : "àPA2",
+      "fileName" : ""
+    },
+    "shortName" : "àPA2",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "Afficher à partir de",
+    "rename" : "àPA2",
+    "generation" : "NONE",
+    "fileName" : "INTCL2",
+    "nbElementsTabV4" : 999
+  }, {
+    "id" : {
+      "guideWord" : "CLE_RANG_SFL1",
+      "fileName" : ""
+    },
+    "shortName" : "WRAN01",
+    "length" : 4,
+    "type" : "NUMERIC",
+    "designation" : "CLE_RANG_SFL1",
+    "rename" : "WRAN01",
+    "generation" : "LEVEL1",
+    "reference" : "*NODEF"
+  }, {
+    "id" : {
+      "guideWord" : "WW_PREMIER",
+      "fileName" : ""
+    },
+    "shortName" : "WPREMI",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "rename" : "WPREMI",
+    "generation" : "NONE"
+  } ]
+}

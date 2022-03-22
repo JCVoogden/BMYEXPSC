@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Interrogation du fichier client" format1="01" format2="*1" format3="03" functionKeys="  A                     " transactionType="INT_SFL" updateDate="1753-01-01" updateTime="00:00:00" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="*1" eraseInput="false" guideWord="SFL01" help="false" jumpLinesBefore="9" keep="false" lock="false" nbColumns="1" nbLines="12" overlay="false" pagination="DYNAMIC" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="SFL01" subFilePageSize="6" subFileSize="7" truncate="true"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="01" eraseInput="false" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="8" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="CTL01" subFileCode="*1" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="03" eraseInput="false" help="false" jumpLinesBefore="21" keep="false" lock="false" nbColumns="1" nbLines="3" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR03" truncate="false"/>
+    </formats>
+    <entities>
+        <entity access="SEQUENTIAL_WITH_KEY" format="*1" name="CLIENTS">
+            <properties>
+                <property access="1" name="NOM_CLIENT"/>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="NOM DU PROGRAMME" formatCode="01" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="31" x="25" y="1">
+            <text text="Interrogation du fichier client"/>
+        </field>
+        <field formatCode="01" kind="CONSTANT" layoutCode="*" length="22" x="25" y="3">
+            <text text="Afficher à partir de ."/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Mot directeur" formatCode="01" guideWord="ZWMOT_DIRECTEUR" kind="USER_VARIABLE" layoutCode="ZWLDIR" length="30" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="48" y="3"/>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="46" x="2" y="5">
+            <text text="Indiquez vos options, puis appuyer sur ENTREE."/>
+        </field>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="9" x="4" y="6">
+            <text text="1=Choisir"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="3" x="2" y="8">
+            <text text="Opt"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="20" x="11" y="8">
+            <text text="Nom    du     client"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="19" x="42" y="8">
+            <text text="Bureau distributeur"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="6" x="68" y="8">
+            <text text="Client"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code option" formatCode="*1" guideWord="ZWCOD_OPTION" kind="USER_VARIABLE" layoutCode="ZWCOPT" length="1" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="3" y="9"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom client" formatCode="*1" guideWord="ZZNOM_CLIENT" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.NOM_CLIENT" layoutCode="ZZLCLI" length="30" logicalProperty="CLIENTS.NOM_CLIENT" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="8" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="6" y="9"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Bureau distributeur" formatCode="*1" guideWord="ZZBUR_DIS_CLI" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.BUR_DIS_CLI" layoutCode="ZZBDCL" length="30" logicalProperty="CLIENTS.BUR_DIS_CLI" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="9" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="37" y="9"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code client" formatCode="*1" guideWord="ZZCOD_CLIENT" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.COD_CLIENT" layoutCode="ZZCCLI" length="6" logicalProperty="CLIENTS.COD_CLIENT" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="10" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="68" y="9"/>
+        <field formatCode="*1" kind="CONSTANT" layoutCode="*" length="9" x="2" y="10">
+            <text text="Téléphone"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Tél" formatCode="*1" guideWord="ZZNUM_TEL_CLI" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.NUM_TEL_CLI" layoutCode="ZZNTCL" length="11" logicalProperty="CLIENTS.NUM_TEL_CLI" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="15" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="12" y="10"/>
+        <field formatCode="*1" kind="CONSTANT" layoutCode="*" length="18" x="24" y="10">
+            <text text="Chiffre d'affaires"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Chiffre d'affaires" editCode="CODE_J" formatCode="*1" guideWord="ZZMHT_CAF_CLI" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.MHT_CAF_CLI" layoutCode="ZZTACL" length="11" logicalProperty="CLIENTS.MHT_CAF_CLI" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="17" scale="2" type="NUMBER" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="43" y="10"/>
+        <field color="BLUE" formatCode="03" kind="CONSTANT" layoutCode="*" length="7" x="2" y="23">
+            <text text="F3=Exit"/>
+        </field>
+        <field color="BLUE" formatCode="03" kind="CONSTANT" layoutCode="*" length="14" x="12" y="23">
+            <text text="F11=Complément"/>
+        </field>
+    </fields>
+</transaction>

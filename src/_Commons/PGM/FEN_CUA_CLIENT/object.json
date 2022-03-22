@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "FEN_CUA_CLIENT",
+  "description" : "Fenêtre de selection de clients",
+  "creationDate" : "1995-06-08 07:15:39",
+  "updateDate" : "1995-06-08 07:15:39",
+  "visibility" : "PUBLIC",
+  "ibmName" : "FCUA01",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "FCUA01",
+  "programTemplateName" : "SELECTION",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

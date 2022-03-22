@@ -1,0 +1,1059 @@
+INSERER_STD_D
+%QUESTION *ON 99
+%%  S'agit il d'un programme d'édition ?
+%SI 99
+%QUESTION *EN FICHIER_BOUCLE
+%%  Quelle est l'entité lue dans la boucle principale ?
+%FIN
+%SI N99
+%QUESTION *VU FICHIER_BOUCLE
+%%  Définissez la vue correspondant au fichier lu dans la boucle
+%%  principale et incorporez ce fichier dans l'environnement de
+%%  données
+%FIN
+%QUESTION *ON 01
+%%  La boucle comprend-elle au moins une rupture ?
+%SI 01
+%QUESTION *ON 02
+%%  La boucle comprend-elle au moins deux ruptures ?
+%SI 02
+%QUESTION *ON 03
+%%  La boucle comprend-elle au moins trois ruptures ?
+%SI 03
+%QUESTION *ON 04
+%%  La boucle comprend-elle au moins quatre ruptures ?
+%SI 04
+%QUESTION *ON 05
+%%  La boucle comprend-elle au moins cinq ruptures ?
+%SI 05
+%QUESTION *ON 06
+%%  La boucle comprend-elle au moins six ruptures ?
+%SI 06
+%QUESTION *ON 07
+%%  La boucle comprend-elle au moins sept ruptures ?
+%SI 07
+%QUESTION *ON 08
+%%  La boucle comprend-elle au moins huit ruptures ?
+%SI 08
+%QUESTION *ON 09
+%%  La boucle comprend-elle neuf ruptures ?
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%SI 99
+%SI 09
+%CREER_ETAT LISTE_9_RUPT
+%FIN
+%SI N09
+%SI 08
+%CREER_ETAT LISTE_8_RUPT
+%FIN
+%SI N08
+%SI 07
+%CREER_ETAT LISTE_7_RUPT
+%FIN
+%SI N07
+%SI 06
+%CREER_ETAT LISTE_6_RUPT
+%FIN
+%SI N06
+%SI 05
+%CREER_ETAT LISTE_5_RUPT
+%FIN
+%SI N05
+%SI 04
+%CREER_ETAT LISTE_4_RUPT
+%FIN
+%SI N04
+%SI 03
+%CREER_ETAT LISTE_3_RUPT
+%FIN
+%SI N03
+%SI 02
+%CREER_ETAT LISTE_2_RUPT
+%FIN
+%SI N02
+%SI 01
+%CREER_ETAT LISTE_1_RUPT
+%FIN
+%SI N01
+%CREER_ETAT LISTE_SIMPLE
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%AFFECTER $FICHIER_BOUCLE $FICHIER_BOUCLE
+%QUESTION **
+%%  Indiquez les informations que vous souhaitez éditer sur l'état.
+%%  Pour cela, choisissez  Entités.
+%MESSAGE
+%%  Génération du dessin en cours, veuillez patienter.
+%GENERER_ETAT
+%QUESTION **
+%%  Vous pouvez maintenant visualiser et éventuellement modifier le
+%%  dessin généré en ajoutant notamment des zones de totalisation.
+%%  Pour cela utilisez le maquetteur.
+%%  Vous pouvez également définir la documentation utilisateur.
+%MESSAGE
+%%  Génération de la cinématique en cours, veuillez patienter.
+%GENERER_CIN
+%QUESTION **
+%%  Vérifiez que la cinématique a été générée correctement :
+%%  accédez à la définition de la cinématique et controlez
+%%  qu'à chaque zone maquette comportant un code vue,
+%%  correspondent une zone et un fichier de provenance.
+%%
+%%           Faire ENTREE pour continuer.
+%FIN
+%ETIQUETTE CHOIX_LECT
+%QUESTION *ON 20
+%%  La boucle de lecture doit-elle permettre de parcourir le
+%%  fichier du début jusqu'à la fin ?
+%SI N20
+%QUESTION *ON 21
+%%  La boucle de lecture doit-elle permettre de parcourir le
+%%  fichier à partir d'un enregistrement jusqu'à la fin ?
+%SI N21
+%QUESTION *ON 22
+%%  La boucle de lecture doit-elle permettre de parcourir le
+%%  fichier pour un groupe d'enregistrements par égalité sur clé ?
+%SI N22
+%QUESTION *ON 23
+%%  La boucle de lecture doit-elle permettre de parcourir le
+%%  fichier en arrière de la fin jusqu'au début ?
+%SI N23
+%QUESTION *ON 24
+%%  La boucle de lecture doit-elle permettre de parcourir le
+%%  fichier en arrière à partir d'un enregistrement jusqu'au début ?
+%SI N24
+%QUESTION *ON 25
+%%  La boucle de lecture doit-elle permettre de parcourir le
+%%  fichier en arrière pour un groupe d'enregistrements par égalité
+%%  sur clé ?
+%SI N25
+%ALLER_A CHOIX_LECT
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%SI 20
+LIRE_AVANT $FICHIER_BOUCLE
+%FIN
+%SI 21
+POSITIONNER_AV $FICHIER_BOUCLE
+LIRE_AVANT $FICHIER_BOUCLE
+%FIN
+%SI 22
+POSITIONNER_AV $FICHIER_BOUCLE
+LIRE_SUIVANT $FICHIER_BOUCLE
+%FIN
+%SI 23
+%RECUPERER_ID *VAMD $FICHIER_BOUCLE 1 ID_01
+$ID_01 = *HIVAL
+POSITIONNER_AP $FICHIER_BOUCLE
+LIRE_ARRIERE $FICHIER_BOUCLE
+%FIN
+%SI 24
+POSITIONNER_AP $FICHIER_BOUCLE
+LIRE_ARRIERE $FICHIER_BOUCLE
+%FIN
+%SI 25
+POSITIONNER_AP $FICHIER_BOUCLE
+LIRE_PRECEDENT $FICHIER_BOUCLE
+%FIN
+%SI N01
+%QUESTION *ON 31
+%%  Y a t'il au moins un fichier annexe à lire avant d'entrer dans
+%%  la boucle (par exemple pour récupérer une information à imprimer
+%%  dans l'entête s'il s'agit d'un programme d'édition).
+%SI 31
+%ETIQUETTE AUTRE_ENTITE
+%QUESTION *VU ENTITE_ANNEXE
+%%  Sélectionnez la vue correspondant à ce fichier.Si cette vue
+%% n'existe pas encore, vous devez la définir et incorporer le
+%% fichier dans l'environnement de données.
+LIRE $ENTITE_ANNEXE
+%SI 99
+PRESENTER $ENTITE_ANNEXE
+%FIN
+%QUESTION *ON 32
+%%  Y a t'il un autre fichier annexe à lire ?
+%SI 32
+%ALLER_A AUTRE_ENTITE
+%FIN
+%FIN
+%SI 99
+EDITER ENTETE
+%FIN
+%FIN
+TANT_QUE $FICHIER_BOUCLE EXISTE
+%SI 01
+%QUESTION *RP RUPTURE_1
+%%  Définissez la rupture de premier niveau.
+TRAITER_CHG $RUPTURE_1
+%FIN
+%SI 02
+%QUESTION *RP RUPTURE_2
+%%  Définissez la rupture de deuxième niveau.
+TRAITER_CHG $RUPTURE_2
+%FIN
+%SI 03
+%QUESTION *RP RUPTURE_3
+%%  Définissez la rupture de troisième niveau.
+TRAITER_CHG $RUPTURE_3
+%FIN
+%SI 04
+%QUESTION *RP RUPTURE_4
+%%  Définissez la rupture de quatrième niveau.
+TRAITER_CHG $RUPTURE_4
+%FIN
+%SI 05
+%QUESTION *RP RUPTURE_5
+%%  Définissez la rupture de cinquième niveau.
+TRAITER_CHG $RUPTURE_5
+%FIN
+%SI 06
+%QUESTION *RP RUPTURE_6
+%%  Définissez la rupture de sixième niveau.
+TRAITER_CHG $RUPTURE_6
+%FIN
+%SI 07
+%QUESTION *RP RUPTURE_7
+%%  Définissez la rupture de septième niveau.
+TRAITER_CHG $RUPTURE_7
+%FIN
+%SI 08
+%QUESTION *RP RUPTURE_8
+%%  Définissez la rupture de huitième niveau.
+TRAITER_CHG $RUPTURE_8
+%FIN
+%SI 09
+%QUESTION *RP RUPTURE_9
+%%  Définissez la rupture de neuvième niveau.
+TRAITER_CHG $RUPTURE_9
+%FIN
+TRAITER_PROC DETAIL
+%SI 20
+LIRE_AVANT $FICHIER_BOUCLE
+%FIN
+%SI 21
+LIRE_AVANT $FICHIER_BOUCLE
+%FIN
+%SI 22
+LIRE_SUIVANT $FICHIER_BOUCLE
+%FIN
+%SI 23
+LIRE_ARRIERE $FICHIER_BOUCLE
+%FIN
+%SI 24
+LIRE_ARRIERE $FICHIER_BOUCLE
+%FIN
+%SI 25
+LIRE_PRECEDENT $FICHIER_BOUCLE
+%FIN
+%SI 09
+TRAITER_TOTAL $RUPTURE_9
+%FIN
+%SI 08
+TRAITER_TOTAL $RUPTURE_8
+%FIN
+%SI 07
+TRAITER_TOTAL $RUPTURE_7
+%FIN
+%SI 06
+TRAITER_TOTAL $RUPTURE_6
+%FIN
+%SI 05
+TRAITER_TOTAL $RUPTURE_5
+%FIN
+%SI 04
+TRAITER_TOTAL $RUPTURE_4
+%FIN
+%SI 03
+TRAITER_TOTAL $RUPTURE_3
+%FIN
+%SI 02
+TRAITER_TOTAL $RUPTURE_2
+%FIN
+%SI 01
+TRAITER_TOTAL $RUPTURE_1
+%FIN
+REFAIRE
+TRAITER_PROC TOTAL
+%ETIQUETTE TRT_CHGS
+%SI 01
+*
+******************************
+TRT_CHANGEMENT $RUPTURE_1
+******************************
+%QUESTION *ON 31
+%%  Y a t'il au moins un fichier annexe à lire pour le traitement
+%%  d'initialisation de la première rupture (par exemple pour
+%%  récupérer une information devant être imprimée dans le format
+%%  d'entête de la rupture s'il s'agit d'un programme d'édition) ?
+%SI 31
+%SI 99
+PRESENTER $FICHIER_BOUCLE
+%FIN
+%ETIQUETTE AUTRE_ENTITE_R1
+%QUESTION *VU ENTITE_ANNEXE
+%%  Sélectionnez la vue correspondant à ce fichier.Si cette vue
+%% n'existe pas encore, vous devez la définir et incorporer le
+%% fichier dans l'environnement de données.
+LIRE $ENTITE_ANNEXE
+%SI 99
+PRESENTER $ENTITE_ANNEXE
+%FIN
+%QUESTION *ON 32
+%%  Y a t'il un autre fichier à lire ?
+%SI 32
+%ALLER_A AUTRE_ENTITE_R1
+%FIN
+%FIN
+%QUESTION *ON 41
+%%  Y a t'il au moins une zone total à initialiser dans
+%%  la première rupture ?
+%SI 41
+%ETIQUETTE AUTRE_ZONE_R1
+%QUESTION *VA ZONE_TOTAL
+%%  Indiquez le nom de cette zone
+$ZONE_TOTAL = 0
+%QUESTION *ON 42
+%%  Y a t'il une autre zone à initialiser dans la première rupture ?
+%SI 42
+%ALLER_A AUTRE_ZONE_R1
+%FIN
+%FIN
+%SI 99
+EDITER ENTETE_1
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 02
+*
+******************************
+TRT_CHANGEMENT $RUPTURE_2
+******************************
+%QUESTION *ON 31
+%%  Y a t'il au moins un fichier annexe à lire pour le traitement
+%%  d'initialisation de la deuxième rupture (par exemple pour
+%%  récupérer une information devant être imprimée dans le format
+%%  d'entête de la rupture s'il s'agit d'un programme d'édition) ?
+%SI 31
+%SI 99
+PRESENTER $FICHIER_BOUCLE
+%FIN
+%ETIQUETTE AUTRE_ENTITE_R2
+%QUESTION *VU ENTITE_ANNEXE
+%%  Sélectionnez la vue correspondant à ce fichier.Si cette vue
+%% n'existe pas encore, vous devez la définir et incorporer le
+%% fichier dans l'environnement de données.
+LIRE $ENTITE_ANNEXE
+%SI 99
+PRESENTER $ENTITE_ANNEXE
+%FIN
+%QUESTION *ON 32
+%%  Y a t'il un autre fichier à lire ?
+%SI 32
+%ALLER_A AUTRE_ENTITE_R2
+%FIN
+%FIN
+%QUESTION *ON 41
+%%  Y a t'il au moins une zone total à initialiser dans
+%%  la deuxième rupture ?
+%SI 41
+%ETIQUETTE AUTRE_ZONE_R2
+%QUESTION *VA ZONE_TOTAL
+%%  Indiquez le nom de cette zone
+$ZONE_TOTAL = 0
+%QUESTION *ON 42
+%%  Y a t'il une autre zone à initialiser dans la deuxième rupture ?
+%SI 42
+%ALLER_A AUTRE_ZONE_R2
+%FIN
+%FIN
+%SI 99
+EDITER ENTETE_2
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 03
+*
+******************************
+TRT_CHANGEMENT $RUPTURE_3
+******************************
+%QUESTION *ON 31
+%%  Y a t'il au moins un fichier annexe à lire pour le traitement
+%%  d'initialisation de la troisième rupture (par exemple pour
+%%  récupérer une information devant être imprimée dans le format
+%%  d'entête de la rupture s'il s'agit d'un programme d'édition) ?
+%SI 31
+%SI 99
+PRESENTER $FICHIER_BOUCLE
+%FIN
+%ETIQUETTE AUTRE_ENTITE_R3
+%QUESTION *VU ENTITE_ANNEXE
+%%  Sélectionnez la vue correspondant à ce fichier.Si cette vue
+%% n'existe pas encore, vous devez la définir et incorporer le
+%% fichier dans l'environnement de données.
+LIRE $ENTITE_ANNEXE
+%SI 99
+PRESENTER $ENTITE_ANNEXE
+%FIN
+%QUESTION *ON 32
+%%  Y a t'il un autre fichier à lire ?
+%SI 32
+%ALLER_A AUTRE_ENTITE_R3
+%FIN
+%FIN
+%QUESTION *ON 41
+%%  Y a t'il au moins une zone total à initialiser dans
+%%  la troisième rupture ?
+%SI 41
+%ETIQUETTE AUTRE_ZONE_R3
+%QUESTION *VA ZONE_TOTAL
+%%  Indiquez le nom de cette zone
+$ZONE_TOTAL = 0
+%QUESTION *ON 42
+%%  Y a t'il une autre zone à initialiser dans
+%%  la troisième rupture ?
+%SI 42
+%ALLER_A AUTRE_ZONE_R3
+%FIN
+%FIN
+%SI 99
+EDITER ENTETE_3
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 04
+*
+******************************
+TRT_CHANGEMENT $RUPTURE_4
+******************************
+%QUESTION *ON 31
+%%  Y a t'il au moins un fichier annexe à lire pour le traitement
+%%  d'initialisation de la quatrième rupture (par exemple pour
+%%  récupérer une information devant être imprimée dans le format
+%%  d'entête de la rupture s'il s'agit d'un programme d'édition) ?
+%SI 31
+%SI 99
+PRESENTER $FICHIER_BOUCLE
+%FIN
+%ETIQUETTE AUTRE_ENTITE_R4
+%QUESTION *VU ENTITE_ANNEXE
+%%  Sélectionnez la vue correspondant à ce fichier.Si cette vue
+%% n'existe pas encore, vous devez la définir et incorporer le
+%% fichier dans l'environnement de données.
+LIRE $ENTITE_ANNEXE
+%SI 99
+PRESENTER $ENTITE_ANNEXE
+%FIN
+%QUESTION *ON 32
+%%  Y a t'il un autre fichier à lire ?
+%SI 32
+%ALLER_A AUTRE_ENTITE_R4
+%FIN
+%FIN
+%QUESTION *ON 41
+%%  Y a t'il au moins une zone total à initialiser dans
+%%  la quatrième rupture ?
+%SI 41
+%ETIQUETTE AUTRE_ZONE_R4
+%QUESTION *VA ZONE_TOTAL
+%%  Indiquez le nom de cette zone
+$ZONE_TOTAL = 0
+%QUESTION *ON 42
+%%  Y a t'il une autre zone à initialiser dans
+%%  la quatrième rupture ?
+%SI 42
+%ALLER_A AUTRE_ZONE_R4
+%FIN
+%FIN
+%SI 99
+EDITER ENTETE_4
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 05
+*
+******************************
+TRT_CHANGEMENT $RUPTURE_5
+******************************
+%QUESTION *ON 31
+%%  Y a t'il au moins un fichier annexe à lire pour le traitement
+%%  d'initialisation de la cinquième rupture (par exemple pour
+%%  récupérer une information devant être imprimée dans le format
+%%  d'entête de la rupture s'il s'agit d'un programme d'édition) ?
+%SI 31
+%SI 99
+PRESENTER $FICHIER_BOUCLE
+%FIN
+%ETIQUETTE AUTRE_ENTITE_R5
+%QUESTION *VU ENTITE_ANNEXE
+%%  Sélectionnez la vue correspondant à ce fichier.Si cette vue
+%% n'existe pas encore, vous devez la définir et incorporer le
+%% fichier dans l'environnement de données.
+LIRE $ENTITE_ANNEXE
+%SI 99
+PRESENTER $ENTITE_ANNEXE
+%FIN
+%QUESTION *ON 32
+%%  Y a t'il un autre fichier à lire ?
+%SI 32
+%ALLER_A AUTRE_ENTITE_R5
+%FIN
+%FIN
+%QUESTION *ON 41
+%%  Y a t'il au moins une zone total à initialiser dans
+%%  la cinquième rupture ?
+%SI 41
+%ETIQUETTE AUTRE_ZONE_R5
+%QUESTION *VA ZONE_TOTAL
+%%  Indiquez le nom de cette zone
+$ZONE_TOTAL = 0
+%QUESTION *ON 42
+%%  Y a t'il une autre zone à initialiser dans
+%%  la cinquième rupture ?
+%SI 42
+%ALLER_A AUTRE_ZONE_R5
+%FIN
+%FIN
+%SI 99
+EDITER ENTETE_5
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 06
+*
+******************************
+TRT_CHANGEMENT $RUPTURE_6
+******************************
+%QUESTION *ON 31
+%%  Y a t'il au moins un fichier annexe à lire pour le traitement
+%%  d'initialisation de la sixième rupture (par exemple pour
+%%  récupérer une information devant être imprimée dans le format
+%%  d'entête de la rupture s'il s'agit d'un programme d'édition) ?
+%SI 31
+%SI 99
+PRESENTER $FICHIER_BOUCLE
+%FIN
+%ETIQUETTE AUTRE_ENTITE_R6
+%QUESTION *VU ENTITE_ANNEXE
+%%  Sélectionnez la vue correspondant à ce fichier.Si cette vue
+%% n'existe pas encore, vous devez la définir et incorporer le
+%% fichier dans l'environnement de données.
+LIRE $ENTITE_ANNEXE
+%SI 99
+PRESENTER $ENTITE_ANNEXE
+%FIN
+%QUESTION *ON 32
+%%  Y a t'il un autre fichier à lire ?
+%SI 32
+%ALLER_A AUTRE_ENTITE_R6
+%FIN
+%FIN
+%QUESTION *ON 41
+%%  Y a t'il au moins une zone total à initialiser dans
+%%  la sixième rupture ?
+%SI 41
+%ETIQUETTE AUTRE_ZONE_R6
+%QUESTION *VA ZONE_TOTAL
+%%  Indiquez le nom de cette zone
+$ZONE_TOTAL = 0
+%QUESTION *ON 42
+%%  Y a t'il une autre zone à initialiser dans la sixième rupture ?
+%SI 42
+%ALLER_A AUTRE_ZONE_R6
+%FIN
+%FIN
+%SI 99
+EDITER ENTETE_6
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 07
+*
+******************************
+TRT_CHANGEMENT $RUPTURE_7
+******************************
+%QUESTION *ON 31
+%%  Y a t'il au moins un fichier annexe à lire pour le traitement
+%%  d'initialisation de la septième rupture (par exemple pour
+%%  récupérer une information devant être imprimée dans le format
+%%  d'entête de la rupture s'il s'agit d'un programme d'édition) ?
+%SI 31
+%SI 99
+PRESENTER $FICHIER_BOUCLE
+%FIN
+%ETIQUETTE AUTRE_ENTITE_R7
+%QUESTION *VU ENTITE_ANNEXE
+%%  Sélectionnez la vue correspondant à ce fichier.Si cette vue
+%% n'existe pas encore, vous devez la définir et incorporer le
+%% fichier dans l'environnement de données.
+LIRE $ENTITE_ANNEXE
+%SI 99
+PRESENTER $ENTITE_ANNEXE
+%FIN
+%QUESTION *ON 32
+%%  Y a t'il un autre fichier à lire ?
+%SI 32
+%ALLER_A AUTRE_ENTITE_R7
+%FIN
+%FIN
+%QUESTION *ON 41
+%%  Y a t'il au moins une zone total à initialiser dans
+%%  la septième rupture ?
+%SI 41
+%ETIQUETTE AUTRE_ZONE_R7
+%QUESTION *VA ZONE_TOTAL
+%%  Indiquez le nom de cette zone
+$ZONE_TOTAL = 0
+%QUESTION *ON 42
+%%  Y a t'il une autre zone à initialiser dans la septième rupture ?
+%SI 42
+%ALLER_A AUTRE_ZONE_R7
+%FIN
+%FIN
+%SI 99
+EDITER ENTETE_7
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 08
+*
+******************************
+TRT_CHANGEMENT $RUPTURE_8
+******************************
+%QUESTION *ON 31
+%%  Y a t'il au moins un fichier annexe à lire pour le traitement
+%%  d'initialisation de la huitième rupture (par exemple pour
+%%  récupérer une information devant être imprimée dans le format
+%%  d'entête de la rupture s'il s'agit d'un programme d'édition) ?
+%SI 31
+%SI 99
+PRESENTER $FICHIER_BOUCLE
+%FIN
+%ETIQUETTE AUTRE_ENTITE_R8
+%QUESTION *VU ENTITE_ANNEXE
+%%  Sélectionnez la vue correspondant à ce fichier.Si cette vue
+%% n'existe pas encore, vous devez la définir et incorporer le
+%% fichier dans l'environnement de données.
+LIRE $ENTITE_ANNEXE
+%SI 99
+PRESENTER $ENTITE_ANNEXE
+%FIN
+%QUESTION *ON 32
+%%  Y a t'il un autre fichier à lire ?
+%SI 32
+%ALLER_A AUTRE_ENTITE_R8
+%FIN
+%FIN
+%QUESTION *ON 41
+%%  Y a t'il au moins une zone total à initialiser dans
+%%  la huitième rupture ?
+%SI 41
+%ETIQUETTE AUTRE_ZONE_R8
+%QUESTION *VA ZONE_TOTAL
+%%  Indiquez le nom de cette zone
+$ZONE_TOTAL = 0
+%QUESTION *ON 42
+%%  Y a t'il une autre zone à initialiser dans la huitième rupture ?
+%SI 42
+%ALLER_A AUTRE_ZONE_R8
+%FIN
+%FIN
+%SI 99
+EDITER ENTETE_8
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 09
+*
+******************************
+TRT_CHANGEMENT $RUPTURE_9
+******************************
+%QUESTION *ON 31
+%%  Y a t'il au moins un fichier annexe à lire pour le traitement
+%%  d'initialisation de la neuvième rupture (par exemple pour
+%%  récupérer une information devant être imprimée dans le format
+%%  d'entête de la rupture s'il s'agit d'un programme d'édition) ?
+%SI 31
+%SI 99
+PRESENTER $FICHIER_BOUCLE
+%FIN
+%ETIQUETTE AUTRE_ENTITE_R9
+%QUESTION *VU ENTITE_ANNEXE
+%%  Sélectionnez la vue correspondant à ce fichier.Si cette vue
+%% n'existe pas encore, vous devez la définir et incorporer le
+%% fichier dans l'environnement de données.
+LIRE $ENTITE_ANNEXE
+%SI 99
+PRESENTER $ENTITE_ANNEXE
+%FIN
+%QUESTION *ON 32
+%%  Y a t'il un autre fichier à lire ?
+%SI 32
+%ALLER_A AUTRE_ENTITE_R9
+%FIN
+%FIN
+%QUESTION *ON 41
+%%  Y a t'il au moins une zone total à initialiser dans
+%%  la neuvième rupture ?
+%SI 41
+%ETIQUETTE AUTRE_ZONE_R9
+%QUESTION *VA ZONE_TOTAL
+%%  Indiquez le nom de cette zone
+$ZONE_TOTAL = 0
+%QUESTION *ON 42
+%%  Y a t'il une autre zone à initialiser dans la neuvième rupture ?
+%SI 42
+%ALLER_A AUTRE_ZONE_R9
+%FIN
+%FIN
+%SI 99
+EDITER ENTETE_9
+%FIN
+FIN_TRAITEMENT
+%FIN
+*
+%SI 01
+*************************
+TRT_TOTAL $RUPTURE_1
+*************************
+%QUESTION *ON 41
+%%  Y a t'il au moins un calcul ou un traitement à effectuer
+%%  dans le traitement total de la première rupture?
+%SI 41
+%ETIQUETTE AUTRE_CALC_R1
+%QUESTION *IN INSTRUCTION
+%%  Spécifiez l'instruction
+$INSTRUCTION
+%QUESTION *ON 42
+%%  Y a t'il un autre calcul ou traitement à effectuer ?
+%SI 42
+%ALLER_A AUTRE_CALC_R1
+%FIN
+%FIN
+%SI 99
+EDITER TOTAL_1
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 02
+*************************
+TRT_TOTAL $RUPTURE_2
+*************************
+%QUESTION *ON 41
+%%  Y a t'il au moins un calcul ou un traitement à effectuer
+%%  dans le traitement total de la deuxième rupture?
+%SI 41
+%ETIQUETTE AUTRE_CALC_R2
+%QUESTION *IN INSTRUCTION
+%%  Spécifiez l'instruction
+$INSTRUCTION
+%QUESTION *ON 42
+%%  Y a t'il un autre calcul ou traitement à effectuer ?
+%SI 42
+%ALLER_A AUTRE_CALC_R2
+%FIN
+%FIN
+%SI 99
+EDITER TOTAL_2
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 03
+*************************
+TRT_TOTAL $RUPTURE_3
+*************************
+%QUESTION *ON 41
+%%  Y a t'il au moins un calcul ou un traitement à effectuer
+%%  dans le traitement total de la troisième rupture?
+%SI 41
+%ETIQUETTE AUTRE_CALC_R3
+%QUESTION *IN INSTRUCTION
+%%  Spécifiez l'instruction
+$INSTRUCTION
+%QUESTION *ON 42
+%%  Y a t'il un autre calcul ou traitement à effectuer ?
+%SI 42
+%ALLER_A AUTRE_CALC_R3
+%FIN
+%FIN
+%SI 99
+EDITER TOTAL_3
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 04
+*************************
+TRT_TOTAL $RUPTURE_4
+*************************
+%QUESTION *ON 41
+%%  Y a t'il au moins un calcul ou un traitement à effectuer
+%%  dans le traitement total de la quatrième rupture?
+%SI 41
+%ETIQUETTE AUTRE_CALC_R4
+%QUESTION *IN INSTRUCTION
+%%  Spécifiez l'instruction
+$INSTRUCTION
+%QUESTION *ON 42
+%%  Y a t'il un autre calcul ou traitement à effectuer ?
+%SI 42
+%ALLER_A AUTRE_CALC_R4
+%FIN
+%FIN
+%SI 99
+EDITER TOTAL_4
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 05
+*************************
+TRT_TOTAL $RUPTURE_5
+*************************
+%QUESTION *ON 41
+%%  Y a t'il au moins un calcul ou un traitement à effectuer
+%%  dans le traitement total de la cinquième rupture?
+%SI 41
+%ETIQUETTE AUTRE_CALC_R5
+%QUESTION *IN INSTRUCTION
+%%  Spécifiez l'instruction
+$INSTRUCTION
+%QUESTION *ON 42
+%%  Y a t'il un autre calcul ou traitement à effectuer ?
+%SI 42
+%ALLER_A AUTRE_CALC_R5
+%FIN
+%FIN
+%SI 99
+EDITER TOTAL_5
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 06
+*************************
+TRT_TOTAL $RUPTURE_6
+*************************
+%QUESTION *ON 41
+%%  Y a t'il au moins un calcul ou un traitement à effectuer
+%%  dans le traitement total de la sixième rupture?
+%SI 41
+%ETIQUETTE AUTRE_CALC_R6
+%QUESTION *IN INSTRUCTION
+%%  Spécifiez l'instruction
+$INSTRUCTION
+%QUESTION *ON 42
+%%  Y a t'il un autre calcul ou traitement à effectuer ?
+%SI 42
+%ALLER_A AUTRE_CALC_R6
+%FIN
+%FIN
+%SI 99
+EDITER TOTAL_6
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 07
+*************************
+TRT_TOTAL $RUPTURE_7
+*************************
+%QUESTION *ON 41
+%%  Y a t'il au moins un calcul ou un traitement à effectuer
+%%  dans le traitement total de la septième rupture?
+%SI 41
+%ETIQUETTE AUTRE_CALC_R7
+%QUESTION *IN INSTRUCTION
+%%  Spécifiez l'instruction
+$INSTRUCTION
+%QUESTION *ON 42
+%%  Y a t'il un autre calcul ou traitement à effectuer ?
+%SI 42
+%ALLER_A AUTRE_CALC_R7
+%FIN
+%FIN
+%SI 99
+EDITER TOTAL_7
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 08
+*************************
+TRT_TOTAL RUPTURE_8
+*************************
+%QUESTION *ON 41
+%%  Y a t'il au moins un calcul ou un traitement à effectuer
+%%  dans le traitement total de la huitième rupture?
+%SI 41
+%ETIQUETTE AUTRE_CALC_R8
+%QUESTION *IN INSTRUCTION
+%%  Spécifiez l'instruction
+$INSTRUCTION
+%QUESTION *ON 42
+%%  Y a t'il un autre calcul ou traitement à effectuer ?
+%SI 42
+%ALLER_A AUTRE_CALC_R8
+%FIN
+%FIN
+%SI 99
+EDITER TOTAL_8
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 09
+*************************
+TRT_TOTAL $RUPTURE_9
+*************************
+%QUESTION *ON 41
+%%  Y a t'il au moins un calcul ou un traitement à effectuer
+%%  dans le traitement total de la neuvième rupture?
+%SI 41
+%ETIQUETTE AUTRE_CALC_R9
+%QUESTION *IN INSTRUCTION
+%%  Spécifiez l'instruction
+$INSTRUCTION
+%QUESTION *ON 42
+%%  Y a t'il un autre calcul ou traitement à effectuer ?
+%SI 42
+%ALLER_A AUTRE_CALC_R9
+%FIN
+%FIN
+%SI 99
+EDITER TOTAL_9
+%FIN
+FIN_TRAITEMENT
+%FIN
+%SI 99
+***************
+CHANGEMENT_PAGE
+***************
+%SI 01
+EDITER ENTETE_1
+%FIN
+%SI N01
+EDITER ENTETE
+%FIN
+FIN_TRAITEMENT
+%FIN
+**********************
+DEBUT_PROCEDURE DETAIL
+**********************
+%SI 99
+PRESENTER $FICHIER_BOUCLE
+%FIN
+%QUESTION *ON 31
+%%  Y a t'il au moins un fichier annexe à lire pour exécuter le
+%%  traitement détail (par exemple pour récupérer une information
+%%  à éditer s'il s'agit d'un programme d'édition).
+%SI 31
+%ETIQUETTE AUTRE_ENTITE_D
+%QUESTION *VU ENTITE_ANNEXE
+%%  Sélectionnez la vue correspondant à ce fichier.Si cette vue
+%% n'existe pas encore, vous devez la définir et incorporer le
+%% fichier dans l'environnement de données.
+LIRE $ENTITE_ANNEXE
+%SI 99
+PRESENTER $ENTITE_ANNEXE
+%FIN
+%QUESTION *ON 32
+%%  Y a t'il un autre fichier annexe à lire ?
+%SI 32
+%ALLER_A AUTRE_ENTITE_D
+%FIN
+%FIN
+%QUESTION *ON 41
+%%  Y a t'il au moins un calcul ou un traitement à effectuer
+%%  dans le traitement détail?
+%SI 41
+%ETIQUETTE AUTRE_CALC_D
+%QUESTION *IN INSTRUCTION
+%%  Spécifiez l'instruction
+$INSTRUCTION
+%QUESTION *ON 42
+%%  Y a t'il un autre calcul ou traitement à effectuer ?
+%SI 42
+%ALLER_A AUTRE_CALC_D
+%FIN
+%FIN
+%SI 99
+EDITER DETAIL
+%FIN
+FIN_PROCEDURE
+*********************
+DEBUT_PROCEDURE TOTAL
+*********************
+%SI 99
+EDITER TOTAL_FINAL
+%FIN
+%QUESTION *ON 41
+%%  Y a t'il au moins un calcul ou un traitement à effectuer
+%%  dans le traitement total final ?
+%SI 41
+%ETIQUETTE AUTRE_CALC_T
+%QUESTION *IN INSTRUCTION
+%%  Spécifiez l'instruction
+$INSTRUCTION
+%QUESTION *ON 42
+%%  Y a t'il un autre calcul ou traitement à effectuer ?
+%SI 42
+%ALLER_A AUTRE_CALC_T
+%FIN
+%FIN
+FIN_PROCEDURE
+%SI 21
+%RECUPERER_VUE *LI $FICHIER_BOUCLE LISTE_PARAM
+RECEVOIR $LISTE_PARAM
+%FIN
+%SI 22
+%RECUPERER_VUE *LI $FICHIER_BOUCLE LISTE_PARAM
+RECEVOIR $LISTE_PARAM
+%FIN
+%SI 24
+%RECUPERER_VUE *LI $FICHIER_BOUCLE LISTE_PARAM
+RECEVOIR $LISTE_PARAM
+%FIN
+%SI 25
+%RECUPERER_VUE *LI $FICHIER_BOUCLE LISTE_PARAM
+RECEVOIR $LISTE_PARAM
+%FIN
+INSERER_STD_F
+%SI 99
+%QUESTION *ON 97
+%%  Voulez-vous générer le niveau II maintenant ?
+%SI 97
+%GENERER_N2 *SOUMIS
+%QUESTION *ON 96
+%%  Voulez-vous compiler maintenant ?
+%SI 96
+%COMPILATION
+%FIN
+%QUESTION **
+%%             Travaux de génération soumis.
+%%
+%%           Appuyez sur ENTREE pour continuer.
+%FIN
+%FIN
+%SI N99
+%QUESTION *ON 96
+%%  Voulez-vous compiler maintenant ?
+%SI 96
+%COMPILATION
+%QUESTION **
+%%             Travaux de génération soumis.
+%%
+%%           Faire ENTREE pour continuer.
+%FIN
+%FIN

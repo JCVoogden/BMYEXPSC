@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "EDI_POLICE_02",
+  "description" : "Edition des polices par Clients",
+  "creationDate" : "1995-06-08 07:08:06",
+  "updateDate" : "1995-06-08 07:08:06",
+  "visibility" : "PUBLIC",
+  "ibmName" : "EDIPO2",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "EDIPO2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

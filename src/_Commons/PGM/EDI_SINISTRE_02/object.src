@@ -1,0 +1,26 @@
+DEBUT_STD
+XNOM_PGM        = *NOM_PGM
+XUSER           = *USER
+FIN_STD
+RECEVOIR PCOD_CLIENT
+*--------------------------* Edition en-tête
+LIRE CLIENTS_DA
+IMPRIMER ENTETE
+*--------------------------* Boucle de lecture du fichier
+POSITIONNER_AV SINISTRE_DB
+LIRE_SUIVANT SINISTRE_DB
+TANT_QUE SINISTRE_DB EXISTE
+*--------------------------* Appel de la procédure détail
+  TRAITER_PROC SBRDET
+  LIRE_SUIVANT SINISTRE_DB
+REFAIRE
+*--------------------------* Edition Fin de cet état
+EDITER FIN
+CHANGEMENT_PAGE
+*--------------------------* Procédure changement page
+EDITER   ENTETE
+FIN_TRAITEMENT
+DEBUT_PROCEDURE SBRDET
+*--------------------------* Procédure détail
+IMPRIMER DETAIL
+FIN_PROCEDURE

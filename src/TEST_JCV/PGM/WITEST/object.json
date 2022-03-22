@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "WITEST",
+  "description" : "WITEST",
+  "creationDate" : "2006-10-30 12:44:51",
+  "updateDate" : "2011-06-14 13:05:51",
+  "visibility" : "PRIVATE",
+  "ibmName" : "WITEST",
+  "programType" : "I",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "WITEST",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

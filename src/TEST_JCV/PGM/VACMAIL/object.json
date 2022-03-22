@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "VACMAIL",
+  "description" : "VACMAIL",
+  "creationDate" : "2008-09-10 13:34:57",
+  "updateDate" : "2008-09-10 13:40:00",
+  "visibility" : "PRIVATE",
+  "ibmName" : "VCMAIL",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "VCMAIL",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

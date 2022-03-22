@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CTL_ZONE_REDOND",
+  "description" : "Controler zone redondante (PM)",
+  "creationDate" : "1996-07-05 09:06:29",
+  "updateDate" : "1996-07-05 09:14:51",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

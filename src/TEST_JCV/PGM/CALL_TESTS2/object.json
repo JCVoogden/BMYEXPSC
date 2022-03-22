@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "CALL_TESTS2",
+  "description" : "CALL_TEST",
+  "creationDate" : "2009-02-05 09:05:46",
+  "updateDate" : "2009-02-05 09:17:32",
+  "visibility" : "PRIVATE",
+  "ibmName" : "CALLS2",
+  "programType" : "B",
+  "sourceType" : "SADELIA",
+  "layoutCode" : "CALLS2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT",
+  "unicode" : true
+}

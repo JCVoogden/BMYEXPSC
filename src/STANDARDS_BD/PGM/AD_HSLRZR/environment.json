@@ -1,0 +1,197 @@
+{
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "A",
+      "fileName" : ""
+    },
+    "shortName" : "A",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "rename" : "A",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "B",
+      "fileName" : ""
+    },
+    "shortName" : "B",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "rename" : "B",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "I",
+      "fileName" : ""
+    },
+    "shortName" : "I",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "rename" : "I",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "J",
+      "fileName" : ""
+    },
+    "shortName" : "J",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "rename" : "J",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCORET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_NOM_DDS",
+      "fileName" : ""
+    },
+    "shortName" : "PNDDS",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_NOM_ENTITE",
+      "fileName" : ""
+    },
+    "shortName" : "PLENT",
+    "length" : 15,
+    "type" : "ALPHANUMERIC",
+    "designation" : "ENTITE",
+    "rename" : "PLENT",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_NOM_NOUV_DDS",
+      "fileName" : ""
+    },
+    "shortName" : "PNNDD",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_NOM_NOUV_PPTE",
+      "fileName" : ""
+    },
+    "shortName" : "PLNPT",
+    "length" : 15,
+    "type" : "ALPHANUMERIC",
+    "designation" : "NOUVEAU_PPTE",
+    "rename" : "PLNPT",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_NOM_PROPRIETE",
+      "fileName" : ""
+    },
+    "shortName" : "PLPRO",
+    "length" : 15,
+    "type" : "ALPHANUMERIC",
+    "designation" : "PROPRIETE",
+    "rename" : "PLPRO",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_NOM_RELATION",
+      "fileName" : ""
+    },
+    "shortName" : "PLREL",
+    "length" : 15,
+    "type" : "ALPHANUMERIC",
+    "designation" : "RELATION",
+    "rename" : "PLREL",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "T15",
+      "fileName" : ""
+    },
+    "shortName" : "T15",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "rename" : "T15",
+    "generation" : "NONE",
+    "dim1" : 15
+  }, {
+    "id" : {
+      "guideWord" : "T3",
+      "fileName" : ""
+    },
+    "shortName" : "T3",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "rename" : "T3",
+    "generation" : "NONE",
+    "dim1" : 3
+  }, {
+    "id" : {
+      "guideWord" : "W12",
+      "fileName" : ""
+    },
+    "shortName" : "W12",
+    "length" : 12,
+    "type" : "ALPHANUMERIC",
+    "rename" : "W12",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "W15",
+      "fileName" : ""
+    },
+    "shortName" : "W15",
+    "length" : 15,
+    "type" : "ALPHANUMERIC",
+    "rename" : "W15",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "W3",
+      "fileName" : ""
+    },
+    "shortName" : "W3",
+    "length" : 3,
+    "type" : "ALPHANUMERIC",
+    "designation" : "W3",
+    "rename" : "W3",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "W4",
+      "fileName" : ""
+    },
+    "shortName" : "W4",
+    "length" : 4,
+    "type" : "ALPHANUMERIC",
+    "rename" : "W4",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "W7",
+      "fileName" : ""
+    },
+    "shortName" : "W7",
+    "length" : 7,
+    "type" : "ALPHANUMERIC",
+    "rename" : "W7",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "W8",
+      "fileName" : ""
+    },
+    "shortName" : "W8",
+    "length" : 8,
+    "type" : "ALPHANUMERIC",
+    "rename" : "W8",
+    "generation" : "NONE"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "RECUP_DERN_NUM",
+  "description" : "récupérer le dernier numéro de séquence",
+  "creationDate" : "1996-07-05 09:07:04",
+  "updateDate" : "1996-07-05 09:26:11",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

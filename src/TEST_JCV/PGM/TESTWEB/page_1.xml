@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="1" name="ID_WPAGE1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml page.xsd">
+    <properties/>
+    <controls>
+        <control classId="0" className="ENTRYFIELD" error="3" guide="0" kinematic="0" name="BTN_1">
+            <properties>
+                <property id="-100" stringValue="TESTWEB_1_FORM_1"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="1" guide="0" kinematic="0" name="TEXTE">
+            <properties>
+                <property id="-100" stringValue="TESTWEB_1_FORM_1"/>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 50 -1"/>
+            </properties>
+        </control>
+    </controls>
+</page>

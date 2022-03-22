@@ -1,0 +1,9 @@
+{
+  "type" : "TDI",
+  "name" : "SAI_2T_SUP",
+  "description" : "Saisie par 2 transactions possibilité de supprimer",
+  "creationDate" : "1995-06-08 06:53:23",
+  "updateDate" : "1995-06-08 06:53:23",
+  "visibility" : "PUBLIC",
+  "templateType" : "I"
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "HBLVPF",
+  "description" : "Visualisation des préfixes fichiers",
+  "creationDate" : "1996-07-09 15:23:36",
+  "updateDate" : "1996-07-10 14:29:26",
+  "visibility" : "PUBLIC",
+  "ibmName" : "HBLVPF",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "HBLVPF",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

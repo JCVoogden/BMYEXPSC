@@ -1,0 +1,16 @@
+{
+  "type" : "PGM",
+  "name" : "CALENDRIER_2",
+  "description" : "Programme exemple utilsant un calendrier en div ",
+  "creationDate" : "2004-09-02 15:22:45",
+  "updateDate" : "2004-09-14 12:31:08",
+  "visibility" : "PRIVATE",
+  "ibmName" : "calendrier2",
+  "programType" : "I",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "CALEN2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "keepState" : true,
+  "canvasName" : "CANEVAS_EXEMPLE"
+}

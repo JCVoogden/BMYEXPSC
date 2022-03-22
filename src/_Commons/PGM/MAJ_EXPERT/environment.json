@@ -1,0 +1,44 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "EXPERT_DA",
+    "fileName" : "EXPERTL",
+    "access" : "BY_KEY",
+    "update" : "CREATE_AND_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_EXPERT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "P_COD_ACTION",
+      "fileName" : ""
+    },
+    "shortName" : "PCACT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_ACTION",
+    "rename" : "PCACT",
+    "generation" : "LEVEL2"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCRET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_RETOUR",
+    "rename" : "PCRET",
+    "generation" : "LEVEL2"
+  } ]
+}

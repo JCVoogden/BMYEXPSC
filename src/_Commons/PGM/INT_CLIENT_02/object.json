@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "INT_CLIENT_02",
+  "description" : "Interrogation des clients et des prospects",
+  "creationDate" : "1995-06-08 07:31:27",
+  "updateDate" : "1995-06-08 07:31:27",
+  "visibility" : "PUBLIC",
+  "ibmName" : "INTCL2",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "INTCL2",
+  "programTemplateName" : "GES_SFF_1TR_01",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

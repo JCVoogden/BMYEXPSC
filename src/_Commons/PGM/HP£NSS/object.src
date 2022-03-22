@@ -1,0 +1,20 @@
+********************************************************************
+*        CONTROLE DE LA CLE DU NUMERO DE SECURITE SOCIALE          *
+*                                                                  *
+********************************************************************
+RECEVOIR PNUM_SEC_SOC PCLE_SEC_SOC PCODE_ERREUR
+*
+PCODE_ERREUR = *BLANK
+SI PNUM_SEC_SOC <> 0 ET PCLE_SEC_SOC <> *BLANK
+  W120 = PNUM_SEC_SOC / 97
+  RESTE WMTRES
+  W20 = 97 - WMTRES
+  W2 = W20
+  SI PCLE_SEC_SOC = '  ';'00'
+    PCLE_SEC_SOC = W2
+  FIN
+  SI W2 <> PCLE_SEC_SOC
+    PCODE_ERREUR = '1'
+  FIN
+FIN
+RETOURNER

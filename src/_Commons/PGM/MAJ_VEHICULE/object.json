@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "MAJ_VEHICULE",
+  "description" : "Mise à jour des véhicules",
+  "creationDate" : "1995-06-08 07:41:11",
+  "updateDate" : "2005-11-04 10:10:25",
+  "visibility" : "PUBLIC",
+  "ibmName" : "MAJVEH",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "MAJVEH",
+  "programTemplateName" : "SAI_2T_SUP",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

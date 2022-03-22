@@ -1,0 +1,11 @@
+{
+  "type" : "ETA",
+  "name" : "EDI_AFFAIRES_02",
+  "description" : "Edition du chiffres d'affaires",
+  "creationDate" : "1995-06-08 07:03:37",
+  "updateDate" : "1995-06-08 07:03:37",
+  "visibility" : "PUBLIC",
+  "layoutCode" : "EDICA2",
+  "reportTypeName" : "LST_AFF_02",
+  "nature" : "ADELIA"
+}

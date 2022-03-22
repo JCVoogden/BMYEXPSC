@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "HP£RIB",
+  "description" : "Controle clé RIB",
+  "creationDate" : "1995-07-27 12:02:06",
+  "updateDate" : "1995-09-11 07:17:34",
+  "visibility" : "PUBLIC",
+  "ibmName" : "HP£RIB",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "HP£RIB",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,22 @@
+{
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "NOM_ECRAN",
+      "fileName" : ""
+    },
+    "shortName" : "WCOFIC",
+    "length" : 8,
+    "type" : "ALPHANUMERIC",
+    "rename" : "WCOFIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCORET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE"
+  } ]
+}

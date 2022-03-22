@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "WS_LICENCE_CLT",
+  "description" : "Client du service Web",
+  "creationDate" : "2010-05-21 13:58:33",
+  "updateDate" : "2021-04-30 12:30:21",
+  "visibility" : "PRIVATE",
+  "ibmName" : "LICCLT",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "LICCLT",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT",
+  "manageHistoryButtons" : " "
+}

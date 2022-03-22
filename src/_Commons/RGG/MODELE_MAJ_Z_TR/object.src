@@ -1,0 +1,5 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   $DAT_MAJ_ENR = *DATE
+*ROW_METADATA(ADELIA                 )   $HEU_MAJ_ENR = *TIME
+*ROW_METADATA(ADELIA                 )   $UTI_MAJ_ENR = *USER
+*ROW_METADATA(ADELIA                 )FIN_RGG

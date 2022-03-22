@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "AV_2",
+  "description" : "Test inserer_rg verif interactive",
+  "creationDate" : "2005-10-26 16:02:08",
+  "updateDate" : "2005-10-28 12:53:32",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA", "VISUAL", "WADELIA" ]
+}

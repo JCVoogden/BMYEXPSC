@@ -1,0 +1,66 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20100720)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20100720)      
+*ROW_METADATA(ADELIA         20100720)   FIN_DECL
+*ROW_METADATA(ADELIA         20100720)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20100720)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20100720)      executer id_fen0
+*ROW_METADATA(ADELIA         20100720)   FIN_INIT
+*ROW_METADATA(ADELIA         20100720)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20100720)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20100720)         
+*ROW_METADATA(ADELIA         20100720)      FIN_DECL
+*ROW_METADATA(ADELIA         20100720)      DEBUT_INIT
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV LOCAL
+*ROW_METADATA(ADELIA         20100720)            traiter_proc charger
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20100720)      FIN_INIT
+*ROW_METADATA(ADELIA         20100720)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20100720)         DEBUT_OBJET ID_OBJ0
+*ROW_METADATA(ADELIA         20100720)            DEBUT_EVT ID_OBJ0:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV LOCAL
+*ROW_METADATA(ADELIA         20100720)                  cdcl = zcdcl
+*ROW_METADATA(ADELIA         20100720)                  creer_sql mclient
+*ROW_METADATA(ADELIA         20100720)                  valider_maj
+*ROW_METADATA(ADELIA         20100720)                  traiter_proc charger
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20100720)            FIN_EVT
+*ROW_METADATA(ADELIA         20100720)         FIN_OBJET
+*ROW_METADATA(ADELIA         20100720)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20100720)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20100720)         
+*ROW_METADATA(ADELIA         20100720)      FIN_VERIF
+*ROW_METADATA(ADELIA         20100720)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20100720)         
+*ROW_METADATA(ADELIA         20100720)      FIN_VALID
+*ROW_METADATA(ADELIA         20100720)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20100720)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20100720)   FIN_FENETRE
+*ROW_METADATA(ADELIA         20100720)   DEBUT_PROCEDURE CHARGER *SERVER(LOCAL)
+*ROW_METADATA(ADELIA         20100720)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20100720)         curseur c1 mclient *tri(cdcl)
+*ROW_METADATA(ADELIA         20100720)      FIN_DECL
+*ROW_METADATA(ADELIA         20100720)      
+*ROW_METADATA(ADELIA         20100720)      vider_lst id_fen0.id_obj:liste
+*ROW_METADATA(ADELIA         20100720)      
+*ROW_METADATA(ADELIA         20100720)      ouvrir_sql_c c1
+*ROW_METADATA(ADELIA         20100720)      lire_av_sql_c c1
+*ROW_METADATA(ADELIA         20100720)      
+*ROW_METADATA(ADELIA         20100720)      tant_que *sqlcode = *normal
+*ROW_METADATA(ADELIA         20100720)      
+*ROW_METADATA(ADELIA         20100720)      *   presenter mclient id_fen0
+*ROW_METADATA(ADELIA         20100720)      
+*ROW_METADATA(ADELIA         20100720)         zcdcl = cdcl
+*ROW_METADATA(ADELIA         20100720)         zllcl = llcl
+*ROW_METADATA(ADELIA         20100720)         zencours = encours
+*ROW_METADATA(ADELIA         20100720)         
+*ROW_METADATA(ADELIA         20100720)         inserer_elt id_fen0.id_obj:liste
+*ROW_METADATA(ADELIA         20100720)      
+*ROW_METADATA(ADELIA         20100720)         lire_av_sql_c c1
+*ROW_METADATA(ADELIA         20100720)      
+*ROW_METADATA(ADELIA         20100720)      refaire
+*ROW_METADATA(ADELIA         20100720)      
+*ROW_METADATA(ADELIA         20100720)      fermer_sql_c c1
+*ROW_METADATA(ADELIA         20100720)      
+*ROW_METADATA(ADELIA         20100720)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

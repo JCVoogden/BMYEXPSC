@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Document sans titre</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<adelia:css_link/>
+</head>
+
+<body>
+ <!-- déclaration script gérant le calendrier -->
+  <script language="JavaScript" type="text/javascript" src="../js/calendar1.js"> /* */ </script>
+ 
+<form name="CALENDRIER_1_FORM_1" id="CALENDRIER_1_FORM_1" method="post">
+<table border="0" cellspacing="2" cellpadding="0">
+  <tr>
+    <td width="120" >Date de d&eacute;but :</td>
+    <td width="200" ><adelia:entryfield type="DATE" inputctrl="DATE"><input type="text" name="ZDATE_DEBUT" id="ZDATE_DEBUT" size="10" maxlength="10"/></adelia:entryfield>
+&nbsp;<a href="javascript:caldeb.popup();"><img src="../images/cal1.gif" alt="Cliquer pour choisir" width="16" height="16" border="0" /></a></td>
+  </tr>
+  <tr>
+    <td>Date de fin</td>
+    <td><adelia:entryfield type="DATE" inputctrl="DATE"><input type="text" name="ZDATE_FIN" id="ZDATE_FIN" size="10" maxlength="10"/></adelia:entryfield>
+&nbsp;<a href="javascript:calfin.popup();"><img src="../images/cal1.gif" alt="Cliquer pour choisir" width="16" height="16" border="0" /></a></td>
+  </tr>
+ </table>
+ 
+ <!-- script gérant le lien entre le calendrier et les zones dates de la page -->
+ <script language="JavaScript" type="text/javascript">
+			/*   pour appel calendrier sur ZDATE_DEBUT */       
+			var caldeb = new calendar1(document.forms['CALENDRIER_1_FORM_1'].elements['ZDATE_DEBUT']);
+			caldeb.year_scroll = true;
+			caldeb.time_comp = false; 
+			/*   pour appel calendrier sur ZDATE_FIN */ 
+			var calfin = new calendar1(document.forms['CALENDRIER_1_FORM_1'].elements['ZDATE_FIN']);
+			calfin.year_scroll = true;
+			calfin.time_comp = false; 
+</script>
+</form>
+</body>
+</html>

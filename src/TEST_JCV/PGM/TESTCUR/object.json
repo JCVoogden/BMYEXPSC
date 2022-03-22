@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "TESTCUR",
+  "description" : "TESTCUR",
+  "creationDate" : "2006-10-20 12:18:36",
+  "updateDate" : "2007-02-19 09:04:14",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TSTCUR",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TSTCUR",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

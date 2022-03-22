@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "GLISSER_DEPOSER",
+  "description" : "Utilisation de la fonctionnalité glisser/deposer",
+  "creationDate" : "2004-06-28 08:38:45",
+  "updateDate" : "2004-09-06 07:05:32",
+  "visibility" : "PRIVATE",
+  "ibmName" : "GLIDEP",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "GLIDEP",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

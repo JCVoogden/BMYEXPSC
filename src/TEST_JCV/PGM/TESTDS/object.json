@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "TESTDS",
+  "description" : "TESTDS",
+  "creationDate" : "2008-03-17 08:46:55",
+  "updateDate" : "2008-03-17 08:49:13",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TESTDS",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TESTDS",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

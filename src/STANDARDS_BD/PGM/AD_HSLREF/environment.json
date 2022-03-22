@@ -1,0 +1,252 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "01"
+    },
+    "guideWord" : "VUE_FICHIER",
+    "fileName" : "FICHIEL3",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "generation" : "NONE",
+    "accesses" : [ {
+      "id" : {
+        "code" : "01",
+        "ordinal" : 1
+      },
+      "guideWord" : "W_NOM_ENTITE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "02"
+    },
+    "guideWord" : "VUE_FIC_PREFIXE",
+    "fileName" : "FICHIEL2",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "generation" : "NONE",
+    "accesses" : [ {
+      "id" : {
+        "code" : "02",
+        "ordinal" : 1
+      },
+      "guideWord" : "WW_COD_PREFIXE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "F2_ANN_CREATION",
+      "fileName" : "FICHIEL2"
+    },
+    "shortName" : "FIACRE",
+    "length" : 4,
+    "type" : "NUMERIC",
+    "designation" : "Année de création",
+    "rename" : "F2ACRE",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "F2_COD_PREFIXE",
+      "fileName" : "FICHIEL2"
+    },
+    "shortName" : "FICPRE",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "designation" : "Code préfixe",
+    "rename" : "F2CPRE",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "F2_JOU_CREATION",
+      "fileName" : "FICHIEL2"
+    },
+    "shortName" : "FIJCRE",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "designation" : "Jour de création",
+    "rename" : "F2JCRE",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "F2_LIB_FICHIER",
+      "fileName" : "FICHIEL2"
+    },
+    "shortName" : "FILDSF",
+    "length" : 50,
+    "type" : "ALPHANUMERIC",
+    "designation" : "Description fichier",
+    "rename" : "F2LDSF",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "F2_MOI_CREATION",
+      "fileName" : "FICHIEL2"
+    },
+    "shortName" : "FIMCRE",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "designation" : "Mois de creation",
+    "rename" : "F2MCRE",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "F2_NOM_ENTITE",
+      "fileName" : "FICHIEL2"
+    },
+    "shortName" : "FINENT",
+    "length" : 15,
+    "type" : "ALPHANUMERIC",
+    "designation" : "Nom entité",
+    "rename" : "F2NENT",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "F2_NOM_FICHIER",
+      "fileName" : "FICHIEL2"
+    },
+    "shortName" : "FILFIC",
+    "length" : 8,
+    "type" : "ALPHANUMERIC",
+    "designation" : "Nom de fichier",
+    "rename" : "F2LFIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "I",
+      "fileName" : ""
+    },
+    "shortName" : "I",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "rename" : "I",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCRET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "MODELE",
+    "rename" : "PCRET",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_NOM_ENTITE",
+      "fileName" : ""
+    },
+    "shortName" : "PLENT",
+    "length" : 15,
+    "type" : "ALPHANUMERIC",
+    "designation" : "ENTITE",
+    "rename" : "PLENT",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_NOM_FIC_LOG",
+      "fileName" : ""
+    },
+    "shortName" : "PLFIL",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "designation" : "FICLOG",
+    "rename" : "PLFIL",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_NOM_FICHIER",
+      "fileName" : ""
+    },
+    "shortName" : "PLFIC",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "designation" : "FICHIER",
+    "rename" : "PLFIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_NOM_FORMAT",
+      "fileName" : ""
+    },
+    "shortName" : "PLFMT",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "designation" : "FMTFIC",
+    "rename" : "PLFMT",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "TAB_NOM",
+      "fileName" : ""
+    },
+    "shortName" : "TNO",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "rename" : "TNO",
+    "generation" : "NONE",
+    "dim1" : 10
+  }, {
+    "id" : {
+      "guideWord" : "W_LONG_NOM",
+      "fileName" : ""
+    },
+    "shortName" : "WLONN",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "rename" : "WLONN",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "W_NOM_ENTITE",
+      "fileName" : ""
+    },
+    "shortName" : "WNENT",
+    "length" : 15,
+    "type" : "ALPHANUMERIC",
+    "rename" : "WNENT",
+    "generation" : "NONE",
+    "reference" : "FINENT"
+  }, {
+    "id" : {
+      "guideWord" : "W6",
+      "fileName" : ""
+    },
+    "shortName" : "W6",
+    "length" : 6,
+    "type" : "ALPHANUMERIC",
+    "rename" : "W6",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "W6_2",
+      "fileName" : ""
+    },
+    "shortName" : "W62",
+    "length" : 6,
+    "type" : "ALPHANUMERIC",
+    "rename" : "W62",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "WDATE",
+      "fileName" : ""
+    },
+    "shortName" : "WDATE",
+    "length" : 6,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "WW_COD_PREFIXE",
+      "fileName" : ""
+    },
+    "shortName" : "WWCPRE",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "rename" : "WWCPRE",
+    "generation" : "NONE",
+    "reference" : "FICPRE"
+  } ]
+}

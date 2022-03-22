@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CTR_CLE_SS",
+  "description" : "Contrôle de la clé SS",
+  "creationDate" : "1995-06-29 07:22:42",
+  "updateDate" : "1995-12-12 12:46:19",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

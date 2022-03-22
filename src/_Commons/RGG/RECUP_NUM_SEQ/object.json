@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "RECUP_NUM_SEQ",
+  "description" : "Récupérer le dernier numéro de séquence",
+  "creationDate" : "1995-06-29 07:24:52",
+  "updateDate" : "1995-12-12 12:46:47",
+  "visibility" : "PUBLIC",
+  "mrClass" : "IP",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

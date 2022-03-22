@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Fenêtre principale" help="" id="0" name="FEN_PRINCIPALE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-37" intValue="2"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="516"/>
+        <property id="-3" intValue="703"/>
+        <property id="-2" intValue="81"/>
+        <property id="-1" intValue="88"/>
+        <property id="3" stringValue="Fenêtre principale"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="21"/>
+    </properties>
+    <menu>
+        <item key1="0" key2="0" name="LANCER_FILLE_1" state="4112" text="Menu lancer fille 1" type="1"/>
+        <item key1="0" key2="0" name="LANCER_FILLE_2" state="4112" text="Menu lancer fille 2" type="1"/>
+        <item key1="0" key2="0" name="MENU_COMMUN" state="4112" text="Menu Commun" type="1">
+            <menu>
+                <item key1="0" key2="0" name="COMMUN" state="4112" text="Commun" type="1"/>
+                <item key1="0" key2="0" name="FILLE1" state="4112" text="Lancer la fenêtre de la fille 1" type="1"/>
+                <item key1="0" key2="0" name="FILLE2" state="4112" text="Lancer la fenêtre de la fille 2" type="1"/>
+            </menu>
+        </item>
+    </menu>
+    <controls/>
+</window>

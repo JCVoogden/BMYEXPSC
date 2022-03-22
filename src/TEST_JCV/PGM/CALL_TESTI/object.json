@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "CALL_TESTI",
+  "description" : "Programme de test",
+  "creationDate" : "2009-02-05 09:04:52",
+  "updateDate" : "2009-02-05 09:16:40",
+  "visibility" : "PRIVATE",
+  "ibmName" : "CALLI",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "CALLI",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "unicode" : true
+}

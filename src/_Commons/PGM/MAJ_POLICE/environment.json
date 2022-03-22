@@ -1,0 +1,143 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "CLIENTS_DA",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DB"
+    },
+    "guideWord" : "POLICE_DB",
+    "fileName" : "POLICEL",
+    "access" : "BY_KEY",
+    "update" : "CREATE_AND_UPDATE",
+    "nbKeys" : 2,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DB",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    }, {
+      "id" : {
+        "code" : "DB",
+        "ordinal" : 2
+      },
+      "guideWord" : "ZZNUM_POLICE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DC"
+    },
+    "guideWord" : "VEHICULE_DC",
+    "fileName" : "VEHICUL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DC",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZNUM_IMA_VEHIC",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "JA"
+    },
+    "guideWord" : "RCLIENTS_COD",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "UPDATE_ONLY",
+    "generation" : "LEVEL2",
+    "accesses" : [ {
+      "id" : {
+        "code" : "JA",
+        "ordinal" : 1
+      },
+      "guideWord" : "WG_COD_CLI",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "JB"
+    },
+    "guideWord" : "RVEHICUL_COD",
+    "fileName" : "VEHICUL",
+    "access" : "BY_KEY",
+    "update" : "UPDATE_ONLY",
+    "generation" : "LEVEL2",
+    "accesses" : [ {
+      "id" : {
+        "code" : "JB",
+        "ordinal" : 1
+      },
+      "guideWord" : "WG_COD_VEH",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "P_COD_ACTION",
+      "fileName" : ""
+    },
+    "shortName" : "PCACT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_ACTION",
+    "rename" : "PCACT",
+    "generation" : "LEVEL2"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCRET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_RETOUR",
+    "rename" : "PCRET",
+    "generation" : "LEVEL2"
+  }, {
+    "id" : {
+      "guideWord" : "WG_COD_CLI",
+      "fileName" : ""
+    },
+    "shortName" : "WGCCLI",
+    "length" : 6,
+    "type" : "ALPHANUMERIC",
+    "designation" : "WG_COD_CLI",
+    "rename" : "WGCCLI",
+    "generation" : "LEVEL2"
+  }, {
+    "id" : {
+      "guideWord" : "WG_COD_VEH",
+      "fileName" : ""
+    },
+    "shortName" : "WGCVEH",
+    "length" : 15,
+    "type" : "ALPHANUMERIC",
+    "designation" : "WG_COD_VEH",
+    "rename" : "WGCVEH",
+    "generation" : "LEVEL2"
+  } ]
+}

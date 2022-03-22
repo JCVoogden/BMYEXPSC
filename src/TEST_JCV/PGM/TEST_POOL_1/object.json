@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "TEST_POOL_1",
+  "description" : "Test de charge C/S",
+  "creationDate" : "2009-06-04 09:43:14",
+  "updateDate" : "2010-10-12 09:34:25",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TPOOL1",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TPOOL1",
+  "level2GenType" : 2,
+  "level2DatabaseGenMode" : "SQL"
+}

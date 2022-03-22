@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "FEN_VEHICULE",
+  "description" : "Fenêtre d'affichage des véhicules",
+  "creationDate" : "1995-06-08 07:23:06",
+  "updateDate" : "1995-06-08 07:23:06",
+  "visibility" : "PUBLIC",
+  "ibmName" : "FENVEH",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "FENVEH",
+  "programTemplateName" : "UTI_FEN_NIV2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

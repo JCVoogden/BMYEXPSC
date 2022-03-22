@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "TEST_IMAGE",
+  "description" : "TEST_IMAGE",
+  "creationDate" : "2010-10-27 08:25:46",
+  "updateDate" : "2010-10-27 08:28:33",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TSTIMG",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TSTIMG",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

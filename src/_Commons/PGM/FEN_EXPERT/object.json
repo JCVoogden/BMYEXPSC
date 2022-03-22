@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "FEN_EXPERT",
+  "description" : "Fenêtre d'affichage des experts",
+  "creationDate" : "1995-06-08 07:17:33",
+  "updateDate" : "1995-06-08 07:17:33",
+  "visibility" : "PUBLIC",
+  "ibmName" : "FENEXP",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "FENEXP",
+  "programTemplateName" : "UTI_FEN_NIV2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

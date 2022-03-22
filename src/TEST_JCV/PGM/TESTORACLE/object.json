@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "TESTORACLE",
+  "description" : "TESTORACLE",
+  "creationDate" : "2008-11-28 14:35:54",
+  "updateDate" : "2008-11-28 15:22:23",
+  "visibility" : "PRIVATE",
+  "ibmName" : "ORACLE",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "ORACLE",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

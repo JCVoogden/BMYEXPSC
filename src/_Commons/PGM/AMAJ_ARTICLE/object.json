@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AMAJ_ARTICLE",
+  "description" : "Aides dspf pour le programme MAJ_ARTICLE",
+  "creationDate" : "1995-06-08 06:59:51",
+  "updateDate" : "1995-06-08 06:59:51",
+  "visibility" : "PUBLIC",
+  "ibmName" : "AIDART",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "AIDART",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml report.xsd">
+    <formats>
+        <format blankLinesBefore="1" code="01" guideWord="ENTETE" jumpLinesBefore="1" nbLines="2" shortName="SOR01"/>
+        <format blankLinesBefore="1" code="02" guideWord="DETAIL" nbLines="5" shortName="SOR02"/>
+        <format code="03" guideWord="FIN" jumpLinesBefore="1" nbLines="2" shortName="SOR03"/>
+    </formats>
+    <entities>
+        <entity format="02" name="PERSONN">
+            <properties>
+                <property access="1" name="COD_MAT_PERS"/>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field description="NOM DU PROGRAMME." formatCode="01" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" mode="OUTPUT" type="STRING" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+                <parameter key="EXP" value="EDIPE1"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="38" x="30" y="1">
+            <text text="Fiche individuelle       Demandé par :"/>
+        </field>
+        <field description="UTILISATEUR" formatCode="01" guideWord="XUSER" kind="USER_VARIABLE" layoutCode="XUSER2" length="10" mode="OUTPUT" type="STRING" x="70" y="1">
+            <parameters>
+                <parameter key="DFT" value="*USER"/>
+                <parameter key="EXP" value="QPGMR"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="4" x="55" y="2">
+            <text text="Le :"/>
+        </field>
+        <field description="N00002" formatCode="01" guideWord="N00002" kind="DATE" layoutCode="N00002" length="6" mode="OUTPUT" type="NUMBER" x="60" y="2">
+            <parameters>
+                <parameter key="EDW" value="'  /  /  '"/>
+                <parameter key="EXP" value="27/02/92"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="1" x="70" y="2">
+            <text text="à"/>
+        </field>
+        <field description="N00003" formatCode="01" guideWord="N00003" kind="TIME" layoutCode="N00003" length="6" mode="OUTPUT" type="NUMBER" x="72" y="2">
+            <parameters>
+                <parameter key="EDW" value="'  :  :  '"/>
+                <parameter key="EXP" value="11:14:12"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="29" x="1" y="3">
+            <text text="Matricule personnel . . . . ."/>
+        </field>
+        <field description="Matricule personnel" formatCode="02" guideWord="ZZCOD_MAT_PERS" kind="VARIABLE" kinematicLogicalProperty="PERSONN.COD_MAT_PERS" layoutCode="ZZCMAT" length="2" logicalProperty="PERSONN.COD_MAT_PERS" mode="OUTPUT" type="STRING" viewCode="DA" x="32" y="3">
+            <parameters>
+                <parameter key="DFT" value="xx"/>
+                <parameter key="EXP" value="01"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="29" x="1" y="4">
+            <text text="Nom . . . . . . . . . . . . ."/>
+        </field>
+        <field description="Nom" formatCode="02" guideWord="ZZNOM_PERS" kind="VARIABLE" kinematicLogicalProperty="PERSONN.NOM_PERS" layoutCode="ZZLPER" length="30" logicalProperty="PERSONN.NOM_PERS" mode="OUTPUT" type="STRING" viewCode="DA" x="32" y="4">
+            <parameters>
+                <parameter key="DFT" value="??????????????????????????????"/>
+                <parameter key="EXP" value="DUPONT ALBERT"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="29" x="1" y="5">
+            <text text="Montant du salaire. . . . . ."/>
+        </field>
+        <field description="Montant du salaire" editCode="CODE_L" formatCode="02" guideWord="ZZMTT_SAL_PRS" kind="VARIABLE" kinematicLogicalProperty="PERSONN.MTT_SAL_PRS" layoutCode="ZZTSPR" length="10" logicalProperty="PERSONN.MTT_SAL_PRS" mode="OUTPUT" scale="2" type="NUMBER" viewCode="DA" x="32" y="5">
+            <parameters>
+                <parameter key="DFT" value="9999999,99"/>
+                <parameter key="EXP" value="15000,00"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="29" x="1" y="6">
+            <text text="Taux de commission. . . . . ."/>
+        </field>
+        <field description="Taux de commission" editCode="CODE_4" formatCode="02" guideWord="ZZTAU_CON_PERS" kind="VARIABLE" kinematicLogicalProperty="PERSONN.TAU_CON_PERS" layoutCode="ZZXCPR" length="6" logicalProperty="PERSONN.TAU_CON_PERS" mode="OUTPUT" scale="2" type="NUMBER" viewCode="DA" x="32" y="6">
+            <parameters>
+                <parameter key="DFT" value="999,99"/>
+                <parameter key="EXP" value="5,25"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="29" x="1" y="7">
+            <text text="Matricule hiérarchie. . . . ."/>
+        </field>
+        <field description="Matricule personnel" formatCode="02" guideWord="ZZCOD_MAT_PER2" kind="USER_VARIABLE" kinematicLogicalProperty="PERSONN.COD_MAT_PER2" layoutCode="ZZCMA2" length="2" mode="OUTPUT" type="STRING" viewCode="DA" x="32" y="7">
+            <parameters>
+                <parameter key="DFT" value="xx"/>
+                <parameter key="EXP" value="04"/>
+            </parameters>
+        </field>
+        <field description="Nom du chef" formatCode="02" guideWord="ZNOM_HIERARCHIE" kind="USER_VARIABLE" layoutCode="ZLHIER" length="30" mode="OUTPUT" type="STRING" x="35" y="7">
+            <parameters>
+                <parameter key="DFT" value="Pas de chef"/>
+                <parameter key="EXP" value="DUCHESNE Arthur"/>
+            </parameters>
+        </field>
+        <field description="NOM DU PROGRAMME." formatCode="03" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" mode="OUTPUT" type="STRING" x="2" y="8">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+                <parameter key="EXP" value="EDIPE1"/>
+            </parameters>
+        </field>
+        <field formatCode="03" kind="CONSTANT" length="15" x="30" y="8">
+            <text text="Fin de cet état"/>
+        </field>
+        <field formatCode="03" kind="CONSTANT" length="13" x="55" y="8">
+            <text text="Demandé par :"/>
+        </field>
+        <field description="UTILISATEUR" formatCode="03" guideWord="XUSER" kind="USER_VARIABLE" layoutCode="XUSER2" length="10" mode="OUTPUT" type="STRING" x="70" y="8">
+            <parameters>
+                <parameter key="DFT" value="*USER"/>
+                <parameter key="EXP" value="QPGMR"/>
+            </parameters>
+        </field>
+        <field formatCode="03" kind="CONSTANT" length="4" x="55" y="9">
+            <text text="Le :"/>
+        </field>
+        <field description="N00012" formatCode="03" guideWord="N00012" kind="DATE" layoutCode="N00012" length="6" mode="OUTPUT" type="NUMBER" x="60" y="9">
+            <parameters>
+                <parameter key="EDW" value="'  /  /  '"/>
+                <parameter key="EXP" value="27/02/92"/>
+            </parameters>
+        </field>
+        <field formatCode="03" kind="CONSTANT" length="1" x="70" y="9">
+            <text text="à"/>
+        </field>
+        <field description="N00013" formatCode="03" guideWord="N00013" kind="TIME" layoutCode="N00013" length="6" mode="OUTPUT" type="NUMBER" x="72" y="9">
+            <parameters>
+                <parameter key="EDW" value="'  :  :  '"/>
+                <parameter key="EXP" value="11:14:15"/>
+            </parameters>
+        </field>
+    </fields>
+</report>

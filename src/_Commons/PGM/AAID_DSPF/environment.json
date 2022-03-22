@@ -1,0 +1,30 @@
+{
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "X1",
+      "fileName" : ""
+    },
+    "shortName" : "X1",
+    "length" : 5,
+    "type" : "NUMERIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "X2",
+      "fileName" : ""
+    },
+    "shortName" : "X2",
+    "length" : 5,
+    "type" : "NUMERIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "X3",
+      "fileName" : ""
+    },
+    "shortName" : "X3",
+    "length" : 5,
+    "type" : "NUMERIC",
+    "generation" : "NONE"
+  } ]
+}

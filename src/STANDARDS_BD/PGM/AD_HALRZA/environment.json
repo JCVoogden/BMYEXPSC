@@ -1,0 +1,42 @@
+{
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCORET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_NOM_ENTITE",
+      "fileName" : ""
+    },
+    "shortName" : "PLENT",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PLENT",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_NOM_ZONE",
+      "fileName" : ""
+    },
+    "shortName" : "PLZON",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PLZON",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_NOM_ZONE_ASSO",
+      "fileName" : ""
+    },
+    "shortName" : "PLZAS",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PLZAS",
+    "generation" : "NONE"
+  } ]
+}

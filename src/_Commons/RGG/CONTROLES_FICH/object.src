@@ -1,0 +1,17 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   DECLARER WNVUE;W_NOM_VUE 16
+*ROW_METADATA(ADELIA                 )   SI P_COD_RETOUR <> '1';'2';'3'
+*ROW_METADATA(ADELIA                 )   *
+*ROW_METADATA(ADELIA                 )   * Le test modifiant le code retour n'est fait que si celui-ci
+*ROW_METADATA(ADELIA                 )   * n'a pas déjà une valeur d'erreur
+*ROW_METADATA(ADELIA                 )   *
+*ROW_METADATA(ADELIA                 )     SI $$_ENTITE N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )       W_NOM_VUE = '$$_ENTITE '
+*ROW_METADATA(ADELIA                 )       P_COD_RETOUR = '1'
+*ROW_METADATA(ADELIA                 )     FIN
+*ROW_METADATA(ADELIA                 )     SI *BLOQUE = '1'
+*ROW_METADATA(ADELIA                 )       W_NOM_VUE = '$$_ENTITE '
+*ROW_METADATA(ADELIA                 )       P_COD_RETOUR = '2'
+*ROW_METADATA(ADELIA                 )     FIN
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

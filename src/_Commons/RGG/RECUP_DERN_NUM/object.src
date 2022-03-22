@@ -1,0 +1,14 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   SI P_COD_ACTION = 'CR' ET :01 = 0
+*ROW_METADATA(ADELIA                 )     :01 = *HIVAL
+*ROW_METADATA(ADELIA                 )     POSITIONNER_AP RECUP_DERNIER
+*ROW_METADATA(ADELIA                 )     LIRE_ARRIERE RECUP_DERNIER
+*ROW_METADATA(ADELIA                 )     SI RECUP_DERNIER N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )       :01 = 1
+*ROW_METADATA(ADELIA                 )       :02 = 1
+*ROW_METADATA(ADELIA                 )     SINON
+*ROW_METADATA(ADELIA                 )       :02 = :02 + 1
+*ROW_METADATA(ADELIA                 )       :01 = :02
+*ROW_METADATA(ADELIA                 )     FIN
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

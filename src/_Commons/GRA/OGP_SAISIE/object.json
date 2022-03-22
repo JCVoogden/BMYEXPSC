@@ -1,0 +1,15 @@
+{
+  "type" : "GRA",
+  "name" : "OGP_SAISIE",
+  "description" : "Objet personalisé Champ de saisie",
+  "creationDate" : "2007-01-11 13:14:39",
+  "updateDate" : "2009-03-04 14:56:54",
+  "visibility" : "UNSPECIFIED",
+  "dllName" : "ENTFIELD",
+  "tooltip" : "Champ de saisie",
+  "help" : "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1036{\\fonttbl{\\f0\\fnil\\fprq12\\fcharset0 Times New Roman;}}\r\n\\viewkind4\\uc1\\pard\\f0\\fs20 ###x\\par\r\n}\r\n",
+  "prefix" : "ID_OBJ",
+  "raisedBitmap" : "bitmap_up.bin",
+  "sunkenBitmap" : "bitmap_dw.bin",
+  "baseObjectName" : "CHAMP_DE_SAISIE"
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Confirmation de suppression de clients" format1="E4" format2="C4" format3="*4" format4="B4" functionKeys="           A            " transactionType="CONFIR_SUPPRESS" updateDate="1753-01-01" updateTime="00:00:00" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="*4" eraseInput="false" guideWord="SFL04" help="false" jumpLinesBefore="8" keep="true" lock="false" nbColumns="1" nbLines="14" overlay="true" pagination="STATIC" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="SFL04" subFilePageSize="14" subFileSize="15" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="B4" eraseInput="false" guideWord="FORB4" help="false" jumpLinesBefore="22" keep="true" lock="false" nbColumns="1" nbLines="2" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FORB4" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="C4" eraseInput="false" guideWord="FORC4" help="false" jumpLinesBefore="7" keep="true" lock="false" nbColumns="1" nbLines="1" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FORC4" subFileCode="*4" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="E4" eraseInput="false" guideWord="FORE4" help="false" jumpLinesBefore="1" keep="true" lock="false" nbColumns="1" nbLines="6" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FORE4" truncate="false"/>
+    </formats>
+    <entities>
+        <entity format="*4" name="CLIENTS"/>
+    </entities>
+    <fields>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="NOM DU PROGRAMME" formatCode="E4" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field formatCode="E4" hilight="true" kind="CONSTANT" layoutCode="*" length="38" x="22" y="1">
+            <text text="Confirmation de suppression de clients"/>
+        </field>
+        <field color="BLUE" formatCode="E4" kind="CONSTANT" layoutCode="*" length="70" x="2" y="4">
+            <text text="Appuyez sur ENTREE pour confirmer votre demande de suppression."/>
+        </field>
+        <field color="BLUE" formatCode="E4" kind="CONSTANT" layoutCode="*" length="71" x="2" y="5">
+            <text text="Appuyez sur F12=Annuler pour modifier vos choix."/>
+        </field>
+        <field formatCode="C4" hilight="true" kind="CONSTANT" layoutCode="*" length="6" x="6" y="7">
+            <text text="Client"/>
+        </field>
+        <field formatCode="C4" hilight="true" kind="CONSTANT" layoutCode="*" length="20" x="18" y="7">
+            <text text="Nom    du     client"/>
+        </field>
+        <field formatCode="C4" hilight="true" kind="CONSTANT" layoutCode="*" length="9" x="45" y="7">
+            <text text="Téléphone"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code client" formatCode="*4" guideWord="ZZCOD_CLIENT" kind="VARIABLE" layoutCode="ZZCCLI" length="6" logicalProperty="CLIENTS.COD_CLIENT" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="6" y="8">
+            <parameters>
+                <parameter key="EXP" value="000001"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom client" formatCode="*4" guideWord="ZZNOM_CLIENT" kind="VARIABLE" layoutCode="ZZLCLI" length="30" logicalProperty="CLIENTS.NOM_CLIENT" lowerCase="true" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="13" y="8">
+            <parameters>
+                <parameter key="EXP" value="HARDIS Progiciel"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Tél" formatCode="*4" guideWord="ZZNUM_TEL_CLI" kind="VARIABLE" layoutCode="ZZNTCL" length="11" logicalProperty="CLIENTS.NUM_TEL_CLI" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="44" y="8">
+            <parameters>
+                <parameter key="EXP" value="76.70.80.50"/>
+            </parameters>
+        </field>
+        <field color="BLUE" formatCode="B4" kind="CONSTANT" layoutCode="*" length="11" x="2" y="22">
+            <text text="F12=Annuler"/>
+        </field>
+    </fields>
+</transaction>

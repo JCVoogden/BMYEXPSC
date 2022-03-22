@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "INI_PERS_NOM",
+  "description" : "Initialis. du nom d'une personne sup. hiérarchique",
+  "creationDate" : "1995-06-07 12:47:38",
+  "updateDate" : "1995-06-29 07:24:20",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CA",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

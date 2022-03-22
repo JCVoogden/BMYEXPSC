@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="AIDE FENETRE 2" help="{\rtf1\ansi\ansicpg1252\deff0\deflang1036{\fonttbl{\f0\fnil\fprq12\fcharset0 Times New Roman;}}&#13;&#10;\viewkind4\uc1\pard\f0\fs20 ###AIDE FENETRE 2\par&#13;&#10;}&#13;&#10;" id="1" name="ID_FEN1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="96"/>
+        <property id="-45" intValue="96"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="198"/>
+        <property id="-3" intValue="371"/>
+        <property id="-2" intValue="233"/>
+        <property id="-1" intValue="435"/>
+        <property id="3" stringValue="AIDE FENETRE 2"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="22" intValue="363"/>
+        <property id="23" intValue="164"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ">
+            <properties>
+                <property id="-8" stringValue="QUITTER"/>
+                <property id="-4" intValue="89"/>
+                <property id="-3" intValue="200"/>
+                <property id="-2" intValue="38"/>
+                <property id="-1" intValue="79"/>
+            </properties>
+        </control>
+    </controls>
+</window>

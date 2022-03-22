@@ -1,0 +1,129 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "ARTICLE_DA",
+    "fileName" : "ARTICLEL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "VCOD_ARTICLE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DB"
+    },
+    "guideWord" : "CLIENTS_DB",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DB",
+        "ordinal" : 1
+      },
+      "guideWord" : "VCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DC"
+    },
+    "guideWord" : "FAMILLE_DC",
+    "fileName" : "FAMILLEL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DC",
+        "ordinal" : 1
+      },
+      "guideWord" : "VCOD_FAMILLE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DD"
+    },
+    "guideWord" : "VENTE_DD",
+    "fileName" : "VENTE1",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 2,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DD",
+        "ordinal" : 1
+      },
+      "guideWord" : "VCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    }, {
+      "id" : {
+        "code" : "DD",
+        "ordinal" : 2
+      },
+      "guideWord" : "VCOD_FAMILLE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "NUM",
+      "fileName" : ""
+    },
+    "shortName" : "NUM",
+    "length" : 3,
+    "type" : "NUMERIC",
+    "rename" : "NUM",
+    "generation" : "NONE"
+  } ],
+  "breaks" : [ {
+    "id" : {
+      "guideWord" : "R_CLIENTS"
+    },
+    "code" : "01",
+    "viewCode" : "DD",
+    "fields" : [ {
+      "id" : {
+        "guideWord" : "R_CLIENTS",
+        "ordinal" : 1
+      },
+      "logicalPropertyId" : 178,
+      "logicalProperty" : "VENTE.COD_CLIENT"
+    } ]
+  }, {
+    "id" : {
+      "guideWord" : "R_FAMILLE"
+    },
+    "code" : "02",
+    "viewCode" : "DD",
+    "fields" : [ {
+      "id" : {
+        "guideWord" : "R_FAMILLE",
+        "ordinal" : 1
+      },
+      "logicalPropertyId" : 178,
+      "logicalProperty" : "VENTE.COD_CLIENT"
+    }, {
+      "id" : {
+        "guideWord" : "R_FAMILLE",
+        "ordinal" : 2
+      },
+      "logicalPropertyId" : 181,
+      "logicalProperty" : "VENTE.COD_FAMILLE"
+    } ]
+  } ]
+}

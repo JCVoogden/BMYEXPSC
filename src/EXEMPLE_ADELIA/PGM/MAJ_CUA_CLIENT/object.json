@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "MAJ_CUA_CLIENT",
+  "description" : "Mise à jour client CUA",
+  "creationDate" : "1995-06-20 07:22:06",
+  "updateDate" : "1995-06-20 07:22:06",
+  "visibility" : "PRIVATE",
+  "ibmName" : "MCUA01",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "MCUA01",
+  "programTemplateName" : "CUA_MISE_A_JOUR",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

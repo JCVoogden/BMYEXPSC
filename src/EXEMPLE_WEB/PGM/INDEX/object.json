@@ -1,0 +1,16 @@
+{
+  "type" : "PGM",
+  "name" : "INDEX",
+  "description" : "Page de démarrage",
+  "creationDate" : "2004-09-14 07:46:35",
+  "updateDate" : "2004-09-14 13:19:46",
+  "visibility" : "PRIVATE",
+  "ibmName" : "index",
+  "programType" : "I",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "INDEX",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "SQL",
+  "keepState" : true,
+  "canvasName" : "CANEVAS_EXEMPLE"
+}

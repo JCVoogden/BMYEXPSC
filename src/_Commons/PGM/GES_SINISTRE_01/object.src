@@ -1,0 +1,173 @@
+*
+* Gestion CODE SAISIE avec option 2,4,5 ET F6
+*
+* La variable P_COD_ACTION sert à déterminer si la sorti s'est
+* faites par F03 (EXit) ou par F12 (PRécédent)
+*
+* La variable P_COD_RETOUR sert à positionner un eventuel problème
+* dans le programme à ramener au programme appelant
+*
+* Recherchez WP_???? et remplacer par une variable de travail que
+* vous aurez créer ayant la taille de la clé du fichier à traiter
+*            WP_NUM_SINISTRE
+* Recherchez ZV1???? et remplacer par la variable écran à traiter
+*            ZSNUM_SINISTRE
+* Recherchez MAJ_???? et remplacer par le programme de Mise à jour
+*            MAJ_SINISTRE
+* Recherchez AFF_???? et remplacer par le programme d'affichage
+*            AFF_SINISTRE
+* Créer une vue VUE_SUPPRESSION sur le fichier à gérer avec la bonne
+* clé d'accès
+*
+* Début
+INITIALISER 01
+TRAITER 01
+*-------------------------
+* Début transaction 01
+TRANSACTION 01
+SI *F03 OU *F12
+  TERMINER
+FIN
+VERIFIER 01
+INITIALISER 02
+TRAITER 02
+*-------------------------
+* Début transaction 02
+TRANSACTION 02
+SI *F03
+  TERMINER
+FIN
+SI *F12
+  TRAITER 01
+FIN
+SI *PAGAV
+  PAGINER_AVANT
+FIN
+SI *F06
+  WP_NUM_SINISTRE = *BLANK
+  P_COD_ACTION = 'CR'
+  P_COD_RETOUR = *BLANK
+  APPELER MAJ_SINISTRE P_COD_RETOUR P_COD_ACTION WP_NUM_SINISTRE ZZCOD_CLIENT
+  SI P_COD_ACTION = 'EX'
+    P_COD_RETOUR = *BLANK
+    TERMINER
+  FIN
+  SI P_COD_ACTION = 'PR'
+    P_COD_ACTION = '  '
+    TRAITER 02
+  FIN
+  INITIALISER 02
+  TRAITER 02
+FIN
+VERIFIER 02
+SI P_COD_ACTION = 'EX'
+  TERMINER
+FIN
+P_COD_ACTION = '  '
+SI PCOD_INIT = 'O'
+  PCOD_INIT = ' '
+  INITIALISER 02
+FIN
+SI *DEL04 > 0
+  *IN84 = '1'
+  TRAITER 03
+FIN
+TRAITER 02
+*-------------------------
+* Début transaction 03
+TRANSACTION 03
+SI *F12
+  TRAITER 02
+FIN
+VALIDER  03
+INITIALISER 02
+TRAITER 02
+**********************
+INITIALISATION  01
+**********************
+DEBUT_STD
+XNOM_PGM        = *NOM_PGM
+ZZCOD_CLIENT    = *BLANK
+FIN_STD
+**********************
+INITIALISATION  02
+**********************
+EFFACER         1
+GESTION_SFL     1
+DEBUT_STD
+PRESENTER       SINISTRE_S1
+ZW_COD_OPTION   = *BLANK
+FIN_STD
+MAJ_SFL
+FIN_GESTION_SFL
+DEBUT_STD
+LIRE            CLIENTS_DA
+PRESENTER       CLIENTS_DA
+XNOM_PGM        = *NOM_PGM
+FIN_STD
+**********************
+VERIFICATION 01
+**********************
+DEBUT_STD
+REGLE_GESTION 0001 ZZCOD_CLIENT
+SI ZZCOD_CLIENT = *BLANK
+ANOMALIE
+FIN
+FIN_STD
+**********************
+VERIFICATION 02
+**********************
+EFFACER         4
+CLE_RANG_SFL4 = 0
+*DEL04 = 0
+GESTION_SFL 1
+* Traitement de l'option 4
+SI ZW_COD_OPTION = '4'
+  CLE_RANG_SFL4 = CLE_RANG_SFL4 + 1
+  *DEL04 = *DEL04 + 1
+  *IN08  = '1'
+  CREER          VUE_MANUEL_SFL4
+  *IN08  = '0'
+FIN
+* Traitement de l'option 2
+SI ZW_COD_OPTION = '2'
+  ZW_COD_OPTION = *BLANK
+  WP_NUM_SINISTRE = ZZNUM_SINISTRE
+  P_COD_ACTION = 'MO'
+  P_COD_RETOUR = *BLANK
+  APPELER MAJ_SINISTRE P_COD_RETOUR P_COD_ACTION WP_NUM_SINISTRE ZZCOD_CLIENT
+  SI P_COD_ACTION = 'PR' OU P_COD_ACTION = 'EX'
+    PCOD_INIT = 'O'
+    QUITTER_SFL
+  FIN
+FIN
+* Traitement de l'option 5
+SI ZW_COD_OPTION = '5'
+  ZW_COD_OPTION = *BLANK
+  WP_NUM_SINISTRE = ZZNUM_SINISTRE
+  APPELER AFF_SINISTRE P_COD_RETOUR P_COD_ACTION WP_NUM_SINISTRE
+  SI P_COD_ACTION = 'PR' OU P_COD_ACTION = 'EX'
+    QUITTER_SFL
+  FIN
+FIN
+FIN_GESTION_SFL
+CLE_RANG_SFL4 = 1
+**********************
+VALIDATION      03
+**********************
+GESTION_SFL     4
+LIRE            VUE_SUPPRESSION
+SI              VUE_SUPPRESSION  EXISTE
+  SUPPRIMER       VUE_SUPPRESSION
+FIN
+FIN_GESTION_SFL
+******************
+TRT_GUIDE       01
+******************
+DEBUT_STD
+* Guide d'affichage de la fenêtre des CLIENTS
+GUIDE ZZCOD_CLIENT
+APPELER FEN_CLIENT P_COD_RETOUR P_COD_ACTION ZZCOD_CLIENT
+FIN_GUIDE
+FIN_STD
+FIN_TRT_GUIDE

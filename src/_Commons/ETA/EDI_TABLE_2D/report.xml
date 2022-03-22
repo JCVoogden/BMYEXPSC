@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml report.xsd">
+    <formats>
+        <format blankLinesBefore="1" code="01" guideWord="ENTETE" jumpLinesBefore="1" nbLines="5" shortName="SOR01"/>
+        <format blankLinesBefore="1" code="02" guideWord="DETAIL" nbLines="1" shortName="SOR02"/>
+        <format blankLinesBefore="1" code="03" guideWord="TOTAL" nbLines="1" shortName="SOR03"/>
+    </formats>
+    <entities/>
+    <fields>
+        <field description="NOM DU PROGRAMME" formatCode="01" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" mode="OUTPUT" type="STRING" x="1" y="1"/>
+        <field formatCode="01" kind="CONSTANT" length="24" x="54" y="1">
+            <text text="RECAPITULATIF DES VENTES"/>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="11" x="106" y="1">
+            <text text="Demandé par"/>
+        </field>
+        <field description="Utilisateur" formatCode="01" guideWord="XUSER" kind="USER_VARIABLE" layoutCode="XUSER2" length="10" mode="OUTPUT" type="STRING" x="118" y="1"/>
+        <field formatCode="01" kind="CONSTANT" length="4" x="106" y="2">
+            <text text="le :"/>
+        </field>
+        <field description="N00001" formatCode="01" guideWord="N00001" kind="DATE" layoutCode="N00001" length="6" mode="OUTPUT" type="NUMBER" x="111" y="2">
+            <parameters>
+                <parameter key="EDW" value="'  /  /  '"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="1" x="120" y="2">
+            <text text="à"/>
+        </field>
+        <field description="N00018" formatCode="01" guideWord="N00018" kind="TIME" layoutCode="N00018" length="6" mode="OUTPUT" type="NUMBER" x="122" y="2">
+            <parameters>
+                <parameter key="EDW" value="'  :  :  '"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="128" x="1" y="3">
+            <text text="!====!=========!=========!=========!=========!=========!==========!==========!=========!=========!=========!=========!=========!"/>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="128" x="1" y="4">
+            <text text="! An ! Janvier ! Février ! Mars    ! Avril   ! Mai     ! Juin     ! Juillet  !  Août   !Septembre! Octobre !Novembre !Décembre !"/>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="128" x="1" y="5">
+            <text text="!====!=========!=========!=========!=========!=========!==========!==========!=========!=========!=========!=========!=========!"/>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="1" x="1" y="6">
+            <text text="!"/>
+        </field>
+        <field description="WANNEE" formatCode="02" guideWord="WANNEE" kind="USER_VARIABLE" layoutCode="WANNEE" length="2" mode="OUTPUT" type="NUMBER" x="3" y="6"/>
+        <field formatCode="02" kind="CONSTANT" length="1" x="6" y="6">
+            <text text="!"/>
+        </field>
+        <field description="ZCA01" editCode="CODE_3" formatCode="02" guideWord="ZCA01" kind="USER_VARIABLE" layoutCode="ZCA01" length="8" mode="OUTPUT" type="NUMBER" x="7" y="6"/>
+        <field formatCode="02" kind="CONSTANT" length="1" x="16" y="6">
+            <text text="!"/>
+        </field>
+        <field description="ZCA02" editCode="CODE_3" formatCode="02" guideWord="ZCA02" kind="USER_VARIABLE" layoutCode="ZCA02" length="8" mode="OUTPUT" type="NUMBER" x="17" y="6"/>
+        <field formatCode="02" kind="CONSTANT" length="1" x="26" y="6">
+            <text text="!"/>
+        </field>
+        <field description="ZCA03" editCode="CODE_3" formatCode="02" guideWord="ZCA03" kind="USER_VARIABLE" layoutCode="ZCA03" length="8" mode="OUTPUT" type="NUMBER" x="27" y="6"/>
+        <field formatCode="02" kind="CONSTANT" length="1" x="36" y="6">
+            <text text="!"/>
+        </field>
+        <field description="ZCA04" editCode="CODE_3" formatCode="02" guideWord="ZCA04" kind="USER_VARIABLE" layoutCode="ZCA04" length="8" mode="OUTPUT" type="NUMBER" x="37" y="6"/>
+        <field formatCode="02" kind="CONSTANT" length="1" x="46" y="6">
+            <text text="!"/>
+        </field>
+        <field description="ZCA05" editCode="CODE_3" formatCode="02" guideWord="ZCA05" kind="USER_VARIABLE" layoutCode="ZCA05" length="8" mode="OUTPUT" type="NUMBER" x="47" y="6"/>
+        <field formatCode="02" kind="CONSTANT" length="1" x="56" y="6">
+            <text text="!"/>
+        </field>
+        <field description="ZCA06" editCode="CODE_3" formatCode="02" guideWord="ZCA06" kind="USER_VARIABLE" layoutCode="ZCA06" length="8" mode="OUTPUT" type="NUMBER" x="57" y="6"/>
+        <field formatCode="02" kind="CONSTANT" length="1" x="67" y="6">
+            <text text="!"/>
+        </field>
+        <field description="ZCA07" editCode="CODE_3" formatCode="02" guideWord="ZCA07" kind="USER_VARIABLE" layoutCode="ZCA07" length="8" mode="OUTPUT" type="NUMBER" x="68" y="6"/>
+        <field formatCode="02" kind="CONSTANT" length="1" x="78" y="6">
+            <text text="!"/>
+        </field>
+        <field description="ZCA08" editCode="CODE_3" formatCode="02" guideWord="ZCA08" kind="USER_VARIABLE" layoutCode="ZCA08" length="8" mode="OUTPUT" type="NUMBER" x="79" y="6"/>
+        <field formatCode="02" kind="CONSTANT" length="1" x="88" y="6">
+            <text text="!"/>
+        </field>
+        <field description="ZCA09" editCode="CODE_3" formatCode="02" guideWord="ZCA09" kind="USER_VARIABLE" layoutCode="ZCA09" length="8" mode="OUTPUT" type="NUMBER" x="89" y="6"/>
+        <field formatCode="02" kind="CONSTANT" length="1" x="98" y="6">
+            <text text="!"/>
+        </field>
+        <field description="ZCA10" editCode="CODE_3" formatCode="02" guideWord="ZCA10" kind="USER_VARIABLE" layoutCode="ZCA10" length="8" mode="OUTPUT" type="NUMBER" x="99" y="6"/>
+        <field formatCode="02" kind="CONSTANT" length="1" x="108" y="6">
+            <text text="!"/>
+        </field>
+        <field description="ZCA11" editCode="CODE_3" formatCode="02" guideWord="ZCA11" kind="USER_VARIABLE" layoutCode="ZCA11" length="8" mode="OUTPUT" type="NUMBER" x="109" y="6"/>
+        <field formatCode="02" kind="CONSTANT" length="1" x="118" y="6">
+            <text text="!"/>
+        </field>
+        <field description="ZCA12" editCode="CODE_3" formatCode="02" guideWord="ZCA12" kind="USER_VARIABLE" layoutCode="ZCA12" length="8" mode="OUTPUT" type="NUMBER" x="119" y="6"/>
+        <field formatCode="02" kind="CONSTANT" length="1" x="128" y="6">
+            <text text="!"/>
+        </field>
+        <field formatCode="03" kind="CONSTANT" length="128" x="1" y="7">
+            <text text="!====!=========!=========!=========!=========!=========!==========!==========!=========!=========!=========!=========!=========!"/>
+        </field>
+    </fields>
+</report>

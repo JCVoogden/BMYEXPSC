@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "UNI_TEST3",
+  "description" : "Test Unicode 3",
+  "creationDate" : "2008-04-04 14:00:26",
+  "updateDate" : "2008-04-08 09:38:56",
+  "visibility" : "PRIVATE",
+  "ibmName" : "UNTST3",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "UNTST3",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "unicode" : true
+}

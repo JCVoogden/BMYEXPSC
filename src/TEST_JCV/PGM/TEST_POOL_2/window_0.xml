@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Test pool" help="" id="0" name="ID_FEN0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="96"/>
+        <property id="-45" intValue="96"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="93"/>
+        <property id="-3" intValue="312"/>
+        <property id="-2" intValue="341"/>
+        <property id="-1" intValue="391"/>
+        <property id="3" stringValue="Test pool"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="22" intValue="304"/>
+        <property id="23" intValue="59"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="TIMER" dll="TIMER" help="" kinematic="0" name="TIMER">
+            <properties>
+                <property id="-2" intValue="17"/>
+                <property id="-1" intValue="36"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ">
+            <properties>
+                <property id="-8" stringValue="prêt"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="303"/>
+                <property id="-2" intValue="23"/>
+                <property id="-1"/>
+                <property id="6" intValue="1"/>
+            </properties>
+        </control>
+    </controls>
+</window>

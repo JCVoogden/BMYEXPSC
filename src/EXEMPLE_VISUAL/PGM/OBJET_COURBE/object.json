@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "OBJET_COURBE",
+  "description" : "Utilisation de l'objet courbe",
+  "creationDate" : "1999-01-27 15:33:09",
+  "updateDate" : "1999-01-28 17:52:55",
+  "visibility" : "PRIVATE",
+  "ibmName" : "OBJCBE",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "OBJCBE",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

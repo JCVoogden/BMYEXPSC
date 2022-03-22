@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "PERFMON",
+  "description" : "PERFMON",
+  "creationDate" : "2009-05-14 09:08:44",
+  "updateDate" : "2010-01-27 15:52:12",
+  "visibility" : "PRIVATE",
+  "ibmName" : "PRFMON",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "PRFMON",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "unicode" : true
+}

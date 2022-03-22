@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Test methode FORCER_TOP" help="" id="0" name="TIM_METH_FT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-4" intValue="398"/>
+        <property id="-3" intValue="446"/>
+        <property id="-2" intValue="92"/>
+        <property id="-1" intValue="165"/>
+        <property id="3" stringValue="Test methode FORCER_TOP"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwUlEQVR4Xu2OUQrDMAxDc/McLUfr0EchSK1rt3bGRh8INtV2XmutbV+OFKsjxepIsTpSbE/gW45IwTdDYH+MITeNSME3Q2AfAgEJKfhmiH0/ICEFnYwx7zslpJjOxeFbjkjBN1PgN24JWN+uwG7vXd4KC1jfLVIFrJkz0gWsuSNKBKxZpkzAmp/BXJmAtbODmVIBaw/ge4mAl1QB/u0hTYD/c3dGigATmS8RAN6d/xXw8gr8lkBV3AIYrAq/dSiwMh+/22eT2IB18QAAAABJRU5ErkJggg==</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWklEQVR4Xr2MAQrAIAwD+/9P9WkOEUHS064OFghokp6ZWfvoEFQ9HpngsA5wdz1mgP5n1gEAYcAuA5/HpBJAO+jjSAFJnw4CpAxQvQKsQ1UKWEX9vwASAm79AMudLa0ybCaSAAAAAElFTkSuQmCC</property>
+        <property id="13"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="LISTE" dll="CONTAINR" help="" kinematic="0" name="CNT_CONTAINER">
+            <properties>
+                <property id="-4" intValue="347"/>
+                <property id="-3" intValue="160"/>
+                <property id="-2" intValue="10"/>
+                <property id="-1" intValue="260"/>
+                <property id="6" stringValue="COL_EVT -6 2 20 -1"/>
+            </properties>
+            <controls>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="COL_EVT">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 20 -1"/>
+                        <property id="-8" stringValue="Evenements reçus"/>
+                        <property id="-3" intValue="160"/>
+                    </properties>
+                </control>
+            </controls>
+        </control>
+        <control associatedVariable="" className="TIMER" dll="TIMER" help="" kinematic="0" name="TIM_TEST">
+            <properties>
+                <property id="-2" intValue="30"/>
+                <property id="-1" intValue="90"/>
+                <property id="1" intValue="5000"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="ID_OBJ12">
+            <properties>
+                <property id="-8"/>
+                <property id="-4" intValue="275"/>
+                <property id="-3" intValue="231"/>
+                <property id="-2" intValue="80"/>
+                <property id="-1" intValue="10"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOITE_A_COCHER" dll="CHECKBOX" help="" kinematic="0" name="CKB_ACTIVITE">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="7 -1 -1"/>
+                <property id="-8" stringValue="Activité"/>
+                <property id="-2" intValue="110"/>
+                <property id="-1" intValue="80"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_ACTIVITE">
+            <properties>
+                <property id="-8" stringValue="Fixer activité"/>
+                <property id="-2" intValue="140"/>
+                <property id="-1" intValue="80"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="ENT_INTERVALLE">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-12" intValue="3"/>
+                <property id="-9" stringValue="6 -1 -1"/>
+                <property id="-2" intValue="180"/>
+                <property id="-1" intValue="70"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_INTERVALLE">
+            <properties>
+                <property id="-8" stringValue="Fixer intervalle"/>
+                <property id="-2" intValue="210"/>
+                <property id="-1" intValue="80"/>
+                <property id="4"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_FT1">
+            <properties>
+                <property id="-8" stringValue="Forcer top sans remise à zéro"/>
+                <property id="-4" intValue="45"/>
+                <property id="-3" intValue="169"/>
+                <property id="-2" intValue="240"/>
+                <property id="-1" intValue="40"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_FT2">
+            <properties>
+                <property id="-8" stringValue="Forcer top avec remise à zero (intervalle : 10000)"/>
+                <property id="-4" intValue="45"/>
+                <property id="-3" intValue="169"/>
+                <property id="-2" intValue="300"/>
+                <property id="-1" intValue="40"/>
+            </properties>
+        </control>
+    </controls>
+</window>

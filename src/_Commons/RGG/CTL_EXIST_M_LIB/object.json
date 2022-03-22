@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CTL_EXIST_M_LIB",
+  "description" : "Contrôle exeistence modification libellé (PM)",
+  "creationDate" : "1996-07-05 09:06:38",
+  "updateDate" : "1996-07-05 09:13:32",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

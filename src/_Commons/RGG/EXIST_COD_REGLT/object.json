@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "EXIST_COD_REGLT",
+  "description" : "Contrôle existence du code règlement",
+  "creationDate" : "1995-06-07 12:47:05",
+  "updateDate" : "1995-06-29 07:23:44",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

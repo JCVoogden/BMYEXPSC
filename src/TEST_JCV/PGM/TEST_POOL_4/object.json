@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "TEST_POOL_4",
+  "description" : "Test du pool de processus",
+  "creationDate" : "2010-10-12 09:23:46",
+  "updateDate" : "2010-11-19 13:34:51",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TPOOL4",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TPOOL4",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "MODELE_REC_RED",
+  "description" : "Modèle pour récupération d'une zone redondante",
+  "creationDate" : "1995-06-29 07:24:49",
+  "updateDate" : "1995-06-29 07:24:49",
+  "visibility" : "PUBLIC",
+  "mrClass" : "IP",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "VA_HALRMA",
+  "description" : "Transformation MD en MD associé",
+  "creationDate" : "2002-10-24 12:23:47",
+  "updateDate" : "2004-02-19 17:06:53",
+  "visibility" : "PRIVATE",
+  "ibmName" : "HALRMA",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "HALRMA",
+  "level2GenType" : 2,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

@@ -1,0 +1,65 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(JCV            20090225)   DEBUT_DECL
+*ROW_METADATA(JCV            20090225)      num_bin_4  i
+*ROW_METADATA(ADELIA         20090702)      
+*ROW_METADATA(ADELIA         20090702)      num_bin_4  semaphore1
+*ROW_METADATA(ADELIA         20090702)      num_bin_4  semaphore2
+*ROW_METADATA(ADELIA         20090702)      bool       semExists1
+*ROW_METADATA(ADELIA         20090702)      bool       semExists2
+*ROW_METADATA(ADELIA         20100415)      
+*ROW_METADATA(ADELIA         20100415)      curseur    c1 sql_base
+*ROW_METADATA(ADELIA         20090702)      
+*ROW_METADATA(JCV            20090225)      param      i
+*ROW_METADATA(JCV            20090225)   FIN_DECL
+*ROW_METADATA(JCV            20090225)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20090702)      
+*ROW_METADATA(ADELIA         20090702)      appeler_dll 'testdll' 'TstDCreerSemaphore' semaphore1 'tpool1' 1 semexists1
+*ROW_METADATA(ADELIA         20090702)      appeler_dll 'testdll' 'TstDCreerSemaphore' semaphore2 'tpool2' 1 semexists2
+*ROW_METADATA(ADELIA         20090702)      
+*ROW_METADATA(ADELIA         20090702)      si semaphore1 = 0 ou non semexists1 ou semaphore2 = 0 ou non semexists2
+*ROW_METADATA(ADELIA         20090702)         terminer
+*ROW_METADATA(ADELIA         20090702)      fin
+*ROW_METADATA(ADELIA         20100415)      
+*ROW_METADATA(ADELIA         20100415)      appeler_dll 'testdll' 'TstDRelacherSemaphore' semaphore1
+*ROW_METADATA(ADELIA         20090702)      appeler_dll 'testdll' 'TstDAttendreSemaphore' semaphore2
+*ROW_METADATA(ADELIA         20090702)      
+*ROW_METADATA(ADELIA         20090702)      i = 0
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV POOLSRV
+*ROW_METADATA(ADELIA         20100415)         b1 = 0
+*ROW_METADATA(ADELIA         20100415)         b2 = *blank
+*ROW_METADATA(ADELIA         20100415)         b3 = 0
+*ROW_METADATA(ADELIA         20100415)         
+*ROW_METADATA(ADELIA         20100415)         ouvrir_sql_c c1
+*ROW_METADATA(ADELIA         20100415)         
+*ROW_METADATA(ADELIA         20100415)         si *sqlcode = *normal
+*ROW_METADATA(ADELIA         20100415)            lire_av_sql_c c1
+*ROW_METADATA(ADELIA         20100415)            tant_que *sqlcode = *normal
+*ROW_METADATA(ADELIA         20100415)               lire_av_sql_c c1
+*ROW_METADATA(ADELIA         20100415)            refaire
+*ROW_METADATA(ADELIA         20100415)         
+*ROW_METADATA(ADELIA         20100415)            fermer_sql_c c1
+*ROW_METADATA(ADELIA         20100415)         fin
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20090702)      
+*ROW_METADATA(ADELIA         20090702)      si *code_retour <> 0
+*ROW_METADATA(ADELIA         20090702)         texte = 'erreur middleware ' // &num_alpha(*code_retour)
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV LOCAL
+*ROW_METADATA(ADELIA         20090702)            creer_sql testlog
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20090702)      fin
+*ROW_METADATA(ADELIA         20090702)      
+*ROW_METADATA(ADELIA         20090702)      
+*ROW_METADATA(ADELIA         20090615)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV LOCAL
+*ROW_METADATA(ADELIA         20090702)         maj_sql testdata nbexec = nbexec + 1, nbsuccess = nbsuccess + :i
+*ROW_METADATA(JCV            20090225)         valider_maj
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20090702)      
+*ROW_METADATA(ADELIA         20090702)      appeler_dll 'testdll' 'TstDRelacherSemaphore' semaphore1
+*ROW_METADATA(ADELIA         20090702)      
+*ROW_METADATA(ADELIA         20090702)      appeler_dll 'testdll' 'TstDFermerSemaphore' semaphore1
+*ROW_METADATA(ADELIA         20090702)      appeler_dll 'testdll' 'TstDFermerSemaphore' semaphore2
+*ROW_METADATA(ADELIA         20090702)      
+*ROW_METADATA(ADELIA         20090702)      
+*ROW_METADATA(JCV            20090225)   FIN_INIT
+*ROW_METADATA(ADELIA                 )FIN_PGM

@@ -1,0 +1,87 @@
+*ROW_METADATA(ADELIA                0)* Créer une vue VUE_SUPPRESSION sur le fichier à gérer
+*ROW_METADATA(ADELIA                0)* Début
+*ROW_METADATA(ADELIA         20051109)
+*ROW_METADATA(ADELIA         20051109)INITIALISER 01
+*ROW_METADATA(ADELIA                0)TRAITER 01
+*ROW_METADATA(ADELIA                0)*-------------------------
+*ROW_METADATA(ADELIA                0)* Début transaction 01
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)INITIALISATION 01
+*ROW_METADATA(ADELIA         20051109)********************
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)XNOM_PGM        = *NOM_PGM
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)CNOM_CLIENT =  *BLANK
+*ROW_METADATA(ADELIA                0)EFFACER         1
+*ROW_METADATA(ADELIA                0)GESTION_SFL     1
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)PRESENTER       CLIENTS_S1
+*ROW_METADATA(ADELIA                0)ZW_COD_OPTION   = *BLANK
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)MAJ_SFL
+*ROW_METADATA(ADELIA         20051109)FIN_GESTION_SFL
+*ROW_METADATA(ADELIA         20051109)
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)TRANSACTION 01
+*ROW_METADATA(ADELIA         20051109)********************
+*ROW_METADATA(ADELIA                0)SI *F03 OU *F12
+*ROW_METADATA(ADELIA                0)  TERMINER
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)SI *PAGAV
+*ROW_METADATA(ADELIA                0)  PAGINER_AVANT
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)VERIFIER 01
+*ROW_METADATA(ADELIA                0)SI *DEL04 > 0
+*ROW_METADATA(ADELIA                0)  *IN84 = '1'
+*ROW_METADATA(ADELIA                0)  TRAITER 02
+*ROW_METADATA(ADELIA                0)SINON
+*ROW_METADATA(ADELIA                0)  TRAITER 01
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)*-------------------------
+*ROW_METADATA(ADELIA                0)* Début transaction 02
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)VERIFICATION 01
+*ROW_METADATA(ADELIA         20051109)********************
+*ROW_METADATA(ADELIA                0)EFFACER         4
+*ROW_METADATA(ADELIA                0)* Initialisation des variables pour la gestion manuelle du 2ème
+*ROW_METADATA(ADELIA                0)* sous-fichier
+*ROW_METADATA(ADELIA                0)CLE_RANG_SFL4 = 0
+*ROW_METADATA(ADELIA                0)*DEL04 = 0
+*ROW_METADATA(ADELIA                0)* Initialisation des variables pour la gestion manuelle du 1ér
+*ROW_METADATA(ADELIA                0)* sous-fichier
+*ROW_METADATA(ADELIA                0)CLE_RANG_SFL1 = 1
+*ROW_METADATA(ADELIA                0)* Boucle de parcours du 1 ér sous-fichier
+*ROW_METADATA(ADELIA                0)TANT_QUE       CLE_RANG_SFL1 <= *DEL01
+*ROW_METADATA(ADELIA                0)  LIRE           VUE_MANUEL_SFL1
+*ROW_METADATA(ADELIA                0)  SI ZW_COD_OPTION = '4'
+*ROW_METADATA(ADELIA                0)    * Remplissage du 2éme sous-fichier
+*ROW_METADATA(ADELIA                0)    CLE_RANG_SFL4 = CLE_RANG_SFL4 + 1
+*ROW_METADATA(ADELIA                0)    *DEL04 = *DEL04 + 1
+*ROW_METADATA(ADELIA                0)    *IN08  = '1'
+*ROW_METADATA(ADELIA                0)    CREER          VUE_MANUEL_SFL4
+*ROW_METADATA(ADELIA                0)    *IN08  = '0'
+*ROW_METADATA(ADELIA                0)  FIN
+*ROW_METADATA(ADELIA                0)  CLE_RANG_SFL1 = CLE_RANG_SFL1 + 1
+*ROW_METADATA(ADELIA                0)REFAIRE
+*ROW_METADATA(ADELIA                0)* Remise à 1 du rang des sous-fichiers pour réaffichage à partir
+*ROW_METADATA(ADELIA                0)* de la 1ére page
+*ROW_METADATA(ADELIA                0)CLE_RANG_SFL4 = 1
+*ROW_METADATA(ADELIA                0)CLE_RANG_SFL1 = 1
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)TRANSACTION 02
+*ROW_METADATA(ADELIA         20051109)********************
+*ROW_METADATA(ADELIA                0)SI *F12
+*ROW_METADATA(ADELIA                0)  TRAITER 01
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)VALIDER  02
+*ROW_METADATA(ADELIA                0)INITIALISER 01
+*ROW_METADATA(ADELIA                0)TRAITER 01
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)VALIDATION 02
+*ROW_METADATA(ADELIA         20051109)********************
+*ROW_METADATA(ADELIA                0)GESTION_SFL     4
+*ROW_METADATA(ADELIA                0)LIRE            VUE_SUPPRESSION
+*ROW_METADATA(ADELIA                0)SI              VUE_SUPPRESSION  EXISTE
+*ROW_METADATA(ADELIA                0)  SUPPRIMER       VUE_SUPPRESSION
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)FIN_GESTION_SFL

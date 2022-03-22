@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "EDI_AFFAIRES",
+  "description" : "Edition du chiffre d'affaires clients",
+  "creationDate" : "1995-06-08 07:02:13",
+  "updateDate" : "1995-06-08 07:02:13",
+  "visibility" : "PUBLIC",
+  "ibmName" : "EDICA",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "EDICA",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

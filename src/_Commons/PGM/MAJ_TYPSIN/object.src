@@ -1,0 +1,92 @@
+*
+* Remplacez VUE_???? Par le nom de la vue gérer
+* Niveau I -
+*------------------
+INITIALISER 01
+TRAITER 01
+*-------------------------
+TRANSACTION 01
+SI *F03 OU *F12
+  TERMINER
+FIN
+VERIFIER 01
+INITIALISER 02
+TRAITER 02
+*-------------------------
+TRANSACTION 02
+SI *F03
+  TERMINER
+FIN
+SI *F12
+  TRAITER 01
+FIN
+* Par F13 appel de la procédure de suppression de l'nregistrement
+* Afficher
+SI *F13
+  TRAITER_PROC SUPPRE
+  TRAITER 01
+FIN
+VERIFIER 02
+VALIDER 02
+INITIALISER 01
+TRAITER 01
+*
+DEBUT_PROCEDURE SUPPRE
+*-------------------------  Procédure de suppression
+SUPPRIMER   TYPSIN_DA
+FIN_PROCEDURE
+******************
+INITIALISATION  01
+******************
+DEBUT_STD
+XNOM_PGM        = *NOM_PGM
+ZZCOD_SINISTRE  = *BLANK
+FIN_STD
+******************
+VERIFICATION    01
+******************
+DEBUT_STD
+REGLE_GESTION 0001 ZZCOD_SINISTRE
+SI ZZCOD_SINISTRE = *BLANK
+ANOMALIE
+FIN
+FIN_STD
+******************
+INITIALISATION  02
+******************
+DEBUT_STD
+LIRE            TYPSIN_DA
+PRESENTER       TYPSIN_DA
+XNOM_PGM        = *NOM_PGM
+FIN_STD
+******************
+VERIFICATION    02
+******************
+DEBUT_STD
+REGLE_GESTION 0001 ZZLIB_SINISTRE
+SI ZZLIB_SINISTRE = *BLANK
+ANOMALIE
+FIN
+FIN_STD
+******************
+VALIDATION      02
+******************
+DEBUT_STD
+RANGER          TYPSIN_DA
+FIN_STD
+******************
+TRT_GUIDE       01
+******************
+DEBUT_STD
+* Guide d'affichage de la fenêtre des TYPES de SINISTRE
+GUIDE ZZCOD_SINISTRE
+APPELER FEN_TYPSIN P_COD_RETOUR P_COD_ACTION ZZCOD_SINISTRE
+FIN_GUIDE
+FIN_STD
+FIN_TRT_GUIDE
+******************
+TRT_GUIDE       02
+******************
+DEBUT_STD
+FIN_STD
+FIN_TRT_GUIDE

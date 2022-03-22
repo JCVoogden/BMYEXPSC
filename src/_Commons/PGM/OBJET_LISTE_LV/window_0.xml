@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\qc\plain\f3\fs24\b\ul Fen\'eatre d'exemple de listes avec champs en liste de valeurs\plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" id="0" name="FEN_LST_LV_EX" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="317"/>
+        <property id="-3" intValue="545"/>
+        <property id="-2" intValue="211"/>
+        <property id="-1" intValue="408"/>
+        <property id="3"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAw0lEQVR4Xu2OCwqDQAwF9/DSo9ljWQaqLI9umjUJ/eBAQM17cVq7+EK2hAmxRaD/nNPozSnor/c1JKE3p6CPQERCb06x9yMScnKOvn9Wojs3D31jXOjNFLirPxqh3QNr9w66y21xSWj3gJ21t6CXJmBlRtBJFbByryCfLmBlFbIlAla+h1yZgNXZIVMqYPWAfYmAF7JpAvrsgWyKgL7rtxHkwgIKWW+eXLoAkPd0yPyngBfuXgK/I1A1XoFGsGr0Xx/nAcvm7lfXqc4jAAAAAElFTkSuQmCC</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbUlEQVR4Xq2MUQrAMAxCe/+DdcfqyJARE6Vl7IE/5sUxfmIdxrJ2hINIqt8IZ17TjjS5El0MuJEmuy6FsLICN0IJdgQ9oQQ7go5QQku5E+m9D1TQE01IIt1ST1TnBbLqCBIykFVHkLBDDnzIww3Nu+sjMeaOXAAAAABJRU5ErkJggg==</property>
+        <property id="22" intValue="537"/>
+        <property id="23" intValue="290"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="LISTE" dll="CONTAINR" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 ------------------------------------------------------------------------------------------------------------&#13;&#10;\par &#13;&#10;\par \plain\f3\fs22\b Liste des personnes : \plain\f3\fs22\b\i LST_EX\plain\f3\fs20 &#13;&#10;\par \tab cette liste se compose des colonnes suivantes :&#13;&#10;\par }&#13;&#10;" kinematic="0" name="LST_EX">
+            <properties>
+                <property id="-4" intValue="246"/>
+                <property id="-3" intValue="350"/>
+                <property id="-2" intValue="6"/>
+                <property id="-1"/>
+                <property id="6" stringValue="COL_NOM -6 2 15 -1 # COL_PRN -6 2 15 -1 # COL_SEXE -6 2 1 -1 # COL_FONCTION -6 2 15 -1"/>
+                <property id="28" intValue="1"/>
+                <property id="30" intValue="16777215"/>
+                <property id="32" intValue="12632256"/>
+            </properties>
+            <menu>
+                <item key1="0" key2="0" name="MNU_MOD" state="69648" text="Modifier" type="1"/>
+                <item key1="0" key2="0" name="MNU_CRE" state="4112" text="Créer" type="1"/>
+                <item key1="0" key2="0" name="ID_EVT3" state="4112" text="Séparateur" type="2"/>
+                <item key1="0" key2="0" name="MNU_SUPPR" state="4112" text="Supprimer" type="1"/>
+            </menu>
+            <controls>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b \tab - Colonne du nom de la personne : \plain\f3\fs20\b\i COL_NOM\plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="COL_NOM">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 15 -1"/>
+                        <property id="-8" stringValue="Nom"/>
+                        <property id="-3" intValue="93"/>
+                        <property id="1" intValue="-1"/>
+                        <property id="2" intValue="-1"/>
+                        <property id="11" stringValue="COL_NOM 9 2 15 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b \tab - Colonne du pr\'e9nom : \plain\f3\fs20\b\i COL_PRN\plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="COL_PRN">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 15 -1"/>
+                        <property id="-8" stringValue="Prénom"/>
+                        <property id="-3" intValue="90"/>
+                        <property id="1" intValue="-1"/>
+                        <property id="2" intValue="-1"/>
+                        <property id="11" stringValue="COL_PRN 9 2 15 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b \tab - Colonne du sexe de la personne : \plain\f3\fs20\b\i COL_SEXE\plain\f3\fs20 &#13;&#10;\par \tab \tab Colonne au format liste de valeurs ...&#13;&#10;\par }&#13;&#10;" kinematic="0" name="COL_SEXE">
+                    <properties>
+                        <property id="-13" intValue="2"/>
+                        <property id="-9" stringValue="2 1 -1"/>
+                        <property id="-8" stringValue="Sexe"/>
+                        <property id="-3" intValue="43"/>
+                        <property id="1" intValue="-1"/>
+                        <property id="2" intValue="-1"/>
+                        <property id="6"/>
+                        <property id="11" stringValue="COL_SEXE 9 2 1 -1"/>
+                        <property id="12" intValue="1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b \tab - Colonne de la fonction : \plain\f3\fs20\b\i COL_FONCTION\plain\f3\fs20 &#13;&#10;\par \tab \tab Cette colonne est au format liste de valeurs&#13;&#10;\par }&#13;&#10;" kinematic="0" name="COL_FONCTION">
+                    <properties>
+                        <property id="-13" intValue="2"/>
+                        <property id="-9" stringValue="2 15 -1"/>
+                        <property id="-8" stringValue="Fonction"/>
+                        <property id="-3" intValue="123"/>
+                        <property id="1" intValue="-1"/>
+                        <property id="2" intValue="-1"/>
+                        <property id="6"/>
+                        <property id="11" stringValue="COL_FONCTION 9 2 15 -1"/>
+                        <property id="12" intValue="1"/>
+                        <property id="13"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+            </controls>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq9 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 --------------------------------------------------------------------------------------------------------&#13;&#10;\par \plain\f3\fs20\b &#13;&#10;\par \plain\f3\fs22\b Cadre d'\'e9dition et d'affichage des personnes : \plain\f3\fs22\b\i CDR_PERSO\plain\f3\fs22 &#13;&#10;\par \plain\f3\fs20 \tab Ce cadre contient les objets suivants :&#13;&#10;\par }&#13;&#10;" kinematic="0" name="CDR_PERSO">
+            <properties>
+                <property id="-8" stringValue="Personne"/>
+                <property id="-4" intValue="175"/>
+                <property id="-3" intValue="169"/>
+                <property id="-2" intValue="6"/>
+                <property id="-1" intValue="362"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_NOM">
+            <properties>
+                <property id="-8" stringValue="Nom"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="29"/>
+                <property id="-2" intValue="33"/>
+                <property id="-1" intValue="369"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq9 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b \tab - Champ de saisie du nom : \plain\f3\fs20\b\i CHS_NOM\plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="CHS_NOM">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 15 -1"/>
+                <property id="-4" intValue="20"/>
+                <property id="-3" intValue="90"/>
+                <property id="-2" intValue="30"/>
+                <property id="-1" intValue="430"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_PRN">
+            <properties>
+                <property id="-8" stringValue="Prénom"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="51"/>
+                <property id="-2" intValue="53"/>
+                <property id="-1" intValue="369"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq9 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b \tab - Champ de saisie du pr\'e9nom : \plain\f3\fs20\b\i CHS_PRN\plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="CHS_PRN">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 15 -1"/>
+                <property id="-4" intValue="20"/>
+                <property id="-3" intValue="90"/>
+                <property id="-2" intValue="50"/>
+                <property id="-1" intValue="430"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_SEXE">
+            <properties>
+                <property id="-8" stringValue="Sexe"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="29"/>
+                <property id="-2" intValue="84"/>
+                <property id="-1" intValue="370"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="LISTE_VALEUR" dll="COMBOBOX" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq9 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b \tab - Liste de valeurs de choix du sexe : \plain\f3\fs20\b\i LSV_SEXE\plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="LSV_SEXE">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 15 -1"/>
+                <property id="-4" intValue="21"/>
+                <property id="-3" intValue="72"/>
+                <property id="-2" intValue="80"/>
+                <property id="-1" intValue="430"/>
+                <property id="6" intValue="2"/>
+                <property id="14" stringValue="NOM_SEXE1 -6 2 15 0 # NOM_SEXE2 -6 2 1 0"/>
+            </properties>
+            <controls>
+                <control associatedVariable="" className="COLONNE_LST_VAL" dll="COLCOMBO" help="" kinematic="0" name="NOM_SEXE1">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 15 0"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="COLONNE_LST_VAL" dll="COLCOMBO" help="" kinematic="0" name="NOM_SEXE2">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 1 0"/>
+                    </properties>
+                </control>
+            </controls>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_FONC">
+            <properties>
+                <property id="-8" stringValue="Fonction"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="47"/>
+                <property id="-2" intValue="114"/>
+                <property id="-1" intValue="370"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="LISTE_VALEUR" dll="COMBOBOX" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq9 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b \tab - Liste de valeurs de fonctions : \plain\f3\fs20\b\i LSV_FONC\plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="LSV_FONC">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 15 -1"/>
+                <property id="-4" intValue="21"/>
+                <property id="-3" intValue="72"/>
+                <property id="-2" intValue="110"/>
+                <property id="-1" intValue="430"/>
+                <property id="11" intValue="80"/>
+                <property id="14" stringValue="LSV_FONC 12 2 15 -1"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq9 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b \tab - Bouton de validation des actions sur les personnes : \plain\f3\fs20\b\i BTN_PERSO&#13;&#10;\par \plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="BTN_PERSO">
+            <properties>
+                <property id="-22" stringValue="Valider"/>
+                <property id="-8" stringValue="Valider"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="150"/>
+                <property id="-1" intValue="448"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq9 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 --------------------------------------------------------------------------------------------------------&#13;&#10;\par &#13;&#10;\par \plain\f3\fs22\b Bouton d'affichage de l'aide : \plain\f3\fs22\b\i BTN_AIDE\plain\f3\fs20\b\i &#13;&#10;\par \plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="BTN_AIDE">
+            <properties>
+                <property id="-22" stringValue="Aide"/>
+                <property id="-8" stringValue="Aide"/>
+                <property id="-7" intValue="1"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="261"/>
+                <property id="-1" intValue="6"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq9 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 ---------------------------------------------------------------------------------------------------------------&#13;&#10;\par &#13;&#10;\par \plain\f3\fs22\b Bouton de fermeture du programme : \plain\f3\fs22\b\i BTN_QUITTER\plain\f3\fs20\b\i &#13;&#10;\par \plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="BTN_QUITTER">
+            <properties>
+                <property id="-22" stringValue="Quitter"/>
+                <property id="-8" stringValue="Quitter"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="261"/>
+                <property id="-1" intValue="456"/>
+            </properties>
+        </control>
+    </controls>
+</window>

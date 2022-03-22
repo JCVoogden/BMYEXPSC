@@ -1,0 +1,29 @@
+*------------------------------------------------------------------*
+*  Recherche du code DDS entité à partir du code DDS               *
+*  dictionnaire.                                                   *
+*------------------------------------------------------------------*
+*
+* ATTENTION : Ceci est un programme exemple de personnalisation des
+*             fonctions spécifiques pour Adélia/IWS. Il devra être
+*             généré en C pour OS/2. (Cf Annexe documentation IWS)
+*   
+*-------------------------------------------------------------*
+* Paramètres                                                  *
+*            P_COD_DDS_DIC   (Entrée)                         *
+*            P_COD_DDS_ENTIT (Sortie)                         *
+*            P_NOM_FICHIER   (Entrée)                         *
+*            P_COD_RETOUR    (Sortie)                         *
+*-------------------------------------------------------------*
+RECEVOIR P_COD_DDS_DIC P_COD_DDS_ENTIT P_NOM_FICHIER P_COD_RETOUR
+P_COD_RETOUR = '0'
+*
+PLACER_A_GAUCHE P_NOM_FICHIER FI_NOM_FICHIER
+LIRE FICHIER_NOM
+* Détection d'une erreur E/S en lecture : positionnement du code retour à '1'
+SI *IN90 = '1'
+  P_COD_RETOUR = '1'
+  TERMINER
+FIN
+P_COD_DDS_ENTIT = FI_COD_PREFIXE /// P_COD_DDS_DIC
+RETOURNER
+*

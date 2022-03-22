@@ -1,0 +1,155 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA                 )   DEBUT_DECL
+*ROW_METADATA(ADELIA                 )      
+*ROW_METADATA(ADELIA                 )   FIN_DECL
+*ROW_METADATA(ADELIA                 )   DEBUT_INIT
+*ROW_METADATA(ADELIA                 )      
+*ROW_METADATA(ADELIA                 )      INITIALISER FEN_T
+*ROW_METADATA(ADELIA                 )      EXECUTER FEN_T
+*ROW_METADATA(ADELIA                 )   FIN_INIT
+*ROW_METADATA(ADELIA                 )   DEBUT_FENETRE FEN_T
+*ROW_METADATA(ADELIA                 )      DEBUT_DECL
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Déclaration du nombre de parts du camembert * 
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 NB_PARTS
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Déclaration du tableau contenant les valeurs de chaque part * 
+*ROW_METADATA(ADELIA                 )         NUM_E(15,4) TAB(4)
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Déclaration du tableau contenant les légendes correspondant à chaque part *
+*ROW_METADATA(ADELIA                 )         ALPHA(250) TAB_LGDE(4)
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Déclaration du tableau contenant les valeurs booleennes de chaque part *
+*ROW_METADATA(ADELIA                 )         BOOL TAB_PART(4)
+*ROW_METADATA(ADELIA                 )      FIN_DECL
+*ROW_METADATA(ADELIA                 )      DEBUT_INIT
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Definition du nombre de parts du camembert *
+*ROW_METADATA(ADELIA                 )         NB_PARTS=4
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Initialisation valeurs booleennes de chaque part à Faux * 
+*ROW_METADATA(ADELIA                 )         TAB_PART(1)=*FAUX
+*ROW_METADATA(ADELIA                 )         TAB_PART(2)=*FAUX
+*ROW_METADATA(ADELIA                 )         TAB_PART(3)=*FAUX
+*ROW_METADATA(ADELIA                 )         TAB_PART(4)=*FAUX
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )      FIN_INIT
+*ROW_METADATA(ADELIA                 )      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET CMB_ETUDIANT
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT CMB_ETUDIANT:HotHit
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Affichage de la valeur,de la légende et du numéro de la part sur laquelle l'utilisateur a cliqué *
+*ROW_METADATA(ADELIA                 )               TXT_NUMP:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA                 )               CHO_NUMP:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA                 )               CHO_COM:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA                 )               COM=TAB(CMB_ETUDIANT:POINT_CLIQUE)
+*ROW_METADATA(ADELIA                 )               LEGENDE=TAB_LGDE(CMB_ETUDIANT:POINT_CLIQUE)
+*ROW_METADATA(ADELIA                 )               CHO_NUMP:VALEUR=CMB_ETUDIANT:POINT_CLIQUE
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_QUITTER
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_QUITTER:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               TERMINER
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_DESSIN
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_DESSIN:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Definition des valeurs pour chaque part *
+*ROW_METADATA(ADELIA                 )               TAB(1)=VAL1      
+*ROW_METADATA(ADELIA                 )               TAB(2)=VAL2
+*ROW_METADATA(ADELIA                 )               TAB(3)=VAL3
+*ROW_METADATA(ADELIA                 )               TAB(4)=VAL4
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Definition des légendes pour chaque part *
+*ROW_METADATA(ADELIA                 )               TAB_LGDE(1)=LGDE1
+*ROW_METADATA(ADELIA                 )               TAB_LGDE(2)=LGDE2
+*ROW_METADATA(ADELIA                 )               TAB_LGDE(3)=LGDE3
+*ROW_METADATA(ADELIA                 )               TAB_LGDE(4)=LGDE4
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               CMB_ETUDIANT:TITRE=TITRE
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Appel de la methode qui permet de dessiner le camembert *
+*ROW_METADATA(ADELIA                 )               APPELER_METHODE CMB_ETUDIANT DESSINER_DONNEES NB_PARTS TAB TAB_LGDE
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Objet rendu actif lorsque le camembert est dessiné * 
+*ROW_METADATA(ADELIA                 )               BTN_ETQ:ACTIVITE=*VRAI
+*ROW_METADATA(ADELIA                 )               BTN_DET:ACTIVITE=*VRAI
+*ROW_METADATA(ADELIA                 )               BTN_TYPE:ACTIVITE=*VRAI
+*ROW_METADATA(ADELIA                 )               BTN_INCL:ACTIVITE=*VRAI
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_DET
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_DET:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Affectation de la valeur 'Vrai' aux parties du tableau pour lesquelles les cases correspondantes ont été cochées *
+*ROW_METADATA(ADELIA                 )               SI CASE1=*VRAI
+*ROW_METADATA(ADELIA                 )                  TAB_PART(1)=*VRAI
+*ROW_METADATA(ADELIA                 )               FIN
+*ROW_METADATA(ADELIA                 )               *
+*ROW_METADATA(ADELIA                 )               SI CASE2=*VRAI
+*ROW_METADATA(ADELIA                 )                  TAB_PART(2)=*VRAI
+*ROW_METADATA(ADELIA                 )               FIN
+*ROW_METADATA(ADELIA                 )               *
+*ROW_METADATA(ADELIA                 )               SI CASE3=*VRAI
+*ROW_METADATA(ADELIA                 )                  TAB_PART(3)=*VRAI
+*ROW_METADATA(ADELIA                 )               FIN
+*ROW_METADATA(ADELIA                 )               *
+*ROW_METADATA(ADELIA                 )               SI CASE4=*VRAI
+*ROW_METADATA(ADELIA                 )                  TAB_PART(4)=*VRAI
+*ROW_METADATA(ADELIA                 )               FIN
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Appel de la methode qui permet de détacher les parts du camembert *   
+*ROW_METADATA(ADELIA                 )               APPELER_METHODE CMB_ETUDIANT DETACHER_PARTS TAB_PART
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               TAB_PART(1)=*FAUX
+*ROW_METADATA(ADELIA                 )               TAB_PART(2)=*FAUX
+*ROW_METADATA(ADELIA                 )               TAB_PART(3)=*FAUX
+*ROW_METADATA(ADELIA                 )               TAB_PART(4)=*FAUX
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_ETQ
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_ETQ:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Etiquettes du camembert en pourcentage *
+*ROW_METADATA(ADELIA                 )               SI CMB_ETUDIANT:VALEUR_ETIQUETTE=*FAUX
+*ROW_METADATA(ADELIA                 )                  CMB_ETUDIANT:VALEUR_ETIQUETTE=*VRAI
+*ROW_METADATA(ADELIA                 )               SINON
+*ROW_METADATA(ADELIA                 )                  CMB_ETUDIANT:VALEUR_ETIQUETTE=*FAUX
+*ROW_METADATA(ADELIA                 )               FIN
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_TYPE
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_TYPE:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Type du camembert (2D ou 3D) *
+*ROW_METADATA(ADELIA                 )               Si CMB_ETUDIANT:TYPE=_CMB_TYPE_3D
+*ROW_METADATA(ADELIA                 )                  CMB_ETUDIANT:TYPE=_CMB_TYPE_2D
+*ROW_METADATA(ADELIA                 )                  BTN_TYPE:TEXTE='3D'
+*ROW_METADATA(ADELIA                 )                  BTN_INCL:ACTIVITE=*FAUX
+*ROW_METADATA(ADELIA                 )               SINON
+*ROW_METADATA(ADELIA                 )                  CMB_ETUDIANT:TYPE=_CMB_TYPE_3D
+*ROW_METADATA(ADELIA                 )                  BTN_TYPE:TEXTE='2D'
+*ROW_METADATA(ADELIA                 )                  BTN_INCL:ACTIVITE=*VRAI
+*ROW_METADATA(ADELIA                 )               FIN
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_INCL
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_INCL:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Fixe la valeur de l'inclinaison du camembert à partir du champ de saisie *
+*ROW_METADATA(ADELIA                 )               CMB_ETUDIANT:INCLINAISON=CHS_INC:VALEUR
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )      FIN_GEST_EVT
+*ROW_METADATA(ADELIA                 )      DEBUT_VERIF
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_VERIF
+*ROW_METADATA(ADELIA                 )      DEBUT_VALID
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_VALID
+*ROW_METADATA(ADELIA                 )      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA                 )      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA                 )   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

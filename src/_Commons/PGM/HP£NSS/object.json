@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "HP£NSS",
+  "description" : "Controle clé sécurité sociale",
+  "creationDate" : "1995-07-27 12:01:52",
+  "updateDate" : "1995-09-11 07:17:17",
+  "visibility" : "PUBLIC",
+  "ibmName" : "HP£NSS",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "HP£NSS",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

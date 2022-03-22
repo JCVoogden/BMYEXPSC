@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "HBLMFF",
+  "description" : "Mise à jour d'un fichier",
+  "creationDate" : "1996-07-09 15:23:20",
+  "updateDate" : "1996-07-10 14:29:15",
+  "visibility" : "PRIVATE",
+  "ibmName" : "HBLMFF",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "HBLMFF",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

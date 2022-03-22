@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "TESTEXIT",
+  "description" : "TESTEXIT",
+  "creationDate" : "2009-03-25 12:40:55",
+  "updateDate" : "2009-03-25 12:43:04",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TESTEX",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TESTEX",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

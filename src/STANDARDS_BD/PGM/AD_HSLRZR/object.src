@@ -1,0 +1,62 @@
+*****************************************************************
+* ATTENTION : Ceci est un programme exemple de personnalisation des
+*             fonctions spécifiques pour Adélia/IWS. Il devra être
+*             généré en C pour OS/2. (Cf Annexe documentation IWS)
+*   
+*
+* Si l'on insère une propriété conceptuelle plusieurs fois dans *
+* une entité logique                                            *
+*      cas n°1 : entité logique représentant une rel. réflexive *
+*      cas n°2 : entité logique représentant une entité cible   *
+*          (plusieurs relations 1,N entre une entité cible      *
+*           et une entité source)                               *
+* Plusieurs propriétés logiques (2 dans le cas n°1) auront      *
+* comme nom celui de l'identifiant de l'entité source.          *
+*                                                               *
+* Comme ce nom doit être unique, on adopte la convention suiv.  *
+*  - une des propriétés a le nom de l'identifiant               *
+*  - les autres ont le nom de la propriété suffixé par les 3    *
+*    caractères qui suivent le dernier '_' du nom de la relation*
+*                                                               *
+* Par convention les noms des relations 1,N sont :              *
+*       CIBLE_SOURCE_ROLE                                       *
+* les 3 caract. choisis sont les 3 premiers du rôle de la rel.  *
+*****************************************************************
+*
+RECEVOIR P_NOM_ENTITE P_NOM_RELATION P_NOM_PROPRIETE P_NOM_DDS P_NOM_NOUV_PPTE P_NOM_NOUV_DDS P_COD_RETOUR
+DS DS1 W15 T15,1
+DS DS2 W3 T3,1
+P_COD_RETOUR = '0'
+W15 = P_NOM_RELATION
+*
+* ---- Recherche du dernier '_' dans le nom de la relation
+I = 15
+TANT_QUE I > 0 ET T15(I) <> '_'
+  I = I-1
+REFAIRE
+*
+SI I <> 0
+  * ---- Trouvé
+  J = 1
+  W3 = *BLANK
+  I = I+1
+  TANT_QUE I <= 15 ET J <= 3
+    T3(J) = T15(I)
+    I = I+1
+    J = J+1
+  REFAIRE
+SINON
+  * ---- Non trouvé : on prend les 3 premiers caractères du nom de
+  * la relation
+  PLACER_A_GAUCHE P_NOM_RELATION W3
+FIN
+*
+W8 = *BLANK
+PLACER_A_GAUCHE P_NOM_PROPRIETE W8
+P_NOM_NOUV_PPTE = W8 /// '_' // W3
+*
+SI P_NOM_DDS <> *BLANK
+  W4 = *BLANK
+  PLACER_A_GAUCHE P_NOM_DDS W4
+  P_NOM_NOUV_DDS = W4 // W3
+FIN

@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "GES_SINISTRE_01",
+  "description" : "Gestion des sinistres",
+  "creationDate" : "1995-06-08 07:27:03",
+  "updateDate" : "1995-06-08 07:27:03",
+  "visibility" : "PUBLIC",
+  "ibmName" : "GESSIN",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "GESSIN",
+  "programTemplateName" : "GES_SSF_3TR_01",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

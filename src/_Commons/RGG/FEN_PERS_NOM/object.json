@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "FEN_PERS_NOM",
+  "description" : "Guide de saisie des personnes récup du nom",
+  "creationDate" : "1995-06-07 12:47:28",
+  "updateDate" : "1995-06-29 07:24:03",
+  "visibility" : "PUBLIC",
+  "mrClass" : "GS",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

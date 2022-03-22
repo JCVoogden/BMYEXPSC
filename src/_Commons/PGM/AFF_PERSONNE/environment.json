@@ -1,0 +1,62 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "PERSONN_DA",
+    "fileName" : "PERSONNL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "PCOD_MAT_PERS",
+      "type" : "DEFAULT"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "BLABLA",
+      "fileName" : ""
+    },
+    "shortName" : "BLABLA",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_ACTION",
+      "fileName" : ""
+    },
+    "shortName" : "PCACT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_ACTION",
+    "rename" : "PCACT",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCRET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_RETOUR",
+    "rename" : "PCRET",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "TY",
+      "fileName" : ""
+    },
+    "shortName" : "TY",
+    "length" : 3,
+    "type" : "NUMERIC",
+    "generation" : "NONE"
+  } ]
+}

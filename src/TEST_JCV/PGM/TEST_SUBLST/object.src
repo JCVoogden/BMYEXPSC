@@ -1,0 +1,124 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20090130)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20090130)      bool      rc
+*ROW_METADATA(ADELIA         20090130)      num_bin_4 l
+*ROW_METADATA(ADELIA         20090130)      
+*ROW_METADATA(ADELIA         20090130)   FIN_DECL
+*ROW_METADATA(ADELIA         20090130)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20090130)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20090130)      executer id_fen0
+*ROW_METADATA(ADELIA         20090130)   FIN_INIT
+*ROW_METADATA(ADELIA         20090130)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20090130)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20090130)         num_bin_4 x
+*ROW_METADATA(ADELIA         20090130)         num_bin_4 y
+*ROW_METADATA(ADELIA         20090130)         num_bin_4 z
+*ROW_METADATA(ADELIA         20090130)         num_bin_4 n
+*ROW_METADATA(ADELIA         20090130)      FIN_DECL
+*ROW_METADATA(ADELIA         20090130)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20090130)         
+*ROW_METADATA(ADELIA         20090130)         idcol1: = *vrai
+*ROW_METADATA(ADELIA         20090130)         idcol2: = 'blabla'
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090202)         
+*ROW_METADATA(ADELIA         20090202)         
+*ROW_METADATA(ADELIA         20090202)         appeler_methode idcol1 mettre_focus 1
+*ROW_METADATA(ADELIA         20090130)         
+*ROW_METADATA(ADELIA         20090130)      FIN_INIT
+*ROW_METADATA(ADELIA         20090130)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20090130)         DEBUT_OBJET IDLST
+*ROW_METADATA(ADELIA         20090130)            DEBUT_EVT IDLST:Selection
+*ROW_METADATA(ADELIA         20090130)               
+*ROW_METADATA(ADELIA         20090130)               * appeler_dll 'glouglou' 'GlouglouGetCursorPos' x y
+*ROW_METADATA(ADELIA         20090130)               * 
+*ROW_METADATA(ADELIA         20090130)               * z = x - idlst:abscisse - id_fen0:abscisse
+*ROW_METADATA(ADELIA         20090130)               * 
+*ROW_METADATA(ADELIA         20090130)               * si z > 0 et z < idcol1:largeur
+*ROW_METADATA(ADELIA         20090130)               * 
+*ROW_METADATA(ADELIA         20090130)               *    n = 0
+*ROW_METADATA(ADELIA         20090130)               * 
+*ROW_METADATA(ADELIA         20090130)               *    lecture_lst idlst:liste *select
+*ROW_METADATA(ADELIA         20090130)               *       n = n + 1      
+*ROW_METADATA(ADELIA         20090130)               *       l = &rang_elt(idlst:liste)
+*ROW_METADATA(ADELIA         20090130)               *    fin_lecture_lst
+*ROW_METADATA(ADELIA         20090130)               * 
+*ROW_METADATA(ADELIA         20090130)               *    si n = 1
+*ROW_METADATA(ADELIA         20090130)               *       id_fen1:abscisse = id_fen0:abscisse + idlst:abscisse + idcol1:largeur
+*ROW_METADATA(ADELIA         20090130)               *       id_fen1:ordonnee = y
+*ROW_METADATA(ADELIA         20090130)               *       executer id_fen1 *non_modal
+*ROW_METADATA(ADELIA         20090130)               *    fin
+*ROW_METADATA(ADELIA         20090130)               * fin
+*ROW_METADATA(ADELIA         20090130)            FIN_EVT
+*ROW_METADATA(ADELIA         20090130)         FIN_OBJET
+*ROW_METADATA(ADELIA         20090130)         DEBUT_OBJET IDCOL1
+*ROW_METADATA(ADELIA         20090130)            DEBUT_EVT IDCOL1:ChangementValeur
+*ROW_METADATA(ADELIA         20090130)               appeler_dll 'glouglou' 'GlouglouGetCursorPos' x y
+*ROW_METADATA(ADELIA         20090130)               l = idlst:numero_ligne_courante
+*ROW_METADATA(ADELIA         20090130)               id_fen1:abscisse = id_fen0:abscisse + idlst:abscisse + idcol1:largeur
+*ROW_METADATA(ADELIA         20090130)               id_fen1:ordonnee = y + 5
+*ROW_METADATA(ADELIA         20090130)               initialiser id_fen1
+*ROW_METADATA(ADELIA         20090130)               executer id_fen1 *non_modal
+*ROW_METADATA(ADELIA         20090130)               
+*ROW_METADATA(ADELIA         20090130)            FIN_EVT
+*ROW_METADATA(ADELIA         20090130)         FIN_OBJET
+*ROW_METADATA(ADELIA         20090130)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20090130)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20090130)         
+*ROW_METADATA(ADELIA         20090130)      FIN_VERIF
+*ROW_METADATA(ADELIA         20090130)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20090130)         
+*ROW_METADATA(ADELIA         20090130)      FIN_VALID
+*ROW_METADATA(ADELIA         20090130)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20090130)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20090130)   FIN_FENETRE
+*ROW_METADATA(ADELIA         20090130)   DEBUT_FENETRE ID_FEN1
+*ROW_METADATA(ADELIA         20090130)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20090130)         
+*ROW_METADATA(ADELIA         20090130)      FIN_DECL
+*ROW_METADATA(ADELIA         20090130)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20090130)         vider_lst idlst:liste
+*ROW_METADATA(ADELIA         20090130)         
+*ROW_METADATA(ADELIA         20090130)         idlst:abscisse = 0
+*ROW_METADATA(ADELIA         20090130)         idlst:ordonnee = 0
+*ROW_METADATA(ADELIA         20090130)         idlst:largeur  = id_fen1:largeur
+*ROW_METADATA(ADELIA         20090130)         idlst:hauteur  = id_fen1:hauteur
+*ROW_METADATA(ADELIA         20090130)         
+*ROW_METADATA(ADELIA         20090130)         
+*ROW_METADATA(ADELIA         20090130)         idcol1: = 'bla'
+*ROW_METADATA(ADELIA         20090130)         idcol2: = 'blablablabla blabla'
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090130)         inserer_elt idlst:liste
+*ROW_METADATA(ADELIA         20090130)         
+*ROW_METADATA(ADELIA         20090130)      FIN_INIT
+*ROW_METADATA(ADELIA         20090130)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20090130)         DEBUT_OBJET ID_FEN1
+*ROW_METADATA(ADELIA         20090130)            DEBUT_EVT ID_FEN1:Desactivation
+*ROW_METADATA(ADELIA         20090130)               appeler_methode id_fen0.idlst recuperer_valeur_colonnes l rc
+*ROW_METADATA(ADELIA         20090130)               id_fen0.idcol1: = *vrai
+*ROW_METADATA(ADELIA         20090130)               appeler_methode id_fen0.idlst fixer_valeur_colonnes l rc
+*ROW_METADATA(ADELIA         20090130)               terminer
+*ROW_METADATA(ADELIA         20090130)            FIN_EVT
+*ROW_METADATA(ADELIA         20090130)         FIN_OBJET
+*ROW_METADATA(ADELIA         20090130)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20090130)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20090130)         
+*ROW_METADATA(ADELIA         20090130)      FIN_VERIF
+*ROW_METADATA(ADELIA         20090130)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20090130)         
+*ROW_METADATA(ADELIA         20090130)      FIN_VALID
+*ROW_METADATA(ADELIA         20090130)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20090130)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20090130)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

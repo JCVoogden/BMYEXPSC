@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "HBLELF",
+  "description" : "Edition de la liste des fichiers de l'application",
+  "creationDate" : "1996-07-09 15:22:55",
+  "updateDate" : "2002-10-24 13:13:57",
+  "visibility" : "PRIVATE",
+  "ibmName" : "HBLELF",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "HBLELF",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

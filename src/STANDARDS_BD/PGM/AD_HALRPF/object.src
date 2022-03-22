@@ -1,0 +1,23 @@
+*-------------------------------------------------------------*
+*                                                             *
+*   Recherche du nom du fichier printer en fonction du code   *
+*   maquette                                                  *
+*                                                             *
+*-------------------------------------------------------------*
+*
+* ATTENTION : Ceci est un programme exemple de personnalisation des
+*             fonctions spécifiques pour Adélia/IWS. Il devra être
+*             généré en C pour OS/2. (Cf Annexe documentation IWS)
+*
+*-------------------------------------------------------------*
+* Paramètres                                                  *
+*            NOM_PRINTER     (Entrée/Sortie)                  *
+*            P_COD_RETOUR    (Sortie)                         *
+* On recoit en entrée                                         *
+*   NOM_PRINTER = code maquette + 'PR'                        *
+*-------------------------------------------------------------*
+RECEVOIR NOM_PRINTER P_COD_RETOUR
+P_COD_RETOUR = '0'
+*
+* On ne fait rien car on rend la même valeur (code maquette + 'PR')
+*

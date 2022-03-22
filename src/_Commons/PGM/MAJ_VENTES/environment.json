@@ -1,0 +1,161 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "*1"
+    },
+    "guideWord" : "VENTE_S1",
+    "fileName" : "VENTEL",
+    "access" : "KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "*1",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "A1"
+    },
+    "guideWord" : "VENTE_A1",
+    "fileName" : "VENTEL",
+    "access" : "BY_KEY",
+    "update" : "CREATE_AND_UPDATE",
+    "nbKeys" : 2,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "A1",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    }, {
+      "id" : {
+        "code" : "A1",
+        "ordinal" : 2
+      },
+      "guideWord" : "ZZNUM_LIG_VENTE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "ARTICLE_DA",
+    "fileName" : "ARTICLEL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_ARTICLE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DB"
+    },
+    "guideWord" : "CLIENTS_DB",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DB",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DC"
+    },
+    "guideWord" : "PERSONN_DC",
+    "fileName" : "PERSONNL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DC",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_MAT_PERS",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DD"
+    },
+    "guideWord" : "REGLEMT_DD",
+    "fileName" : "REGLEMTL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DD",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_REGLEMENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "P_COD_ACTION",
+      "fileName" : ""
+    },
+    "shortName" : "PCACT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCACT",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "RWP_COD_RET",
+      "fileName" : ""
+    },
+    "shortName" : "WP£CRT",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "RWP_COD_RET",
+    "rename" : "WP£CRT",
+    "generation" : "LEVEL2"
+  }, {
+    "id" : {
+      "guideWord" : "WG_CLE_ART",
+      "fileName" : ""
+    },
+    "shortName" : "WGCART",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "designation" : "WG_CLE_ART",
+    "rename" : "WGCART",
+    "generation" : "LEVEL2"
+  }, {
+    "id" : {
+      "guideWord" : "WVNUM_LIG_VENTE",
+      "fileName" : ""
+    },
+    "shortName" : "WVNLVT",
+    "length" : 3,
+    "type" : "NUMERIC",
+    "rename" : "WVNLVT",
+    "generation" : "NONE"
+  } ]
+}

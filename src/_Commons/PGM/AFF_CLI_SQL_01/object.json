@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AFF_CLI_SQL_01",
+  "description" : "Chargement sous-fichier par requête SQL statique",
+  "creationDate" : "2007-04-16 13:27:27",
+  "updateDate" : "2007-07-31 07:40:03",
+  "visibility" : "PUBLIC",
+  "ibmName" : "SQLCLI",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "SQLCLI",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

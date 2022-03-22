@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AD_HALRPF",
+  "description" : "Nom fichier printer en fct du code maq.   HA£RPF",
+  "creationDate" : "1996-07-09 15:42:59",
+  "updateDate" : "2002-10-24 11:56:48",
+  "visibility" : "PRIVATE",
+  "ibmName" : "HALRPF",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "AALRPF",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

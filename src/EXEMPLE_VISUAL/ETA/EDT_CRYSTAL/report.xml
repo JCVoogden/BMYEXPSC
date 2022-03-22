@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml report.xsd">
+    <entities/>
+    <fields>
+        <field description="EDTCR" guideWord="CLIENT" kind="VARIABLE" layoutCode="_data" length="41" type="STRING"/>
+        <field description="EDTCR" guideWord="CODE_POSTAL" kind="VARIABLE" layoutCode="_data" length="21" type="STRING"/>
+        <field description="EDTCR" guideWord="CONTACT" kind="VARIABLE" layoutCode="_data" length="31" type="STRING"/>
+        <field description="EDTCR" guideWord="FONCTION" kind="VARIABLE" layoutCode="_data" length="31" type="STRING"/>
+        <field description="EDTCR" guideWord="ID" kind="VARIABLE" layoutCode="_data" type="INT"/>
+        <field description="EDTCR" guideWord="LOGO" kind="VARIABLE" layoutCode="_data" type="IMAGE"/>
+        <field description="EDTCR" guideWord="PAYS" kind="VARIABLE" layoutCode="_data" length="31" type="STRING"/>
+        <field description="EDTCR" guideWord="PIED_PAGE" kind="VARIABLE" layoutCode="_data" length="161" type="STRING"/>
+        <field description="EDTCR" guideWord="TITRE_ETAT" kind="VARIABLE" layoutCode="_data" length="161" type="STRING"/>
+        <field description="EDTCR" guideWord="TITRE_PAGE" kind="VARIABLE" layoutCode="_data" length="161" type="STRING"/>
+        <field description="EDTCR" guideWord="*PGM" kind="VARIABLE" layoutCode="_data" length="21" type="STRING"/>
+        <field description="EDTCR" guideWord="*USER" kind="VARIABLE" layoutCode="_data" length="65" type="STRING"/>
+        <field description="EDTCR" kind="CONSTANT" length="3" scale="2">
+            <text text="Nom du client"/>
+        </field>
+        <field description="EDTCR" kind="CONSTANT" length="4" scale="2">
+            <text text="Id."/>
+        </field>
+        <field description="EDTCR" kind="CONSTANT" length="5" scale="2">
+            <text text="Code postal"/>
+        </field>
+        <field description="EDTCR" kind="CONSTANT" length="6" scale="2">
+            <text text="Nom du contact &amp; fonction"/>
+        </field>
+        <field description="EDTCR" kind="CONSTANT" length="8" scale="301">
+            <text text="Pays : "/>
+        </field>
+        <field description="EDTCR" kind="CONSTANT" length="20" scale="7">
+            <text text="Ref : "/>
+        </field>
+        <field description="EDTCR" kind="CONSTANT" length="21" scale="7">
+            <text text="Date/Heure impression : "/>
+        </field>
+    </fields>
+</report>

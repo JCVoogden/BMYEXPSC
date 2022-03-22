@@ -1,0 +1,8 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   REGLE_GESTION :03 :01
+*ROW_METADATA(ADELIA                 )   LIRE :02
+*ROW_METADATA(ADELIA                 )   SI :02 N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )   INIT_MSG :01
+*ROW_METADATA(ADELIA                 )   ANOMALIE
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

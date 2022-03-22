@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "MAJ_SINISTRE",
+  "description" : "Mise à jour des sinistres",
+  "creationDate" : "1995-06-08 07:39:33",
+  "updateDate" : "1995-06-08 07:39:33",
+  "visibility" : "PUBLIC",
+  "ibmName" : "MAJSIN",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "MAJSIN",
+  "programTemplateName" : "MAJ_INF_PARM",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

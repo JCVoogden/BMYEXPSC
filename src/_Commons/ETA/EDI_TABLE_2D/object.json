@@ -1,0 +1,11 @@
+{
+  "type" : "ETA",
+  "name" : "EDI_TABLE_2D",
+  "description" : "RECAPITULATIF DES VENTES",
+  "creationDate" : "1995-06-08 07:11:39",
+  "updateDate" : "1995-06-08 07:11:39",
+  "visibility" : "PUBLIC",
+  "layoutCode" : "EDICAT",
+  "reportTypeName" : "EDI_TAB_2D",
+  "nature" : "ADELIA"
+}

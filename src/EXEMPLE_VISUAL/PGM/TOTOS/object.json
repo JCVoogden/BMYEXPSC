@@ -1,0 +1,17 @@
+{
+  "type" : "PGM",
+  "name" : "TOTOS",
+  "description" : "TOTOS",
+  "creationDate" : "2007-09-20 10:06:50",
+  "updateDate" : "2007-09-20 10:06:59",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TOTOS",
+  "programType" : "B",
+  "sourceType" : "SADELIA",
+  "layoutCode" : "TOTOS",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT",
+  "version" : 17,
+  "modification" : 1,
+  "buildId" : 2
+}

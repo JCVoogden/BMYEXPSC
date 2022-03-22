@@ -1,0 +1,215 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA                 )   DEBUT_DECL
+*ROW_METADATA(ADELIA                 )      
+*ROW_METADATA(ADELIA                 )      ALPHA (10) PARAM1
+*ROW_METADATA(ADELIA                 )      PARAM PARAM1
+*ROW_METADATA(ADELIA                 )   FIN_DECL
+*ROW_METADATA(ADELIA                 )   DEBUT_INIT
+*ROW_METADATA(ADELIA                 )      
+*ROW_METADATA(ADELIA                 )      SI PARAM1='envoyer'
+*ROW_METADATA(ADELIA                 )         * Envoi d'informations sur un périphérique quelconque
+*ROW_METADATA(ADELIA                 )         INITIALISER PSE_ENV      
+*ROW_METADATA(ADELIA                 )         EXECUTER PSE_ENV
+*ROW_METADATA(ADELIA                 )      SINON
+*ROW_METADATA(ADELIA                 )         * Reception des mesures envoyées par une balance
+*ROW_METADATA(ADELIA                 )         INITIALISER PSE_RECEPT
+*ROW_METADATA(ADELIA                 )         EXECUTER PSE_RECEPT
+*ROW_METADATA(ADELIA                 )      FIN
+*ROW_METADATA(ADELIA                 )   FIN_INIT
+*ROW_METADATA(ADELIA                 )   DEBUT_FENETRE PSE_ENV
+*ROW_METADATA(ADELIA                 )      DEBUT_DECL
+*ROW_METADATA(ADELIA                 )         * Envoi d'informations sur un périphérique quelconque
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Taille maximale du buffer
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 TAILLE
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Buffer dans lequel les informations contenues vont être ecritent sur le port serie
+*ROW_METADATA(ADELIA                 )         ALPHA(250) BUFFER
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Paramètre de contrôle lors de l'appel des méthodes de l'objet port série
+*ROW_METADATA(ADELIA                 )         BOOL OPOK
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * tableau de travail
+*ROW_METADATA(ADELIA                 )         ALPHA(1) TAB_TRAV(250)
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         Num_p(3,0) IT
+*ROW_METADATA(ADELIA                 )      FIN_DECL
+*ROW_METADATA(ADELIA                 )      DEBUT_INIT
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         TAILLE=250
+*ROW_METADATA(ADELIA                 )      FIN_INIT
+*ROW_METADATA(ADELIA                 )      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET PSE_ENV
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT PSE_ENV:MNU_OUVRIR
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Connexion sur le port serie 
+*ROW_METADATA(ADELIA                 )               APPELER_METHODE PSE_BAL OUVRIR OPOK
+*ROW_METADATA(ADELIA                 )               Si OpOk=*vrai
+*ROW_METADATA(ADELIA                 )                  PSE_ENV[mnu_ouvrir]:grise=*vrai
+*ROW_METADATA(ADELIA                 )                  PSE_ENV[mnu_fermer]:grise=*faux
+*ROW_METADATA(ADELIA                 )                  PSE_ENV[mnu_env]:grise=*faux
+*ROW_METADATA(ADELIA                 )               fin
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT PSE_ENV:MNU_FERMER
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Fin de la connexion sur le port série
+*ROW_METADATA(ADELIA                 )               APPELER_METHODE PSE_BAL FERMER
+*ROW_METADATA(ADELIA                 )               PSE_ENV[mnu_ouvrir]:grise=*faux
+*ROW_METADATA(ADELIA                 )               PSE_ENV[mnu_fermer]:grise=*vrai
+*ROW_METADATA(ADELIA                 )               PSE_ENV[mnu_env]:grise=*vrai 
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT PSE_ENV:MNU_ENV
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Ecriture sur le port série des caractères contenus
+*ROW_METADATA(ADELIA                 )               * dans le buffer et à la fin de la chaine, on ajoute 
+*ROW_METADATA(ADELIA                 )               * un retour chariot (code hexa 0D) et un lineFeed
+*ROW_METADATA(ADELIA                 )               * (code hexa 0A) pour passer à la ligne suivante
+*ROW_METADATA(ADELIA                 )               TAILLE= &LONGUEUR_CHAINE(CHS_ENVOI:VALEUR)
+*ROW_METADATA(ADELIA                 )               PLACER_TABLE CHS_ENVOI:VALEUR TAB_TRAV
+*ROW_METADATA(ADELIA                 )               TAILLE = TAILLE + 1
+*ROW_METADATA(ADELIA                 )               TAB_TRAV(TAILLE) = &CONVERSION_CAR('0D')
+*ROW_METADATA(ADELIA                 )               TAILLE = TAILLE + 1
+*ROW_METADATA(ADELIA                 )               TAB_TRAV(TAILLE) = &CONVERSION_CAR('0A')
+*ROW_METADATA(ADELIA                 )               PLACER_TABLE TAB_TRAV BUFFER
+*ROW_METADATA(ADELIA                 )               APPELER_METHODE PSE_BAL ECRIRE_ALPHA BUFFER TAILLE OPOK
+*ROW_METADATA(ADELIA                 )               si opok=*vrai
+*ROW_METADATA(ADELIA                 )                  cho_ok:='Envoi sur port série effectué'   
+*ROW_METADATA(ADELIA                 )               sinon
+*ROW_METADATA(ADELIA                 )                  cho_ok:='Problème sur envoi'
+*ROW_METADATA(ADELIA                 )               fin
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )      FIN_GEST_EVT
+*ROW_METADATA(ADELIA                 )      DEBUT_VERIF
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_VERIF
+*ROW_METADATA(ADELIA                 )      DEBUT_VALID
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_VALID
+*ROW_METADATA(ADELIA                 )      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA                 )      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA                 )   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )   DEBUT_FENETRE PSE_RECEPT
+*ROW_METADATA(ADELIA                 )      DEBUT_DECL
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Hypothèse: On a une balance qui pour chaque mesure nous
+*ROW_METADATA(ADELIA                 )         * envoie une chaine de 50 caractères avec la valeur du 
+*ROW_METADATA(ADELIA                 )         * poids se trouvant entre les caractères 40 et 42 (3 chiffres)
+*ROW_METADATA(ADELIA                 )         * Caractéristiques du port série: vitesse 1200;
+*ROW_METADATA(ADELIA                 )         * taille 8 bits; sans bit de parité et un bit de stop.
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Buffer contenant la chaine de caractères lue sur le port série
+*ROW_METADATA(ADELIA                 )         ALPHA(250) BUFFER
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Nombre d'élements lus sur le port série
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 NBLUS
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Taille maximale du buffer
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 TAILLE
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Tableau contenant les caractères lus sur le port série
+*ROW_METADATA(ADELIA                 )         ALPHA(1) TAB(250)
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 I
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 K
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 J
+*ROW_METADATA(ADELIA                 )         BOOL OPOK
+*ROW_METADATA(ADELIA                 )         alpha(3) wa3
+*ROW_METADATA(ADELIA                 )         num_e(3,0) wn3
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_DECL
+*ROW_METADATA(ADELIA                 )      DEBUT_INIT
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         TAILLE=250
+*ROW_METADATA(ADELIA                 )         NBLUS=0
+*ROW_METADATA(ADELIA                 )         TAB=*BLANK
+*ROW_METADATA(ADELIA                 )         i=1
+*ROW_METADATA(ADELIA                 )      FIN_INIT
+*ROW_METADATA(ADELIA                 )      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET PSE_BAL
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT PSE_BAL:PortSerie
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               BUFFER=*BLANK
+*ROW_METADATA(ADELIA                 )               * Lecture sur le port serie à chaque événement 'port serie'.
+*ROW_METADATA(ADELIA                 )               * (Evénement déclenché quand des données sont envoyées sur le port serie de l'objet).
+*ROW_METADATA(ADELIA                 )               * Remarque : il est possible que 1 mesure déclenche plusieurs
+*ROW_METADATA(ADELIA                 )               * évenements et qu'on ne récupère à chaque lecture qu'une partie
+*ROW_METADATA(ADELIA                 )               * des 50 caractères envoyés par la balance.    
+*ROW_METADATA(ADELIA                 )               APPELER_METHODE PSE_BAL LIRE_ALPHA BUFFER TAILLE NBLUS OPOK
+*ROW_METADATA(ADELIA                 )               cho_nblus:=nblus
+*ROW_METADATA(ADELIA                 )               si opok=*vrai   
+*ROW_METADATA(ADELIA                 )                  cho_ok:='Reception OK'
+*ROW_METADATA(ADELIA                 )               sinon
+*ROW_METADATA(ADELIA                 )                  cho_ok:='Problème intervenu lors de la reception'
+*ROW_METADATA(ADELIA                 )               fin
+*ROW_METADATA(ADELIA                 )               * Le tableau 'tab' reçoit les caractères contenus dans le buffer à partir de l'indice i.
+*ROW_METADATA(ADELIA                 )               PLACER_TABLE BUFFER TAB(I)
+*ROW_METADATA(ADELIA                 )               I=I+NBLUS
+*ROW_METADATA(ADELIA                 )               SI i>50
+*ROW_METADATA(ADELIA                 )                  * On a acquit la totalité des caractères envoyés par la
+*ROW_METADATA(ADELIA                 )                  * balance pour la mesure courante.
+*ROW_METADATA(ADELIA                 )                  * La variable 'wa3' reçoit la valeur du poid mesuré par la 
+*ROW_METADATA(ADELIA                 )                  * balance.(Valeur contenue dans les postes 40,41 et 42 de 'tab')
+*ROW_METADATA(ADELIA                 )                  PLACER_TABLE tab(40) wa3
+*ROW_METADATA(ADELIA                 )                  * Cette valeur est insérée dans une variable numérique
+*ROW_METADATA(ADELIA                 )                  PLACER_A_DROITE wa3 wn3
+*ROW_METADATA(ADELIA                 )                  ENVOYER_MSG PSE0005 wn3 *BOITE(*OK)
+*ROW_METADATA(ADELIA                 )                  * Il est possible que dans le dernier buffer de la mesure 
+*ROW_METADATA(ADELIA                 )                  * courante, on trouve aussi des données correspondant à la
+*ROW_METADATA(ADELIA                 )                  * pesée suivante (cas où les 2 pesées sont faites dans un
+*ROW_METADATA(ADELIA                 )                  * temps très rapproché). On reprend donc ces caractères
+*ROW_METADATA(ADELIA                 )                  * (se trouvant après la position 50) pour initialiser
+*ROW_METADATA(ADELIA                 )                  * correctement le tableau pour la lecture de la pesée suivante.
+*ROW_METADATA(ADELIA                 )                  k=1
+*ROW_METADATA(ADELIA                 )                  j=51
+*ROW_METADATA(ADELIA                 )                  tant_que j<i
+*ROW_METADATA(ADELIA                 )                     tab(k)=tab(j)
+*ROW_METADATA(ADELIA                 )                     k=k+1
+*ROW_METADATA(ADELIA                 )                     j=j+1
+*ROW_METADATA(ADELIA                 )                  refaire
+*ROW_METADATA(ADELIA                 )                  i=i-50
+*ROW_METADATA(ADELIA                 )               FIN
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET PSE_RECEPT
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT PSE_RECEPT:MNU_OUVRIR
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Connexion sur le port série
+*ROW_METADATA(ADELIA                 )               APPELER_METHODE PSE_BAL OUVRIR OPOK
+*ROW_METADATA(ADELIA                 )               si opok=*vrai
+*ROW_METADATA(ADELIA                 )                  PSE_recept[mnu_ouvrir]:grise=*vrai
+*ROW_METADATA(ADELIA                 )                  PSE_recept[mnu_fermer]:grise=*faux
+*ROW_METADATA(ADELIA                 )               sinon
+*ROW_METADATA(ADELIA                 )                  cho_ouv:='Erreur lors de la connexion sur le port série'
+*ROW_METADATA(ADELIA                 )               fin
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT PSE_RECEPT:MNU_FERMER
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Fermeture de la connexion
+*ROW_METADATA(ADELIA                 )               APPELER_METHODE PSE_BAL FERMER
+*ROW_METADATA(ADELIA                 )               PSE_recept[mnu_ouvrir]:grise=*faux
+*ROW_METADATA(ADELIA                 )               PSE_recept[mnu_fermer]:grise=*vrai
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT PSE_RECEPT:MNU_VIDER
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               TAB=*BLANK
+*ROW_METADATA(ADELIA                 )               I=1
+*ROW_METADATA(ADELIA                 )               NBLUS=0
+*ROW_METADATA(ADELIA                 )               CHO_NBLUS:=0
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )      FIN_GEST_EVT
+*ROW_METADATA(ADELIA                 )      DEBUT_VERIF
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_VERIF
+*ROW_METADATA(ADELIA                 )      DEBUT_VALID
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_VALID
+*ROW_METADATA(ADELIA                 )      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA                 )      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA                 )   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

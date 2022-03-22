@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "GES_SINISTRE_02",
+  "description" : "Gestion des sinitres avec édition",
+  "creationDate" : "1995-06-08 07:28:16",
+  "updateDate" : "1995-06-08 07:28:16",
+  "visibility" : "PUBLIC",
+  "ibmName" : "GESSI2",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "GESSI2",
+  "programTemplateName" : "GES_SSF_3TR_02",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

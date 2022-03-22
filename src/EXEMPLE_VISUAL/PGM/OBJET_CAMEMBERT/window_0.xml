@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Test camembert" help="{\rtf1\ansi\ansicpg1252\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman Times New Roman;}{\f4\froman\fprq3 Times New Roman;}{\f5\froman\fprq5 Times New Roman;}{\f6\froman\fprq6 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\cf0\b\ul Aide G\'e9n\'e9rale sur la fen\'eatre:\plain\f4\fs20 &#13;&#10;\par &#13;&#10;\par Ce programme permet de dessiner le camembert correspondant aux param\'e8tres saisis par l'utilisateur.&#13;&#10;\par Lors d'un clic sur une des  parts, le num\'e9ro, la l\'e9gende et la valeur de la part s'affichent.&#13;&#10;\par &#13;&#10;\par Bouton '\plain\f4\fs20\i DESSINER\plain\f4\fs20  ' :&#13;&#10;\par &#13;&#10;\par Ce bouton appelle la m\'e9thode 'DESSINER_DONNEES' qui permet de definir les caract\'e9ristiques du camembert: le nombre de parts, les valeurs et les l\'e9gendes associ\'e9es \'e0 chaque part du camembert.&#13;&#10;\par Le nombre de part (4) est fix\'e9 dans le programme mais l'utilisateur doit saisir les valeurs et les l\'e9gendes, \'e9ventuellement le titre du graphique. &#13;&#10;\par &#13;&#10;\par Bouton '\plain\f4\fs20\i DETACHER\plain\f4\fs20  ' :\plain\f5\fs20 &#13;&#10;\par \plain\f6\fs20 &#13;&#10;\par Ce bouton appelle la m\'e9thode 'DETACHER_PARTS' qui permet de d\'e9tacher la ou les part(s) du camembert dont les cases correspondantes ont \'e9t\'e9 coch\'e9es.&#13;&#10;\par &#13;&#10;\par \plain\f4\fs20 Bouton '\plain\f4\fs20\i %\plain\f4\fs20  ' :&#13;&#10;\par &#13;&#10;\par Affiche les valeurs des parts en pourcentage.&#13;&#10;\par &#13;&#10;\par Bouton '\plain\f4\fs20\i 2D\plain\f4\fs20  ' :&#13;&#10;\par &#13;&#10;\par Alternance du type d'affichage du camembert (2D et 3D).&#13;&#10;\par &#13;&#10;\par Bouton ' \plain\f4\fs20\i INCLINAISON\plain\f4\fs20  ' :&#13;&#10;\par &#13;&#10;\par Permet d'incliner le camembert selon la valeur du champ de saisie.\plain\f6\fs20 &#13;&#10;\par }&#13;&#10;" id="0" name="FEN_T" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-4" intValue="424"/>
+        <property id="-3" intValue="709"/>
+        <property id="-2" intValue="95"/>
+        <property id="-1" intValue="43"/>
+        <property id="3" stringValue="Test camembert"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwUlEQVR4Xu2OUQrDMAxDc/QcLTfr0EchSK1rt3bGRh8INtV2XmutbV+OFKsjxepIsTpSbE/gW45IwTdDYH+MITeNSME3Q2AfAgEJKfhmiH0/ICEFnYwx7zslpJjOxeFbjkjBN1PgN24JWN+uwG7vXd4KC1jfLVIFrJkz0gWsuSNKBKxZpkzAmp/BXJmAtbODmVIBaw/ge4mAl1QB/u0hTYD/c3dGigATmS8RAN6d/xXw8gr8lkBV3AIYrAq/dSiwMh84D2gm5tNl+wAAAABJRU5ErkJggg==</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWklEQVR4Xr2MAQrAIAwD+/9X9WcOEUHS064OFghokp6ZWfvoEFQ9HpngsA5wdz1mgP5n1gEAYcAuA5/HpBJAO+jjSAFJnw4CpAxQvQKsQ1UKWEX9vwASAm79AOYiLbZEGen1AAAAAElFTkSuQmCC</property>
+        <property id="13"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="CAMEMBERT" dll="CAMEMBER" help="" kinematic="0" name="CMB_ETUDIANT">
+            <properties>
+                <property id="-4" intValue="339"/>
+                <property id="-3" intValue="418"/>
+                <property id="-2" intValue="10"/>
+                <property id="-1" intValue="13"/>
+                <property id="3" intValue="3"/>
+                <property id="5"/>
+                <property id="8" stringValue="System"/>
+                <property id="9" intValue="175"/>
+                <property id="17" intValue="1"/>
+                <property id="32" intValue="1"/>
+                <property id="33" intValue="3"/>
+                <property id="34" intValue="4"/>
+                <property id="35"/>
+                <property id="36" intValue="137"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_QUITTER">
+            <properties>
+                <property id="-8" stringValue="Quitter"/>
+                <property id="-3" intValue="64"/>
+                <property id="-2" intValue="361"/>
+                <property id="-1" intValue="4"/>
+                <property id="6" stringValue="MS Sans Serif;10;1"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_DET">
+            <properties>
+                <property id="-8" stringValue="Détacher"/>
+                <property id="-2" intValue="144"/>
+                <property id="-1" intValue="583"/>
+                <property id="5"/>
+                <property id="6" stringValue="MS Sans Serif;10;1"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_DESSIN">
+            <properties>
+                <property id="-16" intValue="1"/>
+                <property id="-8" stringValue="Dessiner"/>
+                <property id="-3" intValue="69"/>
+                <property id="-2" intValue="361"/>
+                <property id="-1" intValue="76"/>
+                <property id="6" stringValue="MS Sans Serif;10;1"/>
+            </properties>
+        </control>
+        <control associatedVariable="CASE1" className="BOITE_A_COCHER" dll="CHECKBOX" help="" kinematic="0" name="CAC_P1">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="7 -1 -1"/>
+                <property id="-8" stringValue="Part 1"/>
+                <property id="-6"/>
+                <property id="-3" intValue="70"/>
+                <property id="-2" intValue="29"/>
+                <property id="-1" intValue="600"/>
+            </properties>
+        </control>
+        <control associatedVariable="CASE2" className="BOITE_A_COCHER" dll="CHECKBOX" help="" kinematic="0" name="CAC_P2">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="7 -1 -1"/>
+                <property id="-8" stringValue="Part 2"/>
+                <property id="-6"/>
+                <property id="-3" intValue="71"/>
+                <property id="-2" intValue="54"/>
+                <property id="-1" intValue="600"/>
+            </properties>
+        </control>
+        <control associatedVariable="CASE3" className="BOITE_A_COCHER" dll="CHECKBOX" help="" kinematic="0" name="CAC_P3">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="7 -1 -1"/>
+                <property id="-8" stringValue="Part 3"/>
+                <property id="-6"/>
+                <property id="-3" intValue="62"/>
+                <property id="-2" intValue="80"/>
+                <property id="-1" intValue="600"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="CDR_DET">
+            <properties>
+                <property id="-8" stringValue="Parts à détacher"/>
+                <property id="-4" intValue="166"/>
+                <property id="-3" intValue="111"/>
+                <property id="-2" intValue="11"/>
+                <property id="-1" intValue="568"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="CDE_LEG">
+            <properties>
+                <property id="-8" stringValue="Légende"/>
+                <property id="-4" intValue="70"/>
+                <property id="-3" intValue="260"/>
+                <property id="-2" intValue="178"/>
+                <property id="-1" intValue="433"/>
+            </properties>
+        </control>
+        <control associatedVariable="LGDE1" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="CHS_LEG1">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 250 -1"/>
+                <property id="-3" intValue="119"/>
+                <property id="-2" intValue="195"/>
+                <property id="-1" intValue="441"/>
+            </properties>
+        </control>
+        <control associatedVariable="LGDE2" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="CHS_LEG2">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 250 -1"/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="195"/>
+                <property id="-1" intValue="568"/>
+            </properties>
+        </control>
+        <control associatedVariable="LGDE3" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="CHS_LEG3">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 250 -1"/>
+                <property id="-3" intValue="118"/>
+                <property id="-2" intValue="220"/>
+                <property id="-1" intValue="443"/>
+            </properties>
+        </control>
+        <control associatedVariable="LGDE4" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="CHS_LEG4">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 250 -1"/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="219"/>
+                <property id="-1" intValue="569"/>
+            </properties>
+        </control>
+        <control associatedVariable="VAL1" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="CHS_VAL1">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-12" intValue="4"/>
+                <property id="-11" intValue="9"/>
+                <property id="-9" stringValue="4 15 4"/>
+                <property id="-3" intValue="118"/>
+                <property id="-2" intValue="264"/>
+                <property id="-1" intValue="442"/>
+            </properties>
+        </control>
+        <control associatedVariable="VAL2" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="CHS_VAL2">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-12" intValue="4"/>
+                <property id="-11" intValue="9"/>
+                <property id="-9" stringValue="4 15 4"/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="264"/>
+                <property id="-1" intValue="572"/>
+            </properties>
+        </control>
+        <control associatedVariable="VAL3" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="CHS_VAL3">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-12" intValue="4"/>
+                <property id="-11" intValue="9"/>
+                <property id="-9" stringValue="4 15 4"/>
+                <property id="-3" intValue="119"/>
+                <property id="-2" intValue="293"/>
+                <property id="-1" intValue="442"/>
+            </properties>
+        </control>
+        <control associatedVariable="VAL4" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="CHS_VAL4">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-12" intValue="4"/>
+                <property id="-11" intValue="9"/>
+                <property id="-9" stringValue="4 15 4"/>
+                <property id="-3" intValue="119"/>
+                <property id="-2" intValue="294"/>
+                <property id="-1" intValue="572"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="CDR_VAL">
+            <properties>
+                <property id="-8" stringValue="Valeur"/>
+                <property id="-4" intValue="71"/>
+                <property id="-3" intValue="262"/>
+                <property id="-2" intValue="251"/>
+                <property id="-1" intValue="433"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="CDR_TITRE">
+            <properties>
+                <property id="-4" intValue="46"/>
+                <property id="-3" intValue="263"/>
+                <property id="-2" intValue="326"/>
+                <property id="-1" intValue="432"/>
+            </properties>
+        </control>
+        <control associatedVariable="TITRE" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="CHS_TITRE">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 250 -1"/>
+                <property id="-3" intValue="242"/>
+                <property id="-2" intValue="345"/>
+                <property id="-1" intValue="441"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_VAL2">
+            <properties>
+                <property id="-8" stringValue="2"/>
+                <property id="-4" intValue="17"/>
+                <property id="-3" intValue="19"/>
+                <property id="-2" intValue="267"/>
+                <property id="-1" intValue="563"/>
+                <property id="3" stringValue="MS Sans Serif;10;256"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_VAL4">
+            <properties>
+                <property id="-8" stringValue="4"/>
+                <property id="-2" intValue="297"/>
+                <property id="-1" intValue="561"/>
+                <property id="3" stringValue="MS Sans Serif;10;256"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_VAL1">
+            <properties>
+                <property id="-8" stringValue="1"/>
+                <property id="-4" intValue="19"/>
+                <property id="-3" intValue="20"/>
+                <property id="-2" intValue="265"/>
+                <property id="-1" intValue="434"/>
+                <property id="3" stringValue="MS Sans Serif;10;256"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_VAL3">
+            <properties>
+                <property id="-8" stringValue="3"/>
+                <property id="-3" intValue="37"/>
+                <property id="-2" intValue="295"/>
+                <property id="-1" intValue="434"/>
+                <property id="3" stringValue="MS Sans Serif;10;256"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_LEG1">
+            <properties>
+                <property id="-8" stringValue="1"/>
+                <property id="-3" intValue="18"/>
+                <property id="-2" intValue="197"/>
+                <property id="-1" intValue="435"/>
+                <property id="3" stringValue="MS Sans Serif;10;256"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_LEG3">
+            <properties>
+                <property id="-8" stringValue="3"/>
+                <property id="-3" intValue="20"/>
+                <property id="-2" intValue="221"/>
+                <property id="-1" intValue="436"/>
+                <property id="3" stringValue="MS Sans Serif;10;256"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_LEG2">
+            <properties>
+                <property id="-8" stringValue="2"/>
+                <property id="-3" intValue="21"/>
+                <property id="-2" intValue="196"/>
+                <property id="-1" intValue="561"/>
+                <property id="3" stringValue="MS Sans Serif;10;256"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_LEG4">
+            <properties>
+                <property id="-8" stringValue="4"/>
+                <property id="-3" intValue="17"/>
+                <property id="-2" intValue="221"/>
+                <property id="-1" intValue="562"/>
+                <property id="3" stringValue="MS Sans Serif;10;256"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_ETQ">
+            <properties>
+                <property id="-8" stringValue="%"/>
+                <property id="-4" intValue="24"/>
+                <property id="-3" intValue="30"/>
+                <property id="-2" intValue="361"/>
+                <property id="-1" intValue="162"/>
+                <property id="5"/>
+                <property id="6" stringValue="MS Sans Serif;8;256"/>
+            </properties>
+        </control>
+        <control associatedVariable="CASE4" className="BOITE_A_COCHER" dll="CHECKBOX" help="" kinematic="0" name="CAC_P4">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="7 -1 -1"/>
+                <property id="-8" stringValue="Part 4"/>
+                <property id="-6"/>
+                <property id="-2" intValue="107"/>
+                <property id="-1" intValue="600"/>
+            </properties>
+        </control>
+        <control associatedVariable="COM" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="CHO_COM">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-11" intValue="9"/>
+                <property id="-9" stringValue="4 15 4"/>
+                <property id="-4" intValue="18"/>
+                <property id="-2" intValue="124"/>
+                <property id="-1" intValue="450"/>
+                <property id="0" stringValue="MS Sans Serif;10;256"/>
+                <property id="1"/>
+                <property id="3" intValue="1"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_NUMP">
+            <properties>
+                <property id="-8" stringValue="Numéro de la part :"/>
+                <property id="-4" intValue="19"/>
+                <property id="-3" intValue="133"/>
+                <property id="-2" intValue="16"/>
+                <property id="-1" intValue="429"/>
+                <property id="1"/>
+                <property id="3" stringValue="MS Sans Serif;10;256"/>
+                <property id="4" intValue="255"/>
+                <property id="6" intValue="1"/>
+            </properties>
+        </control>
+        <control associatedVariable="LEGENDE" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="CHO_LEG">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 250 -1"/>
+                <property id="-4" intValue="53"/>
+                <property id="-3" intValue="138"/>
+                <property id="-2" intValue="63"/>
+                <property id="-1" intValue="428"/>
+                <property id="0" stringValue="MS Sans Serif;10;256"/>
+                <property id="3" intValue="1"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="CHO_NUMP">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="6 -1 -1"/>
+                <property id="-4" intValue="15"/>
+                <property id="-3" intValue="77"/>
+                <property id="-2" intValue="38"/>
+                <property id="-1" intValue="452"/>
+                <property id="0" stringValue="MS Sans Serif;10;256"/>
+                <property id="1"/>
+                <property id="3" intValue="1"/>
+                <property id="5" intValue="255"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_TYPE">
+            <properties>
+                <property id="-8" stringValue="2D"/>
+                <property id="-4" intValue="24"/>
+                <property id="-3" intValue="30"/>
+                <property id="-2" intValue="361"/>
+                <property id="-1" intValue="207"/>
+                <property id="5"/>
+                <property id="6" stringValue="MS Sans Serif;8;256"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="CHS_INC">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-12" intValue="3"/>
+                <property id="-9" stringValue="6 -1 -1"/>
+                <property id="-3" intValue="65"/>
+                <property id="-2" intValue="363"/>
+                <property id="-1" intValue="332"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_INCL">
+            <properties>
+                <property id="-8" stringValue="Inclinaison"/>
+                <property id="-4" intValue="26"/>
+                <property id="-3" intValue="72"/>
+                <property id="-2" intValue="362"/>
+                <property id="-1" intValue="248"/>
+                <property id="5"/>
+                <property id="6" stringValue="MS Sans Serif;8;256"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\cf0 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="BTN_AIDE">
+            <properties>
+                <property id="-8" stringValue="Aide"/>
+                <property id="-7" intValue="1"/>
+                <property id="-2" intValue="375"/>
+                <property id="-1" intValue="619"/>
+                <property id="6" stringValue="Times New Roman;10;1"/>
+            </properties>
+        </control>
+    </controls>
+</window>

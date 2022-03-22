@@ -1,0 +1,295 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20040611)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20040707)      * !---------------------------------------------!
+*ROW_METADATA(ADELIA         20040707)      * ! Exemple d'edition Crystal Report Interface  !
+*ROW_METADATA(ADELIA         20040707)      * !                                             !
+*ROW_METADATA(ADELIA         20040707)      * !---------------------------------------------!
+*ROW_METADATA(ADELIA         20040707)      
+*ROW_METADATA(ADELIA         20040707)      * Définition de la liste de commande 
+*ROW_METADATA(ADELIA         20040707)      num_bin_2  idCmd
+*ROW_METADATA(ADELIA         20040707)      num_bin_2  idClient
+*ROW_METADATA(ADELIA         20040707)      date       dateCmd
+*ROW_METADATA(ADELIA         20040707)      num_e(8,2) montant
+*ROW_METADATA(ADELIA         20040707)      alpha(10)  etat
+*ROW_METADATA(ADELIA         20040707)      liste      lstCmd idCmd idClient dateCmd MONTANT etat
+*ROW_METADATA(ADELIA         20040707)      
+*ROW_METADATA(ADELIA         20040707)      * Définition de la liste de clients
+*ROW_METADATA(ADELIA         20040707)      liste      lstClient MAIN.ID: MAIN.CLIENT: MAIN.PAYS: MAIN.CODE_POSTAL: MAIN.CONTACT: MAIN.FONCTION: 
+*ROW_METADATA(ADELIA         20040611)   FIN_DECL
+*ROW_METADATA(ADELIA         20040611)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20040611)      initialiser MAIN 
+*ROW_METADATA(ADELIA         20050810)      executer MAIN
+*ROW_METADATA(ADELIA         20050810)      
+*ROW_METADATA(ADELIA         20050810)      traiter_proc proc
+*ROW_METADATA(ADELIA         20050810)      
+*ROW_METADATA(ADELIA         20040611)   FIN_INIT
+*ROW_METADATA(ADELIA         20040611)   DEBUT_FENETRE MAIN
+*ROW_METADATA(ADELIA         20040611)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20050316)         * pour l'appel de la fonction 'VaToolBxOpenFileSelection'
+*ROW_METADATA(ADELIA         20040707)         ALPHA(250) Wchemin
+*ROW_METADATA(ADELIA         20040614)         ALPHA(100) Wtitre
+*ROW_METADATA(ADELIA         20040614)         ALPHA(100) Wfiltre
+*ROW_METADATA(ADELIA         20040707)         ALPHA(5)   Wext
+*ROW_METADATA(ADELIA         20040707)         NUM_BIN_4  Wtaille
+*ROW_METADATA(ADELIA         20040707)         BOOL       WOK
+*ROW_METADATA(ADELIA         20040611)      FIN_DECL
+*ROW_METADATA(ADELIA         20040611)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20040614)         TITRE_ETAT: = 'Exemple d''edition de l''environnement BDCADEL'
+*ROW_METADATA(ADELIA         20040622)         TITRE_PAGE: = 'Impression de données avec un regroupement ou un sous-état' 
+*ROW_METADATA(ADELIA         20040614)         PIED_PAGE:  = '- (c) Hardis 2004 - '
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV SERV_LOG_2
+*ROW_METADATA(ADELIA         20040628)            * Valeurs exemples : Clients
+*ROW_METADATA(ADELIA         20040614)            ID: = 1
+*ROW_METADATA(ADELIA         20040614)            CLIENT: = 'Alfreds Futterkiste'
+*ROW_METADATA(ADELIA         20040614)            CONTACT: = 'Maria Anders'
+*ROW_METADATA(ADELIA         20040614)            FONCTION: = 'Représentant(e)'
+*ROW_METADATA(ADELIA         20040614)            PAYS: = 'Allemagne'
+*ROW_METADATA(ADELIA         20040614)            CODE_POSTAL: =  '12209'
+*ROW_METADATA(ADELIA         20040614)            inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)            
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20040614)         ID: = 2
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Ana Trujillo Emparedados y helados'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Ana Trujillo'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Propriétaire'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Mexique'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  '05021'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 3
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Antonio Moreno Taquería'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Antonio Moreno'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Propriétaire'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Mexique'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  '05023'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 4
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Around the Horn'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Thomas Hardy'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Représentant(e)'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Royaume-Uni'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  'WA1 1DP'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 5
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Berglunds snabbköp'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Christina Berglund'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Acheteur'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Suède'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  'S-958 22'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 6
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Blauer See Delikatessen'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Hanna Moos'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Représentant(e)'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Allemagne'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  '68306'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 7
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Blondel père et fils'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Frédérique Citeaux'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Directeur du marketing'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'France'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  '67000'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 8
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Bólido Comidas preparadas'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Martín Sommer'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Propriétaire'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Espagne'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  '28023'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 9
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Bon app'''
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Laurence Lebihan'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Propriétaire'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'France'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  '13008'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 10
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Bottom-Dollar Markets'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Elizabeth Lincoln'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Chef comptable'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Canada'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  'T2F 8M4'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 11
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'B''s Beverages'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Victoria Ashworth'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Représentant(e)'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Royaume-Uni'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  'EC2 5NT'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 12
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Cactus Comidas para llevar'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Patricio Simpson'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Assistant(e) des ventes'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Argentine'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  '1010'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 13
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Centro comercial Moctezuma'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Francisco Chang'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Directeur du marketing'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Mexique'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  '05022'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 14
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Chop-suey Chinese'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Yang Wang'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Propriétaire'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Suisse'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  '3012'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 15
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Comércio Mineiro'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Pedro Afonso'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Assistant(e) des ventes'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Brésil'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  '05432-043'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 16
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Consolidated Holdings'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Elizabeth Brown'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Représentant(e)'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Royaume-Uni'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  'WX1 6LT'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 17
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Drachenblut Delikatessen'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Sven Ottlieb'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Acheteur'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Allemagne'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  '52066'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 18
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Du monde entier'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Janine Labrune'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Propriétaire'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'France'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  '44000'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 19
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Eastern Connection'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Ann Devon'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Assistant(e) des ventes'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Royaume-Uni'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  'WX3 6FW'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040614)         ID: = 20
+*ROW_METADATA(ADELIA         20040614)         CLIENT: = 'Ernst Handel'
+*ROW_METADATA(ADELIA         20040614)         CONTACT: = 'Roland Mendel'
+*ROW_METADATA(ADELIA         20040614)         FONCTION: = 'Chef des ventes'
+*ROW_METADATA(ADELIA         20040614)         PAYS: = 'Autriche'
+*ROW_METADATA(ADELIA         20040614)         CODE_POSTAL: =  '8010'
+*ROW_METADATA(ADELIA         20040614)         inserer_elt LST_PERSONNE:liste
+*ROW_METADATA(ADELIA         20040707)         
+*ROW_METADATA(ADELIA         20040707)         * Alimentation de la liste graphique CLIENT
+*ROW_METADATA(ADELIA         20040628)         copier_lst LST_PERSONNE:liste lstClient
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040628)         * Valeurs exemples : Commandes
+*ROW_METADATA(ADELIA         20040628)         idCmd = 1
+*ROW_METADATA(ADELIA         20040628)         idClient = 12
+*ROW_METADATA(ADELIA         20040628)         HEURE dateCmd
+*ROW_METADATA(ADELIA         20040628)         MONTANT = 500
+*ROW_METADATA(ADELIA         20040628)         etat = 'Soldée'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt lstCmd
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040628)         idCmd = 2
+*ROW_METADATA(ADELIA         20040628)         idClient = 12
+*ROW_METADATA(ADELIA         20040628)         HEURE dateCmd
+*ROW_METADATA(ADELIA         20040628)         MONTANT = 2500
+*ROW_METADATA(ADELIA         20040628)         etat = 'En cours'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt lstCmd
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040628)         idCmd = 3
+*ROW_METADATA(ADELIA         20040628)         idClient = 10
+*ROW_METADATA(ADELIA         20040628)         HEURE dateCmd
+*ROW_METADATA(ADELIA         20040628)         MONTANT = 12699
+*ROW_METADATA(ADELIA         20040628)         etat = 'En cours'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt lstCmd
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV SERV_LOG_1
+*ROW_METADATA(ADELIA         20040628)            idCmd = 4
+*ROW_METADATA(ADELIA         20040628)            idClient = 1
+*ROW_METADATA(ADELIA         20040628)            HEURE dateCmd
+*ROW_METADATA(ADELIA         20040628)            MONTANT = 560
+*ROW_METADATA(ADELIA         20040628)            etat = 'En cours'
+*ROW_METADATA(ADELIA         20040628)            inserer_elt lstCmd
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040628)         idCmd = 5
+*ROW_METADATA(ADELIA         20040628)         idClient = 1
+*ROW_METADATA(ADELIA         20040628)         HEURE dateCmd
+*ROW_METADATA(ADELIA         20040628)         MONTANT = 333,99
+*ROW_METADATA(ADELIA         20040628)         etat = 'Soldée'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt lstCmd
+*ROW_METADATA(ADELIA         20040614)         
+*ROW_METADATA(ADELIA         20040611)      FIN_INIT
+*ROW_METADATA(ADELIA         20040611)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20040611)         DEBUT_OBJET BTN_PRINT
+*ROW_METADATA(ADELIA         20040611)            DEBUT_EVT BTN_PRINT:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20040707)               appeler  EDT_CRYSTAL LOGO:bitmap TITRE_ETAT: TITRE_PAGE: PIED_PAGE: lstClient lstCmd *vrai NUMETAT:
+*ROW_METADATA(ADELIA         20040611)            FIN_EVT
+*ROW_METADATA(ADELIA         20040611)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040611)         DEBUT_OBJET BTN_PREVIEW
+*ROW_METADATA(ADELIA         20040611)            DEBUT_EVT BTN_PREVIEW:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20040707)               appeler  EDT_CRYSTAL LOGO:bitmap TITRE_ETAT: TITRE_PAGE: PIED_PAGE: lstClient lstCmd *faux NUMETAT:
+*ROW_METADATA(ADELIA         20040611)            FIN_EVT
+*ROW_METADATA(ADELIA         20040611)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040614)         DEBUT_OBJET BTN_CLOSE
+*ROW_METADATA(ADELIA         20040614)            DEBUT_EVT BTN_CLOSE:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20040614)               terminer
+*ROW_METADATA(ADELIA         20040614)            FIN_EVT
+*ROW_METADATA(ADELIA         20040614)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040614)         DEBUT_OBJET LOGO
+*ROW_METADATA(ADELIA         20040614)            DEBUT_EVT LOGO:MNU_SELECT_LOGO
+*ROW_METADATA(ADELIA         20040614)               Wtitre = 'Sélection du fichier image'
+*ROW_METADATA(ADELIA         20040614)               Wfiltre = '*.*'
+*ROW_METADATA(ADELIA         20040614)               Wext = '*.*'
+*ROW_METADATA(ADELIA         20040614)               Wchemin = *blank
+*ROW_METADATA(ADELIA         20040614)               Wtaille = 250
+*ROW_METADATA(ADELIA         20040614)               
+*ROW_METADATA(ADELIA         20040614)               APPELER_DLL 'VaToolBx.dll' 'VaToolBxOpenFileSelection' MAIN Wtitre Wfiltre Wext Wchemin Wtaille WOK
+*ROW_METADATA(ADELIA         20040614)               
+*ROW_METADATA(ADELIA         20040614)               SI WOK
+*ROW_METADATA(ADELIA         20040614)                  APPELER_METHODE LOGO CHARGER_BITMAP Wchemin
+*ROW_METADATA(ADELIA         20040614)               FIN
+*ROW_METADATA(ADELIA         20040614)            FIN_EVT
+*ROW_METADATA(ADELIA         20040614)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040611)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20040611)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20040611)         
+*ROW_METADATA(ADELIA         20040611)      FIN_VERIF
+*ROW_METADATA(ADELIA         20040611)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20040611)         
+*ROW_METADATA(ADELIA         20040611)      FIN_VALID
+*ROW_METADATA(ADELIA         20040611)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20040611)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20040611)   FIN_FENETRE
+*ROW_METADATA(ADELIA         20050810)   DEBUT_PROCEDURE PROC
+*ROW_METADATA(ADELIA         20050810)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20050810)         
+*ROW_METADATA(ADELIA         20050810)      FIN_DECL
+*ROW_METADATA(ADELIA         20050810)      
+*ROW_METADATA(ADELIA         20050810)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

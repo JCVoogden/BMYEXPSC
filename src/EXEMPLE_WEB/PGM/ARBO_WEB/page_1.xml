@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="1" name="PAGE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml page.xsd">
+    <properties/>
+    <controls>
+        <control classId="0" className="ENTRYFIELD" error="1" guide="0" kinematic="0" name="ZCODE">
+            <properties>
+                <property id="-9" stringValue="2 5 -1"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="0" guide="0" kinematic="0" name="ZID_ELT">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 5 -1"/>
+                <property id="8"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="14" guide="0" kinematic="0" name="SCRIPT_DECL_ARBO">
+            <properties>
+                <property id="-9" stringValue="2 2000 -1"/>
+            </properties>
+        </control>
+    </controls>
+</page>

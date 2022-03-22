@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CREER_LIGNE_SFL",
+  "description" : "Création d'une ligne de sous-fichier",
+  "creationDate" : "1996-07-05 09:06:40",
+  "updateDate" : "2000-10-24 16:57:50",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

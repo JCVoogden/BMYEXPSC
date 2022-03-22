@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="1 ère AIDE" format1="02" functionKeys="  A        A            " transactionType="FEN_AIDE" updateDate="1753-01-01" updateTime="00:00:00" windowType="WINDOW" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="02" eraseInput="false" guideWord="FOR02" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="23" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR02" truncate="false"/>
+    </formats>
+    <entities/>
+    <fields>
+        <field formatCode="02" kind="CONSTANT" layoutCode="*" length="21" x="6" y="4">
+            <text text="Explication de l'aide"/>
+        </field>
+        <field formatCode="02" kind="CONSTANT" layoutCode="*" length="15" x="7" y="5">
+            <text text="par image écran"/>
+        </field>
+        <field formatCode="02" kind="CONSTANT" layoutCode="*" length="6" x="10" y="6">
+            <text text="(DSPF)"/>
+        </field>
+        <field formatCode="02" kind="FRAME" layoutCode="*" length="25" x="4" y="3">
+            <text text="........................."/>
+        </field>
+        <field formatCode="02" kind="WINDOW" layoutCode="*" length="1" x="4" y="4">
+            <text text=":"/>
+        </field>
+        <field formatCode="02" kind="WINDOW" layoutCode="*" length="1" x="28" y="4">
+            <text text=":"/>
+        </field>
+        <field formatCode="02" kind="WINDOW" layoutCode="*" length="1" x="4" y="5">
+            <text text=":"/>
+        </field>
+        <field formatCode="02" kind="WINDOW" layoutCode="*" length="1" x="28" y="5">
+            <text text=":"/>
+        </field>
+        <field formatCode="02" kind="WINDOW" layoutCode="*" length="1" x="4" y="6">
+            <text text=":"/>
+        </field>
+        <field formatCode="02" kind="WINDOW" layoutCode="*" length="1" x="28" y="6">
+            <text text=":"/>
+        </field>
+        <field formatCode="02" kind="WINDOW" layoutCode="*" length="25" x="4" y="7">
+            <text text="........................."/>
+        </field>
+    </fields>
+</transaction>

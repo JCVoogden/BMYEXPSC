@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "MONTANT",
+  "description" : "Montant",
+  "creationDate" : "2008-08-19 12:01:36",
+  "updateDate" : "2008-08-26 12:31:06",
+  "visibility" : "PRIVATE",
+  "ibmName" : "MONTAN",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "MONTAN",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "ENVOYER_MSG_EXT",
+  "description" : "envoyer un message externe",
+  "creationDate" : "1996-07-05 09:06:51",
+  "updateDate" : "1996-07-05 09:18:31",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

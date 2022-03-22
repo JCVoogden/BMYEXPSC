@@ -1,0 +1,4 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   IDENTIFIER RECUP_DERNIER nom_fichier CLE ;liste zones clés
+*ROW_METADATA(ADELIA                 )   INSERER_RG RECUP_DERN_NUM ($$_ZONE ;Zone fichier)
+*ROW_METADATA(ADELIA                 )FIN_RGG

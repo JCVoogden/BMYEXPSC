@@ -1,0 +1,76 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20061030)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20110329)      
+*ROW_METADATA(ADELIA         20110401)      alpha(1000) requete
+*ROW_METADATA(ADELIA         20110328)      
+*ROW_METADATA(ADELIA         20110329)      curseur c1 :requete
+*ROW_METADATA(ADELIA         20110401)      curseur c2 sql_base
+*ROW_METADATA(ADELIA         20110401)      curseur c3 sql_base *maj
+*ROW_METADATA(ADELIA         20110401)      
+*ROW_METADATA(ADELIA         20061030)   FIN_DECL
+*ROW_METADATA(ADELIA         20061030)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20071206)      INITIALISER ID_WPAGE1
+*ROW_METADATA(ADELIA         20071206)      TRAITER     ID_WPAGE1
+*ROW_METADATA(ADELIA         20071206)      
+*ROW_METADATA(ADELIA         20061030)   FIN_INIT
+*ROW_METADATA(ADELIA         20061030)   DEBUT_RETOUR
+*ROW_METADATA(ADELIA         20110328)      
+*ROW_METADATA(ADELIA         20061030)   FIN_RETOUR
+*ROW_METADATA(ADELIA         20071206)   DEBUT_PAGE ID_WPAGE1
+*ROW_METADATA(ADELIA         20071206)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20071206)         
+*ROW_METADATA(ADELIA         20071206)      FIN_DECL
+*ROW_METADATA(ADELIA         20071206)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20071206)         
+*ROW_METADATA(ADELIA         20071206)      FIN_INIT
+*ROW_METADATA(ADELIA         20071206)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20071206)         DEBUT_OBJET BTN_1
+*ROW_METADATA(ADELIA         20071206)            DEBUT_EVT BTN_1:ONCLICK
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV LOCAL
+*ROW_METADATA(ADELIA         20110328)                  requete = 'select sid, serial# from v$session where audsid = sys_context(''userenv'',''sessionid'')'
+*ROW_METADATA(ADELIA         20110329)                  
+*ROW_METADATA(ADELIA         20110329)                  
+*ROW_METADATA(ADELIA         20110329)                  ouvrir_sql_c c2
+*ROW_METADATA(ADELIA         20110329)                  
+*ROW_METADATA(ADELIA         20110329)                  tant_que *sqlcode = 0
+*ROW_METADATA(ADELIA         20110329)                     lire_av_sql_c c2
+*ROW_METADATA(ADELIA         20110329)                  refaire
+*ROW_METADATA(ADELIA         20110329)                  
+*ROW_METADATA(ADELIA         20110329)                  fermer_sql_c c2
+*ROW_METADATA(ADELIA         20110329)                  
+*ROW_METADATA(ADELIA         20110329)                  b3 = b1
+*ROW_METADATA(ADELIA         20110329)                  
+*ROW_METADATA(ADELIA         20110329)                  ouvrir_sql_c c1
+*ROW_METADATA(ADELIA         20110329)                  lire_av_sql_c c1 :sid, :serial
+*ROW_METADATA(ADELIA         20110329)                  fermer_sql_c c1
+*ROW_METADATA(ADELIA         20110329)                  
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20071206)            FIN_EVT
+*ROW_METADATA(ADELIA         20071206)         FIN_OBJET
+*ROW_METADATA(ADELIA         20110401)         DEBUT_OBJET BTN_3
+*ROW_METADATA(ADELIA         20110401)            DEBUT_EVT BTN_3:ONCLICK
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV LOCAL
+*ROW_METADATA(ADELIA         20110401)                  ouvrir_sql_c c3
+*ROW_METADATA(ADELIA         20110401)                  
+*ROW_METADATA(ADELIA         20110401)                  tant_que *sqlcode = 0
+*ROW_METADATA(ADELIA         20110401)                     lire_av_sql_c c3
+*ROW_METADATA(ADELIA         20110401)                  refaire
+*ROW_METADATA(ADELIA         20110401)                  
+*ROW_METADATA(ADELIA         20110401)                  fermer_sql_c c3
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20110401)            FIN_EVT
+*ROW_METADATA(ADELIA         20110401)         FIN_OBJET
+*ROW_METADATA(ADELIA         20071206)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20071206)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20071206)         
+*ROW_METADATA(ADELIA         20071206)      FIN_VERIF
+*ROW_METADATA(ADELIA         20071206)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20071206)         
+*ROW_METADATA(ADELIA         20071206)      FIN_VALID
+*ROW_METADATA(ADELIA         20071206)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20071206)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20071206)      DEBUT_RETOUR
+*ROW_METADATA(ADELIA         20090318)         TRAITER ID_WPAGE1
+*ROW_METADATA(ADELIA         20071206)      FIN_RETOUR
+*ROW_METADATA(ADELIA         20071206)   FIN_PAGE
+*ROW_METADATA(ADELIA                 )FIN_PGM

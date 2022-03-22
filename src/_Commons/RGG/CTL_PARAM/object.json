@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CTL_PARAM",
+  "description" : "Contrôler paramètres (PM)",
+  "creationDate" : "1996-07-05 09:06:25",
+  "updateDate" : "1996-07-05 09:14:17",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

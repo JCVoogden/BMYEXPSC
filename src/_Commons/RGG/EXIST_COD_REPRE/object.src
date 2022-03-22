@@ -1,0 +1,5 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   * Règle de gestion de type Contrôle
+*ROW_METADATA(ADELIA                 )   * Macro instruction pour contrôle du CODE REPRESENTANT
+*ROW_METADATA(ADELIA                 )   &CONTROLE CODE REPRESENTANT($$EXIST ;0005)
+*ROW_METADATA(ADELIA                 )FIN_RGG

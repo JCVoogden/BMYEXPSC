@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "OBJET_PORTSERIE",
+  "description" : "Utilisation de l'objet port serie",
+  "creationDate" : "1999-01-29 13:41:34",
+  "updateDate" : "1999-01-29 13:42:56",
+  "visibility" : "PRIVATE",
+  "ibmName" : "OBJPSE",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "OBJPSE",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

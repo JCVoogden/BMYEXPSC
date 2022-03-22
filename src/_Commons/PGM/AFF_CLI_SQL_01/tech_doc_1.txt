@@ -1,0 +1,28 @@
+                SQL et les variables de travail
+
+**********************
+INITIALISATION  02
+**********************
+   Les variables dans lesquelles l'ordre SELECT transfert
+   le contenu des zones fichiers peuvent ne pas être des variables
+   du sous-fichier
+   EX : Le fichier des clients contient une valeur Hors taxe et
+   Je veux afficher dans le sous-fichier une valeur Toute Taxe
+
+   Il faut créer une variable de travail WWMHT_CAFF
+*--------------------------* Ecriture de la requête SQL statique
+* pour ce cas
+
+SQL_SFL 1 ZCCOD_CLIENT ZCNOM_CLIENT WWMHT_CAFF
++ SELECT CCCLI, CLCLI, CTACL FROM CLIENTS
++ WHERE CCRGT = :ZRCOD_REGLEMENT
+F_SQL_SFL
+.......
+EFFACER         1
+GESTION_SFL     1
+.....
+   A cet endroit j'affecte la zone du sous-fichier par un calcul
+   sur la variable de tavail
+ZMTT_CAFF = WWMHT_CAFF * 1,186
+MAJ_SFL
+FIN_GESTION_SFL

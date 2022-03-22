@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "WAI",
+  "description" : "WAI",
+  "creationDate" : "2005-06-21 11:48:59",
+  "updateDate" : "2005-06-28 08:31:39",
+  "visibility" : "PRIVATE",
+  "ibmName" : "WAI",
+  "programType" : "I",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "WAI",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

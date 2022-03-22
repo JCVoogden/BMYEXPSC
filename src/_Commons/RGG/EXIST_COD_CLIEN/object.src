@@ -1,0 +1,20 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   * Règle de gestion de type contrôle
+*ROW_METADATA(ADELIA                 )   * Contrôle du CODE CLIENT
+*ROW_METADATA(ADELIA                 )   REGLE_GESTION 0001 $$EXIST
+*ROW_METADATA(ADELIA                 )   DECLARER WGCCLI;WG_COD_CLI 6
+*ROW_METADATA(ADELIA                 )   IDENTIFIER RCLIENTS_COD CLIENTSL CLE ;WG_COD_CLI
+*ROW_METADATA(ADELIA                 )   WG_COD_CLI = $$EXIST
+*ROW_METADATA(ADELIA                 )   LIRE            RCLIENTS_COD
+*ROW_METADATA(ADELIA                 )   SI              RCLIENTS_COD  N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )     $NOM_CLIENT  = *BLANK
+*ROW_METADATA(ADELIA                 )     $BUR_DIS_CLI = *BLANK
+*ROW_METADATA(ADELIA                 )     $NUM_TEL_CLI = *BLANK
+*ROW_METADATA(ADELIA                 )     INIT_MSG $$EXIST
+*ROW_METADATA(ADELIA                 )     ANOMALIE
+*ROW_METADATA(ADELIA                 )   SINON
+*ROW_METADATA(ADELIA                 )     $NOM_CLIENT  = CNOM_CLIENT
+*ROW_METADATA(ADELIA                 )     $BUR_DIS_CLI = CBUR_DIS_CLI
+*ROW_METADATA(ADELIA                 )     $NUM_TEL_CLI = CNUM_TEL_CLI
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

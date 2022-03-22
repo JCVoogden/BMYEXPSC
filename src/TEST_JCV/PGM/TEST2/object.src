@@ -1,0 +1,48 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20080819)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20101217)      
+*ROW_METADATA(ADELIA         20101217)      num_bin_4   parametre1
+*ROW_METADATA(ADELIA         20101217)      alpha(250)  parametre2
+*ROW_METADATA(ADELIA         20101217)      timestamp   parametre3(50)
+*ROW_METADATA(ADELIA         20101217)      
+*ROW_METADATA(ADELIA         20101217)      param parametre1 parametre2 parametre3
+*ROW_METADATA(ADELIA         20101217)      
+*ROW_METADATA(ADELIA         20080819)   FIN_DECL
+*ROW_METADATA(ADELIA         20080819)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080825)      executer id_fen0
+*ROW_METADATA(ADELIA         20080820)      
+*ROW_METADATA(ADELIA         20080819)   FIN_INIT
+*ROW_METADATA(ADELIA         20080825)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20080825)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20080922)         num_bin_4 i
+*ROW_METADATA(ADELIA         20080922)         num_bin_4 j
+*ROW_METADATA(ADELIA         20080825)      FIN_DECL
+*ROW_METADATA(ADELIA         20080825)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20080825)         
+*ROW_METADATA(ADELIA         20080825)      FIN_INIT
+*ROW_METADATA(ADELIA         20080825)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20080917)         DEBUT_OBJET ID_OBJ
+*ROW_METADATA(ADELIA         20080917)            DEBUT_EVT ID_OBJ:ChangementValeur
+*ROW_METADATA(ADELIA         20080917)               choix_selon position
+*ROW_METADATA(ADELIA         20080917)               si_valeur 1
+*ROW_METADATA(ADELIA         20080917)                  id_fen0:position_onglets = _fen_onglets_haut
+*ROW_METADATA(ADELIA         20080917)               si_valeur 2
+*ROW_METADATA(ADELIA         20080917)                  id_fen0:position_onglets = _fen_onglets_bas
+*ROW_METADATA(ADELIA         20080917)               si_valeur 3
+*ROW_METADATA(ADELIA         20080917)                  id_fen0:position_onglets = _fen_onglets_gauche
+*ROW_METADATA(ADELIA         20080917)               si_valeur 4
+*ROW_METADATA(ADELIA         20080917)                  id_fen0:position_onglets = _fen_onglets_droite
+*ROW_METADATA(ADELIA         20080917)               fin_choix_selon
+*ROW_METADATA(ADELIA         20080917)            FIN_EVT
+*ROW_METADATA(ADELIA         20080917)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080825)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20080825)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20080825)         
+*ROW_METADATA(ADELIA         20080825)      FIN_VERIF
+*ROW_METADATA(ADELIA         20080825)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20080825)         
+*ROW_METADATA(ADELIA         20080825)      FIN_VALID
+*ROW_METADATA(ADELIA         20080825)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080825)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080825)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

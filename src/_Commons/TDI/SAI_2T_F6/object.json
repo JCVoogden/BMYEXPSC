@@ -1,0 +1,9 @@
+{
+  "type" : "TDI",
+  "name" : "SAI_2T_F6",
+  "description" : "Saisie par 2 transactions mise à jour par F6",
+  "creationDate" : "1995-06-08 06:53:13",
+  "updateDate" : "1995-06-08 06:53:13",
+  "visibility" : "PUBLIC",
+  "templateType" : "I"
+}

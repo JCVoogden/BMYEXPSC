@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Gestion des fichiers" format1="E1" format2="C1" format3="*1" format4="B1" functionKeys="  A  A     A        A   " updateDate="1753-01-01" updateTime="00:00:00" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="*1" eraseInput="false" guideWord="SFL01" help="false" jumpLinesBefore="10" keep="false" lock="false" nbColumns="1" nbLines="12" overlay="false" pagination="DYNAMIC" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="SFL01" subFilePageSize="12" subFileSize="13" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="B1" eraseInput="false" help="false" jumpLinesBefore="22" keep="false" lock="false" nbColumns="1" nbLines="2" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FORB1" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="C1" eraseInput="false" help="false" jumpLinesBefore="9" keep="false" lock="false" nbColumns="1" nbLines="1" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="CTLC1" subFileCode="*1" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="E1" eraseInput="false" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="8" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FORE1" truncate="false"/>
+    </formats>
+    <entities/>
+    <fields>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="NOM DU PROGRAMME" formatCode="E1" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="E1" hilight="true" kind="CONSTANT" layoutCode="*" length="20" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="31" y="1">
+            <text text="Gestion des fichiers"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="E1" kind="CONSTANT" layoutCode="*" length="36" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="24" y="4">
+            <text text="              Afficher à partir de ."/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom entité" formatCode="E1" guideWord="Z1_NOM_ENTITE" kind="USER_VARIABLE" layoutCode="Z1NENT" length="15" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" underscore="true" validExtendedFieldName="false" validFieldName="false" x="61" y="4"/>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="E1" kind="CONSTANT" layoutCode="*" length="71" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="6">
+            <text text="Indiquez vos options, puis appuyez sur ENTREE.                         "/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="E1" kind="CONSTANT" layoutCode="*" length="11" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="4" y="7">
+            <text text="2=Modifier "/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="E1" kind="CONSTANT" layoutCode="*" length="11" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="16" y="7">
+            <text text="4=Supprimer"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="E1" kind="CONSTANT" layoutCode="*" length="10" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="29" y="7">
+            <text text="5=Afficher"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="E1" kind="CONSTANT" layoutCode="*" length="12" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="41" y="7">
+            <text text="7=Rebaptiser"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="C1" hilight="true" kind="CONSTANT" layoutCode="*" length="3" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="9">
+            <text text="Opt"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="C1" hilight="true" kind="CONSTANT" layoutCode="*" length="10" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="10" y="9">
+            <text text="Nom entité"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="C1" hilight="true" kind="CONSTANT" layoutCode="*" length="7" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="24" y="9">
+            <text text="Fichier"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="C1" hilight="true" kind="CONSTANT" layoutCode="*" length="11" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="42" y="9">
+            <text text="Description"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="C1" hilight="true" kind="CONSTANT" layoutCode="*" length="7" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="65" y="9">
+            <text text="Préfixe"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code option" formatCode="*1" guideWord="ZZ_COD_OPTION" kind="USER_VARIABLE" layoutCode="ZZCOPT" length="2" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" underscore="true" validExtendedFieldName="false" validFieldName="false" x="2" y="10"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom entité" formatCode="*1" guideWord="ZZ_NOM_ENTITE" kind="USER_VARIABLE" kinematicLogicalProperty="FICHIERS.NOM_ENTITE" layoutCode="ZZNENT" length="15" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="7" y="10"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom de fichier" formatCode="*1" guideWord="ZFI_NOM_FICHIER" kind="USER_VARIABLE" kinematicLogicalProperty="FICHIERS.NOM_FICHIER" layoutCode="ZILFIC" length="8" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="24" y="10"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Description fichier" formatCode="*1" guideWord="ZFI_LIB_FICHIER" kind="USER_VARIABLE" kinematicLogicalProperty="FICHIERS.LIB_FICHIER" layoutCode="ZILDSF" length="30" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="34" y="10"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code préfixe" formatCode="*1" guideWord="ZFI_COD_PREFIXE" kind="USER_VARIABLE" kinematicLogicalProperty="FICHIERS.COD_PREFIXE" layoutCode="ZICPRE" length="2" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="67" y="10"/>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="B1" kind="CONSTANT" layoutCode="*" length="7" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="23">
+            <text text="F3=Exit"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="B1" kind="CONSTANT" layoutCode="*" length="8" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="11" y="23">
+            <text text="F6=Créer"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="B1" kind="CONSTANT" layoutCode="*" length="11" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="21" y="23">
+            <text text="F12=Annuler"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="B1" kind="CONSTANT" layoutCode="*" length="18" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="34" y="23">
+            <text text="F21=Imprimer liste"/>
+        </field>
+        <field formatCode="*1" guideWord="ZC_NUM_ENREG" kind="USER_VARIABLE" layoutCode="ZCNENR" length="10" mode="HIDDEN" type="NUMBER"/>
+    </fields>
+</transaction>

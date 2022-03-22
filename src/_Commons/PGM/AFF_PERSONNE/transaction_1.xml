@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Affichage d'une personne" format1="01" functionKeys="  A        A            " transactionType="SAISIE_ENTREE" updateDate="1753-01-01" updateTime="00:00:00" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="01" eraseInput="false" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="23" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR01" truncate="false"/>
+    </formats>
+    <entities>
+        <entity format="01" name="PERSONN">
+            <properties>
+                <property access="1" name="COD_MAT_PERS"/>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="NOM DU PROGRAMME." formatCode="01" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="24" x="29" y="1">
+            <text text="Affichage d'une personne"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="N00002" formatCode="01" guideWord="N00002" hilight="true" kind="DATE" layoutCode="N00002" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" x="71" y="1">
+            <parameters>
+                <parameter key="EDW" value="'  /  /  '"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="N00003" formatCode="01" guideWord="N00003" hilight="true" kind="TIME" layoutCode="N00003" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" x="71" y="2">
+            <parameters>
+                <parameter key="EDW" value="'  :  :  '"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" layoutCode="*" length="30" x="2" y="3">
+            <text text="Matricule personnel . . . . .:"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Matricule personnel" formatCode="01" guideWord="ZZCOD_MAT_PERS" kind="VARIABLE" kinematicLogicalProperty="PERSONN.COD_MAT_PERS" layoutCode="ZZCMAT" length="2" logicalProperty="PERSONN.COD_MAT_PERS" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="5" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="DA" x="33" y="3"/>
+        <field formatCode="01" kind="CONSTANT" layoutCode="*" length="30" x="2" y="4">
+            <text text="Nom . . . . . . . . . . . . .:"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom" formatCode="01" guideWord="ZZNOM_PERS" kind="VARIABLE" kinematicLogicalProperty="PERSONN.NOM_PERS" layoutCode="ZZLPER" length="30" logicalProperty="PERSONN.NOM_PERS" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="7" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="DA" x="33" y="4"/>
+        <field formatCode="01" kind="CONSTANT" layoutCode="*" length="30" x="2" y="5">
+            <text text="Montant du salaire. . . . . .:"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Montant du salaire" editCode="CODE_L" formatCode="01" guideWord="ZZMTT_SAL_PRS" kind="VARIABLE" kinematicLogicalProperty="PERSONN.MTT_SAL_PRS" layoutCode="ZZTSPR" length="10" logicalProperty="PERSONN.MTT_SAL_PRS" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="9" scale="2" type="NUMBER" validExtendedFieldName="false" validFieldName="false" viewCode="DA" x="33" y="5"/>
+        <field formatCode="01" kind="CONSTANT" layoutCode="*" length="30" x="2" y="6">
+            <text text="Taux de commission. . . . . .:"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Taux de commission" editCode="CODE_4" formatCode="01" guideWord="ZZTAU_CON_PERS" kind="VARIABLE" kinematicLogicalProperty="PERSONN.TAU_CON_PERS" layoutCode="ZZXCPR" length="6" logicalProperty="PERSONN.TAU_CON_PERS" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="11" scale="2" type="NUMBER" validExtendedFieldName="false" validFieldName="false" viewCode="DA" x="33" y="6"/>
+        <field formatCode="01" kind="CONSTANT" layoutCode="*" length="30" x="2" y="7">
+            <text text="Matricule hiérarchie. . . . .:"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Matricule personnel" formatCode="01" guideWord="ZPCOD_MAT_PER2" kind="USER_VARIABLE" layoutCode="ZPCMA2" length="2" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="33" y="7">
+            <parameters>
+                <parameter key="EXP" value="01"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom" formatCode="01" guideWord="ZNOM_HIERARCHIE" kind="USER_VARIABLE" layoutCode="ZLHIER" length="30" lowerCase="true" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="36" y="7"/>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="7" x="2" y="22">
+            <text text="F3=Exit"/>
+        </field>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="13" x="11" y="22">
+            <text text="F12=Précédent"/>
+        </field>
+    </fields>
+</transaction>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Liste des clients" format1="C1" format2="*1" format3="B1" functionKeys="  A        A            " transactionType="FEN_SFL_SEL_POS" updateDate="1753-01-01" updateTime="00:00:00" windowType="WINDOW" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="*1" eraseInput="false" guideWord="SFL01" help="false" jumpLinesBefore="10" keep="false" lock="false" nbColumns="1" nbLines="6" overlay="false" pagination="DYNAMIC" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="SFL01" subFilePageSize="6" subFileSize="7" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="B1" eraseInput="false" help="false" jumpLinesBefore="16" keep="false" lock="false" nbColumns="1" nbLines="8" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FORB1" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="C1" eraseInput="false" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="9" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="CTL01" subFileCode="*1" truncate="false"/>
+    </formats>
+    <entities>
+        <entity access="SEQUENTIAL_WITH_KEY" format="*1" guideWord="CLIENTS" name="CLIENTS">
+            <properties>
+                <property access="1" name="COD_CLIENT"/>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field formatCode="C1" hilight="true" kind="CONSTANT" layoutCode="*" length="17" x="32" y="4">
+            <text text="Liste des clients"/>
+        </field>
+        <field formatCode="C1" kind="CONSTANT" layoutCode="*" length="22" x="19" y="5">
+            <text text="Afficher à partir de ."/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code client" formatCode="C1" guideWord="ZWAFF_PARTIR" kind="USER_VARIABLE" layoutCode="ZWAFFI" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="42" y="5"/>
+        <field color="BLUE" formatCode="C1" kind="CONSTANT" layoutCode="*" length="46" x="5" y="6">
+            <text text="Indiquez vos options, puis appuyez sur ENTREE."/>
+        </field>
+        <field color="BLUE" formatCode="C1" kind="CONSTANT" layoutCode="*" length="13" x="7" y="7">
+            <text text="1=Choisir"/>
+        </field>
+        <field formatCode="C1" hilight="true" kind="CONSTANT" layoutCode="*" length="4" x="5" y="9">
+            <text text="Opt"/>
+        </field>
+        <field formatCode="C1" hilight="true" kind="CONSTANT" layoutCode="*" length="6" x="10" y="9">
+            <text text="Client"/>
+        </field>
+        <field formatCode="C1" hilight="true" kind="CONSTANT" layoutCode="*" length="20" x="22" y="9">
+            <text text="Nom    du     client"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code sélection" formatCode="*1" guideWord="ZZ_COD_SELECT" kind="USER_VARIABLE" layoutCode="ZZCSEL" length="1" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" underscore="true" validExtendedFieldName="false" validFieldName="false" x="6" y="10"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code client" formatCode="*1" guideWord="ZZCOD_CLIENT" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.COD_CLIENT" layoutCode="ZZCCLI" length="6" logicalProperty="CLIENTS.COD_CLIENT" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="7" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="10" y="10"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom client" formatCode="*1" guideWord="ZZNOM_CLIENT" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.NOM_CLIENT" layoutCode="ZZLCLI" length="30" logicalProperty="CLIENTS.NOM_CLIENT" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="8" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="17" y="10"/>
+        <field color="BLUE" formatCode="B1" kind="CONSTANT" layoutCode="*" length="7" x="5" y="17">
+            <text text="F3=Exit"/>
+        </field>
+        <field color="BLUE" formatCode="B1" kind="CONSTANT" layoutCode="*" length="11" x="14" y="17">
+            <text text="F12=Annuler"/>
+        </field>
+        <field color="WHITE" formatCode="C1" kind="FRAME" layoutCode="*" length="51" reverseImage="true" x="3" y="3">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="C1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="3" y="4">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="C1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="53" y="4">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="C1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="3" y="5">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="C1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="53" y="5">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="C1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="3" y="6">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="C1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="53" y="6">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="C1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="3" y="7">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="C1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="53" y="7">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="C1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="3" y="8">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="C1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="53" y="8">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="C1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="3" y="9">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="C1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="53" y="9">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="3" y="10">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="53" y="10">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="3" y="11">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="53" y="11">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="3" y="12">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="53" y="12">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="3" y="13">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="53" y="13">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="3" y="14">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="53" y="14">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="3" y="15">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="53" y="15">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="B1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="3" y="16">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="B1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="53" y="16">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="B1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="3" y="17">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="B1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="53" y="17">
+            <text/>
+        </field>
+        <field color="WHITE" formatCode="B1" kind="WINDOW" layoutCode="*" length="51" reverseImage="true" x="3" y="18">
+            <text/>
+        </field>
+    </fields>
+</transaction>

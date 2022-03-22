@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "OBJET_CEXCEL",
+  "description" : "Utilisation de l'objet Client Excel",
+  "creationDate" : "2000-07-24 09:06:08",
+  "updateDate" : "2004-02-25 11:22:34",
+  "visibility" : "PRIVATE",
+  "ibmName" : "OBJCEX",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "OBJCEX",
+  "level2GenType" : 1,
+  "implicitMR" : true,
+  "level2DatabaseGenMode" : "SQL"
+}

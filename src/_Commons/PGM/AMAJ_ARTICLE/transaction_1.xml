@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Transaction bidon pour aides par DSPF" format1="01" functionKeys="  A        A            " transactionType="SAISIE_CODE" updateDate="1753-01-01" updateTime="00:00:00" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="true" blink="false" clear="false" code="01" eraseInput="false" guideWord="FOR01" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="23" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR01" truncate="false"/>
+    </formats>
+    <entities/>
+    <fields>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="NOM DU PROGRAMME." formatCode="01" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="37" x="22" y="1">
+            <text text="Transaction bidon pour aides par DSPF"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="N00078" formatCode="01" guideWord="N00078" hilight="true" kind="DATE" layoutCode="N00078" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" x="71" y="1">
+            <parameters>
+                <parameter key="EDW" value="'  /  /  '"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="N00079" formatCode="01" guideWord="N00079" hilight="true" kind="TIME" layoutCode="N00079" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" x="71" y="2">
+            <parameters>
+                <parameter key="EDW" value="'  :  :  '"/>
+            </parameters>
+        </field>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="7" x="2" y="22">
+            <text text="F3=Exit"/>
+        </field>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="13" x="11" y="22">
+            <text text="F12=Précédent"/>
+        </field>
+        <field formatCode="01" kind="CONSTANT" layoutCode="*" length="1" x="2" y="23">
+            <text/>
+        </field>
+    </fields>
+</transaction>

@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "MULTIMEDIA_LIB",
+  "description" : "execution d'une séquence multimedia sans formatage",
+  "creationDate" : "1996-07-05 09:07:02",
+  "updateDate" : "1996-07-05 09:20:18",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

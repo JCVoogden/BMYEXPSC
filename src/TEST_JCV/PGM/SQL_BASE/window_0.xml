@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Ordres de base" help="" id="0" name="FEN_MENU" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="96"/>
+        <property id="-45" intValue="96"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="411"/>
+        <property id="-3" intValue="417"/>
+        <property id="-2"/>
+        <property id="-1" intValue="559"/>
+        <property id="3" stringValue="Ordres de base"/>
+        <property id="6"/>
+        <property id="7"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAw0lEQVR4Xu2OCwqDQAwF9/DSo9ljWQaqLI9umjUJ/eBAQM17cVq7+EK2hAmxRaD/nNPozSnor/c1JKE3p6CPQERCb06x9yMScnKOvn9Wojs3D31jXOjNFLirPxqh3QNr9w66y21xSWj3gJ21t6CXJmBlRtBJFbByryCfLmBlFbIlAla+h1yZgNXZIVMqYPWAfYmAF7JpAvrsgWyKgL7rtxHkwgIKWW+eXLoAkPd0yPyngBfuXgK/I1A1XoFGsGr0Xx/nAcvm7lfXqc4jAAAAAElFTkSuQmCC</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbUlEQVR4Xq2MUQrAMAxCe/+DdcfqyJARE6Vl7IE/5sUxfmIdxrJ2hINIqt8IZ17TjjS5El0MuJEmuy6FsLICN0IJdgQ9oQQ7go5QQku5E+m9D1TQE01IIt1ST1TnBbLqCBIykFVHkLBDDnzIww3Nu+sjMeaOXAAAAABJRU5ErkJggg==</property>
+        <property id="22" intValue="401"/>
+        <property id="23" intValue="373"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 Test de l'ordre CREER_SQL&#13;&#10;\par }&#13;&#10;" kinematic="0" name="CREER_SQL">
+            <properties>
+                <property id="-8" stringValue="CREER_SQL"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="129"/>
+                <property id="-2" intValue="7"/>
+                <property id="-1" intValue="260"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="LIRE_SQL">
+            <properties>
+                <property id="-8" stringValue="LIRE_SQL"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="129"/>
+                <property id="-2" intValue="35"/>
+                <property id="-1" intValue="260"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="SUPPRIMER_SQL">
+            <properties>
+                <property id="-8" stringValue="SUPPRIMER_SQL"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="129"/>
+                <property id="-2" intValue="91"/>
+                <property id="-1" intValue="260"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="MAJ_SQL">
+            <properties>
+                <property id="-8" stringValue="MAJ_SQL"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="129"/>
+                <property id="-2" intValue="63"/>
+                <property id="-1" intValue="260"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="CHARGER_SQL_LST">
+            <properties>
+                <property id="-8" stringValue="CHARGER_SQL_LST"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="129"/>
+                <property id="-2" intValue="176"/>
+                <property id="-1" intValue="260"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="MAJ_SQL_C">
+            <properties>
+                <property id="-8" stringValue="MAJ_SQL_C"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="129"/>
+                <property id="-2" intValue="119"/>
+                <property id="-1" intValue="260"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="SUPPRIMER_SQL_C">
+            <properties>
+                <property id="-8" stringValue="SUPPRIMER_SQL_C"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="129"/>
+                <property id="-2" intValue="147"/>
+                <property id="-1" intValue="260"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="QUITTER">
+            <properties>
+                <property id="-8" stringValue="QUITTER"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="129"/>
+                <property id="-2" intValue="335"/>
+                <property id="-1" intValue="260"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ10">
+            <properties>
+                <property id="-8" stringValue="Connecté à :"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="66"/>
+                <property id="-2" intValue="18"/>
+                <property id="-1" intValue="13"/>
+            </properties>
+        </control>
+        <control associatedVariable="SGBD" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_OBJ11">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 256 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="265"/>
+                <property id="-2" intValue="18"/>
+                <property id="-1" intValue="79"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_STATUT">
+            <properties>
+                <property id="-8" stringValue="En attente"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="85"/>
+                <property id="-2" intValue="344"/>
+                <property id="-1" intValue="11"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="LISTE" dll="CONTAINR" help="" kinematic="0" name="ID_LISTE_SQL">
+            <properties>
+                <property id="-4" intValue="247"/>
+                <property id="-3" intValue="230"/>
+                <property id="-2" intValue="66"/>
+                <property id="-1" intValue="12"/>
+                <property id="6" stringValue="ZB1 -6 6 9 0 # ZB2 -6 2 25 -1 # ZB3 -6 4 15 5"/>
+            </properties>
+            <controls>
+                <control associatedVariable="ZB1" className="COLONNE" dll="COLONNE" help="" kinematic="1" logicalProperty="SQL_BASE.B1_SQL_BASE" name="ZB1">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-12" intValue="3"/>
+                        <property id="-9" stringValue="6 9 0"/>
+                        <property id="-8" stringValue="B1"/>
+                        <property id="-3" intValue="51"/>
+                        <property id="11" stringValue="ZB1 9 6 9 0"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="ZB2" className="COLONNE" dll="COLONNE" help="" kinematic="1" logicalProperty="SQL_BASE.B2_SQL_BASE" name="ZB2">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-12" intValue="1"/>
+                        <property id="-9" stringValue="2 25 -1"/>
+                        <property id="-8" stringValue="B2"/>
+                        <property id="-3" intValue="120"/>
+                        <property id="11" stringValue="ZB2 9 2 25 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="ZB3" className="COLONNE" dll="COLONNE" help="" kinematic="1" logicalProperty="SQL_BASE.B3_SQL_BASE" name="ZB3">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-12" intValue="4"/>
+                        <property id="-11" intValue="17"/>
+                        <property id="-9" stringValue="4 15 5"/>
+                        <property id="-8" stringValue="B3"/>
+                        <property id="-3" intValue="43"/>
+                        <property id="11" stringValue="ZB3 9 4 15 5"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+            </controls>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ4">
+            <properties>
+                <property id="-8" stringValue="Nombre de lignes :"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="91"/>
+                <property id="-2" intValue="43"/>
+                <property id="-1" intValue="12"/>
+            </properties>
+        </control>
+        <control associatedVariable="NB_OCCURENCES" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="ID_OBJ6">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-12" intValue="3"/>
+                <property id="-9" stringValue="6 -1 -1"/>
+                <property id="-4" intValue="20"/>
+                <property id="-3" intValue="90"/>
+                <property id="-2" intValue="40"/>
+                <property id="-1" intValue="108"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ12">
+            <properties>
+                <property id="-8" stringValue="Code SQL"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="77"/>
+                <property id="-2" intValue="344"/>
+                <property id="-1" intValue="110"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ13">
+            <properties>
+                <property id="-8" stringValue="Enregistrements"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="77"/>
+                <property id="-2" intValue="322"/>
+                <property id="-1" intValue="110"/>
+            </properties>
+        </control>
+        <control associatedVariable="CODE_SQL" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_SQLCODE">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-11" intValue="15"/>
+                <property id="-9" stringValue="4 9 0"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="41"/>
+                <property id="-2" intValue="344"/>
+                <property id="-1" intValue="189"/>
+                <property id="3" intValue="2"/>
+            </properties>
+        </control>
+        <control associatedVariable="NB_ENR" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_NBENR">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-11" intValue="15"/>
+                <property id="-9" stringValue="4 9 0"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="41"/>
+                <property id="-2" intValue="322"/>
+                <property id="-1" intValue="189"/>
+                <property id="3" intValue="2"/>
+            </properties>
+        </control>
+        <control associatedVariable="TOTO" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="CHO">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 25 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="90"/>
+                <property id="-2" intValue="323"/>
+                <property id="-1" intValue="12"/>
+            </properties>
+        </control>
+    </controls>
+</window>

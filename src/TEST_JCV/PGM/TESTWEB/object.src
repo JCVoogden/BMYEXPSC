@@ -1,0 +1,70 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20110110)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20110110)      alpha(10000) toto
+*ROW_METADATA(ADELIA         20110110)      
+*ROW_METADATA(ADELIA         20110110)      num_bin_4 i
+*ROW_METADATA(ADELIA         20110110)      
+*ROW_METADATA(ADELIA         20110110)      liste tata0 toto
+*ROW_METADATA(ADELIA         20110110)      
+*ROW_METADATA(ADELIA         20110110)   FIN_DECL
+*ROW_METADATA(ADELIA         20110110)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20110110)      initialiser id_wpage1
+*ROW_METADATA(ADELIA         20110110)      traiter id_wpage1
+*ROW_METADATA(ADELIA         20110110)      
+*ROW_METADATA(ADELIA         20110110)   FIN_INIT
+*ROW_METADATA(ADELIA         20110110)   DEBUT_RETOUR
+*ROW_METADATA(ADELIA         20110110)      
+*ROW_METADATA(ADELIA         20110110)   FIN_RETOUR
+*ROW_METADATA(ADELIA         20110110)   DEBUT_PAGE ID_WPAGE1
+*ROW_METADATA(ADELIA         20110110)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20110110)         
+*ROW_METADATA(ADELIA         20110110)      FIN_DECL
+*ROW_METADATA(ADELIA         20110110)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20110111)         
+*ROW_METADATA(ADELIA         20110110)      FIN_INIT
+*ROW_METADATA(ADELIA         20110110)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20110110)         DEBUT_OBJET BTN_1
+*ROW_METADATA(ADELIA         20110110)            DEBUT_EVT BTN_1:ONCLICK
+*ROW_METADATA(ADELIA         20110110)               
+*ROW_METADATA(ADELIA         20110110)               texte = 'avant service'
+*ROW_METADATA(ADELIA         20110110)               
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20110110)                  placer_a_droite 'x' toto
+*ROW_METADATA(ADELIA         20110110)                  
+*ROW_METADATA(ADELIA         20110110)                  tant_que i < 21475   /* 214750
+*ROW_METADATA(ADELIA         20110110)                     inserer_elt tata0
+*ROW_METADATA(ADELIA         20110110)                     i = i + 1
+*ROW_METADATA(ADELIA         20110111)                  refaire
+*ROW_METADATA(ADELIA         20110111)                  
+*ROW_METADATA(ADELIA         20110111)                  texte = 'service passé'
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20110111)               
+*ROW_METADATA(ADELIA         20110111)               i = &nbr_elt(tata0)
+*ROW_METADATA(ADELIA         20110111)               
+*ROW_METADATA(ADELIA         20110111)               texte = texte /// ', reçu ' // i /// ' éléments'
+*ROW_METADATA(ADELIA         20110111)               
+*ROW_METADATA(ADELIA         20110110)               vider_lst tata0
+*ROW_METADATA(ADELIA         20110111)               
+*ROW_METADATA(ADELIA         20110110)            FIN_EVT
+*ROW_METADATA(ADELIA         20110110)         FIN_OBJET
+*ROW_METADATA(ADELIA         20110111)         DEBUT_OBJET BTN_2
+*ROW_METADATA(ADELIA         20110111)            DEBUT_EVT BTN_2:ONCLICK
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20110111)                  texte = 'appel service 2'
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20110111)            FIN_EVT
+*ROW_METADATA(ADELIA         20110111)         FIN_OBJET
+*ROW_METADATA(ADELIA         20110110)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20110110)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20110110)         
+*ROW_METADATA(ADELIA         20110110)      FIN_VERIF
+*ROW_METADATA(ADELIA         20110110)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20110110)         
+*ROW_METADATA(ADELIA         20110110)      FIN_VALID
+*ROW_METADATA(ADELIA         20110110)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20110110)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20110110)      DEBUT_RETOUR
+*ROW_METADATA(ADELIA         20110110)         
+*ROW_METADATA(ADELIA         20110110)      FIN_RETOUR
+*ROW_METADATA(ADELIA         20110110)   FIN_PAGE
+*ROW_METADATA(ADELIA                 )FIN_PGM

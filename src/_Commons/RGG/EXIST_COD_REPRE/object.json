@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "EXIST_COD_REPRE",
+  "description" : "Contrôle existence du code représentant",
+  "creationDate" : "1995-06-29 07:23:46",
+  "updateDate" : "1995-06-29 07:23:46",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

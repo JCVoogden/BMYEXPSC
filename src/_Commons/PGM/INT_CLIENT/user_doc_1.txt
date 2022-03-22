@@ -1,0 +1,16 @@
+                L'ordre EXECUTER
+
+IMPORTANT :
+         Une transaction appelée par EXECUTER ne peut pas utiliser
+         l'ordre TRAITER pour une autre transaction qu'elle même.
+
+         On ne peut sortir d'une transaction appelée par EXECUTER que
+         par un ordre TERMINER qui rend la main derrière l'ordre
+         EXECUTER qui a appelé cette transaction.
+
+         Pour appeler une autre TRANSACTION à partir d'une transaction
+         déjà appelée par un EXECUTER, il faut le faire par un EXECUTER
+
+         En règle générale, il est préférable qu'une TRANSACTION
+         appelée par EXECUTER soit de n'importe quel point du programme
+         appelée par des ordres EXECUTER.

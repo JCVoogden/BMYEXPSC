@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AD_HALRMA",
+  "description" : "Transformation MD en MD associé",
+  "creationDate" : "1996-07-09 15:22:15",
+  "updateDate" : "2004-02-19 17:06:26",
+  "visibility" : "PRIVATE",
+  "ibmName" : "HALRMA",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "AALRMA",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AD_HALRZA",
+  "description" : "Recherche nom de zone associée",
+  "creationDate" : "1996-07-09 15:22:36",
+  "updateDate" : "2002-10-24 11:56:56",
+  "visibility" : "PRIVATE",
+  "ibmName" : "HALRZA",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "AALRZA",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

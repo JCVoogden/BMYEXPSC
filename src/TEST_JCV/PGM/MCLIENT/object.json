@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "MCLIENT",
+  "description" : "MCLIENT",
+  "creationDate" : "2010-07-20 13:00:19",
+  "updateDate" : "2010-08-19 09:56:57",
+  "visibility" : "PRIVATE",
+  "ibmName" : "MCLIEN",
+  "programType" : "I",
+  "sourceType" : "MADELIA",
+  "layoutCode" : "MCLIEN",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "unicode" : true
+}

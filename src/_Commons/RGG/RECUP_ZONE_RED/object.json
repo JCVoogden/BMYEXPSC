@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "RECUP_ZONE_RED",
+  "description" : "Récupérer une zone redondante",
+  "creationDate" : "1996-07-05 09:07:08",
+  "updateDate" : "1996-07-05 09:26:24",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

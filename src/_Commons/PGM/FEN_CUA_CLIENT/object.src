@@ -1,0 +1,67 @@
+RECEVOIR P_COD_RETOUR P_COD_ACTION P_COD_CLIENT
+INITIALISER 01
+TRAITER     01
+******************
+TRANSACTION 01
+******************
+SI *F03
+  P_COD_ACTION = 'EX'
+  P_COD_RETOUR = *BLANK
+  TERMINER
+FIN
+SI *F12
+  P_COD_ACTION = 'PR'
+  P_COD_RETOUR = *BLANK
+  TERMINER
+FIN
+SI *PAGAV
+  PAGINER_AVANT
+FIN
+VERIFIER 01
+*
+* Fin du programme si une sélection a été effectuée
+*
+SI ZZ_COD_SELECT = '1'
+  P_COD_RETOUR = *BLANK
+  TERMINER
+FIN
+*
+* Positionnement dans la liste
+*
+SI ZWAFF_PARTIR <> *BLANK
+  INITIALISER 01
+FIN
+TRAITER 01
+******************
+INITIALISATION  01
+******************
+*
+* La zone clé de la vue de chargement du sous-fichier est
+* remplie avec la valeur de la zone de positionnement
+*
+CCOD_CLIENT = ZWAFF_PARTIR
+DEBUT_STD
+ZWAFF_PARTIR    = *BLANK
+FIN_STD
+EFFACER 1
+GESTION_SFL     1
+DEBUT_STD
+PRESENTER       CLIENTS
+ZZ_COD_SELECT   = *BLANK
+FIN_STD
+MAJ_SFL
+FIN_GESTION_SFL
+******************
+VERIFICATION 01
+******************
+GESTION_SFL 1
+REGLE_GESTION 0006 ZZ_COD_SELECT
+SI ZZ_COD_SELECT <> ' ';'1'
+  INIT_MSG ZZ_COD_SELECT
+  ERREUR
+FIN
+SI ZZ_COD_SELECT = '1'
+  P_COD_CLIENT = ZZCOD_CLIENT
+  QUITTER_SFL
+FIN
+FIN_GESTION_SFL

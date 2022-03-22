@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "BTEST",
+  "description" : "BTEST",
+  "creationDate" : "2007-01-11 15:14:41",
+  "updateDate" : "2008-10-10 12:09:00",
+  "visibility" : "PRIVATE",
+  "ibmName" : "BTEST",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "BTEST",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

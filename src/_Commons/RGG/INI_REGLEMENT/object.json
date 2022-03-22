@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "INI_REGLEMENT",
+  "description" : "Initialisation du libellé règlement",
+  "creationDate" : "1995-06-07 12:47:40",
+  "updateDate" : "1995-06-29 07:24:21",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CA",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

@@ -1,0 +1,124 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "CLIENTS",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "CREATE_AND_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_CLIENT",
+      "type" : "DEFAULT"
+    } ]
+  }, {
+    "id" : {
+      "code" : "JA"
+    },
+    "guideWord" : "RREGLEMT_COD",
+    "fileName" : "REGLEMTL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "generation" : "LEVEL2",
+    "accesses" : [ {
+      "id" : {
+        "code" : "JA",
+        "ordinal" : 1
+      },
+      "guideWord" : "WG_COD_RGT",
+      "type" : "DEFAULT"
+    } ]
+  }, {
+    "id" : {
+      "code" : "JB"
+    },
+    "guideWord" : "RPERSONNL_COD",
+    "fileName" : "PERSONNL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "generation" : "LEVEL2",
+    "accesses" : [ {
+      "id" : {
+        "code" : "JB",
+        "ordinal" : 1
+      },
+      "guideWord" : "WG_COD_PER",
+      "type" : "DEFAULT"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "P_COD_ACTION",
+      "fileName" : ""
+    },
+    "shortName" : "PCACT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCRET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "W_SV_CLE",
+      "fileName" : ""
+    },
+    "shortName" : "WSVCL",
+    "length" : 100,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "W_SV_CLE_DEP",
+      "fileName" : ""
+    },
+    "shortName" : "WSVCD",
+    "length" : 100,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "WG_COD_PER",
+      "fileName" : ""
+    },
+    "shortName" : "WGCPER",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL2",
+    "dim3" : 21057,
+    "dim4" : 21061,
+    "dim5" : 22304
+  }, {
+    "id" : {
+      "guideWord" : "WG_COD_RGT",
+      "fileName" : ""
+    },
+    "shortName" : "WGCRGT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL2",
+    "dim3" : 21057,
+    "dim4" : 21061,
+    "dim5" : 22304
+  } ]
+}

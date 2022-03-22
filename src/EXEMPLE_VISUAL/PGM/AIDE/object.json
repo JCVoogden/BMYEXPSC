@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AIDE",
+  "description" : "Test Aide en ligne",
+  "creationDate" : "2007-07-03 14:00:34",
+  "updateDate" : "2007-07-06 15:34:59",
+  "visibility" : "PRIVATE",
+  "ibmName" : "AIDE",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "AIDE",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "EDT_CRYSTAL",
+  "description" : "exemple edition Crystal Report (c)",
+  "creationDate" : "2004-06-11 15:29:03",
+  "updateDate" : "2008-09-11 09:55:50",
+  "visibility" : "PRIVATE",
+  "ibmName" : "EDTCR",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "EDTCR",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

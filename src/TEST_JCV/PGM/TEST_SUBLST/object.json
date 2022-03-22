@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "TEST_SUBLST",
+  "description" : "TEST_SUBLST",
+  "creationDate" : "2009-01-30 15:00:49",
+  "updateDate" : "2009-02-02 16:22:58",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TSTSUB",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TSTSUB",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

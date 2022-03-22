@@ -1,0 +1,37 @@
+DEBUT_STD
+XNOM_PGM        = *NOM_PGM
+XUSER           = *USER
+FIN_STD
+* Déclaration d'une DS pour récupérer 12 postes de la table
+DS DATA01  CA ZCA01,1 ZCA02 ZCA03 ZCA04 ZCA05 ZCA06 ZCA07 ZCA08 ZCA09 ZCA10 ZCA11 ZCA12
+*--------------------------* Remplissage de la table 10 lignes et
+* 12 colonnes
+* Chaque cellule de la table contient la somme n° ligne + n° colonne
+I = 1
+TANT_QUE I <= 10
+  J = 1
+  TANT_QUE J <= 12
+    TABLEAU(I,J) = I + J
+    J = J + 1
+  REFAIRE
+  I = I + 1
+REFAIRE
+*--------------------------* Edition en-tête
+EDITER ENTETE
+*--------------------------* Boucle de relecture de la table(n,m)
+* Edition de la table sous la forme d'une matrice
+I = 1
+TANT_QUE I <= 10
+  J = 1
+  TANT_QUE J <= 12
+    *--------------------------* Chargement dans la table(j)
+    CA(J) = TABLEAU(I,J)
+    J = J + 1
+  REFAIRE
+  *--------------------------* Edition d'une ligne de détail
+  WANNEE = 84 + I
+  EDITER DETAIL
+  I = I + 1
+REFAIRE
+*--------------------------* Edition du total
+EDITER TOTAL

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Progression" help="" id="0" name="ID_FEN0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="96"/>
+        <property id="-45" intValue="96"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="111"/>
+        <property id="-3" intValue="400"/>
+        <property id="-2" intValue="150"/>
+        <property id="-1" intValue="154"/>
+        <property id="3" stringValue="Progression"/>
+        <property id="6"/>
+        <property id="7"/>
+        <property id="8"/>
+        <property id="9"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="22" intValue="392"/>
+        <property id="23" intValue="79"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="MESSAGE">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 200 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="339"/>
+                <property id="-2" intValue="19"/>
+                <property id="-1" intValue="28"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="JAUGE" dll="PROGRESS" help="" kinematic="0" name="PROGRESSION">
+            <properties>
+                <property id="-4" intValue="15"/>
+                <property id="-3" intValue="338"/>
+                <property id="-2" intValue="50"/>
+                <property id="-1" intValue="29"/>
+                <property id="11" intValue="1"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TIMER" dll="TIMER" help="" kinematic="0" name="ID_OBJ1">
+            <properties>
+                <property id="-2" intValue="50"/>
+                <property id="-1" intValue="355"/>
+                <property id="1" intValue="100"/>
+            </properties>
+        </control>
+    </controls>
+</window>

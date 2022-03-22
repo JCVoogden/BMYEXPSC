@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "UNI_TEST7",
+  "description" : "Test Unicode 7",
+  "creationDate" : "2008-04-16 12:08:15",
+  "updateDate" : "2008-04-16 12:23:53",
+  "visibility" : "PRIVATE",
+  "ibmName" : "UNTST7",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "UNTST7",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "unicode" : true
+}

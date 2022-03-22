@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="RADIO" help="{\rtf1\ansi\ansicpg1252\deff0\deflang1036{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}&#13;&#10;\viewkind4\uc1\pard\f0\fs20 ###AIDE\par&#13;&#10;}&#13;&#10;" id="0" name="ID_FEN0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="96"/>
+        <property id="-45" intValue="96"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="197"/>
+        <property id="-3" intValue="504"/>
+        <property id="-2" intValue="284"/>
+        <property id="-1" intValue="590"/>
+        <property id="3" stringValue="RADIO"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="12" intValue="1"/>
+        <property id="22" intValue="496"/>
+        <property id="23" intValue="165"/>
+    </properties>
+    <tabs>
+        <tab text="">
+            <controls>
+                <control associatedVariable="COMPTEUR" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="ID_OBJ">
+                    <properties>
+                        <property id="-13" intValue="2"/>
+                        <property id="-12" intValue="3"/>
+                        <property id="-9" stringValue="6 -1 -1"/>
+                        <property id="-4" intValue="20"/>
+                        <property id="-3" intValue="90"/>
+                        <property id="-2" intValue="40"/>
+                        <property id="-1" intValue="27"/>
+                    </properties>
+                </control>
+                <control associatedVariable="RADIO" className="LISTE_BTN_RADIO" dll="RADIO" help="" kinematic="0" name="ID_OBJ0">
+                    <properties>
+                        <property id="-23" stringValue="Microsoft Sans Serif;8;1"/>
+                        <property id="-13" intValue="2"/>
+                        <property id="-9" stringValue="2 15 -1"/>
+                        <property id="-8" stringValue="Titre"/>
+                        <property id="-6" stringValue="H"/>
+                        <property id="-4" intValue="65"/>
+                        <property id="-3" intValue="128"/>
+                        <property id="-2" intValue="29"/>
+                        <property id="-1" intValue="135"/>
+                        <property id="14" stringValue="Valeur H¤Valeur M¤"/>
+                        <property id="19" stringValue="H¤M¤"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ1">
+                    <properties>
+                        <property id="-16" intValue="1"/>
+                        <property id="-8" stringValue="Coucou"/>
+                        <property id="-4" intValue="23"/>
+                        <property id="-3" intValue="75"/>
+                        <property id="-2" intValue="117"/>
+                        <property id="-1" intValue="74"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ2">
+                    <properties>
+                        <property id="-8" stringValue="Aide"/>
+                        <property id="-7" intValue="1"/>
+                        <property id="-4" intValue="23"/>
+                        <property id="-3" intValue="75"/>
+                        <property id="-2" intValue="117"/>
+                        <property id="-1" intValue="157"/>
+                    </properties>
+                </control>
+                <control associatedVariable="RADIO3" className="LISTE_BTN_RADIO" dll="RADIO" help="" kinematic="0" name="ID_OBJ3">
+                    <properties>
+                        <property id="-23" stringValue="Microsoft Sans Serif;8;1"/>
+                        <property id="-13" intValue="2"/>
+                        <property id="-9" stringValue="2 15 -1"/>
+                        <property id="-8" stringValue="Titre"/>
+                        <property id="-6" stringValue="E"/>
+                        <property id="-4" intValue="65"/>
+                        <property id="-3" intValue="125"/>
+                        <property id="-2" intValue="33"/>
+                        <property id="-1" intValue="284"/>
+                        <property id="14" stringValue="Valeur E¤Valeur F¤"/>
+                        <property id="19" stringValue="E¤F¤"/>
+                    </properties>
+                </control>
+            </controls>
+        </tab>
+    </tabs>
+    <controls/>
+</window>

@@ -1,0 +1,16 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   *
+*ROW_METADATA(ADELIA                 )   * Contrôle de la clé SS par rapport à la variable de travail. La clé
+*ROW_METADATA(ADELIA                 )   * n'est controlée que si elle a été saisie sinon elle est chargée.
+*ROW_METADATA(ADELIA                 )   *
+*ROW_METADATA(ADELIA                 )   DECLARER WCSSO;W_CLE_SS 2
+*ROW_METADATA(ADELIA                 )   SI $$CLE_SS <> *BLANK
+*ROW_METADATA(ADELIA                 )     REGLE_GESTION MSG0003 $$CLE_SS
+*ROW_METADATA(ADELIA                 )     SI $$CLE_SS <> W_CLE_SS
+*ROW_METADATA(ADELIA                 )       INIT_MSG $$CLE_SS
+*ROW_METADATA(ADELIA                 )       ANOMALIE
+*ROW_METADATA(ADELIA                 )     FIN
+*ROW_METADATA(ADELIA                 )   SINON
+*ROW_METADATA(ADELIA                 )     $$CLE_SS = W_CLE_SS
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

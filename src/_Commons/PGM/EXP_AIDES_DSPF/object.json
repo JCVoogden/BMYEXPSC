@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "EXP_AIDES_DSPF",
+  "description" : "Explication de l'aide par DSPF",
+  "creationDate" : "1995-06-08 07:12:51",
+  "updateDate" : "1995-06-08 07:12:51",
+  "visibility" : "PUBLIC",
+  "ibmName" : "EXPAID",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "EXPAID",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

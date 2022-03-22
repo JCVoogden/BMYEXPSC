@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "OBJET_FEN_PRINC",
+  "description" : "Utilisation fenêtre principale/fenêtres filles",
+  "creationDate" : "2002-10-24 15:48:28",
+  "updateDate" : "2002-10-24 16:14:25",
+  "visibility" : "PUBLIC",
+  "ibmName" : "OBJFEP",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "OBJFEP",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "SQL"
+}

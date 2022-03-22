@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "FEN_ECHEANCE",
+  "description" : "Guide saisie de code échéance",
+  "creationDate" : "1995-06-07 12:47:20",
+  "updateDate" : "1995-06-29 07:23:56",
+  "visibility" : "PUBLIC",
+  "mrClass" : "GS",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

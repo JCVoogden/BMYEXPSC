@@ -1,0 +1,50 @@
+*
+* Chargement de sous fichie par 2 fichiers
+*
+* Remplacer VUE_???? par le nom de la vue à charger derriére la vue
+* automatique
+*
+* Remplacer VV_???? par le nom de la variable clé de lecture de la
+* VUE_????
+*
+DECLARER WRAN01;CLE_RANG_SFL1 4;0  *NODEF
+DECLARER WPREMI;WW_PREMIER 1
+IDENTIFIER VUE_MANUEL_SFL1 *1 DIRECT ;CLE_RANG_SFL1
+* WW_PREMIER est un top pour savoir si première initialisation
+WW_PREMIER = 'O'
+INITIALISER 01
+WW_PREMIER = 'N'
+TRAITER 01
+*-------------------------
+TRANSACTION 01
+SI *F03 OU *F12
+  TERMINER
+FIN
+VERIFIER 01
+INITIALISER 01
+TRAITER 01
+**********************
+INITIALISATION  01
+**********************
+DEBUT_STD
+FIN_STD
+SI WW_PREMIER = 'N'
+  EFFACER         1
+  GESTION_SFL 1
+  DEBUT_STD
+  FIN_STD
+  MAJ_SFL
+  FIN_GESTION_SFL
+  CLE_RANG_SFL1 = *DEL01
+  VV???? = ZWAFF_PARTIR
+  POSITIONNER_AV VUE_????
+  LIRE_AVANT VUE_????
+  TANT_QUE VUE_???? EXISTE ET VV???? COMMENCE_PAR ZWAFF_PARTIR ET CLE_RANG_SFL1 < 9999
+    * Affecter les zones maquettes avec les zones du 2éme fichier
+    CLE_RANG_SFL01 = CLE_RANG_SFL01 + 1
+    CREER VUE_MANUEL_SFL1
+    LIRE_AVANT VUE_????
+  REFAIRE
+  *DEL01 = CLE_RANG_SFL1
+  CLE_RANG_SFL1 = 1
+FIN

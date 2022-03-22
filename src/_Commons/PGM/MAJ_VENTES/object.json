@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "MAJ_VENTES",
+  "description" : "Mise à jour des ventes",
+  "creationDate" : "1995-06-08 07:41:50",
+  "updateDate" : "1995-06-08 07:41:50",
+  "visibility" : "PUBLIC",
+  "ibmName" : "MAJVEN",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "MAJVEN",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

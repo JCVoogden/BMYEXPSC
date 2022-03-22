@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CAL_CLE_SS",
+  "description" : "Calcul de la clé",
+  "creationDate" : "1995-06-29 07:21:57",
+  "updateDate" : "1995-12-12 12:46:08",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

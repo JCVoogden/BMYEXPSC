@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "UNI_TEST2",
+  "description" : "Test Unicode 2",
+  "creationDate" : "2008-03-07 13:43:09",
+  "updateDate" : "2008-08-21 15:10:15",
+  "visibility" : "PRIVATE",
+  "ibmName" : "UNTST2",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "UNTST2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "unicode" : true
+}

@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "DATP_JMA_AMJ",
+  "description" : "Inversion date JJMMAA en AAMMJJ (PM)",
+  "creationDate" : "1996-07-05 09:06:43",
+  "updateDate" : "1996-07-05 09:23:47",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

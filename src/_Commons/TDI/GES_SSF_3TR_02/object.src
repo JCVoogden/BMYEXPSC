@@ -1,0 +1,165 @@
+*
+* Gestion avec option 2,4,5,6,F6 et F21
+*
+* La variable P_COD_ACTION sert à déterminer si la sorti s'est
+* faites par F03 (EXit) ou par F12 (PRécédent)
+*
+* La variable P_COD_RETOUR sert à positionner un eventuel problème
+* dans le programme à ramener au programme appelant
+*
+* Recherchez WP_???? et remplacer par une variable de travail que
+* vous aurez créer ayant la taille de la clé du fichier à traiter
+*
+* Recherchez ZV1???? et remplacer par la variable écran à traiter
+*
+* Recherchez MAJ_???? et remplacer par le programme de Mise à jour
+*
+* Recherchez EDL_???? et remplacer par le programme de Liste
+*
+* Recherchez EDF_???? et remplacer par le programme de fiche
+*
+* Recherchez AFF_???? et remplacer par le programme d'affichage
+*
+* Créer une vue VUE_SUPPRESSION sur le fichier à gérer avec la bonne
+* clé d'accès
+*
+DECLARER PCRET;P_COD_RETOUR 1
+DECLARER PCACT;P_COD_ACTION 2
+DECLARER PCINI;PCOD_INIT 1
+DECLARER WRAN02;CLE_RANG_SFL2 4;0  *NODEF
+IDENTIFIER VUE_MANUEL_SFL2 *2 DIRECT ;CLE_RANG_SFL2
+* Début
+INITIALISER 01
+TRAITER 01
+*-------------------------
+* Début transaction 01
+TRANSACTION 01
+SI *F03 OU *F12
+  TERMINER
+FIN
+VERIFIER 01
+INITIALISER 02
+TRAITER 02
+*-------------------------
+* Début transaction 02
+TRANSACTION 02
+SI *F03
+  TERMINER
+FIN
+SI *F12
+  TRAITER 01
+FIN
+SI *F21
+  APPELER EDL_????
+  ENVOYER_MSG *EFF_TOUT
+  ENVOYER_MSG 9900
+  TRAITER 02
+FIN
+SI *PAGAV
+  PAGINER_AVANT
+FIN
+SI *F06
+  WP_???? = *BLANK
+  P_COD_ACTION = 'CR'
+  P_COD_RETOUR = *BLANK
+  APPELER MAJ_???? P_COD_RETOUR P_COD_ACTION WP_????
+  SI P_COD_ACTION = 'EX'
+    P_COD_RETOUR = *BLANK
+    TERMINER
+  FIN
+  INITIALISER 02
+  TRAITER 02
+FIN
+VERIFIER 02
+SI P_COD_ACTION = 'EX'
+  TERMINER
+FIN
+P_COD_ACTION = '  '
+SI PCOD_INIT = 'O'
+  PCOD_INIT = ' '
+  INITIALISER 02
+FIN
+SI *DEL02 > 0
+  *IN82 = '1'
+  TRAITER 03
+FIN
+TRAITER 02
+*-------------------------
+* Début transaction 03
+TRANSACTION 03
+SI *F12
+  TRAITER 02
+FIN
+VALIDER  03
+INITIALISER 02
+TRAITER 02
+**********************
+INITIALISATION  01
+**********************
+INSERER_STD
+**********************
+INITIALISATION  02
+**********************
+EFFACER         1
+GESTION_SFL     1
+INSERER_STD
+MAJ_SFL
+FIN_GESTION_SFL
+INSERER_STD
+**********************
+VERIFICATION 01
+**********************
+INSERER_STD
+**********************
+VERIFICATION 02
+**********************
+EFFACER         2
+CLE_RANG_SFL2 = 0
+*DEL02 = 0
+WW_INDEX = 0
+GESTION_SFL 1
+* Traitement de l'option 4
+SI ZW_COD_OPTION = '4'
+  CLE_RANG_SFL2 = CLE_RANG_SFL2 + 1
+  *DEL02 = *DEL02 + 1
+  *IN08  = '1'
+  CREER          VUE_MANUEL_SFL2
+  *IN08  = '0'
+FIN
+* Traitement de l'option 2
+SI ZW_COD_OPTION = '2'
+  ZW_COD_OPTION = *BLANK
+  P_COD_ACTION = 'MO'
+  WP_???? = ZV1????
+  APPELER MAJ_???? P_COD_RETOUR P_COD_ACTION WP_????
+  SI P_COD_ACTION = 'PR' OU P_COD_ACTION = 'EX'
+    PCOD_INIT = 'O'
+    QUITTER_SFL
+  FIN
+FIN
+* Traitement de l'option 5
+SI ZW_COD_OPTION = '5'
+  ZW_COD_OPTION = *BLANK
+  WP_???? = ZV1????
+  APPELER AFF_???? P_COD_RETOUR P_COD_ACTION WP_????
+  SI P_COD_ACTION = 'PR' OU P_COD_ACTION = 'EX'
+    QUITTER_SFL
+  FIN
+FIN
+* Traitement de l'option 6
+SI ZW_COD_OPTION = '6'
+  ZW_COD_OPTION = *BLANK
+  WP_???? = ZV1????
+  APPELER EDF_???? WP_????
+FIN
+FIN_GESTION_SFL
+CLE_RANG_SFL2 = 1
+**********************
+VALIDATION      03
+**********************
+GESTION_SFL     2
+LIRE            VUE_SUPPRESSION
+SI              VUE_SUPPRESSION  EXISTE
+  SUPPRIMER       VUE_SUPPRESSION
+FIN
+FIN_GESTION_SFL

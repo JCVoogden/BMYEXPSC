@@ -1,0 +1,50 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20050621)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20050627)      
+*ROW_METADATA(ADELIA         20050627)      num_bin_4 bcod_article
+*ROW_METADATA(ADELIA         20050627)      * num_bin_4 acod_article_nombre
+*ROW_METADATA(ADELIA         20050627)      * 
+*ROW_METADATA(ADELIA         20050627)      * curseur v1 article
+*ROW_METADATA(ADELIA         20050627)      * 
+*ROW_METADATA(ADELIA         20050627)      * alpha(125) requete
+*ROW_METADATA(ADELIA         20050627)      * 
+*ROW_METADATA(ADELIA         20050627)      * num_bin_4 toto1
+*ROW_METADATA(ADELIA         20050627)      * liste toto2 *ref_mld(articll1) *ref_mld(toto)
+*ROW_METADATA(ADELIA         20050627)      * 
+*ROW_METADATA(ADELIA         20050627)      * table_temp ecrits *ref_mld(article)
+*ROW_METADATA(ADELIA         20050627)      
+*ROW_METADATA(ADELIA         20050621)   FIN_DECL
+*ROW_METADATA(ADELIA         20050621)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20050627)      * ouvrir_sql_c v1
+*ROW_METADATA(ADELIA         20050627)      * 
+*ROW_METADATA(ADELIA         20050627)      * lire_av_sql_c v1 *non_rg
+*ROW_METADATA(ADELIA         20050627)      * maj_sql_c v1 *non_rg
+*ROW_METADATA(ADELIA         20050627)      * supprimer_sql_c v1 *non_rg
+*ROW_METADATA(ADELIA         20050627)      * fermer_sql_c v1
+*ROW_METADATA(ADELIA         20050627)      * 
+*ROW_METADATA(ADELIA         20050627)      * lire_sql article aaa, article bbb *col(nombre_distinct(aaa.acod_article) :acod_article) *cond(roro)
+*ROW_METADATA(ADELIA         20050627)      
+*ROW_METADATA(ADELIA         20050627)      lire_sql article *cond(acod_article = 0)
+*ROW_METADATA(ADELIA         20050627)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV SERV_LOG_1
+*ROW_METADATA(ADELIA         20050627)         acod_article = tets sd - 12
+*ROW_METADATA(ADELIA         20050627)         
+*ROW_METADATA(ADELIA         20050627)         maj_sql article acod_article = :acod_article :bcod_article, acod_article = :acod_article :bcod_article *cond(aaaa)
+*ROW_METADATA(ADELIA         20050627)         
+*ROW_METADATA(ADELIA         20050627)         
+*ROW_METADATA(ADELIA         20050623)         
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20050621)   FIN_INIT
+*ROW_METADATA(ADELIA         20050621)   DEBUT_RETOUR
+*ROW_METADATA(ADELIA         20050623)      
+*ROW_METADATA(ADELIA         20050623)      
+*ROW_METADATA(ADELIA         20050623)      * bugs anstx : 
+*ROW_METADATA(ADELIA         20050623)      *
+*ROW_METADATA(ADELIA         20050623)      *  ordre creer_table non géré par AnStxEntIndJon...
+*ROW_METADATA(ADELIA         20050623)      *
+*ROW_METADATA(ADELIA         20050623)      
+*ROW_METADATA(ADELIA         20050623)      
+*ROW_METADATA(ADELIA         20050623)      
+*ROW_METADATA(ADELIA         20050623)      
+*ROW_METADATA(ADELIA         20050621)   FIN_RETOUR
+*ROW_METADATA(ADELIA                 )FIN_PGM

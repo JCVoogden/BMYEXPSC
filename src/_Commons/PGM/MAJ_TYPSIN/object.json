@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "MAJ_TYPSIN",
+  "description" : "Mise à jour des types de sinistre",
+  "creationDate" : "1995-06-08 07:40:36",
+  "updateDate" : "1995-06-08 07:40:36",
+  "visibility" : "PUBLIC",
+  "ibmName" : "MAJTYN",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "MAJTYN",
+  "programTemplateName" : "SAI_2T_SUP",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

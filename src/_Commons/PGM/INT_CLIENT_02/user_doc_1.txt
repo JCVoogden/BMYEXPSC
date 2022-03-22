@@ -1,0 +1,6 @@
+                Gestion manuelle de sous-fichier
+
+Dans un paragraphe (INITIALISATION, VERIFICATION, VALIDATION) il ne
+faut paspanacher l'utilisation des ordres GESTION_SFL, FIN_GESTION_SFL,
+FIN_GESTION_SFL, etc ..., avec des ordres de gestion manuelle
+de sous-fichier, pour un même sous-fichier.

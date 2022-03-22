@@ -1,0 +1,17 @@
+{
+  "type" : "PGM",
+  "name" : "TOTOJ",
+  "description" : "TOTOJ",
+  "creationDate" : "2007-08-22 13:18:05",
+  "updateDate" : "2007-09-20 09:06:02",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TOTOJ",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TOTOJ",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "version" : 12,
+  "release" : 1,
+  "modification" : 2
+}

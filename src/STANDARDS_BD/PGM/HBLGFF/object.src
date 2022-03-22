@@ -1,0 +1,333 @@
+  *----------------------------------------------------------------*
+  * Titre : Gestion du fichier des fichiers                        *
+  *----------------------------------------------------------------*
+  * Créé par BDC le 04/08/92 . Dernière modif par xxx le xx/xx/xx  *
+  *----------------------------------------------------------------*
+  *
+  RECEVOIR P_COD_RETOUR
+  INITIALISER 01
+  TRAITER     01
+  ******************
+  TRANSACTION 01
+  ******************
+  *Gestion de la liste des éléments
+  *
+  SI *F03
+    P_COD_ACTION = 'EX'
+    TERMINER
+  FIN
+  *
+  SI *F12
+    P_COD_ACTION = 'PR'
+    TERMINER
+  FIN
+  *
+  SI *F06
+    P_COD_ACTION = 'CR'
+    ZZ_NOM_ENTITE = *BLANK
+    APPELER HBLMFF P_COD_RETOUR P_COD_ACTION ZZ_NOM_ENTITE
+    SI *IN90 = '1'
+      ENVOYER_MSG 0010
+    FIN
+    SI P_COD_ACTION = 'EX'
+      TERMINER
+    FIN
+    INITIALISER 01
+    TRAITER 01
+  FIN
+  *
+  SI *F21
+    APPELER HBLELF P_COD_RETOUR
+    ENVOYER_MSG 0008
+    TRAITER 01
+  FIN
+  *
+  SI *PAGAV
+    PAGINER_AVANT
+  FIN
+  SI Z1_NOM_ENTITE <> *BLANK
+    *
+    * Demande de positionnement à partir de
+    *
+    INITIALISER 01
+    TRAITER 01
+  FIN
+  *
+  VERIFIER 01
+  *
+  SI P_COD_ACTION = 'EX'
+    *
+    * Retour du programme de mise à jour par terminer
+    *
+    TERMINER
+  FIN
+  *
+  SI *DEL04 > 0
+    *
+    * Demande de suppression ===> envoi de l'écran de confirmation
+    *
+    *IN84 = '1'
+    WRAN04 = 1
+    TRAITER 02
+  FIN
+  *
+  SI *DEL07 > 0
+    *
+    * Demande de rename ===> envoi de l'écran de rename
+    *
+    *IN87 = '1'
+    WRAN07 = 1
+    TRAITER 04
+  FIN
+  *
+  SI W_FLG_INIT = '1'
+    *
+    * mise à jour effectuée par option '2' ===> Initialisation
+    *
+    INITIALISER 01
+  FIN
+  *
+  TRAITER  01
+  ******************
+  TRANSACTION 02
+  ******************
+  *Confirmation de suppression
+  *
+  SI *F12
+    ENVOYER_MSG *EFF_ANCIEN
+    TRAITER 01
+  FIN
+  VALIDER  01
+  SI W_FLG_ERREUR = '0'
+    *
+    * Flag erreur = '0' : pas d'erreur . Réinitialisation de l'écran
+    * avant envoi.
+    * Flag erreur = '1' : il y a eu des erreurs pendant la suppression
+    * l'écran est renvoyé avec les messages
+    *
+    INITIALISER 01
+  FIN
+  TRAITER     01
+  ******************
+  TRANSACTION 04
+  ******************
+  *Modification du nom
+  *
+  SI *F03
+    P_COD_ACTION = 'EX'
+    TERMINER
+  FIN
+  SI *F12
+    ENVOYER_MSG *EFF_ANCIEN
+    TRAITER 01
+  FIN
+  VERIFIER 04
+  VALIDER 04
+  *
+  * Flag erreur = '0' : pas d'erreur . Envoi du 1er écran
+  * Flag erreur = '1' : il y a eu des erreurs pendant la copie
+  * envoi de l'écran 4
+  *
+  SI W_FLG_ERREUR = '0'
+    INITIALISER 01
+    TRAITER     01
+  SINON
+    TRAITER 04
+  FIN
+  ******************
+  INITIALISATION  01
+  ******************
+  EFFACER 1
+  GESTION_SFL     1
+  DEBUT_STD
+  PRESENTER       FICHIEL1_S1
+  ZZ_COD_OPTION   = *BLANK
+  FIN_STD
+  INVERSER_IMAGE *FAUX ZZ_COD_OPTION
+  *
+  * Récupération en zone cachée du numéro d'enregistrement
+  *
+  INFODS FICHIEL1_S1
+  ZC_NUM_ENREG = *NO_ENR
+  MAJ_SFL
+  FIN_GESTION_SFL
+  DEBUT_STD
+  XNOM_PGM        = *NOM_PGM
+  Z1_NOM_ENTITE  = *BLANK
+  FIN_STD
+  P_COD_ACTION = *BLANK
+  ******************
+  INITIALISATION  04
+  ******************
+  Z2_NOM_ENTITE = *BLANK
+  INVERSER_IMAGE *FAUX Z2_NOM_ENTITE
+  INVERSER_IMAGE *FAUX ZZ_NOM_ENTITE
+  **********************
+  VERIFICATION    01
+  **********************
+  EFFACER         4
+  EFFACER         7
+  W_FLG_INIT = '0'
+  INVERSER_IMAGE *FAUX ZZ_COD_OPTION
+  *EFF_SFLMSG = '0'
+  P_COD_ACTION = *BLANK
+  GESTION_SFL     1
+  DEBUT_STD
+  FIN_STD
+  W_FLG_OPT_OK = *BLANK
+  SI ZZ_COD_OPTION <> *BLANK
+    POS_CURSEUR *VRAI ZZ_COD_OPTION
+  SINON
+    POS_CURSEUR *FAUX ZZ_COD_OPTION
+  FIN
+  *
+  SI ZZ_COD_OPTION = ' 2';'2 '
+    W_FLG_OPT_OK = '1'
+    P_COD_RETOUR = *BLANK
+    P_COD_ACTION = 'MO'
+    APPELER HBLMFF P_COD_RETOUR P_COD_ACTION ZZ_NOM_ENTITE
+    REGLE_GESTION 0010 ZZ_COD_OPTION
+    SI *IN90 = '1'
+      ANOMALIE
+    FIN
+    SI P_COD_ACTION = 'PR' OU P_COD_ACTION = 'EX'
+      QUITTER_SFL
+    FIN
+    *
+    W_FLG_INIT = '1'
+    REGLE_GESTION STD0004 ZZ_COD_OPTION
+    SI P_COD_RETOUR = '2'
+      INIT_MSG ZZ_NOM_ENTITE
+      ANOMALIE
+    FIN
+    *
+    REGLE_GESTION STD0001 ZZ_COD_OPTION
+    SI P_COD_RETOUR = '1'
+      INIT_MSG ZZ_NOM_ENTITE
+      ANOMALIE
+    FIN
+  FIN
+  *
+  * Fin traitement option 2
+  *
+  *
+  SI ZZ_COD_OPTION = ' 4';'4 '
+    W_FLG_OPT_OK = '1'
+    INSERER_RG CREER_LIGNE_SFL (4)
+  FIN
+  *
+  * Fin traitement option 4
+  *
+  SI ZZ_COD_OPTION = ' 5';'5 '
+    W_FLG_OPT_OK = '1'
+    P_COD_RETOUR = *BLANK
+    P_COD_ACTION = *BLANK
+    APPELER HBLVFF P_COD_RETOUR P_COD_ACTION ZZ_NOM_ENTITE
+    REGLE_GESTION 0010 ZZ_COD_OPTION
+    SI *IN90 = '1'
+      ANOMALIE
+    SINON
+      SI P_COD_ACTION = 'PR' OU P_COD_ACTION = 'EX'
+        QUITTER_SFL
+      FIN
+      ZZ_COD_OPTION = *BLANK
+    FIN
+  FIN
+  *
+  * Fin traitement option 5
+  *
+  *
+  SI ZZ_COD_OPTION = ' 7';'7 '
+    W_FLG_OPT_OK = '1'
+    INITIALISER 04
+    INSERER_RG CREER_LIGNE_SFL (7)
+  FIN
+  *
+  * Fin traitement option 7
+  *
+  REGLE_GESTION 0006 ZZ_COD_OPTION
+  SI ZZ_COD_OPTION <> *BLANK ET W_FLG_OPT_OK = *BLANK
+    INIT_MSG ZZ_COD_OPTION
+    ERREUR
+  FIN
+  *
+  FIN_GESTION_SFL
+  **********************
+  VERIFICATION    04
+  **********************
+  GESTION_SFL     7
+  *
+  * La zone destination est obligatoire
+  *
+  REGLE_GESTION 0001 Z2_NOM_ENTITE
+  SI Z2_NOM_ENTITE = *BLANK
+    ANOMALIE
+  FIN
+  *
+  * Le nouveau nom ne doit pas exister
+  *
+  REGLE_GESTION STD0003 Z2_NOM_ENTITE
+  LIRE VUE_CTR_N_EX
+  SI VUE_CTR_N_EX EXISTE
+    ENVOYER_MSG *EFF_TOUT
+    INIT_MSG Z2_NOM_ENTITE
+    ANOMALIE
+  FIN
+  FIN_GESTION_SFL
+  **********************
+  VALIDATION      01
+  **********************
+  W_FLG_ERREUR = '0'
+  GESTION_SFL     1
+  SI ZZ_COD_OPTION = '4'
+    LIRE VUE_PHYSIQUE
+    SI VUE_PHYSIQUE N_EXISTE_PAS
+      INVERSER_IMAGE *VRAI ZZ_COD_OPTION
+      METTRE_A_JOUR SOUS_FIC_1
+      ENVOYER_MSG *EFF_TOUT
+      ENVOYER_MSG STD0001 ZZ_NOM_ENTITE
+      W_FLG_ERREUR = '1'
+      QUITTER_SFL
+    FIN
+    SI *BLOQUE = '1'
+      INVERSER_IMAGE *VRAI ZZ_COD_OPTION
+      METTRE_A_JOUR SOUS_FIC_1
+      ENVOYER_MSG *EFF_TOUT
+      ENVOYER_MSG STD0004 ZZ_NOM_ENTITE
+      W_FLG_ERREUR = '1'
+      QUITTER_SFL
+    FIN
+    SUPPRIMER VUE_PHYSIQUE
+    SI *IN90 = '1'
+      INVERSER_IMAGE *VRAI ZZ_COD_OPTION
+      METTRE_A_JOUR SOUS_FIC_1
+      ENVOYER_MSG *EFF_TOUT
+      ENVOYER_MSG 0009 ZZ_NOM_ENTITE
+      W_FLG_ERREUR = '1'
+      QUITTER_SFL
+    FIN
+  FIN
+  FIN_GESTION_SFL
+  **********************
+  VALIDATION      04
+  **********************
+  W_FLG_ERREUR = '0'
+  GESTION_SFL     7
+  *
+  * Le "rename" est fait en mettant à jour le physique par numéro de
+  * rang.
+  *
+  INVERSER_IMAGE *FAUX ZZ_NOM_ENTITE
+  INVERSER_IMAGE *FAUX Z2_NOM_ENTITE
+  LIRE VUE_PHYSIQUE
+  SI VUE_PHYSIQUE N_EXISTE_PAS
+    INVERSER_IMAGE *VRAI ZZ_NOM_ENTITE
+    METTRE_A_JOUR SOUS_FIC_7
+    ENVOYER_MSG *EFF_TOUT
+    ENVOYER_MSG STD0006 ZZ_NOM_ENTITE
+    W_FLG_ERREUR = '1'
+    QUITTER_SFL
+  FIN
+  FI_NOM_ENTITE = Z2_NOM_ENTITE
+  METTRE_A_JOUR VUE_PHYSIQUE
+  FIN_GESTION_SFL

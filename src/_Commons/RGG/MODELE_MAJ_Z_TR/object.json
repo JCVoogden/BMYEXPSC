@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "MODELE_MAJ_Z_TR",
+  "description" : "Modèle de RG pour m.à.j zones de travail fichier",
+  "creationDate" : "1995-06-29 07:24:42",
+  "updateDate" : "1995-06-29 07:24:42",
+  "visibility" : "PUBLIC",
+  "mrClass" : "VE",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

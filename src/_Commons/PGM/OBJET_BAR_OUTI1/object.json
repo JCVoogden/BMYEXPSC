@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "OBJET_BAR_OUTI1",
+  "description" : "Utilisation de l'objet barre d'outils (exemple 1)",
+  "creationDate" : "2002-10-24 15:53:02",
+  "updateDate" : "2002-10-24 16:48:23",
+  "visibility" : "PUBLIC",
+  "ibmName" : "OBJBO1",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "OBJBO1",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "SQL"
+}

@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "MAJ_ECHEANCE",
+  "description" : "Mise à jour des échéances",
+  "creationDate" : "1995-06-08 07:36:12",
+  "updateDate" : "1995-06-08 07:36:12",
+  "visibility" : "PUBLIC",
+  "ibmName" : "MAJECH",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "MAJECH",
+  "programTemplateName" : "SAI_2T_SUP",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

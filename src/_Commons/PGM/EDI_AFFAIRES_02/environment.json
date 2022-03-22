@@ -1,0 +1,111 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "ARTICLE_DA",
+    "fileName" : "ARTICLEL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "VCOD_ARTICLE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DB"
+    },
+    "guideWord" : "CLIENTS_DB",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DB",
+        "ordinal" : 1
+      },
+      "guideWord" : "PCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DD"
+    },
+    "guideWord" : "VENTE_DD",
+    "fileName" : "VENTE1",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 2,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DD",
+        "ordinal" : 1
+      },
+      "guideWord" : "PCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "INDICE_I",
+      "fileName" : ""
+    },
+    "shortName" : "INDI",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "rename" : "INDI",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "INDICE_MAX",
+      "fileName" : ""
+    },
+    "shortName" : "INDMAX",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "rename" : "INDMAX",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "PCOD_CLIENT",
+      "fileName" : ""
+    },
+    "shortName" : "PCCLI",
+    "length" : 6,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCCLI",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "TB_COD_FAMILLE",
+      "fileName" : ""
+    },
+    "shortName" : "TBCFAM",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "rename" : "àA1",
+    "generation" : "NONE",
+    "dim1" : 50
+  }, {
+    "id" : {
+      "guideWord" : "TB_MHT_FAMILLE",
+      "fileName" : ""
+    },
+    "shortName" : "TBMHFF",
+    "length" : 11,
+    "scale" : 2,
+    "type" : "NUMERIC",
+    "rename" : "àA2",
+    "generation" : "NONE",
+    "dim1" : 50
+  } ]
+}

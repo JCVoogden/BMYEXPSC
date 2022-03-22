@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Liste des articles</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<adelia:css_link/>
+</head>
+
+<body>
+<p class="titre_boite">Liste des articles </p>
+<form name="LISTE_ARTICLE_1_FORM_1" id="LISTE_ARTICLE_1_FORM_1" method="post">
+<table cols="4" width="600" border="1" cellpadding="1" cellspacing="1">
+<tr align="center" class="entete">
+<td width="15%" >Action</td>
+<td width="17%" nowrap="nowrap">Code article</td>
+<td width="50%">Libell&eacute; article</td>
+<td width="18%" nowrap="nowrap">Code famille</td>
+</tr>
+<adelia:tablelist name="TBL_ARTICLE" step="10" eveneltcolor="#97B3EA" oddeltcolor="#eeeeee">
+<tr class="txtinfo">
+<td align="center" ><adelia:hlink><a name="HLK_MODIFIER" id="HLK_MODIFIER" href="::ADELIA_EVT"><img src="../images/modify.gif" alt="Modifier" width="20" height="20" hspace="2" border="0" /></a></adelia:hlink><adelia:hlink><a name="HLK_SUPPRIMER" id="HLK_SUPPRIMER" href="::ADELIA_EVT"><img src="../images/delete.gif" alt="Supprimer" width="16" height="16" hspace="2" border="0" /></a></adelia:hlink></td>
+<td><adelia:outputfield name="ZZCOD_ARTICLE" type="ALPHA" length="10" lentity="ARTICLE" lproperty="COD_ARTICLE" dataflow="yes" /></td>
+<td><adelia:outputfield name="ZZLIB_ARTICLE" type="ALPHA" length="30" lentity="ARTICLE" lproperty="LIB_ARTICLE" dataflow="yes" /></td>
+<td align="center"><adelia:outputfield name="ZZCOD_FAMILLE" type="ALPHA" length="2" lentity="ARTICLE" lproperty="COD_FAMILLE" dataflow="yes" /></td>
+</tr>
+</adelia:tablelist>
+</table>
+<table width="600" border="0" cellspacing="2" cellpadding="0">
+  <tr>
+    <td align="left"><adelia:hlink><a name="HLK_PRECEDENT" id="HLK_PRECEDENT" href="::ADELIA_ONROLLDOWN(TBL_ARTICLE)">Pr&eacute;cedent</a></adelia:hlink></td>
+    <td align="right"><adelia:hlink><a name="HLK_SUIVANT" id="HLK_SUIVANT" href="::ADELIA_ONROLLUP(TBL_ARTICLE)">Suivant</a></adelia:hlink></td>
+  </tr>
+</table>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>

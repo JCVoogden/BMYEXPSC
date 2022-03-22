@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AD_HARMRE",
+  "description" : "Mot directeur entité à partir du MD dictionnaire",
+  "creationDate" : "1996-07-09 15:22:29",
+  "updateDate" : "2004-02-19 17:06:18",
+  "visibility" : "PRIVATE",
+  "ibmName" : "HARMRE",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "AARMRE",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

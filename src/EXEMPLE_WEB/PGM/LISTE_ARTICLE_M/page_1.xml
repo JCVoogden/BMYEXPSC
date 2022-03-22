@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="1" name="PAGE_ARTICLE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml page.xsd">
+    <properties/>
+    <controls>
+        <control classId="0" className="ENTRYFIELD" error="10" guide="0" kinematic="0" name="TBL_ARTICLE">
+            <properties>
+                <property id="1" stringValue="ZZCOD_ARTICLE_LIG -6 2 10 -1 # ZZCOD_ARTICLE -6 2 10 -1 # ZZLIB_ARTICLE -6 2 30 -1 # ZZCOD_FAMILLE -6 2 2 -1"/>
+                <property id="4" intValue="10"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="1" guide="0" kinematic="1" logicalProperty="ARTICLE.COD_ARTICLE" name="ZZCOD_ARTICLE">
+            <properties>
+                <property id="-9" stringValue="2 10 -1"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="1" guide="0" kinematic="1" logicalProperty="ARTICLE.LIB_ARTICLE" name="ZZLIB_ARTICLE">
+            <properties>
+                <property id="-9" stringValue="2 30 -1"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="1" guide="0" kinematic="1" logicalProperty="ARTICLE.COD_FAMILLE" name="ZZCOD_FAMILLE">
+            <properties>
+                <property id="-9" stringValue="2 2 -1"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="2" guide="0" kinematic="0" name="HLK_PRECEDENT">
+            <properties/>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="2" guide="0" kinematic="0" name="HLK_SUIVANT">
+            <properties/>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="0" guide="0" kinematic="1" logicalProperty="ARTICLE.COD_ARTICLE" name="ZZCOD_ARTICLE_SEL">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 10 -1"/>
+                <property id="8"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="14" guide="0" kinematic="0" name="ZZCOD_ARTICLE_LIG">
+            <properties>
+                <property id="-9" stringValue="2 10 -1"/>
+            </properties>
+        </control>
+    </controls>
+</page>

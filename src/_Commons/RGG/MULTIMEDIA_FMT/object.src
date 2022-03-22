@@ -1,0 +1,22 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   * Valeur des paramètres :
+*ROW_METADATA(ADELIA                 )   * P1 : 'BITMAP' (ou 'IMAGE'), 'WAVE' (ou 'BRUIT'), 'MIDI', 'VOCAL', 'VIDEO', 'SYSTEM'
+*ROW_METADATA(ADELIA                 )   * P2 : 'B' (avec bloquage), 'N' (sans bloquage)
+*ROW_METADATA(ADELIA                 )   * P3 : nom du fichier à lire (xxx.BMP pour image, xxx.WAV pour bruit, xxx.MID pour midi, xxx.VOC pour vocal, xxx.AVI pour video, commande os/2 pour system)
+*ROW_METADATA(ADELIA                 )   * P4 : '0' pour centre, '1' coin haut gauche, '2' coin haut droit, '3' coin bas droit, '4' coin bas gauche, '5' tout l'écran
+*ROW_METADATA(ADELIA                 )   * P5 : titre de la fenêtre
+*ROW_METADATA(ADELIA                 )   *
+*ROW_METADATA(ADELIA                 )   DECLARER WMUME1;WMULTIMED1 80
+*ROW_METADATA(ADELIA                 )   DECLARER WMULP1;WMULTIMED1_P1 10
+*ROW_METADATA(ADELIA                 )   WMULTIMED_P1 = :01
+*ROW_METADATA(ADELIA                 )   SI WMULTIMED1_P1 <> *BLANK
+*ROW_METADATA(ADELIA                 )     WMULTIMED1 = '9898' // WMULTIMED1_P1 // :02 /// :03
+*ROW_METADATA(ADELIA                 )     SI WMULTIMED1_P1 <> 'IMAGE';'BITMAP'
+*ROW_METADATA(ADELIA                 )        WMULTIMED1 = WMULTIMED1 /// ' ' // :04 /// ' ' // :05
+*ROW_METADATA(ADELIA                 )     FIN
+*ROW_METADATA(ADELIA                 )     SI WMULTIMED1_P1 <> 'SYSTEM'
+*ROW_METADATA(ADELIA                 )        WMULTIMED1 = WMULTIMED1 /// ' ' // :05
+*ROW_METADATA(ADELIA                 )     FIN
+*ROW_METADATA(ADELIA                 )     APPELER ULTORDCL WMULTIMED1
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

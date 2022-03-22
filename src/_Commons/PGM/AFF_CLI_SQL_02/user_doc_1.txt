@@ -1,0 +1,44 @@
+                SQL et les variables de travail
+
+**********************
+INITIALISATION  02
+**********************
+   Les variables dans lesquelles l'ordre SELECT transfert
+   le contenu des zones fichiers peuvent ne pas être des variables
+   du sous fichiers
+   EX : Le fichier des clients contient une valeur Hors taxe et
+   Je veux afficher dans le sous-fichier une valeur Toute Taxe
+
+   Il faut créer une variable de travail WWMHT_CAFF
+*--------------------------* Fabrication de la requête SQL
+* pour ce cas
+W_SQL_REQUETE = *BLANK
+W_SQL_REQUETE = 'SELECT CCCLI, CLCLI, CTACL FROM CLIENTS WHERE CCRGT = ?
+                                                              ORDER BY'
+*--------------------------* Fabrication de la partie dynamique
+* (qui varie) de la requête en fonction des variables saisies
+SI ZWCOD_TRI = '1'
+  ZWLIB_TRI  = 'Code  '
+  W_SQL_REQUETE = W_SQL_REQUETE /// ' CCCLI'
+SINON
+  SI ZWCOD_TRI = '2'
+    ZWLIB_TRI  = 'Nom  '
+    W_SQL_REQUETE = W_SQL_REQUETE /// ' CLCLI'
+  SINON
+    ZWLIB_TRI  = 'Ville '
+    W_SQL_REQUETE = W_SQL_REQUETE /// ' CBDCL'
+  FIN
+FIN
+*--------------------------* Préparation de la requête SQL
+* pour chargement du sous-fichier *1
+SQL_SFL_D W_SQL_REQUETE 1 ZCCOD_CLIENT ZCNOM_CLIENT WWMHT_CAFF
+                                               AVEC ZRCOD_REGLEMENT
+.......
+EFFACER         1
+GESTION_SFL     1
+.....
+   A cet endroit j'affecte la zone du sous-fichier par un calcul
+   sur la variable de tavail
+ZMTT_CAFF = WWMHT_CAFF * 1,186
+MAJ_SFL
+FIN_GESTION_SFL

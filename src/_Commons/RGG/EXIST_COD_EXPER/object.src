@@ -1,0 +1,16 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   * Règle de gestion de type contrôle
+*ROW_METADATA(ADELIA                 )   * Contrôle du CODE EXPERT
+*ROW_METADATA(ADELIA                 )   REGLE_GESTION 0014 $$EXIST
+*ROW_METADATA(ADELIA                 )   DECLARER WGCEXP;WG_COD_EXP 6
+*ROW_METADATA(ADELIA                 )   IDENTIFIER REXPERTL_COD EXPERTL CLE ;WG_COD_EXP
+*ROW_METADATA(ADELIA                 )   WG_COD_EXP = $$EXIST
+*ROW_METADATA(ADELIA                 )   LIRE            REXPERTL_COD
+*ROW_METADATA(ADELIA                 )   SI              REXPERTL_COD  N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )     $NOM_EXPERT = *BLANK
+*ROW_METADATA(ADELIA                 )     INIT_MSG $$EXIST
+*ROW_METADATA(ADELIA                 )     ANOMALIE
+*ROW_METADATA(ADELIA                 )   SINON
+*ROW_METADATA(ADELIA                 )     $NOM_EXPERT = ENOM_EXPERT
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

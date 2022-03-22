@@ -1,0 +1,9 @@
+{
+  "type" : "TDI",
+  "name" : "UTI_FEN_APA",
+  "description" : "Utilisation d'une fenêtre afficher à partir de",
+  "creationDate" : "1995-06-08 06:53:59",
+  "updateDate" : "1995-06-08 06:53:59",
+  "visibility" : "PUBLIC",
+  "templateType" : "I"
+}

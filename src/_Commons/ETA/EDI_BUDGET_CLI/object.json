@@ -1,0 +1,11 @@
+{
+  "type" : "ETA",
+  "name" : "EDI_BUDGET_CLI",
+  "description" : "Edition du budget des clients",
+  "creationDate" : "1995-06-08 07:04:34",
+  "updateDate" : "1995-06-08 07:04:34",
+  "visibility" : "PUBLIC",
+  "layoutCode" : "EDIBUD",
+  "reportTypeName" : "EDI_LISTE",
+  "nature" : "ADELIA"
+}

@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "EXIST_COD_PERSO",
+  "description" : "Contrôle existence du code personne",
+  "creationDate" : "1995-06-07 12:47:00",
+  "updateDate" : "1995-06-29 07:23:41",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

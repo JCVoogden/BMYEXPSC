@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "TEST_AGENT",
+  "description" : "Programme de test des agents du GTS",
+  "creationDate" : "2008-06-06 14:37:55",
+  "updateDate" : "2009-03-25 12:55:04",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TAGENT",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TAGENT",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

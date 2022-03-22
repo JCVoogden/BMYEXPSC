@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "AFF_PERSONNE",
+  "description" : "Affichage des personnes",
+  "creationDate" : "1995-06-08 06:58:04",
+  "updateDate" : "2005-05-30 13:12:51",
+  "visibility" : "PUBLIC",
+  "ibmName" : "AFFPER",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "AFFPER",
+  "programTemplateName" : "AFF_INF_PARM",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

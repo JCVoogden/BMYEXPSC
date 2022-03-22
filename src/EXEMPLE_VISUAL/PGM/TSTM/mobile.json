@@ -1,0 +1,9 @@
+{
+  "platform" : "PPC_HD_P",
+  "shell" : "POCKETPC",
+  "xDPI" : 192,
+  "yDPI" : 192,
+  "toolbarHeight" : 52,
+  "screenWidth" : 480,
+  "screenHeight" : 640
+}

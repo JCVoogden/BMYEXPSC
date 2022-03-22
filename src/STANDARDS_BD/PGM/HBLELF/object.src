@@ -1,0 +1,18 @@
+  *----------------------------------------------------------------*
+  * Titre : Edition de la liste des fichiers                       *
+  *----------------------------------------------------------------*
+  * Créé par BDC le 04/08/92 . Dernière modif par xxx le xx/xx/xx  *
+  *----------------------------------------------------------------*
+  RECEVOIR  P_COD_RETOUR
+  DEBUT_STD
+  XNOM_PGM        = *NOM_PGM
+  XUSER           = *USER
+  FIN_STD
+  P_COD_RETOUR = *BLANK
+  LIRE_AVANT FICHIEL1_DA
+  IMPRIMER EN_FICHIERS
+  TANT_QUE FICHIEL1_DA EXISTE
+    IMPRIMER DE_FICHIERS
+    LIRE_AVANT FICHIEL1_DA
+  REFAIRE
+  EDITER TO_FICHIERS

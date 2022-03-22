@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "MAJ_EXPERT",
+  "description" : "Mise à jour des experts",
+  "creationDate" : "1995-06-08 07:36:56",
+  "updateDate" : "2005-11-10 15:21:35",
+  "visibility" : "PUBLIC",
+  "ibmName" : "MAJEXP",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "MAJEXP",
+  "programTemplateName" : "SAI_2T_SUP",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

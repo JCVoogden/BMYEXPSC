@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "A_TST1",
+  "description" : "tst1",
+  "creationDate" : "2005-04-01 12:08:29",
+  "updateDate" : "2008-09-15 07:25:51",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

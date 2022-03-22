@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "INS_TST_1_PAR",
+  "description" : "INS_TST_1_PAR",
+  "creationDate" : "2009-01-06 13:59:48",
+  "updateDate" : "2009-02-02 09:44:56",
+  "visibility" : "PRIVATE",
+  "ibmName" : "INTST1",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "INTST1",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,8 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   * Règle de gestion de type contrôle
+*ROW_METADATA(ADELIA                 )   * Contrôle du type de l'échéance
+*ROW_METADATA(ADELIA                 )   REGLE_GESTION 0011 $$COD
+*ROW_METADATA(ADELIA                 )   SI  $$COD <> 'E';'G';'R';'X'
+*ROW_METADATA(ADELIA                 )     ANOMALIE
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

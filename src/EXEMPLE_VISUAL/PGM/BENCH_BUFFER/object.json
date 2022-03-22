@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "BENCH_BUFFER",
+  "description" : "BENCH_BUFFER",
+  "creationDate" : "2006-07-06 14:31:43",
+  "updateDate" : "2009-10-30 11:20:37",
+  "visibility" : "PRIVATE",
+  "ibmName" : "BENCBF",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "BENCBF",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

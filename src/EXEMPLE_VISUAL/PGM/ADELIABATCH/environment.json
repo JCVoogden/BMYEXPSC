@@ -1,0 +1,21 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "01"
+    },
+    "guideWord" : "TOTO",
+    "fileName" : "TEST",
+    "access" : "SEQUENTIAL",
+    "update" : "NO_UPDATE",
+    "generation" : "NONE"
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "TAST",
+      "fileName" : ""
+    },
+    "type" : "DEFAULT",
+    "rename" : "TAST2",
+    "generation" : "NONE"
+  } ]
+}

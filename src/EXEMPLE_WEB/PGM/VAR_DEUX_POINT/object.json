@@ -1,0 +1,16 @@
+{
+  "type" : "PGM",
+  "name" : "VAR_DEUX_POINT",
+  "description" : "exempled 'utilisation d'un variable ::variable",
+  "creationDate" : "2004-09-03 10:14:21",
+  "updateDate" : "2004-09-14 09:52:13",
+  "visibility" : "PRIVATE",
+  "ibmName" : "variabledeuxpoint",
+  "programType" : "I",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "VAR2PT",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "SQL",
+  "keepState" : true,
+  "canvasName" : "CANEVAS_EXEMPLE"
+}

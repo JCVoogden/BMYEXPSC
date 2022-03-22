@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "AFF_SINISTRE",
+  "description" : "Affichage des sinistres",
+  "creationDate" : "1995-06-08 06:58:43",
+  "updateDate" : "2005-05-30 13:14:29",
+  "visibility" : "PUBLIC",
+  "ibmName" : "AFFSIN",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "AFFSIN",
+  "programTemplateName" : "AFF_INF_PARM",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

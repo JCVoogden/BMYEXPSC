@@ -1,0 +1,10 @@
+{
+  "type" : "ETA",
+  "name" : "EDT_CRYSTAL",
+  "description" : "exemple edition Crystal Report (c)",
+  "creationDate" : "2004-06-14 08:00:02",
+  "updateDate" : "2004-07-07 13:43:46",
+  "visibility" : "PRIVATE",
+  "layoutCode" : "EDTCR",
+  "nature" : "CRYSTAL"
+}

@@ -1,0 +1,40 @@
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)* Attention Cette version doit être utilisé uniquement avec   *
+*ROW_METADATA(ADELIA         20040219)* la DLL FCTSPECC128.DLL                                      * 
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)*------------------------------------------------------------------*
+*ROW_METADATA(ADELIA                0)*  Recherche du mot directeur entité à partir du mot directeur     *
+*ROW_METADATA(ADELIA                0)*  dictionnaire.                                                   *
+*ROW_METADATA(ADELIA                0)*------------------------------------------------------------------*
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)* ATTENTION : Ceci est un programme exemple de personnalisation des
+*ROW_METADATA(ADELIA                0)*             fonctions spécifiques pour Adélia/IWS. Il devra être
+*ROW_METADATA(ADELIA         20040219)*             généré en C pour Windows. (Cf Annexe documentation IWS)
+*ROW_METADATA(ADELIA                0)*   
+*ROW_METADATA(ADELIA                0)*------------------------------------------------------------------*
+*ROW_METADATA(ADELIA                0)*-------------------------------------------------------------*
+*ROW_METADATA(ADELIA                0)* Paramètres                                                  *
+*ROW_METADATA(ADELIA                0)*            P_MOT_DIR_DIC   (Entrée)                         *
+*ROW_METADATA(ADELIA                0)*            P_MOT_DIR_ENTIT (Sortie)                         *
+*ROW_METADATA(ADELIA                0)*            P_NOM_FICHIER   (Entrée)                         *
+*ROW_METADATA(ADELIA                0)*            P_COD_RETOUR    (Sortie)                         *
+*ROW_METADATA(ADELIA                0)*-------------------------------------------------------------*
+*ROW_METADATA(ADELIA                0)RECEVOIR P_MOT_DIR_DIC P_MOT_DIR_ENTIT P_NOM_FICHIER P_COD_RETOUR
+*ROW_METADATA(ADELIA                0)P_COD_RETOUR = '0'
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)PLACER_A_GAUCHE P_NOM_FICHIER FI_NOM_FICHIER
+*ROW_METADATA(ADELIA                0)LIRE FICHIER_NOM
+*ROW_METADATA(ADELIA                0)* Détection d'une erreur E/S en lecture : positionnement du code retour à '1'
+*ROW_METADATA(ADELIA                0)SI *IN90 = '1'
+*ROW_METADATA(ADELIA                0)  P_COD_RETOUR = '1'
+*ROW_METADATA(ADELIA                0)  TERMINER
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)P_MOT_DIR_ENTIT = FI_COD_PREFIXE /// '_' /// P_MOT_DIR_DIC
+*ROW_METADATA(ADELIA                0)RETOURNER
+*ROW_METADATA(ADELIA                0)*

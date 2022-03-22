@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Modification de nom de fichiers" format1="E7" format2="C7" format3="*7" format4="B7" functionKeys="  A        A            " updateDate="1753-01-01" updateTime="00:00:00" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="*7" eraseInput="false" guideWord="SFL07" help="false" jumpLinesBefore="10" keep="false" lock="false" nbColumns="1" nbLines="12" overlay="false" pagination="STATIC" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="SFL07" subFilePageSize="12" subFileSize="13" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="B7" eraseInput="false" help="false" jumpLinesBefore="22" keep="false" lock="false" nbColumns="1" nbLines="2" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FORB7" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="C7" eraseInput="false" help="false" jumpLinesBefore="9" keep="false" lock="false" nbColumns="1" nbLines="1" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="CTLC7" subFileCode="*7" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="E7" eraseInput="false" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="8" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FORE7" truncate="false"/>
+    </formats>
+    <entities/>
+    <fields>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="NOM DU PROGRAMME" formatCode="E7" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="E7" hilight="true" kind="CONSTANT" layoutCode="*" length="29" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="25" y="1">
+            <text text="Modification de nom d'entités"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="E7" kind="CONSTANT" layoutCode="*" length="72" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="6">
+            <text text="Pour rebaptiser une entité, indiquez le nouveau nom, appuyez sur ENTREE."/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="C7" hilight="true" kind="CONSTANT" layoutCode="*" length="3" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="7" y="9">
+            <text text="Nom"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="C7" hilight="true" kind="CONSTANT" layoutCode="*" length="11" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="23" y="9">
+            <text text="Nouveau nom"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom entité" formatCode="*7" guideWord="ZZ_NOM_ENTITE" kind="USER_VARIABLE" layoutCode="ZZNENT" length="15" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="10"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom entité" formatCode="*7" guideWord="Z2_NOM_ENTITE" kind="USER_VARIABLE" layoutCode="Z2NENT" length="15" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" underscore="true" validExtendedFieldName="false" validFieldName="false" x="21" y="10"/>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="B7" kind="CONSTANT" layoutCode="*" length="7" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="23">
+            <text text="F3=Exit"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="B7" kind="CONSTANT" layoutCode="*" length="11" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="11" y="23">
+            <text text="F12=Annuler"/>
+        </field>
+        <field formatCode="*7" guideWord="ZC_NUM_ENREG" kind="USER_VARIABLE" layoutCode="ZCNENR" length="10" mode="HIDDEN" type="NUMBER"/>
+    </fields>
+</transaction>

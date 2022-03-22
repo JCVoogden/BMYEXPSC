@@ -1,0 +1,70 @@
+*ROW_METADATA(ADELIA         20050316)* Affichage d'une seule transaction avec réception de paramètre
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)* La variable P_COD_ACTION sert à déterminer si la sorti s'est
+*ROW_METADATA(ADELIA                0)* faites par F03 (EXit) ou par F12 (PRécédent)
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)* La variable P_COD_RETOUR sert à Ppositionner un eventuel problème
+*ROW_METADATA(ADELIA                0)* dans le programme à ramener au programme appelant
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)* Recherchez P_???? et remplacer la zone clé du fichier à traiter
+*ROW_METADATA(ADELIA         20050318)*
+*ROW_METADATA(ADELIA         20050317)RECEVOIR P_COD_RETOUR P_COD_ACTION PCOD_MAT_PERS
+*ROW_METADATA(ADELIA                0)INITIALISER 01
+*ROW_METADATA(ADELIA         20050316)TRAITER 01
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)INITIALISATION 01
+*ROW_METADATA(ADELIA         20050530)********************
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)LIRE            PERSONN_DA
+*ROW_METADATA(ADELIA                0)PRESENTER       PERSONN_DA
+*ROW_METADATA(ADELIA                0)XNOM_PGM        = *NOM_PGM
+*ROW_METADATA(ADELIA         20050316)FIN_STD
+*ROW_METADATA(ADELIA         20050316)PCOD_MAT_PERS = PCOD_MAT_PER2
+*ROW_METADATA(ADELIA                0)LIRE            PERSONN_DA
+*ROW_METADATA(ADELIA                0)SI              PERSONN_DA N_EXISTE_PAS
+*ROW_METADATA(ADELIA                0)  ZNOM_HIERARCHIE = *BLANK
+*ROW_METADATA(ADELIA                0)SINON
+*ROW_METADATA(ADELIA                0)  ZNOM_HIERARCHIE = PNOM_PERS
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA         20050506)
+*ROW_METADATA(ADELIA         20050506)
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)TRANSACTION 01
+*ROW_METADATA(ADELIA         20050530)********************
+*ROW_METADATA(ADELIA                0)SI *F03
+*ROW_METADATA(ADELIA                0)  P_COD_ACTION = 'EX'
+*ROW_METADATA(ADELIA                0)  P_COD_RETOUR = *BLANK
+*ROW_METADATA(ADELIA                0)  TERMINER
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)SI *F04
+*ROW_METADATA(ADELIA                0)  ENVOYER_MSG  SYS9900
+*ROW_METADATA(ADELIA                0)  TRAITER 01
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)SI *F12
+*ROW_METADATA(ADELIA                0)  P_COD_ACTION = 'PR'
+*ROW_METADATA(ADELIA                0)  P_COD_RETOUR = *BLANK
+*ROW_METADATA(ADELIA                0)  TERMINER
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)P_COD_RETOUR = *BLANK
+*ROW_METADATA(ADELIA                0)TERMINER
+*ROW_METADATA(ADELIA         20050526)********************
+*ROW_METADATA(ADELIA         20050526)VALIDATION 01
+*ROW_METADATA(ADELIA         20050530)********************
+*ROW_METADATA(ADELIA         20050526)* TEST
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)TRT_GUIDE 01
+*ROW_METADATA(ADELIA         20050530)********************
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)SI *F04
+*ROW_METADATA(ADELIA                0)  ENVOYER_MSG SYS9900
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20050530)********************
+*ROW_METADATA(ADELIA         20050530)INITIALISATION 02
+*ROW_METADATA(ADELIA         20050530)********************
+*ROW_METADATA(ADELIA         20050530)AAAAAAAAAAAA
+*ROW_METADATA(ADELIA         20050530)********************
+*ROW_METADATA(ADELIA         20050530)VALIDATION 02
+*ROW_METADATA(ADELIA         20050530)********************
+*ROW_METADATA(ADELIA         20050530)BBBBBBBBBBBBB

@@ -1,0 +1,32 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20080414)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20080521)      
+*ROW_METADATA(ADELIA         20080521)      alpha(100) requete
+*ROW_METADATA(ADELIA         20080521)      
+*ROW_METADATA(ADELIA         20080414)      num_bin_4 i
+*ROW_METADATA(ADELIA         20080414)      num_bin_4 j
+*ROW_METADATA(ADELIA         20080414)      num_bin_4 k
+*ROW_METADATA(ADELIA         20080414)      
+*ROW_METADATA(ADELIA         20080414)      param k
+*ROW_METADATA(ADELIA         20080414)      
+*ROW_METADATA(ADELIA         20080414)   FIN_DECL
+*ROW_METADATA(ADELIA         20080414)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080414)      
+*ROW_METADATA(ADELIA         20080414)      tant_que i < 10
+*ROW_METADATA(ADELIA         20080414)         j = i
+*ROW_METADATA(ADELIA         20080414)         k = j * i
+*ROW_METADATA(ADELIA         20080414)         i = i + 1
+*ROW_METADATA(ADELIA         20080521)      refaire
+*ROW_METADATA(ADELIA         20080521)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080521)         requete = 'select b1 from test.sql_base'
+*ROW_METADATA(ADELIA         20080521)         
+*ROW_METADATA(ADELIA         20080521)         exec_sql(declare c1 cursor for :requete)
+*ROW_METADATA(ADELIA         20080521)         exec_sql(open c1)
+*ROW_METADATA(ADELIA         20080521)         exec_sql(fetch c1 into :i)
+*ROW_METADATA(ADELIA         20080521)         exec_sql(close c1)
+*ROW_METADATA(ADELIA         20080521)         
+*ROW_METADATA(ADELIA         20080414)         
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080414)   FIN_INIT
+*ROW_METADATA(ADELIA                 )FIN_PGM

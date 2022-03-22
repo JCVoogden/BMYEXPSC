@@ -1,0 +1,83 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20080305)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20080305)      num_bin_4  code
+*ROW_METADATA(ADELIA         20080305)      curseur c1 ansi_unicode
+*ROW_METADATA(ADELIA         20080305)      
+*ROW_METADATA(ADELIA         20080305)   FIN_DECL
+*ROW_METADATA(ADELIA         20080305)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080305)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20080305)      executer    id_fen0
+*ROW_METADATA(ADELIA         20080305)      
+*ROW_METADATA(ADELIA         20080305)   FIN_INIT
+*ROW_METADATA(ADELIA         20080305)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20080305)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20080305)         
+*ROW_METADATA(ADELIA         20080305)      FIN_DECL
+*ROW_METADATA(ADELIA         20080305)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20080416)         
+*ROW_METADATA(ADELIA         20080416)         appeler_methode dde connecter *vrai code
+*ROW_METADATA(ADELIA         20080416)         
+*ROW_METADATA(ADELIA         20080416)         
+*ROW_METADATA(ADELIA         20080305)      FIN_INIT
+*ROW_METADATA(ADELIA         20080305)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20080305)         DEBUT_OBJET ID_OBJ2
+*ROW_METADATA(ADELIA         20080305)            DEBUT_EVT ID_OBJ2:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080305)                  ouvrir_sql_c c1
+*ROW_METADATA(ADELIA         20080305)                  code = *sqlcode
+*ROW_METADATA(ADELIA         20080305)                  sqlcode:texte = code
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20080305)            FIN_EVT
+*ROW_METADATA(ADELIA         20080305)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080305)         DEBUT_OBJET ID_OBJ3
+*ROW_METADATA(ADELIA         20080305)            DEBUT_EVT ID_OBJ3:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080305)                  lire_av_sql_c c1
+*ROW_METADATA(ADELIA         20080305)                  code = *sqlcode
+*ROW_METADATA(ADELIA         20080307)                  sqlcode:texte      = code
+*ROW_METADATA(ADELIA         20080307)                  presenter ansi_unicode
+*ROW_METADATA(ADELIA         20080416)                  inserer_elt id_lst:liste
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20080416)               
+*ROW_METADATA(ADELIA         20080416)               appeler_methode dde ecrire zunicode 1 code
+*ROW_METADATA(ADELIA         20080416)               appeler_methode dde valider code
+*ROW_METADATA(ADELIA         20080305)            FIN_EVT
+*ROW_METADATA(ADELIA         20080305)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080305)         DEBUT_OBJET ID_OBJ4
+*ROW_METADATA(ADELIA         20080305)            DEBUT_EVT ID_OBJ4:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080305)                  fermer_sql_c c1
+*ROW_METADATA(ADELIA         20080305)                  code = *sqlcode
+*ROW_METADATA(ADELIA         20080305)                  sqlcode:texte = code
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20080305)            FIN_EVT
+*ROW_METADATA(ADELIA         20080305)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080306)         DEBUT_OBJET ID_OBJ5
+*ROW_METADATA(ADELIA         20080306)            DEBUT_EVT ID_OBJ5:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20080306)               terminer
+*ROW_METADATA(ADELIA         20080306)            FIN_EVT
+*ROW_METADATA(ADELIA         20080306)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080416)         DEBUT_OBJET DDE
+*ROW_METADATA(ADELIA         20080416)            DEBUT_EVT DDE:ChangementDonnees
+*ROW_METADATA(ADELIA         20080416)               zansi = 'Via DDE'
+*ROW_METADATA(ADELIA         20080416)               appeler_methode dde lire zunicode 1 1 code
+*ROW_METADATA(ADELIA         20080416)               inserer_elt id_lst:liste
+*ROW_METADATA(ADELIA         20080416)               
+*ROW_METADATA(ADELIA         20080416)            FIN_EVT
+*ROW_METADATA(ADELIA         20080416)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080416)         DEBUT_OBJET ID_FEN0
+*ROW_METADATA(ADELIA         20080416)            DEBUT_EVT ID_FEN0:Fermeture
+*ROW_METADATA(ADELIA         20080416)               appeler_methode dde deconnecter code
+*ROW_METADATA(ADELIA         20080416)            FIN_EVT
+*ROW_METADATA(ADELIA         20080416)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080305)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20080305)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20080305)         
+*ROW_METADATA(ADELIA         20080305)      FIN_VERIF
+*ROW_METADATA(ADELIA         20080305)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20080305)         
+*ROW_METADATA(ADELIA         20080305)      FIN_VALID
+*ROW_METADATA(ADELIA         20080305)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080305)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080305)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

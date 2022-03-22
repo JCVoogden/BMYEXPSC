@@ -1,0 +1,552 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20010905)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20010905)      
+*ROW_METADATA(ADELIA         20010905)   FIN_DECL
+*ROW_METADATA(ADELIA         20010905)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20010913)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20010913)      
+*ROW_METADATA(ADELIA         20010913)      executer id_fen0
+*ROW_METADATA(ADELIA         20010905)   FIN_INIT
+*ROW_METADATA(ADELIA         20010905)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20010905)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20011016)         num_bin_4 styles
+*ROW_METADATA(ADELIA         20021024)         num_bin_4 psdstyles
+*ROW_METADATA(ADELIA         20021024)         num_bin_4 stylesajoutes
+*ROW_METADATA(ADELIA         20011019)         num_bin_4 stylessupprimes
+*ROW_METADATA(ADELIA         20011019)         
+*ROW_METADATA(ADELIA         20011119)         image dib
+*ROW_METADATA(ADELIA         20011016)         
+*ROW_METADATA(ADELIA         20021024)         
+*ROW_METADATA(ADELIA         20010905)      FIN_DECL
+*ROW_METADATA(ADELIA         20010905)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20021024)         
+*ROW_METADATA(ADELIA         20011016)         id_getplc:valeur_courante = 1
+*ROW_METADATA(ADELIA         20010913)         inserer_elt id_getplc:liste
+*ROW_METADATA(ADELIA         20010913)         id_getplc:valeur_courante = 2
+*ROW_METADATA(ADELIA         20010913)         inserer_elt id_getplc:liste
+*ROW_METADATA(ADELIA         20010913)         id_getplc:valeur_courante = 3
+*ROW_METADATA(ADELIA         20010913)         inserer_elt id_getplc:liste
+*ROW_METADATA(ADELIA         20010913)         id_getplc:valeur_courante = 4
+*ROW_METADATA(ADELIA         20010913)         inserer_elt id_getplc:liste
+*ROW_METADATA(ADELIA         20010925)         
+*ROW_METADATA(ADELIA         20010913)         id_setplc:valeur_courante = 1
+*ROW_METADATA(ADELIA         20010913)         inserer_elt id_setplc:liste
+*ROW_METADATA(ADELIA         20010913)         id_setplc:valeur_courante = 2
+*ROW_METADATA(ADELIA         20010913)         inserer_elt id_setplc:liste
+*ROW_METADATA(ADELIA         20010913)         id_setplc:valeur_courante = 3
+*ROW_METADATA(ADELIA         20010913)         inserer_elt id_setplc:liste
+*ROW_METADATA(ADELIA         20010913)         id_setplc:valeur_courante = 4
+*ROW_METADATA(ADELIA         20010913)         inserer_elt id_setplc:liste
+*ROW_METADATA(ADELIA         20010925)         
+*ROW_METADATA(ADELIA         20010913)         id_setpos:valeur_courante = 1
+*ROW_METADATA(ADELIA         20010913)         inserer_elt id_setpos:liste
+*ROW_METADATA(ADELIA         20010913)         id_setpos:valeur_courante = 2
+*ROW_METADATA(ADELIA         20010913)         inserer_elt id_setpos:liste
+*ROW_METADATA(ADELIA         20010913)         
+*ROW_METADATA(ADELIA         20010913)         id_getpos:valeur_courante = 1
+*ROW_METADATA(ADELIA         20010913)         inserer_elt id_getpos:liste
+*ROW_METADATA(ADELIA         20010913)         id_getpos:valeur_courante = 2
+*ROW_METADATA(ADELIA         20010913)         inserer_elt id_getpos:liste
+*ROW_METADATA(ADELIA         20010913)         
+*ROW_METADATA(ADELIA         20011016)         id_getcomp:valeur_courante = 'bouton'
+*ROW_METADATA(ADELIA         20011016)         inserer_elt id_getcomp:liste
+*ROW_METADATA(ADELIA         20011016)         id_getcomp:valeur_courante = 'bascule'
+*ROW_METADATA(ADELIA         20011016)         inserer_elt id_getcomp:liste
+*ROW_METADATA(ADELIA         20011016)         id_getcomp:valeur_courante = 'option'
+*ROW_METADATA(ADELIA         20011016)         inserer_elt id_getcomp:liste
+*ROW_METADATA(ADELIA         20011016)         id_getcomp:valeur_courante = 'séparateur'
+*ROW_METADATA(ADELIA         20011016)         inserer_elt id_getcomp:liste
+*ROW_METADATA(ADELIA         20011016)         
+*ROW_METADATA(ADELIA         20011016)         id_setcomp:valeur_courante = 'bouton'
+*ROW_METADATA(ADELIA         20011016)         inserer_elt id_setcomp:liste
+*ROW_METADATA(ADELIA         20011016)         id_setcomp:valeur_courante = 'bascule'
+*ROW_METADATA(ADELIA         20011016)         inserer_elt id_setcomp:liste
+*ROW_METADATA(ADELIA         20011016)         id_setcomp:valeur_courante = 'option'
+*ROW_METADATA(ADELIA         20011016)         inserer_elt id_setcomp:liste
+*ROW_METADATA(ADELIA         20011016)         id_setcomp:valeur_courante = 'séparateur'
+*ROW_METADATA(ADELIA         20011016)         inserer_elt id_setcomp:liste
+*ROW_METADATA(ADELIA         20011016)         
+*ROW_METADATA(ADELIA         20011022)         id_addcomp:valeur_courante = 'bouton'
+*ROW_METADATA(ADELIA         20011022)         inserer_elt id_addcomp:liste
+*ROW_METADATA(ADELIA         20011022)         id_addcomp:valeur_courante = 'bascule'
+*ROW_METADATA(ADELIA         20011022)         inserer_elt id_addcomp:liste
+*ROW_METADATA(ADELIA         20011022)         id_addcomp:valeur_courante = 'option'
+*ROW_METADATA(ADELIA         20011022)         inserer_elt id_addcomp:liste
+*ROW_METADATA(ADELIA         20011022)         id_addcomp:valeur_courante = 'séparateur'
+*ROW_METADATA(ADELIA         20011022)         inserer_elt id_addcomp:liste
+*ROW_METADATA(ADELIA         20011022)         
+*ROW_METADATA(ADELIA         20011022)         id_getposition:valeur_courante = 'relevé'
+*ROW_METADATA(ADELIA         20011016)         inserer_elt id_getposition:liste
+*ROW_METADATA(ADELIA         20011016)         id_getposition:valeur_courante = 'enfoncé'
+*ROW_METADATA(ADELIA         20011016)         inserer_elt id_getposition:liste
+*ROW_METADATA(ADELIA         20011016)         id_getposition:valeur_courante = 'indéterminé'
+*ROW_METADATA(ADELIA         20011016)         inserer_elt id_getposition:liste
+*ROW_METADATA(ADELIA         20011016)         
+*ROW_METADATA(ADELIA         20011016)         id_setposition:valeur_courante = 'relevé'
+*ROW_METADATA(ADELIA         20011016)         inserer_elt id_setposition:liste
+*ROW_METADATA(ADELIA         20011016)         id_setposition:valeur_courante = 'enfoncé'
+*ROW_METADATA(ADELIA         20011016)         inserer_elt id_setposition:liste
+*ROW_METADATA(ADELIA         20011016)         id_setposition:valeur_courante = 'indéterminé'
+*ROW_METADATA(ADELIA         20011016)         inserer_elt id_setposition:liste
+*ROW_METADATA(ADELIA         20011016)         
+*ROW_METADATA(ADELIA         20011022)         
+*ROW_METADATA(ADELIA         20011022)         id_addposition:valeur_courante = 'relevé'
+*ROW_METADATA(ADELIA         20011022)         inserer_elt id_addposition:liste
+*ROW_METADATA(ADELIA         20011022)         id_addposition:valeur_courante = 'enfoncé'
+*ROW_METADATA(ADELIA         20011022)         inserer_elt id_addposition:liste
+*ROW_METADATA(ADELIA         20011022)         id_addposition:valeur_courante = 'indéterminé'
+*ROW_METADATA(ADELIA         20011022)         inserer_elt id_addposition:liste
+*ROW_METADATA(ADELIA         20011022)         
+*ROW_METADATA(ADELIA         20011016)         
+*ROW_METADATA(ADELIA         20011016)         
+*ROW_METADATA(ADELIA         20010905)      FIN_INIT
+*ROW_METADATA(ADELIA         20010905)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20011015)         DEBUT_OBJET GET_TEXT
+*ROW_METADATA(ADELIA         20011015)            DEBUT_EVT GET_TEXT:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20011016)               appeler_methode bar recuperer_texte_outil idf: id_get_text: cr: 
+*ROW_METADATA(ADELIA         20011016)               traiter_proc texteerreur
+*ROW_METADATA(ADELIA         20011015)            FIN_EVT
+*ROW_METADATA(ADELIA         20011015)         FIN_OBJET
+*ROW_METADATA(ADELIA         20011015)         DEBUT_OBJET SET_TEXT
+*ROW_METADATA(ADELIA         20011015)            DEBUT_EVT SET_TEXT:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20011015)               appeler_methode bar fixer_texte_outil idf: id_set_text: cr: 
+*ROW_METADATA(ADELIA         20011016)               traiter_proc texteerreur
+*ROW_METADATA(ADELIA         20011015)            FIN_EVT
+*ROW_METADATA(ADELIA         20011015)         FIN_OBJET
+*ROW_METADATA(ADELIA         20011016)         DEBUT_OBJET CR
+*ROW_METADATA(ADELIA         20011016)            DEBUT_EVT CR:ChangementValeur
+*ROW_METADATA(ADELIA         20011016)               
+*ROW_METADATA(ADELIA         20011016)            FIN_EVT
+*ROW_METADATA(ADELIA         20011016)         FIN_OBJET
+*ROW_METADATA(ADELIA         20011016)         DEBUT_OBJET GETSTYLES
+*ROW_METADATA(ADELIA         20011016)            DEBUT_EVT GETSTYLES:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20011017)               appeler_methode bar recuperer_styles_outil idf: styles cr: 
+*ROW_METADATA(ADELIA         20021024)               si styles >= _BAR_STL_BTN_INDET
+*ROW_METADATA(ADELIA         20011017)                  id_getposition: = 'indéterminé'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles - _BAR_STL_BTN_INDET
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20021024)               si styles >= _BAR_STL_BTN_ENFONCE
+*ROW_METADATA(ADELIA         20011017)                  id_getposition: = 'enfoncé'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles - _BAR_STL_BTN_ENFONCE
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20021024)               si styles >= _BAR_STL_BTN_RELEVE
+*ROW_METADATA(ADELIA         20011017)                  id_getposition: = 'relevé'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles - _BAR_STL_BTN_RELEVE
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20021024)               si styles >= _BAR_STL_BTN_SEP 
+*ROW_METADATA(ADELIA         20011017)                  id_getcomp: = 'séparateur'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles - _BAR_STL_BTN_SEP 
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20021024)               si styles >= _BAR_STL_BTN_OPTION 
+*ROW_METADATA(ADELIA         20011017)                  id_getcomp: = 'option'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles - _BAR_STL_BTN_OPTION 
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20021024)               si styles >= _BAR_STL_BTN_BASCULE 
+*ROW_METADATA(ADELIA         20011017)                  id_getcomp: = 'bascule'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles - _BAR_STL_BTN_BASCULE 
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20021024)               si styles >= _BAR_STL_BTN_BOUTON
+*ROW_METADATA(ADELIA         20011017)                  id_getcomp: = 'bouton'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles - _BAR_STL_BTN_BOUTON
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20021028)               si styles >= _BAR_STL_BTN_LARG_SPEC
+*ROW_METADATA(ADELIA         20011017)                  id_getlargspec: = *vrai
+*ROW_METADATA(ADELIA         20021028)                  styles = styles - _BAR_STL_BTN_LARG_SPEC
+*ROW_METADATA(ADELIA         20011017)               sinon
+*ROW_METADATA(ADELIA         20011017)                  id_getlargspec: = *faux
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20011017)               
+*ROW_METADATA(ADELIA         20021024)               si styles >= _BAR_STL_BTN_SUPP_ESP
+*ROW_METADATA(ADELIA         20011017)                  id_getsuppesp: = *vrai
+*ROW_METADATA(ADELIA         20021024)                  styles = styles - _BAR_STL_BTN_SUPP_ESP
+*ROW_METADATA(ADELIA         20011017)               sinon
+*ROW_METADATA(ADELIA         20011017)                  id_getsuppesp: = *faux
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20011017)               
+*ROW_METADATA(ADELIA         20021024)               si styles >= _BAR_STL_BTN_ACTIF 
+*ROW_METADATA(ADELIA         20011017)                  id_getactif: = *vrai
+*ROW_METADATA(ADELIA         20021024)                  styles = styles - _BAR_STL_BTN_ACTIF 
+*ROW_METADATA(ADELIA         20011017)               sinon
+*ROW_METADATA(ADELIA         20011017)                  id_getactif: = *faux
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20011017)               
+*ROW_METADATA(ADELIA         20021024)               si styles >= _BAR_STL_BTN_VISIBLE 
+*ROW_METADATA(ADELIA         20011017)                  id_getvisible: = *vrai
+*ROW_METADATA(ADELIA         20021024)                  styles = styles - _BAR_STL_BTN_VISIBLE 
+*ROW_METADATA(ADELIA         20011017)               sinon
+*ROW_METADATA(ADELIA         20011017)                  id_getvisible: = *faux
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20011017)               
+*ROW_METADATA(ADELIA         20011017)               
+*ROW_METADATA(ADELIA         20011016)               traiter_proc texteerreur
+*ROW_METADATA(ADELIA         20011016)               
+*ROW_METADATA(ADELIA         20011016)            FIN_EVT
+*ROW_METADATA(ADELIA         20011016)         FIN_OBJET
+*ROW_METADATA(ADELIA         20011016)         DEBUT_OBJET SETSTYLES
+*ROW_METADATA(ADELIA         20011016)            DEBUT_EVT SETSTYLES:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20011016)               styles = 0
+*ROW_METADATA(ADELIA         20011017)               si id_setcomp: = 'bouton'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles + _BAR_STL_BTN_BOUTON
+*ROW_METADATA(ADELIA         20011016)               fin
+*ROW_METADATA(ADELIA         20011016)               si id_setcomp: = 'bascule'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles + _BAR_STL_BTN_BASCULE 
+*ROW_METADATA(ADELIA         20011016)               fin
+*ROW_METADATA(ADELIA         20011016)               si id_setcomp: = 'option'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles + _BAR_STL_BTN_OPTION 
+*ROW_METADATA(ADELIA         20011016)               fin
+*ROW_METADATA(ADELIA         20011016)               si id_setcomp: = 'séparateur'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles + _BAR_STL_BTN_SEP 
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20011017)               
+*ROW_METADATA(ADELIA         20021024)               si styles = _BAR_STL_BTN_BASCULE  ou styles = _BAR_STL_BTN_OPTION 
+*ROW_METADATA(ADELIA         20011017)                  si id_setposition: = 'relevé'
+*ROW_METADATA(ADELIA         20021024)                     styles = styles + _BAR_STL_BTN_RELEVE
+*ROW_METADATA(ADELIA         20011016)                  fin
+*ROW_METADATA(ADELIA         20011016)                  si id_setposition: = 'enfoncé'
+*ROW_METADATA(ADELIA         20021024)                     styles = styles + _BAR_STL_BTN_ENFONCE
+*ROW_METADATA(ADELIA         20011016)                  fin
+*ROW_METADATA(ADELIA         20011016)                  si id_setposition: = 'indéterminé'
+*ROW_METADATA(ADELIA         20021024)                     styles = styles + _BAR_STL_BTN_INDET
+*ROW_METADATA(ADELIA         20011016)                  fin
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20011017)               si id_setcomp: <> 'séparateur'
+*ROW_METADATA(ADELIA         20011017)                  si id_setactif:
+*ROW_METADATA(ADELIA         20021024)                     styles = styles + _BAR_STL_BTN_ACTIF 
+*ROW_METADATA(ADELIA         20011017)                  fin
+*ROW_METADATA(ADELIA         20011017)                  si id_setsuppesp:
+*ROW_METADATA(ADELIA         20021024)                     styles = styles + _BAR_STL_BTN_SUPP_ESP
+*ROW_METADATA(ADELIA         20011017)                  fin
+*ROW_METADATA(ADELIA         20011017)                  si id_setlargspec:
+*ROW_METADATA(ADELIA         20021028)                     styles = styles + _BAR_STL_BTN_LARG_SPEC
+*ROW_METADATA(ADELIA         20011017)                  fin
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20011017)               
+*ROW_METADATA(ADELIA         20011017)               si id_setvisible:
+*ROW_METADATA(ADELIA         20021024)                  styles = styles + _BAR_STL_BTN_VISIBLE 
+*ROW_METADATA(ADELIA         20011017)               fin
+*ROW_METADATA(ADELIA         20011017)               appeler_methode bar fixer_styles_outil idf: styles cr: 
+*ROW_METADATA(ADELIA         20011016)               traiter_proc texteerreur
+*ROW_METADATA(ADELIA         20011016)               
+*ROW_METADATA(ADELIA         20011016)               
+*ROW_METADATA(ADELIA         20011016)            FIN_EVT
+*ROW_METADATA(ADELIA         20011016)         FIN_OBJET
+*ROW_METADATA(ADELIA         20011018)         DEBUT_OBJET GET_TEXTINFO
+*ROW_METADATA(ADELIA         20011018)            DEBUT_EVT GET_TEXTINFO:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20011018)               appeler_methode bar recuperer_texte_info_outil idf: id_get_textinfo: cr: 
+*ROW_METADATA(ADELIA         20011018)               traiter_proc texteerreur
+*ROW_METADATA(ADELIA         20011018)            FIN_EVT
+*ROW_METADATA(ADELIA         20011018)         FIN_OBJET
+*ROW_METADATA(ADELIA         20011018)         DEBUT_OBJET SET_TEXTINFO
+*ROW_METADATA(ADELIA         20011018)            DEBUT_EVT SET_TEXTINFO:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20011018)               appeler_methode bar fixer_texte_info_outil idf: id_set_textinfo: cr: 
+*ROW_METADATA(ADELIA         20011018)               traiter_proc texteerreur
+*ROW_METADATA(ADELIA         20011018)            FIN_EVT
+*ROW_METADATA(ADELIA         20011018)         FIN_OBJET
+*ROW_METADATA(ADELIA         20011018)         DEBUT_OBJET GET_DESCRIPT
+*ROW_METADATA(ADELIA         20011018)            DEBUT_EVT GET_DESCRIPT:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20011018)               appeler_methode bar recuperer_description_outil idf: id_get_descript: cr: 
+*ROW_METADATA(ADELIA         20011018)               traiter_proc texteerreur
+*ROW_METADATA(ADELIA         20011018)            FIN_EVT
+*ROW_METADATA(ADELIA         20011018)         FIN_OBJET
+*ROW_METADATA(ADELIA         20011018)         DEBUT_OBJET SET_DESCRIPT
+*ROW_METADATA(ADELIA         20011018)            DEBUT_EVT SET_DESCRIPT:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20011018)               appeler_methode bar fixer_description_outil idf: id_set_descript: cr: 
+*ROW_METADATA(ADELIA         20011018)               traiter_proc texteerreur
+*ROW_METADATA(ADELIA         20011018)            FIN_EVT
+*ROW_METADATA(ADELIA         20011018)         FIN_OBJET
+*ROW_METADATA(ADELIA         20011022)         DEBUT_OBJET AJOUTER_OUTIL
+*ROW_METADATA(ADELIA         20011022)            DEBUT_EVT AJOUTER_OUTIL:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20011022)               styles = 0
+*ROW_METADATA(ADELIA         20011022)               si id_addcomp: = 'bouton'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles + _BAR_STL_BTN_BOUTON
+*ROW_METADATA(ADELIA         20011022)               fin
+*ROW_METADATA(ADELIA         20011022)               si id_addcomp: = 'bascule'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles + _BAR_STL_BTN_BASCULE 
+*ROW_METADATA(ADELIA         20011022)               fin
+*ROW_METADATA(ADELIA         20011022)               si id_addcomp: = 'option'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles + _BAR_STL_BTN_OPTION 
+*ROW_METADATA(ADELIA         20011022)               fin
+*ROW_METADATA(ADELIA         20011022)               si id_addcomp: = 'séparateur'
+*ROW_METADATA(ADELIA         20021024)                  styles = styles + _BAR_STL_BTN_SEP 
+*ROW_METADATA(ADELIA         20011022)               fin
+*ROW_METADATA(ADELIA         20011022)               
+*ROW_METADATA(ADELIA         20021024)               si styles = _BAR_STL_BTN_BASCULE  ou styles = _BAR_STL_BTN_OPTION 
+*ROW_METADATA(ADELIA         20011022)                  si id_addposition: = 'relevé'
+*ROW_METADATA(ADELIA         20021024)                     styles = styles + _BAR_STL_BTN_RELEVE
+*ROW_METADATA(ADELIA         20011022)                  fin
+*ROW_METADATA(ADELIA         20011022)                  si id_addposition: = 'enfoncé'
+*ROW_METADATA(ADELIA         20021024)                     styles = styles + _BAR_STL_BTN_ENFONCE
+*ROW_METADATA(ADELIA         20011022)                  fin
+*ROW_METADATA(ADELIA         20011022)                  si id_addposition: = 'indéterminé'
+*ROW_METADATA(ADELIA         20021024)                     styles = styles + _BAR_STL_BTN_INDET
+*ROW_METADATA(ADELIA         20011022)                  fin
+*ROW_METADATA(ADELIA         20011022)               fin
+*ROW_METADATA(ADELIA         20011022)               si id_addcomp: <> 'séparateur'
+*ROW_METADATA(ADELIA         20011022)                  si id_addactif:
+*ROW_METADATA(ADELIA         20021024)                     styles = styles + _BAR_STL_BTN_ACTIF 
+*ROW_METADATA(ADELIA         20011022)                  fin
+*ROW_METADATA(ADELIA         20011022)                  si id_addsuppesp:
+*ROW_METADATA(ADELIA         20021024)                     styles = styles + _BAR_STL_BTN_SUPP_ESP
+*ROW_METADATA(ADELIA         20011022)                  fin
+*ROW_METADATA(ADELIA         20011022)                  si id_addlargspec:
+*ROW_METADATA(ADELIA         20021028)                     styles = styles + _BAR_STL_BTN_LARG_SPEC
+*ROW_METADATA(ADELIA         20011022)                  fin
+*ROW_METADATA(ADELIA         20011022)               fin
+*ROW_METADATA(ADELIA         20011022)               
+*ROW_METADATA(ADELIA         20011022)               si id_addvisible:
+*ROW_METADATA(ADELIA         20021024)                  styles = styles + _BAR_STL_BTN_VISIBLE 
+*ROW_METADATA(ADELIA         20011022)               fin
+*ROW_METADATA(ADELIA         20011022)               appeler_methode bar ajouter_outil id_posoutil: idf: styles cr: 
+*ROW_METADATA(ADELIA         20011022)               traiter_proc texteerreur
+*ROW_METADATA(ADELIA         20011022)               
+*ROW_METADATA(ADELIA         20011022)            FIN_EVT
+*ROW_METADATA(ADELIA         20011022)         FIN_OBJET
+*ROW_METADATA(ADELIA         20011119)         DEBUT_OBJET SETIMAGEFILE
+*ROW_METADATA(ADELIA         20011119)            DEBUT_EVT SETIMAGEFILE:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20011119)               appeler_methode bar fixer_image_fichier_outil idf: fic_image: cr: 
+*ROW_METADATA(ADELIA         20011119)               traiter_proc texteerreur
+*ROW_METADATA(ADELIA         20011119)               
+*ROW_METADATA(ADELIA         20011119)            FIN_EVT
+*ROW_METADATA(ADELIA         20011119)         FIN_OBJET
+*ROW_METADATA(ADELIA         20011119)         DEBUT_OBJET SUPPRIMER_OUTIL
+*ROW_METADATA(ADELIA         20011119)            DEBUT_EVT SUPPRIMER_OUTIL:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20011119)               appeler_methode bar supprimer_outil idf: cr: 
+*ROW_METADATA(ADELIA         20011119)               traiter_proc texteerreur
+*ROW_METADATA(ADELIA         20011119)               
+*ROW_METADATA(ADELIA         20011119)            FIN_EVT
+*ROW_METADATA(ADELIA         20011119)         FIN_OBJET
+*ROW_METADATA(ADELIA         20011123)         DEBUT_OBJET BAR
+*ROW_METADATA(ADELIA         20011123)            DEBUT_EVT BAR:ClicOutil
+*ROW_METADATA(JV             20020903)               IDF:VALEUR = BAR:NOM_OUTIL
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)               SI BAR:NOM_OUTIL = 'IDF1'
+*ROW_METADATA(JV             20020830)                  ID_FEN0:PAGE_COURANTE = ID_FEN0:PAGE_COURANTE - 1
+*ROW_METADATA(JV             20020830)               FIN
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)               SI BAR:NOM_OUTIL = 'IDF2'
+*ROW_METADATA(JV             20020830)                  ID_FEN0:PAGE_COURANTE = ID_FEN0:PAGE_COURANTE + 1
+*ROW_METADATA(JV             20020830)               FIN
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)               SI BAR:NOM_OUTIL = 'IDF3'
+*ROW_METADATA(JV             20020905)                  
+*ROW_METADATA(JV             20020830)               FIN
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)               SI BAR:NOM_OUTIL = 'IDF4'
+*ROW_METADATA(JV             20020905)                  
+*ROW_METADATA(JV             20020830)               FIN
+*ROW_METADATA(ADELIA         20011123)            FIN_EVT
+*ROW_METADATA(ADELIA         20011123)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETABS
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETABS:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:abscisse = id_setabs:
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETORD
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETORD:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:ordonnee = id_setord:
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETLRG
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETLRG:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:largeur = id_setlrg:
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETHAUT
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETHAUT:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:hauteur = id_sethaut:
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETPLC
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETPLC:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:placement = id_setplc:
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETMULTI
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETMULTI:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:multiligne = id_setmulti:
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETTRANS
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETTRANS:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:transparence = id_settrans:
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETEVID
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETEVID:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:outils_evidence = id_setevid:
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETPOS
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETPOS:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:position_texte = id_setpos:
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETLRGBTN
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETLRGBTN:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:largeur_boutons = id_setlrgbtn:
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETHAUTBTN
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETHAUTBTN:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:hauteur_boutons = id_sethautbtn:
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETLRGIMG
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETLRGIMG:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:largeur_images = id_setlrgIMG:
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETHAUTIMG
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETHAUTIMG:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:hauteur_images = id_sethautIMG:
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETBORD
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETBORD:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:bord = id_setbord:
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETVISIBLE
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETVISIBLE:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:visibilite = id_setvisibilit: 
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020830)         DEBUT_OBJET SETACTIF
+*ROW_METADATA(JV             20020830)            DEBUT_EVT SETACTIF:BoutonGaucheClic
+*ROW_METADATA(JV             20020830)               bar:activite = id_setactivite:
+*ROW_METADATA(JV             20020830)               
+*ROW_METADATA(JV             20020830)            FIN_EVT
+*ROW_METADATA(JV             20020830)         FIN_OBJET
+*ROW_METADATA(JV             20020903)         DEBUT_OBJET GETABS
+*ROW_METADATA(JV             20020903)            DEBUT_EVT GETABS:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_getabs: = bar:abscisse
+*ROW_METADATA(JV             20020903)            FIN_EVT
+*ROW_METADATA(JV             20020903)         FIN_OBJET
+*ROW_METADATA(JV             20020903)         DEBUT_OBJET GETORD
+*ROW_METADATA(JV             20020903)            DEBUT_EVT GETORD:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_getord: = bar:ordonnee
+*ROW_METADATA(JV             20020903)            FIN_EVT
+*ROW_METADATA(JV             20020903)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETLRG
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETLRG:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_getlrg: = bar:largeur
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETHAUT
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETHAUT:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_gethaut: = bar:hauteur
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETPLC
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETPLC:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_getplc: = bar:placement
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETLRGBTN
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETLRGBTN:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_getlrgbtn: = bar:largeur_boutons
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETHAUTBTN
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETHAUTBTN:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_gethautbtn: = bar:hauteur_boutons
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETLRGIMG
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETLRGIMG:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_getlrgIMG: = bar:largeur_images
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETHAUTIMG
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETHAUTIMG:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_gethautIMG: = bar:hauteur_images
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETNBOUTIL
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETNBOUTIL:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               ID_GETNBOUTILS: = bar:nombre_outils
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETMULTI
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETMULTI:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_getmulti:  = bar:multiligne
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETBORD
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETBORD:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_getbord: = bar:bord
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETTRANS
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETTRANS:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_gettrans:  = bar:transparence
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETPOS
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETPOS:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_getpos: = bar:position_texte
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETEVID
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETEVID:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_getevid:  = bar:outils_evidence
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETVISIBLE
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETVISIBLE:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_getvisibilit:  = bar:visibilite
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(JV             20020905)         DEBUT_OBJET GETACTIF
+*ROW_METADATA(JV             20020905)            DEBUT_EVT GETACTIF:BoutonGaucheClic
+*ROW_METADATA(JV             20020905)               id_getactivite:  = bar:activite
+*ROW_METADATA(JV             20020905)            FIN_EVT
+*ROW_METADATA(JV             20020905)         FIN_OBJET
+*ROW_METADATA(ADELIA         20010905)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20010905)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20010905)         
+*ROW_METADATA(ADELIA         20010905)      FIN_VERIF
+*ROW_METADATA(ADELIA         20010905)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20010905)         
+*ROW_METADATA(ADELIA         20010905)      FIN_VALID
+*ROW_METADATA(ADELIA         20010905)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20010905)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20010905)   FIN_FENETRE
+*ROW_METADATA(ADELIA         20011016)   DEBUT_PROCEDURE TEXTEERREUR
+*ROW_METADATA(ADELIA         20011016)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20011016)         
+*ROW_METADATA(ADELIA         20011016)      FIN_DECL
+*ROW_METADATA(ADELIA         20011016)      si id_fen0.cr: = 0
+*ROW_METADATA(ADELIA         20011016)         id_fen0.erreur: = 'OK'
+*ROW_METADATA(ADELIA         20011016)      sinon
+*ROW_METADATA(ADELIA         20011016)         si id_fen0.cr: = -2
+*ROW_METADATA(ADELIA         20011016)            id_fen0.erreur: = 'TYPE INVALIDE'
+*ROW_METADATA(ADELIA         20011016)         sinon
+*ROW_METADATA(ADELIA         20011016)            si id_fen0.cr: = -3
+*ROW_METADATA(ADELIA         20011016)               id_fen0.erreur: = 'ANOMALIE EXECUTION'
+*ROW_METADATA(ADELIA         20011016)            sinon
+*ROW_METADATA(ADELIA         20011016)               si id_fen0.cr: = -1
+*ROW_METADATA(ADELIA         20011016)                  id_fen0.erreur: = 'PARAMETRE INVALIDE'
+*ROW_METADATA(ADELIA         20011016)               sinon
+*ROW_METADATA(ADELIA         20011016)                  si id_fen0.cr: = -4
+*ROW_METADATA(ADELIA         20011016)                     id_fen0.erreur: = 'TAILLE_CHAINE_INSUFFISANTE'
+*ROW_METADATA(ADELIA         20011016)                  fin
+*ROW_METADATA(ADELIA         20011016)               fin
+*ROW_METADATA(ADELIA         20011016)            fin
+*ROW_METADATA(ADELIA         20011016)         fin
+*ROW_METADATA(ADELIA         20011016)      fin
+*ROW_METADATA(ADELIA         20011016)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

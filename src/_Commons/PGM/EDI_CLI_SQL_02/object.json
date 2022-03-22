@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "EDI_CLI_SQL_02",
+  "description" : "Edition liste avec requête SQL dynamique",
+  "creationDate" : "1995-06-08 07:05:45",
+  "updateDate" : "1995-06-08 07:05:45",
+  "visibility" : "PUBLIC",
+  "ibmName" : "SQLCL4",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "SQLCL4",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

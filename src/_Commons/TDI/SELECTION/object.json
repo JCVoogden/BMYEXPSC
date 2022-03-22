@@ -1,0 +1,9 @@
+{
+  "type" : "TDI",
+  "name" : "SELECTION",
+  "description" : "Affichage d'une liste avec sélection",
+  "creationDate" : "1995-06-07 12:12:23",
+  "updateDate" : "1996-08-29 09:37:07",
+  "visibility" : "PUBLIC",
+  "templateType" : "I"
+}

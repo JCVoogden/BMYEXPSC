@@ -1,0 +1,16 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   * Règle de gestion de type contrôle
+*ROW_METADATA(ADELIA                 )   * Contrôle du CODE REGLEMENT
+*ROW_METADATA(ADELIA                 )   REGLE_GESTION 0004 $$EXIST
+*ROW_METADATA(ADELIA                 )   DECLARER WGCRGT;WG_COD_RGT 2
+*ROW_METADATA(ADELIA                 )   IDENTIFIER RREGLEMT_COD REGLEMTL CLE ;WG_COD_RGT
+*ROW_METADATA(ADELIA                 )   WG_COD_RGT = $$EXIS
+*ROW_METADATA(ADELIA                 )   LIRE            RREGLEMT_COD
+*ROW_METADATA(ADELIA                 )   SI              RREGLEMT_COD  N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )     $LIB_REGLEMT = *BLANK
+*ROW_METADATA(ADELIA                 )     INIT_MSG $$EXIST
+*ROW_METADATA(ADELIA                 )     ANOMALIE
+*ROW_METADATA(ADELIA                 )   SINON
+*ROW_METADATA(ADELIA                 )     $LIB_REGLEMT = RLIB_REGLEMT
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

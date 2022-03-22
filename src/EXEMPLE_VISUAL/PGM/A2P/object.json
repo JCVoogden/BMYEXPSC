@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "A2P",
+  "description" : "A2P",
+  "creationDate" : "2010-10-05 09:09:42",
+  "updateDate" : "2010-10-05 09:50:39",
+  "visibility" : "PRIVATE",
+  "ibmName" : "A2P",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "A2P",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CAL_RIB_BANQUE",
+  "description" : "Transfert code banque pour calcul RIB",
+  "creationDate" : "1995-06-29 07:22:02",
+  "updateDate" : "1995-12-12 12:46:12",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

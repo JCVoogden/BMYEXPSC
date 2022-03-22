@@ -1,0 +1,150 @@
+*
+* Gestion avec option 2,4,5 ET F6
+*
+* La variable P_COD_ACTION sert à déterminer si la sorti s'est
+* faites par F03 (EXit) ou par F12 (PRécédent)
+*
+* La variable P_COD_RETOUR sert à Ppositionner un eventuel problème
+* dans le programme à ramener au programme appelant
+*
+* Recherchez WP_???? et remplacer par une variable de travail que
+* vous aurez créer ayant la taille de la clé du fichier à traiter
+*            WP_COD_MAT_PERS
+* Recherchez ZV1???? et remplacer par la variable écran à traiter
+*            ZPCOD_MAT_PERS
+* Recherchez MAJ_???? et remplacer par le programme de Mise à jour
+*            MAJ_PERSONNE
+* Recherchez AFF_???? et remplacer par le programme d'affichage
+*            AFF_PERSONNE
+* Créer une vue VUE_SUPPRESSION sur le fichier à gérer avec la bonne
+* clé d'accès
+*
+* Début
+INITIALISER 01
+TRAITER 01
+*-------------------------
+* Début transaction 01
+TRANSACTION 01
+SI *F03
+  P_COD_ACTION = 'EX'
+  P_COD_RETOUR = *BLANK
+  TERMINER
+FIN
+*
+SI *F12
+  P_COD_ACTION = 'PR'
+  P_COD_RETOUR = *BLANK
+  TERMINER
+FIN
+SI *PAGAV
+  PAGINER_AVANT
+FIN
+SI ZWAFF_PARTIR <> *BLANK
+  INITIALISER 01
+  ZWAFF_PARTIR = *BLANK
+  TRAITER 01
+FIN
+SI *F06
+  WP_COD_MAT_PERS = *BLANK
+  P_COD_RETOUR = *BLANK
+  P_COD_ACTION = 'CR'
+  APPELER MAJ_PERSONNE P_COD_RETOUR P_COD_ACTION WP_COD_MAT_PERS
+  SI P_COD_ACTION = 'EX'
+    P_COD_RETOUR = *BLANK
+    TERMINER
+  FIN
+  ZWAFF_PARTIR = WP_COD_MAT_PERS
+  INITIALISER 01
+  TRAITER 01
+FIN
+VERIFIER 01
+SI P_COD_ACTION = 'EX'
+  TERMINER
+FIN
+P_COD_ACTION = '  '
+SI P_COD_INIT = 'O'
+  P_COD_INIT = ' '
+  INITIALISER 01
+FIN
+SI *DEL04 > 0
+  *IN84 = '1'
+  TRAITER 02
+FIN
+TRAITER 01
+*-------------------------
+* Début transaction 02
+TRANSACTION 02
+SI *F12
+  TRAITER 01
+FIN
+VALIDER  02
+INITIALISER 01
+TRAITER 01
+**********************
+INITIALISATION  01
+**********************
+EFFACER         1
+GESTION_SFL     1
+DEBUT_STD
+PRESENTER       PERSONN_S1
+ZW_COD_OPTION   = *BLANK
+FIN_STD
+MAJ_SFL
+FIN_GESTION_SFL
+DEBUT_STD
+XNOM_PGM        = *NOM_PGM
+ZWAFF_PARTIR    = *BLANK
+FIN_STD
+**********************
+VERIFICATION 01
+**********************
+EFFACER         4
+CLE_RANG_SFL4 = 0
+*DEL04 = 0
+GESTION_SFL 1
+* Traitement de l'option 4
+SI ZW_COD_OPTION = '4'
+  * Ne pas supprimer un matricule de la hiérarchie
+  REGLE_GESTION 0020 ZZCOD_MAT_PERS
+  LIRE       HIE_PERSONNE
+  SI HIE_PERSONNE EXISTE
+    INIT_MSG ZZCOD_MAT_PERS  PCOD_MAT_PERS
+    ERREUR
+  FIN
+  CLE_RANG_SFL4 = CLE_RANG_SFL4 + 1
+  *DEL04 = *DEL04 + 1
+  *IN08  = '1'
+  CREER          VUE_MANUEL_SFL4
+  *IN08  = '0'
+FIN
+* Traitement de l'option 2
+SI ZW_COD_OPTION = '2'
+  ZW_COD_OPTION = *BLANK
+  P_COD_ACTION = 'MO'
+  WP_COD_MAT_PERS = ZZCOD_MAT_PERS
+  APPELER MAJ_PERSONNE P_COD_RETOUR P_COD_ACTION WP_COD_MAT_PERS
+  SI P_COD_ACTION = 'PR' OU P_COD_ACTION = 'EX'
+      QUITTER_SFL
+  FIN
+  P_COD_INIT = 'O'
+FIN
+* Traitement de l'option 5
+SI ZW_COD_OPTION = '5'
+  ZW_COD_OPTION = *BLANK
+  WP_COD_MAT_PERS = ZZCOD_MAT_PERS
+  APPELER AFF_PERSONNE P_COD_RETOUR P_COD_ACTION WP_COD_MAT_PERS
+  SI P_COD_ACTION = 'PR' OU P_COD_ACTION = 'EX'
+    QUITTER_SFL
+  FIN
+FIN
+FIN_GESTION_SFL
+CLE_RANG_SFL4 = 1
+**********************
+VALIDATION      02
+**********************
+GESTION_SFL     4
+LIRE            VUE_SUPPRESSION
+SI              VUE_SUPPRESSION  EXISTE
+  SUPPRIMER       VUE_SUPPRESSION
+FIN
+FIN_GESTION_SFL

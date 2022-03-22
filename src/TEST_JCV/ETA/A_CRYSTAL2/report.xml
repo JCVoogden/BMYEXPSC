@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml report.xsd">
+    <entities>
+        <entity name="ANSI_UNICODE"/>
+    </entities>
+    <fields>
+        <field description="CRYST2" guideWord="ZANSI" kind="VARIABLE" layoutCode="_data" length="25" logicalProperty="ANSI_UNICODE.ANSI" scale="-1" type="STRING"/>
+        <field description="CRYST2" guideWord="ZUNICODE" kind="VARIABLE" layoutCode="_data" length="25" logicalProperty="ANSI_UNICODE.UNICODE" scale="-1" type="STRING"/>
+        <field description="CRYST2" guideWord="VAR1" kind="VARIABLE" layoutCode="_data" type="INT"/>
+        <field description="CRYST2" guideWord="VAR2" kind="VARIABLE" layoutCode="_data" type="INT"/>
+    </fields>
+</report>

@@ -1,0 +1,7 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   DECLARER WMUME1;WMULTIMED1 80
+*ROW_METADATA(ADELIA                 )   SI :01 <> *BLANK
+*ROW_METADATA(ADELIA                 )     WMULTIMED1 = '9898' // :01
+*ROW_METADATA(ADELIA                 )     APPELER ULTORDCL WMULTIMED1
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

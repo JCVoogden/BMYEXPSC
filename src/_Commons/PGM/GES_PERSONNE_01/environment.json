@@ -1,0 +1,137 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "*1"
+    },
+    "guideWord" : "PERSONN_S1",
+    "fileName" : "PERSONL1",
+    "access" : "SEQUENTIAL_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "*1",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZWAFF_PARTIR",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "*4"
+    },
+    "guideWord" : "SFL04",
+    "access" : "NONE",
+    "update" : "NO_UPDATE",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "code" : "01"
+    },
+    "guideWord" : "VUE_SUPPRESSION",
+    "fileName" : "PERSONNL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "generation" : "NONE",
+    "accesses" : [ {
+      "id" : {
+        "code" : "01",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_MAT_PERS",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "02"
+    },
+    "guideWord" : "HIE_PERSONNE",
+    "fileName" : "PERSONL2",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "generation" : "NONE",
+    "accesses" : [ {
+      "id" : {
+        "code" : "02",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_MAT_PERS",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "GA"
+    },
+    "guideWord" : "VUE_MANUEL_SFL4",
+    "fileName" : "*4",
+    "access" : "DIRECT",
+    "update" : "UPDATE_ONLY",
+    "nbKeys" : 1,
+    "generation" : "LEVEL1",
+    "accesses" : [ {
+      "id" : {
+        "code" : "GA",
+        "ordinal" : 1
+      },
+      "guideWord" : "CLE_RANG_SFL4",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "CLE_RANG_SFL4",
+      "fileName" : ""
+    },
+    "shortName" : "WRAN04",
+    "length" : 4,
+    "type" : "NUMERIC",
+    "designation" : "CLE_RANG_SFL2",
+    "rename" : "WRAN04",
+    "generation" : "NONE",
+    "reference" : "*NODEF"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_ACTION",
+      "fileName" : ""
+    },
+    "shortName" : "PCACT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_ACTION",
+    "rename" : "PCACT",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_INIT",
+      "fileName" : ""
+    },
+    "shortName" : "PCINI",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_INIT",
+    "rename" : "PCINI",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCRET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_RETOUR",
+    "rename" : "PCRET",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "WP_COD_MAT_PERS",
+      "fileName" : ""
+    },
+    "shortName" : "WPCMAT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "rename" : "WPCMAT",
+    "generation" : "NONE"
+  } ]
+}

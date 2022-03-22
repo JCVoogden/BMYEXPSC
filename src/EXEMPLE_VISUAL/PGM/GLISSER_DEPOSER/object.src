@@ -1,0 +1,389 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20040628)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20040628)      IMAGE tabIMAGES(50)
+*ROW_METADATA(ADELIA         20040628)      num_bin_2 i_Image
+*ROW_METADATA(ADELIA         20040628)   FIN_DECL
+*ROW_METADATA(ADELIA         20040628)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20040628)      initialiser MAIN
+*ROW_METADATA(ADELIA         20040628)      executer MAIN
+*ROW_METADATA(ADELIA         20040628)   FIN_INIT
+*ROW_METADATA(ADELIA         20040628)   DEBUT_FENETRE MAIN
+*ROW_METADATA(ADELIA         20040628)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20040628)         num_bin_4 IdElement
+*ROW_METADATA(ADELIA         20040628)         num_bin_4 IdElementResultat
+*ROW_METADATA(ADELIA         20040628)         num_bin_4 IdSvg
+*ROW_METADATA(ADELIA         20040628)         num_bin_4 IdVignobles
+*ROW_METADATA(ADELIA         20040628)         num_bin_2 IdImages
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040628)         num_bin_4 i
+*ROW_METADATA(ADELIA         20040628)         num_bin_2 j
+*ROW_METADATA(ADELIA         20040628)         num_bin_2 k
+*ROW_METADATA(ADELIA         20040628)         num_bin_2 cr2
+*ROW_METADATA(ADELIA         20040628)         num_bin_4 cr4
+*ROW_METADATA(ADELIA         20040628)         num_bin_4 ActionFaite
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040628)         alpha(250) labelElt
+*ROW_METADATA(ADELIA         20040628)         alpha(250) newLabel
+*ROW_METADATA(ADELIA         20040628)         alpha(50) format
+*ROW_METADATA(ADELIA         20040628)         alpha(3) ORIGINE
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040628)         bool Disponibilite
+*ROW_METADATA(ADELIA         20040628)         bool Gd
+*ROW_METADATA(ADELIA         20040628)      FIN_DECL
+*ROW_METADATA(ADELIA         20040628)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20040628)         APPELER_METHODE ARB_DATA SUPPRIMER _ARB_RACINE cr2 
+*ROW_METADATA(ADELIA         20040628)         APPELER_METHODE ARB_DATA AJOUTER _ARB_RACINE _ARB_POS_FIN 'Vignobles' *AUCUN *AUCUN *AUCUN IdVignobles cr2
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040628)         CEPAGES: = 'Alicante'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt LST_CEPAGES:liste 
+*ROW_METADATA(ADELIA         20040628)         CEPAGES: = 'Gamay'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt LST_CEPAGES:liste 
+*ROW_METADATA(ADELIA         20040628)         CEPAGES: = 'Chatus'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt LST_CEPAGES:liste
+*ROW_METADATA(ADELIA         20040628)         CEPAGES: = 'Syhra'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt LST_CEPAGES:liste
+*ROW_METADATA(ADELIA         20040628)         CEPAGES: = 'Merlot'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt LST_CEPAGES:liste
+*ROW_METADATA(ADELIA         20040628)         CEPAGES: = 'Viognier'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt LST_CEPAGES:liste
+*ROW_METADATA(ADELIA         20040628)         trier_lst LST_CEPAGES:liste CEPAGES:
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040708)         VIGNOBLES: = 'Côtes du Rhône'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt LST_VIGNOBLES:liste
+*ROW_METADATA(ADELIA         20040628)         VIGNOBLES: = 'Beaujolais'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt LST_VIGNOBLES:liste
+*ROW_METADATA(ADELIA         20040628)         VIGNOBLES: = 'Bourgognes'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt LST_VIGNOBLES:liste
+*ROW_METADATA(ADELIA         20040628)         VIGNOBLES: = 'Côtes du Vivarais'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt LST_VIGNOBLES:liste
+*ROW_METADATA(ADELIA         20040628)         trier_lst LST_VIGNOBLES:liste VIGNOBLES: 
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040628)         COL_DOMAINE_SRC: = 'Domaine de la Tour'
+*ROW_METADATA(ADELIA         20040628)         COL_ADRESSE_SRC: = 'Rue de la Tour dorée'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt LST_SRC:liste
+*ROW_METADATA(ADELIA         20040628)         COL_DOMAINE_SRC: = 'Domaine de Vinsoble'
+*ROW_METADATA(ADELIA         20040628)         COL_ADRESSE_SRC: = 'Allée des vignes'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt LST_SRC:liste
+*ROW_METADATA(ADELIA         20040628)         COL_DOMAINE_SRC: = 'Les Grandes Vignes'
+*ROW_METADATA(ADELIA         20040628)         COL_ADRESSE_SRC: = 'Chemin des coteaux en pentes'
+*ROW_METADATA(ADELIA         20040628)         inserer_elt LST_SRC:liste
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040628)      FIN_INIT
+*ROW_METADATA(ADELIA         20040628)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20040628)         DEBUT_OBJET ARB_DATA
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT ARB_DATA:GD_DebutGlissement
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE ARB_DATA RECUPERER_PROFONDEUR ARB_DATA:element_action j cr2 
+*ROW_METADATA(ADELIA         20040628)               si ARB_DATA:GD_ETAT_SOURIS = _GD_BTN_GAUCHE et  j = 3
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE ARB_DATA GD_VIDER_DONNEES cr4
+*ROW_METADATA(ADELIA         20040628)                  IdSvg = ARB_DATA:element_action
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE ARB_DATA RECUPERER_TEXTE ARB_DATA:element_action labelElt cr2
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE ARB_DATA GD_ECRIRE_DONNEES labelElt 1 cr4 
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE ARB_DATA GD_EXECUTER_GLISSEMENT 'Cepages' _GD_ACTION_COPIE_DEPLACE ActionFaite cr4
+*ROW_METADATA(ADELIA         20040628)                  si ActionFaite = _GD_ACTION_DEPLACEMENT
+*ROW_METADATA(ADELIA         20040628)                     APPELER_METHODE ARB_DATA SUPPRIMER IdSvg cr2
+*ROW_METADATA(ADELIA         20040628)                  fin
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT ARB_DATA:GD_Depose
+*ROW_METADATA(ADELIA         20040628)               format = 'Cepages'
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE ARB_DATA GD_DONNEES_DISPONIBLES format Disponibilite cr4
+*ROW_METADATA(ADELIA         20040628)               si non Disponibilite 
+*ROW_METADATA(ADELIA         20040628)                  format = 'Vignobles'
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE ARB_DATA GD_DONNEES_DISPONIBLES format Disponibilite cr4
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)               si Disponibilite
+*ROW_METADATA(ADELIA         20040628)                  i = 1
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE ARB_DATA GD_LIRE_DONNEES format newLabel i 1 cr4
+*ROW_METADATA(ADELIA         20040628)                  tant_que cr4 = _ERR_OK
+*ROW_METADATA(ADELIA         20040628)                     APPELER_METHODE ARB_DATA AJOUTER ARB_DATA:element_action _ARB_POS_FIN newLabel *AUCUN *AUCUN *AUCUN IdElement cr2
+*ROW_METADATA(ADELIA         20040628)                     i = i + 1
+*ROW_METADATA(ADELIA         20040628)                     APPELER_METHODE ARB_DATA GD_LIRE_DONNEES format newLabel i 1 cr4
+*ROW_METADATA(ADELIA         20040628)                  refaire
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT ARB_DATA:GD_SurvolGlissement
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE ARB_DATA RECUPERER_PARENT ARB_DATA:element_action IdElementResultat cr2 
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE ARB_DATA GD_DONNEES_DISPONIBLES 'Cepages' Disponibilite cr4
+*ROW_METADATA(ADELIA         20040628)               si Disponibilite
+*ROW_METADATA(ADELIA         20040628)               si IdElementResultat = IdVignobles
+*ROW_METADATA(ADELIA         20040628)                  si ARB_DATA:GD_ETAT_CLAVIER= _GD_TOUCHE_CTRL
+*ROW_METADATA(ADELIA         20040628)                     ARB_DATA:GD_ACTION_DEPOSE = _GD_ACTION_COPIE
+*ROW_METADATA(ADELIA         20040628)                  sinon
+*ROW_METADATA(ADELIA         20040628)                     ARB_DATA:GD_ACTION_DEPOSE = _GD_ACTION_DEPLACEMENT
+*ROW_METADATA(ADELIA         20040628)                  fin
+*ROW_METADATA(ADELIA         20040628)               sinon
+*ROW_METADATA(ADELIA         20040628)                  ARB_DATA:GD_ACTION_DEPOSE = _GD_ACTION_AUCUNE
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE ARB_DATA GD_DONNEES_DISPONIBLES 'Vignobles' Disponibilite cr4
+*ROW_METADATA(ADELIA         20040628)               si Disponibilite
+*ROW_METADATA(ADELIA         20040628)               si ARB_DATA:element_action = IdVignobles
+*ROW_METADATA(ADELIA         20040628)                  si ARB_DATA:GD_ETAT_CLAVIER= _GD_TOUCHE_CTRL
+*ROW_METADATA(ADELIA         20040628)                     ARB_DATA:GD_ACTION_DEPOSE = _GD_ACTION_COPIE
+*ROW_METADATA(ADELIA         20040628)                  sinon
+*ROW_METADATA(ADELIA         20040628)                     ARB_DATA:GD_ACTION_DEPOSE = _GD_ACTION_DEPLACEMENT
+*ROW_METADATA(ADELIA         20040628)                  fin
+*ROW_METADATA(ADELIA         20040628)               sinon
+*ROW_METADATA(ADELIA         20040628)                  ARB_DATA:GD_ACTION_DEPOSE = _GD_ACTION_AUCUNE
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT ARB_DATA:MNU_SUPPRIMER
+*ROW_METADATA(ADELIA         20040628)               si ARB_DATA:element_action <> IdVignobles
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE ARB_DATA SUPPRIMER ARB_DATA:element_action cr2
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040628)         DEBUT_OBJET LST_CEPAGES
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_CEPAGES:GD_DebutGlissement
+*ROW_METADATA(ADELIA         20040628)               si LST_CEPAGES:GD_ETAT_SOURIS = _GD_BTN_GAUCHE
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE LST_CEPAGES GD_VIDER_DONNEES CR4
+*ROW_METADATA(ADELIA         20040628)                  lecture_lst LST_CEPAGES:liste *select
+*ROW_METADATA(ADELIA         20040628)                     APPELER_METHODE LST_CEPAGES GD_ECRIRE_DONNEES cepages: 1 CR4
+*ROW_METADATA(ADELIA         20040707)                  fin_lecture_lst
+*ROW_METADATA(ADELIA         20040707)                  Etat: = 'Glisser le Cépage sélectionné vers un vignoble de l''arborescence'
+*ROW_METADATA(ADELIA         20040707)                  APPELER_METHODE LST_CEPAGES GD_EXECUTER_GLISSEMENT 'Cepages' _GD_ACTION_COPIE ActionFaite CR4
+*ROW_METADATA(ADELIA         20040707)                  Etat: = *blank
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040628)         DEBUT_OBJET ARB_IMAGES
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT ARB_IMAGES:GD_SurvolGlissement
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE ARB_IMAGES GD_DONNEES_DISPONIBLES _CF_DIB Disponibilite cr4
+*ROW_METADATA(ADELIA         20040628)               si cr4  =_ERR_OK et Disponibilite
+*ROW_METADATA(ADELIA         20040628)                  ARB_IMAGES:GD_ACTION_DEPOSE = _GD_ACTION_COPIE
+*ROW_METADATA(ADELIA         20040628)               sinon
+*ROW_METADATA(ADELIA         20040628)                  ARB_IMAGES:GD_ACTION_DEPOSE = _GD_ACTION_AUCUNE
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT ARB_IMAGES:GD_Depose
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE ARB_IMAGES GD_LIRE_DONNEES 'CF_DIB' tabImages(IdImages) 1 1 cr4
+*ROW_METADATA(ADELIA         20040628)               si cr4 = _ERR_OK 
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE ARB_IMAGES AJOUTER _ARB_RACINE _ARB_POS_FIN 'Une image' IdImages *AUCUN k IdElement cr2
+*ROW_METADATA(ADELIA         20040628)                  IMGARB:bitmap = tabImages(IdImages)
+*ROW_METADATA(ADELIA         20040628)                  IdImages = IdImages + 1
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT ARB_IMAGES:GD_DebutGlissement
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT ARB_IMAGES:GD_EntreeGlissement
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT ARB_IMAGES:GD_SortieGlissement
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT ARB_IMAGES:Selection
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE ARB_IMAGES RECUPERER_VARIABLE_ASSOCIEE ARB_IMAGES:ELEMENT_SELECTIONNE idimages cr2
+*ROW_METADATA(ADELIA         20040628)               IMGARB:bitmap = tabImages(IdImages)
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040707)            DEBUT_EVT ARB_IMAGES:MouvementSouris
+*ROW_METADATA(ADELIA         20040707)               Etat: = 'Déposer ici une image d''une application gérant le glisser d''images'
+*ROW_METADATA(ADELIA         20040707)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040628)         DEBUT_OBJET LST_TEXTE
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_TEXTE:GD_EntreeGlissement
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)               LST_TEXTE:GD_ACTION_DEPOSE = _GD_ACTION_COPIE
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_TEXTE:GD_SurvolGlissement
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE LST_TEXTE GD_DONNEES_DISPONIBLES _CF_TEXT Disponibilite cr4
+*ROW_METADATA(ADELIA         20040628)               si cr4 = _ERR_OK et Disponibilite
+*ROW_METADATA(ADELIA         20040628)                  LST_TEXTE:GD_ACTION_DEPOSE = _GD_ACTION_COPIE
+*ROW_METADATA(ADELIA         20040628)               sinon
+*ROW_METADATA(ADELIA         20040628)                  LST_TEXTE:GD_ACTION_DEPOSE = _GD_ACTION_AUCUNE
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_TEXTE:GD_SortieGlissement
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_TEXTE:GD_Depose
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE LST_TEXTE GD_LIRE_DONNEES _CF_TEXT col_dest4: 1 1 cr4
+*ROW_METADATA(ADELIA         20040628)               si cr4 = _ERR_OK
+*ROW_METADATA(ADELIA         20040628)                  inserer_elt LST_TEXTE:liste
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040707)            DEBUT_EVT LST_TEXTE:MouvementSouris
+*ROW_METADATA(ADELIA         20040707)               Etat: = 'Déposer ici un texte d''une application gérant le glisser de texte'
+*ROW_METADATA(ADELIA         20040707)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040628)         DEBUT_OBJET LST_VIGNOBLES
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_VIGNOBLES:GD_DebutGlissement
+*ROW_METADATA(ADELIA         20040628)               si LST_VIGNOBLES:GD_ETAT_SOURIS = _GD_BTN_GAUCHE
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE LST_VIGNOBLES GD_VIDER_DONNEES CR4
+*ROW_METADATA(ADELIA         20040628)                  lecture_lst LST_VIGNOBLES:liste *select
+*ROW_METADATA(ADELIA         20040628)                     APPELER_METHODE LST_VIGNOBLES GD_ECRIRE_DONNEES vignobles: 1 CR4
+*ROW_METADATA(ADELIA         20040707)                  fin_lecture_lst
+*ROW_METADATA(ADELIA         20040707)                  Etat: = 'Glisser le vignoble sélectionné vers l''arbre des vignobles'
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE LST_VIGNOBLES GD_EXECUTER_GLISSEMENT 'Vignobles' _GD_ACTION_COPIE ActionFaite CR4
+*ROW_METADATA(ADELIA         20040707)                  Etat: = *blank
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040628)         DEBUT_OBJET BTN_QUIT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT BTN_QUIT:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20040628)               terminer
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040628)         DEBUT_OBJET LST_SRC
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_SRC:GD_DebutGlissement
+*ROW_METADATA(ADELIA         20040628)               si LST_SRC:GD_ETAT_SOURIS = _GD_BTN_GAUCHE
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE LST_SRC GD_VIDER_DONNEES cr4
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE LST_SRC RAFRAICHIR_LISTE *faux
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)                  Gd = *faux
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)                  lecture_lst LST_SRC:liste *select
+*ROW_METADATA(ADELIA         20040628)                     APPELER_METHODE LST_SRC GD_ECRIRE_DONNEES col_DOMAINE_src: 1 cr4
+*ROW_METADATA(ADELIA         20040628)                     APPELER_METHODE LST_SRC GD_ECRIRE_DONNEES col_ADRESSE_src: 1 cr4
+*ROW_METADATA(ADELIA         20040707)                  fin_lecture_lst
+*ROW_METADATA(ADELIA         20040707)                  Etat: = 'Glisser le domaine sélectionné vers l''autre liste de domaine (à droite)'
+*ROW_METADATA(ADELIA         20040707)                  APPELER_METHODE LST_SRC GD_EXECUTER_GLISSEMENT 'DATA' _GD_ACTION_COPIE_DEPLACE ActionFaite cr4
+*ROW_METADATA(ADELIA         20040707)                  Etat: = *blank
+*ROW_METADATA(ADELIA         20040628)                  si ActionFaite = _GD_ACTION_DEPLACEMENT
+*ROW_METADATA(ADELIA         20040628)                     lecture_lst LST_SRC:liste *select
+*ROW_METADATA(ADELIA         20040628)                        supprimer_elt LST_SRC:liste
+*ROW_METADATA(ADELIA         20040628)                     fin_lecture_lst
+*ROW_METADATA(ADELIA         20040628)                  fin
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE LST_SRC RAFRAICHIR_LISTE *vrai
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_SRC:GD_EntreeGlissement
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_SRC:GD_SurvolGlissement
+*ROW_METADATA(ADELIA         20040628)               si Gd
+*ROW_METADATA(ADELIA         20040628)                  si LST_SRC:GD_ETAT_CLAVIER = _GD_TOUCHE_CTRL
+*ROW_METADATA(ADELIA         20040628)                     LST_SRC:GD_ACTION_DEPOSE = _GD_ACTION_COPIE
+*ROW_METADATA(ADELIA         20040628)                  sinon
+*ROW_METADATA(ADELIA         20040628)                     LST_SRC:GD_ACTION_DEPOSE = _GD_ACTION_DEPLACEMENT 
+*ROW_METADATA(ADELIA         20040628)                  fin
+*ROW_METADATA(ADELIA         20040628)               sinon
+*ROW_METADATA(ADELIA         20040628)                  LST_SRC:GD_ACTION_DEPOSE = _GD_ACTION_AUCUNE
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_SRC:GD_SortieGlissement
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_SRC:GD_Depose
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE LST_SRC RAFRAICHIR_LISTE *faux
+*ROW_METADATA(ADELIA         20040628)               si Gd
+*ROW_METADATA(ADELIA         20040628)                  i = 1
+*ROW_METADATA(ADELIA         20040628)                  cr4 = _ERR_OK
+*ROW_METADATA(ADELIA         20040628)                  tant_que cr4 = _ERR_OK
+*ROW_METADATA(ADELIA         20040628)                     APPELER_METHODE LST_SRC GD_LIRE_DONNEES 'DATA' col_DOMAINE_src: i 1 cr4
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)                     i = i + 1
+*ROW_METADATA(ADELIA         20040628)                     APPELER_METHODE LST_SRC GD_LIRE_DONNEES 'DATA' col_ADRESSE_src: i 1 cr4
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)                     si cr4 = _ERR_OK
+*ROW_METADATA(ADELIA         20040628)                        inserer_elt LST_SRC:liste
+*ROW_METADATA(ADELIA         20040628)                     fin
+*ROW_METADATA(ADELIA         20040628)                     i = i + 1
+*ROW_METADATA(ADELIA         20040628)                  refaire 
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE LST_SRC RAFRAICHIR_LISTE *vrai
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_SRC:MNU_SUPPR
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE LST_SRC RAFRAICHIR_LISTE *faux
+*ROW_METADATA(ADELIA         20040628)               lecture_lst LST_SRC:liste *select 
+*ROW_METADATA(ADELIA         20040628)                  supprimer_elt LST_SRC:liste
+*ROW_METADATA(ADELIA         20040628)               fin_lecture_lst
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE LST_SRC RAFRAICHIR_LISTE *vrai
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040628)         DEBUT_OBJET LST_DEST
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_DEST:GD_Depose
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE LST_DEST RAFRAICHIR_LISTE *faux
+*ROW_METADATA(ADELIA         20040628)               si non Gd
+*ROW_METADATA(ADELIA         20040628)                  i = 1
+*ROW_METADATA(ADELIA         20040628)                  cr4 = _ERR_OK
+*ROW_METADATA(ADELIA         20040628)                  tant_que cr4 = _ERR_OK
+*ROW_METADATA(ADELIA         20040628)                     APPELER_METHODE LST_DEST GD_LIRE_DONNEES 'DATA' col_DOMAINE_dest: i 1 cr4
+*ROW_METADATA(ADELIA         20040628)                     i = i + 1
+*ROW_METADATA(ADELIA         20040628)                     APPELER_METHODE LST_DEST GD_LIRE_DONNEES 'DATA' col_ADRESSE_dest: i 1 cr4
+*ROW_METADATA(ADELIA         20040628)                     si cr4 = _ERR_OK
+*ROW_METADATA(ADELIA         20040628)                        inserer_elt LST_DEST:liste
+*ROW_METADATA(ADELIA         20040628)                     fin
+*ROW_METADATA(ADELIA         20040628)                     i = i + 1
+*ROW_METADATA(ADELIA         20040628)                  refaire 
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE LST_DEST RAFRAICHIR_LISTE *vrai
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_DEST:GD_DebutGlissement
+*ROW_METADATA(ADELIA         20040628)               si LST_DEST:GD_ETAT_SOURIS = _GD_BTN_GAUCHE
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE LST_DEST RAFRAICHIR_LISTE *faux
+*ROW_METADATA(ADELIA         20040628)                  Gd = *vrai
+*ROW_METADATA(ADELIA         20040628)                  lecture_lst LST_DEST:liste *select
+*ROW_METADATA(ADELIA         20040628)                     APPELER_METHODE LST_DEST GD_ECRIRE_DONNEES col_DOMAINE_dest: 1 cr4
+*ROW_METADATA(ADELIA         20040628)                     APPELER_METHODE LST_DEST GD_ECRIRE_DONNEES col_ADRESSE_dest: 1 cr4
+*ROW_METADATA(ADELIA         20040707)                  fin_lecture_lst
+*ROW_METADATA(ADELIA         20040707)                  Etat: = 'Glisser le domaine sélectionné vers l''autre liste de domaine (à gauche)'
+*ROW_METADATA(ADELIA         20040707)                  APPELER_METHODE LST_DEST GD_EXECUTER_GLISSEMENT 'DATA' _GD_ACTION_COPIE_DEPLACE ActionFaite cr4
+*ROW_METADATA(ADELIA         20040707)                  Etat: = *blank
+*ROW_METADATA(ADELIA         20040628)                  si ActionFaite = _GD_ACTION_DEPLACEMENT
+*ROW_METADATA(ADELIA         20040628)                     lecture_lst LST_DEST:liste *select
+*ROW_METADATA(ADELIA         20040628)                        supprimer_elt LST_DEST:liste
+*ROW_METADATA(ADELIA         20040628)                     fin_lecture_lst
+*ROW_METADATA(ADELIA         20040628)                  fin
+*ROW_METADATA(ADELIA         20040628)                  APPELER_METHODE LST_DEST RAFRAICHIR_LISTE *vrai
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_DEST:GD_EntreeGlissement
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_DEST:GD_SurvolGlissement
+*ROW_METADATA(ADELIA         20040628)               si non Gd
+*ROW_METADATA(ADELIA         20040628)                  si LST_DEST:GD_ETAT_CLAVIER = _GD_TOUCHE_CTRL
+*ROW_METADATA(ADELIA         20040628)                     LST_DEST:GD_ACTION_DEPOSE = _GD_ACTION_COPIE
+*ROW_METADATA(ADELIA         20040628)                  sinon
+*ROW_METADATA(ADELIA         20040628)                     LST_DEST:GD_ACTION_DEPOSE = _GD_ACTION_DEPLACEMENT 
+*ROW_METADATA(ADELIA         20040628)                  fin
+*ROW_METADATA(ADELIA         20040628)               sinon
+*ROW_METADATA(ADELIA         20040628)                  LST_DEST:GD_ACTION_DEPOSE = _GD_ACTION_AUCUNE
+*ROW_METADATA(ADELIA         20040628)               fin
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_DEST:GD_SortieGlissement
+*ROW_METADATA(ADELIA         20040628)               
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)            DEBUT_EVT LST_DEST:MNU_SUPPR
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE LST_DEST RAFRAICHIR_LISTE *faux
+*ROW_METADATA(ADELIA         20040628)               lecture_lst LST_DEST:liste *select 
+*ROW_METADATA(ADELIA         20040628)                  supprimer_elt LST_DEST:liste
+*ROW_METADATA(ADELIA         20040628)               fin_lecture_lst
+*ROW_METADATA(ADELIA         20040628)               APPELER_METHODE LST_DEST RAFRAICHIR_LISTE *vrai
+*ROW_METADATA(ADELIA         20040628)            FIN_EVT
+*ROW_METADATA(ADELIA         20040628)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040707)         DEBUT_OBJET MAIN
+*ROW_METADATA(ADELIA         20040707)            DEBUT_EVT MAIN:MouvementSouris
+*ROW_METADATA(ADELIA         20040707)               
+*ROW_METADATA(ADELIA         20040707)            FIN_EVT
+*ROW_METADATA(ADELIA         20040707)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040707)         DEBUT_OBJET ID_OBJ0
+*ROW_METADATA(ADELIA         20040707)            DEBUT_EVT ID_OBJ0:MouvementSouris
+*ROW_METADATA(ADELIA         20040707)               Etat: = *blank
+*ROW_METADATA(ADELIA         20040707)            FIN_EVT
+*ROW_METADATA(ADELIA         20040707)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040707)         DEBUT_OBJET ID_OBJ1
+*ROW_METADATA(ADELIA         20040707)            DEBUT_EVT ID_OBJ1:MouvementSouris
+*ROW_METADATA(ADELIA         20040707)               Etat: = *blank
+*ROW_METADATA(ADELIA         20040707)            FIN_EVT
+*ROW_METADATA(ADELIA         20040707)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040628)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20040628)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040628)      FIN_VERIF
+*ROW_METADATA(ADELIA         20040628)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20040628)         
+*ROW_METADATA(ADELIA         20040628)      FIN_VALID
+*ROW_METADATA(ADELIA         20040628)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20040628)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20040628)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

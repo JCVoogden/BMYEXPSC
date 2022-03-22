@@ -1,0 +1,2449 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20070228)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA         20080912)            num_bin_4 monmax
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA         20070228)   FIN_DECL
+*ROW_METADATA(ADELIA         20070228)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA         20080912)            qesfs
+*ROW_METADATA(ADELIA         20080912)            fvsqdm l
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA         20080912)            dfqsdf sd
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA         20080912)            dg* qesdf
+*ROW_METADATA(ADELIA         20070228)   FIN_INIT
+*ROW_METADATA(ADELIA         20080912)   DEBUT_PROCEDURE PROC
+*ROW_METADATA(ADELIA         20080912)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA         20080912)               qesfs
+*ROW_METADATA(ADELIA         20080912)               fvsqdm l
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)                  lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA         20080912)               dfqsdf sd
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA         20080912)         
+*ROW_METADATA(ADELIA         20080912)               dg* qesdf
+*ROW_METADATA(ADELIA         20080912)      FIN_DECL
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA         20080912)            qesfs
+*ROW_METADATA(ADELIA         20080912)            fvsqdm l
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080912)               lire_sql sql_type *col(max(t1) :monmax)
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA         20080912)            dfqsdf sd
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA         20080912)      
+*ROW_METADATA(ADELIA         20080912)            dg* qesdf
+*ROW_METADATA(ADELIA         20080912)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

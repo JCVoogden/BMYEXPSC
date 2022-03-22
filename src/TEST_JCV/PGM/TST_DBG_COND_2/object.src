@@ -1,0 +1,73 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20110408)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20110408)      alpha(50) valeur1
+*ROW_METADATA(ADELIA         20110412)      alpha(50) valeur2
+*ROW_METADATA(ADELIA         20110412)      
+*ROW_METADATA(ADELIA         20110412)      num_e(15,9) num1
+*ROW_METADATA(ADELIA         20110412)      num_e(15,9) num2
+*ROW_METADATA(ADELIA         20110408)      
+*ROW_METADATA(ADELIA         20110408)   FIN_DECL
+*ROW_METADATA(ADELIA         20110408)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20110408)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20110408)      executer    id_fen0
+*ROW_METADATA(ADELIA         20110408)   FIN_INIT
+*ROW_METADATA(ADELIA         20110408)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20110408)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20110408)         
+*ROW_METADATA(ADELIA         20110408)      FIN_DECL
+*ROW_METADATA(ADELIA         20110408)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20110408)         valeur1   = 'Une valeur alpha pour test'
+*ROW_METADATA(ADELIA         20110408)         id_alpha: = 'Une valeur alpha pour test'
+*ROW_METADATA(ADELIA         20110408)         valeur2   = 'Une valeur alpha pour test, mais une autre'
+*ROW_METADATA(ADELIA         20110408)      FIN_INIT
+*ROW_METADATA(ADELIA         20110408)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20110408)         DEBUT_OBJET ID_OBJ
+*ROW_METADATA(ADELIA         20110408)            DEBUT_EVT ID_OBJ:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20110408)               traiter_proc proc
+*ROW_METADATA(ADELIA         20110408)            FIN_EVT
+*ROW_METADATA(ADELIA         20110408)         FIN_OBJET
+*ROW_METADATA(ADELIA         20110408)         DEBUT_OBJET ID_OBJ0
+*ROW_METADATA(ADELIA         20110408)            DEBUT_EVT ID_OBJ0:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20110408)                  traiter_proc proc
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20110408)            FIN_EVT
+*ROW_METADATA(ADELIA         20110408)         FIN_OBJET
+*ROW_METADATA(ADELIA         20110408)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20110408)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20110408)         
+*ROW_METADATA(ADELIA         20110408)      FIN_VERIF
+*ROW_METADATA(ADELIA         20110408)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20110408)         
+*ROW_METADATA(ADELIA         20110408)      FIN_VALID
+*ROW_METADATA(ADELIA         20110408)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20110408)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20110408)   FIN_FENETRE
+*ROW_METADATA(ADELIA         20110408)   DEBUT_PROCEDURE PROC *COMMON
+*ROW_METADATA(ADELIA         20110408)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20110408)         num_bin_4 i
+*ROW_METADATA(ADELIA         20110408)         
+*ROW_METADATA(ADELIA         20110408)         timestamp ts1
+*ROW_METADATA(ADELIA         20110408)         timestamp ts2
+*ROW_METADATA(ADELIA         20110408)      FIN_DECL
+*ROW_METADATA(ADELIA         20110408)      
+*ROW_METADATA(ADELIA         20110408)      heure ts1
+*ROW_METADATA(ADELIA         20110408)      
+*ROW_METADATA(ADELIA         20110408)      i = 0
+*ROW_METADATA(ADELIA         20110412)      
+*ROW_METADATA(ADELIA         20110412)      num1 = 0
+*ROW_METADATA(ADELIA         20110412)      num2 = 5
+*ROW_METADATA(ADELIA         20110412)      
+*ROW_METADATA(ADELIA         20110408)      tant_que i < 10000
+*ROW_METADATA(ADELIA         20110408)         * c'est-y pas un code débile ?
+*ROW_METADATA(ADELIA         20110408)         id_fen0.id_alpha: = valeur1
+*ROW_METADATA(ADELIA         20110408)         i = i + 1
+*ROW_METADATA(ADELIA         20110408)      refaire
+*ROW_METADATA(ADELIA         20110408)      
+*ROW_METADATA(ADELIA         20110408)      heure ts2
+*ROW_METADATA(ADELIA         20110408)      
+*ROW_METADATA(ADELIA         20110408)      valeur2 = valeur2
+*ROW_METADATA(ADELIA         20110408)      
+*ROW_METADATA(ADELIA         20110408)      id_fen0.id_temps: = &ecart_timestps(ts1;ts2;'MS')
+*ROW_METADATA(ADELIA         20110408)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

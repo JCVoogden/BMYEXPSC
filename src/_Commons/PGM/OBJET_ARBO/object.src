@@ -1,0 +1,358 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA                 )   DEBUT_DECL
+*ROW_METADATA(ADELIA                 )      
+*ROW_METADATA(ADELIA                 )   FIN_DECL
+*ROW_METADATA(ADELIA                 )   DEBUT_INIT
+*ROW_METADATA(ADELIA                 )      INITIALISER FEN_ARBRE
+*ROW_METADATA(ADELIA                 )      EXECUTER FEN_ARBRE
+*ROW_METADATA(ADELIA                 )   FIN_INIT
+*ROW_METADATA(ADELIA                 )   DEBUT_FENETRE FEN_ARBRE
+*ROW_METADATA(ADELIA                 )      DEBUT_DECL
+*ROW_METADATA(ADELIA                 )         * !---------------------------------------------!
+*ROW_METADATA(ADELIA                 )         * ! Cette variable sert à savoir si l'on est en !
+*ROW_METADATA(ADELIA                 )         * !   mode ajout ou modification d'éléments.    !
+*ROW_METADATA(ADELIA                 )         * !---------------------------------------------!
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         ALPHA(1) WCONTEXTE
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * !----------------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         * ! Variable correspondant au texte de libellé des éléments. !
+*ROW_METADATA(ADELIA                 )         * !----------------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         ALPHA(250) WTEXTE
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * !------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         * ! Variable correspondant aux valeurs d'éléments. !
+*ROW_METADATA(ADELIA                 )         * !------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         NUM_E(5,0) WVAL
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * !-------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         * ! Pile d'identificateurs pour la création des     !
+*ROW_METADATA(ADELIA                 )         * !   éléments lors de l'initialisation de l'arbre. !
+*ROW_METADATA(ADELIA                 )         * !-------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 WPILE_ID(5)
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * !--------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         * ! Variable dans laquelle est stockée la valeur de  !
+*ROW_METADATA(ADELIA                 )         * !   longueur de la variable associée à un élément. !
+*ROW_METADATA(ADELIA                 )         * !--------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 WLONGUEUR
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * !------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         * ! Variables de stockage des identificateurs lors !
+*ROW_METADATA(ADELIA                 )         * !   de l'initialisation.                         !
+*ROW_METADATA(ADELIA                 )         * !------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 WID_PAR
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 WID_ELT
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * !-------------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         * ! Dans ces variables seront stockés les identificateurs !
+*ROW_METADATA(ADELIA                 )         * !   des trois sections principales de l'arbre.          !
+*ROW_METADATA(ADELIA                 )         * !-------------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 ID_SEC_1
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 ID_SEC_2
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 ID_SEC_3
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * !-----------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         * ! Variable dans laquelle sera stocké l'identificateur !
+*ROW_METADATA(ADELIA                 )         * !   du père d'un élément.                             !
+*ROW_METADATA(ADELIA                 )         * !-----------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 ID_PAR
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * !--------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         * ! Variable utilisées lors de l'appel de la méthode !
+*ROW_METADATA(ADELIA                 )         * !   AJOUTER de l'arbre.                            !
+*ROW_METADATA(ADELIA                 )         * !--------------------------------------------------!
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         NUM_BIN_2 WPOS
+*ROW_METADATA(ADELIA                 )         NUM_BIN_2 WTYPE_VAR
+*ROW_METADATA(ADELIA                 )         NUM_BIN_2 WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )      FIN_DECL
+*ROW_METADATA(ADELIA                 )      DEBUT_INIT
+*ROW_METADATA(ADELIA                 )         * !----------------------------------------!
+*ROW_METADATA(ADELIA                 )         * ! Initialisation des variables qui nous  !
+*ROW_METADATA(ADELIA                 )         * !   serviront pour créer les éléments de !
+*ROW_METADATA(ADELIA                 )         * !   l'arbre.                             !
+*ROW_METADATA(ADELIA                 )         * !----------------------------------------!
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         WCONTEXTE = 'M'
+*ROW_METADATA(ADELIA                 )         WLONGUEUR = 11
+*ROW_METADATA(ADELIA                 )         WTYPE_VAR = 3
+*ROW_METADATA(ADELIA                 )         WPOS = _ARB_POS_FIN
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * !-----------------------------------------------!
+*ROW_METADATA(ADELIA                 )         * ! Ce tableau va nous servir à stocker les       !
+*ROW_METADATA(ADELIA                 )         * !   identificateurs des éléments que l'on crée  !
+*ROW_METADATA(ADELIA                 )         * !-----------------------------------------------!
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         WPILE_ID(1) = _ARB_RACINE
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET ARB_EXEMPLE
+*ROW_METADATA(ADELIA                 )            * !------------------------------------------!
+*ROW_METADATA(ADELIA                 )            * ! Il faut désactiver les menus par défaut. !
+*ROW_METADATA(ADELIA                 )            * ! Ils seront rendus accessibles plus tard  !
+*ROW_METADATA(ADELIA                 )            * !   en fonction des éléments sélectionnés. !
+*ROW_METADATA(ADELIA                 )            * !------------------------------------------!
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            ARB_EXEMPLE[MNU_CREER_AV]:GRISE = *VRAI
+*ROW_METADATA(ADELIA                 )            ARB_EXEMPLE[MNU_CREER_AP]:GRISE = *VRAI
+*ROW_METADATA(ADELIA                 )            ARB_EXEMPLE[MNU_CREER_SS]:GRISE = *VRAI
+*ROW_METADATA(ADELIA                 )            ARB_EXEMPLE[MNU_CREER_SS_DE]:GRISE = *VRAI
+*ROW_METADATA(ADELIA                 )            ARB_EXEMPLE[MNU_CREER_SS_FI]:GRISE = *VRAI
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            * !---------------------------------------------!
+*ROW_METADATA(ADELIA                 )            * ! Nous pouvons maintenant initialiser l'arbre !
+*ROW_METADATA(ADELIA                 )            * ! en y plaçant quelques éléments.             !
+*ROW_METADATA(ADELIA                 )            * !---------------------------------------------!
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            WTEXTE = 'Section 1'
+*ROW_METADATA(ADELIA                 )            WID_PAR = WPILE_ID(1)
+*ROW_METADATA(ADELIA                 )            APPELER_METHODE ARB_EXEMPLE AJOUTER WID_PAR WPOS WTEXTE *AUCUN *AUCUN *AUCUN ID_SEC_1 WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )            WPILE_ID(2) = ID_SEC_1
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            WTEXTE = 'Texte 1.1'
+*ROW_METADATA(ADELIA                 )            WVAL = 11
+*ROW_METADATA(ADELIA                 )            WID_PAR = WPILE_ID(2)
+*ROW_METADATA(ADELIA                 )            APPELER_METHODE ARB_EXEMPLE AJOUTER WID_PAR WPOS WTEXTE WVAL WLONGUEUR WTYPE_VAR WID_ELT WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )            WPILE_ID(3) = WID_ELT
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            WTEXTE = 'Texte 1.1.1'
+*ROW_METADATA(ADELIA                 )            WVAL = 111
+*ROW_METADATA(ADELIA                 )            WID_PAR = WPILE_ID(3)
+*ROW_METADATA(ADELIA                 )            APPELER_METHODE ARB_EXEMPLE AJOUTER WID_PAR WPOS WTEXTE WVAL WLONGUEUR WTYPE_VAR WID_ELT WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )            WPILE_ID(4) = WID_ELT
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            WTEXTE = 'Texte 1.1.2'
+*ROW_METADATA(ADELIA                 )            WVAL = 112
+*ROW_METADATA(ADELIA                 )            WID_PAR = WPILE_ID(3)
+*ROW_METADATA(ADELIA                 )            APPELER_METHODE ARB_EXEMPLE AJOUTER WID_PAR WPOS WTEXTE WVAL WLONGUEUR WTYPE_VAR WID_ELT WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )            WPILE_ID(4) = WID_ELT
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            WTEXTE = 'Texte 1.2'
+*ROW_METADATA(ADELIA                 )            WVAL = 12
+*ROW_METADATA(ADELIA                 )            WID_PAR = WPILE_ID(2)
+*ROW_METADATA(ADELIA                 )            APPELER_METHODE ARB_EXEMPLE AJOUTER WID_PAR WPOS WTEXTE WVAL WLONGUEUR WTYPE_VAR WID_ELT WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )            WPILE_ID(3) = WID_ELT
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            WTEXTE = 'Section 2'
+*ROW_METADATA(ADELIA                 )            WID_PAR = WPILE_ID(1)
+*ROW_METADATA(ADELIA                 )            APPELER_METHODE ARB_EXEMPLE AJOUTER WID_PAR WPOS WTEXTE *AUCUN *AUCUN *AUCUN ID_SEC_2 WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )            WPILE_ID(2) = ID_SEC_2
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            WTEXTE = 'Texte 2.1'
+*ROW_METADATA(ADELIA                 )            WVAL = 21
+*ROW_METADATA(ADELIA                 )            WID_PAR = WPILE_ID(2)
+*ROW_METADATA(ADELIA                 )            APPELER_METHODE ARB_EXEMPLE AJOUTER WID_PAR WPOS WTEXTE WVAL WLONGUEUR WTYPE_VAR WID_ELT WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )            WPILE_ID(3) = WID_ELT
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            WTEXTE = 'Texte 2.1.1'
+*ROW_METADATA(ADELIA                 )            WVAL = 211
+*ROW_METADATA(ADELIA                 )            WID_PAR = WPILE_ID(3)
+*ROW_METADATA(ADELIA                 )            APPELER_METHODE ARB_EXEMPLE AJOUTER WID_PAR WPOS WTEXTE WVAL WLONGUEUR WTYPE_VAR WID_ELT WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )            WPILE_ID(4) = WID_ELT
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            WTEXTE = 'Texte 2.1.2'
+*ROW_METADATA(ADELIA                 )            WVAL = 212
+*ROW_METADATA(ADELIA                 )            WID_PAR = WPILE_ID(3)
+*ROW_METADATA(ADELIA                 )            APPELER_METHODE ARB_EXEMPLE AJOUTER WID_PAR WPOS WTEXTE WVAL WLONGUEUR WTYPE_VAR WID_ELT WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )            WPILE_ID(4) = WID_ELT
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            WTEXTE = 'Texte 2.1.2.1'
+*ROW_METADATA(ADELIA                 )            WVAL = 2121
+*ROW_METADATA(ADELIA                 )            WID_PAR = WPILE_ID(4)
+*ROW_METADATA(ADELIA                 )            APPELER_METHODE ARB_EXEMPLE AJOUTER WID_PAR WPOS WTEXTE WVAL WLONGUEUR WTYPE_VAR WID_ELT WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )            WPILE_ID(5) = WID_ELT
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            WTEXTE = 'Texte 2.1.2.2'
+*ROW_METADATA(ADELIA                 )            WVAL = 2122
+*ROW_METADATA(ADELIA                 )            WID_PAR = WPILE_ID(4)
+*ROW_METADATA(ADELIA                 )            APPELER_METHODE ARB_EXEMPLE AJOUTER WID_PAR WPOS WTEXTE WVAL WLONGUEUR WTYPE_VAR WID_ELT WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )            WPILE_ID(5) = WID_ELT
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            WTEXTE = 'Texte 2.2'
+*ROW_METADATA(ADELIA                 )            WVAL = 22
+*ROW_METADATA(ADELIA                 )            WID_PAR = WPILE_ID(2)
+*ROW_METADATA(ADELIA                 )            APPELER_METHODE ARB_EXEMPLE AJOUTER WID_PAR WPOS WTEXTE WVAL WLONGUEUR WTYPE_VAR WID_ELT WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )            WPILE_ID(3) = WID_ELT
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            WTEXTE = 'Section 3'
+*ROW_METADATA(ADELIA                 )            WID_PAR = WPILE_ID(1)
+*ROW_METADATA(ADELIA                 )            APPELER_METHODE ARB_EXEMPLE AJOUTER WID_PAR WPOS WTEXTE *AUCUN *AUCUN *AUCUN ID_SEC_3 WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )            WPILE_ID(2) = ID_SEC_3
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_INIT
+*ROW_METADATA(ADELIA                 )      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_QUITTER
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_QUITTER:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               TERMINER
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET ARB_EXEMPLE
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ARB_EXEMPLE:Selection
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * !-------------------------------------------------------------------!
+*ROW_METADATA(ADELIA                 )               * ! En fonction du type de l'élément sélectionné, on peut             !
+*ROW_METADATA(ADELIA                 )               * ! valider certaines options de menu, on grise ou non la zone valeur !
+*ROW_METADATA(ADELIA                 )               * ! et on remplit les champs de saisie avec les valeurs de l'élément  !
+*ROW_METADATA(ADELIA                 )               * !-------------------------------------------------------------------!
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               SI ARB_EXEMPLE:ELEMENT_SELECTIONNE = ID_SEC_1 -
+*ROW_METADATA(ADELIA                 )               OU ARB_EXEMPLE:ELEMENT_SELECTIONNE = ID_SEC_2 -
+*ROW_METADATA(ADELIA                 )               OU ARB_EXEMPLE:ELEMENT_SELECTIONNE = ID_SEC_3
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )                  ARB_EXEMPLE[MNU_CREER_AV]:GRISE = *VRAI
+*ROW_METADATA(ADELIA                 )                  ARB_EXEMPLE[MNU_CREER_AP]:GRISE = *VRAI
+*ROW_METADATA(ADELIA                 )                  ARB_EXEMPLE[MNU_CREER_SS]:GRISE = *FAUX
+*ROW_METADATA(ADELIA                 )                  ARB_EXEMPLE[MNU_CREER_SS_DE]:GRISE = *FAUX
+*ROW_METADATA(ADELIA                 )                  ARB_EXEMPLE[MNU_CREER_SS_FI]:GRISE = *FAUX
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )                  ZVAL = 0
+*ROW_METADATA(ADELIA                 )                  CHS_VAL:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA                 )                  APPELER_METHODE ARB_EXEMPLE RECUPERER_TEXTE ARB_EXEMPLE:ELEMENT_SELECTIONNE ZTXT WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               SINON
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )                  ARB_EXEMPLE[MNU_CREER_AV]:GRISE = *FAUX
+*ROW_METADATA(ADELIA                 )                  ARB_EXEMPLE[MNU_CREER_AP]:GRISE = *FAUX
+*ROW_METADATA(ADELIA                 )                  ARB_EXEMPLE[MNU_CREER_SS]:GRISE = *FAUX
+*ROW_METADATA(ADELIA                 )                  ARB_EXEMPLE[MNU_CREER_SS_DE]:GRISE = *FAUX
+*ROW_METADATA(ADELIA                 )                  ARB_EXEMPLE[MNU_CREER_SS_FI]:GRISE = *FAUX
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )                  CHS_VAL:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA                 )                  APPELER_METHODE ARB_EXEMPLE RECUPERER_TEXTE ARB_EXEMPLE:ELEMENT_SELECTIONNE ZTXT WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )                  APPELER_METHODE ARB_EXEMPLE RECUPERER_VARIABLE_ASSOCIEE ARB_EXEMPLE:ELEMENT_SELECTIONNE ZVAL WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               FIN
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ARB_EXEMPLE:MNU_CREER_AV
+*ROW_METADATA(ADELIA                 )               * !-------------------------------------------------------!
+*ROW_METADATA(ADELIA                 )               * ! Aprés le choix de l'option de menu :                  !
+*ROW_METADATA(ADELIA                 )               * !                                                       !
+*ROW_METADATA(ADELIA                 )               * ! On met à jour la variable indiquant la position ou    !
+*ROW_METADATA(ADELIA                 )               * !   doit être créé l'élément.                           !
+*ROW_METADATA(ADELIA                 )               * ! On initialise la valeur du père de l'élément à créer  !
+*ROW_METADATA(ADELIA                 )               * !   (attention pour un type de positionnement avant ou  !
+*ROW_METADATA(ADELIA                 )               * !    aprés, il s'agit en fait du frère)                 !
+*ROW_METADATA(ADELIA                 )               * ! On initialise les champs de saisie                    !
+*ROW_METADATA(ADELIA                 )               * ! On Modifie le contexte de M(odifier) à C(réer),       !
+*ROW_METADATA(ADELIA                 )               * !    ainsi que le texte du bouton de validation         !
+*ROW_METADATA(ADELIA                 )               * !-------------------------------------------------------!
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               WPOS = _ARB_POS_AVANT
+*ROW_METADATA(ADELIA                 )               ID_PAR = ARB_EXEMPLE:ELEMENT_SELECTIONNE
+*ROW_METADATA(ADELIA                 )               ZTXT = *BLANK
+*ROW_METADATA(ADELIA                 )               ZVAL = 0
+*ROW_METADATA(ADELIA                 )               WCONTEXTE = 'C'
+*ROW_METADATA(ADELIA                 )               BTN_MOD:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ARB_EXEMPLE:MNU_CREER_AP
+*ROW_METADATA(ADELIA                 )               * !-------------------------------------------------------!
+*ROW_METADATA(ADELIA                 )               * ! Aprés le choix de l'option de menu :                  !
+*ROW_METADATA(ADELIA                 )               * !                                                       !
+*ROW_METADATA(ADELIA                 )               * ! On met à jour la variable indiquant la position ou    !
+*ROW_METADATA(ADELIA                 )               * !   doit être créé l'élément.                           !
+*ROW_METADATA(ADELIA                 )               * ! On initialise la valeur du père de l'élément à créer  !
+*ROW_METADATA(ADELIA                 )               * !   (attention pour un type de positionnement avant ou  !
+*ROW_METADATA(ADELIA                 )               * !    aprés, il s'agit en fait du frère)                 !
+*ROW_METADATA(ADELIA                 )               * ! On initialise les champs de saisie                    !
+*ROW_METADATA(ADELIA                 )               * ! On Modifie le contexte de M(odifier) à C(réer),       !
+*ROW_METADATA(ADELIA                 )               * !    ainsi que le texte du bouton de validation         !
+*ROW_METADATA(ADELIA                 )               * !-------------------------------------------------------!
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               WPOS = _ARB_POS_APRES
+*ROW_METADATA(ADELIA                 )               ID_PAR = ARB_EXEMPLE:ELEMENT_SELECTIONNE
+*ROW_METADATA(ADELIA                 )               ZTXT = *BLANK
+*ROW_METADATA(ADELIA                 )               ZVAL = 0
+*ROW_METADATA(ADELIA                 )               WCONTEXTE = 'C'
+*ROW_METADATA(ADELIA                 )               BTN_MOD:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ARB_EXEMPLE:MNU_CREER_SS_DE
+*ROW_METADATA(ADELIA                 )               * !-------------------------------------------------------!
+*ROW_METADATA(ADELIA                 )               * ! Aprés le choix de l'option de menu :                  !
+*ROW_METADATA(ADELIA                 )               * !                                                       !
+*ROW_METADATA(ADELIA                 )               * ! On met à jour la variable indiquant la position ou    !
+*ROW_METADATA(ADELIA                 )               * !   doit être créé l'élément.                           !
+*ROW_METADATA(ADELIA                 )               * ! On initialise la valeur du père de l'élément à créer  !
+*ROW_METADATA(ADELIA                 )               * !   (attention pour un type de positionnement avant ou  !
+*ROW_METADATA(ADELIA                 )               * !    aprés, il s'agit en fait du frère)                 !
+*ROW_METADATA(ADELIA                 )               * ! On initialise les champs de saisie                    !
+*ROW_METADATA(ADELIA                 )               * ! On Modifie le contexte de M(odifier) à C(réer),       !
+*ROW_METADATA(ADELIA                 )               * !    ainsi que le texte du bouton de validation         !
+*ROW_METADATA(ADELIA                 )               * !-------------------------------------------------------!
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               WPOS = _ARB_POS_DEBUT
+*ROW_METADATA(ADELIA                 )               ID_PAR = ARB_EXEMPLE:ELEMENT_SELECTIONNE
+*ROW_METADATA(ADELIA                 )               ZTXT = *BLANK
+*ROW_METADATA(ADELIA                 )               ZVAL = 0
+*ROW_METADATA(ADELIA                 )               WCONTEXTE = 'C'
+*ROW_METADATA(ADELIA                 )               BTN_MOD:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA                 )               CHS_VAL:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ARB_EXEMPLE:MNU_CREER_SS_FI
+*ROW_METADATA(ADELIA                 )               * !-------------------------------------------------------!
+*ROW_METADATA(ADELIA                 )               * ! Aprés le choix de l'option de menu :                  !
+*ROW_METADATA(ADELIA                 )               * !                                                       !
+*ROW_METADATA(ADELIA                 )               * ! On met à jour la variable indiquant la position ou    !
+*ROW_METADATA(ADELIA                 )               * !   doit être créé l'élément.                           !
+*ROW_METADATA(ADELIA                 )               * ! On initialise la valeur du père de l'élément à créer  !
+*ROW_METADATA(ADELIA                 )               * !   (attention pour un type de positionnement avant ou  !
+*ROW_METADATA(ADELIA                 )               * !    aprés, il s'agit en fait du frère)                 !
+*ROW_METADATA(ADELIA                 )               * ! On initialise les champs de saisie                    !
+*ROW_METADATA(ADELIA                 )               * ! On Modifie le contexte de M(odifier) à C(réer),       !
+*ROW_METADATA(ADELIA                 )               * !    ainsi que le texte du bouton de validation         !
+*ROW_METADATA(ADELIA                 )               * !-------------------------------------------------------!
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               WPOS = _ARB_POS_FIN
+*ROW_METADATA(ADELIA                 )               ID_PAR = ARB_EXEMPLE:ELEMENT_SELECTIONNE
+*ROW_METADATA(ADELIA                 )               ZTXT = *BLANK
+*ROW_METADATA(ADELIA                 )               ZVAL = 0
+*ROW_METADATA(ADELIA                 )               WCONTEXTE = 'C'
+*ROW_METADATA(ADELIA                 )               BTN_MOD:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA                 )               CHS_VAL:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ARB_EXEMPLE:MNU_SUPPR
+*ROW_METADATA(ADELIA                 )               * !------------------------------------------------!
+*ROW_METADATA(ADELIA                 )               * ! Le simple appel de la methode supprimer permet !
+*ROW_METADATA(ADELIA                 )               * !   de supprimer un élément de l'arbre.          !
+*ROW_METADATA(ADELIA                 )               * !------------------------------------------------!
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               APPELER_METHODE ARB_EXEMPLE SUPPRIMER ARB_EXEMPLE:ELEMENT_SELECTIONNE WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_MOD
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_MOD:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               * !-------------------------------------------------!
+*ROW_METADATA(ADELIA                 )               * !   Si le contexte est M(odifier), il faut fixer  !
+*ROW_METADATA(ADELIA                 )               * ! les valeurs pour l'élément concerné.            !
+*ROW_METADATA(ADELIA                 )               * !   Si le contexte est C(réer), il faut créer     !
+*ROW_METADATA(ADELIA                 )               * ! l'élément avec les bonnes valeurs et à la bonne !
+*ROW_METADATA(ADELIA                 )               * ! position.                                       !
+*ROW_METADATA(ADELIA                 )               * !-------------------------------------------------!
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               SI WCONTEXTE = 'M'
+*ROW_METADATA(ADELIA                 )                  APPELER_METHODE ARB_EXEMPLE FIXER_TEXTE ARB_EXEMPLE:ELEMENT_SELECTIONNE ZTXT WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )                  APPELER_METHODE ARB_EXEMPLE FIXER_VARIABLE_ASSOCIEE ARB_EXEMPLE:ELEMENT_SELECTIONNE ZVAL WLONGUEUR WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )               SINON
+*ROW_METADATA(ADELIA                 )                  APPELER_METHODE ARB_EXEMPLE AJOUTER ID_PAR WPOS ZTXT ZVAL WLONGUEUR WTYPE_VAR ARB_EXEMPLE:ELEMENT_SELECTIONNE WCODE_RETOUR
+*ROW_METADATA(ADELIA                 )                  BTN_MOD:TEXTE = 'Modifier'
+*ROW_METADATA(ADELIA                 )               FIN
+*ROW_METADATA(ADELIA                 )               WCONTEXTE = 'M'
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )      FIN_GEST_EVT
+*ROW_METADATA(ADELIA                 )      DEBUT_VERIF
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_VERIF
+*ROW_METADATA(ADELIA                 )      DEBUT_VALID
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_VALID
+*ROW_METADATA(ADELIA                 )      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA                 )      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA                 )   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "GES_CUA_CLIENT",
+  "description" : "Gestion client CUA",
+  "creationDate" : "1995-06-20 07:02:41",
+  "updateDate" : "1995-06-26 16:21:21",
+  "visibility" : "PRIVATE",
+  "ibmName" : "GCUA01",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "GCUA01",
+  "programTemplateName" : "CUA_GESTION",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

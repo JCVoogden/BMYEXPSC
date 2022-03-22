@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml report.xsd">
+    <entities>
+        <entity name="SQL_BASE"/>
+    </entities>
+    <fields>
+        <field description="WBTEST" guideWord="ZB1" kind="VARIABLE" layoutCode="_data" length="9" logicalProperty="SQL_BASE.B1_SQL_BASE" type="INT"/>
+        <field description="WBTEST" guideWord="ZB2" kind="VARIABLE" layoutCode="_data" length="25" logicalProperty="SQL_BASE.B2_SQL_BASE" scale="-1" type="STRING"/>
+        <field description="WBTEST" guideWord="ZB3" kind="VARIABLE" layoutCode="_data" length="15" logicalProperty="SQL_BASE.B3_SQL_BASE" scale="5" type="NUMBER"/>
+        <field description="WBTEST" kind="CONSTANT" length="1" scale="2">
+            <text text="ZB1.SQL_BASE"/>
+        </field>
+        <field description="WBTEST" kind="CONSTANT" length="2" scale="2">
+            <text text="ZB2.SQL_BASE"/>
+        </field>
+        <field description="WBTEST" kind="CONSTANT" length="3" scale="2">
+            <text text="ZB3.SQL_BASE"/>
+        </field>
+    </fields>
+</report>

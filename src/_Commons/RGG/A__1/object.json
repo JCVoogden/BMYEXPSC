@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "A__1",
+  "description" : "aaaa",
+  "creationDate" : "2008-02-27 10:06:35",
+  "updateDate" : "2008-02-27 10:07:30",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "WADELIA" ]
+}

@@ -1,0 +1,48 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20040903)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20040906)      
+*ROW_METADATA(ADELIA         20040903)   FIN_DECL
+*ROW_METADATA(ADELIA         20040903)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20040903)      initialiser page
+*ROW_METADATA(ADELIA         20040903)      traiter page
+*ROW_METADATA(ADELIA         20040903)   FIN_INIT
+*ROW_METADATA(ADELIA         20040903)   DEBUT_RETOUR
+*ROW_METADATA(ADELIA         20040903)      
+*ROW_METADATA(ADELIA         20040903)   FIN_RETOUR
+*ROW_METADATA(ADELIA         20040903)   DEBUT_PAGE PAGE
+*ROW_METADATA(ADELIA         20040903)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20040903)         
+*ROW_METADATA(ADELIA         20040903)      FIN_DECL
+*ROW_METADATA(ADELIA         20040903)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20040906)         * Le script est ici defini en "dur" mais on pourrait le générer dynamiquement
+*ROW_METADATA(ADELIA         20040906)         * en récupérant des informations en base de données.
+*ROW_METADATA(ADELIA         20040906)         SCRIPT_DECL_ARBO = '<script language="JavaScript" type="text/javascript">var TREE_ITEMS = [["Menu", null,' -
+*ROW_METADATA(ADELIA         20040906)          // '["Option1", null, ["Option1.1", "javascript:selection(''1.1'')"], ["Option1.2", "javascript:selection(''1.2'')"],' -
+*ROW_METADATA(ADELIA         20040906)          // '["Option1.3", "javascript:selection(''1.3'')"],["Option1.4", null,' -
+*ROW_METADATA(ADELIA         20040906)          // '["Option1.4.1" , "javascript:selection(''1.4.1'')" ],' -
+*ROW_METADATA(ADELIA         20040906)          // ' ["Option1.4.2", "javascript:selection(''1.4.2'')"],["Option1.4.3", "javascript:selection(''1.4.3'')"], ],' -
+*ROW_METADATA(ADELIA         20040906)          // '["Option1.5", "javascript:selection(''1.5'')"], ], ["Option2", "javascript:selection(''2'')"], ["Option3", "javascript:selection(''3'')"]' -
+*ROW_METADATA(ADELIA         20040903)          // ']]; </script>'
+*ROW_METADATA(ADELIA         20040903)      FIN_INIT
+*ROW_METADATA(ADELIA         20040903)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20040903)         DEBUT_OBJET SEL_ARBO
+*ROW_METADATA(ADELIA         20040903)            DEBUT_EVT SEL_ARBO:EVT
+*ROW_METADATA(ADELIA         20040906)               * comme traitement associé à l'option choisie, on affiche
+*ROW_METADATA(ADELIA         20040906)               * le code de l'option.
+*ROW_METADATA(ADELIA         20040906)               ZCODE = ZID_ELT
+*ROW_METADATA(ADELIA         20040903)            FIN_EVT
+*ROW_METADATA(ADELIA         20040903)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040903)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20040903)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20040903)         
+*ROW_METADATA(ADELIA         20040903)      FIN_VERIF
+*ROW_METADATA(ADELIA         20040903)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20040903)         
+*ROW_METADATA(ADELIA         20040903)      FIN_VALID
+*ROW_METADATA(ADELIA         20040903)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20040903)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20040903)      DEBUT_RETOUR
+*ROW_METADATA(ADELIA         20040903)         
+*ROW_METADATA(ADELIA         20040903)      FIN_RETOUR
+*ROW_METADATA(ADELIA         20040903)   FIN_PAGE
+*ROW_METADATA(ADELIA                 )FIN_PGM

@@ -1,0 +1,109 @@
+*------------------------------------------------------------------*
+* Objet : Calcul du code fichier physique, logique et du format    *
+*         d'une entité logique                                     *
+*                                                                  *
+*------------------------------------------------------------------*
+*
+* ATTENTION : Ceci est un programme exemple de personnalisation des
+*             fonctions spécifiques pour Adélia/IWS. Il devra être
+*             généré en C pour OS/2. (Cf Annexe documentation IWS)
+*   
+*
+* Nom du fichier physique = Nom trouvé dans le fichier des
+*                           fichiers
+* Nom du fichier logique  = Remplacement du dernier caractère
+*                           du nom de fichier par "L1" ou par
+*                           "L" si la longueur est 10
+* Nom du format           = Remplacement du dernier caractère
+*                           du nom de fichier par "F"
+*
+* Si l'entité n'est pas référencée on la crée dans le fichier
+* des fichiers ; les 2 premiers caractères du nom de l'entité
+* sont définis en tant que préfixe. S'ils sont déjà utilisés
+* pour un autre fichier, on les forces à QQ et on remplit la
+* description dans le fichier des fichiers avec un avertissement ;
+* le nom du fichier physique est composé des 6 premiers caractères
+* du nom de l'entité suivis d'un "P".
+*
+*------------------------------------------------------------------*
+* Paramètres échangés : - P_NOM_ENTITE                    (E)      *
+*                       - P_NOM_FICHIER                   (E/S)    *
+*                       - P_NOM_FORMAT                    (E/S)    *
+*                       - P_NOM_FIC_LOG                   (E/S)    *
+*                       - P_COD_RETOUR                    (S)      *
+*------------------------------------------------------------------*
+RECEVOIR P_NOM_ENTITE P_NOM_FICHIER P_NOM_FORMAT P_NOM_FIC_LOG P_COD_RETOUR 
+P_COD_RETOUR = '0'
+WDATE = *DATE
+W_NOM_ENTITE = *BLANK
+W_NOM_ENTITE = P_NOM_ENTITE
+LIRE VUE_FICHIER
+* Détection d'une erreur E/S en lecture : positionnement du code retour à '1'
+SI *IN90 = '1'
+  P_COD_RETOUR = '1'
+  TERMINER
+FIN
+SI VUE_FICHIER EXISTE
+  TAB_NOM = *BLANK
+  PLACER_TABLE FI_NOM_FICHIER TAB_NOM
+  *
+  * RECUPERATION DU NOM DU PHYSIQUE
+  *
+  P_NOM_FICHIER = *BLANK
+  P_NOM_FICHIER = FI_NOM_FICHIER
+  *
+  * RECHERCHE DE LA LONGUEUR
+  *
+  W_LONG_NOM = &LONGUEUR_CHAINE(FI_NOM_FICHIER)
+  *
+  * NOM DU FORMAT
+  *
+  TAB_NOM(W_LONG_NOM) = 'F'
+  PLACER_TABLE TAB_NOM P_NOM_FORMAT
+  *
+  SI W_LONG_NOM = 10
+    *
+    * NOM DU LOGIQUE : "L" DANS DERNIER CARACTERE
+    *
+    P_NOM_FIC_LOG = FI_NOM_FICHIER
+    PLACER_A_DROITE 'L' P_NOM_FIC_LOG
+  SINON
+    TAB_NOM(W_LONG_NOM) = 'L'
+    W_LONG_NOM = W_LONG_NOM + 1
+    TAB_NOM(W_LONG_NOM) = '1'
+    PLACER_TABLE TAB_NOM P_NOM_FIC_LOG
+  FIN
+  *
+SINON
+  INIT_ZONES VUE_FICHIER
+  FI_NOM_ENTITE = W_NOM_ENTITE
+  PLACER_A_GAUCHE W_NOM_ENTITE W6_2
+  W6 = &TRANSFORMATION(W6_2;'_';'0')
+  P_NOM_FICHIER = W6 /// 'P'
+  P_NOM_FORMAT = W6 /// 'F'
+  P_NOM_FIC_LOG = W6 /// 'L1'
+  FI_NOM_FICHIER = W6 /// 'P'
+  FI_ANN_CREATION = *ANNEE
+  FI_MOI_CREATION = *MOIS
+  FI_JOU_CREATION = *JOUR
+  PLACER_A_GAUCHE W_NOM_ENTITE WW_COD_PREFIXE
+  LIRE VUE_FIC_PREFIXE
+  * Détection d'une erreur E/S en lecture : positionnement du code retour à '1'
+  SI *IN90 = '1'
+    P_COD_RETOUR = '1'
+    TERMINER
+  FIN
+  SI VUE_FIC_PREFIXE N_EXISTE_PAS
+    FI_COD_PREFIXE = WW_COD_PREFIXE
+    FI_LIB_FICHIER = WDATE
+  SINON
+    FI_COD_PREFIXE = 'QQ'
+    FI_LIB_FICHIER = WDATE // ' DOUBLON AVEC ' // F2_NOM_ENTITE
+  FIN
+  CREER VUE_FICHIER
+  * Détection d'une erreur E/S en écriture : positionnement du code retour à '2'
+  SI *IN90 = '1'
+    P_COD_RETOUR = '2'
+    TERMINER
+  FIN
+FIN

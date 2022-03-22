@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "VA_HALRPF",
+  "description" : "Nom fichier printer en fct du code maq.   HA£RPF",
+  "creationDate" : "2002-10-24 12:23:46",
+  "updateDate" : "2002-10-24 13:14:42",
+  "visibility" : "PRIVATE",
+  "ibmName" : "HALRPF",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "HALRPF",
+  "level2GenType" : 2,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

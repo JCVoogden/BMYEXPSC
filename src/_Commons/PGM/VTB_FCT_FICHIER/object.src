@@ -1,0 +1,188 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA                 )   DEBUT_DECL
+*ROW_METADATA(ADELIA                 )      
+*ROW_METADATA(ADELIA                 )   FIN_DECL
+*ROW_METADATA(ADELIA                 )   DEBUT_INIT
+*ROW_METADATA(ADELIA                 )      * Chargement initial de la dll afin que les APPELER_DLL
+*ROW_METADATA(ADELIA                 )      * ne la chargent et la déchargent à chaque appel.
+*ROW_METADATA(ADELIA                 )      CHARGER_DLL 'VATOOLBX.DLL'
+*ROW_METADATA(ADELIA                 )      INITIALISER FEN_PERSO
+*ROW_METADATA(ADELIA                 )      EXECUTER FEN_PERSO
+*ROW_METADATA(ADELIA                 )      DECHARGER_DLL 'VATOOLBX.DLL'
+*ROW_METADATA(ADELIA                 )   FIN_INIT
+*ROW_METADATA(ADELIA                 )   DEBUT_FENETRE FEN_PERSO
+*ROW_METADATA(ADELIA                 )      DEBUT_DECL
+*ROW_METADATA(ADELIA                 )         * Variables pour le programme
+*ROW_METADATA(ADELIA                 )         NUM_E(4,0) REP
+*ROW_METADATA(ADELIA                 )         ALPHA(6) W_MAT
+*ROW_METADATA(ADELIA                 )         ALPHA(1) W_COD
+*ROW_METADATA(ADELIA                 )         ALPHA(1) W_RES
+*ROW_METADATA(ADELIA                 )         BOOL FLAG
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Variable pour l'ecriture dans un fichier texte
+*ROW_METADATA(ADELIA                 )         ALPHA(10) Alias
+*ROW_METADATA(ADELIA                 )         ALPHA(250) FileName
+*ROW_METADATA(ADELIA                 )         ALPHA(1) Mode
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 Rc
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 Lg
+*ROW_METADATA(ADELIA                 )         ALPHA(250) DATA
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * variable pour l'appel de la boite enregistrer sous
+*ROW_METADATA(ADELIA                 )         ALPHA(250) DIR
+*ROW_METADATA(ADELIA                 )         ALPHA(50) TITRE
+*ROW_METADATA(ADELIA                 )         ALPHA(50) FILTRE
+*ROW_METADATA(ADELIA                 )         ALPHA(50) EXT
+*ROW_METADATA(ADELIA                 )         BOOL OK
+*ROW_METADATA(ADELIA                 )         NUM_E(8,0) LGDIR
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Variable pour le Beep
+*ROW_METADATA(ADELIA                 )         BOOL RcBeep
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 Frequence
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 Duree
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_DECL
+*ROW_METADATA(ADELIA                 )      DEBUT_INIT
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxCenterWindow' FEN_PERSO
+*ROW_METADATA(ADELIA                 )      FIN_INIT
+*ROW_METADATA(ADELIA                 )      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET FEN_PERSO
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT FEN_PERSO:MEN_QUITTER
+*ROW_METADATA(ADELIA                 )               TERMINER
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET ID_BEEP
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ID_BEEP:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               RcBeep = *VRAI
+*ROW_METADATA(ADELIA                 )               Frequence = 100
+*ROW_METADATA(ADELIA                 )               Duree = 100
+*ROW_METADATA(ADELIA                 )               APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxFBeep' Frequence Duree RcBeep
+*ROW_METADATA(ADELIA                 )               si (non RcBeep)
+*ROW_METADATA(ADELIA                 )                  ID_BEEP_ERREUR:texte = 'échec du beep'
+*ROW_METADATA(ADELIA                 )               sinon
+*ROW_METADATA(ADELIA                 )                  ID_BEEP_ERREUR:texte = 'beep réussi'
+*ROW_METADATA(ADELIA                 )               fin
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET ID_OPENFILE
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ID_OPENFILE:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )                 ALIAS = 'FicExport'
+*ROW_METADATA(ADELIA                 )                 FILENAME = DIR 
+*ROW_METADATA(ADELIA                 )                 Mode='w'
+*ROW_METADATA(ADELIA                 )                 Lg=250
+*ROW_METADATA(ADELIA                 )                 APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxOpenFile' Alias FileName Mode Rc
+*ROW_METADATA(ADELIA                 )                 ID_OUV_ECR_ERR:texte = rc
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET ID_CHOOSEFILE
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ID_CHOOSEFILE:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )                TITRE = 'Choisir le fichier'
+*ROW_METADATA(ADELIA                 )                FILTRE = 'Fichiers textes'
+*ROW_METADATA(ADELIA                 )                EXT = '*.txt'
+*ROW_METADATA(ADELIA                 )                LGDIR=250
+*ROW_METADATA(ADELIA                 )               DIR='c:\bdcadel'
+*ROW_METADATA(ADELIA                 )                APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxOpenFileSelection' FEN_PERSO TITRE FILTRE EXT DIR LGDIR OK
+*ROW_METADATA(ADELIA                 )                SI OK
+*ROW_METADATA(ADELIA                 )                  ID_CHOIX_ERREUR:texte = 'réussite'
+*ROW_METADATA(ADELIA                 )               sinon
+*ROW_METADATA(ADELIA                 )                  ID_CHOIX_ERREUR:texte = 'échec'
+*ROW_METADATA(ADELIA                 )               fin
+*ROW_METADATA(ADELIA                 )               id_nom_fichier: = dir
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET ID_FERMERFICH
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ID_FERMERFICH:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )                 APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxCloseFile' Alias Rc
+*ROW_METADATA(ADELIA                 )                 ID_fermer_err:texte = rc
+*ROW_METADATA(ADELIA                 )                  si rc=0
+*ROW_METADATA(ADELIA                 )                     id_nom_fichier:=*blank
+*ROW_METADATA(ADELIA                 )                  fin   
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET ID_ECRIRE
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ID_ECRIRE:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )                 Lg=&LONGUEUR_CHAINE(IDEF_ECRIRE:)
+*ROW_METADATA(ADELIA                 )                 APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxWriteFile' Alias IDEF_ECRIRE: Lg Rc
+*ROW_METADATA(ADELIA                 )                 ID_ECRIRE_ERR:texte = rc
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET ID_ECRIRE_CHAIN
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ID_ECRIRE_CHAIN:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )                 APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxWriteString' Alias IDEF_ECRIRE_CHA: Rc
+*ROW_METADATA(ADELIA                 )                 ID_ECR_CH_ERR:texte = rc
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET ID_OPENFILE_LEC
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ID_OPENFILE_LEC:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )                 ALIAS = 'FicExport'
+*ROW_METADATA(ADELIA                 )                 FILENAME = DIR 
+*ROW_METADATA(ADELIA                 )                 Mode='r'
+*ROW_METADATA(ADELIA                 )                 Lg=250
+*ROW_METADATA(ADELIA                 )                 APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxOpenFile' Alias FileName Mode Rc
+*ROW_METADATA(ADELIA                 )                 ID_OUV_LEC_ERR:texte = rc
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET ID_OPENFILE_AJO
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ID_OPENFILE_AJO:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )                 ALIAS = 'FicExport'
+*ROW_METADATA(ADELIA                 )                 FILENAME = DIR 
+*ROW_METADATA(ADELIA                 )                 Mode='a'
+*ROW_METADATA(ADELIA                 )                 Lg=250
+*ROW_METADATA(ADELIA                 )                 APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxOpenFile' Alias FileName Mode Rc
+*ROW_METADATA(ADELIA                 )                 ID_OUV_AJO_ERR:texte = rc
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET ID_CHOOSEFILE0
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ID_CHOOSEFILE0:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )                TITRE = 'Choisir le fichier'
+*ROW_METADATA(ADELIA                 )                FILTRE = 'Fichiers textes'
+*ROW_METADATA(ADELIA                 )                EXT = '*.txt'
+*ROW_METADATA(ADELIA                 )                LGDIR=250
+*ROW_METADATA(ADELIA                 )                DIR='c:\bdcadel'
+*ROW_METADATA(ADELIA                 )                APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxSaveFileSelection' FEN_PERSO TITRE FILTRE EXT DIR LGDIR OK
+*ROW_METADATA(ADELIA                 )                SI OK
+*ROW_METADATA(ADELIA                 )                  ID_save_ERREUR:texte = 'réussite'
+*ROW_METADATA(ADELIA                 )               sinon
+*ROW_METADATA(ADELIA                 )                  ID_save_ERREUR:texte = 'échec'
+*ROW_METADATA(ADELIA                 )               fin
+*ROW_METADATA(ADELIA                 )               id_nom_fichier: = dir
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET ID_LIRE
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ID_LIRE:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )                 Lg=3
+*ROW_METADATA(ADELIA                 )                 APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxReadFile' Alias IDEF_LIRE: Lg Rc
+*ROW_METADATA(ADELIA                 )                 ID_LIRE_ERR:texte = rc
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET ID_LIRE_CHAINE
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT ID_LIRE_CHAINE:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )                 LG=250
+*ROW_METADATA(ADELIA                 )                 APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxReadString' Alias IDEF_LIRE_chain: Lg Rc
+*ROW_METADATA(ADELIA                 )                 ID_LIRE_ch_ERR:texte = rc
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )      FIN_GEST_EVT
+*ROW_METADATA(ADELIA                 )      DEBUT_VERIF
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_VERIF
+*ROW_METADATA(ADELIA                 )      DEBUT_VALID
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_VALID
+*ROW_METADATA(ADELIA                 )      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA                 )      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA                 )   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

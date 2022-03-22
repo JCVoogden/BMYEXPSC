@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Reception du message " help="" id="1" name="PSE_RECEPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-2" intValue="215"/>
+        <property id="-1" intValue="224"/>
+        <property id="3" stringValue="Reception du message "/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwUlEQVR4Xu2OUQrDMAxDc/QcLTfr0EchSK1rt3bGRh8INtV2XmutbV+OFKsjxepIsTpSbE/gW45IwTdDYH+MITeNSME3Q2AfAgEJKfhmiH0/ICEFnYwx7zslpJjOxeFbjkjBN1PgN24JWN+uwG7vXd4KC1jfLVIFrJkz0gWsuSNKBKxZpkzAmp/BXJmAtbODmVIBaw/ge4mAl1QB/u0hTYD/c3dGigATmS8RAN6d/xXw8gr8lkBV3AIYrAq/dSiwMh84D2gm5tNl+wAAAABJRU5ErkJggg==</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWklEQVR4Xr2MAQrAIAwD+/9X9WcOEUHS064OFghokp6ZWfvoEFQ9HpngsA5wdz1mgP5n1gEAYcAuA5/HpBJAO+jjSAFJnw4CpAxQvQKsQ1UKWEX9vwASAm79AOYiLbZEGen1AAAAAElFTkSuQmCC</property>
+        <property id="13"/>
+    </properties>
+    <menu>
+        <item key1="0" key2="0" name="MNU_OUVRIR" state="4112" text="Ouvrir" type="1"/>
+        <item key1="0" key2="0" name="MNU_FERMER" state="4097" text="Fermer" type="1"/>
+        <item key1="0" key2="0" name="MNU_VIDER" state="4112" text="Vider" type="1"/>
+    </menu>
+    <controls>
+        <control associatedVariable="" className="PORT_SERIE" dll="SERIE" help="" kinematic="0" name="PSE_BAL">
+            <properties>
+                <property id="-2" intValue="24"/>
+                <property id="-1" intValue="173"/>
+                <property id="2" intValue="1200"/>
+                <property id="3" intValue="8"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="CHO_NBLUS">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="6 -1 -1"/>
+                <property id="-3" intValue="40"/>
+                <property id="-2" intValue="217"/>
+                <property id="-1" intValue="177"/>
+                <property id="0" stringValue="MS Sans Serif;8;256"/>
+                <property id="3" intValue="1"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ13">
+            <properties>
+                <property id="-8" stringValue="Nb éléments lus :"/>
+                <property id="-3" intValue="95"/>
+                <property id="-2" intValue="216"/>
+                <property id="-1" intValue="77"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="CHO_OK">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 50 -1"/>
+                <property id="-4" intValue="22"/>
+                <property id="-3" intValue="113"/>
+                <property id="-2" intValue="99"/>
+                <property id="-1" intValue="118"/>
+                <property id="0" stringValue="MS Sans Serif;10;256"/>
+                <property id="5" intValue="255"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="CHO_OUV">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 50 -1"/>
+                <property id="-4" intValue="43"/>
+                <property id="-3" intValue="240"/>
+                <property id="-2" intValue="144"/>
+                <property id="-1" intValue="57"/>
+                <property id="0" stringValue="MS Sans Serif;10;256"/>
+                <property id="3" intValue="1"/>
+                <property id="5" intValue="255"/>
+            </properties>
+        </control>
+    </controls>
+</window>

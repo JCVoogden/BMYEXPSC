@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "MOB_NONREG",
+  "description" : "Test non régression Middleware - version Unicode",
+  "creationDate" : "2008-08-22 13:03:30",
+  "updateDate" : "2008-08-25 09:39:09",
+  "visibility" : "PRIVATE",
+  "ibmName" : "MIDREG",
+  "programType" : "I",
+  "sourceType" : "MADELIA",
+  "layoutCode" : "MIDREG",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "unicode" : true
+}

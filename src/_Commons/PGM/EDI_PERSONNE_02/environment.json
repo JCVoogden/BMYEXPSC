@@ -1,0 +1,38 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "01"
+    },
+    "guideWord" : "PERSONN_01",
+    "fileName" : "PERSONNL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "generation" : "NONE",
+    "accesses" : [ {
+      "id" : {
+        "code" : "01",
+        "ordinal" : 1
+      },
+      "guideWord" : "PCOD_MAT_PER2",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "PERSONN_DA",
+    "fileName" : "PERSONL1",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZNOM_PERS",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ]
+}

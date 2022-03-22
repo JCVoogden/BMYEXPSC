@@ -1,0 +1,35 @@
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)* Attention Cette version doit être utilisé uniquement avec   *
+*ROW_METADATA(ADELIA         20040219)* la DLL FCTSPECC128.DLL                                      * 
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)***************************************************************
+*ROW_METADATA(ADELIA         20040219)*------------------------------------------------------------------*
+*ROW_METADATA(ADELIA                0)*  Recherche du mot directeur associé à partir du mot directeur    *
+*ROW_METADATA(ADELIA                0)*  propriété logique                                               *
+*ROW_METADATA(ADELIA                0)*------------------------------------------------------------------*
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)* ATTENTION : Ceci est un programme exemple de personnalisation des
+*ROW_METADATA(ADELIA                0)*             fonctions spécifiques pour Adélia/IWS. Il devra être
+*ROW_METADATA(ADELIA         20040219)*             généré en C pour WINDOWS. (Cf Annexe documentation IWS)
+*ROW_METADATA(ADELIA                0)*   
+*ROW_METADATA(ADELIA                0)*------------------------------------------------------------------*
+*ROW_METADATA(ADELIA                0)*-------------------------------------------------------------*
+*ROW_METADATA(ADELIA                0)* Paramètres                                                  *
+*ROW_METADATA(ADELIA                0)*            P_MOT_DIR_DEPAR (Entrée)                         *
+*ROW_METADATA(ADELIA                0)*            P_MOT_DIR_ASSOC (Sortie)                         *
+*ROW_METADATA(ADELIA                0)*            P_CODE_FICHIER  (Entrée)                         *
+*ROW_METADATA(ADELIA                0)*            P_CODE_RETOUR   (Sortie)                         *
+*ROW_METADATA(ADELIA                0)*-------------------------------------------------------------*
+*ROW_METADATA(ADELIA                0)RECEVOIR P_MOT_DIR_DEPAR P_MOT_DIR_ASSOC P_CODE_FICHIER P_COD_RETOUR
+*ROW_METADATA(ADELIA                0)P_COD_RETOUR = '0'
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)*    Remplacement des 2 premiers caractères par 'ZZ'
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)P_MOT_DIR_ASSOC = P_MOT_DIR_DEPAR
+*ROW_METADATA(ADELIA                0)PLACER_A_GAUCHE 'ZZ' P_MOT_DIR_ASSOC
+*ROW_METADATA(ADELIA                0)RETOURNER

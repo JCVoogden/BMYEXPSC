@@ -1,0 +1,26 @@
+*------------------------------------------------------------------*
+*  Recherche du nom de zone écran associée à partir du nom de la   *
+*  zone fichier                                                    *
+*------------------------------------------------------------------*
+*------------------------------------------------------------------*
+*
+* ATTENTION : Ceci est un programme exemple de personnalisation des
+*             fonctions spécifiques pour Adélia/IWS. Il devra être
+*             généré en C pour OS/2. (Cf Annexe documentation IWS)
+*   
+*------------------------------------------------------------------*
+*-------------------------------------------------------------*
+* Paramètres                                                  *
+*            P_NOM_ZONE     (Entrée)                          *
+*            P_NOM_ZONE_ASSO(Sortie)                          *
+*            P_NOM_ENTITE   (Entrée)                          *
+*            P_COD_RETOUR   (Sortie)                          *
+*-------------------------------------------------------------*
+RECEVOIR P_NOM_ZONE P_NOM_ZONE_ASSO P_NOM_ENTITE P_COD_RETOUR
+P_COD_RETOUR = '0'
+*
+*    Remplacement des 2 premiers caractères par 'ZZ'
+*
+P_NOM_ZONE_ASSO = P_NOM_ZONE
+PLACER_A_GAUCHE 'ZZ' P_NOM_ZONE_ASSO
+RETOURNER

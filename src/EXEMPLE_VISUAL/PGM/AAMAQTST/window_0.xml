@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Test" help="" id="0" name="ID_FEN0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="96"/>
+        <property id="-45" intValue="96"/>
+        <property id="-37" intValue="5"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="156"/>
+        <property id="-3" intValue="168"/>
+        <property id="-2" intValue="58"/>
+        <property id="-1" intValue="26"/>
+        <property id="3" stringValue="Test"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="28" intValue="1"/>
+    </properties>
+    <menu>
+        <item key1="0" key2="0" name="ID_EVT1" state="4112" text="Texte" type="1"/>
+    </menu>
+    <controls>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ">
+            <properties>
+                <property id="-8" stringValue="Bouton"/>
+                <property id="-4" intValue="25"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="15"/>
+                <property id="-1" intValue="71"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_DE_SAISIE" customClassName="OGP_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="ID_OBJ0">
+            <properties>
+                <property id="-41" intValue="1"/>
+                <property id="-39" intValue="1"/>
+                <property id="-38" intValue="1"/>
+                <property id="-25" intValue="251658240"/>
+                <property id="-24" intValue="251658240"/>
+                <property id="-23" stringValue="MS Sans Serif;8;1;0"/>
+                <property id="-22"/>
+                <property id="-21" stringValue="MS Sans Serif;8;1;0"/>
+                <property id="-13" intValue="2"/>
+                <property id="-12"/>
+                <property id="-11"/>
+                <property id="-10"/>
+                <property id="-9" stringValue="2 15 -1"/>
+                <property id="-4" intValue="20"/>
+                <property id="-3" intValue="90"/>
+                <property id="-2" intValue="73"/>
+                <property id="-1" intValue="31"/>
+                <property id="3" intValue="1"/>
+                <property id="6"/>
+                <property id="7"/>
+                <property id="8"/>
+                <property id="9"/>
+                <property id="10" intValue="251658240"/>
+                <property id="11" intValue="1"/>
+                <property id="12"/>
+                <property id="13"/>
+                <property id="14"/>
+                <property id="15" intValue="251658240"/>
+                <property id="16" intValue="251658240"/>
+                <property id="17" intValue="251658240"/>
+                <property id="18"/>
+            </properties>
+        </control>
+    </controls>
+</window>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="OraCur" help="" id="0" name="ID_FEN0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="96"/>
+        <property id="-45" intValue="96"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="305"/>
+        <property id="-3" intValue="272"/>
+        <property id="-2" intValue="345"/>
+        <property id="-1" intValue="416"/>
+        <property id="3" stringValue="OraCur"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="22" intValue="264"/>
+        <property id="23" intValue="273"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ">
+            <properties>
+                <property id="-8" stringValue="Ouvrir"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="13"/>
+                <property id="-1" intValue="162"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ0">
+            <properties>
+                <property id="-8" stringValue="Lire"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="44"/>
+                <property id="-1" intValue="162"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ1">
+            <properties>
+                <property id="-8" stringValue="Fermer"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="75"/>
+                <property id="-1" intValue="162"/>
+            </properties>
+        </control>
+        <control associatedVariable="ZOP1" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="1" logicalProperty="ORACUR.P1" name="ZOP1">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="6 9 0"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="90"/>
+                <property id="-2" intValue="14"/>
+                <property id="-1" intValue="18"/>
+            </properties>
+        </control>
+        <control associatedVariable="REQUETE" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="ID_OBJ2">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 256 -1"/>
+                <property id="-4" intValue="50"/>
+                <property id="-3" intValue="228"/>
+                <property id="-2" intValue="200"/>
+                <property id="-1" intValue="11"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ3">
+            <properties>
+                <property id="-8" stringValue="Executer"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="172"/>
+                <property id="-1" intValue="162"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ4">
+            <properties>
+                <property id="-8" stringValue="Maj"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="107"/>
+                <property id="-1" intValue="162"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ5">
+            <properties>
+                <property id="-8" stringValue="Commit"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="139"/>
+                <property id="-1" intValue="162"/>
+            </properties>
+        </control>
+        <control associatedVariable="CODESQL" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_OBJ6">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="6 -1 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="90"/>
+                <property id="-2" intValue="144"/>
+                <property id="-1" intValue="18"/>
+            </properties>
+        </control>
+    </controls>
+</window>

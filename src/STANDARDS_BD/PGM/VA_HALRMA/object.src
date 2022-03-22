@@ -1,0 +1,49 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(JCA            20020425)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      * Attention Cette version doit être utilisé uniquement avec   *
+*ROW_METADATA(ADELIA         20040219)      * la DLL USERVA128.DLL                                        * 
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      *-------------------------------------------------------------* 
+*ROW_METADATA(JCA            20020425)      *                                                             * 
+*ROW_METADATA(JCA            20020425)      *   Recherche mot directeur associé pour une information d'un * 
+*ROW_METADATA(JCA            20020425)      *   fichier ou d'une entité                                   * 
+*ROW_METADATA(JCA            20020425)      *                                                             * 
+*ROW_METADATA(JCA            20020425)      *-------------------------------------------------------------* 
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(ADELIA         20040219)      ALPHA(128) MOT_DIRECTEUR
+*ROW_METADATA(ADELIA         20040219)      ALPHA(128) MOT_DIR_ASSOCIE
+*ROW_METADATA(JCA            20020425)      ALPHA(10) FICHIER
+*ROW_METADATA(JCA            20020425)      ALPHA(1) PCODE_RETOUR
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      PARAM MOT_DIRECTEUR MOT_DIR_ASSOCIE FICHIER PCODE_RETOUR                 
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      ***** VARIABLES PRIVÉES ******
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      ALPHA(1) W1
+*ROW_METADATA(ADELIA         20040219)      *                                                              
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)   FIN_DECL
+*ROW_METADATA(JCA            20020425)   DEBUT_INIT
+*ROW_METADATA(JCA            20020425)      PCODE_RETOUR = '0'
+*ROW_METADATA(JCA            20020425)      PLACER_A_DROITE MOT_DIRECTEUR W1                                 
+*ROW_METADATA(ADELIA         20040219)      *                                                                
+*ROW_METADATA(ADELIA         20040219)      SI W1 <> *BLANK                 
+*ROW_METADATA(JCA            20020425)        *                                                              
+*ROW_METADATA(ADELIA         20040219)        * Mot directeur à 128 caractères                                           
+*ROW_METADATA(JCA            20020425)        * On remplace le 1er caractère par 'Z'                         
+*ROW_METADATA(JCA            20020425)        MOT_DIR_ASSOCIE = MOT_DIRECTEUR                                
+*ROW_METADATA(JCA            20020425)        PLACER_A_GAUCHE 'Z' MOT_DIR_ASSOCIE                            
+*ROW_METADATA(JCA            20020425)      SINON                                                            
+*ROW_METADATA(JCA            20020425)        *                                                              
+*ROW_METADATA(JCA            20020425)        * On ajoute un 'Z' devant le mot directeur                     
+*ROW_METADATA(JCA            20020425)        MOT_DIR_ASSOCIE = 'Z' // MOT_DIRECTEUR                         
+*ROW_METADATA(JCA            20020425)      FIN                                                              
+*ROW_METADATA(JCA            20020425)   FIN_INIT
+*ROW_METADATA(ADELIA                 )FIN_PGM

@@ -1,0 +1,342 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "*1"
+    },
+    "guideWord" : "CLIENTS_S1",
+    "fileName" : "CLIENTSL",
+    "access" : "SEQUENTIAL_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "*1",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_CLIENT",
+      "type" : "DEFAULT"
+    } ]
+  }, {
+    "id" : {
+      "code" : "*4"
+    },
+    "guideWord" : "SFL04",
+    "access" : "NONE",
+    "update" : "NO_UPDATE",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "code" : "A1"
+    },
+    "guideWord" : "CLIENTS",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "CREATE_AND_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "A1",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_CLIENT",
+      "type" : "DEFAULT"
+    } ]
+  }, {
+    "id" : {
+      "code" : "GA"
+    },
+    "guideWord" : "VUE_RAFRAICH",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "generation" : "LEVEL1",
+    "accesses" : [ {
+      "id" : {
+        "code" : "GA",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_CLIENT",
+      "type" : "DEFAULT"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "I",
+      "fileName" : ""
+    },
+    "shortName" : "I",
+    "length" : 3,
+    "type" : "NUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "IND_OPT",
+      "fileName" : ""
+    },
+    "shortName" : "IO",
+    "length" : 1,
+    "type" : "NUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "IND_OPT_MAX",
+      "fileName" : ""
+    },
+    "shortName" : "IM",
+    "length" : 1,
+    "type" : "NUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_ACTION",
+      "fileName" : ""
+    },
+    "shortName" : "PCACT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15120,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCRET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15120,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "TAB_AUT",
+      "fileName" : ""
+    },
+    "shortName" : "TAU",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim1" : 99,
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "TOP",
+      "fileName" : ""
+    },
+    "shortName" : "TP",
+    "length" : 75,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim1" : 8,
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "W_BLANC_1",
+      "fileName" : ""
+    },
+    "shortName" : "WBLAN1",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "W_FLG_ERREUR",
+      "fileName" : ""
+    },
+    "shortName" : "WFERR",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "W_FLG_INIT",
+      "fileName" : ""
+    },
+    "shortName" : "WFINI",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "W_FLG_OPT_OK",
+      "fileName" : ""
+    },
+    "shortName" : "WFOPO",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "W_FLG_TRT_OPT",
+      "fileName" : ""
+    },
+    "shortName" : "WFTRO",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "W_LONG_OPT",
+      "fileName" : ""
+    },
+    "shortName" : "WLGOPT",
+    "length" : 3,
+    "type" : "NUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "W_LONG_TOT_OPT",
+      "fileName" : ""
+    },
+    "shortName" : "WLGTOO",
+    "length" : 3,
+    "type" : "NUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "W_NOM_PGM",
+      "fileName" : ""
+    },
+    "shortName" : "WNOMPG",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "W_OPT_CAD_DRO",
+      "fileName" : ""
+    },
+    "shortName" : "WOPTCD",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "W_OPT_CAD_GAU",
+      "fileName" : ""
+    },
+    "shortName" : "WOPTCG",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "W_SV_CLE",
+      "fileName" : ""
+    },
+    "shortName" : "WSVCL",
+    "length" : 100,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15120,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "WW_COD_OPT_NC",
+      "fileName" : ""
+    },
+    "shortName" : "WWCONC",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "WW_COD_OPTION",
+      "fileName" : ""
+    },
+    "shortName" : "WWCOPT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "WW_LIB_OPTION",
+      "fileName" : ""
+    },
+    "shortName" : "WWLOPT",
+    "length" : 75,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "WW_NOM_PGM",
+      "fileName" : ""
+    },
+    "shortName" : "WWNPGM",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "WW_NOM_PGM_OPT",
+      "fileName" : ""
+    },
+    "shortName" : "WWNPGO",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "WW_NUM_OPTION",
+      "fileName" : ""
+    },
+    "shortName" : "WWNOPT",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15152,
+    "dim4" : 5
+  }, {
+    "id" : {
+      "guideWord" : "WW_RANG",
+      "fileName" : ""
+    },
+    "shortName" : "WWRANG",
+    "length" : 4,
+    "type" : "NUMERIC",
+    "generation" : "LEVEL1",
+    "dim3" : -15120,
+    "dim4" : 5
+  } ]
+}

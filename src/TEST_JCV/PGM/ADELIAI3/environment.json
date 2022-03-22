@@ -1,0 +1,31 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "0A"
+    },
+    "guideWord" : "BASE",
+    "fileName" : "SQL_BASE",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "NONE",
+    "accesses" : [ {
+      "id" : {
+        "code" : "0A",
+        "ordinal" : 1
+      },
+      "guideWord" : "B1",
+      "type" : "DEFAULT"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "BIN2",
+      "fileName" : ""
+    },
+    "shortName" : "BIN2",
+    "length" : 4,
+    "type" : "BINARY",
+    "generation" : "NONE"
+  } ]
+}

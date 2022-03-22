@@ -1,0 +1,104 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20071016)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20071016)      
+*ROW_METADATA(ADELIA         20071016)   FIN_DECL
+*ROW_METADATA(ADELIA         20071016)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20071016)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20071016)      executer    id_fen0
+*ROW_METADATA(ADELIA         20071016)   FIN_INIT
+*ROW_METADATA(ADELIA         20071016)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20071016)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20071016)         curseur c1 OraCur *maj
+*ROW_METADATA(ADELIA         20071016)      FIN_DECL
+*ROW_METADATA(ADELIA         20071016)      DEBUT_INIT
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20071016)            supprimer_sql OraCur
+*ROW_METADATA(ADELIA         20071016)            
+*ROW_METADATA(ADELIA         20071016)            op1 = 1
+*ROW_METADATA(ADELIA         20071016)            
+*ROW_METADATA(ADELIA         20071016)            tant_que op1 < 10
+*ROW_METADATA(ADELIA         20071016)               creer_sql OraCur
+*ROW_METADATA(ADELIA         20071016)               op1 = op1 + 1
+*ROW_METADATA(ADELIA         20071016)            refaire
+*ROW_METADATA(ADELIA         20071016)            
+*ROW_METADATA(ADELIA         20071016)            valider_maj
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20071016)      FIN_INIT
+*ROW_METADATA(ADELIA         20071016)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20071016)         DEBUT_OBJET ID_OBJ
+*ROW_METADATA(ADELIA         20071016)            DEBUT_EVT ID_OBJ:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20071016)                  ouvrir_sql_c c1
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20071016)               codeSql = *sqlcode
+*ROW_METADATA(ADELIA         20071016)               traiter_proc setCode
+*ROW_METADATA(ADELIA         20071016)            FIN_EVT
+*ROW_METADATA(ADELIA         20071016)         FIN_OBJET
+*ROW_METADATA(ADELIA         20071016)         DEBUT_OBJET ID_OBJ0
+*ROW_METADATA(ADELIA         20071016)            DEBUT_EVT ID_OBJ0:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20071016)                  lire_av_sql_c c1
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20071016)               codeSql = *sqlcode
+*ROW_METADATA(ADELIA         20071016)               traiter_proc setCode
+*ROW_METADATA(ADELIA         20071016)               presenter OraCur
+*ROW_METADATA(ADELIA         20071016)            FIN_EVT
+*ROW_METADATA(ADELIA         20071016)         FIN_OBJET
+*ROW_METADATA(ADELIA         20071016)         DEBUT_OBJET ID_OBJ1
+*ROW_METADATA(ADELIA         20071016)            DEBUT_EVT ID_OBJ1:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20071016)                  fermer_sql_c c1
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20071016)               codeSql = *sqlcode
+*ROW_METADATA(ADELIA         20071016)               traiter_proc setCode
+*ROW_METADATA(ADELIA         20071016)            FIN_EVT
+*ROW_METADATA(ADELIA         20071016)         FIN_OBJET
+*ROW_METADATA(ADELIA         20071016)         DEBUT_OBJET ID_OBJ4
+*ROW_METADATA(ADELIA         20071016)            DEBUT_EVT ID_OBJ4:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20071016)               op1 = op1 + 10
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20071016)                  maj_sql_c c1
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20071016)               codeSql = *sqlcode
+*ROW_METADATA(ADELIA         20071016)               traiter_proc setCode
+*ROW_METADATA(ADELIA         20071016)            FIN_EVT
+*ROW_METADATA(ADELIA         20071016)         FIN_OBJET
+*ROW_METADATA(ADELIA         20071016)         DEBUT_OBJET ID_OBJ5
+*ROW_METADATA(ADELIA         20071016)            DEBUT_EVT ID_OBJ5:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20071016)                  valider_maj
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20071016)            FIN_EVT
+*ROW_METADATA(ADELIA         20071016)         FIN_OBJET
+*ROW_METADATA(ADELIA         20071016)         DEBUT_OBJET ID_OBJ3
+*ROW_METADATA(ADELIA         20071016)            DEBUT_EVT ID_OBJ3:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20071016)                  exec_sql(:requete)
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20071016)               codeSql = *sqlcode
+*ROW_METADATA(ADELIA         20071016)               traiter_proc setCode
+*ROW_METADATA(ADELIA         20071016)            FIN_EVT
+*ROW_METADATA(ADELIA         20071016)         FIN_OBJET
+*ROW_METADATA(ADELIA         20071016)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20071016)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20071016)         
+*ROW_METADATA(ADELIA         20071016)      FIN_VERIF
+*ROW_METADATA(ADELIA         20071016)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20071016)         
+*ROW_METADATA(ADELIA         20071016)      FIN_VALID
+*ROW_METADATA(ADELIA         20071016)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20071016)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20071016)   FIN_FENETRE
+*ROW_METADATA(ADELIA         20071016)   DEBUT_PROCEDURE SETCODE
+*ROW_METADATA(ADELIA         20071016)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20071016)         
+*ROW_METADATA(ADELIA         20071016)      FIN_DECL
+*ROW_METADATA(ADELIA         20071016)      si codeSql = 0;100
+*ROW_METADATA(ADELIA         20071016)         id_fen0.id_obj6:couleur_texte = _CHO_COUL_NOIR
+*ROW_METADATA(ADELIA         20071016)      sinon
+*ROW_METADATA(ADELIA         20071016)         id_fen0.id_obj6:couleur_texte = _CHO_COUL_ROUGE
+*ROW_METADATA(ADELIA         20071016)      fin
+*ROW_METADATA(ADELIA         20071016)      
+*ROW_METADATA(ADELIA         20071016)      
+*ROW_METADATA(ADELIA         20071016)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

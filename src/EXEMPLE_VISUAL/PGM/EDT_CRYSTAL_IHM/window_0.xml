@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="" help="" id="0" name="MAIN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="446"/>
+        <property id="-3" intValue="672"/>
+        <property id="-2" intValue="188"/>
+        <property id="-1" intValue="180"/>
+        <property id="3"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAw0lEQVR4Xu2OCwqDQAwF9/DSo9ljWQaqLI9umjUJ/eBAQM17cVq7+EK2hAmxRaD/nNPozSnor/c1JKE3p6CPQERCb06x9yMScnKOvn9Wojs3D31jXOjNFLirPxqh3QNr9w66y21xSWj3gJ21t6CXJmBlRtBJFbByryCfLmBlFbIlAla+h1yZgNXZIVMqYPWAfYmAF7JpAvrsgWyKgL7rtxHkwgIKWW+eXLoAkPd0yPyngBfuXgK/I1A1XoFGsGr0Xx/nAcvm7lfXqc4jAAAAAElFTkSuQmCC</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbUlEQVR4Xq2MUQrAMAxCe/+DdcfqyJARE6Vl7IE/5sUxfmIdxrJ2hINIqt8IZ17TjjS5El0MuJEmuy6FsLICN0IJdgQ9oQQ7go5QQku5E+m9D1TQE01IIt1ST1TnBbLqCBIykFVHkLBDDnzIww3Nu+sjMeaOXAAAAABJRU5ErkJggg==</property>
+        <property id="22" intValue="664"/>
+        <property id="23" intValue="419"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="IMAGE" dll="BITMAP" help="" kinematic="0" name="LOGO">
+            <properties>
+                <property id="-4" intValue="73"/>
+                <property id="-3" intValue="82"/>
+                <property id="-2" intValue="16"/>
+                <property id="-1" intValue="22"/>
+                <property binaryType="dib" id="2" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAADAFBMVEUAYwAAcwAAewAAnAAIYwgIcwgIewgIhAgItQgQhBAYexgYjBgYnBgYrRghhCEhnCEhrSEplCkpnCkpvSkxnDExrTExvTE5pTlCxkJKpUpSrVJjtWN7vXuM1oyl3qXl9+Xn9+fv9+/3//f///f///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9L3CDQAAAA6klEQVR4Xr1TwQ6CMAxtN8LFRE3k5Nn//y8Sr1yUOde9bnTDeOQR6GjfXtsV+EH/4XpHjwMIA0x4U1TPB2a5jtlCIbwdscILnKNnMIQUd85mYz5fZkPIUG1FyaiENpjCJV6KtJQ40Ku+qEK08XSP6EDw4xxEdJPYEWpyBQhI4NMdWQTWnpDh09U116xkvycWY5roa0DX1qnrJI2jF4HApmtDBkNR/faolRFEr0o0NYCxzUFQCHAKo8lkhhVZnhqVBAuWICx0ctDo566E25wo6tGdtE7ZMP6sgO/LYsLItQZ/N6EGu3H3OIDwBbd2Opdgid5EAAAAAElFTkSuQmCC</property>
+                <property id="3" intValue="2"/>
+                <property id="4" intValue="16777215"/>
+            </properties>
+            <menu>
+                <item key1="0" key2="0" name="MNU_SELECT_LOGO" state="4112" text="Choisir un logo..." type="1"/>
+            </menu>
+        </control>
+        <control associatedVariable="" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="TITRE_ETAT">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 80 -1"/>
+                <property id="-4" intValue="20"/>
+                <property id="-3" intValue="336"/>
+                <property id="-2" intValue="16"/>
+                <property id="-1" intValue="284"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="TITRE_PAGE">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 80 -1"/>
+                <property id="-4" intValue="20"/>
+                <property id="-3" intValue="336"/>
+                <property id="-2" intValue="45"/>
+                <property id="-1" intValue="285"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="PIED_PAGE">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 80 -1"/>
+                <property id="-4" intValue="20"/>
+                <property id="-3" intValue="336"/>
+                <property id="-2" intValue="73"/>
+                <property id="-1" intValue="286"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="LISTE" dll="CONTAINR" help="" kinematic="0" name="LST_PERSONNE">
+            <properties>
+                <property id="-4" intValue="222"/>
+                <property id="-3" intValue="617"/>
+                <property id="-2" intValue="143"/>
+                <property id="-1" intValue="19"/>
+                <property id="6" stringValue="ID -6 5 -1 -1 # CLIENT -6 2 20 -1 # PAYS -6 2 15 -1 # CODE_POSTAL -6 2 10 -1 # CONTACT -6 2 15 -1 # FONCTION -6 2 15 -1"/>
+            </properties>
+            <controls>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="ID">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-12" intValue="3"/>
+                        <property id="-9" stringValue="5 -1 -1"/>
+                        <property id="-8" stringValue="Identifiant"/>
+                        <property id="-3" intValue="75"/>
+                        <property id="11" stringValue="ID 9 5 -1 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="CLIENT">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 20 -1"/>
+                        <property id="-8" stringValue="Nom Client"/>
+                        <property id="-3" intValue="182"/>
+                        <property id="11" stringValue="CLIENT 9 2 20 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="PAYS">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 15 -1"/>
+                        <property id="-8" stringValue="Pays"/>
+                        <property id="-3" intValue="93"/>
+                        <property id="11" stringValue="PAYS 9 2 15 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="CODE_POSTAL">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 10 -1"/>
+                        <property id="-8" stringValue="Code Postal"/>
+                        <property id="-3" intValue="75"/>
+                        <property id="11" stringValue="CODE_POSTAL 9 2 10 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="CONTACT">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 15 -1"/>
+                        <property id="-8" stringValue="Contact&#13;&#10;"/>
+                        <property id="-3" intValue="75"/>
+                        <property id="11" stringValue="CONTACT 9 2 15 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="FONCTION">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 15 -1"/>
+                        <property id="-8" stringValue="Fonction"/>
+                        <property id="-3" intValue="96"/>
+                        <property id="11" stringValue="FONCTION 9 2 15 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+            </controls>
+        </control>
+        <control associatedVariable="" className="LISTE_BTN_RADIO" dll="RADIO" help="" kinematic="0" name="NUMETAT">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="5 -1 -1"/>
+                <property id="-8" stringValue="Etat"/>
+                <property id="-6" intValue="1"/>
+                <property id="-4" intValue="42"/>
+                <property id="-3" intValue="170"/>
+                <property id="-2" intValue="372"/>
+                <property id="-1" intValue="10"/>
+                <property id="9" intValue="2"/>
+                <property id="14" stringValue="Simple¤Sous-état¤"/>
+                <property id="15" stringValue="1¤2¤"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_PRINT">
+            <properties>
+                <property id="-8" stringValue="Impression directe"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="133"/>
+                <property id="-2" intValue="384"/>
+                <property id="-1" intValue="202"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_PREVIEW">
+            <properties>
+                <property id="-8" stringValue="Prévisualisation"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="133"/>
+                <property id="-2" intValue="384"/>
+                <property id="-1" intValue="358"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_CLOSE">
+            <properties>
+                <property id="-8" stringValue="Femer"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="133"/>
+                <property id="-2" intValue="384"/>
+                <property id="-1" intValue="514"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ2">
+            <properties>
+                <property id="-21" stringValue="MS Sans Serif;8;272;0"/>
+                <property id="-8" stringValue="Titre des pages"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="152"/>
+                <property id="-2" intValue="48"/>
+                <property id="-1" intValue="121"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ3">
+            <properties>
+                <property id="-21" stringValue="MS Sans Serif;8;272;0"/>
+                <property id="-8" stringValue="Texte pied de page"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="152"/>
+                <property id="-2" intValue="76"/>
+                <property id="-1" intValue="122"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="ID_OBJ">
+            <properties>
+                <property id="-8" stringValue="Données clients"/>
+                <property id="-4" intValue="243"/>
+                <property id="-3" intValue="635"/>
+                <property id="-2" intValue="128"/>
+                <property id="-1" intValue="10"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="ID_OBJ4">
+            <properties>
+                <property id="-8" stringValue="Données"/>
+                <property id="-4" intValue="122"/>
+                <property id="-3" intValue="635"/>
+                <property id="-2" intValue="2"/>
+                <property id="-1" intValue="8"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ5">
+            <properties>
+                <property id="-21" stringValue="MS Sans Serif;8;1;0"/>
+                <property id="-8" stringValue="Remarque : Si Version Crystal &lt; V9.0 la Taille &lt; 32 Ko et .bmp  uniquement"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="380"/>
+                <property id="-2" intValue="104"/>
+                <property id="-1" intValue="21"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ0">
+            <properties>
+                <property id="-21" stringValue="MS Sans Serif;8;272;0"/>
+                <property id="-8" stringValue="Logo de l'état"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="109"/>
+                <property id="-2" intValue="89"/>
+                <property id="-1" intValue="18"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ1">
+            <properties>
+                <property id="-21" stringValue="MS Sans Serif;8;272;0"/>
+                <property id="-8" stringValue="Titre de l'état"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="95"/>
+                <property id="-2" intValue="19"/>
+                <property id="-1" intValue="120"/>
+            </properties>
+        </control>
+    </controls>
+</window>

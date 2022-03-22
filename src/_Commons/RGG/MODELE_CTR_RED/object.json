@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "MODELE_CTR_RED",
+  "description" : "Modèle de controle d'une zone redondante",
+  "creationDate" : "1995-06-29 07:24:36",
+  "updateDate" : "1995-06-29 07:24:36",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

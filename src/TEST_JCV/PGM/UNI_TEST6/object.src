@@ -1,0 +1,86 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20080410)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20080410)      num_bin_4  code
+*ROW_METADATA(ADELIA         20080410)      curseur c1 ansi_unicode
+*ROW_METADATA(ADELIA         20080410)      
+*ROW_METADATA(ADELIA         20080410)      pointeur panels *idispatch
+*ROW_METADATA(ADELIA         20080411)      pointeur panel  *idispatch
+*ROW_METADATA(ADELIA         20080411)      
+*ROW_METADATA(ADELIA         20080411)      pointeur hfont  *idispatch
+*ROW_METADATA(ADELIA         20080411)      
+*ROW_METADATA(ADELIA         20080410)      
+*ROW_METADATA(ADELIA         20080410)   FIN_DECL
+*ROW_METADATA(ADELIA         20080410)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080410)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20080410)      executer    id_fen0
+*ROW_METADATA(ADELIA         20080410)   FIN_INIT
+*ROW_METADATA(ADELIA         20080410)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20080410)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20080410)         alpha(80) tempo
+*ROW_METADATA(ADELIA         20080410)      FIN_DECL
+*ROW_METADATA(ADELIA         20080410)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20080414)         appeler_dll 'vatoolbx' 'VaToolBxCreateFont' 'Lucida Sans Unicode' 10.0 *faux *faux *faux *faux 1 hfont code
+*ROW_METADATA(ADELIA         20080411)         
+*ROW_METADATA(ADELIA         20080411)         appeler_methode acl SetRefFont hfont
+*ROW_METADATA(ADELIA         20080414)         appeler_methode stt SetRefFont hfont
+*ROW_METADATA(ADELIA         20080414)         appeler_methode vkl SetRefFont hfont
+*ROW_METADATA(ADELIA         20080411)         
+*ROW_METADATA(ADELIA         20080410)         appeler_methode stt GetPanels panels
+*ROW_METADATA(ADELIA         20080410)         appeler_methode stt IPanelsGetItem panels 1 __vt_i4 panel
+*ROW_METADATA(ADELIA         20080410)         
+*ROW_METADATA(ADELIA         20080410)      FIN_INIT
+*ROW_METADATA(ADELIA         20080410)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20080410)         DEBUT_OBJET ID_OBJ2
+*ROW_METADATA(ADELIA         20080410)            DEBUT_EVT ID_OBJ2:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080410)                  ouvrir_sql_c c1
+*ROW_METADATA(ADELIA         20080410)                  code = *sqlcode
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20080410)               sqlcode:texte = code
+*ROW_METADATA(ADELIA         20080410)            FIN_EVT
+*ROW_METADATA(ADELIA         20080410)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080410)         DEBUT_OBJET ID_OBJ3
+*ROW_METADATA(ADELIA         20080410)            DEBUT_EVT ID_OBJ3:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080410)                  lire_av_sql_c c1
+*ROW_METADATA(ADELIA         20080410)                  code = *sqlcode
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20080410)               sqlcode:texte      = code
+*ROW_METADATA(ADELIA         20080410)               id_ansi:texte      = ansi
+*ROW_METADATA(ADELIA         20080410)               id_unicode:texte   = unicode
+*ROW_METADATA(ADELIA         20080410)               * 
+*ROW_METADATA(ADELIA         20080410)               tempo = unicode
+*ROW_METADATA(ADELIA         20080410)               * 
+*ROW_METADATA(ADELIA         20080411)               appeler_methode stt IPanelSetText panel tempo
+*ROW_METADATA(ADELIA         20080414)               appeler_methode acl SetCaption tempo
+*ROW_METADATA(ADELIA         20080414)               appeler_methode vkl SetCaption tempo
+*ROW_METADATA(ADELIA         20080411)               ace:text = tempo
+*ROW_METADATA(ADELIA         20080411)               
+*ROW_METADATA(ADELIA         20080410)               
+*ROW_METADATA(ADELIA         20080410)            FIN_EVT
+*ROW_METADATA(ADELIA         20080410)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080410)         DEBUT_OBJET ID_OBJ4
+*ROW_METADATA(ADELIA         20080410)            DEBUT_EVT ID_OBJ4:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080410)                  fermer_sql_c c1
+*ROW_METADATA(ADELIA         20080410)                  code = *sqlcode
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20080410)               sqlcode:texte = code
+*ROW_METADATA(ADELIA         20080410)            FIN_EVT
+*ROW_METADATA(ADELIA         20080410)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080410)         DEBUT_OBJET ID_OBJ5
+*ROW_METADATA(ADELIA         20080410)            DEBUT_EVT ID_OBJ5:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20080410)               terminer
+*ROW_METADATA(ADELIA         20080410)            FIN_EVT
+*ROW_METADATA(ADELIA         20080410)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080410)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20080410)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20080410)         
+*ROW_METADATA(ADELIA         20080410)      FIN_VERIF
+*ROW_METADATA(ADELIA         20080410)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20080410)         
+*ROW_METADATA(ADELIA         20080410)      FIN_VALID
+*ROW_METADATA(ADELIA         20080410)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080410)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080410)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

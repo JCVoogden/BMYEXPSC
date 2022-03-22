@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "EDF_CUA_CLIENT",
+  "description" : "Edition de la fiche d'un client",
+  "creationDate" : "1995-06-20 07:24:56",
+  "updateDate" : "1995-06-20 07:24:56",
+  "visibility" : "PRIVATE",
+  "ibmName" : "ECUA02",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "ECUA02",
+  "programTemplateName" : "CUA_EDT_FICHE",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

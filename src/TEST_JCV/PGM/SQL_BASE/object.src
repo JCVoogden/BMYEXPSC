@@ -1,0 +1,756 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(JCV            00000000)   DEBUT_DECL
+*ROW_METADATA(JCV            20050630)      * Curseur utilise pour recharger la liste affichee
+*ROW_METADATA(FR             20040928)      CURSEUR C1 SQL_BASE *TRI(B1)
+*ROW_METADATA(FR             20040928)      
+*ROW_METADATA(JCV            00000000)      NUM_E(1, 0)  OK
+*ROW_METADATA(JCV            20000620)      NUM_BIN_4    I
+*ROW_METADATA(JCV            00000000)      NUM_E(15, 5) T_NUM_E
+*ROW_METADATA(JCV            20051117)      ALPHA(20)    SCOMP1
+*ROW_METADATA(JCV            20051117)      ALPHA(20)    SCOMP2
+*ROW_METADATA(JCV            00000000)      ALPHA(25)    T_ALPHA
+*ROW_METADATA(JCV            20000620)      LISTE T_LISTE *REF_MLD(SQL_BASE)
+*ROW_METADATA(JCV            20000620)      
+*ROW_METADATA(JCV            20050630)      CURSEUR CMAJ SQL_BASE *MAJ(B2, B3)
+*ROW_METADATA(JCV            20060428)      CURSEUR CSUP SQL_BASE *TRI(B2 *DESC, B1 *ASC, B3 *DESC) *MAJ
+*ROW_METADATA(JCV            00000000)   FIN_DECL
+*ROW_METADATA(JCV            00000000)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20101215)      
+*ROW_METADATA(ADELIA         20101209)      INITIALISER FEN_MENU
+*ROW_METADATA(JCV            20030204)      EXECUTER FEN_MENU
+*ROW_METADATA(JCV            00000000)   FIN_INIT
+*ROW_METADATA(JCV            00000000)   DEBUT_FENETRE FEN_MENU
+*ROW_METADATA(JCV            00000000)      DEBUT_DECL
+*ROW_METADATA(JCV            00000000)         
+*ROW_METADATA(JCV            00000000)      FIN_DECL
+*ROW_METADATA(JCV            00000000)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20101209)         
+*ROW_METADATA(ADELIA         20101209)         fen_menu:visibilite = *vrai
+*ROW_METADATA(ADELIA         20101209)         
+*ROW_METADATA(ADELIA         20101209)         NB_OCCURENCES = 100
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV CENTRAL
+*ROW_METADATA(JCV            20051118)            SGBD = *INFO_SGBD
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(JCV            00000000)      FIN_INIT
+*ROW_METADATA(JCV            00000000)      DEBUT_GEST_EVT
+*ROW_METADATA(JCV            00000000)         DEBUT_OBJET CREER_SQL
+*ROW_METADATA(JCV            00000000)            DEBUT_EVT CREER_SQL:BoutonGaucheClic
+*ROW_METADATA(JCV            20000620)               ID_STATUT:COULEUR_TEXTE = _TXT_COUL_JAUNEFONCE
+*ROW_METADATA(JCV            20000620)               ID_STATUT:TEXTE = 'Execution du test'
+*ROW_METADATA(JCV            20000620)               VIDER_LST ID_LISTE_SQL:LISTE
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(JCV            20000620)                  SUPPRIMER_SQL SQL_BASE
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  I        = 0
+*ROW_METADATA(JCV            20051025)                  OK       = 1
+*ROW_METADATA(JCV            20000620)                  NB_ENR   = 0
+*ROW_METADATA(JCV            20000620)                  CODE_SQL = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20051025)                  TANT_QUE I < NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                     I = I + 1
+*ROW_METADATA(JCV            20000620)                     B1 = I
+*ROW_METADATA(JCV            20021121)                     B2 = 'àéèûêôî ' // I
+*ROW_METADATA(JCV            20000620)                     B3 = I + 0.1
+*ROW_METADATA(JCV            20050701)                     CREER_SQL SQL_BASE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI *SQLCODE <> 0
+*ROW_METADATA(JCV            20000620)                        * STOP !!
+*ROW_METADATA(JCV            20000620)                        I = NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI OK = 1
+*ROW_METADATA(JCV            20000620)                     I  = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     ID_STATUT:TEXTE = 'Vérification des résultats'
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     OUVRIR_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     LIRE_AV_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     TANT_QUE *SQLCODE = 0
+*ROW_METADATA(JCV            20000620)                        I = I + 1
+*ROW_METADATA(JCV            20021121)                        T_ALPHA = 'àéèûêôî ' // I
+*ROW_METADATA(JCV            20000620)                        T_NUM_E = (I + 0.1)
+*ROW_METADATA(JCV            20051117)                        SCOMP1 = T_NUM_E
+*ROW_METADATA(JCV            20051117)                        SCOMP2 = B3
+*ROW_METADATA(JCV            20000620)                        SI (B1 <> I) OU (B2 <> T_ALPHA) OU (SCOMP1 <> SCOMP2)
+*ROW_METADATA(JCV            20000620)                           OK = 0
+*ROW_METADATA(JCV            20000620)                        FIN
+*ROW_METADATA(JCV            20010905)                  /*      PRESENTER SQL_BASE
+*ROW_METADATA(JCV            20010905)                  ZB1 = B1
+*ROW_METADATA(JCV            20010905)                  ZB2 = B2
+*ROW_METADATA(JCV            20010905)                  ZB3 = B3
+*ROW_METADATA(JCV            20000620)                        INSERER_ELT ID_LISTE_SQL:LISTE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                        LIRE_AV_SQL_C C1
+*ROW_METADATA(JCV            20000620)                     REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI (*SQLCODE <> 0) ET (*SQLCODE <> 100)
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     FERMER_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI (I <> NB_OCCURENCES)
+*ROW_METADATA(JCV            20000620)                     OK = 0
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               NB_ENR = I
+*ROW_METADATA(JCV            20020923)               
+*ROW_METADATA(JCV            20020923)               TOTO = ZB1:VALEUR_COURANTE
+*ROW_METADATA(JCV            20020923)               
+*ROW_METADATA(JCV            20000620)               SI OK = 1
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:TEXTE = 'Test réussi.'
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:COULEUR_TEXTE = _TXT_COUL_NOIR
+*ROW_METADATA(JCV            20000620)               SINON
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:TEXTE = 'Test échoué.'
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:COULEUR_TEXTE = _TXT_COUL_ROUGE
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               SI CODE_SQL = 0
+*ROW_METADATA(JCV            20000620)                  ID_SQLCODE:COULEUR_TEXTE = _TXT_COUL_NOIR
+*ROW_METADATA(JCV            20000620)               SINON
+*ROW_METADATA(JCV            20000620)                  ID_SQLCODE:COULEUR_TEXTE = _TXT_COUL_ROUGE
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            00000000)            FIN_EVT
+*ROW_METADATA(JCV            00000000)         FIN_OBJET
+*ROW_METADATA(JCV            00000000)         DEBUT_OBJET LIRE_SQL
+*ROW_METADATA(JCV            00000000)            DEBUT_EVT LIRE_SQL:BoutonGaucheClic
+*ROW_METADATA(JCV            20000620)               ID_STATUT:COULEUR_TEXTE = _TXT_COUL_JAUNEFONCE
+*ROW_METADATA(JCV            20000620)               ID_STATUT:TEXTE = 'Initialisation'
+*ROW_METADATA(JCV            20000620)               VIDER_LST ID_LISTE_SQL:LISTE
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(JCV            20000620)                  SUPPRIMER_SQL SQL_BASE
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  I        = 0
+*ROW_METADATA(JCV            20000620)                  OK       = 1
+*ROW_METADATA(JCV            20000620)                  NB_ENR   = 0
+*ROW_METADATA(JCV            20000620)                  CODE_SQL = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  TANT_QUE I < NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                     I = I + 1
+*ROW_METADATA(JCV            20000620)                     B1 = I
+*ROW_METADATA(JCV            20000620)                     B2 = 'Valeur ' // I
+*ROW_METADATA(JCV            20000620)                     B3 = I + 0.1
+*ROW_METADATA(JCV            20000620)                     CREER_SQL SQL_BASE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI *SQLCODE <> 0
+*ROW_METADATA(JCV            20000620)                        * STOP !!
+*ROW_METADATA(JCV            20000620)                        I = NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI OK = 1
+*ROW_METADATA(JCV            20000620)                     I  = 1
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     ID_STATUT:TEXTE = 'Exécution et vérification des résultats'
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     LIRE_SQL SQL_BASE *COND(B1 = :I )
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     TANT_QUE *SQLCODE = 0 ET I < NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                        T_ALPHA = 'Valeur ' // I
+*ROW_METADATA(JCV            20000620)                        T_NUM_E = I + 0.1
+*ROW_METADATA(JCV            20000620)                        SCOMP1 = T_NUM_E      
+*ROW_METADATA(JCV            20000620)                        SCOMP2 = B3      
+*ROW_METADATA(JCV            20000620)                        SI (B1 <> I) OU (B2 <> T_ALPHA) OU (SCOMP1 <> SCOMP2)
+*ROW_METADATA(JCV            20000620)                           OK = 0
+*ROW_METADATA(JCV            20000620)                        FIN
+*ROW_METADATA(JCV            20010905)                  /*      PRESENTER SQL_BASE
+*ROW_METADATA(JCV            20010905)                  ZB1 = B1
+*ROW_METADATA(JCV            20010905)                  ZB2 = B2
+*ROW_METADATA(JCV            20010905)                  ZB3 = B3
+*ROW_METADATA(JCV            20010905)                        INSERER_ELT ID_LISTE_SQL:LISTE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                        I = I + 1
+*ROW_METADATA(JCV            20000620)                        LIRE_SQL SQL_BASE *COND(B1 = :I )
+*ROW_METADATA(JCV            20000620)                     REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI (*SQLCODE <> 0) ET (*SQLCODE <> 100)
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI (I <> NB_OCCURENCES)
+*ROW_METADATA(JCV            20000620)                     OK = 0
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(JCV            20000620)               NB_ENR = I
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               SI OK = 1
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:TEXTE = 'Test réussi.'
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:COULEUR_TEXTE = _TXT_COUL_NOIR
+*ROW_METADATA(JCV            20000620)               SINON
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:TEXTE = 'Test échoué.'
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:COULEUR_TEXTE = _TXT_COUL_ROUGE
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               SI CODE_SQL = 0
+*ROW_METADATA(JCV            20000620)                  ID_SQLCODE:COULEUR_TEXTE = _TXT_COUL_NOIR
+*ROW_METADATA(JCV            20000620)               SINON
+*ROW_METADATA(JCV            20000620)                  ID_SQLCODE:COULEUR_TEXTE = _TXT_COUL_ROUGE
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            00000000)            FIN_EVT
+*ROW_METADATA(JCV            00000000)         FIN_OBJET
+*ROW_METADATA(JCV            00000000)         DEBUT_OBJET SUPPRIMER_SQL
+*ROW_METADATA(JCV            00000000)            DEBUT_EVT SUPPRIMER_SQL:BoutonGaucheClic
+*ROW_METADATA(JCV            20000620)               ID_STATUT:COULEUR_TEXTE = _TXT_COUL_JAUNEFONCE
+*ROW_METADATA(JCV            20000620)               ID_STATUT:TEXTE = 'Initialisation'
+*ROW_METADATA(JCV            20000620)               VIDER_LST ID_LISTE_SQL:LISTE
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(JCV            20000620)                  SUPPRIMER_SQL SQL_BASE
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  I        = 0
+*ROW_METADATA(JCV            20000620)                  OK       = 1
+*ROW_METADATA(JCV            20000620)                  NB_ENR   = 0
+*ROW_METADATA(JCV            20000620)                  CODE_SQL = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  TANT_QUE I < NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                     I = I + 1
+*ROW_METADATA(JCV            20000620)                     B1 = I
+*ROW_METADATA(JCV            20000620)                     B2 = 'Valeur ' // I
+*ROW_METADATA(JCV            20000620)                     B3 = I + 0.1
+*ROW_METADATA(JCV            20000620)                     CREER_SQL SQL_BASE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI *SQLCODE <> 0
+*ROW_METADATA(JCV            20000620)                        * STOP !!
+*ROW_METADATA(JCV            20000620)                        I = NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI OK = 1
+*ROW_METADATA(JCV            20000620)                     I  = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     ID_STATUT:TEXTE = 'Execution du test'
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     TANT_QUE *SQLCODE = 0 ET I < NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                        I = I + 1
+*ROW_METADATA(JCV            20000620)                        SUPPRIMER_SQL SQL_BASE *COND (B1 = :I)
+*ROW_METADATA(JCV            20000620)                     REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI (*SQLCODE <> 0)
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20010905)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI OK = 1
+*ROW_METADATA(JCV            20000620)                     I  = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     ID_STATUT:TEXTE = 'Vérification des résultats'
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     OUVRIR_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     LIRE_AV_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI *SQLCODE <> 100
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     * On présente qd même les données encore dans la base
+*ROW_METADATA(JCV            20000620)                     TANT_QUE *SQLCODE = 0
+*ROW_METADATA(JCV            20000620)                        I = I + 1
+*ROW_METADATA(JCV            20010905)                  /*      PRESENTER SQL_BASE
+*ROW_METADATA(JCV            20010905)                  ZB1 = B1
+*ROW_METADATA(JCV            20010905)                  ZB2 = B2
+*ROW_METADATA(JCV            20010905)                  ZB3 = B3
+*ROW_METADATA(JCV            20010905)                        INSERER_ELT ID_LISTE_SQL:LISTE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                        LIRE_AV_SQL_C C1
+*ROW_METADATA(JCV            20000620)                     REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     FERMER_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(JCV            20000620)               NB_ENR = I
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               SI OK = 1
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:TEXTE = 'Test réussi.'
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:COULEUR_TEXTE = _TXT_COUL_NOIR
+*ROW_METADATA(JCV            20000620)               SINON
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:TEXTE = 'Test échoué.'
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:COULEUR_TEXTE = _TXT_COUL_ROUGE
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               SI CODE_SQL = 0
+*ROW_METADATA(JCV            20000620)                  ID_SQLCODE:COULEUR_TEXTE = _TXT_COUL_NOIR
+*ROW_METADATA(JCV            20000620)               SINON
+*ROW_METADATA(JCV            20000620)                  ID_SQLCODE:COULEUR_TEXTE = _TXT_COUL_ROUGE
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            00000000)            FIN_EVT
+*ROW_METADATA(JCV            00000000)         FIN_OBJET
+*ROW_METADATA(JCV            00000000)         DEBUT_OBJET MAJ_SQL
+*ROW_METADATA(JCV            00000000)            DEBUT_EVT MAJ_SQL:BoutonGaucheClic
+*ROW_METADATA(JCV            20000620)               ID_STATUT:COULEUR_TEXTE = _TXT_COUL_JAUNEFONCE
+*ROW_METADATA(JCV            20000620)               ID_STATUT:TEXTE = 'Initialisation'
+*ROW_METADATA(JCV            20000620)               VIDER_LST ID_LISTE_SQL:LISTE
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(JCV            20000620)                  SUPPRIMER_SQL SQL_BASE
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  I        = 0
+*ROW_METADATA(JCV            20000620)                  OK       = 1
+*ROW_METADATA(JCV            20000620)                  NB_ENR   = 0
+*ROW_METADATA(JCV            20000620)                  CODE_SQL = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  TANT_QUE I < NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                     I = I + 1
+*ROW_METADATA(JCV            20000620)                     B1 = I
+*ROW_METADATA(JCV            20000620)                     B2 = 'Valeur ' // I
+*ROW_METADATA(JCV            20000620)                     B3 = I + 0.1
+*ROW_METADATA(JCV            20000620)                     CREER_SQL SQL_BASE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI *SQLCODE <> 0
+*ROW_METADATA(JCV            20000620)                        * STOP !!
+*ROW_METADATA(JCV            20000620)                        I = NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI OK = 1
+*ROW_METADATA(JCV            20000620)                     I  = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     ID_STATUT:TEXTE = 'Exécution'
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     TANT_QUE *SQLCODE = 0 ET I < NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                        I = I + 1
+*ROW_METADATA(JCV            20000620)                        B1 = I
+*ROW_METADATA(JCV            20000620)                        B2 = 'VALMAJ ' // I
+*ROW_METADATA(JCV            20000620)                        B3 = I + 0.5
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                        MAJ_SQL SQL_BASE *ALL *COND(B1 = :I )
+*ROW_METADATA(JCV            20000620)                     REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI (*SQLCODE <> 0) ET (*SQLCODE <> 100)
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI OK = 1
+*ROW_METADATA(JCV            20000620)                     I  = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     ID_STATUT:TEXTE = 'Vérification des résultats'
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     OUVRIR_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     LIRE_AV_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     TANT_QUE *SQLCODE = 0
+*ROW_METADATA(JCV            20000620)                        I = I + 1
+*ROW_METADATA(JCV            20000620)                        T_ALPHA = 'VALMAJ ' // I
+*ROW_METADATA(JCV            20000620)                        T_NUM_E = I + 0.5
+*ROW_METADATA(JCV            20000620)                        SCOMP1 = T_NUM_E      
+*ROW_METADATA(JCV            20000620)                        SCOMP2 = B3      
+*ROW_METADATA(JCV            20000620)                        SI (B1 <> I) OU (B2 <> T_ALPHA) OU (SCOMP1 <> SCOMP2)
+*ROW_METADATA(JCV            20000620)                           OK = 0
+*ROW_METADATA(JCV            20000620)                        FIN
+*ROW_METADATA(JCV            20010905)                  /*      PRESENTER SQL_BASE
+*ROW_METADATA(JCV            20010905)                  ZB1 = B1
+*ROW_METADATA(JCV            20010905)                  ZB2 = B2
+*ROW_METADATA(JCV            20010905)                  ZB3 = B3
+*ROW_METADATA(JCV            20010905)                        INSERER_ELT ID_LISTE_SQL:LISTE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                        LIRE_AV_SQL_C C1
+*ROW_METADATA(JCV            20000620)                     REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI (*SQLCODE <> 0) ET (*SQLCODE <> 100)
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     FERMER_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI (I <> NB_OCCURENCES)
+*ROW_METADATA(JCV            20000620)                     OK = 0
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               NB_ENR = I
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               SI OK = 1
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:TEXTE = 'Test réussi.'
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:COULEUR_TEXTE = _TXT_COUL_NOIR
+*ROW_METADATA(JCV            20000620)               SINON
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:TEXTE = 'Test échoué.'
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:COULEUR_TEXTE = _TXT_COUL_ROUGE
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               SI CODE_SQL = 0
+*ROW_METADATA(JCV            20000620)                  ID_SQLCODE:COULEUR_TEXTE = _TXT_COUL_NOIR
+*ROW_METADATA(JCV            20000620)               SINON
+*ROW_METADATA(JCV            20000620)                  ID_SQLCODE:COULEUR_TEXTE = _TXT_COUL_ROUGE
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            00000000)            FIN_EVT
+*ROW_METADATA(JCV            00000000)         FIN_OBJET
+*ROW_METADATA(JCV            00000000)         DEBUT_OBJET CHARGER_SQL_LST
+*ROW_METADATA(JCV            00000000)            DEBUT_EVT CHARGER_SQL_LST:BoutonGaucheClic
+*ROW_METADATA(JCV            20000620)               ID_STATUT:COULEUR_TEXTE = _TXT_COUL_JAUNEFONCE
+*ROW_METADATA(JCV            20000620)               ID_STATUT:TEXTE = 'Initialisation'
+*ROW_METADATA(JCV            20000620)               VIDER_LST ID_LISTE_SQL:LISTE
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(JCV            20000620)                  SUPPRIMER_SQL SQL_BASE
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  I        = 0
+*ROW_METADATA(JCV            20000620)                  OK       = 1
+*ROW_METADATA(JCV            20000620)                  NB_ENR   = 0
+*ROW_METADATA(JCV            20000620)                  CODE_SQL = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  TANT_QUE I < NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                     I = I + 1
+*ROW_METADATA(JCV            20000620)                     B1 = I
+*ROW_METADATA(JCV            20000620)                     B2 = 'Valeur ' // I
+*ROW_METADATA(JCV            20000620)                     B3 = I + 0.1
+*ROW_METADATA(JCV            20000620)                     CREER_SQL SQL_BASE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI *SQLCODE <> 0
+*ROW_METADATA(JCV            20000620)                        * STOP !!
+*ROW_METADATA(JCV            20000620)                        I = NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI OK = 1
+*ROW_METADATA(JCV            20000620)                     ID_STATUT:TEXTE = 'Exécution du test'
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     CHARGER_SQL_LST T_LISTE SQL_BASE *TRI(B1)
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI (*SQLCODE <> 0)
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI OK = 1
+*ROW_METADATA(JCV            20000620)                     I  = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     ID_STATUT:TEXTE = 'Vérification des résultats'
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     LIRE_P_ELT T_LISTE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     TANT_QUE &CODE_LST(T_LISTE) <> *NON_TROUVE
+*ROW_METADATA(JCV            20000620)                        I = I + 1
+*ROW_METADATA(JCV            20000620)                        T_ALPHA = 'Valeur ' // I
+*ROW_METADATA(JCV            20000620)                        T_NUM_E = I + 0.1
+*ROW_METADATA(JCV            20000620)                        SCOMP1 = T_NUM_E      
+*ROW_METADATA(JCV            20000620)                        SCOMP2 = B3      
+*ROW_METADATA(JCV            20000620)                        SI (B1 <> I) OU (B2 <> T_ALPHA) OU (SCOMP1 <> SCOMP2)
+*ROW_METADATA(JCV            20000620)                           OK = 0
+*ROW_METADATA(JCV            20000620)                        FIN
+*ROW_METADATA(JCV            20000620)                        ZB1 = B1
+*ROW_METADATA(JCV            20000620)                        ZB2 = B2
+*ROW_METADATA(JCV            20000620)                        ZB3 = B3
+*ROW_METADATA(JCV            20000620)                        INSERER_ELT ID_LISTE_SQL:LISTE
+*ROW_METADATA(JCV            20000620)                        LIRE_AV_ELT T_LISTE
+*ROW_METADATA(JCV            20000620)                     REFAIRE
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               NB_ENR = I
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               SI I <> NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                  OK = 0
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               SI OK = 1
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:TEXTE = 'Test réussi.'
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:COULEUR_TEXTE = _TXT_COUL_NOIR
+*ROW_METADATA(JCV            20000620)               SINON
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:TEXTE = 'Test échoué.'
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:COULEUR_TEXTE = _TXT_COUL_ROUGE
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               SI CODE_SQL = 0
+*ROW_METADATA(JCV            20000620)                  ID_SQLCODE:COULEUR_TEXTE = _TXT_COUL_NOIR
+*ROW_METADATA(JCV            20000620)               SINON
+*ROW_METADATA(JCV            20000620)                  ID_SQLCODE:COULEUR_TEXTE = _TXT_COUL_ROUGE
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            00000000)            FIN_EVT
+*ROW_METADATA(JCV            00000000)         FIN_OBJET
+*ROW_METADATA(JCV            00000000)         DEBUT_OBJET MAJ_SQL_C
+*ROW_METADATA(JCV            00000000)            DEBUT_EVT MAJ_SQL_C:BoutonGaucheClic
+*ROW_METADATA(JCV            20000620)               ID_STATUT:COULEUR_TEXTE = _TXT_COUL_JAUNEFONCE
+*ROW_METADATA(JCV            20000620)               ID_STATUT:TEXTE = 'Initialisation'
+*ROW_METADATA(JCV            20000620)               VIDER_LST ID_LISTE_SQL:LISTE
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(JCV            20000620)                  SUPPRIMER_SQL SQL_BASE
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  I        = 0
+*ROW_METADATA(JCV            20000620)                  OK       = 1
+*ROW_METADATA(JCV            20000620)                  NB_ENR   = 0
+*ROW_METADATA(JCV            20000620)                  CODE_SQL = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  TANT_QUE I < NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                     I = I + 1
+*ROW_METADATA(JCV            20000620)                     B1 = I
+*ROW_METADATA(JCV            20000620)                     B2 = 'Valeur ' // I
+*ROW_METADATA(JCV            20000620)                     B3 = I + 0.1
+*ROW_METADATA(JCV            20000620)                     CREER_SQL SQL_BASE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI *SQLCODE <> 0
+*ROW_METADATA(JCV            20000620)                        * STOP !!
+*ROW_METADATA(JCV            20000620)                        I = NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI OK = 1
+*ROW_METADATA(JCV            20000620)                     ID_STATUT:TEXTE = 'Exécution du test'
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     OUVRIR_SQL_C CMAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     LIRE_AV_SQL_C CMAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     TANT_QUE *SQLCODE = 0
+*ROW_METADATA(JCV            20000620)                        B2 = 'VALMAJ ' // B1
+*ROW_METADATA(JCV            20000620)                        B3 = B1 + 0.5
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                        MAJ_SQL_C CMAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                        SI *SQLCODE = 0
+*ROW_METADATA(JCV            20000620)                           LIRE_AV_SQL_C CMAJ
+*ROW_METADATA(JCV            20000620)                        FIN
+*ROW_METADATA(JCV            20000620)                     REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI (*SQLCODE <> 0) ET (*SQLCODE <> 100)
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     FERMER_SQL_C CMAJ
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI OK = 1
+*ROW_METADATA(JCV            20000620)                     I  = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     ID_STATUT:TEXTE = 'Vérification des résultats'
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     OUVRIR_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     LIRE_AV_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     TANT_QUE *SQLCODE = 0
+*ROW_METADATA(JCV            20000620)                        I = I + 1
+*ROW_METADATA(JCV            20000620)                        T_ALPHA = 'VALMAJ ' // I
+*ROW_METADATA(JCV            20000620)                        T_NUM_E = I + 0.5
+*ROW_METADATA(JCV            20000620)                        SCOMP1 = T_NUM_E      
+*ROW_METADATA(JCV            20000620)                        SCOMP2 = B3      
+*ROW_METADATA(JCV            20000620)                        SI (B1 <> I) OU (B2 <> T_ALPHA) OU (SCOMP1 <> SCOMP2)
+*ROW_METADATA(JCV            20000620)                           OK = 0
+*ROW_METADATA(JCV            20000620)                        FIN
+*ROW_METADATA(JCV            20010905)                  /*      PRESENTER SQL_BASE
+*ROW_METADATA(JCV            20010905)                  ZB1 = B1
+*ROW_METADATA(JCV            20010905)                  ZB2 = B2
+*ROW_METADATA(JCV            20010905)                  ZB3 = B3
+*ROW_METADATA(JCV            20010905)                        INSERER_ELT ID_LISTE_SQL:LISTE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                        LIRE_AV_SQL_C C1
+*ROW_METADATA(JCV            20000620)                     REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI (*SQLCODE <> 0) ET (*SQLCODE <> 100)
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     FERMER_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI (I <> NB_OCCURENCES)
+*ROW_METADATA(JCV            20000620)                     OK = 0
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               NB_ENR = I
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               SI OK = 1
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:TEXTE = 'Test réussi.'
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:COULEUR_TEXTE = _TXT_COUL_NOIR
+*ROW_METADATA(JCV            20000620)               SINON
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:TEXTE = 'Test échoué.'
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:COULEUR_TEXTE = _TXT_COUL_ROUGE
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               SI CODE_SQL = 0
+*ROW_METADATA(JCV            20000620)                  ID_SQLCODE:COULEUR_TEXTE = _TXT_COUL_NOIR
+*ROW_METADATA(JCV            20000620)               SINON
+*ROW_METADATA(JCV            20000620)                  ID_SQLCODE:COULEUR_TEXTE = _TXT_COUL_ROUGE
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            00000000)            FIN_EVT
+*ROW_METADATA(JCV            00000000)         FIN_OBJET
+*ROW_METADATA(JCV            00000000)         DEBUT_OBJET SUPPRIMER_SQL_C
+*ROW_METADATA(JCV            00000000)            DEBUT_EVT SUPPRIMER_SQL_C:BoutonGaucheClic
+*ROW_METADATA(JCV            20000620)               ID_STATUT:COULEUR_TEXTE = _TXT_COUL_JAUNEFONCE
+*ROW_METADATA(JCV            20000620)               ID_STATUT:TEXTE = 'Initialisation'
+*ROW_METADATA(JCV            20000620)               VIDER_LST ID_LISTE_SQL:LISTE
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(JCV            20000620)                  SUPPRIMER_SQL SQL_BASE
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  I        = 0
+*ROW_METADATA(JCV            20000620)                  OK       = 1
+*ROW_METADATA(JCV            20000620)                  NB_ENR   = 0
+*ROW_METADATA(JCV            20000620)                  CODE_SQL = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  TANT_QUE I < NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                     I = I + 1
+*ROW_METADATA(JCV            20000620)                     B1 = I
+*ROW_METADATA(JCV            20000620)                     B2 = 'Valeur ' // I
+*ROW_METADATA(JCV            20000620)                     B3 = I + 0.1
+*ROW_METADATA(JCV            20000620)                     CREER_SQL SQL_BASE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI *SQLCODE <> 0
+*ROW_METADATA(JCV            20000620)                        * STOP !!
+*ROW_METADATA(JCV            20000620)                        I = NB_OCCURENCES
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI OK = 1
+*ROW_METADATA(JCV            20000620)                     ID_STATUT:TEXTE = 'Exécution du test'
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     OUVRIR_SQL_C CSUP
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     LIRE_AV_SQL_C CSUP
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     TANT_QUE *SQLCODE = 0
+*ROW_METADATA(JCV            20000620)                        SUPPRIMER_SQL_C CSUP
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                        SI *SQLCODE = 0
+*ROW_METADATA(JCV            20000620)                           LIRE_AV_SQL_C CSUP
+*ROW_METADATA(JCV            20000620)                        FIN
+*ROW_METADATA(JCV            20000620)                     REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI (*SQLCODE <> 0) ET (*SQLCODE <> 100)
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     FERMER_SQL_C CSUP
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  SI OK = 1
+*ROW_METADATA(JCV            20000620)                     I  = 0
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     ID_STATUT:TEXTE = 'Vérification des résultats'
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     OUVRIR_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     LIRE_AV_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     SI *SQLCODE <> 100
+*ROW_METADATA(JCV            20000620)                        CODE_SQL = *SQLCODE
+*ROW_METADATA(JCV            20000620)                        OK = 0
+*ROW_METADATA(JCV            20000620)                     FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     * On présente qd même les données encore dans la base
+*ROW_METADATA(JCV            20000620)                     TANT_QUE *SQLCODE = 0
+*ROW_METADATA(JCV            20000620)                        I = I + 1
+*ROW_METADATA(JCV            20010905)                  /*      PRESENTER SQL_BASE
+*ROW_METADATA(JCV            20010905)                  ZB1 = B1
+*ROW_METADATA(JCV            20010905)                  ZB2 = B2
+*ROW_METADATA(JCV            20010905)                  ZB3 = B3
+*ROW_METADATA(JCV            20010905)                        INSERER_ELT ID_LISTE_SQL:LISTE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                        LIRE_AV_SQL_C C1
+*ROW_METADATA(JCV            20000620)                     REFAIRE
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                     FERMER_SQL_C C1
+*ROW_METADATA(JCV            20000620)                  FIN
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(JCV            20000620)                  VALIDER_MAJ
+*ROW_METADATA(JCV            20000620)                  
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(JCV            20000620)               NB_ENR = I
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               SI OK = 1
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:TEXTE = 'Test réussi.'
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:COULEUR_TEXTE = _TXT_COUL_NOIR
+*ROW_METADATA(JCV            20000620)               SINON
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:TEXTE = 'Test échoué.'
+*ROW_METADATA(JCV            20000620)                  ID_STATUT:COULEUR_TEXTE = _TXT_COUL_ROUGE
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            20000620)               
+*ROW_METADATA(JCV            20000620)               SI CODE_SQL = 0
+*ROW_METADATA(JCV            20000620)                  ID_SQLCODE:COULEUR_TEXTE = _TXT_COUL_NOIR
+*ROW_METADATA(JCV            20000620)               SINON
+*ROW_METADATA(JCV            20000620)                  ID_SQLCODE:COULEUR_TEXTE = _TXT_COUL_ROUGE
+*ROW_METADATA(JCV            20000620)               FIN
+*ROW_METADATA(JCV            00000000)            FIN_EVT
+*ROW_METADATA(JCV            00000000)         FIN_OBJET
+*ROW_METADATA(JCV            00000000)         DEBUT_OBJET QUITTER
+*ROW_METADATA(JCV            00000000)            DEBUT_EVT QUITTER:BoutonGaucheClic
+*ROW_METADATA(JCV            20010205)               TERMINER
+*ROW_METADATA(JCV            00000000)            FIN_EVT
+*ROW_METADATA(JCV            00000000)         FIN_OBJET
+*ROW_METADATA(JCV            00000000)      FIN_GEST_EVT
+*ROW_METADATA(JCV            00000000)      DEBUT_VERIF
+*ROW_METADATA(JCV            00000000)         
+*ROW_METADATA(JCV            00000000)      FIN_VERIF
+*ROW_METADATA(JCV            00000000)      DEBUT_VALID
+*ROW_METADATA(JCV            00000000)         
+*ROW_METADATA(JCV            00000000)      FIN_VALID
+*ROW_METADATA(JCV            00000000)      DEBUT_TRT_GUIDE
+*ROW_METADATA(JCV            00000000)      FIN_TRT_GUIDE
+*ROW_METADATA(JCV            00000000)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

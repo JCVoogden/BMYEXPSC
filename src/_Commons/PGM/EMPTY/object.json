@@ -1,0 +1,19 @@
+{
+  "type" : "PGM",
+  "name" : "EMPTY",
+  "description" : "Empty",
+  "creationDate" : "2008-12-17 14:47:21",
+  "updateDate" : "2021-04-30 12:33:27",
+  "visibility" : "PUBLIC",
+  "ibmName" : "EMPTY",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "EMPTY",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "unicode" : true,
+  "version" : 12,
+  "modification" : 1,
+  "buildId" : 2,
+  "manageHistoryButtons" : " "
+}

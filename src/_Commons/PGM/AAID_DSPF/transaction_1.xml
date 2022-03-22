@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Transaction bidon pour aides par DSPF" format1="01" functionKeys="  A        A            " transactionType="SAISIE_CODE" updateDate="1753-01-01" updateTime="00:00:00" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="true" blink="false" clear="false" code="01" eraseInput="false" guideWord="FOR01" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="23" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR01" truncate="false"/>
+    </formats>
+    <entities/>
+    <fields/>
+</transaction>

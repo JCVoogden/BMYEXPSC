@@ -1,0 +1,70 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "01"
+    },
+    "guideWord" : "VENTE_01",
+    "fileName" : "VENTEL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "generation" : "NONE",
+    "accesses" : [ {
+      "id" : {
+        "code" : "01",
+        "ordinal" : 1
+      },
+      "guideWord" : "VCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "02"
+    },
+    "guideWord" : "BUDGET_02",
+    "fileName" : "BUDGETL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "generation" : "NONE",
+    "accesses" : [ {
+      "id" : {
+        "code" : "02",
+        "ordinal" : 1
+      },
+      "guideWord" : "BCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "CLIENTS_DA",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "CCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "breaks" : [ {
+    "id" : {
+      "guideWord" : "RUP_CLIENT"
+    },
+    "code" : "01",
+    "viewCode" : "DA",
+    "fields" : [ {
+      "id" : {
+        "guideWord" : "RUP_CLIENT",
+        "ordinal" : 1
+      },
+      "logicalPropertyId" : 134,
+      "logicalProperty" : "CLIENTS.COD_CLIENT"
+    } ]
+  } ]
+}

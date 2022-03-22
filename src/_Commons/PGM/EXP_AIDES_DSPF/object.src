@@ -1,0 +1,19 @@
+INITIALISER 01
+TRAITER 01
+*-------------------------
+TRANSACTION 01
+SI *F03 OU *F12
+TERMINER
+FIN
+**********************
+INITIALISATION  01
+**********************
+DEBUT_STD
+ZW_AIDE_01      = *BLANK
+ZW_AIDE_02      = *BLANK
+ZW_AIDE_03      = *BLANK
+ZW_AIDE_04      = *BLANK
+ZW_AIDE_05      = *BLANK
+ZW_AIDE_06      = *BLANK
+ZW_AIDE_07      = *BLANK
+FIN_STD

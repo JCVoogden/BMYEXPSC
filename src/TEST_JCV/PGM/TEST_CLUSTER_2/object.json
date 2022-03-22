@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "TEST_CLUSTER_2",
+  "description" : "test cluster",
+  "creationDate" : "2009-06-22 08:53:06",
+  "updateDate" : "2009-06-22 08:53:35",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TCLUS2",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TCLUS2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

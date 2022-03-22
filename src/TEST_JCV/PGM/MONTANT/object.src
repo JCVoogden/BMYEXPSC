@@ -1,0 +1,38 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20080819)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20080819)      num_bin_4 i
+*ROW_METADATA(ADELIA         20080819)   FIN_DECL
+*ROW_METADATA(ADELIA         20080819)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080819)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080826)         supprimer_sql montants
+*ROW_METADATA(ADELIA         20080826)         
+*ROW_METADATA(ADELIA         20080826)         valider_maj
+*ROW_METADATA(ADELIA         20080826)         
+*ROW_METADATA(ADELIA         20080826)         mmontant = 10000
+*ROW_METADATA(ADELIA         20080819)         
+*ROW_METADATA(ADELIA         20080819)         tant_que i < 100
+*ROW_METADATA(ADELIA         20080819)         
+*ROW_METADATA(ADELIA         20080819)            creer_sql montants
+*ROW_METADATA(ADELIA         20080819)            mmontant = mmontant + 0.01
+*ROW_METADATA(ADELIA         20080819)            i = i + 1
+*ROW_METADATA(ADELIA         20080819)         refaire
+*ROW_METADATA(ADELIA         20080819)         
+*ROW_METADATA(ADELIA         20080826)         valider_maj
+*ROW_METADATA(ADELIA         20080826)         
+*ROW_METADATA(ADELIA         20080826)         i = 0
+*ROW_METADATA(ADELIA         20080826)         mmontant = 10000
+*ROW_METADATA(ADELIA         20080826)         
+*ROW_METADATA(ADELIA         20080826)         tant_que i < 50
+*ROW_METADATA(ADELIA         20080826)         
+*ROW_METADATA(ADELIA         20080826)            supprimer_sql montants *cond(mmontant = :mmontant)
+*ROW_METADATA(ADELIA         20080826)            mmontant = mmontant + 0.01
+*ROW_METADATA(ADELIA         20080826)            i = i + 1
+*ROW_METADATA(ADELIA         20080826)         refaire
+*ROW_METADATA(ADELIA         20080826)         
+*ROW_METADATA(ADELIA         20080826)         valider_maj
+*ROW_METADATA(ADELIA         20080826)         
+*ROW_METADATA(ADELIA         20080826)         
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080819)   FIN_INIT
+*ROW_METADATA(ADELIA                 )FIN_PGM

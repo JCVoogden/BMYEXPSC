@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "TESTWEB",
+  "description" : "TESTWEB",
+  "creationDate" : "2011-01-10 09:09:26",
+  "updateDate" : "2011-01-11 15:09:08",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TestWeb",
+  "programType" : "I",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "TSTWEB",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "keepState" : true
+}

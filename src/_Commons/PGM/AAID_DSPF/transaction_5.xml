@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="4 éme AIDE" format1="05" functionKeys="  A        A            " transactionType="FEN_AIDE" updateDate="1753-01-01" updateTime="00:00:00" windowType="WINDOW" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="05" eraseInput="false" guideWord="FOR05" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="23" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR05" truncate="false"/>
+    </formats>
+    <entities/>
+    <fields>
+        <field formatCode="05" kind="CONSTANT" layoutCode="*" length="22" x="46" y="10">
+            <text text="Il faudra aller mettre"/>
+        </field>
+        <field formatCode="05" kind="CONSTANT" layoutCode="*" length="17" x="46" y="11">
+            <text text="le mot clé format"/>
+        </field>
+        <field formatCode="05" kind="CONSTANT" layoutCode="*" length="18" x="46" y="12">
+            <text text="ASSUME = O pour le"/>
+        </field>
+        <field formatCode="05" kind="CONSTANT" layoutCode="*" length="27" x="46" y="13">
+            <text text="format de cette transaction"/>
+        </field>
+        <field formatCode="05" kind="FRAME" layoutCode="*" length="31" x="44" y="9">
+            <text text="..............................."/>
+        </field>
+        <field formatCode="05" kind="WINDOW" layoutCode="*" length="1" x="44" y="10">
+            <text text=":"/>
+        </field>
+        <field formatCode="05" kind="WINDOW" layoutCode="*" length="1" x="74" y="10">
+            <text text=":"/>
+        </field>
+        <field formatCode="05" kind="WINDOW" layoutCode="*" length="1" x="44" y="11">
+            <text text=":"/>
+        </field>
+        <field formatCode="05" kind="WINDOW" layoutCode="*" length="1" x="74" y="11">
+            <text text=":"/>
+        </field>
+        <field formatCode="05" kind="WINDOW" layoutCode="*" length="1" x="44" y="12">
+            <text text=":"/>
+        </field>
+        <field formatCode="05" kind="WINDOW" layoutCode="*" length="1" x="74" y="12">
+            <text text=":"/>
+        </field>
+        <field formatCode="05" kind="WINDOW" layoutCode="*" length="1" x="44" y="13">
+            <text text=":"/>
+        </field>
+        <field formatCode="05" kind="WINDOW" layoutCode="*" length="1" x="74" y="13">
+            <text text=":"/>
+        </field>
+        <field formatCode="05" kind="WINDOW" layoutCode="*" length="31" x="44" y="14">
+            <text text="..............................."/>
+        </field>
+    </fields>
+</transaction>

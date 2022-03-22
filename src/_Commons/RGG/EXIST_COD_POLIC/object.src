@@ -1,0 +1,20 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   * Règle de gestion de type contrôle
+*ROW_METADATA(ADELIA                 )   * Contrôle du CODE Police pour un CLIENT
+*ROW_METADATA(ADELIA                 )   REGLE_GESTION 0016 $$EXIST
+*ROW_METADATA(ADELIA                 )   DECLARER WGCPOL;WG_COD_POL 5
+*ROW_METADATA(ADELIA                 )   DECLARER WGCCLI;WG_COD_CLI 6
+*ROW_METADATA(ADELIA                 )   IDENTIFIER RPOLICEL_COD POLICEL CLE ;WG_COD_CLI ;WG_COD_POL
+*ROW_METADATA(ADELIA                 )   WG_COD_POL = $$EXIST
+*ROW_METADATA(ADELIA                 )   WG_COD_CLI = CCOD_CLIENT
+*ROW_METADATA(ADELIA                 )   LIRE            RPOLICEL_COD
+*ROW_METADATA(ADELIA                 )   SI              RPOLICEL_COD  N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )     $DAT_POLICE = 0
+*ROW_METADATA(ADELIA                 )     $NUM_IMA_VEHIC = *BLANK
+*ROW_METADATA(ADELIA                 )     INIT_MSG $$EXIST WG_COD_CLI
+*ROW_METADATA(ADELIA                 )     ANOMALIE
+*ROW_METADATA(ADELIA                 )   SINON
+*ROW_METADATA(ADELIA                 )     $DAT_POLICE = PDAT_POLICE
+*ROW_METADATA(ADELIA                 )     $NUM_IMA_VEHIC = PNUM_IMA_VEHIC
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

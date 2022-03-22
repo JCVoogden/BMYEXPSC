@@ -1,0 +1,16 @@
+{
+  "type" : "PGM",
+  "name" : "EMPTYW",
+  "description" : "EMPTYW",
+  "creationDate" : "2009-03-09 14:22:05",
+  "updateDate" : "2011-05-04 09:40:25",
+  "visibility" : "PRIVATE",
+  "ibmName" : "EMPTYW",
+  "programType" : "I",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "EMPTYW",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "version" : 12,
+  "modification" : 1
+}

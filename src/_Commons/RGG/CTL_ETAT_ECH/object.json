@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CTL_ETAT_ECH",
+  "description" : "Contrôle de l'état de l'échéance",
+  "creationDate" : "1995-06-07 12:46:38",
+  "updateDate" : "1995-06-29 07:22:29",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

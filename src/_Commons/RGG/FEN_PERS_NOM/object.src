@@ -1,0 +1,17 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   * Guide d'affichage de la fenêtre des PERSONNES
+*ROW_METADATA(ADELIA                 )   GUIDE $$FEN
+*ROW_METADATA(ADELIA                 )   DECLARER WGCPER;WG_COD_PER 2
+*ROW_METADATA(ADELIA                 )   IDENTIFIER RPERSONNL_COD PERSONNL CLE ;WG_COD_PER
+*ROW_METADATA(ADELIA                 )   DECLARER PCRET;P_COD_RETOUR 1
+*ROW_METADATA(ADELIA                 )   DECLARER PCACT;P_COD_ACTION 2
+*ROW_METADATA(ADELIA                 )   APPELER FEN_PERSONNE P_COD_RETOUR P_COD_ACTION $$FEN
+*ROW_METADATA(ADELIA                 )   WG_COD_PER = $$FEN
+*ROW_METADATA(ADELIA                 )   LIRE            RPERSONNL_COD
+*ROW_METADATA(ADELIA                 )   SI              RPERSONNL_COD  N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )     $NOM_PERS = *BLANK
+*ROW_METADATA(ADELIA                 )   SINON
+*ROW_METADATA(ADELIA                 )     $NOM_PERS = PNOM_PERS
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )   FIN_GUIDE
+*ROW_METADATA(ADELIA                 )FIN_RGG

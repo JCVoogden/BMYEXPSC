@@ -1,0 +1,11 @@
+{
+  "type" : "ETA",
+  "name" : "EDI_SINISTRE_01",
+  "description" : "Edition d'un sinistre",
+  "creationDate" : "1995-06-08 07:09:24",
+  "updateDate" : "1995-06-08 07:09:24",
+  "visibility" : "PUBLIC",
+  "layoutCode" : "EDISI1",
+  "reportTypeName" : "EDI_FICHE",
+  "nature" : "ADELIA"
+}

@@ -1,0 +1,68 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(JCA            20020425)   DEBUT_DECL
+*ROW_METADATA(JCA            20020425)      *------------------------------------------------------------------* 
+*ROW_METADATA(JCA            20020425)      * Objet : Calcul du code fichier physique, logique et du format    * 
+*ROW_METADATA(JCA            20020425)      *         d'une entité logique                                     * 
+*ROW_METADATA(JCA            20020425)      *                                                                  * 
+*ROW_METADATA(JCA            20020425)      *------------------------------------------------------------------* 
+*ROW_METADATA(JCA            20020425)      * Paramètres échangés : - Code retour                     (S)      * 
+*ROW_METADATA(JCA            20020425)      *                       - Nom de l'entité                 (E)      * 
+*ROW_METADATA(JCA            20020425)      *                       - Nom physique                    (E/S)    * 
+*ROW_METADATA(JCA            20020425)      *                       - Nom format                      (E/S)    * 
+*ROW_METADATA(JCA            20020425)      *                       - Nom logique                     (E/S)    * 
+*ROW_METADATA(JCA            20020425)      *------------------------------------------------------------------* 
+*ROW_METADATA(JCA            20020425)      *                                                                    
+*ROW_METADATA(JCA            20020425)      * ATTENTION ON NE CALCULE LES PARAMETRES EN SORTIE QUE S'ILS SONT A  
+*ROW_METADATA(JCA            20020425)      * BLANC                                                              
+*ROW_METADATA(JCA            20020425)      *                                                                    
+*ROW_METADATA(JCA            20020425)      * CONVENTION : ON LIMITE VOLONTAIREMENT LES NOMS DES FICHIERS ET DES  
+*ROW_METADATA(JCA            20020425)      *  FORMATS A 8 CARACTERES. CECI AFIN D'EVITER DES PROBLEMES LORS 
+*ROW_METADATA(JCA            20020425)      *  DES GENERATIONS DES PROGRAMMES RPG TRAVAILLANT AVEC CES FICHIERS.
+*ROW_METADATA(JCA            20020425)      * 
+*ROW_METADATA(JCA            20020425)      ALPHA(15) PNOM_ENTITE
+*ROW_METADATA(JCA            20020425)      ALPHA(10)  PFICHIER
+*ROW_METADATA(JCA            20020425)      ALPHA(10) PFORMAT
+*ROW_METADATA(JCA            20020425)      ALPHA(10) PLOGIQUE
+*ROW_METADATA(JCA            20020425)      ALPHA(1) PCODE_RETOUR
+*ROW_METADATA(JCA            20020425)                                                                        
+*ROW_METADATA(JCA            20020425)      PARAM PNOM_ENTITE PFICHIER PFORMAT PLOGIQUE PCODE_RETOUR       
+*ROW_METADATA(JCA            20020425)        
+*ROW_METADATA(JCA            20020425)      ***** VARIABLES PRIVÉES ******
+*ROW_METADATA(JCA            20020425)      ALPHA(8) W8
+*ROW_METADATA(JCA            20020425)      ALPHA(7) W7
+*ROW_METADATA(JCA            20020425)      ALPHA(1) W1                                                                
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)   FIN_DECL
+*ROW_METADATA(JCA            20020425)   DEBUT_INIT
+*ROW_METADATA(JCA            20020425)      PCODE_RETOUR = '0'
+*ROW_METADATA(JCA            20020425)      SI PFICHIER = *BLANK                                                
+*ROW_METADATA(JCA            20020425)        W8 = PNOM_ENTITE                                                  
+*ROW_METADATA(JCA            20020425)        PFICHIER = W8                                                     
+*ROW_METADATA(JCA            20020425)      FIN                                                                 
+*ROW_METADATA(JCA            20020425)      *                                                                   
+*ROW_METADATA(JCA            20020425)      W8 = PFICHIER                                                       
+*ROW_METADATA(JCA            20020425)      *                                                                   
+*ROW_METADATA(JCA            20020425)      SI PFORMAT = *BLANK                                                 
+*ROW_METADATA(JCA            20020425)        W7 = PNOM_ENTITE                                                  
+*ROW_METADATA(JCA            20020425)        PLACER_A_DROITE W8 W1                                             
+*ROW_METADATA(JCA            20020425)        SI W1 <> 'F'                                                      
+*ROW_METADATA(JCA            20020425)          PFORMAT = W7 /// 'F'                                            
+*ROW_METADATA(JCA            20020425)        SINON 
+*ROW_METADATA(JCA            20020425)          PFORMAT = W7 /// 'R'  
+*ROW_METADATA(JCA            20020425)        FIN                     
+*ROW_METADATA(JCA            20020425)      FIN                       
+*ROW_METADATA(JCA            20020425)      *                         
+*ROW_METADATA(JCA            20020425)      SI PLOGIQUE = *BLANK      
+*ROW_METADATA(JCA            20020425)        W7 = PNOM_ENTITE        
+*ROW_METADATA(JCA            20020425)        PLACER_A_DROITE W8 W1   
+*ROW_METADATA(JCA            20020425)        SI W1 <> 'L'            
+*ROW_METADATA(JCA            20020425)          PLOGIQUE = W7 /// 'L' 
+*ROW_METADATA(JCA            20020425)        SINON                   
+*ROW_METADATA(JCA            20020425)          PLOGIQUE = W7 /// 'M' 
+*ROW_METADATA(JCA            20020425)        FIN                     
+*ROW_METADATA(JCA            20020425)      FIN                       
+*ROW_METADATA(JCA            20020425)      *                         
+*ROW_METADATA(JCA            20020425)      TERMINER                                                                                  
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)   FIN_INIT
+*ROW_METADATA(ADELIA                 )FIN_PGM

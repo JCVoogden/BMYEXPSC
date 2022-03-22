@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "SQL_BASE",
+  "description" : "Test des ordres SQL de base",
+  "creationDate" : "2006-10-16 09:51:25",
+  "updateDate" : "2011-07-07 13:50:39",
+  "visibility" : "PRIVATE",
+  "ibmName" : "SQLBAS",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "SQLBAS",
+  "level2GenType" : 2,
+  "level2DatabaseGenMode" : "SQL"
+}

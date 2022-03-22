@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Aide générale de la maquette" format1="02" functionKeys="  A        A            " transactionType="FEN_AIDE" updateDate="1753-01-01" updateTime="00:00:00" windowType="WINDOW" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="02" eraseInput="false" guideWord="FOR02" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="23" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR02" truncate="false"/>
+    </formats>
+    <entities/>
+    <fields>
+        <field formatCode="02" hilight="true" kind="CONSTANT" layoutCode="*" length="24" x="25" y="15">
+            <text text="Aide générale sur MAJART"/>
+        </field>
+        <field color="YELLOW" formatCode="02" kind="CONSTANT" layoutCode="*" length="41" x="19" y="17">
+            <text text="Pour créer un article il faut que le code"/>
+        </field>
+        <field color="YELLOW" formatCode="02" kind="CONSTANT" layoutCode="*" length="30" x="19" y="18">
+            <text text="famille existe dans le fichier"/>
+        </field>
+        <field blink="true" description="*" formatCode="02" guideWord="*" kind="CONSTANT" layoutCode="*" length="7" x="50" y="18">
+            <text text="FAMILLE"/>
+        </field>
+        <field color="BLUE" formatCode="02" kind="CONSTANT" layoutCode="*" length="35" x="19" y="19">
+            <text text="Il existe une aide sur Code article"/>
+        </field>
+        <field color="PINK" formatCode="02" kind="CONSTANT" layoutCode="*" length="43" x="19" y="20">
+            <text text="Il existe une aide sur Désignation article"/>
+        </field>
+        <field color="TURQUOISE" formatCode="02" kind="CONSTANT" layoutCode="*" length="38" x="19" y="21">
+            <text text="il existe une aide sur Libéllé famille"/>
+        </field>
+        <field formatCode="02" hilight="true" kind="FRAME" layoutCode="*" length="49" x="16" y="14">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="16" y="15">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="64" y="15">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="16" y="16">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="64" y="16">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="16" y="17">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="64" y="17">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="16" y="18">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="64" y="18">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="16" y="19">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="64" y="19">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="16" y="20">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="64" y="20">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="16" y="21">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="64" y="21">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="16" y="22">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="1" x="64" y="22">
+            <text/>
+        </field>
+        <field formatCode="01" hilight="true" kind="WINDOW" layoutCode="*" length="49" x="16" y="23">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="FRAME" layoutCode="*" length="-15" x="16" y="15">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="-15" x="16">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="FRAME" layoutCode="*" length="-63" x="64" y="15">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="-63" x="64">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="FRAME" layoutCode="*" length="-15" x="16" y="16">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="-15" x="16">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="FRAME" layoutCode="*" length="-63" x="64" y="16">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="-63" x="64">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="FRAME" layoutCode="*" length="-15" x="16" y="17">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="-15" x="16">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="FRAME" layoutCode="*" length="-63" x="64" y="17">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="-63" x="64">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="FRAME" layoutCode="*" length="-15" x="16" y="18">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="-15" x="16">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="FRAME" layoutCode="*" length="-63" x="64" y="18">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="-63" x="64">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="FRAME" layoutCode="*" length="-15" x="16" y="19">
+            <text/>
+        </field>
+        <field formatCode="02" hilight="true" kind="WINDOW" layoutCode="*" length="-15" x="16">
+            <text/>
+        </field>
+    </fields>
+</transaction>

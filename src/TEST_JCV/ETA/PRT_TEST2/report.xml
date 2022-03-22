@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml report.xsd">
+    <formats>
+        <format blankLinesBefore="1" code="01" guideWord="SOR01" jumpLinesBefore="1" nbLines="3" overlay="false" shortName="SOR01"/>
+        <format blankLinesBefore="1" code="02" guideWord="SOR02" nbLines="1" overlay="false" shortName="SOR02"/>
+        <format blankLinesBefore="1" code="03" guideWord="SOR03" nbLines="3" overlay="false" shortName="SOR03"/>
+    </formats>
+    <entities>
+        <entity format="02" name="ANSI_UNICODE"/>
+    </entities>
+    <fields>
+        <field formatCode="01" kind="CONSTANT" layoutCode="*" length="26" x="30" y="2">
+            <text text="Impression contenu Unicode"/>
+        </field>
+        <field description="Date du système" formatCode="03" guideWord="DATE" kind="DATE" layoutCode="DATE" length="6" mode="OUTPUT" type="NUMBER" x="63" y="6">
+            <parameters>
+                <parameter key="EDW" value="'  /  /  '"/>
+            </parameters>
+        </field>
+        <field description="Heure du système" formatCode="03" guideWord="TIME" kind="TIME" layoutCode="TIME" length="6" mode="OUTPUT" type="NUMBER" x="72" y="6">
+            <parameters>
+                <parameter key="EDW" value="'  :  :  '"/>
+            </parameters>
+        </field>
+        <field description="Créée par l'importation du MLD" formatCode="02" guideWord="ZUNICODE" kind="VARIABLE" layoutCode="ZUNICODE" length="25" logicalProperty="ANSI_UNICODE.UNICODE" mode="OUTPUT" type="STRING" x="42" y="4"/>
+        <field description="Créée par l'importation du MLD" formatCode="02" guideWord="ZANSI" kind="VARIABLE" layoutCode="ZANSI" length="25" logicalProperty="ANSI_UNICODE.ANSI" mode="OUTPUT" type="STRING" x="14" y="4"/>
+    </fields>
+</report>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Visualisation des polices d'un client" format1="01" format2="*1" format3="03" functionKeys="  A        A            " transactionType="FEN_INT_OPT_APA" updateDate="1753-01-01" updateTime="00:00:00" windowType="WINDOW" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="*1" eraseInput="false" guideWord="SFL01" help="false" jumpLinesBefore="8" keep="false" lock="false" nbColumns="1" nbLines="5" overlay="false" pagination="DYNAMIC" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="SFL01" subFilePageSize="5" subFileSize="6" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="01" eraseInput="false" guideWord="CTL01" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="7" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="CTL01" subFileCode="*1" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="03" eraseInput="false" guideWord="FOR03" help="false" jumpLinesBefore="13" keep="false" lock="false" nbColumns="1" nbLines="11" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR03" truncate="false"/>
+    </formats>
+    <entities>
+        <entity access="SEQUENTIAL_WITH_KEY" format="*1" name="POLICE">
+            <properties>
+                <property access="1" name="COD_CLIENT"/>
+            </properties>
+        </entity>
+        <entity format="01" name="CLIENTS">
+            <properties>
+                <property name="COD_CLIENT">
+                    <excludedRules>
+                        <rule name="CTR_SAISIE_ALPH"/>
+                    </excludedRules>
+                </property>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field color="BLUE" description="*" formatCode="01" guideWord="*" kind="CONSTANT" layoutCode="*" length="45" x="31" y="4">
+            <text text="Indiquez vos options, puis appuyer sur ENTREE"/>
+        </field>
+        <field color="BLUE" description="*" formatCode="01" guideWord="*" kind="CONSTANT" layoutCode="*" length="9" x="33" y="5">
+            <text text="1=Choisir"/>
+        </field>
+        <field formatCode="01" kind="CONSTANT" layoutCode="*" length="25" x="43" y="6">
+            <text text="Afficher à partir de ...."/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="true" description="Afficher à parti Code client" formatCode="01" guideWord="ZWAFF_PARTIR" kind="VARIABLE" layoutCode="ZWAFFI" length="6" logicalProperty="CLIENTS.COD_CLIENT" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="70" y="6">
+            <parameters>
+                <parameter key="EXP" value="000001"/>
+            </parameters>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="3" x="30" y="7">
+            <text text="Opt"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="6" x="34" y="7">
+            <text text="Client"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="6" x="41" y="7">
+            <text text="Police"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="9" x="49" y="7">
+            <text text="D. police"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="15" x="60" y="7">
+            <text text="Immatriculation"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code de l'option" formatCode="*1" guideWord="ZW_COD_OPTION" kind="USER_VARIABLE" layoutCode="ZWCOPT" length="1" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="31" y="8"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code client" formatCode="*1" guideWord="ZZCOD_CLIENT" kind="VARIABLE" kinematicLogicalProperty="POLICE.COD_CLIENT" layoutCode="ZZCCLI" length="6" logicalProperty="POLICE.COD_CLIENT" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="5" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="34" y="8">
+            <parameters>
+                <parameter key="EXP" value="000001"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Numéro de la police d'assuranc" formatCode="*1" guideWord="ZZNUM_POLICE" kind="VARIABLE" kinematicLogicalProperty="POLICE.NUM_POLICE" layoutCode="ZZCPOL" length="5" logicalProperty="POLICE.NUM_POLICE" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="6" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="41" y="8"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Date de la police d'assurance" formatCode="*1" guideWord="ZZDAT_POLICE" kind="USER_VARIABLE" kinematicLogicalProperty="POLICE.DAT_POLICE" layoutCode="ZZDPOL" length="8" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="48" y="8">
+            <parameters>
+                <parameter key="EDW" value="'0 /  /    '"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Numéro d'immatriculation véhic" formatCode="*1" guideWord="ZZNUM_IMA_VEHIC" kind="VARIABLE" kinematicLogicalProperty="POLICE.NUM_IMA_VEHIC" layoutCode="ZZNIVE" length="15" logicalProperty="POLICE.NUM_IMA_VEHIC" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="8" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="60" y="8"/>
+        <field color="BLUE" formatCode="03" kind="CONSTANT" layoutCode="*" length="21" x="39" y="13">
+            <text text="F3=Exit F12=Précédent"/>
+        </field>
+        <field formatCode="01" kind="FRAME" layoutCode="*" length="51" reverseImage="true" x="28" y="3">
+            <text/>
+        </field>
+        <field formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="28" y="4">
+            <text/>
+        </field>
+        <field formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="78" y="4">
+            <text/>
+        </field>
+        <field formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="28" y="5">
+            <text/>
+        </field>
+        <field formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="78" y="5">
+            <text/>
+        </field>
+        <field formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="28" y="6">
+            <text/>
+        </field>
+        <field formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="78" y="6">
+            <text/>
+        </field>
+        <field formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="28" y="7">
+            <text/>
+        </field>
+        <field formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="78" y="7">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="28" y="8">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="78" y="8">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="28" y="9">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="78" y="9">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="28" y="10">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="78" y="10">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="28" y="11">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="78" y="11">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="28" y="12">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="78" y="12">
+            <text/>
+        </field>
+        <field formatCode="03" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="28" y="13">
+            <text/>
+        </field>
+        <field formatCode="03" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="78" y="13">
+            <text/>
+        </field>
+        <field formatCode="03" kind="WINDOW" layoutCode="*" length="51" reverseImage="true" x="28" y="14">
+            <text/>
+        </field>
+    </fields>
+</transaction>

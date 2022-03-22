@@ -1,0 +1,177 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20040225)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20040225)      
+*ROW_METADATA(ADELIA         20040225)   FIN_DECL
+*ROW_METADATA(ADELIA         20040225)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20040301)      INITIALISER FEN_PAIRE_IMPAIRE_EX
+*ROW_METADATA(ADELIA         20040301)      EXECUTER FEN_PAIRE_IMPAIRE_EX
+*ROW_METADATA(ADELIA         20040225)   FIN_INIT
+*ROW_METADATA(ADELIA         20040227)   DEBUT_FENETRE FEN_PAIRE_IMPAIRE_EX
+*ROW_METADATA(ADELIA         20040225)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20040225)         NUM_BIN_4 Couleur
+*ROW_METADATA(ADELIA         20040226)         BOOL CodeRetour
+*ROW_METADATA(ADELIA         20040226)         NUM_E(9,0) NbrElement
+*ROW_METADATA(ADELIA         20040226)         NUM_BIN_4 NumLigne
+*ROW_METADATA(ADELIA         20040225)      FIN_DECL
+*ROW_METADATA(ADELIA         20040225)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20040225)         * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040225)         * !   Création de quelques éléments dans la !
+*ROW_METADATA(ADELIA         20040225)         * ! liste graphique                         !
+*ROW_METADATA(ADELIA         20040225)         * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040225)         
+*ROW_METADATA(ADELIA         20040225)         COL_NOM:VALEUR = 'DUPONT'
+*ROW_METADATA(ADELIA         20040225)         COL_PRN:VALEUR = 'Pierre'
+*ROW_METADATA(ADELIA         20040225)         COL_SEXE:VALEUR = 'M'
+*ROW_METADATA(ADELIA         20040225)         COL_FONCTION:VALEUR = 'Président'
+*ROW_METADATA(ADELIA         20040225)         INSERER_ELT LST_EX:LISTE
+*ROW_METADATA(ADELIA         20040225)         
+*ROW_METADATA(ADELIA         20040225)         COL_NOM:VALEUR = 'POPOL'
+*ROW_METADATA(ADELIA         20040225)         COL_PRN:VALEUR = 'Perrine'
+*ROW_METADATA(ADELIA         20040225)         COL_SEXE:VALEUR = 'F'
+*ROW_METADATA(ADELIA         20040225)         COL_FONCTION:VALEUR = 'Secrétaire'
+*ROW_METADATA(ADELIA         20040225)         INSERER_ELT LST_EX:LISTE
+*ROW_METADATA(ADELIA         20040225)         
+*ROW_METADATA(ADELIA         20040225)         COL_NOM:VALEUR = 'DUPIC'
+*ROW_METADATA(ADELIA         20040225)         COL_PRN:VALEUR = 'Michel'
+*ROW_METADATA(ADELIA         20040225)         COL_SEXE:VALEUR = 'M'
+*ROW_METADATA(ADELIA         20040225)         COL_FONCTION:VALEUR = 'Programmeur'
+*ROW_METADATA(ADELIA         20040225)         INSERER_ELT LST_EX:LISTE
+*ROW_METADATA(ADELIA         20040225)         
+*ROW_METADATA(ADELIA         20040225)         COL_NOM:VALEUR = 'BIDOUX'
+*ROW_METADATA(ADELIA         20040225)         COL_PRN:VALEUR = 'Jacques'
+*ROW_METADATA(ADELIA         20040225)         COL_SEXE:VALEUR = 'M'
+*ROW_METADATA(ADELIA         20040225)         COL_FONCTION:VALEUR = 'Stagiaire'
+*ROW_METADATA(ADELIA         20040225)         INSERER_ELT LST_EX:LISTE
+*ROW_METADATA(ADELIA         20040225)         
+*ROW_METADATA(ADELIA         20040225)         
+*ROW_METADATA(ADELIA         20040225)         * !---------------------------!
+*ROW_METADATA(ADELIA         20040225)         * ! Tri de la liste graphique !
+*ROW_METADATA(ADELIA         20040225)         * !---------------------------!
+*ROW_METADATA(ADELIA         20040225)         
+*ROW_METADATA(ADELIA         20040225)         TRIER_LST LST_EX:LISTE COL_NOM:VALEUR, COL_PRN:VALEUR, COL_FONCTION:VALEUR, COL_SEXE:VALEUR
+*ROW_METADATA(ADELIA         20040225)         
+*ROW_METADATA(ADELIA         20040225)         
+*ROW_METADATA(ADELIA         20040225)         * !-------------------------------!
+*ROW_METADATA(ADELIA         20040225)         * ! Initialisation des couleurs   !
+*ROW_METADATA(ADELIA         20040225)         * ! des lignes paires et impaires !
+*ROW_METADATA(ADELIA         20040225)         * !-------------------------------!
+*ROW_METADATA(ADELIA         20040225)         
+*ROW_METADATA(ADELIA         20040225)         LST_EX:DISTINGUER_PAIR_IMPAIR = *VRAI
+*ROW_METADATA(ADELIA         20040225)         
+*ROW_METADATA(ADELIA         20040302)         COL_NOM:COULEUR_TEXTE = _COL_COUL_AUCUN
+*ROW_METADATA(ADELIA         20040302)         COL_NOM:COULEUR_FOND = _COL_COUL_AUCUN
+*ROW_METADATA(ADELIA         20040302)         COL_PRN:COULEUR_TEXTE = _COL_COUL_AUCUN
+*ROW_METADATA(ADELIA         20040302)         COL_PRN:COULEUR_FOND = _COL_COUL_AUCUN
+*ROW_METADATA(ADELIA         20040302)         COL_SEXE:COULEUR_TEXTE = _COL_COUL_AUCUN
+*ROW_METADATA(ADELIA         20040302)         COL_SEXE:COULEUR_FOND = _COL_COUL_AUCUN
+*ROW_METADATA(ADELIA         20040302)         COL_FONCTION:COULEUR_TEXTE = _COL_COUL_AUCUN
+*ROW_METADATA(ADELIA         20040302)         COL_FONCTION:COULEUR_FOND = _COL_COUL_AUCUN
+*ROW_METADATA(ADELIA         20040225)         
+*ROW_METADATA(ADELIA         20040225)         LST_EX:LIGNE_PAIRE_COUL_TXT = _LST_COUL_SYSTEME
+*ROW_METADATA(ADELIA         20040225)         LST_EX:LIGNE_PAIRE_COUL_FOND = _LST_COUL_BLANC
+*ROW_METADATA(ADELIA         20040225)         LST_EX:LIGNE_IMPAIRE_COUL_TXT = _LST_COUL_SYSTEME
+*ROW_METADATA(ADELIA         20040225)         LST_EX:LIGNE_IMPAIRE_COUL_FOND = _LST_COUL_GRIS
+*ROW_METADATA(ADELIA         20040225)      FIN_INIT
+*ROW_METADATA(ADELIA         20040225)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20040225)         DEBUT_OBJET BTN_QUITTER
+*ROW_METADATA(ADELIA         20040225)            DEBUT_EVT BTN_QUITTER:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20040225)               TERMINER
+*ROW_METADATA(ADELIA         20040225)            FIN_EVT
+*ROW_METADATA(ADELIA         20040225)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040225)         DEBUT_OBJET BTN_CHGT_COUL_TEXTE_PAIRE
+*ROW_METADATA(ADELIA         20040225)            DEBUT_EVT BTN_CHGT_COUL_TEXTE_PAIRE:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20040225)               * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040225)               * !   Ouverture de la boite pour choisir la !
+*ROW_METADATA(ADELIA         20040225)               * ! couleur du texte des lignes paires      !
+*ROW_METADATA(ADELIA         20040225)               * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040225)               
+*ROW_METADATA(ADELIA         20040301)               APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxChooseColor' FEN_PAIRE_IMPAIRE_EX Couleur CodeRetour
+*ROW_METADATA(ADELIA         20040225)               SI CodeRetour
+*ROW_METADATA(ADELIA         20040225)                  LST_EX:LIGNE_PAIRE_COUL_TXT = Couleur
+*ROW_METADATA(ADELIA         20040225)               FIN
+*ROW_METADATA(ADELIA         20040225)            FIN_EVT
+*ROW_METADATA(ADELIA         20040225)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040225)         DEBUT_OBJET BTN_CHGT_COUL_FOND_PAIRE
+*ROW_METADATA(ADELIA         20040225)            DEBUT_EVT BTN_CHGT_COUL_FOND_PAIRE:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20040225)               * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040225)               * !   Ouverture de la boite pour choisir la !
+*ROW_METADATA(ADELIA         20040225)               * ! couleur du fond des lignes paires       !
+*ROW_METADATA(ADELIA         20040225)               * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040225)               
+*ROW_METADATA(ADELIA         20040301)               APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxChooseColor' FEN_PAIRE_IMPAIRE_EX Couleur CodeRetour
+*ROW_METADATA(ADELIA         20040225)               SI CodeRetour
+*ROW_METADATA(ADELIA         20040225)                  LST_EX:LIGNE_PAIRE_COUL_FOND = Couleur
+*ROW_METADATA(ADELIA         20040225)               FIN
+*ROW_METADATA(ADELIA         20040225)            FIN_EVT
+*ROW_METADATA(ADELIA         20040225)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040225)         DEBUT_OBJET BTN_CHGT_COUL_TEXTE_IMPAIRE
+*ROW_METADATA(ADELIA         20040225)            DEBUT_EVT BTN_CHGT_COUL_TEXTE_IMPAIRE:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20040225)               * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040225)               * !   Ouverture de la boite pour choisir la !
+*ROW_METADATA(ADELIA         20040225)               * ! couleur du texte des lignes impaires    !
+*ROW_METADATA(ADELIA         20040225)               * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040225)               
+*ROW_METADATA(ADELIA         20040301)               APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxChooseColor' FEN_PAIRE_IMPAIRE_EX Couleur CodeRetour
+*ROW_METADATA(ADELIA         20040225)               SI CodeRetour
+*ROW_METADATA(ADELIA         20040225)                  LST_EX:LIGNE_IMPAIRE_COUL_TXT = Couleur
+*ROW_METADATA(ADELIA         20040225)               FIN
+*ROW_METADATA(ADELIA         20040225)            FIN_EVT
+*ROW_METADATA(ADELIA         20040225)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040225)         DEBUT_OBJET BTN_CHGT_COUL_FOND_IMPAIRE
+*ROW_METADATA(ADELIA         20040225)            DEBUT_EVT BTN_CHGT_COUL_FOND_IMPAIRE:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20040225)               * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040225)               * !   Ouverture de la boite pour choisir la !
+*ROW_METADATA(ADELIA         20040225)               * ! couleur du fond des lignes impaires     !
+*ROW_METADATA(ADELIA         20040225)               * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040225)               
+*ROW_METADATA(ADELIA         20040301)               APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxChooseColor' FEN_PAIRE_IMPAIRE_EX Couleur CodeRetour
+*ROW_METADATA(ADELIA         20040225)               SI CodeRetour
+*ROW_METADATA(ADELIA         20040225)                  LST_EX:LIGNE_IMPAIRE_COUL_FOND = Couleur
+*ROW_METADATA(ADELIA         20040225)               FIN
+*ROW_METADATA(ADELIA         20040225)            FIN_EVT
+*ROW_METADATA(ADELIA         20040225)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040225)         DEBUT_OBJET BTN_CHGT_COUL_COL_PRN
+*ROW_METADATA(ADELIA         20040225)            DEBUT_EVT BTN_CHGT_COUL_COL_PRN:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20040225)               * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040225)               * !   Ouverture de la boite pour choisir la !
+*ROW_METADATA(ADELIA         20040225)               * ! couleur de la colonne des Prénoms       !
+*ROW_METADATA(ADELIA         20040225)               * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040226)               
+*ROW_METADATA(ADELIA         20040301)               APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxChooseColor' FEN_PAIRE_IMPAIRE_EX Couleur CodeRetour
+*ROW_METADATA(ADELIA         20040226)               SI CodeRetour
+*ROW_METADATA(ADELIA         20040226)                  NbrElement = &NBR_ELT(LST_EX:LISTE)
+*ROW_METADATA(ADELIA         20040226)                  NumLigne = 1
+*ROW_METADATA(ADELIA         20040226)                  TANT_QUE NumLigne <= NbrElement
+*ROW_METADATA(ADELIA         20040226)                     APPELER_METHODE LST_EX RECUPERER_PROPRIETES_COLONNES NumLigne CodeRetour
+*ROW_METADATA(ADELIA         20040226)                     COL_PRN:COULEUR_FOND = Couleur
+*ROW_METADATA(ADELIA         20040226)                     APPELER_METHODE LST_EX FIXER_PROPRIETES_COLONNES NumLigne CodeRetour
+*ROW_METADATA(ADELIA         20040226)                     NumLigne = NumLigne + 1
+*ROW_METADATA(ADELIA         20040226)                  REFAIRE
+*ROW_METADATA(ADELIA         20040226)               FIN
+*ROW_METADATA(ADELIA         20040225)            FIN_EVT
+*ROW_METADATA(ADELIA         20040225)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040225)         DEBUT_OBJET BTN_PROP_PAIRE_IMPAIRE
+*ROW_METADATA(ADELIA         20040225)            DEBUT_EVT BTN_PROP_PAIRE_IMPAIRE:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20040225)               * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040225)               * !   On met ou on retire la proriété       !
+*ROW_METADATA(ADELIA         20040225)               * ! Paire/Impaire sur la liste              !
+*ROW_METADATA(ADELIA         20040225)               * !-----------------------------------------!
+*ROW_METADATA(ADELIA         20040225)               
+*ROW_METADATA(ADELIA         20040225)               SI LST_EX:DISTINGUER_PAIR_IMPAIR = *FAUX
+*ROW_METADATA(ADELIA         20040225)                  LST_EX:DISTINGUER_PAIR_IMPAIR = *VRAI
+*ROW_METADATA(ADELIA         20040225)               SINON
+*ROW_METADATA(ADELIA         20040225)                  LST_EX:DISTINGUER_PAIR_IMPAIR = *FAUX
+*ROW_METADATA(ADELIA         20040225)               FIN
+*ROW_METADATA(ADELIA         20040225)            FIN_EVT
+*ROW_METADATA(ADELIA         20040225)         FIN_OBJET
+*ROW_METADATA(ADELIA         20040225)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20040225)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20040225)         
+*ROW_METADATA(ADELIA         20040225)      FIN_VERIF
+*ROW_METADATA(ADELIA         20040225)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20040225)         
+*ROW_METADATA(ADELIA         20040225)      FIN_VALID
+*ROW_METADATA(ADELIA         20040225)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20040225)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20040227)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

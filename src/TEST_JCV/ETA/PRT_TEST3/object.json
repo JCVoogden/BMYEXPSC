@@ -1,0 +1,10 @@
+{
+  "type" : "ETA",
+  "name" : "PRT_TEST3",
+  "description" : "Impression contenu Unicode",
+  "creationDate" : "2011-05-23 13:49:38",
+  "updateDate" : "2011-05-23 13:49:50",
+  "visibility" : "PRIVATE",
+  "layoutCode" : "PRTST3",
+  "nature" : "ADELIA"
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Confirmation de la suppression de fichie" format1="E4" format2="C4" format3="*4" format4="B4" functionKeys="           A            " updateDate="1753-01-01" updateTime="00:00:00" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="*4" eraseInput="false" guideWord="SFL04" help="false" jumpLinesBefore="8" keep="false" lock="false" nbColumns="1" nbLines="14" overlay="false" pagination="STATIC" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="SFL04" subFilePageSize="14" subFileSize="15" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="B4" eraseInput="false" help="false" jumpLinesBefore="22" keep="false" lock="false" nbColumns="1" nbLines="2" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FORB4" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="C4" eraseInput="false" help="false" jumpLinesBefore="7" keep="false" lock="false" nbColumns="1" nbLines="1" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="CTLC4" subFileCode="*4" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="E4" eraseInput="false" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="6" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FORE4" truncate="false"/>
+    </formats>
+    <entities/>
+    <fields>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="NOM DU PROGRAMME" formatCode="E4" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="E4" hilight="true" kind="CONSTANT" layoutCode="*" length="42" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="20" y="1">
+            <text text="Confirmation de la suppression de fichiers"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="E4" kind="CONSTANT" layoutCode="*" length="70" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="4">
+            <text text="Appuyez sur ENTREE pour confirmer votre demande de suppression.       "/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="E4" kind="CONSTANT" layoutCode="*" length="71" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="5">
+            <text text="Appuyez sur F12=Annuler pour modifier vos choix.                       "/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="C4" hilight="true" kind="CONSTANT" layoutCode="*" length="10" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="5" y="7">
+            <text text="Nom entité"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="C4" hilight="true" kind="CONSTANT" layoutCode="*" length="7" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="19" y="7">
+            <text text="Fichier"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="C4" hilight="true" kind="CONSTANT" layoutCode="*" length="11" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="38" y="7">
+            <text text="Description"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="C4" hilight="true" kind="CONSTANT" layoutCode="*" length="7" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="60" y="7">
+            <text text="Préfixe"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom entité" formatCode="*4" guideWord="ZZ_NOM_ENTITE" kind="USER_VARIABLE" layoutCode="ZZNENT" length="15" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="8"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom de fichier" formatCode="*4" guideWord="ZFI_NOM_FICHIER" kind="USER_VARIABLE" layoutCode="ZILFIC" length="8" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="19" y="8"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Description fichier" formatCode="*4" guideWord="ZFI_LIB_FICHIER" kind="USER_VARIABLE" layoutCode="ZILDSF" length="30" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="29" y="8"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code préfixe" formatCode="*4" guideWord="ZFI_COD_PREFIXE" kind="USER_VARIABLE" layoutCode="ZICPRE" length="2" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="62" y="8"/>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="B4" kind="CONSTANT" layoutCode="*" length="11" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="23">
+            <text text="F12=Annuler"/>
+        </field>
+        <field formatCode="*4" guideWord="ZC_NUM_ENREG" kind="USER_VARIABLE" layoutCode="ZCNENR" length="10" mode="HIDDEN" type="NUMBER"/>
+    </fields>
+</transaction>

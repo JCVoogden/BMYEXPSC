@@ -1,0 +1,19 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   * Règle de gestion de type contrôle
+*ROW_METADATA(ADELIA                 )   * Contrôle du CODE VEHICULE
+*ROW_METADATA(ADELIA                 )   REGLE_GESTION 0012 $$EXIST
+*ROW_METADATA(ADELIA                 )   DECLARER WGCVEH;WG_COD_VEH 15
+*ROW_METADATA(ADELIA                 )   IDENTIFIER RVEHICUL_COD VEHICUL CLE ;WG_COD_VEH
+*ROW_METADATA(ADELIA                 )   WG_COD_VEH = $$EXIST
+*ROW_METADATA(ADELIA                 )   LIRE            RVEHICUL_COD
+*ROW_METADATA(ADELIA                 )   SI              RVEHICUL_COD  N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )     $MAR_VEHICULE = *BLANK
+*ROW_METADATA(ADELIA                 )     $MDL_VEHICULE = *BLANK
+*ROW_METADATA(ADELIA                 )     $PUI_VEHICULE = *BLANK
+*ROW_METADATA(ADELIA                 )     ANOMALIE
+*ROW_METADATA(ADELIA                 )   SINON
+*ROW_METADATA(ADELIA                 )     $MAR_VEHICULE = VMAR_VEHICULE
+*ROW_METADATA(ADELIA                 )     $MDL_VEHICULE = VMDL_VEHICULE
+*ROW_METADATA(ADELIA                 )     $PUI_VEHICULE = VPUI_VEHICULE
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

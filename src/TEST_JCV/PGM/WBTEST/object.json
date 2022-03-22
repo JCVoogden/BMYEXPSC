@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "WBTEST",
+  "description" : "WBTEST",
+  "creationDate" : "2008-05-13 15:14:09",
+  "updateDate" : "2008-05-13 15:24:53",
+  "visibility" : "PRIVATE",
+  "ibmName" : "WBTEST",
+  "programType" : "B",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "WBTEST",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

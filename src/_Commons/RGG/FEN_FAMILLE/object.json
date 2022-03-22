@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "FEN_FAMILLE",
+  "description" : "Guide de saisie pour le code famille",
+  "creationDate" : "1995-06-07 12:47:24",
+  "updateDate" : "1995-06-29 07:24:00",
+  "visibility" : "PUBLIC",
+  "mrClass" : "GS",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

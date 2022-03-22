@@ -1,0 +1,50 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(JCA            20020425)   DEBUT_DECL
+*ROW_METADATA(JCA            20020425)      *-------------------------------------------------------------* 
+*ROW_METADATA(JCA            20020425)      *                                                             * 
+*ROW_METADATA(JCA            20020425)      *   Recherche zone associée pour une information d'un         * 
+*ROW_METADATA(JCA            20020425)      *   fichier ou d'une entité                                   * 
+*ROW_METADATA(JCA            20020425)      *                                                             * 
+*ROW_METADATA(JCA            20020425)      *-------------------------------------------------------------* 
+*ROW_METADATA(JCA            20020425)      * Table de décision                                           * 
+*ROW_METADATA(JCA            20020425)      *                          Zone RPG   !  Zone COBOL           * 
+*ROW_METADATA(JCA            20020425)      *                           < 6   = 6 !  < 10  = 10           * 
+*ROW_METADATA(JCA            20020425)      *   -------------------------------------------------         * 
+*ROW_METADATA(JCA            20020425)      *   ! Ajout 'Z'          ! Oui        !  Oui        !         * 
+*ROW_METADATA(JCA            20020425)      *   ! 'Z' sur 1er caract.!        Oui !         Oui !         * 
+*ROW_METADATA(JCA            20020425)      *   -------------------------------------------------         * 
+*ROW_METADATA(JCA            20020425)      *-------------------------------------------------------------* 
+*ROW_METADATA(JCA            20020425)      ALPHA(10) ZONE
+*ROW_METADATA(JCA            20020425)      ALPHA(10) ZONE_ASSOCIEE
+*ROW_METADATA(JCA            20020425)      ALPHA(10)  FICHIER
+*ROW_METADATA(JCA            20020425)      ALPHA(1)  P_CODE_RETOUR
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      PARAM ZONE ZONE_ASSOCIEE FICHIER P_CODE_RETOUR
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      ***** VARIABLES PRIVÉES ****
+*ROW_METADATA(JCA            20020425)      ALPHA(1) W1
+*ROW_METADATA(JCA            20020425)      ALPHA(4) W4
+*ROW_METADATA(JCA            20020425)      ALPHA(5) W5
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)   FIN_DECL
+*ROW_METADATA(JCA            20020425)   DEBUT_INIT
+*ROW_METADATA(JCA            20020425)      P_CODE_RETOUR = '0'           
+*ROW_METADATA(JCA            20020425)      *                                              
+*ROW_METADATA(JCA            20020425)      PLACER_A_DROITE ZONE W1                        
+*ROW_METADATA(JCA            20020425)      PLACER_A_DROITE ZONE W4                        
+*ROW_METADATA(JCA            20020425)      PLACER_A_DROITE ZONE W5                        
+*ROW_METADATA(JCA            20020425)      *                                              
+*ROW_METADATA(JCA            20020425)      SI W5 = *BLANK OU W4 <> *BLANK  ET W1 = *BLANK 
+*ROW_METADATA(JCA            20020425)        *                                            
+*ROW_METADATA(JCA            20020425)        * On ajoute un 'Z' devant le code zone       
+*ROW_METADATA(JCA            20020425)        ZONE_ASSOCIEE = 'Z' // ZONE                  
+*ROW_METADATA(JCA            20020425)      SINON                                          
+*ROW_METADATA(JCA            20020425)        *                                            
+*ROW_METADATA(JCA            20020425)        * On remplace le 1er caractère par 'Z'       
+*ROW_METADATA(JCA            20020425)        ZONE_ASSOCIEE = ZONE                         
+*ROW_METADATA(JCA            20020425)        PLACER_A_GAUCHE 'Z' ZONE_ASSOCIEE            
+*ROW_METADATA(JCA            20020425)      FIN                                            
+*ROW_METADATA(JCA            20020425)   FIN_INIT
+*ROW_METADATA(ADELIA                 )FIN_PGM

@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "WS_LICENCE_SRV",
+  "description" : "Service de gestion des licences",
+  "creationDate" : "2010-05-21 12:52:17",
+  "updateDate" : "2010-05-24 11:22:02",
+  "visibility" : "PRIVATE",
+  "ibmName" : "WSLICS",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "WSLICS",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

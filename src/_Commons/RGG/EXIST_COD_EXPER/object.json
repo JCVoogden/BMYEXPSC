@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "EXIST_COD_EXPER",
+  "description" : "Contrôle existence du code expert",
+  "creationDate" : "1995-06-07 12:46:57",
+  "updateDate" : "1995-06-29 07:23:38",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

@@ -1,0 +1,4 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   IDENTIFIER Nom_vue Nom_fichier CLE ;zones clés complémentaires ;$$_ZONE
+*ROW_METADATA(ADELIA                 )   INSERER_RG RECUP_ZONE_RED (Nom_vue;$$_ZONE ;Zone libellé écran;Zone libellé fichier)
+*ROW_METADATA(ADELIA                 )FIN_RGG

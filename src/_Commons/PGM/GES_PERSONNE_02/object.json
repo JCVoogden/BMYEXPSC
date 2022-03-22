@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "GES_PERSONNE_02",
+  "description" : "Gestion des personnes avec édition",
+  "creationDate" : "1995-06-08 07:25:54",
+  "updateDate" : "1995-06-08 07:25:54",
+  "visibility" : "PUBLIC",
+  "ibmName" : "GESPE2",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "GESPE2",
+  "programTemplateName" : "GES_SSF_2TR_03",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "INT_CLIENT",
+  "description" : "Interrogation des clients",
+  "creationDate" : "1995-06-08 07:29:55",
+  "updateDate" : "1995-06-08 07:29:55",
+  "visibility" : "PUBLIC",
+  "ibmName" : "INTCLI",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "INTCLI",
+  "programTemplateName" : "UTI_EXECUTER",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

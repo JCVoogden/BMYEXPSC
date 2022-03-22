@@ -1,0 +1,24 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20080513)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20080513)      liste liste1 *ref_mld(sql_base)
+*ROW_METADATA(ADELIA         20080513)   FIN_DECL
+*ROW_METADATA(ADELIA         20080513)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080513)      *ouvrir wbtest
+*ROW_METADATA(ADELIA         20080513)      
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080513)         charger_sql_lst liste1 sql_base
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20080513)      
+*ROW_METADATA(ADELIA         20080513)      lecture_lst liste1
+*ROW_METADATA(ADELIA         20080513)         zb1    = b1
+*ROW_METADATA(ADELIA         20080513)         zb2    = b2
+*ROW_METADATA(ADELIA         20080513)         zb3    = b3
+*ROW_METADATA(ADELIA         20080513)         editer
+*ROW_METADATA(ADELIA         20080513)      fin_lecture_lst
+*ROW_METADATA(ADELIA         20080513)      
+*ROW_METADATA(ADELIA         20080513)      *fermer wbtest
+*ROW_METADATA(ADELIA         20080513)   FIN_INIT
+*ROW_METADATA(ADELIA         20080513)   DEBUT_RETOUR
+*ROW_METADATA(ADELIA         20080513)      
+*ROW_METADATA(ADELIA         20080513)   FIN_RETOUR
+*ROW_METADATA(ADELIA                 )FIN_PGM

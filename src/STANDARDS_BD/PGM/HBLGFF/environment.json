@@ -1,0 +1,197 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "*1"
+    },
+    "guideWord" : "FICHIEL1_S1",
+    "fileName" : "FICHIEL3",
+    "access" : "SEQUENTIAL_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "*1",
+        "ordinal" : 1
+      },
+      "guideWord" : "Z1_NOM_ENTITE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "*4"
+    },
+    "guideWord" : "SFL04",
+    "access" : "NONE",
+    "update" : "NO_UPDATE",
+    "generation" : "KINEMATIC"
+  }, {
+    "id" : {
+      "code" : "*7"
+    },
+    "guideWord" : "SFL07",
+    "access" : "NONE",
+    "update" : "NO_UPDATE",
+    "generation" : "KINEMATIC"
+  }, {
+    "id" : {
+      "code" : "GA"
+    },
+    "guideWord" : "VUE_CTR_N_EX",
+    "fileName" : "FICHIEL3",
+    "access" : "BY_KEY",
+    "update" : "UPDATE_ONLY",
+    "generation" : "LEVEL1",
+    "accesses" : [ {
+      "id" : {
+        "code" : "GA",
+        "ordinal" : 1
+      },
+      "guideWord" : "Z2_NOM_ENTITE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "GB"
+    },
+    "guideWord" : "SOUS_FIC_1",
+    "fileName" : "*1",
+    "access" : "BY_KEY",
+    "update" : "UPDATE_ONLY",
+    "generation" : "LEVEL1",
+    "accesses" : [ {
+      "id" : {
+        "code" : "GB",
+        "ordinal" : 1
+      },
+      "shortName" : "WRAN01",
+      "type" : "DEFAULT"
+    } ]
+  }, {
+    "id" : {
+      "code" : "GC"
+    },
+    "guideWord" : "VUE_PHYSIQUE",
+    "fileName" : "FICHIEP",
+    "access" : "DIRECT",
+    "update" : "UPDATE_ONLY",
+    "generation" : "LEVEL1",
+    "accesses" : [ {
+      "id" : {
+        "code" : "GC",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZC_NUM_ENREG",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "GF"
+    },
+    "guideWord" : "SOUS_FIC_7",
+    "fileName" : "*7",
+    "access" : "BY_KEY",
+    "update" : "UPDATE_ONLY",
+    "generation" : "LEVEL1",
+    "accesses" : [ {
+      "id" : {
+        "code" : "GF",
+        "ordinal" : 1
+      },
+      "shortName" : "WRAN07",
+      "type" : "DEFAULT"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "P_COD_ACTION",
+      "fileName" : ""
+    },
+    "shortName" : "PCACT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_ACTION",
+    "rename" : "PCACT",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCRET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_RETOUR",
+    "rename" : "PCRET",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "W_FLG_ERREUR",
+      "fileName" : ""
+    },
+    "shortName" : "WFERR",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "W_FLG_ERREUR",
+    "rename" : "WFERR",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "W_FLG_INIT",
+      "fileName" : ""
+    },
+    "shortName" : "WFINI",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "W_FLG_INIT",
+    "rename" : "WFINI",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "W_FLG_OPT_OK",
+      "fileName" : ""
+    },
+    "shortName" : "WFOPO",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "W_FLG_OPT_OK",
+    "rename" : "WFOPO",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "WRAN01",
+      "fileName" : ""
+    },
+    "shortName" : "WRAN01",
+    "length" : 4,
+    "type" : "NUMERIC",
+    "designation" : "WRAN01",
+    "rename" : "WRAN01",
+    "generation" : "LEVEL1",
+    "reference" : "*NODEF"
+  }, {
+    "id" : {
+      "guideWord" : "WRAN04",
+      "fileName" : ""
+    },
+    "shortName" : "WRAN04",
+    "length" : 4,
+    "type" : "NUMERIC",
+    "designation" : "WRAN04",
+    "rename" : "WRAN04",
+    "generation" : "LEVEL1",
+    "reference" : "*NODEF"
+  }, {
+    "id" : {
+      "guideWord" : "WRAN07",
+      "fileName" : ""
+    },
+    "shortName" : "WRAN07",
+    "length" : 4,
+    "type" : "NUMERIC",
+    "designation" : "WRAN07",
+    "rename" : "WRAN07",
+    "generation" : "LEVEL1",
+    "reference" : "*NODEF"
+  } ]
+}

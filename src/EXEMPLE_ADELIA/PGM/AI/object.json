@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AI",
+  "description" : "AI",
+  "creationDate" : "2008-01-07 10:53:14",
+  "updateDate" : "2008-03-05 09:43:01",
+  "visibility" : "PRIVATE",
+  "ibmName" : "AI",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "AI",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

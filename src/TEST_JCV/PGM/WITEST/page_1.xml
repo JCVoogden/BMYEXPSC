@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="1" name="ID_WPAGE1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml page.xsd">
+    <properties/>
+    <controls>
+        <control classId="0" className="ENTRYFIELD" error="3" guide="0" kinematic="0" name="BTN_1">
+            <properties>
+                <property id="-100" stringValue="WITEST_1_FORM_1"/>
+                <property id="13"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="1" guide="0" kinematic="0" name="SID">
+            <properties>
+                <property id="-100" stringValue="WITEST_1_FORM_1"/>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 20 -1"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="1" guide="0" kinematic="0" name="SERIAL">
+            <properties>
+                <property id="-100" stringValue="WITEST_1_FORM_1"/>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 20 -1"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="3" guide="0" kinematic="0" name="BTN_3">
+            <properties>
+                <property id="-100" stringValue="WITEST_1_FORM_1"/>
+                <property id="13"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="0" guide="1" kinematic="0" name="CHS_1">
+            <properties>
+                <property id="-100" stringValue="WITEST_1_FORM_1"/>
+                <property id="-13" intValue="2"/>
+                <property id="-12" intValue="4"/>
+                <property id="-11" intValue="17"/>
+                <property id="-9" stringValue="4 10 5"/>
+                <property id="8"/>
+            </properties>
+        </control>
+    </controls>
+</page>

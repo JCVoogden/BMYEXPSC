@@ -1,0 +1,12 @@
+               Aide par Display File pour MAJART
+
+Cette maquette est celle qui sert à commenter le programme MAJART.
+Elle est constituée de 5 Transactions.
+La première transaction est une transaction simple qui sert à définir
+un format avec le mot-clé ASSUME=Oui
+Les autres transactions sont de type fenêtre. Elles seront associées
+à des zones ou des transactions de la maquette MAJART.
+Le tracé des fenêtres a été effectué en fonction des standards de
+génération (Option 11, puis F10). Par défaut identique à ceux d'IBM.
+Cette maquette est compilée par l'option 88 Compilation DSPF ou PRTF
+en laissant le nom par défaut au DSPF (AIDARTFM)

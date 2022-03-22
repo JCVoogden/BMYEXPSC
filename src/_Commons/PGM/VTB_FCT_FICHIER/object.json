@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "VTB_FCT_FICHIER",
+  "description" : "Gestion de fichier avec VATOOLBX",
+  "creationDate" : "1999-01-27 09:55:14",
+  "updateDate" : "1999-01-27 09:55:14",
+  "visibility" : "PUBLIC",
+  "ibmName" : "VTBGSF",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "VTBGSF",
+  "level2GenType" : 2,
+  "level2DatabaseGenMode" : "SQL"
+}

@@ -1,0 +1,185 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20080606)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20080609)      alpha(250) nomAgent
+*ROW_METADATA(ADELIA         20080616)      num_bin_4  idAgent
+*ROW_METADATA(ADELIA         20080616)      
+*ROW_METADATA(ADELIA         20080616)      num_bin_4  idxrapport
+*ROW_METADATA(ADELIA         20080609)      num_bin_4  rc
+*ROW_METADATA(ADELIA         20080609)      num_bin_4  timer
+*ROW_METADATA(ADELIA         20080606)      
+*ROW_METADATA(ADELIA         20080606)   FIN_DECL
+*ROW_METADATA(ADELIA         20080606)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080606)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20080606)      executer    id_fen0
+*ROW_METADATA(ADELIA         20080606)   FIN_INIT
+*ROW_METADATA(ADELIA         20080606)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20080606)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20080606)         
+*ROW_METADATA(ADELIA         20080606)      FIN_DECL
+*ROW_METADATA(ADELIA         20080606)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20080609)         appeler_dll 'GsAgentDll' 'GSAGetName' nomAgent rc
+*ROW_METADATA(ADELIA         20080609)         appeler_dll 'GsAgentDll' 'GSAGetId'   idAgent  rc
+*ROW_METADATA(ADELIA         20080610)         
+*ROW_METADATA(ADELIA         20080610)         appeler_dll 'GsAgentDll' 'GSAGetState' State rcs
+*ROW_METADATA(ADELIA         20080610)         
+*ROW_METADATA(ADELIA         20080610)         si rcs <> 0
+*ROW_METADATA(ADELIA         20080610)            state = '?'
+*ROW_METADATA(ADELIA         20080610)            id_state:couleur_fond = _txt_coul_rouge
+*ROW_METADATA(ADELIA         20080610)         sinon   
+*ROW_METADATA(ADELIA         20080610)            id_state:couleur_fond = _txt_coul_systeme
+*ROW_METADATA(ADELIA         20080610)         fin
+*ROW_METADATA(ADELIA         20080610)         
+*ROW_METADATA(ADELIA         20080626)         appeler_dll 'GsAgentDll' 'GSAGetStatusText' StatusText rct
+*ROW_METADATA(ADELIA         20080610)         
+*ROW_METADATA(ADELIA         20080610)         si rct <> 0
+*ROW_METADATA(ADELIA         20080610)            statusText = '?'
+*ROW_METADATA(ADELIA         20080610)            id_statustext:couleur_fond = _txt_coul_rouge
+*ROW_METADATA(ADELIA         20080610)         sinon   
+*ROW_METADATA(ADELIA         20080610)            id_statustext:couleur_fond = _txt_coul_systeme
+*ROW_METADATA(ADELIA         20080610)         fin
+*ROW_METADATA(ADELIA         20080610)         
+*ROW_METADATA(ADELIA         20080609)         id_fen0:titre = 'Agent de test (' /// nomAgent /// ' - ' // idAgent /// ')'
+*ROW_METADATA(ADELIA         20080609)         
+*ROW_METADATA(ADELIA         20080606)      FIN_INIT
+*ROW_METADATA(ADELIA         20080606)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20080606)         DEBUT_OBJET ID_OBJ4
+*ROW_METADATA(ADELIA         20080606)            DEBUT_EVT ID_OBJ4:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20080626)               rcs = -9999
+*ROW_METADATA(ADELIA         20080626)               
+*ROW_METADATA(ADELIA         20080626)               si serveur
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV GSSOUM
+*ROW_METADATA(ADELIA         20080626)                     appeler_dll 'GsAgentDll' 'GSASetState' newState rcs
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20080626)               sinon
+*ROW_METADATA(ADELIA         20080626)                  appeler_dll 'GsAgentDll' 'GSASetState' newState rcs
+*ROW_METADATA(ADELIA         20080626)               fin
+*ROW_METADATA(ADELIA         20080626)               
+*ROW_METADATA(ADELIA         20080609)               si rcs <> 0
+*ROW_METADATA(ADELIA         20080609)                  id_state_new:couleur_fond = _chs_coul_rouge
+*ROW_METADATA(ADELIA         20080609)               sinon   
+*ROW_METADATA(ADELIA         20080609)                  id_state_new:couleur_fond = _chs_coul_blanc
+*ROW_METADATA(ADELIA         20080609)               fin
+*ROW_METADATA(ADELIA         20080609)               
+*ROW_METADATA(ADELIA         20080606)            FIN_EVT
+*ROW_METADATA(ADELIA         20080606)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080610)         DEBUT_OBJET ID_OBJ5
+*ROW_METADATA(ADELIA         20080610)            DEBUT_EVT ID_OBJ5:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20080626)               rct = -9999
+*ROW_METADATA(ADELIA         20080626)               
+*ROW_METADATA(ADELIA         20080626)               si serveur
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV GSSOUM
+*ROW_METADATA(ADELIA         20080626)                     appeler_dll 'GsAgentDll' 'GSASetStatusText' newStatusText rct
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20080626)               sinon
+*ROW_METADATA(ADELIA         20080626)                  appeler_dll 'GsAgentDll' 'GSASetStatusText' newStatusText rct
+*ROW_METADATA(ADELIA         20080626)               fin
+*ROW_METADATA(ADELIA         20080610)               si rct <> 0
+*ROW_METADATA(ADELIA         20080610)                  statusText = '?'
+*ROW_METADATA(ADELIA         20080610)                  id_statustext_new:couleur_fond = _chs_coul_rouge
+*ROW_METADATA(ADELIA         20080610)               sinon   
+*ROW_METADATA(ADELIA         20080610)                  id_statustext_new:couleur_fond = _chs_coul_blanc
+*ROW_METADATA(ADELIA         20080610)               fin
+*ROW_METADATA(ADELIA         20080610)               
+*ROW_METADATA(ADELIA         20080610)            FIN_EVT
+*ROW_METADATA(ADELIA         20080610)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080609)         DEBUT_OBJET ID_OBJ6
+*ROW_METADATA(ADELIA         20080609)            DEBUT_EVT ID_OBJ6:Top
+*ROW_METADATA(ADELIA         20080626)               rcs = -9999
+*ROW_METADATA(ADELIA         20080626)               rct = -9999
+*ROW_METADATA(ADELIA         20080626)               rc  = -9999
+*ROW_METADATA(ADELIA         20080626)               
+*ROW_METADATA(ADELIA         20080626)               si serveur
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV GSSOUM
+*ROW_METADATA(ADELIA         20080626)                     appeler_dll 'GsAgentDll' 'GSAGetState'       State      rcs
+*ROW_METADATA(ADELIA         20080626)                     appeler_dll 'GsAgentDll' 'GSAGetStatusText'  StatusText rct
+*ROW_METADATA(ADELIA         20080626)                     appeler_dll 'GsAgentDll' 'GSATimeToDeath'    timer      rc
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20080626)               sinon
+*ROW_METADATA(ADELIA         20080626)                  appeler_dll 'GsAgentDll' 'GSAGetState'       State      rcs
+*ROW_METADATA(ADELIA         20080626)                  appeler_dll 'GsAgentDll' 'GSAGetStatusText'  StatusText rct
+*ROW_METADATA(ADELIA         20080626)                  appeler_dll 'GsAgentDll' 'GSATimeToDeath'    timer      rc
+*ROW_METADATA(ADELIA         20080626)               fin
+*ROW_METADATA(ADELIA         20080626)               
+*ROW_METADATA(ADELIA         20080609)               si rcs <> 0
+*ROW_METADATA(ADELIA         20080609)                  state = '?'
+*ROW_METADATA(ADELIA         20080610)                  id_state:couleur_fond = _txt_coul_rouge
+*ROW_METADATA(ADELIA         20080609)               sinon   
+*ROW_METADATA(ADELIA         20080610)                  id_state:couleur_fond = _txt_coul_systeme
+*ROW_METADATA(ADELIA         20080609)               fin
+*ROW_METADATA(ADELIA         20080610)               
+*ROW_METADATA(ADELIA         20080626)               
+*ROW_METADATA(ADELIA         20080610)               si rct <> 0
+*ROW_METADATA(ADELIA         20080610)                  statusText = '?'
+*ROW_METADATA(ADELIA         20080610)                  id_statustext:couleur_fond = _txt_coul_rouge
+*ROW_METADATA(ADELIA         20080610)               sinon   
+*ROW_METADATA(ADELIA         20080610)                  id_statustext:couleur_fond = _txt_coul_systeme
+*ROW_METADATA(ADELIA         20080610)               fin
+*ROW_METADATA(ADELIA         20080626)               
+*ROW_METADATA(ADELIA         20080609)               si timer >= 0
+*ROW_METADATA(ADELIA         20080623)                  deathtext = '** ' // timer /// ' ***'
+*ROW_METADATA(ADELIA         20090302)               fin
+*ROW_METADATA(ADELIA         20080609)            FIN_EVT
+*ROW_METADATA(ADELIA         20080609)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080611)         DEBUT_OBJET ID_OBJ7
+*ROW_METADATA(ADELIA         20080611)            DEBUT_EVT ID_OBJ7:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20080626)               appeler_dll 'GsAgentDll' 'GSASetState' *BLANK rcs
+*ROW_METADATA(ADELIA         20080626)               terminer
+*ROW_METADATA(ADELIA         20080611)               
+*ROW_METADATA(ADELIA         20080611)            FIN_EVT
+*ROW_METADATA(ADELIA         20080611)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080611)         DEBUT_OBJET ID_OBJ8
+*ROW_METADATA(ADELIA         20080611)            DEBUT_EVT ID_OBJ8:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20080626)               appeler_dll 'GsAgentDll' 'GSASetState' 'E' rcs
+*ROW_METADATA(ADELIA         20080611)               terminer
+*ROW_METADATA(ADELIA         20080611)               
+*ROW_METADATA(ADELIA         20080611)            FIN_EVT
+*ROW_METADATA(ADELIA         20080611)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080611)         DEBUT_OBJET ID_OBJ9
+*ROW_METADATA(ADELIA         20080611)            DEBUT_EVT ID_OBJ9:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20080611)               appeler_dll 'GsAgentDll' 'GSASetState' 'W' rcs
+*ROW_METADATA(ADELIA         20080611)               terminer
+*ROW_METADATA(ADELIA         20080611)               
+*ROW_METADATA(ADELIA         20080611)            FIN_EVT
+*ROW_METADATA(ADELIA         20080611)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080616)         DEBUT_OBJET ID_OBJ13
+*ROW_METADATA(ADELIA         20080616)            DEBUT_EVT ID_OBJ13:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20080626)               rcm = -9999
+*ROW_METADATA(ADELIA         20080626)               
+*ROW_METADATA(ADELIA         20080626)               si serveur
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV GSSOUM
+*ROW_METADATA(ADELIA         20080626)                     appeler_dll 'GsAgentDll' 'GSATimedWait' TimeWait rcm
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20080626)               sinon   
+*ROW_METADATA(ADELIA         20080626)                  appeler_dll 'GsAgentDll' 'GSATimedWait' TimeWait rcm
+*ROW_METADATA(ADELIA         20080626)               fin
+*ROW_METADATA(ADELIA         20080626)               
+*ROW_METADATA(ADELIA         20080616)            FIN_EVT
+*ROW_METADATA(ADELIA         20080616)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080616)         DEBUT_OBJET ID_OBJ16
+*ROW_METADATA(ADELIA         20080616)            DEBUT_EVT ID_OBJ16:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20080616)               idxrapport = idxrapport + 1
+*ROW_METADATA(ADELIA         20080616)               reportline = 'ligne rapport ' // idxrapport
+*ROW_METADATA(ADELIA         20080616)               
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV GSSOUM
+*ROW_METADATA(ADELIA         20080623)                  appeler tr_add_report idAgent reportLine rcr
+*ROW_METADATA(ADELIA         20080616)                  valider_maj
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20080616)               
+*ROW_METADATA(ADELIA         20080616)            FIN_EVT
+*ROW_METADATA(ADELIA         20080616)         FIN_OBJET
+*ROW_METADATA(ADELIA         20090325)         DEBUT_OBJET ID_OBJ19
+*ROW_METADATA(ADELIA         20090325)            DEBUT_EVT ID_OBJ19:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20090325)               APPELER_DLL 'VATOOLBX' 'VaToolBxExitProcess' 1
+*ROW_METADATA(ADELIA         20090325)            FIN_EVT
+*ROW_METADATA(ADELIA         20090325)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080606)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20080606)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20080606)         
+*ROW_METADATA(ADELIA         20080606)      FIN_VERIF
+*ROW_METADATA(ADELIA         20080606)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20080606)         
+*ROW_METADATA(ADELIA         20080606)      FIN_VALID
+*ROW_METADATA(ADELIA         20080606)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080606)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080606)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "UNI_TEST4",
+  "description" : "Test Unicode 4",
+  "creationDate" : "2008-04-08 10:30:08",
+  "updateDate" : "2008-04-08 10:33:11",
+  "visibility" : "PRIVATE",
+  "ibmName" : "UNTST4",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "UNTST4",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "unicode" : true
+}

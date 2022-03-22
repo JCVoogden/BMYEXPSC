@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "MODELE_REC_D_NO",
+  "description" : "Modèle récupération dernier numéro",
+  "creationDate" : "1995-06-29 07:24:44",
+  "updateDate" : "1995-06-29 07:24:44",
+  "visibility" : "PUBLIC",
+  "mrClass" : "VP",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

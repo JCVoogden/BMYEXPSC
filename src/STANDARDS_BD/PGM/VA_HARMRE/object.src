@@ -1,0 +1,44 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(JCA            20020425)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      * Attention Cette version doit être utilisé uniquement avec   *
+*ROW_METADATA(ADELIA         20040219)      * la DLL USERVA128.DLL                                        * 
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      ***************************************************************
+*ROW_METADATA(ADELIA         20040219)      
+*ROW_METADATA(ADELIA         20040219)      *-------------------------------------------------------------* 
+*ROW_METADATA(JCA            20020425)      *                                                             * 
+*ROW_METADATA(JCA            20020425)      *   Recherche mot directeur d'une information d'une entité    * 
+*ROW_METADATA(JCA            20020425)      *   à partir du mot directeur d'une information du            * 
+*ROW_METADATA(JCA            20020425)      *   dictionnaire                                              * 
+*ROW_METADATA(JCA            20020425)      *                                                             * 
+*ROW_METADATA(JCA            20020425)      *-------------------------------------------------------------* 
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      ALPHA(15) MOT_DIR_DICO
+*ROW_METADATA(ADELIA         20040219)      ALPHA(128) MOT_DIRECTEUR
+*ROW_METADATA(JCA            20020425)      ALPHA(10)  FICHIER
+*ROW_METADATA(JCA            20020425)      ALPHA(1) PCODE_RETOUR
+*ROW_METADATA(JCA            20020529)      
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      PARAM MOT_DIR_DICO MOT_DIRECTEUR FICHIER PCODE_RETOUR                    
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      ***** VARIABLES PRIVÉES ******
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      ALPHA(1) W1                                                                           
+*ROW_METADATA(JCA            20020425)                                                                    
+*ROW_METADATA(JCA            20020425)   FIN_DECL
+*ROW_METADATA(JCA            20020425)   DEBUT_INIT
+*ROW_METADATA(JCA            20020529)      PCODE_RETOUR = '0'
+*ROW_METADATA(JCA            20020529)      PLACER_A_GAUCHE FICHIER W1                                      
+*ROW_METADATA(JCA            20020425)      MOT_DIRECTEUR = W1 // MOT_DIR_DICO 
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)   FIN_INIT
+*ROW_METADATA(ADELIA                 )FIN_PGM

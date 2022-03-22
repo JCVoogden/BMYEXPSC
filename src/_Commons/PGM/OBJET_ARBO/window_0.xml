@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Programme d'exemple" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\qc\plain\f3\fs22\b\i\ul Programme d'exemple des arbres et boutons d'incr\'e9mentation.\plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" id="0" name="FEN_ARBRE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-4" intValue="170"/>
+        <property id="-3" intValue="499"/>
+        <property id="-2" intValue="151"/>
+        <property id="-1" intValue="199"/>
+        <property id="3" stringValue="Programme d'exemple"/>
+        <property id="6"/>
+        <property id="7"/>
+        <property id="9"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAw0lEQVR4Xu2OCwqDQAwF9/DSo9ljWQaqLI9umjUJ/eBAQM17cVq7+EK2hAmxRaD/nNPozSnor/c1JKE3p6CPQERCb06x9yMScnKOvn9Wojs3D31jXOjNFLirPxqh3QNr9w66y21xSWj3gJ21t6CXJmBlRtBJFbByryCfLmBlFbIlAla+h1yZgNXZIVMqYPWAfYmAF7JpAvrsgWyKgL7rtxHkwgIKWW+eXLoAkPd0yPyngBfuXgK/I1A1XoFGsGr0Xx/nAcvm7lfXqc4jAAAAAElFTkSuQmCC</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbUlEQVR4Xq2MUQrAMAxCe/+DdcfqyJARE6Vl7IE/5sUxfmIdxrJ2hINIqt8IZ17TjjS5El0MuJEmuy6FsLICN0IJdgQ9oQQ7go5QQku5E+m9D1TQE01IIt1ST1TnBbLqCBIykFVHkLBDDnzIww3Nu+sjMeaOXAAAAABJRU5ErkJggg==</property>
+        <property id="13"/>
+        <property id="15" intValue="1"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="ARBORESCENCE" dll="TREEVIEW" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq6 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 ----------------------------------------------------------------------------------------------------------------&#13;&#10;\par \plain\f3\fs22\b\i\ul &#13;&#10;\par Objet de type arbre :\plain\f3\fs22\b\ul  ARB_EXEMPLE&#13;&#10;\par \plain\f3\fs20 \tab Pour acc\'e9der aux diff\'e9rentes options sur les \'e9l\'e9ments de l'arbre, il faut&#13;&#10;\par acc\'e9der au menu contextuel en s\'e9lectionnant un \'e9l\'e9ment de l'arbre et en&#13;&#10;\par cliquant sur l'option appropri\'e9e dans le menu.&#13;&#10;\par \tab \plain\f3\fs20\b\ul Menu contextuel:&#13;&#10;\par \plain\f3\fs20\i \tab \tab Cr\'e9er un \'e9l\'e9ment avant :&#13;&#10;\par \tab \tab \tab \plain\f3\fs20 Pour cr\'e9er un \'e9l\'e9ment avant l'\'e9l\'e9ment s\'e9lectionn\'e9&#13;&#10;\par \plain\f3\fs20\i \tab \tab Cr\'e9er un \'e9l\'e9ment apr\'e8s :\plain\f3\fs20 &#13;&#10;\par \tab \tab \tab Pour cr\'e9er un \'e9l\'e9ment apr\'e8s l'\'e9l\'e9ment s\'e9lectionn\'e9&#13;&#10;\par \tab \tab Cr\'e9er un sous-\'e9l\'e9ment :&#13;&#10;\par \tab \tab \tab Sous-menu de cr\'e9ation des fils de l'\'e9l\'e9ment s\'e9lectionn\'e9&#13;&#10;\par \plain\f3\fs20\i \tab \tab \tab D\'e9but :\plain\f3\fs20 &#13;&#10;\par \tab \tab \tab \tab Pour cr\'e9er un \'e9l\'e9ment en d\'e9but de liste des fils&#13;&#10;\par \tab \tab \tab \tab de l'\'e9l\'e9ment s\'e9lectionn\'e9&#13;&#10;\par \plain\f3\fs20\i \tab \tab \tab Fin :\plain\f3\fs20 &#13;&#10;\par \tab \tab \tab \tab Pour cr\'e9er un \'e9l\'e9ment en fin de liste des fils&#13;&#10;\par \tab \tab \tab \tab de l'\'e9l\'e9ment s\'e9lectionn\'e9&#13;&#10;\par &#13;&#10;\par }&#13;&#10;" kinematic="0" name="ARB_EXEMPLE">
+            <properties>
+                <property id="-4" intValue="142"/>
+                <property id="-3" intValue="227"/>
+                <property id="5" intValue="1"/>
+                <property id="6" intValue="1"/>
+                <property id="7" intValue="1"/>
+                <property id="8" intValue="1"/>
+                <property id="11" intValue="1"/>
+                <property id="12" intValue="1"/>
+            </properties>
+            <menu>
+                <item key1="0" key2="0" name="MNU_CREER_AV" state="4112" text="Créer élément avant" type="1"/>
+                <item key1="0" key2="0" name="MNU_CREER_AP" state="4097" text="Créer élément aprés" type="1"/>
+                <item key1="0" key2="0" name="MNU_CREER_SS" state="4112" text="Créer sous-élément" type="1">
+                    <menu>
+                        <item key1="0" key2="0" name="MNU_CREER_SS_DE" state="4112" text="Début" type="1"/>
+                        <item key1="0" key2="0" name="MNU_CREER_SS_FI" state="4112" text="Fin" type="1"/>
+                    </menu>
+                </item>
+                <item key1="0" key2="0" name="MNU_SUPPR" state="4112" text="Supprimer" type="1"/>
+            </menu>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq5 Times New Roman;}{\f4\froman\fprq6 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f4\fs20 --------------------------------------------------------------------------------------------------------------------&#13;&#10;\par \plain\f3\fs20 &#13;&#10;\par \plain\f3\fs22\b\i Cadre 'El\'e9ment s\'e9lectionn\'e9' : CDR_ELT\plain\f3\fs20 &#13;&#10;\par \tab D\'e9tails de l'\'e9l\'e9ment s\'e9lectionn\'e9 ou de l'\'e9l\'e9ment en cr\'e9ation&#13;&#10;\par }&#13;&#10;" kinematic="0" name="CDR_ELT">
+            <properties>
+                <property id="-8" stringValue="Elément sélectionné"/>
+                <property id="-4" intValue="89"/>
+                <property id="-3" intValue="245"/>
+                <property id="-2" intValue="9"/>
+                <property id="-1" intValue="244"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_TXT">
+            <properties>
+                <property id="-3" intValue="42"/>
+                <property id="-2" intValue="33"/>
+                <property id="-1" intValue="256"/>
+            </properties>
+        </control>
+        <control associatedVariable="ZTXT" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq7 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b\i \tab - Champ de saisie CHS_TXT \plain\f3\fs20 : Saisie du libell\'e9 de l'\'e9l\'e9ment&#13;&#10;\par \tab \tab Ce champ est initialis\'e9 avec le texte de l'\'e9l\'e9ment s\'e9lectionn\'e9, cette&#13;&#10;\par \tab valeur peut \'eatre modifi\'e9e directement en saisissant la valeur dans le champ&#13;&#10;\par \tab de saisie.&#13;&#10;\par }&#13;&#10;" kinematic="0" name="CHS_TXT">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 250 -1"/>
+                <property id="-3" intValue="181"/>
+                <property id="-2" intValue="27"/>
+                <property id="-1" intValue="299"/>
+                <property id="3"/>
+                <property id="6" intValue="1"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT_VAL">
+            <properties>
+                <property id="-8" stringValue="Valeur"/>
+                <property id="-3" intValue="38"/>
+                <property id="-2" intValue="61"/>
+                <property id="-1" intValue="256"/>
+            </properties>
+        </control>
+        <control associatedVariable="ZVAL" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq7 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b\i \tab - Champ de saisie CHS_VAL : \plain\f3\fs20\i Champ de saisie de la valeur de l'\'e9l\'e9ment\plain\f3\fs20 &#13;&#10;\par \tab \tab La valeur de ce champ peut \'eatre modifi\'e9e directement en&#13;&#10;\par \tab saisissant la valeur dans le champ, ou \'e0 l'aide du bouton incr\'e9mental&#13;&#10;\par \tab INC_VAL.&#13;&#10;\par \tab \tab Dans le cas de la s\'e9lection d'une section principale (premier&#13;&#10;\par \tab niveau de profondeur de l'arbre), ce champ est d\'e9sactiv\'e9, car les sections&#13;&#10;\par \tab n'ont pas de variable associ\'e9e.&#13;&#10;\par }&#13;&#10;" kinematic="0" name="CHS_VAL">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-12" intValue="3"/>
+                <property id="-11" intValue="15"/>
+                <property id="-9" stringValue="4 5 0"/>
+                <property id="-2" intValue="57"/>
+                <property id="-1" intValue="299"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BTN_INCREMENT" dll="SPIN" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b\i \tab - Bouton d'incr\'e9ment INC_VAL :&#13;&#10;\par \tab \tab \plain\f3\fs20 Contr\'f4le la valeur du champ CHS_VAL (valeur de l'\'e9l\'e9ment).&#13;&#10;\par \tab Le fait de cliquer sur les fl\'eaches de cet objet permet d'incr\'e9menter ou&#13;&#10;\par \tab de d\'e9cr\'e9menter la valeur du champ CHS_VAL.&#13;&#10;\par }&#13;&#10;" kinematic="0" name="INC_VAL">
+            <properties>
+                <property id="-9" stringValue="4 5 0"/>
+                <property id="-2" intValue="57"/>
+                <property id="-1" intValue="389"/>
+                <property id="7" intValue="1"/>
+                <property id="9"/>
+                <property doubleValue="99999.0" id="10"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 \tab - \plain\f3\fs20\b\i Bouton &quot;Modifier/Cr\'e9er&quot; BTN_MOD :\plain\f3\fs20\i  &#13;&#10;\par \tab \tab Bouton servant \'e0 valider la modification&#13;&#10;\par \tab ou la cr\'e9ation d'un \'e9l\'e9ment&#13;&#10;\par \tab \plain\f3\fs20 \tab Dans tous les cas, il est n\'e9cessaire de cliquer sur&#13;&#10;\par \tab ce bouton pour valider les changements, en aucun cas l'arbre&#13;&#10;\par \tab ne sera modifi\'e9 si ce bouton n'est pas utilis\'e9.&#13;&#10;\par &#13;&#10;\par }&#13;&#10;" kinematic="0" name="BTN_MOD">
+            <properties>
+                <property id="-16" intValue="1"/>
+                <property id="-8" stringValue="Modifier"/>
+                <property id="-2" intValue="58"/>
+                <property id="-1" intValue="410"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq7 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 --------------------------------------------------------------------------------------------------------------------&#13;&#10;\par &#13;&#10;\par \plain\f3\fs22\b Bouton d'aide : \plain\f3\fs22\b\i BTN_AIDE\plain\f3\fs20 &#13;&#10;\par \tab Affiche cette aide.&#13;&#10;\par &#13;&#10;\par }&#13;&#10;" kinematic="0" name="BTN_AIDE">
+            <properties>
+                <property id="-8" stringValue="Aide..."/>
+                <property id="-7" intValue="1"/>
+                <property id="-2" intValue="114"/>
+                <property id="-1" intValue="234"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 --------------------------------------------------------------------------------------------------------------------&#13;&#10;\par &#13;&#10;\par \plain\f3\fs22\b Bouton &quot;Quitter&quot; :\plain\f3\fs22\b\i  BTN_QUITTER\plain\f3\fs20 &#13;&#10;\par \tab Ce bouton est celui qui sert \'e0 quitter le programme, le m\'eame r\'e9sultat peut&#13;&#10;\par \'eatre obtenu en cliquant sur le bouton en croix dans la barre de titre.&#13;&#10;\par &#13;&#10;\par }&#13;&#10;" kinematic="0" name="BTN_QUITTER">
+            <properties>
+                <property id="-8" stringValue="Quitter"/>
+                <property id="-2" intValue="114"/>
+                <property id="-1" intValue="410"/>
+            </properties>
+        </control>
+    </controls>
+</window>

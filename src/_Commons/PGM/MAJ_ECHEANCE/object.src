@@ -1,0 +1,100 @@
+*
+* Remplacez VUE_???? Par le nom de la vue gérer
+* Niveau I -
+*------------------
+INITIALISER 01
+TRAITER 01
+*-------------------------
+TRANSACTION 01
+SI *F03 OU *F12
+  TERMINER
+FIN
+VERIFIER 01
+INITIALISER 02
+TRAITER 02
+*-------------------------
+TRANSACTION 02
+SI *F03
+  TERMINER
+FIN
+SI *F12
+  TRAITER 01
+FIN
+* Par F13 appel de la procédure de suppression de l'enregistrement
+* Afficher
+SI *F13
+  TRAITER_PROC SUPPRE
+  TRAITER 01
+FIN
+VERIFIER 02
+VALIDER 02
+INITIALISER 01
+TRAITER 01
+*
+DEBUT_PROCEDURE SUPPRE
+*-------------------------  Procédure de suppression
+SUPPRIMER   AVIECH_DA
+FIN_PROCEDURE
+******************
+INITIALISATION  01
+******************
+DEBUT_STD
+XNOM_PGM        = *NOM_PGM
+ZZNUM_AVI_ECHEA = *BLANK
+FIN_STD
+******************
+VERIFICATION    01
+******************
+DEBUT_STD
+REGLE_GESTION 0001 ZZNUM_AVI_ECHEA
+SI ZZNUM_AVI_ECHEA = *BLANK
+ANOMALIE
+FIN
+FIN_STD
+******************
+INITIALISATION  02
+******************
+DEBUT_STD
+LIRE            AVIECH_DA
+PRESENTER       AVIECH_DA
+XNOM_PGM        = *NOM_PGM
+FIN_STD
+******************
+VERIFICATION    02
+******************
+DEBUT_STD
+INSERER_RG CTL_DATE_JMSA (ZZDAT_ECHEANCE )
+INSERER_RG CTL_DATE_JMSA (ZZDAT_RGT_ECHEA )
+* Règle de gestion de type contrôle
+* Contrôle du type de l'échéance
+REGLE_GESTION 9911 ZZETA_ECHEANCE
+SI  ZZETA_ECHEANCE <> 'E';'G';'R';'X'
+  ANOMALIE
+FIN
+FIN_STD
+******************
+VALIDATION      02
+******************
+DEBUT_STD
+RANGER          AVIECH_DA
+FIN_STD
+******************
+TRT_GUIDE       01
+******************
+DEBUT_STD
+* Guide d'affichage de la fenêtre des ECHEANCE
+GUIDE ZZNUM_AVI_ECHEA
+APPELER FEN_ECHEANCE P_COD_RETOUR P_COD_ACTION ZZNUM_AVI_ECHEA
+FIN_GUIDE
+FIN_STD
+FIN_TRT_GUIDE
+******************
+TRT_GUIDE       02
+******************
+DEBUT_STD
+* Guide d'affichage de la fenêtre des ECHEANCE
+GUIDE ZZNUM_AVI_ECHEA
+APPELER FEN_ECHEANCE P_COD_RETOUR P_COD_ACTION ZZNUM_AVI_ECHEA
+FIN_GUIDE
+FIN_STD
+FIN_TRT_GUIDE

@@ -1,0 +1,62 @@
+DEBUT_STD
+XNOM_PGM        = *NOM_PGM
+XUSER           = *USER
+FIN_STD
+*--------------------------* Réception du paramètre
+RECEVOIR PCOD_REGLEMENT PWCOD_TRI
+*--------------------------* Fabrication de la requête SQL
+W_SQL_REQUETE = 'SELECT CCCLI, CLCLI, CCPCL, CBDCL FROM CLIENTS'
+W_SQL_REQUETE = W_SQL_REQUETE /// ' WHERE CCRGT = ? ORDER BY'
+*--------------------------* Fabrication de la partie dynamique
+* (qui varie) de la requête en fonction du paramètre reçu par le
+* programme
+SI PWCOD_TRI = '1'
+  ZWLIB_TRI = 'code '
+  W_SQL_REQUETE = W_SQL_REQUETE /// ' CCCLI'
+SINON
+  SI PWCOD_TRI = '2'
+    ZWLIB_TRI = 'nom  '
+    W_SQL_REQUETE = W_SQL_REQUETE /// ' CLCLI'
+  SINON
+    ZWLIB_TRI = 'ville'
+    W_SQL_REQUETE = W_SQL_REQUETE /// ' CBDCL'
+  FIN
+FIN
+*--------------------------* Edition en-tête
+LIRE REGLEMT_DB
+IMPRIMER ENTETE
+DEBUT_SQL
+*--------------------------* Préparation de la requête SQL
++ PREPARE S2 FROM :W_SQL_REQUETE
+FIN_SQL
+*--------------------------* Déclaration de la table interne SQL
+* (cursor) avec le résultat de la préparation
+DEBUT_SQL
++ DECLARE FICRGT CURSOR FOR S2
+FIN_SQL
+*--------------------------* Ouverture de la table interne SQL
+* passage du paramêtre de choix de règlement
+DEBUT_SQL
++ OPEN FICRGT  USING :PCOD_REGLEMENT
+FIN_SQL
+*--------------------------* Lecture 1er enreg de la table interne
+DEBUT_SQL
++ FETCH FICRGT INTO :ZCCOD_CLIENT , :ZCNOM_CLIENT , :ZCCOD_POS_CLI , :ZCBUR_DIS_CLI
+FIN_SQL
+*--------------------------* Test de la fin de table interne
+TANT_QUE *SQLCODE <> 100  ET *SQLCODE >= 0
+  *--------------------------* Edition détail
+  EDITER DETAIL
+  *--------------------------* Lecture enreg suivant de table interne
+  DEBUT_SQL
+  + FETCH FICRGT INTO :ZCCOD_CLIENT , :ZCNOM_CLIENT , :ZCCOD_POS_CLI , :ZCBUR_DIS_CLI
+  FIN_SQL
+REFAIRE
+*--------------------------* Fermeture de la table interne SQL
+DEBUT_SQL
++ CLOSE FICRGT
+FIN_SQL
+CHANGEMENT_PAGE
+*--------------------------* Edition changement de page
+IMPRIMER ENTETE
+FIN_TRAITEMENT

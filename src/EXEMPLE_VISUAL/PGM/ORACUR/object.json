@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "ORACUR",
+  "description" : "ORACUR",
+  "creationDate" : "2007-10-16 07:25:58",
+  "updateDate" : "2007-10-16 07:51:12",
+  "visibility" : "PRIVATE",
+  "ibmName" : "ORACUR",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "ORACUR",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

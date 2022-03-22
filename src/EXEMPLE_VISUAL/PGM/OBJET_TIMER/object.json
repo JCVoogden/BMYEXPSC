@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "OBJET_TIMER",
+  "description" : "Utilisation de l'objet TIMER",
+  "creationDate" : "1999-01-27 09:55:08",
+  "updateDate" : "1999-01-28 17:53:40",
+  "visibility" : "PRIVATE",
+  "ibmName" : "OBJTIM",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "OBJTIM",
+  "level2GenType" : 2,
+  "level2DatabaseGenMode" : "NATIVE"
+}

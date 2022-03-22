@@ -1,0 +1,73 @@
+{
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "PCLE_SEC_SOC",
+      "fileName" : ""
+    },
+    "shortName" : "PCLSS",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCLSS",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "PCODE_ERREUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCOERR",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCOERR",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "PNUM_SEC_SOC",
+      "fileName" : ""
+    },
+    "shortName" : "PNUSS",
+    "length" : 13,
+    "type" : "NUMERIC",
+    "rename" : "PNUSS",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "W120",
+      "fileName" : ""
+    },
+    "shortName" : "W120",
+    "length" : 12,
+    "type" : "NUMERIC",
+    "rename" : "W120",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "W2",
+      "fileName" : ""
+    },
+    "shortName" : "W2",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "rename" : "W2",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "W20",
+      "fileName" : ""
+    },
+    "shortName" : "W20",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "rename" : "W20",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "WMTRES",
+      "fileName" : ""
+    },
+    "shortName" : "WMTRES",
+    "length" : 12,
+    "type" : "NUMERIC",
+    "rename" : "WMTRES",
+    "generation" : "NONE"
+  } ]
+}

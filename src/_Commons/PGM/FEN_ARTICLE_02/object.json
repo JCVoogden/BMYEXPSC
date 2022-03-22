@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "FEN_ARTICLE_02",
+  "description" : "Fenêtre d'interrogation des articles par libellé",
+  "creationDate" : "1995-06-08 07:14:03",
+  "updateDate" : "1995-06-08 07:14:03",
+  "visibility" : "PUBLIC",
+  "ibmName" : "FENART",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "FENART",
+  "programTemplateName" : "UTI_FEN_NIV2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

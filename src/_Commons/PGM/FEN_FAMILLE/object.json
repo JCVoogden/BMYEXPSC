@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "FEN_FAMILLE",
+  "description" : "Fenêtre d'interrogation des familles",
+  "creationDate" : "1995-06-08 07:18:28",
+  "updateDate" : "1995-06-08 07:18:28",
+  "visibility" : "PUBLIC",
+  "ibmName" : "INTFAM",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "INTFAM",
+  "programTemplateName" : "UTI_FEN_NIV2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

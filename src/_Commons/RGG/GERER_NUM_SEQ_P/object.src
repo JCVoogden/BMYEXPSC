@@ -1,0 +1,7 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   DECLARER WWDNUL;WW_DER_NUM_SEQ 9;0
+*ROW_METADATA(ADELIA                 )   SI :01 = 0
+*ROW_METADATA(ADELIA                 )   WW_DER_NUM_SEQ = WW_DER_NUM_SEQ + 1
+*ROW_METADATA(ADELIA                 )   :01 = WW_DER_NUM_SEQ
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

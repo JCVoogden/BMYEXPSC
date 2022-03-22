@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "RGG_TRAD",
+  "description" : "RGG_TRAD",
+  "creationDate" : "2009-04-16 13:49:22",
+  "updateDate" : "2011-01-19 10:22:29",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CA",
+  "formal" : true,
+  "types" : [ "VISUAL", "WADELIA" ]
+}

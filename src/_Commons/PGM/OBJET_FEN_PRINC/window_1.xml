@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Fenêtre fille 1" help="" id="1" name="FEN_FILLE1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-37" intValue="3"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="300"/>
+        <property id="-3" intValue="400"/>
+        <property id="-2" intValue="177"/>
+        <property id="-1" intValue="290"/>
+        <property id="3" stringValue="Fenêtre fille 1"/>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="21"/>
+    </properties>
+    <menu>
+        <item key1="0" key2="0" name="MENU_FILLE1" state="4112" text="Menu fille 1" type="1">
+            <menu>
+                <item key1="0" key2="0" name="LANCER_FEN4" state="4112" text="lancer fenêtre 4" type="1"/>
+                <item key1="0" key2="0" name="ID_QUITTER1" state="4112" text="Quitter" type="1"/>
+            </menu>
+        </item>
+        <item key1="0" key2="0" name="MENU_COMMUN" state="4112" text="Menu commun" type="1">
+            <menu>
+                <item key1="0" key2="0" name="COMMUN" state="4112" text="Commun" type="1"/>
+                <item key1="0" key2="0" name="FILLE1" state="4112" text="Lancer la fenêtre de la fille 1" type="1"/>
+                <item key1="0" key2="0" name="FILLE2" state="4112" text="Lancer la fenêtre de la fille 2" type="1"/>
+            </menu>
+        </item>
+    </menu>
+    <controls/>
+</window>

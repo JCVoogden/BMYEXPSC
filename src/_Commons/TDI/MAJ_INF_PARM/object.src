@@ -1,0 +1,62 @@
+* Mise à jour avec une seule transaction avec réception de paramètre
+*
+* La variable P_COD_ACTION sert à déterminer si la sorti s'est
+* faites par F03 (EXit) ou par F12 (PRécédent)
+*
+* La variable P_COD_RETOUR sert à positionner un eventuel problème
+* dans le programme à ramener au programme appelant
+*
+* Recherchez P_???? et remplacer la zone clé du fichier à traiter
+*
+* Recherchez Z_???? et remplacer la zone écran clé du fichier
+*
+DECLARER PCRET;P_COD_RETOUR 1
+DECLARER PCACT;P_COD_ACTION 2
+*
+RECEVOIR P_COD_RETOUR P_COD_ACTION P_????
+INITIALISER 01
+TRAITER 01
+*-------------------------
+TRANSACTION 01
+SI *F03
+  P_COD_ACTION = 'EX'
+  P_COD_RETOUR = *BLANK
+  TERMINER
+FIN
+SI *F04
+  ENVOYER_MSG SYS9900
+  TRAITER 01
+FIN
+SI *F12
+  P_COD_ACTION = 'PR'
+  P_COD_RETOUR = *BLANK
+  TERMINER
+FIN
+VERIFIER 01
+VALIDER 01
+P_COD_RETOUR = *BLANK
+TERMINER
+******************
+INITIALISATION  01
+******************
+Z_???? = P_????
+INSERER_STD
+SI P_COD_ACTION = 'MO'
+  PROTEGER Z_????
+FIN
+*****************
+VERIFICATION 01
+*****************
+INSERER_STD
+*************
+VALIDATION 01
+*************
+INSERER_STD
+*****************
+TRT_GUIDE 01
+*****************
+INSERER_STD
+SI *F04
+  ENVOYER_MSG SYS9900
+FIN
+FIN_TRT_GUIDE

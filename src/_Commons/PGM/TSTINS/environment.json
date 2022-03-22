@@ -1,0 +1,21 @@
+{
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "DDDDDAAAAABBBBB",
+      "fileName" : ""
+    },
+    "shortName" : "DDDDDAAAAA",
+    "length" : 6,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "TEST1",
+      "fileName" : ""
+    },
+    "shortName" : "TEST1",
+    "length" : 6,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE"
+  } ]
+}

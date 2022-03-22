@@ -1,0 +1,55 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20080822)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20080822)      num_bin_4   i
+*ROW_METADATA(ADELIA         20080822)      alpha(25)   table(100)
+*ROW_METADATA(ADELIA         20080822)      
+*ROW_METADATA(ADELIA         20080822)      curseur c1 ansi_unicode
+*ROW_METADATA(ADELIA         20080822)   FIN_DECL
+*ROW_METADATA(ADELIA         20080822)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080822)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20080822)      executer    id_fen0
+*ROW_METADATA(ADELIA         20080822)   FIN_INIT
+*ROW_METADATA(ADELIA         20080822)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20080822)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20080822)         
+*ROW_METADATA(ADELIA         20080822)      FIN_DECL
+*ROW_METADATA(ADELIA         20080822)      DEBUT_INIT
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV SERV_LOG_1
+*ROW_METADATA(ADELIA         20080822)            monbin = 0
+*ROW_METADATA(ADELIA         20080822)            
+*ROW_METADATA(ADELIA         20080822)            ouvrir_sql_c  c1
+*ROW_METADATA(ADELIA         20080822)            lire_av_sql_c c1
+*ROW_METADATA(ADELIA         20080822)            
+*ROW_METADATA(ADELIA         20080822)            tant_que *sqlcode = *normal
+*ROW_METADATA(ADELIA         20080822)               presenter ansi_unicode
+*ROW_METADATA(ADELIA         20080822)               monbin = monbin + 1
+*ROW_METADATA(ADELIA         20080822)               inserer_elt id_obj:liste
+*ROW_METADATA(ADELIA         20080822)               si monbin < 100
+*ROW_METADATA(ADELIA         20080822)                  table(monbin) = zunicode
+*ROW_METADATA(ADELIA         20080822)               fin
+*ROW_METADATA(ADELIA         20080822)               lire_av_sql_c c1
+*ROW_METADATA(ADELIA         20080822)            refaire
+*ROW_METADATA(ADELIA         20080822)            
+*ROW_METADATA(ADELIA         20080822)            fermer_sql_c c1
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20080822)         
+*ROW_METADATA(ADELIA         20080822)         i = 1
+*ROW_METADATA(ADELIA         20080822)         tant_que i < monbin et i <= 100
+*ROW_METADATA(ADELIA         20080822)            postetable = table(i)
+*ROW_METADATA(ADELIA         20080822)            inserer_elt id_obj1:liste
+*ROW_METADATA(ADELIA         20080822)            i = i + 1
+*ROW_METADATA(ADELIA         20080822)         refaire
+*ROW_METADATA(ADELIA         20080822)         
+*ROW_METADATA(ADELIA         20080822)      FIN_INIT
+*ROW_METADATA(ADELIA         20080822)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20080822)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20080822)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20080822)         
+*ROW_METADATA(ADELIA         20080822)      FIN_VERIF
+*ROW_METADATA(ADELIA         20080822)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20080822)         
+*ROW_METADATA(ADELIA         20080822)      FIN_VALID
+*ROW_METADATA(ADELIA         20080822)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080822)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080822)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

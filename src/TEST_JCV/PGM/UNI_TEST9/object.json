@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "UNI_TEST9",
+  "description" : "Test Unicode 9",
+  "creationDate" : "2008-04-17 16:36:40",
+  "updateDate" : "2008-04-18 08:20:33",
+  "visibility" : "PRIVATE",
+  "ibmName" : "UNTST9",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "UNTST9",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "unicode" : true
+}

@@ -1,0 +1,18 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   * Règle de gestion de type contrôle
+*ROW_METADATA(ADELIA                 )   * Contrôle du CODE PERSONNE
+*ROW_METADATA(ADELIA                 )   SI $$EXIST <> *BLANK
+*ROW_METADATA(ADELIA                 )     REGLE_GESTION 0018 $$EXIST
+*ROW_METADATA(ADELIA                 )     DECLARER WGCPER;WG_COD_PER 2
+*ROW_METADATA(ADELIA                 )     IDENTIFIER RPERSONNL_COD PERSONNL CLE ;WG_COD_PER
+*ROW_METADATA(ADELIA                 )     WG_COD_PER = $$EXIST
+*ROW_METADATA(ADELIA                 )     LIRE            RPERSONNL_COD
+*ROW_METADATA(ADELIA                 )     SI              RPERSONNL_COD  N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )       $NOM_PERS = *BLANK
+*ROW_METADATA(ADELIA                 )       INIT_MSG $$EXIST
+*ROW_METADATA(ADELIA                 )       ANOMALIE
+*ROW_METADATA(ADELIA                 )     SINON
+*ROW_METADATA(ADELIA                 )       $NOM_PERS = PNOM_PERS
+*ROW_METADATA(ADELIA                 )     FIN
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

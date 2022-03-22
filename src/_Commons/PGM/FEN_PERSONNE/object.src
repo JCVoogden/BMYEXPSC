@@ -1,0 +1,60 @@
+* Fenêtre avec paramètre
+* Mise à jour avec une seule transaction avec réception de paramètre
+*
+* La variable P_COD_ACTION sert à déterminer si la sorti s'est
+* faites par F03 (EXit) ou par F12 (PRécédent)
+*
+* La variable P_COD_RETOUR sert à Ppositionner un eventuel problème
+* dans le programme à ramener au programme appelant
+*
+* Recherchez P_???? et remplacer par une zone de travail que vous
+* avez préalablement créée a la taille de la variable à retourner
+*
+* Recherchez Z_???? et remplacer la zone écran à retourner
+*
+*
+RECEVOIR P_COD_RETOUR P_COD_ACTION PP_COD_MAT_PERS
+*
+INITIALISER 01
+TRAITER 01
+*-------------------------
+TRANSACTION 01
+SI *F03 OU *F12
+  TERMINER
+FIN
+SI *PAGAV
+  PAGINER_AVANT
+FIN
+VERIFIER 01
+SI WCOD_OUI_NON = 'O'
+  TERMINER
+SINON
+  TRAITER 01
+FIN
+******************
+INITIALISATION  01
+******************
+DEBUT_STD
+FIN_STD
+EFFACER         1
+GESTION_SFL     1
+DEBUT_STD
+PRESENTER       PERSONN_S1
+ZW_COD_OPTION   = *BLANK
+FIN_STD
+MAJ_SFL
+FIN_GESTION_SFL
+******************
+VERIFICATION    01
+******************
+DEBUT_STD
+FIN_STD
+GESTION_SFL     1
+SI ZW_COD_OPTION = '1'
+  PLACER_A_GAUCHE ZZCOD_MAT_PERS PP_COD_MAT_PERS
+  WCOD_OUI_NON = 'O'
+  QUITTER_SFL
+FIN
+DEBUT_STD
+FIN_STD
+FIN_GESTION_SFL

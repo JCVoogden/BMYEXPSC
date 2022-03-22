@@ -1,0 +1,17 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   DECLARER WWNVUE;WW_NOM_VUE 16
+*ROW_METADATA(ADELIA                 )   SI WW_NOM_VUE = *BLANK
+*ROW_METADATA(ADELIA                 )     SI P_COD_ACTION = 'MO'
+*ROW_METADATA(ADELIA                 )       SI :01 N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )         P_COD_RETOUR = '1'
+*ROW_METADATA(ADELIA                 )       FIN
+*ROW_METADATA(ADELIA                 )       SI *BLOQUE = '1'
+*ROW_METADATA(ADELIA                 )         P_COD_RETOUR = '2'
+*ROW_METADATA(ADELIA                 )       FIN
+*ROW_METADATA(ADELIA                 )     FIN
+*ROW_METADATA(ADELIA                 )     SI P_COD_RETOUR <> *BLANK
+*ROW_METADATA(ADELIA                 )       INIT_ZONES :01
+*ROW_METADATA(ADELIA                 )       WW_NOM_VUE = ':01'
+*ROW_METADATA(ADELIA                 )     FIN
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "GUIDE_PARAMETRE",
+  "description" : "Guide paramètre",
+  "creationDate" : "1996-07-05 09:06:57",
+  "updateDate" : "1996-07-05 09:19:33",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

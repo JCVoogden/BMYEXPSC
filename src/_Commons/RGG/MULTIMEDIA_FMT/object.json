@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "MULTIMEDIA_FMT",
+  "description" : "Exécution d'un séquence multimédia avec formatage",
+  "creationDate" : "1996-07-05 09:07:01",
+  "updateDate" : "1996-07-05 09:20:16",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

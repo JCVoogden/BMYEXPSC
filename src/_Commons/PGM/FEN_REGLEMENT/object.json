@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "FEN_REGLEMENT",
+  "description" : "Fenêtre d'interrogation des règlements",
+  "creationDate" : "1995-06-08 07:21:36",
+  "updateDate" : "1995-06-08 07:21:36",
+  "visibility" : "PUBLIC",
+  "ibmName" : "INTMRG",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "INTMRG",
+  "programTemplateName" : "UTI_FEN_NIV2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

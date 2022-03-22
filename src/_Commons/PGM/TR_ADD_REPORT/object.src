@@ -1,0 +1,76 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20000928)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20000928)      NUM_BIN_4    Id
+*ROW_METADATA(ADELIA         20001009)      NUM_BIN_4    Line
+*ROW_METADATA(ADELIA         20080616)      NUM_BIN_4    MaxLine
+*ROW_METADATA(ADELIA         20080616)      NUM_BIN_4    BaseLine
+*ROW_METADATA(ADELIA         20080616)      ALPHA(250)   Texte
+*ROW_METADATA(ADELIA         20031014)      NUM_BIN_4    CodeRetour
+*ROW_METADATA(ADELIA         20000928)      
+*ROW_METADATA(ADELIA         20080616)      PARAM Id Texte CodeRetour
+*ROW_METADATA(ADELIA         20000928)   FIN_DECL
+*ROW_METADATA(ADELIA         20000928)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080616)      exec_sql ( select value into :MaxLine from $$.GsParams where Param = 'AgentReportMaxLines' )
+*ROW_METADATA(ADELIA         20080616)      
+*ROW_METADATA(ADELIA         20080616)      si *sqlcode <> 0 et *sqlcode <> *non_trouve
+*ROW_METADATA(ADELIA         20080616)         CodeRetour = *sqlcode
+*ROW_METADATA(ADELIA         20080616)      /*    annuler_maj
+*ROW_METADATA(ADELIA         20080616)         terminer
+*ROW_METADATA(ADELIA         20080616)      fin
+*ROW_METADATA(ADELIA         20080616)      
+*ROW_METADATA(ADELIA         20080616)      si *sqlcode <> *non_trouve
+*ROW_METADATA(ADELIA         20080616)         MaxLine = 10000
+*ROW_METADATA(ADELIA         20080616)      fin
+*ROW_METADATA(ADELIA         20080616)      
+*ROW_METADATA(ADELIA         20080616)      exec_sql ( select max(LineNumber) into :Line from $$.GsReport where JobId = :Id )
+*ROW_METADATA(ADELIA         20000928)      
+*ROW_METADATA(ADELIA         20001009)      si *sqlcode <> 0 et *sqlcode <> *non_trouve
+*ROW_METADATA(ADELIA         20000928)         CodeRetour = *sqlcode
+*ROW_METADATA(ADELIA         20001009)      /*    annuler_maj
+*ROW_METADATA(ADELIA         20000928)         terminer
+*ROW_METADATA(ADELIA         20000928)      fin
+*ROW_METADATA(ADELIA         20001009)      
+*ROW_METADATA(ADELIA         20001009)      si *sqlcode <> *non_trouve
+*ROW_METADATA(ADELIA         20001009)         Line = Line + 1
+*ROW_METADATA(ADELIA         20001009)      sinon
+*ROW_METADATA(ADELIA         20001009)         Line = 1
+*ROW_METADATA(ADELIA         20001009)      fin
+*ROW_METADATA(ADELIA         20080616)      
+*ROW_METADATA(ADELIA         20080616)      si Line > MaxLine
+*ROW_METADATA(ADELIA         20080616)         * supprime les lignes obsolètes
+*ROW_METADATA(ADELIA         20080616)         BaseLine = Line - MaxLine + 1
+*ROW_METADATA(ADELIA         20080616)         exec_sql ( delete from $$.GsReport where JobId = :Id and LineNumber <= :BaseLine )
+*ROW_METADATA(ADELIA         20080616)      
+*ROW_METADATA(ADELIA         20080616)         si *sqlcode <> 0 et *sqlcode <> *non_trouve
+*ROW_METADATA(ADELIA         20080616)            CodeRetour = *sqlcode
+*ROW_METADATA(ADELIA         20080616)      /*       annuler_maj
+*ROW_METADATA(ADELIA         20080616)            terminer
+*ROW_METADATA(ADELIA         20080616)         fin
+*ROW_METADATA(ADELIA         20080616)      fin
+*ROW_METADATA(ADELIA         20080616)      
+*ROW_METADATA(ADELIA         20080616)      si Line >= 2147483647
+*ROW_METADATA(ADELIA         20080616)         * renumérote le rapport
+*ROW_METADATA(ADELIA         20080616)         BaseLine = 2147483647 - MaxLine - 1
+*ROW_METADATA(ADELIA         20080616)         exec_sql ( update $$.GsReport set LineNumber = LineNumber - :BaseLine )
+*ROW_METADATA(ADELIA         20080616)      
+*ROW_METADATA(ADELIA         20080616)         si *sqlcode <> 0 et *sqlcode <> *non_trouve
+*ROW_METADATA(ADELIA         20080616)            CodeRetour = *sqlcode
+*ROW_METADATA(ADELIA         20080616)      /*       annuler_maj
+*ROW_METADATA(ADELIA         20080616)            terminer
+*ROW_METADATA(ADELIA         20080616)         fin
+*ROW_METADATA(ADELIA         20080616)         
+*ROW_METADATA(ADELIA         20080616)         Line = MaxLine + 1
+*ROW_METADATA(ADELIA         20080616)      fin
+*ROW_METADATA(ADELIA         20080616)      
+*ROW_METADATA(ADELIA         20080616)      exec_sql ( insert into $$.GsReport values ( :Id, :Line, :Texte ) )
+*ROW_METADATA(ADELIA         20000928)      
+*ROW_METADATA(ADELIA         20000928)      si *sqlcode <> 0
+*ROW_METADATA(ADELIA         20000928)         CodeRetour = *sqlcode
+*ROW_METADATA(ADELIA         20001009)      /*    annuler_maj
+*ROW_METADATA(ADELIA         20000928)         terminer
+*ROW_METADATA(ADELIA         20000928)      fin
+*ROW_METADATA(ADELIA         20000928)      
+*ROW_METADATA(ADELIA         20001009)      CodeRetour = 0
+*ROW_METADATA(ADELIA         20001009)      /* valider_maj
+*ROW_METADATA(ADELIA         20000928)   FIN_INIT
+*ROW_METADATA(ADELIA                 )FIN_PGM

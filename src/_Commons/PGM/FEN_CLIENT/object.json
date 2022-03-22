@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "FEN_CLIENT",
+  "description" : "Fenêtre d'affichage des clients",
+  "creationDate" : "1995-06-08 07:14:47",
+  "updateDate" : "2005-12-13 10:42:25",
+  "visibility" : "PUBLIC",
+  "ibmName" : "FENCLI",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "FENCLI",
+  "programTemplateName" : "UTI_FEN_NIV2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

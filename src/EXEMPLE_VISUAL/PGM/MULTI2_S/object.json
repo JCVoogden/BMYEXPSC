@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "MULTI2_S",
+  "description" : "Test 2",
+  "creationDate" : "2007-11-16 09:39:20",
+  "updateDate" : "2007-11-16 09:47:29",
+  "visibility" : "PRIVATE",
+  "ibmName" : "MULT2S",
+  "programType" : "I",
+  "sourceType" : "MADELIA",
+  "layoutCode" : "MULT2S",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Ma fenetre" help="" id="1" name="ID_FEN1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="192"/>
+        <property id="-45" intValue="192"/>
+        <property id="-37" intValue="5"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="264"/>
+        <property id="-3" intValue="330"/>
+        <property id="-2" intValue="78"/>
+        <property id="-1" intValue="52"/>
+        <property id="3" stringValue="Ma fenetre"/>
+        <property id="6"/>
+        <property id="7"/>
+        <property id="9"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ3">
+            <properties>
+                <property id="-8" stringValue="Texte"/>
+                <property id="-4" intValue="26"/>
+                <property id="-3" intValue="58"/>
+                <property id="-2" intValue="30"/>
+                <property id="-1" intValue="42"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="LISTE_BTN_RADIO" dll="RADIO" help="" kinematic="0" name="ID_OBJ4">
+            <properties>
+                <property id="-23" stringValue="Tahoma;8;1"/>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 15 -1"/>
+                <property id="-8" stringValue="Titre"/>
+                <property id="-4" intValue="130"/>
+                <property id="-3" intValue="144"/>
+                <property id="-2" intValue="28"/>
+                <property id="-1" intValue="124"/>
+                <property id="10" intValue="40"/>
+                <property id="11" intValue="20"/>
+                <property id="12" intValue="20"/>
+                <property id="13" intValue="20"/>
+                <property id="14" stringValue="Radio¤Radio¤"/>
+            </properties>
+        </control>
+    </controls>
+</window>

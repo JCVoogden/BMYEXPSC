@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Glisser-Déposer" help="" id="0" name="MAIN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property binaryType="bin" id="-20">AAABAAEAICAEAAEABADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAwMDAAICAgAAAAP8AAP8AAAD//wD/AAAA/wD/AP//AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////////////8AAAAAAAD/////////////AAAAAAAA/////////////wAAAAAAAP////////////8AAAAAAAD/////////////AAcAAAAA/////////////wBwcAAAAP////////////8AcAcAAAD/////93d3d3d3h3CQcAAA/////wAAAAAAAAAAmQcAAP////8JmZmZmZmZmZmQcAD/////CZmZmZmZmZmZmQAA/////wmZmZmZmZmZmZAAAP////8AAAAAAAAAAJkAAAD/////////////AACQAAAA/////////////wAAAAAAAP////////////8AAAAAAAD/////////////AAAAAAAA/////////////wAAAAAAAP////////////8AAAAAAAD/////////d3d3AAAAAAAA////////8AAAAAAAAAAAAP////////D///8AAAAAAAD////////w///wAAAAAAAA////////8P//AAAAAAAAAP////////D/8AAAAAAAAAD////////w/wAAAAAAAAAA////////8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////4AAAf+AAAH/gAAB/4AAAf+AAAH/gAABv4AAAR+AAAEPgAAAB4AAAAOAAAABgAAAAYAAAAOAAAAHgAABj4AAAZ+AAAG/gAAB/4AAAf+AAAH/gAAB/4AAAf+AAAH/gAAD/4AAB/+AAA//gAAf/4AAP/+AAH///////wAA</property>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="463"/>
+        <property id="-3" intValue="619"/>
+        <property id="-2" intValue="136"/>
+        <property id="-1" intValue="130"/>
+        <property id="3" stringValue="Glisser-Déposer"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABAUlEQVR4Xu2VUQ6CQAwFPTpH42aYMWyyzGK3WBL9cJLGBXnz+gWPx4+wFafM9gktx6+FV5E6R5/jbOkVOm0e57i2OMtBlOUsxz3LM9iT4l2O+y6YYUeKKMd/LolwPgW5yaSxO826rqeD0yUR9pbB6ZII58vgdEmE82VwuiTC+TI4e393PsX5Mjh7v64HnC+D8+CfLOH8AM9UZttnvx5w38DrmZsG11cXYLyE+wbuXADX/ra8tkBltn04uxzcd4rf99Esy3L4LkTl4K4yOBG3BZh35eB8GZyI2wJROThfBmeTz8rB+TI4XRLhfBmcLolwvgxOl0Q4XwanSyJa4O75M+UJg/stwpZHozIAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABAUlEQVR4Xu2VUQ6CQAwFPTpH42aYMWyyzGK3WBL9cJLGBXnz+gWPx4+wFafM9gktx6+FV5E6R5/jbOkVOm0e57i2OMtBlOUsxz3LM9iT4l2O+y6YYUeKKMd/LolwPgW5yaSxO826rqeD0yUR9pbB6ZII58vgdEmE82VwuiTC+TI4e393PsX5Mjh7v64HnC+D8+CfLOH8AM9UZttnvx5w38DrmZsG11cXYLyE+wbuXADX/ra8tkBltn04uxzcd4rf99Esy3L4LkTl4K4yOBG3BZh35eB8GZyI2wJROThfBmeTz8rB+TI4XRLhfBmcLolwvgxOl0Q4XwanSyJa4O75M+UJg/stwpZHozIAAAAASUVORK5CYII=</property>
+        <property id="22" intValue="611"/>
+        <property id="23" intValue="436"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="ARBORESCENCE" dll="TREEVIEW" help="" kinematic="0" name="ARB_DATA">
+            <properties>
+                <property id="-50" intValue="1"/>
+                <property id="-4" intValue="217"/>
+                <property id="-3" intValue="177"/>
+                <property id="-2" intValue="29"/>
+                <property id="-1" intValue="127"/>
+                <property id="5" intValue="1"/>
+                <property id="6" intValue="1"/>
+                <property id="7" intValue="1"/>
+            </properties>
+            <menu>
+                <item key1="0" key2="0" name="MNU_SUPPRIMER" state="4112" text="Supprimer" type="1"/>
+            </menu>
+        </control>
+        <control associatedVariable="" className="LISTE" dll="CONTAINR" help="" kinematic="0" name="LST_CEPAGES">
+            <properties>
+                <property id="-4" intValue="104"/>
+                <property id="-3" intValue="98"/>
+                <property id="-2" intValue="143"/>
+                <property id="-1" intValue="20"/>
+                <property id="6" stringValue="CEPAGES -6 2 30 -1"/>
+            </properties>
+            <controls>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="CEPAGES">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 30 -1"/>
+                        <property id="-8" stringValue="Cépages"/>
+                        <property id="-3" intValue="97"/>
+                        <property id="11" stringValue="CEPAGES 9 2 30 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+            </controls>
+        </control>
+        <control associatedVariable="" className="ARBORESCENCE" dll="TREEVIEW" help="" kinematic="0" name="ARB_IMAGES">
+            <properties>
+                <property id="-50" intValue="1"/>
+                <property id="-4" intValue="100"/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="29"/>
+                <property id="-1" intValue="339"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="IMAGE" dll="BITMAP" help="" kinematic="0" name="IMGARB">
+            <properties>
+                <property id="-4" intValue="102"/>
+                <property id="-3" intValue="121"/>
+                <property id="-2" intValue="29"/>
+                <property id="-1" intValue="465"/>
+                <property id="3" intValue="2"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="ID_OBJ0">
+            <properties>
+                <property id="-8" stringValue="Glisser/Déposer d'une image (ex. IExplore)"/>
+                <property id="-4" intValue="129"/>
+                <property id="-3" intValue="270"/>
+                <property id="-2" intValue="11"/>
+                <property id="-1" intValue="330"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="ID_OBJ2">
+            <properties>
+                <property id="-8" stringValue="Glisser/Déposer entre liste et arborescence"/>
+                <property id="-4" intValue="248"/>
+                <property id="-3" intValue="307"/>
+                <property id="-2" intValue="9"/>
+                <property id="-1" intValue="9"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="LISTE" dll="CONTAINR" help="" kinematic="0" name="LST_VIGNOBLES">
+            <properties>
+                <property id="-4" intValue="104"/>
+                <property id="-3" intValue="98"/>
+                <property id="-2" intValue="30"/>
+                <property id="-1" intValue="20"/>
+                <property id="6" stringValue="VIGNOBLES -6 2 30 -1"/>
+            </properties>
+            <controls>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="VIGNOBLES">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 30 -1"/>
+                        <property id="-8" stringValue="Vignobles"/>
+                        <property id="-3" intValue="96"/>
+                        <property id="11" stringValue="VIGNOBLES 9 2 30 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+            </controls>
+        </control>
+        <control associatedVariable="" className="LISTE" dll="CONTAINR" help="" kinematic="0" name="LST_TEXTE">
+            <properties>
+                <property id="-50" intValue="1"/>
+                <property id="-4" intValue="71"/>
+                <property id="-3" intValue="251"/>
+                <property id="-2" intValue="177"/>
+                <property id="-1" intValue="339"/>
+                <property id="6" stringValue="COL_DEST4 -6 2 5000 -1"/>
+                <property id="7" intValue="1"/>
+            </properties>
+            <menu>
+                <item key1="0" key2="-20" name="MNU_SUPPR" state="4112" text="Supprimer" type="1"/>
+            </menu>
+            <controls>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="COL_DEST4">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 5000 -1"/>
+                        <property id="-8" stringValue="Texte"/>
+                        <property id="-3" intValue="233"/>
+                        <property id="11" stringValue="COL_DEST4 9 2 5000 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+            </controls>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="ID_OBJ1">
+            <properties>
+                <property id="-8" stringValue="Glisser/Déposer d'un texte (ex. Word)"/>
+                <property id="-4" intValue="97"/>
+                <property id="-3" intValue="270"/>
+                <property id="-2" intValue="160"/>
+                <property id="-1" intValue="330"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_QUIT">
+            <properties>
+                <property id="-8" stringValue="Fermer"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="404"/>
+                <property id="-1" intValue="520"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="LISTE" dll="CONTAINR" help="" kinematic="0" name="LST_SRC">
+            <properties>
+                <property id="-50" intValue="1"/>
+                <property id="-4" intValue="100"/>
+                <property id="-3" intValue="273"/>
+                <property id="-2" intValue="282"/>
+                <property id="-1" intValue="22"/>
+                <property id="6" stringValue="COL_DOMAINE_SRC -6 2 20 -1 # COL_ADRESSE_SRC -6 2 50 -1"/>
+            </properties>
+            <menu>
+                <item key1="0" key2="-20" name="MNU_SUPPR" state="4112" text="Supprimer" type="1"/>
+            </menu>
+            <controls>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="COL_DOMAINE_SRC">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 20 -1"/>
+                        <property id="-8" stringValue="Domaines"/>
+                        <property id="-3" intValue="108"/>
+                        <property id="11" stringValue="COL_DOMAINE_SRC 9 2 20 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="COL_ADRESSE_SRC">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 50 -1"/>
+                        <property id="-8" stringValue="Adresse"/>
+                        <property id="-3" intValue="148"/>
+                        <property id="11" stringValue="COL_ADRESSE_SRC 9 2 50 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+            </controls>
+        </control>
+        <control associatedVariable="" className="LISTE" dll="CONTAINR" help="" kinematic="0" name="LST_DEST">
+            <properties>
+                <property id="-50" intValue="1"/>
+                <property id="-4" intValue="100"/>
+                <property id="-3" intValue="270"/>
+                <property id="-2" intValue="282"/>
+                <property id="-1" intValue="315"/>
+                <property id="6" stringValue="COL_DOMAINE_DEST -6 2 20 -1 # COL_ADRESSE_DEST -6 2 50 -1"/>
+            </properties>
+            <menu>
+                <item key1="0" key2="-20" name="MNU_SUPPR" state="4112" text="Supprimer" type="1"/>
+            </menu>
+            <controls>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="COL_DOMAINE_DEST">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 20 -1"/>
+                        <property id="-8" stringValue="Domaine"/>
+                        <property id="-3" intValue="105"/>
+                        <property id="11" stringValue="COL_DOMAINE_DEST 9 2 20 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="COL_ADRESSE_DEST">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 50 -1"/>
+                        <property id="-8" stringValue="Adresse"/>
+                        <property id="-3" intValue="148"/>
+                        <property id="11" stringValue="COL_ADRESSE_DEST 9 2 50 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+            </controls>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="ID_OBJ">
+            <properties>
+                <property id="-8" stringValue="Glisser/Déposer entre 2 listes (utiliser Crtl pour la copie)"/>
+                <property id="-4" intValue="127"/>
+                <property id="-3" intValue="583"/>
+                <property id="-2" intValue="266"/>
+                <property id="-1" intValue="14"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="ETAT">
+            <properties>
+                <property id="-38"/>
+                <property id="-21" stringValue="MS Sans Serif;10;256;0"/>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 256 -1"/>
+                <property id="-4" intValue="20"/>
+                <property id="-3" intValue="499"/>
+                <property id="-2" intValue="406"/>
+                <property id="-1" intValue="12"/>
+            </properties>
+        </control>
+    </controls>
+</window>

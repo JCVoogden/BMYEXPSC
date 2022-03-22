@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "TST_DBG_COND_1",
+  "description" : "TST_DBG_COND_1",
+  "creationDate" : "2011-04-07 12:45:27",
+  "updateDate" : "2021-01-25 16:19:46",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TDBCD1",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TDBCD1",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "manageHistoryButtons" : " "
+}

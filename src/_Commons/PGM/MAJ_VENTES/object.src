@@ -1,0 +1,160 @@
+* M. à J. des ventes clients
+*
+*
+INITIALISER 01
+TRAITER 01
+*-------------------------
+TRANSACTION 01
+SI *F03 OU *F12
+  TERMINER
+FIN
+VERIFIER 01
+INITIALISER 02
+TRAITER 02
+*-------------------------
+TRANSACTION 02
+SI *F12
+  TRAITER 01
+FIN
+SI *PAGAV
+  PAGINER_AVANT
+FIN
+VERIFIER 02
+SI *F06
+  VALIDER 02
+  INITIALISER 01
+  TRAITER 01
+FIN
+TRAITER 02
+******************
+INITIALISATION  01
+******************
+DEBUT_STD
+XNOM_PGM        = *NOM_PGM
+ZZCOD_CLIENT    = *BLANK
+FIN_STD
+******************
+VERIFICATION    01
+******************
+DEBUT_STD
+* Contrôle Alphanumérique sur ZZCOD_CLIENT : erreur si à blanc
+REGLE_GESTION 0008 ZZCOD_CLIENT
+SI ZZCOD_CLIENT = *BLANK
+  ANOMALIE
+FIN
+FIN_STD
+* Contrôle existence du code client
+REGLE_GESTION 0001 ZZCOD_CLIENT
+LIRE CLIENTS_DB
+SI CLIENTS_DB  N_EXISTE_PAS
+  ERREUR
+FIN
+******************
+INITIALISATION  02
+******************
+DEBUT_STD
+LIRE            CLIENTS_DB
+PRESENTER       CLIENTS_DB
+LIRE            PERSONN_DC
+PRESENTER       PERSONN_DC
+LIRE            REGLEMT_DD
+PRESENTER       REGLEMT_DD
+XNOM_PGM        = *NOM_PGM
+FIN_STD
+* Changement d'attribut d'affichage
+SI ZZMHT_CAF_CLI <= 0
+  INVERSER_IMAGE *VRAI ZZCOD_CLIENT ZZNOM_CLIENT ZZMHT_CAF_CLI
+SINON
+  INVERSER_IMAGE *FAUX ZZCOD_CLIENT ZZNOM_CLIENT ZZMHT_CAF_CLI
+FIN
+EFFACER         1
+GESTION_SFL     1
+DEBUT_STD
+PRESENTER       VENTE_A1
+LIRE            ARTICLE_DA
+PRESENTER       ARTICLE_DA
+* Calcul du Montant TTC
+* Le taux de Taxe est fixe (18,6 %) pour notre exemple
+ZZMTT_VENTE = VMHT_VENTE * 1,186
+FIN_STD
+MAJ_SFL
+* Récupération du dernier numéro de ligne de ventes pour ce client
+WVNUM_LIG_VENTE = ZZNUM_LIG_VENTE
+FIN_GESTION_SFL
+******************
+VERIFICATION    02
+******************
+DEBUT_STD
+FIN_STD
+GESTION_SFL     1
+* Reproduction du contenu de variable
+REPRODUIRE ZZCOD_ARTICLE ZZDAT_VENTE
+SI ZZMHT_VENTE <> 0 OU ZZDAT_VENTE <> 0 OU ZZCOD_ARTICLE <> *BLANK
+  DEBUT_STD
+  * Calcul du Montant TTC
+  * Le taux de Taxe est fixe (18,6 %) pour notre exemple
+  ZZMTT_VENTE = ZZMHT_VENTE * 1,186
+  * Contrôle de la date
+  REGLE_GESTION 9001  ZZDAT_VENTE
+  RWP_COD_RET = &CONTROLE_DATE6('YMD';ZZDAT_VENTE)
+  SI RWP_COD_RET = '0'
+    ANOMALIE
+  FIN
+  * Contrôle Alphanumérique sur ZZCOD_ARTICLE : erreur si à blanc
+  REGLE_GESTION 0008 ZZCOD_ARTICLE
+  SI ZZCOD_ARTICLE = *BLANK
+    ANOMALIE
+  FIN
+  FIN_STD
+  * Contrôle Présence sur ZZCOD_ARTICLE : erreur si n'existe pas
+  REGLE_GESTION 0009 ZZCOD_ARTICLE
+  LIRE ARTICLE_DA
+  PRESENTER ARTICLE_DA
+  SI ARTICLE_DA N_EXISTE_PAS
+    INIT_MSG ZZCOD_ARTICLE
+    ANOMALIE
+  SINON
+    * Gestion du code famille
+    ZZCOD_FAMILLE = ACOD_FAMILLE
+  FIN
+  * Contrôle sur le montant vente : Faux si à 0
+  REGLE_GESTION 0003 ZZMHT_VENTE
+  SI ZZMHT_VENTE = 0
+    ANOMALIE
+  FIN
+FIN
+FIN_GESTION_SFL
+******************
+VALIDATION      02
+******************
+DEBUT_STD
+FIN_STD
+GESTION_SFL     1
+SUPPRESSION_L1
+PLACER          VENTE_A1
+* Gestion du numéro de ligne
+SI ZZNUM_LIG_VENTE = 0
+  WVNUM_LIG_VENTE = WVNUM_LIG_VENTE + 1
+  VNUM_LIG_VENTE = WVNUM_LIG_VENTE
+FIN
+CLASSER         VENTE_A1
+FIN_GESTION_SFL
+******************
+TRT_GUIDE       01
+******************
+DEBUT_STD
+* Guide d'affichage de la fenêtre des CLIENTS
+GUIDE ZZCOD_CLIENT
+APPELER FEN_CLIENT RWP_COD_RET P_COD_ACTION ZZCOD_CLIENT
+FIN_GUIDE
+FIN_STD
+FIN_TRT_GUIDE
+******************
+TRT_GUIDE       02
+******************
+DEBUT_STD
+GUIDE ZZCOD_ARTICLE
+APPELER FEN_ARTICLE RWP_COD_RET P_COD_ACTION ZZCOD_ARTICLE
+FIN_GUIDE
+FIN_STD
+FIN_TRT_GUIDE

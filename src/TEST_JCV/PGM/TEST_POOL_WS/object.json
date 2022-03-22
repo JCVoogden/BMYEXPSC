@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "TEST_POOL_WS",
+  "description" : "TEST_POOL_WS",
+  "creationDate" : "2010-10-12 09:10:45",
+  "updateDate" : "2010-10-12 09:46:58",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TPOOLW",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TPOOLW",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

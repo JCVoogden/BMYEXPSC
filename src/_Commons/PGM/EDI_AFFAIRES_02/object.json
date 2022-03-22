@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "EDI_AFFAIRES_02",
+  "description" : "Edition du chiffres d'affaires (Gestion de tables)",
+  "creationDate" : "1995-06-08 07:03:19",
+  "updateDate" : "1995-06-08 07:03:19",
+  "visibility" : "PUBLIC",
+  "ibmName" : "EDICA2",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "EDICA2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

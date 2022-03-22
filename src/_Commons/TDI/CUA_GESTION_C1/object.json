@@ -1,0 +1,9 @@
+{
+  "type" : "TDI",
+  "name" : "CUA_GESTION_C1",
+  "description" : "Gestion par liste CUA (Création par option 1)",
+  "creationDate" : "1995-06-07 12:11:50",
+  "updateDate" : "1995-09-25 17:22:57",
+  "visibility" : "PUBLIC",
+  "templateType" : "I"
+}

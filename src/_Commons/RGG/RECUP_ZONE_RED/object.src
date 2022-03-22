@@ -1,0 +1,8 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   LIRE :01
+*ROW_METADATA(ADELIA                 )   SI :01 N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )     :03 = *BLANK
+*ROW_METADATA(ADELIA                 )   SINON
+*ROW_METADATA(ADELIA                 )     :03 = :04
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

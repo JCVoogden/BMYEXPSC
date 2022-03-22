@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "MAJ_POLICE",
+  "description" : "Mise à jour des polices d'assurance",
+  "creationDate" : "1995-06-08 07:38:29",
+  "updateDate" : "1995-06-08 07:38:29",
+  "visibility" : "PUBLIC",
+  "ibmName" : "MAJPOL",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "MAJPOL",
+  "programTemplateName" : "SAI_2T_SUP",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

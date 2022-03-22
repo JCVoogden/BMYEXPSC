@@ -1,0 +1,8 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   DECLARER WNCPT;W_NUM_COMPTE 11
+*ROW_METADATA(ADELIA                 )   *
+*ROW_METADATA(ADELIA                 )   * Transfert du numéro de compte saisi dans zone de travail pour
+*ROW_METADATA(ADELIA                 )   * calcul clé RIB.
+*ROW_METADATA(ADELIA                 )   *
+*ROW_METADATA(ADELIA                 )   W_NUM_COMPTE = $$NUM_COMPTE
+*ROW_METADATA(ADELIA                 )FIN_RGG

@@ -1,0 +1,611 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         00000000)   DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)      * indice pour informer et déclencher les actions
+*ROW_METADATA(ADELIA         00000000)      NUM_BIN_2 N
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * visibilité
+*ROW_METADATA(ADELIA         00000000)      BOOL V
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * paramètres des méthodes
+*ROW_METADATA(ADELIA         00000000)      NUM_BIN_4 CR
+*ROW_METADATA(ADELIA         00000000)      NUM_BIN_4 L1
+*ROW_METADATA(ADELIA         00000000)      NUM_BIN_4 L2
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      ALPHA(250) T
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      ALPHA(3) DEVISE
+*ROW_METADATA(ADELIA         00000000)      ALPHA(20) L_DEVISE
+*ROW_METADATA(ADELIA         00000000)      LISTE DEVISES DEVISE L_DEVISE T_DEVISE
+*ROW_METADATA(ADELIA         20040225)      
+*ROW_METADATA(ADELIA         00000000)      ALPHA(260) AF
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      BOOL B
+*ROW_METADATA(ADELIA         00000000)   FIN_DECL
+*ROW_METADATA(ADELIA         00000000)   DEBUT_INIT
+*ROW_METADATA(ADELIA         00000000)      INITIALISER FEN_EXCEL
+*ROW_METADATA(ADELIA         00000000)      EXECUTER FEN_EXCEL
+*ROW_METADATA(ADELIA         00000000)   FIN_INIT
+*ROW_METADATA(ADELIA         00000000)   DEBUT_FENETRE FEN_EXCEL
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         BOOL ACT
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      DEBUT_INIT
+*ROW_METADATA(ADELIA         00000000)         APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxCenterWindow' FEN_EXCEL
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET ZZ_CORRES
+*ROW_METADATA(ADELIA         00000000)            CORRES='Françoise Michel'
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET LST_PROD
+*ROW_METADATA(ADELIA         00000000)            QTE=1
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            C_TVA='N'
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            PRODUIT='Pierre lunaire'
+*ROW_METADATA(ADELIA         00000000)            PRIX=45
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_PROD:LISTE
+*ROW_METADATA(ADELIA         00000000)            PRODUIT='Pierre martienne'
+*ROW_METADATA(ADELIA         00000000)            PRIX=170
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_PROD:LISTE
+*ROW_METADATA(ADELIA         00000000)            PRODUIT='Boule de cristal'
+*ROW_METADATA(ADELIA         00000000)            PRIX=22
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_PROD:LISTE
+*ROW_METADATA(ADELIA         00000000)            PRODUIT='Baguette magique'
+*ROW_METADATA(ADELIA         00000000)            PRIX=37
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_PROD:LISTE
+*ROW_METADATA(ADELIA         00000000)            PRODUIT='Chapeau melon'
+*ROW_METADATA(ADELIA         00000000)            PRIX=84
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_PROD:LISTE
+*ROW_METADATA(ADELIA         00000000)            PRODUIT='Bottes de cuir'
+*ROW_METADATA(ADELIA         00000000)            PRIX=55
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_PROD:LISTE
+*ROW_METADATA(ADELIA         00000000)            PRODUIT='Patins à roulettes'
+*ROW_METADATA(ADELIA         00000000)            PRIX=35
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_PROD:LISTE
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            C_TVA='S'
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            PRODUIT='Boîte à bonbons'
+*ROW_METADATA(ADELIA         00000000)            PRIX=25
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_PROD:LISTE
+*ROW_METADATA(ADELIA         00000000)            PRODUIT='Boîte à outils'
+*ROW_METADATA(ADELIA         00000000)            PRIX=120
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_PROD:LISTE
+*ROW_METADATA(ADELIA         00000000)            PRODUIT='Tabouret rotatif'
+*ROW_METADATA(ADELIA         00000000)            PRIX=140
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_PROD:LISTE
+*ROW_METADATA(ADELIA         00000000)            PRODUIT='Lampe artisanale'
+*ROW_METADATA(ADELIA         00000000)            PRIX=99,8
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_PROD:LISTE
+*ROW_METADATA(ADELIA         00000000)            PRODUIT='Tapis d''Orient'
+*ROW_METADATA(ADELIA         00000000)            PRIX=279
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_PROD:LISTE
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET LST_DEVISE
+*ROW_METADATA(ADELIA         00000000)            DEVISE='ESC'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Escudo'
+*ROW_METADATA(ADELIA         00000000)            T_DEVISE=200,482
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            DEVISE='DM'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Deutch Mark'
+*ROW_METADATA(ADELIA         00000000)            T_DEVISE=1,95583
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            DEVISE='LI'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Lire'
+*ROW_METADATA(ADELIA         00000000)            T_DEVISE=1936,27
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            DEVISE='FL'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Florin'
+*ROW_METADATA(ADELIA         00000000)            T_DEVISE=2,20371
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            DEVISE='FB'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Franc Belge'
+*ROW_METADATA(ADELIA         00000000)            T_DEVISE=40,3399
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            DEVISE='FLU'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Franc Luxembourgeois'
+*ROW_METADATA(ADELIA         00000000)            T_DEVISE=40,3399
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            DEVISE='I£'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Livre Irlandaise'
+*ROW_METADATA(ADELIA         00000000)            T_DEVISE=0,787564
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            DEVISE='FM'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Mark Finlandais'
+*ROW_METADATA(ADELIA         00000000)            T_DEVISE=5,94573
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            DEVISE='PE'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Peseta'
+*ROW_METADATA(ADELIA         00000000)            T_DEVISE=166,386
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            DEVISE='S'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Schilling'
+*ROW_METADATA(ADELIA         00000000)            T_DEVISE=13,7603
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            T_DEVISE=0
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            DEVISE='CHF'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Franc Suisse'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            DEVISE='Y'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Yen'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            DEVISE='£'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Livre Sterling'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            DEVISE='$'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Dollar'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            DEVISE='EUR'
+*ROW_METADATA(ADELIA         00000000)            L_DEVISE='Euro'
+*ROW_METADATA(ADELIA         00000000)            T_DEVISE=1
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT DEVISES
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            LECTURE_LST DEVISES
+*ROW_METADATA(ADELIA         00000000)               LST_DEVISE:VALEUR_COURANTE=L_DEVISE
+*ROW_METADATA(ADELIA         00000000)               INSERER_ELT LST_DEVISE:LISTE
+*ROW_METADATA(ADELIA         00000000)            FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            LST_DEVISE:VALEUR=L_DEVISE
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET LST_UTILIS
+*ROW_METADATA(ADELIA         00000000)            UTILISATEUR='Jean Valjean'
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE=UTILISATEUR
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Petit Gervais'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Javert'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Le curé de Digne'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Fantine'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Bamatabois'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Fauchelevent'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Cosette'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Thénardier'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Eponine'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Gavroche'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Montparnasse'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Babet'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Brujon'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Claquesous'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Marius'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Combeferre'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Feuilly'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Courfeyrac'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Enjolras'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Joly'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Grantaire'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Lesgles'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)            LST_UTILIS:VALEUR_COURANTE='Jean Prouvaire'
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_UTILIS:LISTE
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET ZS_NF
+*ROW_METADATA(ADELIA         00000000)            AF='c:\Bon_achat.xls'
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         N=1
+*ROW_METADATA(ADELIA         00000000)         TRAITER_PROC SUITE
+*ROW_METADATA(ADELIA         00000000)      FIN_INIT
+*ROW_METADATA(ADELIA         00000000)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET BTN_SUITE
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT BTN_SUITE:BoutonGaucheClic
+*ROW_METADATA(ADELIA         00000000)               N=N+1
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC SUITE
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET BTN_AMPOULE
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT BTN_AMPOULE:BoutonGaucheClic
+*ROW_METADATA(ADELIA         00000000)               V=NON V
+*ROW_METADATA(ADELIA         00000000)               APPELER_METHODE FEN_EXCEL.EXL_EXCEL APPLI_FIXER_VISIBILITE V CR
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET BTN_ECLAIR
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT BTN_ECLAIR:BoutonGaucheClic
+*ROW_METADATA(ADELIA         00000000)               B=*FAUX
+*ROW_METADATA(ADELIA         00000000)               LECTURE_LST FEN_EXCEL.LST_PROD:LISTE *SELECT
+*ROW_METADATA(ADELIA         00000000)                  B=*VRAI
+*ROW_METADATA(ADELIA         00000000)               FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               SI B
+*ROW_METADATA(ADELIA         00000000)                  APPELER_METHODE FEN_EXCEL.EXL_EXCEL APPLI_DECONNECTER CR
+*ROW_METADATA(ADELIA         00000000)                  *
+*ROW_METADATA(ADELIA         00000000)                  N=1
+*ROW_METADATA(ADELIA         00000000)                  BTN_SUITE:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)                  TANT_QUE BTN_SUITE:VISIBILITE
+*ROW_METADATA(ADELIA         00000000)                     TRAITER_PROC SUITE
+*ROW_METADATA(ADELIA         00000000)                     N=N+1
+*ROW_METADATA(ADELIA         00000000)                  REFAIRE
+*ROW_METADATA(ADELIA         00000000)               SINON
+*ROW_METADATA(ADELIA         00000000)                  TRAITER_PROC NON_SEL
+*ROW_METADATA(ADELIA         00000000)                  IND=IND///'  Utilisez ensuite à nouveau le bouton portant l''éclair.'
+*ROW_METADATA(ADELIA         00000000)               FIN
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET LST_DEVISE
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT LST_DEVISE:Selection
+*ROW_METADATA(ADELIA         00000000)               LECTURE_LST DEVISES
+*ROW_METADATA(ADELIA         00000000)                  SI L_DEVISE=LST_DEVISE:VALEUR
+*ROW_METADATA(ADELIA         00000000)                     QUITTER_BOUCLE
+*ROW_METADATA(ADELIA         00000000)                  FIN
+*ROW_METADATA(ADELIA         00000000)               FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               CAC_VERS:VALEUR=0
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               ACT=T_DEVISE=0
+*ROW_METADATA(ADELIA         00000000)               ZZ_TAUX_DEV:ACTIVITE=ACT
+*ROW_METADATA(ADELIA         00000000)               CAC_VERS:ACTIVITE=ACT
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         00000000)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_VERIF
+*ROW_METADATA(ADELIA         00000000)      DEBUT_VALID
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_VALID
+*ROW_METADATA(ADELIA         00000000)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         00000000)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         00000000)   FIN_FENETRE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE SUITE
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         * paramètres de méthode FEUIL_IMPRIMER
+*ROW_METADATA(ADELIA         00000000)         NUM_BIN_2 DE
+*ROW_METADATA(ADELIA         00000000)         NUM_BIN_2 JUSQUA
+*ROW_METADATA(ADELIA         00000000)         NUM_BIN_2 COPIES
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         * plage courante
+*ROW_METADATA(ADELIA         00000000)         ALPHA(200) P
+*ROW_METADATA(ADELIA         00000000)         * nombre de cellules
+*ROW_METADATA(ADELIA         00000000)         NUM_BIN_4 NC
+*ROW_METADATA(ADELIA         00000000)         NUM_E(2,0) NC2
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         * chemin et nom de fichier
+*ROW_METADATA(ADELIA         00000000)         ALPHA(25) TIT
+*ROW_METADATA(ADELIA         00000000)         ALPHA(35) FILTRE
+*ROW_METADATA(ADELIA         00000000)         ALPHA(5) EXT
+*ROW_METADATA(ADELIA         00000000)         NUM_BIN_4 S
+*ROW_METADATA(ADELIA         00000000)         ALPHA(1) AS
+*ROW_METADATA(ADELIA         00000000)         ALPHA(260) CHEMIN
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         ALPHA(800) IND_S
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         * conversions
+*ROW_METADATA(ADELIA         00000000)         NUM_E(15,7) CONV
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         NUM_E(15,3) SEL_PRIX(30)
+*ROW_METADATA(ADELIA         00000000)         ALPHA(99) SEL_PROD(30)
+*ROW_METADATA(ADELIA         00000000)         NUM_E(15,3) SEL_TVA(30)
+*ROW_METADATA(ADELIA         00000000)         NUM_E(4,1) SEL_QTE(30)
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      SI N=1
+*ROW_METADATA(ADELIA         00000000)         IND='Bienvenue.  Vous voici aux commandes d''un exemple de petite application'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' développée avec Visual Adélia, qui présente les possibilités du composant'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' appelé "Client Excel".'
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI N=2
+*ROW_METADATA(ADELIA         00000000)         IND='Supposons que votre société dispose de données informatiques de gestion'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' commerciale, exploitables par des applications Visual Adélia et que'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' vous souhaitiez automatiser certaines tâches visant à établir des tableaux de'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' manière normalisée et rapide, sans qu''il s''agisse systématiquement'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' d''analyse complexes de données.  Par souci de simplicité, et pour que cette'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' application soit exploitable par n''importe qui, elle ne gère pas réellement'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' de base de données, mais des éléments définis statiquement au démarrage.'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///'  Mais c''est sans incidence sur les possibilités du composant Client Excel,'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' qui pourra exploiter des données aussi dynamiques que votre imagination...'
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI N=3
+*ROW_METADATA(ADELIA         00000000)         IND='Pour utiliser le Client Excel, il faut tout d''abord lui faire connecter'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' l''application Visual Adélia à Microsoft Excel, qui est lancé dans le cas où'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' une session n''existe pas déjà.  -- Excel est lancé ?  Vous pouvez penser que'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' c''est faux.  C''est seulement qu''il n''est pas visible.  Il n''interragit'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' pas avec le bureau.  La session d''Excel peut être rendue visible ou invisible'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' avec le bouton portant l''ampoule.'
+*ROW_METADATA(ADELIA         00000000)         *
+*ROW_METADATA(ADELIA         00000000)         * connexion
+*ROW_METADATA(ADELIA         00000000)         APPELER_METHODE FEN_EXCEL.EXL_EXCEL APPLI_CONNECTER CR
+*ROW_METADATA(ADELIA         00000000)         B=*VRAI
+*ROW_METADATA(ADELIA         00000000)         APPELER_METHODE FEN_EXCEL.EXL_EXCEL APPLI_PERMETTRE_RAFRAICHISSEMENT B CR
+*ROW_METADATA(ADELIA         00000000)         FEN_EXCEL.BTN_AMPOULE:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI N=4
+*ROW_METADATA(ADELIA         00000000)         IND='Lorsqu''Excel est visible, souvenez-vous toujours de ce qui suit.'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///'  L''application Visual Adélia connectée à Excel ne gère pas une sorte de'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' "copie" de ce que vous voyez dans Excel, mais bien l''original.  Toute'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' modification dans Excel est à prendre en compte pour le déroulement de'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' l''application connectée.  Ainsi, lorsque vous développerez une application'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' visant à automatiser le travail avec Excel, veillez à toujours indiquer très'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' clairement quelles opérations et règles l''utilisateur doit suivre pour que'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' l''application connectée ne perde pas le Nord.'
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI N=5
+*ROW_METADATA(ADELIA         00000000)         IND='Voici.  Vous avez récemment eu un contact avec un client, dont vous pouvez'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' préciser les coordonnées, vous sollicitant pour un certain nombre de produits.'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' Vous serez tout d''abord sollicité pour indiquer à Excel le classeur contenant'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' la feuille correspondant à un type de courrier à gérer, qui devrait'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' normalement s''appeler "Bon_achat.xls".'
+*ROW_METADATA(ADELIA         00000000)         *
+*ROW_METADATA(ADELIA         00000000)         FEN_EXCEL.TXT_NF:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)         FEN_EXCEL.ZS_NF:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)         FEN_EXCEL.BTR_GENRE:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)         FEN_EXCEL.ZZ_CORRES:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI N=6
+*ROW_METADATA(ADELIA         00000000)         * ouverture document
+*ROW_METADATA(ADELIA         00000000)         FILTRE='Classeur Excel (*.xls)'
+*ROW_METADATA(ADELIA         00000000)         EXT='*.xls'
+*ROW_METADATA(ADELIA         00000000)         S=260
+*ROW_METADATA(ADELIA         00000000)         * ancien nom
+*ROW_METADATA(ADELIA         00000000)         NF=AF
+*ROW_METADATA(ADELIA         00000000)         APPELER_METHODE FEN_EXCEL.EXL_EXCEL CLASS_OUVRIR NF CR
+*ROW_METADATA(ADELIA         00000000)         * boite de dialogue
+*ROW_METADATA(ADELIA         00000000)         SI CR<>0
+*ROW_METADATA(ADELIA         00000000)            TIT='Classeur Excel d''origine'
+*ROW_METADATA(ADELIA         00000000)            NF='c:\'
+*ROW_METADATA(ADELIA         00000000)            APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxOpenFileSelection' FEN_EXCEL TIT FILTRE EXT NF S B
+*ROW_METADATA(ADELIA         00000000)            SI B
+*ROW_METADATA(ADELIA         00000000)               APPELER_METHODE FEN_EXCEL.EXL_EXCEL CLASS_OUVRIR NF CR
+*ROW_METADATA(ADELIA         00000000)               AF=NF
+*ROW_METADATA(ADELIA         00000000)            SINON
+*ROW_METADATA(ADELIA         00000000)               IND='Dommage, c''était bien parti.'
+*ROW_METADATA(ADELIA         00000000)               FEN_EXCEL.BTN_SUITE:VISIBILITE=*FAUX
+*ROW_METADATA(ADELIA         00000000)            FIN
+*ROW_METADATA(ADELIA         00000000)         FIN
+*ROW_METADATA(ADELIA         00000000)         *
+*ROW_METADATA(ADELIA         00000000)         SI FEN_EXCEL.BTN_SUITE:VISIBILITE
+*ROW_METADATA(ADELIA         00000000)            IND='Le classeur est ouvert.  Les coordonnées et dénomination du correspondant sont'
+*ROW_METADATA(ADELIA         00000000)            IND=IND///' insérées dans les cellules prévues à cet effet.  Les produits concernés'
+*ROW_METADATA(ADELIA         00000000)            IND=IND///' ainsi que la devise d''échange et son taux peuvent être choisis.  N.B. :'
+*ROW_METADATA(ADELIA         00000000)            IND=IND///' L''application utilise l''Euro comme devise de référence.  Pour les devises à'
+*ROW_METADATA(ADELIA         00000000)            IND=IND///' taux variable par rapport à l''Euro (arrivant en fin de liste), vous devrez'
+*ROW_METADATA(ADELIA         00000000)            IND=IND///' indiquer le taux manuellement.  Cependant il existe des moyens informatiques' 
+*ROW_METADATA(ADELIA         00000000)            IND=IND///' pour obtenir avec précision les taux de change réels à une date quelconque.'
+*ROW_METADATA(ADELIA         00000000)            *
+*ROW_METADATA(ADELIA         00000000)            FEN_EXCEL.TXT_PROD:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)            FEN_EXCEL.LST_PROD:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)            *
+*ROW_METADATA(ADELIA         00000000)            FEN_EXCEL.C_DEV:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)            FEN_EXCEL.LST_DEVISE:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)            FEN_EXCEL.ZZ_TAUX_DEV:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)            FEN_EXCEL.CAC_VERS:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)            *
+*ROW_METADATA(ADELIA         00000000)            NC=1
+*ROW_METADATA(ADELIA         00000000)            P='D3'
+*ROW_METADATA(ADELIA         00000000)            APPELER_METHODE FEN_EXCEL.EXL_EXCEL PLAGE_FIXER_VALEURS P CORRES NC CR
+*ROW_METADATA(ADELIA         00000000)            P='C4'
+*ROW_METADATA(ADELIA         00000000)            T=GENRE///','
+*ROW_METADATA(ADELIA         00000000)            APPELER_METHODE FEN_EXCEL.EXL_EXCEL PLAGE_FIXER_VALEURS P T NC CR
+*ROW_METADATA(ADELIA         00000000)         FIN
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI N=7
+*ROW_METADATA(ADELIA         00000000)         B=*FAUX
+*ROW_METADATA(ADELIA         00000000)         LECTURE_LST FEN_EXCEL.LST_PROD:LISTE *SELECT
+*ROW_METADATA(ADELIA         00000000)            B=*VRAI
+*ROW_METADATA(ADELIA         00000000)         FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)         *
+*ROW_METADATA(ADELIA         00000000)         SI B
+*ROW_METADATA(ADELIA         00000000)            IND='Puis les données des lignes sélectionnées sont insérées dans le tableau.'
+*ROW_METADATA(ADELIA         00000000)            IND=IND///'  Pour les calculs de taxes, une colonne cachée (H) dans la feuille'
+*ROW_METADATA(ADELIA         00000000)            IND=IND///' Excel répercute les produits individuels de chaque prix par le'
+*ROW_METADATA(ADELIA         00000000)            IND=IND///' taux correspondant, lié lui-même au code apparaissant dans la liste'
+*ROW_METADATA(ADELIA         00000000)            IND=IND///' de sélection.'
+*ROW_METADATA(ADELIA         00000000)            *
+*ROW_METADATA(ADELIA         00000000)            FEN_EXCEL.TXT_UTILIS:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)            FEN_EXCEL.LST_UTILIS:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)            FEN_EXCEL.CAC_DIRECT:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)            *
+*ROW_METADATA(ADELIA         00000000)            * insertion sélection
+*ROW_METADATA(ADELIA         00000000)            *   récupération
+*ROW_METADATA(ADELIA         00000000)            NC=0
+*ROW_METADATA(ADELIA         00000000)            LECTURE_LST FEN_EXCEL.LST_PROD:LISTE *SELECT
+*ROW_METADATA(ADELIA         00000000)               SI QTE>0
+*ROW_METADATA(ADELIA         00000000)                  NC=NC+1
+*ROW_METADATA(ADELIA         00000000)                  SEL_PROD(NC)=PRODUIT
+*ROW_METADATA(ADELIA         00000000)                  SEL_PRIX(NC)=PRIX
+*ROW_METADATA(ADELIA         00000000)                  SI C_TVA='N'
+*ROW_METADATA(ADELIA         00000000)                     SEL_TVA(NC)=5,5
+*ROW_METADATA(ADELIA         00000000)                  FIN
+*ROW_METADATA(ADELIA         00000000)                  SI C_TVA='S'
+*ROW_METADATA(ADELIA         00000000)                     SEL_TVA(NC)=20,6
+*ROW_METADATA(ADELIA         00000000)                  FIN
+*ROW_METADATA(ADELIA         00000000)                  SEL_QTE(NC)=QTE
+*ROW_METADATA(ADELIA         00000000)               FIN
+*ROW_METADATA(ADELIA         00000000)            FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)            *
+*ROW_METADATA(ADELIA         00000000)            SI NC>0
+*ROW_METADATA(ADELIA         00000000)               NC2=8+NC
+*ROW_METADATA(ADELIA         00000000)               P='C9:C'//NC2
+*ROW_METADATA(ADELIA         00000000)               APPELER_METHODE FEN_EXCEL.EXL_EXCEL PLAGE_FIXER_VALEURS P SEL_PROD NC CR
+*ROW_METADATA(ADELIA         00000000)               P='D9:D'//NC2
+*ROW_METADATA(ADELIA         00000000)               APPELER_METHODE FEN_EXCEL.EXL_EXCEL PLAGE_FIXER_VALEURS P SEL_QTE NC CR
+*ROW_METADATA(ADELIA         00000000)               P='E9:E'//NC2
+*ROW_METADATA(ADELIA         00000000)               APPELER_METHODE FEN_EXCEL.EXL_EXCEL PLAGE_FIXER_VALEURS P SEL_PRIX NC CR
+*ROW_METADATA(ADELIA         00000000)               P='F9:F'//NC2
+*ROW_METADATA(ADELIA         00000000)               APPELER_METHODE FEN_EXCEL.EXL_EXCEL PLAGE_FIXER_VALEURS P SEL_TVA NC CR
+*ROW_METADATA(ADELIA         00000000)            FIN
+*ROW_METADATA(ADELIA         00000000)            *
+*ROW_METADATA(ADELIA         00000000)            * conversion
+*ROW_METADATA(ADELIA         00000000)            NC=1
+*ROW_METADATA(ADELIA         00000000)            P='I7'
+*ROW_METADATA(ADELIA         00000000)            APPELER_METHODE FEN_EXCEL.EXL_EXCEL PLAGE_FIXER_VALEURS P DEVISE NC CR
+*ROW_METADATA(ADELIA         00000000)            P='G8'
+*ROW_METADATA(ADELIA         00000000)            CONV=6,55957
+*ROW_METADATA(ADELIA         00000000)            SI FEN_EXCEL.CAC_VERS:VALEUR=1
+*ROW_METADATA(ADELIA         00000000)               CONV=T_DEVISE*CONV
+*ROW_METADATA(ADELIA         00000000)            FIN
+*ROW_METADATA(ADELIA         00000000)            APPELER_METHODE FEN_EXCEL.EXL_EXCEL PLAGE_FIXER_VALEURS P CONV NC CR
+*ROW_METADATA(ADELIA         00000000)            P='I8'
+*ROW_METADATA(ADELIA         00000000)            CONV=T_DEVISE
+*ROW_METADATA(ADELIA         00000000)            SI FEN_EXCEL.CAC_VERS:VALEUR=1
+*ROW_METADATA(ADELIA         00000000)               CONV=1
+*ROW_METADATA(ADELIA         00000000)            FIN
+*ROW_METADATA(ADELIA         00000000)            APPELER_METHODE FEN_EXCEL.EXL_EXCEL PLAGE_FIXER_VALEURS P CONV NC CR
+*ROW_METADATA(ADELIA         00000000)            APPELER_METHODE FEN_EXCEL.EXL_EXCEL FEUIL_CALCULER CR
+*ROW_METADATA(ADELIA         00000000)         SINON
+*ROW_METADATA(ADELIA         00000000)            N=N-1
+*ROW_METADATA(ADELIA         00000000)            TRAITER_PROC NON_SEL
+*ROW_METADATA(ADELIA         00000000)         FIN
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI N=8
+*ROW_METADATA(ADELIA         00000000)         IND='Viennent ensuite des portions de texte déjà faites ainsi que la signature de'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' l''utilisateur.  N.B. : Il se peut que ces portions de texte dépassent la'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' taille des cellules qui leur sont réservées.  Une amélioration de cette'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' application pourrait consister à ajuster automatiquement la taille des cellules'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' à la quantité de texte inséré.  Dans une telle situation, l''application'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' connectée doit indiquer à l''utilisateur, par exemple : "Vérifiez s.v.p. les'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' tailles et contenus des cellules dans la feuille Excel, avant de poursuivre'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' avec [Entrée]." ou, plus sommairement : "Vérifier présentation dans Excel".'
+*ROW_METADATA(ADELIA         00000000)         *
+*ROW_METADATA(ADELIA         00000000)         * insertion de textes
+*ROW_METADATA(ADELIA         00000000)         NC=1
+*ROW_METADATA(ADELIA         00000000)         P='B5'
+*ROW_METADATA(ADELIA         00000000)         T='Suite à notre entretien, je me charge de vous faire parvenir, dans les plus'
+*ROW_METADATA(ADELIA         00000000)         T=T///' brefs délais, les produits suivants :'
+*ROW_METADATA(ADELIA         00000000)         APPELER_METHODE FEN_EXCEL.EXL_EXCEL PLAGE_FIXER_VALEURS P T NC CR
+*ROW_METADATA(ADELIA         00000000)         *
+*ROW_METADATA(ADELIA         00000000)         P='B30'
+*ROW_METADATA(ADELIA         00000000)         T='Sauf incidents ou demande de votre part, ce bon d''achat fera office de facture,'
+*ROW_METADATA(ADELIA         00000000)         T=T///' payable à la livraison, à l''ordre du nom de notre société.'
+*ROW_METADATA(ADELIA         00000000)         APPELER_METHODE FEN_EXCEL.EXL_EXCEL PLAGE_FIXER_VALEURS P T NC CR
+*ROW_METADATA(ADELIA         00000000)         *
+*ROW_METADATA(ADELIA         00000000)         P='B31'
+*ROW_METADATA(ADELIA         00000000)         T='Restant à votre l''écoute de vos souhaits, nous vous prions de croire,'
+*ROW_METADATA(ADELIA         00000000)         SI GENRE='Madame';'Monsieur'
+*ROW_METADATA(ADELIA         00000000)            T=T///' '//GENRE
+*ROW_METADATA(ADELIA         00000000)         SINON
+*ROW_METADATA(ADELIA         00000000)            T=T///' Madame, Monsieur'
+*ROW_METADATA(ADELIA         00000000)         FIN
+*ROW_METADATA(ADELIA         00000000)         T=T///', à l''expression de nos respectueuses salutations.'
+*ROW_METADATA(ADELIA         00000000)         APPELER_METHODE FEN_EXCEL.EXL_EXCEL PLAGE_FIXER_VALEURS P T NC CR
+*ROW_METADATA(ADELIA         00000000)         *
+*ROW_METADATA(ADELIA         00000000)         P='C29'
+*ROW_METADATA(ADELIA         00000000)         APPELER_METHODE FEN_EXCEL.EXL_EXCEL PLAGE_FIXER_VALEURS P UTILISATEUR NC CR
+*ROW_METADATA(ADELIA         00000000)         SI FEN_EXCEL.CAC_DIRECT:VALEUR
+*ROW_METADATA(ADELIA         00000000)            P='D29'
+*ROW_METADATA(ADELIA         00000000)            T='Victor Hugo'
+*ROW_METADATA(ADELIA         00000000)            APPELER_METHODE FEN_EXCEL.EXL_EXCEL PLAGE_FIXER_VALEURS P T NC CR
+*ROW_METADATA(ADELIA         00000000)         FIN
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI N=9
+*ROW_METADATA(ADELIA         00000000)         IND='Vous choisissez finalement si la feuille doit être imprimée, si le classeur doit'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' être sauvegardé sous un nouveau nom qui apparaîtra en place de l''original.'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///'  N.B. : L''impression se fait sans paramétrage, qui doit être fait'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' préalablement dans Excel.'
+*ROW_METADATA(ADELIA         00000000)         *
+*ROW_METADATA(ADELIA         00000000)         FEN_EXCEL.CAC_IMPRIMER:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)         FEN_EXCEL.CAC_ENREGISTRER:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI N=10
+*ROW_METADATA(ADELIA         00000000)         IND='Voilà.  Maintenant que tous les paramètres ont été mis en place, comme pour un'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' utilisateur expérimenté, voyez se dérouler toutes les opérations précédentes,'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' grâce au bouton portant l''éclair.  N.B. : Saisissez tous les paramètres'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' avant d''utiliser le bouton, car vous ne pourrez intervenir pendant la'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' séquence.  D''autre part, si vous souhaitez retoucher la feuille avant de'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' l''imprimer, vous devez cocher la case "Enregistrer".  Décochez alors la case'
+*ROW_METADATA(ADELIA         00000000)         IND=IND///' "Imprimer", à moins de vouloir aussi une version du document avant retouche.'
+*ROW_METADATA(ADELIA         00000000)         *
+*ROW_METADATA(ADELIA         00000000)         IND_S=IND
+*ROW_METADATA(ADELIA         00000000)         FEN_EXCEL.BTN_ECLAIR:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA         00000000)         FEN_EXCEL.BTN_SUITE:VISIBILITE=*FAUX
+*ROW_METADATA(ADELIA         00000000)         *
+*ROW_METADATA(ADELIA         00000000)         * impression
+*ROW_METADATA(ADELIA         00000000)         SI FEN_EXCEL.CAC_IMPRIMER:VALEUR
+*ROW_METADATA(ADELIA         00000000)            DE=1
+*ROW_METADATA(ADELIA         00000000)            JUSQUA=_EXL_TOUTES_LES_PAGES
+*ROW_METADATA(ADELIA         00000000)            COPIES=1
+*ROW_METADATA(ADELIA         00000000)            APPELER_METHODE FEN_EXCEL.EXL_EXCEL FEUIL_IMPRIMER DE JUSQUA COPIES CR
+*ROW_METADATA(ADELIA         00000000)         FIN
+*ROW_METADATA(ADELIA         00000000)         *
+*ROW_METADATA(ADELIA         00000000)         * sauvegarde
+*ROW_METADATA(ADELIA         00000000)         B=FEN_EXCEL.CAC_ENREGISTRER:VALEUR
+*ROW_METADATA(ADELIA         00000000)         SI B
+*ROW_METADATA(ADELIA         00000000)            L1=&LONGUEUR_CHAINE(AF)
+*ROW_METADATA(ADELIA         00000000)            TANT_QUE L1>0
+*ROW_METADATA(ADELIA         00000000)               AS=&EXTRACTION(AF;L1;1)
+*ROW_METADATA(ADELIA         00000000)               SI AS='\'
+*ROW_METADATA(ADELIA         00000000)                  L2=L1
+*ROW_METADATA(ADELIA         00000000)                  L1=1
+*ROW_METADATA(ADELIA         00000000)               FIN
+*ROW_METADATA(ADELIA         00000000)               L1=L1-1
+*ROW_METADATA(ADELIA         00000000)            REFAIRE
+*ROW_METADATA(ADELIA         00000000)            CHEMIN=*BLANK
+*ROW_METADATA(ADELIA         00000000)            SI AS='\'
+*ROW_METADATA(ADELIA         00000000)               CHEMIN=&EXTRACTION(AF;1;L2)
+*ROW_METADATA(ADELIA         00000000)            FIN
+*ROW_METADATA(ADELIA         00000000)            *
+*ROW_METADATA(ADELIA         00000000)            TIT='Nouveau classeur Excel'
+*ROW_METADATA(ADELIA         00000000)            FILTRE='Classeur Excel (*.xls)'
+*ROW_METADATA(ADELIA         00000000)            EXT='*.xls'
+*ROW_METADATA(ADELIA         00000000)            S=260
+*ROW_METADATA(ADELIA         00000000)            CR=1
+*ROW_METADATA(ADELIA         00000000)         FIN
+*ROW_METADATA(ADELIA         00000000)         TANT_QUE B ET (CR<>0)
+*ROW_METADATA(ADELIA         00000000)            NF=CHEMIN
+*ROW_METADATA(ADELIA         00000000)            APPELER_DLL 'VATOOLBX.DLL' 'VaToolBxSaveFileSelection' FEN_EXCEL TIT FILTRE EXT NF S B
+*ROW_METADATA(ADELIA         00000000)            SI B
+*ROW_METADATA(ADELIA         00000000)               APPELER_METHODE FEN_EXCEL.EXL_EXCEL CLASS_ENREGISTRER_SOUS NF CR
+*ROW_METADATA(ADELIA         00000000)               SI CR<>0
+*ROW_METADATA(ADELIA         00000000)                  IND='Le fichier spécifié est inaccessible pour Excel en écriture.'
+*ROW_METADATA(ADELIA         00000000)                  IND=IND///'  Veuillez recommencer.'
+*ROW_METADATA(ADELIA         00000000)               FIN
+*ROW_METADATA(ADELIA         00000000)            FIN
+*ROW_METADATA(ADELIA         00000000)         REFAIRE
+*ROW_METADATA(ADELIA         00000000)         IND=IND_S
+*ROW_METADATA(ADELIA         00000000)         SI NON B
+*ROW_METADATA(ADELIA         00000000)            APPELER_METHODE FEN_EXCEL.EXL_EXCEL CLASS_FERMER B NF CR
+*ROW_METADATA(ADELIA         00000000)         FIN
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE NON_SEL
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      IND='Aucune ligne n''a été sélectionnée.  Créer un bon d''achat pou rien serait une'
+*ROW_METADATA(ADELIA         00000000)      IND=IND///' pure perte de temps.  Veuillez choisir quelque chose dans la liste.  Ne'
+*ROW_METADATA(ADELIA         00000000)      IND=IND///' craignez rien : c''est une simulation.'
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

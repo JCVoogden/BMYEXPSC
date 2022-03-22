@@ -1,0 +1,26 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20101012)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20101012)      sw_nom_export *service(testPool)
+*ROW_METADATA(ADELIA         20101012)   FIN_DECL
+*ROW_METADATA(ADELIA         20101012)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20101012)      
+*ROW_METADATA(ADELIA         20101012)   FIN_INIT
+*ROW_METADATA(ADELIA         20101012)   DEBUT_PROCEDURE TEST_OP *PUBLIC
+*ROW_METADATA(ADELIA         20101012)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20101012)         sw_nom_export *operation(testPoolOperation)
+*ROW_METADATA(ADELIA         20101012)         
+*ROW_METADATA(ADELIA         20101012)         alpha(250) systemeGen
+*ROW_METADATA(ADELIA         20101012)         
+*ROW_METADATA(ADELIA         20101012)         param systemeGen,O,systemeGen
+*ROW_METADATA(ADELIA         20101012)         
+*ROW_METADATA(ADELIA         20101012)      FIN_DECL
+*ROW_METADATA(ADELIA                 )      DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20101012)         systemeGen = 'Système cible : ' // *SYSTEME_GEN
+*ROW_METADATA(ADELIA                 )      FIN_SRV
+*ROW_METADATA(ADELIA         20101012)      
+*ROW_METADATA(ADELIA         20101012)      si *code_retour <> *normal
+*ROW_METADATA(ADELIA         20101012)         systemeGen = 'Erreur middleware SW'
+*ROW_METADATA(ADELIA         20101012)      fin
+*ROW_METADATA(ADELIA         20101012)      
+*ROW_METADATA(ADELIA         20101012)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

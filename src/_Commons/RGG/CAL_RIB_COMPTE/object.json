@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CAL_RIB_COMPTE",
+  "description" : "Transfert du numéro de compte pour calcul RIB",
+  "creationDate" : "1995-06-29 07:22:06",
+  "updateDate" : "1995-12-12 12:46:14",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

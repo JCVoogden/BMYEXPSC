@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="1" name="PAGE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml page.xsd">
+    <properties/>
+    <controls>
+        <control classId="0" className="ENTRYFIELD" error="6" guide="0" kinematic="0" name="RDO_BTN">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 1 -1"/>
+                <property id="5" stringValue="C"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="3" guide="0" kinematic="0" name="BTN_CREER_MODIFIER">
+            <properties/>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="14" guide="0" kinematic="0" name="TITRE_BTN">
+            <properties>
+                <property id="-9" stringValue="2 50 -1"/>
+            </properties>
+        </control>
+    </controls>
+</page>

@@ -1,0 +1,48 @@
+DEBUT_STD
+XNOM_PGM        = *NOM_PGM
+XUSER           = *USER
+FIN_STD
+*--------------------------* Réception du paramètre
+RECEVOIR PCOD_CLIENT
+*--------------------------* Edition en-tête clients
+LIRE CLIENTS_DB
+IMPRIMER ENTETE_01
+*--------------------------* Lecture de la première vente
+POSITIONNER_AV VENTE_DD
+LIRE_SUIVANT VENTE_DD
+TANT_QUE VENTE_DD EXISTE
+  *--------------------------* Appel procédure traitement détail
+  TRAITER_PROC SBRDET
+  LIRE_SUIVANT VENTE_DD
+REFAIRE
+*--------------------------* Edition du total clients
+EDITER FIN_CADRE_01
+EDITER ENT_RECAP
+INDICE_I = 1
+TANT_QUE INDICE_I <= INDICE_MAX
+  ZZCOD_FAMILLE = TB_COD_FAMILLE(INDICE_I)
+  ZWTOT_FAMILLE = TB_MHT_FAMILLE(INDICE_I)
+  INDICE_I = INDICE_I + 1
+  EDITER DET_RECAP
+REFAIRE
+TOTALISER_TABLE TB_MHT_FAMILLE ZWTOT_CLIENT
+EDITER TOT_RECAP
+CHANGEMENT_PAGE
+*--------------------------* Procédure changement de page
+IMPRIMER ENTETE_01
+FIN_TRAITEMENT
+*--------------------------* Procédure de traitement détail
+DEBUT_PROCEDURE SBRDET
+*-------* Edition de la ligne détail
+LIRE       ARTICLE_DA
+IMPRIMER   DETAIL
+*-------* Cumul dans table pour édition totale
+INDICE_I = 1
+RECHERCHE = VCOD_FAMILLE TB_COD_FAMILLE(INDICE_I)
+SI *TROUVE = '0'
+  INDICE_MAX = INDICE_MAX + 1
+  INDICE_I   = INDICE_MAX
+  TB_COD_FAMILLE(INDICE_I) = VCOD_FAMILLE
+FIN
+TB_MHT_FAMILLE(INDICE_I) = TB_MHT_FAMILLE(INDICE_I) + VMHT_VENTE
+FIN_PROCEDURE

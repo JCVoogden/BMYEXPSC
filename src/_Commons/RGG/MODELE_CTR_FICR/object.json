@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "MODELE_CTR_FICR",
+  "description" : "Modèle R.G controle avec rafraichissement libellé",
+  "creationDate" : "1995-06-29 07:24:31",
+  "updateDate" : "1995-06-29 07:24:31",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

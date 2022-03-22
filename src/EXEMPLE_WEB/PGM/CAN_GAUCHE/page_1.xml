@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="1" name="PAGE_GAUCHE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml page.xsd">
+    <properties/>
+    <controls>
+        <control classId="0" className="ENTRYFIELD" error="2" guide="0" kinematic="0" name="HLK_ACCUEIL">
+            <properties/>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="2" guide="0" kinematic="0" name="HLK_LST_ICONE">
+            <properties/>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="2" guide="0" kinematic="0" name="HLK_LST_MENU">
+            <properties/>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="2" guide="0" kinematic="0" name="HLK_CALEND1">
+            <properties/>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="2" guide="0" kinematic="0" name="HLK_CALEND2">
+            <properties/>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="2" guide="0" kinematic="0" name="HLK_EXPLE_ARBO">
+            <properties/>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="2" guide="0" kinematic="0" name="HLK_MODIF_ATT">
+            <properties/>
+        </control>
+    </controls>
+</page>

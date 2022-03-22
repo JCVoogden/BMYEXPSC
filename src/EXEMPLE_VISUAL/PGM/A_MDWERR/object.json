@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "A_MDWERR",
+  "description" : "erere",
+  "creationDate" : "2008-01-15 16:23:03",
+  "updateDate" : "2008-01-15 16:36:14",
+  "visibility" : "PRIVATE",
+  "ibmName" : "MDWERR",
+  "programType" : "I",
+  "sourceType" : "MADELIA",
+  "layoutCode" : "MDWERR",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "SUP_CLIENT",
+  "description" : "Suppression de clients",
+  "creationDate" : "1995-06-08 07:43:02",
+  "updateDate" : "2005-11-09 17:17:40",
+  "visibility" : "PUBLIC",
+  "ibmName" : "SUPCLI",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "SUPCLI",
+  "programTemplateName" : "GES_SSF_2TR_01",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

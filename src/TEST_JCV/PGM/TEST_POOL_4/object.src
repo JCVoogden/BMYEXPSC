@@ -1,0 +1,113 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20090604)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20090604)      num_bin_4  i
+*ROW_METADATA(ADELIA         20090703)      
+*ROW_METADATA(ADELIA         20090703)      bool       rc
+*ROW_METADATA(ADELIA         20090703)      
+*ROW_METADATA(ADELIA         20101110)      num_bin_4  semaphore1
+*ROW_METADATA(ADELIA         20101119)      num_bin_4  semaphore
+*ROW_METADATA(ADELIA         20090703)      bool       semExists1
+*ROW_METADATA(ADELIA         20090703)      bool       semExists2
+*ROW_METADATA(ADELIA         20090703)      
+*ROW_METADATA(ADELIA         20090703)      num_bin_4  rcmid
+*ROW_METADATA(ADELIA         20101118)      
+*ROW_METADATA(ADELIA         20090703)      param      i
+*ROW_METADATA(ADELIA         20090604)      
+*ROW_METADATA(ADELIA         20090604)   FIN_DECL
+*ROW_METADATA(ADELIA         20090604)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20101110)      
+*ROW_METADATA(ADELIA         20101110)      appeler_dll 'testdll' 'TstDCreerSemaphore' semaphore1 'tpool1' 1 semexists1
+*ROW_METADATA(ADELIA         20090703)      appeler_dll 'testdll' 'TstDCreerSemaphore' semaphore2 'tpool2' 1 semexists2
+*ROW_METADATA(ADELIA         20090703)      
+*ROW_METADATA(ADELIA         20090703)      si semaphore1 = 0 ou non semexists1 ou semaphore2 = 0 ou non semexists2
+*ROW_METADATA(ADELIA         20090703)         terminer
+*ROW_METADATA(ADELIA         20090703)      fin
+*ROW_METADATA(ADELIA         20090703)      
+*ROW_METADATA(ADELIA         20090703)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20090703)      executer    id_fen0
+*ROW_METADATA(ADELIA         20090604)   FIN_INIT
+*ROW_METADATA(ADELIA         20090604)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20090604)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20090604)         num_bin_4 n
+*ROW_METADATA(ADELIA         20090604)         num_bin_4 l
+*ROW_METADATA(ADELIA         20090604)         num_bin_4 c
+*ROW_METADATA(ADELIA         20090604)      FIN_DECL
+*ROW_METADATA(ADELIA         20090604)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20090703)         id_fen0:titre = id_fen0:titre /// ' (' /// &num_alpha(i) /// ')'
+*ROW_METADATA(ADELIA         20101012)         
+*ROW_METADATA(ADELIA         20090605)         n = 750 / id_fen0:hauteur
+*ROW_METADATA(ADELIA         20090604)         
+*ROW_METADATA(ADELIA         20090703)         c = i / n
+*ROW_METADATA(ADELIA         20090604)         reste l
+*ROW_METADATA(ADELIA         20090604)         
+*ROW_METADATA(ADELIA         20090604)         si l = 0
+*ROW_METADATA(ADELIA         20090604)            c = c - 1
+*ROW_METADATA(ADELIA         20090604)            l = n - 1
+*ROW_METADATA(ADELIA         20090604)         sinon
+*ROW_METADATA(ADELIA         20090604)            l = l - 1
+*ROW_METADATA(ADELIA         20090604)         fin
+*ROW_METADATA(ADELIA         20090703)         
+*ROW_METADATA(ADELIA         20090604)         id_fen0:abscisse = c * id_fen0:largeur
+*ROW_METADATA(ADELIA         20090703)         id_fen0:ordonnee = l * id_fen0:hauteur
+*ROW_METADATA(ADELIA         20090703)         
+*ROW_METADATA(ADELIA         20090703)         i = 0
+*ROW_METADATA(ADELIA         20100414)         
+*ROW_METADATA(ADELIA         20090703)         appeler_dll 'testdll' 'TstDRelacherSemaphore' semaphore1
+*ROW_METADATA(ADELIA         20090703)         
+*ROW_METADATA(ADELIA         20090604)      FIN_INIT
+*ROW_METADATA(ADELIA         20090604)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20090604)         DEBUT_OBJET TIMER
+*ROW_METADATA(ADELIA         20090604)            DEBUT_EVT TIMER:Top
+*ROW_METADATA(ADELIA         20090604)               * attends la libération...
+*ROW_METADATA(ADELIA         20090604)               timer:activite = *faux
+*ROW_METADATA(ADELIA         20090703)               
+*ROW_METADATA(ADELIA         20090703)               appeler_dll 'testdll' 'TstDAttendreSemaphoreTimer' semaphore2 200 rc
+*ROW_METADATA(ADELIA         20090703)               
+*ROW_METADATA(ADELIA         20090703)               si rc = *faux 
+*ROW_METADATA(ADELIA         20090604)                  timer:activite = *vrai
+*ROW_METADATA(ADELIA         20090604)               sinon
+*ROW_METADATA(ADELIA         20090703)                  terminer
+*ROW_METADATA(ADELIA         20090604)               fin
+*ROW_METADATA(ADELIA         20090604)            FIN_EVT
+*ROW_METADATA(ADELIA         20090604)         FIN_OBJET
+*ROW_METADATA(ADELIA         20090604)         DEBUT_OBJET ID_FEN0
+*ROW_METADATA(ADELIA         20090604)            DEBUT_EVT ID_FEN0:Fermeture
+*ROW_METADATA(ADELIA         20090604)               timer:activite = *faux
+*ROW_METADATA(ADELIA         20090604)               valider id_fen0
+*ROW_METADATA(ADELIA         20090604)               terminer
+*ROW_METADATA(ADELIA         20090604)            FIN_EVT
+*ROW_METADATA(ADELIA         20090604)         FIN_OBJET
+*ROW_METADATA(ADELIA         20090604)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20090604)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20090604)         
+*ROW_METADATA(ADELIA         20090604)      FIN_VERIF
+*ROW_METADATA(ADELIA         20090604)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20101012)         sw_appeler testPool testPoolOperation
+*ROW_METADATA(ADELIA         20101012)         
+*ROW_METADATA(ADELIA         20101012)         si *code_retour = *normal
+*ROW_METADATA(ADELIA         20101012)            sw_recup_val testPool testPoolOperation *texte texte
+*ROW_METADATA(ADELIA         20101012)         fin
+*ROW_METADATA(ADELIA         20101012)         
+*ROW_METADATA(ADELIA         20101012)         si *code_retour <> *normal
+*ROW_METADATA(ADELIA         20101012)            rcmid = *code_retour
+*ROW_METADATA(ADELIA         20101012)            texte = 'erreur ws ' // &num_alpha(rcmid)   
+*ROW_METADATA(ADELIA         20101012)         fin
+*ROW_METADATA(ADELIA         20101012)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV LOCAL
+*ROW_METADATA(ADELIA         20101012)            creer_sql testlog
+*ROW_METADATA(ADELIA         20101012)            
+*ROW_METADATA(ADELIA         20090703)            maj_sql testdata nbexec = nbexec + 1, nbsuccess = nbsuccess + :i
+*ROW_METADATA(ADELIA         20090703)            valider_maj
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20090703)         
+*ROW_METADATA(ADELIA         20090703)         appeler_dll 'testdll' 'TstDRelacherSemaphore' semaphore1
+*ROW_METADATA(ADELIA         20090703)         
+*ROW_METADATA(ADELIA         20090703)         appeler_dll 'testdll' 'TstDFermerSemaphore' semaphore1
+*ROW_METADATA(ADELIA         20090703)         appeler_dll 'testdll' 'TstDFermerSemaphore' semaphore2
+*ROW_METADATA(ADELIA         20090703)         
+*ROW_METADATA(ADELIA         20090703)         
+*ROW_METADATA(ADELIA         20090604)      FIN_VALID
+*ROW_METADATA(ADELIA         20090604)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20090604)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20090604)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

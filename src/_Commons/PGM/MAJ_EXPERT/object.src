@@ -1,0 +1,100 @@
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)* Remplacez VUE_???? Par le nom de la vue gérer
+*ROW_METADATA(ADELIA                0)* Niveau I -
+*ROW_METADATA(ADELIA                0)*------------------
+*ROW_METADATA(ADELIA                0)INITIALISER 01
+*ROW_METADATA(ADELIA                0)TRAITER 01
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)INITIALISATION 01
+*ROW_METADATA(ADELIA         20051110)********************
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)XNOM_PGM        = *NOM_PGM
+*ROW_METADATA(ADELIA                0)ZZCOD_EXPERT    = *BLANK
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)TRANSACTION 01
+*ROW_METADATA(ADELIA         20051110)********************
+*ROW_METADATA(ADELIA                0)SI *F03 OU *F12
+*ROW_METADATA(ADELIA                0)  TERMINER
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)VERIFIER 01
+*ROW_METADATA(ADELIA                0)INITIALISER 02
+*ROW_METADATA(ADELIA                0)TRAITER 02
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)VERIFICATION 01
+*ROW_METADATA(ADELIA         20051110)********************
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)REGLE_GESTION 0001 ZZCOD_EXPERT
+*ROW_METADATA(ADELIA                0)SI ZZCOD_EXPERT = *BLANK
+*ROW_METADATA(ADELIA                0)ANOMALIE
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)TRT_GUIDE 01
+*ROW_METADATA(ADELIA         20051110)********************
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)* Guide d'affichage de la fenêtre des EXPERTS
+*ROW_METADATA(ADELIA                0)GUIDE ZZCOD_EXPERT
+*ROW_METADATA(ADELIA                0)APPELER FEN_EXPERT P_COD_RETOUR P_COD_ACTION ZZCOD_EXPERT
+*ROW_METADATA(ADELIA                0)FIN_GUIDE
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)INITIALISATION 02
+*ROW_METADATA(ADELIA         20051110)********************
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)LIRE            EXPERT_DA
+*ROW_METADATA(ADELIA                0)PRESENTER       EXPERT_DA
+*ROW_METADATA(ADELIA                0)XNOM_PGM        = *NOM_PGM
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)TRANSACTION 02
+*ROW_METADATA(ADELIA         20051110)********************
+*ROW_METADATA(ADELIA                0)SI *F03
+*ROW_METADATA(ADELIA                0)  TERMINER
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)SI *F12
+*ROW_METADATA(ADELIA                0)  TRAITER 01
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)* Par F13 appel de la procédure de suppression de l'nregistrement
+*ROW_METADATA(ADELIA                0)* Afficher
+*ROW_METADATA(ADELIA                0)SI *F13
+*ROW_METADATA(ADELIA                0)  TRAITER_PROC SUPPRE
+*ROW_METADATA(ADELIA                0)  TRAITER 01
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)VERIFIER 02
+*ROW_METADATA(ADELIA                0)VALIDER 02
+*ROW_METADATA(ADELIA                0)INITIALISER 01
+*ROW_METADATA(ADELIA                0)TRAITER 01
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)VERIFICATION 02
+*ROW_METADATA(ADELIA         20051110)********************
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)REGLE_GESTION 0001 ZZNOM_EXPERT
+*ROW_METADATA(ADELIA                0)SI ZZNOM_EXPERT = *BLANK
+*ROW_METADATA(ADELIA                0)ANOMALIE
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)REGLE_GESTION 0001 ZZADR_01_EXP
+*ROW_METADATA(ADELIA                0)SI ZZADR_01_EXP = *BLANK
+*ROW_METADATA(ADELIA                0)ANOMALIE
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)REGLE_GESTION 0001 ZZADR_02_EXP
+*ROW_METADATA(ADELIA                0)SI ZZADR_02_EXP = *BLANK
+*ROW_METADATA(ADELIA                0)ANOMALIE
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)REGLE_GESTION 0001 ZZBUR_DIS_EXP
+*ROW_METADATA(ADELIA                0)SI ZZBUR_DIS_EXP = *BLANK
+*ROW_METADATA(ADELIA                0)ANOMALIE
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)VALIDATION 02
+*ROW_METADATA(ADELIA         20051110)********************
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)RANGER          EXPERT_DA
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA         20051110)DEBUT_PROCEDURE SUPPRE
+*ROW_METADATA(ADELIA                0)*-------------------------  Procédure de suppression
+*ROW_METADATA(ADELIA                0)SUPPRIMER       EXPERT_DA
+*ROW_METADATA(ADELIA                0)FIN_PROCEDURE

@@ -1,0 +1,12 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   IDENTIFIER Nom_vue Nom_fichier CLE ;zones clés complémentaires ;$$_ZONE
+*ROW_METADATA(ADELIA                 )   REGLE_GESTION Numéro de message $$_ZONE
+*ROW_METADATA(ADELIA                 )   LIRE Nom_vue
+*ROW_METADATA(ADELIA                 )   SI Nom_vue N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )     Zone libellé écran = *BLANK
+*ROW_METADATA(ADELIA                 )     INIT_MSG $$_ZONE zones clés complémentaires
+*ROW_METADATA(ADELIA                 )     ANOMALIE
+*ROW_METADATA(ADELIA                 )   SINON
+*ROW_METADATA(ADELIA                 )     Zone libellé écran = Zone libellé fichier
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

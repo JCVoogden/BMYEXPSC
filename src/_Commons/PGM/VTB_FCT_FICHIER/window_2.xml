@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Test des ordres de lecture/écriture dans fichier" help="" id="2" name="FEN_PERSO" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-4" intValue="489"/>
+        <property id="-3" intValue="482"/>
+        <property id="-2" intValue="67"/>
+        <property id="-1" intValue="91"/>
+        <property id="3" stringValue="Test des ordres de lecture/écriture dans fichier"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwUlEQVR4Xu2OUQrDMAxDc/QcLTfr0EchSK1rt3bGRh8INtV2XmutbV+OFKsjxepIsTpSbE/gW45IwTdDYH+MITeNSME3Q2AfAgEJKfhmiH0/ICEFnYwx7zslpJjOxeFbjkjBN1PgN24JWN+uwG7vXd4KC1jfLVIFrJkz0gWsuSNKBKxZpkzAmp/BXJmAtbODmVIBaw/ge4mAl1QB/u0hTYD/c3dGigATmS8RAN6d/xXw8gr8lkBV3AIYrAq/dSiwMh84D2gm5tNl+wAAAABJRU5ErkJggg==</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbUlEQVR4XqWOSQrAMAwD/XT/3KXQQCJ5XEoPOljLJBER9VNmVFUv7RlAB6QWoKU3jQD19DYA0ekWHwO8R0Bm2mDddzYC1lhf2gc75AB0L6v0J/aDvUTjxsPABB0PV6EeUX4AphL5BqABDBnwRRdrCfkeiE5YIwAAAABJRU5ErkJggg==</property>
+        <property id="13"/>
+    </properties>
+    <menu>
+        <item key1="0" key2="0" name="MEN_GENERAL" state="4112" text="&amp;Général" type="1">
+            <menu>
+                <item key1="0" key2="0" name="MEN_QUITTER" state="4112" text="&amp;Quitter" type="1"/>
+            </menu>
+        </item>
+    </menu>
+    <controls>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_BEEP">
+            <properties>
+                <property id="-8" stringValue="Beep"/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="26"/>
+                <property id="-1" intValue="64"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_BEEP_ERREUR">
+            <properties>
+                <property id="-3" intValue="56"/>
+                <property id="-2" intValue="35"/>
+                <property id="-1" intValue="402"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OPENFILE">
+            <properties>
+                <property id="-8" stringValue="Ouvrir fichier écriture"/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="149"/>
+                <property id="-1" intValue="64"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_CHOOSEFILE">
+            <properties>
+                <property id="-8" stringValue="Choisir fichier (open) ..."/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="84"/>
+                <property id="-1" intValue="64"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_ECRIRE">
+            <properties>
+                <property id="-8" stringValue="Ecrire :"/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="250"/>
+                <property id="-1" intValue="64"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_ECRIRE_CHAIN">
+            <properties>
+                <property id="-8" stringValue="Ecrire la chaîne :"/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="281"/>
+                <property id="-1" intValue="64"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="IDEF_ECRIRE">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 250 -1"/>
+                <property id="-3" intValue="146"/>
+                <property id="-2" intValue="252"/>
+                <property id="-1" intValue="209"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="IDEF_ECRIRE_CHA">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 250 -1"/>
+                <property id="-3" intValue="146"/>
+                <property id="-2" intValue="280"/>
+                <property id="-1" intValue="208"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_FERMERFICH">
+            <properties>
+                <property id="-8" stringValue="Fermer fichier"/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="403"/>
+                <property id="-1" intValue="64"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_FERMER_ERR">
+            <properties>
+                <property id="-3" intValue="61"/>
+                <property id="-2" intValue="409"/>
+                <property id="-1" intValue="402"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_ECR_CH_ERR">
+            <properties>
+                <property id="-3" intValue="55"/>
+                <property id="-2" intValue="287"/>
+                <property id="-1" intValue="403"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_ECRIRE_ERR">
+            <properties>
+                <property id="-3" intValue="53"/>
+                <property id="-2" intValue="252"/>
+                <property id="-1" intValue="402"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OUV_ECR_ERR">
+            <properties>
+                <property id="-3" intValue="65"/>
+                <property id="-2" intValue="157"/>
+                <property id="-1" intValue="402"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_CHOIX_ERREUR">
+            <properties>
+                <property id="-3" intValue="58"/>
+                <property id="-2" intValue="93"/>
+                <property id="-1" intValue="402"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_NOM_FICHIER">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 15 -1"/>
+                <property id="-2" intValue="103"/>
+                <property id="-1" intValue="209"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OPENFILE_LEC">
+            <properties>
+                <property id="-8" stringValue="Ouvrir fichier lecture"/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="176"/>
+                <property id="-1" intValue="64"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OUV_LEC_ERR">
+            <properties>
+                <property id="-3" intValue="68"/>
+                <property id="-2" intValue="184"/>
+                <property id="-1" intValue="402"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OPENFILE_AJO">
+            <properties>
+                <property id="-8" stringValue="Ouvrir fichier ajout"/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="204"/>
+                <property id="-1" intValue="64"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OUV_AJO_ERR">
+            <properties>
+                <property id="-3" intValue="55"/>
+                <property id="-2" intValue="213"/>
+                <property id="-1" intValue="402"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_LIRE">
+            <properties>
+                <property id="-8" stringValue="Lire :"/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="310"/>
+                <property id="-1" intValue="64"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_LIRE_CHAINE">
+            <properties>
+                <property id="-8" stringValue="Lire la chaîne :"/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="341"/>
+                <property id="-1" intValue="64"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="IDEF_LIRE">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 250 -1"/>
+                <property id="-3" intValue="146"/>
+                <property id="-2" intValue="312"/>
+                <property id="-1" intValue="209"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="0" name="IDEF_LIRE_CHAIN">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 250 -1"/>
+                <property id="-4" intValue="27"/>
+                <property id="-3" intValue="191"/>
+                <property id="-2" intValue="341"/>
+                <property id="-1" intValue="208"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_LIRE_CH_ERR">
+            <properties>
+                <property id="-3" intValue="56"/>
+                <property id="-2" intValue="347"/>
+                <property id="-1" intValue="403"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_LIRE_ERR">
+            <properties>
+                <property id="-3" intValue="59"/>
+                <property id="-2" intValue="313"/>
+                <property id="-1" intValue="402"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_CHOOSEFILE0">
+            <properties>
+                <property id="-8" stringValue="Choisir fichier (save)..."/>
+                <property id="-3" intValue="120"/>
+                <property id="-2" intValue="114"/>
+                <property id="-1" intValue="64"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_SAVE_ERREUR">
+            <properties>
+                <property id="-3" intValue="62"/>
+                <property id="-2" intValue="123"/>
+                <property id="-1" intValue="402"/>
+            </properties>
+        </control>
+    </controls>
+</window>

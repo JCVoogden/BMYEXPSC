@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CTL_FICHIER",
+  "description" : "Contrôle fichier (PM)",
+  "creationDate" : "1996-07-05 09:06:30",
+  "updateDate" : "1996-07-05 09:13:52",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

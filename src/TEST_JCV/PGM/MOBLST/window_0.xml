@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="" help="" id="0" name="ID_FEN0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="96"/>
+        <property id="-45" intValue="96"/>
+        <property id="-37" intValue="4"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="320"/>
+        <property id="-3" intValue="240"/>
+        <property id="-2"/>
+        <property id="-1"/>
+        <property id="3"/>
+        <property id="6"/>
+        <property id="7"/>
+        <property id="9"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="28" intValue="1"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="LISTE" dll="CONTAINR" help="" kinematic="0" name="ID_LST">
+            <properties>
+                <property id="-4" intValue="214"/>
+                <property id="-3" intValue="215"/>
+                <property id="-2" intValue="13"/>
+                <property id="-1" intValue="13"/>
+                <property id="6" stringValue="ID_OBJ0 -6 2 15 -1 # ID_OBJ1 -6 2 50 -1"/>
+            </properties>
+            <controls>
+                <control associatedVariable="COLONNE" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="ID_OBJ0">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 15 -1"/>
+                        <property id="-8" stringValue="Colonne"/>
+                        <property id="-3" intValue="84"/>
+                        <property id="11" stringValue="ID_OBJ0 9 2 15 -1"/>
+                        <property id="20" stringValue="Tahoma;9;1;0"/>
+                        <property id="42"/>
+                    </properties>
+                </control>
+                <control associatedVariable="COLONNE2" className="COLONNE" dll="COLONNE" help="" kinematic="0" name="ID_OBJ1">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 50 -1"/>
+                        <property id="-8" stringValue="Colonne"/>
+                        <property id="-3" intValue="84"/>
+                        <property id="11" stringValue="ID_OBJ1 9 2 50 -1"/>
+                        <property id="20" stringValue="Tahoma;9;1;1"/>
+                        <property id="42"/>
+                    </properties>
+                </control>
+            </controls>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ">
+            <properties>
+                <property id="-8" stringValue="Bouton"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="237"/>
+                <property id="-1" intValue="84"/>
+            </properties>
+            <menu>
+                <item key1="0" key2="0" name="ID_EVT1" state="4112" text="Texte" type="1"/>
+            </menu>
+        </control>
+    </controls>
+</window>

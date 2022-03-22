@@ -1,0 +1,60 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "01"
+    },
+    "guideWord" : "FICHIER_NOM",
+    "fileName" : "FICHIEL1",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "generation" : "NONE",
+    "accesses" : [ {
+      "id" : {
+        "code" : "01",
+        "ordinal" : 1
+      },
+      "guideWord" : "FI_NOM_FICHIER",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "P_COD_DDS_DIC",
+      "fileName" : ""
+    },
+    "shortName" : "PCDDD",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCDDD",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_DDS_ENTIT",
+      "fileName" : ""
+    },
+    "shortName" : "PCDDE",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCDDE",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCORET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "P_NOM_FICHIER",
+      "fileName" : ""
+    },
+    "shortName" : "PLFIC",
+    "length" : 10,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PLFIC",
+    "generation" : "NONE"
+  } ]
+}

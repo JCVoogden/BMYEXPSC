@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "ADELIABATCH",
+  "description" : "ADELIABATCH",
+  "creationDate" : "2005-08-12 11:43:46",
+  "updateDate" : "2008-01-03 10:12:20",
+  "visibility" : "PRIVATE",
+  "ibmName" : "ADELIABATC",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "ABATCH",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

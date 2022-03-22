@@ -1,0 +1,63 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "*1"
+    },
+    "guideWord" : "CLIENTS_S1",
+    "access" : "SQL",
+    "update" : "NO_UPDATE",
+    "generation" : "KINEMATIC"
+  }, {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "REGLEMT_DA",
+    "fileName" : "REGLEMTL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_REGLEMENT",
+      "type" : "DEFAULT"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "P_COD_ACTION",
+      "fileName" : ""
+    },
+    "shortName" : "PCACT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCACT",
+    "generation" : "NONE",
+    "fileName" : "SQLCL2"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCRET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCRET",
+    "generation" : "NONE",
+    "fileName" : "SQLCL2"
+  }, {
+    "id" : {
+      "guideWord" : "W_SQL_REQUETE",
+      "fileName" : ""
+    },
+    "shortName" : "WREQET",
+    "length" : 255,
+    "type" : "ALPHANUMERIC",
+    "rename" : "WREQET",
+    "generation" : "NONE",
+    "fileName" : "SQLCL2"
+  } ]
+}

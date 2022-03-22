@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "TEST2",
+  "description" : "TEST2",
+  "creationDate" : "2008-10-29 13:46:47",
+  "updateDate" : "2010-12-17 14:17:16",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TEST2",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TEST2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "unicode" : true
+}

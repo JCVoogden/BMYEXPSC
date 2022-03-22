@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "EDI_CLI_SQL_01",
+  "description" : "Edition liste avec requête SQL statique",
+  "creationDate" : "1995-06-08 07:05:02",
+  "updateDate" : "2005-03-15 17:15:13",
+  "visibility" : "PUBLIC",
+  "ibmName" : "SQLCL3",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "SQLCL3",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

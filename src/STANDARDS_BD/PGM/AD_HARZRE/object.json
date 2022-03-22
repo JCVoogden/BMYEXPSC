@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AD_HARZRE",
+  "description" : "Nom de zone entité à partir du nom de zone dictio.",
+  "creationDate" : "1996-07-09 15:22:47",
+  "updateDate" : "2002-10-24 11:54:57",
+  "visibility" : "PRIVATE",
+  "ibmName" : "HARZRE",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "AARZRE",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

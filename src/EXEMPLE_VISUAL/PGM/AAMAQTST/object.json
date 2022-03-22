@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AAMAQTST",
+  "description" : "Test",
+  "creationDate" : "2007-03-29 15:46:46",
+  "updateDate" : "2007-04-03 12:01:22",
+  "visibility" : "PRIVATE",
+  "ibmName" : "MAQTST",
+  "programType" : "I",
+  "sourceType" : "MADELIA",
+  "layoutCode" : "MAQTST",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

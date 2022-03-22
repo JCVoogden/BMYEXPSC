@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Appel du client par son code" format1="01" functionKeys="  A        A            " transactionType="SAISIE_CODE" updateDate="1753-01-01" updateTime="00:00:00" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="01" eraseInput="false" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="23" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR01" truncate="false"/>
+    </formats>
+    <entities>
+        <entity format="01" name="CLIENTS"/>
+    </entities>
+    <fields>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="NOM DU PROGRAMME." formatCode="01" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+                <parameter key="EXP" value="MAJVEN"/>
+            </parameters>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="28" x="27" y="1">
+            <text text="Appel du client par son code"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="N00002" formatCode="01" guideWord="N00002" hilight="true" kind="DATE" layoutCode="N00002" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" x="71" y="1">
+            <parameters>
+                <parameter key="EDW" value="'  /  /  '"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="N00003" formatCode="01" guideWord="N00003" hilight="true" kind="TIME" layoutCode="N00003" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" x="71" y="2">
+            <parameters>
+                <parameter key="EDW" value="'  :  :  '"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" layoutCode="*" length="30" x="2" y="3">
+            <text text="Code client . . . . . . . . ."/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="true" description="Code client" formatCode="01" guideWord="ZZCOD_CLIENT" kind="VARIABLE" layoutCode="ZZCCLI" length="6" logicalProperty="CLIENTS.COD_CLIENT" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" numTextField="5" type="STRING" validExtendedFieldName="false" validFieldName="false" x="33" y="3">
+            <parameters>
+                <parameter key="EXP" value="000001"/>
+            </parameters>
+        </field>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="7" x="2" y="22">
+            <text text="F3=Exit"/>
+        </field>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="13" x="11" y="22">
+            <text text="F12=Précédent"/>
+        </field>
+    </fields>
+</transaction>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Propriété PAIRE/IMPAIRE" help="" id="0" name="FEN_PAIRE_IMPAIRE_EX" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="384"/>
+        <property id="-3" intValue="545"/>
+        <property id="-2" intValue="163"/>
+        <property id="-1" intValue="343"/>
+        <property id="3" stringValue="Propriété PAIRE/IMPAIRE"/>
+        <property id="7"/>
+        <property id="9"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="22" intValue="537"/>
+        <property id="23" intValue="357"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="LISTE" dll="CONTAINR" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 ------------------------------------------------------------------------------------------------------------&#13;&#10;\par &#13;&#10;\par \plain\f3\fs22\b Liste des personnes : \plain\f3\fs22\b\i LST_EX\plain\f3\fs20 &#13;&#10;\par \tab cette liste se compose des colonnes suivantes :&#13;&#10;\par }&#13;&#10;" kinematic="0" name="LST_EX">
+            <properties>
+                <property id="-4" intValue="312"/>
+                <property id="-3" intValue="350"/>
+                <property id="-2" intValue="6"/>
+                <property id="-1"/>
+                <property id="6" stringValue="COL_NOM -6 2 15 -1 # COL_PRN -6 2 15 -1 # COL_SEXE -6 2 1 -1 # COL_FONCTION -6 2 15 -1"/>
+                <property id="8"/>
+                <property id="14"/>
+            </properties>
+            <controls>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b \tab - Colonne du nom de la personne : \plain\f3\fs20\b\i COL_NOM\plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="COL_NOM">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 15 -1"/>
+                        <property id="-8" stringValue="Nom"/>
+                        <property id="-3" intValue="93"/>
+                        <property id="1" intValue="-1"/>
+                        <property id="2" intValue="-1"/>
+                        <property id="11" stringValue="COL_NOM 9 2 15 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b \tab - Colonne du pr\'e9nom : \plain\f3\fs20\b\i COL_PRN\plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="COL_PRN">
+                    <properties>
+                        <property id="-13" intValue="1"/>
+                        <property id="-9" stringValue="2 15 -1"/>
+                        <property id="-8" stringValue="Prénom"/>
+                        <property id="-3" intValue="90"/>
+                        <property id="1" intValue="-1"/>
+                        <property id="2" intValue="-1"/>
+                        <property id="11" stringValue="COL_PRN 9 2 15 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b \tab - Colonne du sexe de la personne : \plain\f3\fs20\b\i COL_SEXE\plain\f3\fs20 &#13;&#10;\par \tab \tab Colonne au format liste de valeurs ...&#13;&#10;\par }&#13;&#10;" kinematic="0" name="COL_SEXE">
+                    <properties>
+                        <property id="-13" intValue="2"/>
+                        <property id="-9" stringValue="2 1 -1"/>
+                        <property id="-8" stringValue="Sexe"/>
+                        <property id="-3" intValue="43"/>
+                        <property id="1" intValue="-1"/>
+                        <property id="2" intValue="-1"/>
+                        <property id="6"/>
+                        <property id="11" stringValue="COL_SEXE 9 2 1 -1"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+                <control associatedVariable="" className="COLONNE" dll="COLONNE" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq8 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20\b \tab - Colonne de la fonction : \plain\f3\fs20\b\i COL_FONCTION\plain\f3\fs20 &#13;&#10;\par \tab \tab Cette colonne est au format liste de valeurs&#13;&#10;\par }&#13;&#10;" kinematic="0" name="COL_FONCTION">
+                    <properties>
+                        <property id="-13" intValue="2"/>
+                        <property id="-9" stringValue="2 15 -1"/>
+                        <property id="-8" stringValue="Fonction"/>
+                        <property id="-3" intValue="123"/>
+                        <property id="1" intValue="-1"/>
+                        <property id="2" intValue="-1"/>
+                        <property id="6"/>
+                        <property id="11" stringValue="COL_FONCTION 9 2 15 -1"/>
+                        <property id="13"/>
+                        <property id="20" stringValue="MS Sans Serif;8;1;1"/>
+                    </properties>
+                </control>
+            </controls>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq9 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 --------------------------------------------------------------------------------------------------------&#13;&#10;\par &#13;&#10;\par \plain\f3\fs22\b Bouton d'affichage de l'aide : \plain\f3\fs22\b\i BTN_AIDE\plain\f3\fs20\b\i &#13;&#10;\par \plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="BTN_AIDE">
+            <properties>
+                <property id="-22" stringValue="Aide"/>
+                <property id="-8" stringValue="Aide"/>
+                <property id="-7" intValue="1"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="326"/>
+                <property id="-1" intValue="6"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq9 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 --------------------------------------------------------------------------------------------------------&#13;&#10;\par &#13;&#10;\par \plain\f3\fs22\b Bouton d'affichage de l'aide : \plain\f3\fs22\b\i BTN_AIDE\plain\f3\fs20\b\i &#13;&#10;\par \plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="BTN_QUITTER">
+            <properties>
+                <property id="-22" stringValue="Quitter"/>
+                <property id="-8" stringValue="Quitter"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="326"/>
+                <property id="-1" intValue="456"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq9 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 --------------------------------------------------------------------------------------------------------&#13;&#10;\par &#13;&#10;\par \plain\f3\fs22\b Bouton d'affichage de l'aide : \plain\f3\fs22\b\i BTN_AIDE\plain\f3\fs20\b\i &#13;&#10;\par \plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="BTN_CHGT_COUL_TEXTE_PAIRE">
+            <properties>
+                <property id="-22" stringValue="Changer la couleur du texte des lignes paires."/>
+                <property id="-8" stringValue="Texte des lignes paires"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="140"/>
+                <property id="-2" intValue="40"/>
+                <property id="-1" intValue="375"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_CHGT_COUL_TEXTE_IMPAIRE">
+            <properties>
+                <property id="-22" stringValue="Changer la couleur du texte des lignes impaires."/>
+                <property id="-8" stringValue="Texte des lignes impaires"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="140"/>
+                <property id="-2" intValue="127"/>
+                <property id="-1" intValue="375"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq9 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 --------------------------------------------------------------------------------------------------------&#13;&#10;\par &#13;&#10;\par \plain\f3\fs22\b Bouton d'affichage de l'aide : \plain\f3\fs22\b\i BTN_AIDE\plain\f3\fs20\b\i &#13;&#10;\par \plain\f3\fs20 &#13;&#10;\par }&#13;&#10;" kinematic="0" name="BTN_CHGT_COUL_FOND_PAIRE">
+            <properties>
+                <property id="-22" stringValue="Changer la couleur de fond des lignes paires."/>
+                <property id="-8" stringValue="Fond des lignes paires"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="140"/>
+                <property id="-2" intValue="71"/>
+                <property id="-1" intValue="375"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="{\rtf1\ansi\deff0\deftab720{\fonttbl{\f0\fswiss MS Sans Serif;}{\f1\froman\fcharset2 Symbol;}{\f2\fswiss\fprq2 System;}{\f3\froman\fprq9 Times New Roman;}}&#13;&#10;{\colortbl\red0\green0\blue0;}&#13;&#10;\deflang1036\pard\plain\f3\fs20 --------------------------------------------------------------------------------------------------------&#13;&#10;\par \plain\f3\fs20\b &#13;&#10;\par \plain\f3\fs22\b Cadre d'\'e9dition et d'affichage des personnes : \plain\f3\fs22\b\i CDR_PERSO\plain\f3\fs22 &#13;&#10;\par \plain\f3\fs20 \tab Ce cadre contient les objets suivants :&#13;&#10;\par }&#13;&#10;" kinematic="0" name="CDR_COULEUR">
+            <properties>
+                <property id="-8" stringValue="Couleur"/>
+                <property id="-4" intValue="311"/>
+                <property id="-3" intValue="169"/>
+                <property id="-2" intValue="6"/>
+                <property id="-1" intValue="362"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="CDR_PAIRE">
+            <properties>
+                <property id="-8" stringValue="Lignes paires"/>
+                <property id="-4" intValue="83"/>
+                <property id="-3" intValue="156"/>
+                <property id="-2" intValue="20"/>
+                <property id="-1" intValue="368"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="CDR_IMPAIRE">
+            <properties>
+                <property id="-8" stringValue="Lignes impaires"/>
+                <property id="-4" intValue="83"/>
+                <property id="-3" intValue="156"/>
+                <property id="-2" intValue="107"/>
+                <property id="-1" intValue="368"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_CHGT_COUL_FOND_IMPAIRE">
+            <properties>
+                <property id="-22" stringValue="Changer la couleur de fond des lignes impaires."/>
+                <property id="-8" stringValue="Fond des lignes impaires"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="140"/>
+                <property id="-2" intValue="158"/>
+                <property id="-1" intValue="375"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="CDR_PRN">
+            <properties>
+                <property id="-8" stringValue="Couleur colonne Prénom"/>
+                <property id="-4" intValue="48"/>
+                <property id="-3" intValue="156"/>
+                <property id="-2" intValue="195"/>
+                <property id="-1" intValue="368"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_CHGT_COUL_COL_PRN">
+            <properties>
+                <property id="-22" stringValue="Changer la couleur de la colonne des Prénoms."/>
+                <property id="-8" stringValue="Couleur"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="140"/>
+                <property id="-2" intValue="213"/>
+                <property id="-1" intValue="375"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="BTN_PROP_PAIRE_IMPAIRE">
+            <properties>
+                <property id="-22" stringValue="Mettre (ou retirer) la propriété PAIRE/IMPAIRE."/>
+                <property id="-8" stringValue="Mettre (ou retirer) la propriété PAIRE/IMPAIRE"/>
+                <property id="-4" intValue="34"/>
+                <property id="-3" intValue="140"/>
+                <property id="-2" intValue="263"/>
+                <property id="-1" intValue="376"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="CDR_METTRE_PROP_PAIRE_IMPAIRE">
+            <properties>
+                <property id="-8"/>
+                <property id="-4" intValue="61"/>
+                <property id="-3" intValue="156"/>
+                <property id="-2" intValue="246"/>
+                <property id="-1" intValue="368"/>
+            </properties>
+        </control>
+    </controls>
+</window>

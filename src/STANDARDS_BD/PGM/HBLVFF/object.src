@@ -1,0 +1,29 @@
+  *----------------------------------------------------------------*
+  * Titre : Visualisation d'un fichier                             *
+  *----------------------------------------------------------------*
+  * Créé par BDC le 04/08/92 . Dernière modif par xxx le xx/xx/xx  *
+  *----------------------------------------------------------------*
+  RECEVOIR  P_COD_RETOUR P_COD_ACTION P_NOM_ENTITE
+  INITIALISER 01
+  TRAITER 01
+  ******************
+  TRANSACTION 01
+  ******************
+  SI *F03
+    P_COD_ACTION = 'EX'
+    TERMINER
+  FIN
+  SI *F12
+    P_COD_ACTION = 'PR'
+    TERMINER
+  FIN
+  TERMINER
+  ******************
+  INITIALISATION 01
+  ******************
+  ZZ_NOM_ENTITE = P_NOM_ENTITE
+  DEBUT_STD
+  LIRE            FICHIEL1_DA
+  PRESENTER       FICHIEL1_DA
+  XNOM_PGM        = *NOM_PGM
+  FIN_STD

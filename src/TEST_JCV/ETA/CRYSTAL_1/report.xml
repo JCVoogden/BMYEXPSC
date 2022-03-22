@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml report.xsd">
+    <entities>
+        <entity name="ANSI_UNICODE"/>
+    </entities>
+    <fields>
+        <field description="CRYS01" guideWord="ZANSI" kind="VARIABLE" layoutCode="_data" length="25" logicalProperty="ANSI_UNICODE.ANSI" scale="-1" type="STRING"/>
+        <field description="CRYS01" guideWord="ZUNICODE" kind="VARIABLE" layoutCode="_data" length="25" logicalProperty="ANSI_UNICODE.UNICODE" scale="-1" type="STRING"/>
+    </fields>
+</report>

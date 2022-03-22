@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "CAN_GAUCHE",
+  "description" : "Canevas partie gauche",
+  "creationDate" : "2004-08-23 15:18:36",
+  "updateDate" : "2004-09-14 09:42:13",
+  "visibility" : "PRIVATE",
+  "ibmName" : "CANGAU",
+  "programType" : "I",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "CANGAU",
+  "level2GenType" : 2,
+  "level2DatabaseGenMode" : "SQL",
+  "keepState" : true
+}

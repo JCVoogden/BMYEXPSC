@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "MAJ_ARTICLE",
+  "description" : "Mise à jour des articles",
+  "creationDate" : "1995-06-08 07:32:37",
+  "updateDate" : "1995-06-08 07:32:37",
+  "visibility" : "PUBLIC",
+  "ibmName" : "MAJART",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "MAJART",
+  "programTemplateName" : "SAI_2T_F6",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

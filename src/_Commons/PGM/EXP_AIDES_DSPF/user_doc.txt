@@ -1,0 +1,8 @@
+               Aide par Display File
+
+Cette maquette sert à expliquer l'aide par DSPF.
+Elle est constituée d'une Transaction.
+Elle se servira de l'aide créée dans la maquette AIDVEN.
+Le programme qui sera associé à cette maquette effectura simplement
+l'affichage de la première transaction. Le déroulement de l'aide se
+fera par l'intermédiaire de la touche AIDE et des touches de pagination

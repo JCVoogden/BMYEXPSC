@@ -1,0 +1,11 @@
+{
+  "type" : "ETA",
+  "name" : "EDL_CUA_CLIENT",
+  "description" : "Edition liste des clients CUA",
+  "creationDate" : "1995-06-20 12:15:23",
+  "updateDate" : "1995-06-20 12:19:17",
+  "visibility" : "PRIVATE",
+  "layoutCode" : "ECUA01",
+  "reportTypeName" : "LISTE_GESTION",
+  "nature" : "ADELIA"
+}

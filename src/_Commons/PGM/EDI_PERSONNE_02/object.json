@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "EDI_PERSONNE_02",
+  "description" : "Liste des personnes",
+  "creationDate" : "1995-06-08 07:07:17",
+  "updateDate" : "1995-06-08 07:07:17",
+  "visibility" : "PUBLIC",
+  "ibmName" : "EDIPE2",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "EDIPE2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,49 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20090622)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20090622)      bool started
+*ROW_METADATA(ADELIA         20090622)   FIN_DECL
+*ROW_METADATA(ADELIA         20090622)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20090622)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20090622)      executer    id_fen0
+*ROW_METADATA(ADELIA         20090622)   FIN_INIT
+*ROW_METADATA(ADELIA         20090622)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20090622)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20090622)         
+*ROW_METADATA(ADELIA         20090622)      FIN_DECL
+*ROW_METADATA(ADELIA         20090622)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20090622)         
+*ROW_METADATA(ADELIA         20090622)      FIN_INIT
+*ROW_METADATA(ADELIA         20090622)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20090622)         DEBUT_OBJET ID_START
+*ROW_METADATA(ADELIA         20090622)            DEBUT_EVT ID_START:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20090622)               si started
+*ROW_METADATA(ADELIA         20090622)                  id_start:texte = 'Démarrer'
+*ROW_METADATA(ADELIA         20090622)                  id_timer:activite = *faux
+*ROW_METADATA(ADELIA         20090622)               sinon
+*ROW_METADATA(ADELIA         20090622)                  id_start:texte = 'Arrêter'
+*ROW_METADATA(ADELIA         20090622)                  id_timer:activite = *vrai
+*ROW_METADATA(ADELIA         20090622)               fin
+*ROW_METADATA(ADELIA         20090622)               
+*ROW_METADATA(ADELIA         20090622)               started = non started
+*ROW_METADATA(ADELIA         20090622)            FIN_EVT
+*ROW_METADATA(ADELIA         20090622)         FIN_OBJET
+*ROW_METADATA(ADELIA         20090622)         DEBUT_OBJET ID_TIMER
+*ROW_METADATA(ADELIA         20090622)            DEBUT_EVT ID_TIMER:Top
+*ROW_METADATA(ADELIA         20090622)               id_timer:activite = *faux
+*ROW_METADATA(ADELIA         20090622)               
+*ROW_METADATA(ADELIA         20090622)               executer_cmd 'TCLUS2.EXE'
+*ROW_METADATA(ADELIA         20090622)               
+*ROW_METADATA(ADELIA         20090622)               id_timer:activite = started
+*ROW_METADATA(ADELIA         20090622)            FIN_EVT
+*ROW_METADATA(ADELIA         20090622)         FIN_OBJET
+*ROW_METADATA(ADELIA         20090622)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20090622)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20090622)         
+*ROW_METADATA(ADELIA         20090622)      FIN_VERIF
+*ROW_METADATA(ADELIA         20090622)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20090622)         
+*ROW_METADATA(ADELIA         20090622)      FIN_VALID
+*ROW_METADATA(ADELIA         20090622)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20090622)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20090622)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

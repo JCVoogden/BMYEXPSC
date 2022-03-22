@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Visualisation des articles" format1="01" format2="*1" format3="02" functionKeys="  A        A            " transactionType="FEN_INTERRO_OPT" updateDate="1753-01-01" updateTime="00:00:00" windowType="WINDOW" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="*1" eraseInput="false" guideWord="SFL01" help="false" jumpLinesBefore="14" keep="false" lock="false" nbColumns="1" nbLines="5" overlay="false" pagination="DYNAMIC" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="SFL01" subFilePageSize="5" subFileSize="6" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="01" eraseInput="false" guideWord="CTL01" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="13" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="CTL01" subFileCode="*1" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="02" eraseInput="false" guideWord="FOR02" help="false" jumpLinesBefore="19" keep="false" lock="false" nbColumns="1" nbLines="5" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR02" truncate="false"/>
+    </formats>
+    <entities>
+        <entity access="SEQUENTIAL_WITH_KEY" format="*1" name="ARTICLE">
+            <properties>
+                <property access="1" name="LIB_ARTICLE"/>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="45" x="17" y="11">
+            <text text="Indiquez vos options, puis appuyez sur ENTREE"/>
+        </field>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="9" x="19" y="12">
+            <text text="1=Choisir"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="3" x="15" y="13">
+            <text text="Opt"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="7" x="30" y="13">
+            <text text="Libellé"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="7" x="51" y="13">
+            <text text="Article"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code de l'option" formatCode="*1" guideWord="ZW_COD_OPTION" kind="USER_VARIABLE" layoutCode="ZWCOPT" length="1" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="16" y="14"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Libellé article" formatCode="*1" guideWord="ZZLIB_ARTICLE" kind="VARIABLE" kinematicLogicalProperty="ARTICLE.LIB_ARTICLE" layoutCode="ZZLART" length="30" logicalProperty="ARTICLE.LIB_ARTICLE" lowerCase="true" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="3" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="19" y="14">
+            <parameters>
+                <parameter key="EXP" value="Ruban 5224"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code article" formatCode="*1" guideWord="ZZCOD_ARTICLE" kind="VARIABLE" kinematicLogicalProperty="ARTICLE.COD_ARTICLE" layoutCode="ZZCART" length="10" logicalProperty="ARTICLE.COD_ARTICLE" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="4" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="50" y="14">
+            <parameters>
+                <parameter key="EXP" value="40R5224"/>
+            </parameters>
+        </field>
+        <field color="BLUE" formatCode="02" kind="CONSTANT" layoutCode="*" length="7" x="20" y="19">
+            <text text="F3=Exit"/>
+        </field>
+        <field color="BLUE" formatCode="02" kind="CONSTANT" layoutCode="*" length="13" x="29" y="19">
+            <text text="F12=Précédent"/>
+        </field>
+        <field color="WHITE" description="*" formatCode="01" guideWord="*" kind="FRAME" layoutCode="*" length="52" reverseImage="true" x="13" y="10">
+            <text text="     Visualisation des articles par libellé"/>
+        </field>
+        <field color="WHITE" description="*" formatCode="01" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="11">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="01" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="64" y="11">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="01" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="12">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="01" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="64" y="12">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="01" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="13">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="01" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="64" y="13">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="*1" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="14">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="*1" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="64" y="14">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="*1" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="15">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="*1" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="64" y="15">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="*1" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="16">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="*1" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="64" y="16">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="*1" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="17">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="*1" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="64" y="17">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="*1" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="18">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="*1" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="64" y="18">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="02" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="19">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="02" guideWord="*" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="64" y="19">
+            <text/>
+        </field>
+        <field color="WHITE" description="*" formatCode="02" guideWord="*" kind="WINDOW" layoutCode="*" length="52" reverseImage="true" x="13" y="20">
+            <text/>
+        </field>
+    </fields>
+</transaction>

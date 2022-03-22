@@ -1,0 +1,155 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(JCV            20090225)   DEBUT_DECL
+*ROW_METADATA(JCV            20090225)      num_bin_4  i
+*ROW_METADATA(JCV            20090225)      alpha(100) buffer
+*ROW_METADATA(ADELIA         20090702)      num_bin_4  semaphore1
+*ROW_METADATA(ADELIA         20090702)      num_bin_4  semaphore2
+*ROW_METADATA(ADELIA         20090702)      bool       semExists1
+*ROW_METADATA(ADELIA         20090702)      bool       semExists2
+*ROW_METADATA(ADELIA         20090702)      
+*ROW_METADATA(ADELIA         20090615)      timestamp  start
+*ROW_METADATA(ADELIA         20090615)      timestamp  end
+*ROW_METADATA(JCV            20090225)   FIN_DECL
+*ROW_METADATA(JCV            20090225)   DEBUT_INIT
+*ROW_METADATA(JCV            20090225)      charger_dll 'vatoolbx'
+*ROW_METADATA(JCV            20090225)      charger_dll 'vaconsul'
+*ROW_METADATA(JCV            20090225)      
+*ROW_METADATA(JCV            20090225)      initialiser id_fen0
+*ROW_METADATA(JCV            20090225)      executer    id_fen0
+*ROW_METADATA(JCV            20090225)      
+*ROW_METADATA(JCV            20090225)      
+*ROW_METADATA(JCV            20090225)   FIN_INIT
+*ROW_METADATA(JCV            20090225)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(JCV            20090225)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20090702)         liste tempolst *ref_mld(testlog)
+*ROW_METADATA(JCV            20090225)      FIN_DECL
+*ROW_METADATA(JCV            20090225)      DEBUT_INIT
+*ROW_METADATA(JCV            20090225)         nbclients = 10
+*ROW_METADATA(ADELIA         20090702)         
+*ROW_METADATA(ADELIA         20090702)         charger_dll 'testdll'
+*ROW_METADATA(ADELIA         20090702)         
+*ROW_METADATA(ADELIA         20090702)         * provoque l'init du pool
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV POOLSRV
+*ROW_METADATA(ADELIA         20090615)            i = 0
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(JCV            20090225)      FIN_INIT
+*ROW_METADATA(JCV            20090225)      DEBUT_GEST_EVT
+*ROW_METADATA(JCV            20090225)         DEBUT_OBJET BTN_START
+*ROW_METADATA(JCV            20090225)            DEBUT_EVT BTN_START:BoutonGaucheClic
+*ROW_METADATA(JCV            20090225)               btn_start:activite = *faux
+*ROW_METADATA(JCV            20090225)               
+*ROW_METADATA(ADELIA         20090702)               statut = *blank
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               appeler_dll 'testdll' 'TstDCreerSemaphore' semaphore1 'tpool1' nbclients semexists1
+*ROW_METADATA(ADELIA         20090702)               appeler_dll 'testdll' 'TstDCreerSemaphore' semaphore2 'tpool2' nbclients semexists2
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               si semaphore1 = 0 ou semexists1 ou semaphore2 = 0 ou semexists2
+*ROW_METADATA(ADELIA         20090702)                  btn_start:activite = *vrai
+*ROW_METADATA(ADELIA         20090702)                  quitter
+*ROW_METADATA(ADELIA         20090702)               fin
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV LOCAL
+*ROW_METADATA(ADELIA         20090702)                  nbexec    = 0
+*ROW_METADATA(ADELIA         20090702)                  nbsuccess = 0
+*ROW_METADATA(ADELIA         20090702)                  supprimer_sql testdata
+*ROW_METADATA(ADELIA         20090702)                  supprimer_sql testlog
+*ROW_METADATA(ADELIA         20090702)                  creer_sql testdata
+*ROW_METADATA(ADELIA         20090702)                  valider_maj
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20090615)               
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               jge:valeur_pas        = 1
+*ROW_METADATA(ADELIA         20090702)               jge:valeur_max        = nbclients
+*ROW_METADATA(JCV            20090225)               jge:valeur_indicateur = 0
+*ROW_METADATA(JCV            20090225)               jge:visibilite        = *vrai
+*ROW_METADATA(ADELIA         20090615)               
+*ROW_METADATA(ADELIA         20090615)               ecart = 0
+*ROW_METADATA(ADELIA         20090615)               
+*ROW_METADATA(JCV            20090225)               i = 1
+*ROW_METADATA(JCV            20090225)               
+*ROW_METADATA(ADELIA         20090604)               tant_que i <= nbclients
+*ROW_METADATA(ADELIA         20101012)                  choix_selon mode
+*ROW_METADATA(ADELIA         20101012)                  si_valeur 3
+*ROW_METADATA(ADELIA         20101012)                     buffer = 'TPOOL4.EXE ' // &num_alpha(i)
+*ROW_METADATA(ADELIA         20101012)                  si_valeur 2
+*ROW_METADATA(ADELIA         20101012)                     buffer = 'TPOOL3.EXE ' // &num_alpha(i)
+*ROW_METADATA(ADELIA         20101012)                  autre_valeur
+*ROW_METADATA(ADELIA         20090604)                     buffer = 'TPOOL2.EXE ' // &num_alpha(i)
+*ROW_METADATA(ADELIA         20101012)                  fin_choix_selon 
+*ROW_METADATA(ADELIA         20101012)                  executer_cmd buffer *asyn
+*ROW_METADATA(JCV            20090225)                  jge:valeur_indicateur = i
+*ROW_METADATA(JCV            20090225)                  i = i + 1
+*ROW_METADATA(JCV            20090225)               refaire
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               * attente des clients
+*ROW_METADATA(ADELIA         20090702)               i = 1
+*ROW_METADATA(ADELIA         20090702)               tant_que i <= nbclients
+*ROW_METADATA(ADELIA         20090702)                  appeler_dll 'testdll' 'TstDAttendreSemaphore' semaphore1
+*ROW_METADATA(ADELIA         20090702)                  i = i + 1
+*ROW_METADATA(ADELIA         20090702)               refaire
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               jge:visibilite    = *faux
+*ROW_METADATA(ADELIA         20090702)               btn_stop:activite = *vrai
+*ROW_METADATA(JCV            20090225)            FIN_EVT
+*ROW_METADATA(JCV            20090225)         FIN_OBJET
+*ROW_METADATA(JCV            20090225)         DEBUT_OBJET BTN_STOP
+*ROW_METADATA(JCV            20090225)            DEBUT_EVT BTN_STOP:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               btn_stop:activite = *faux
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               heure start
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               * relache les clients
+*ROW_METADATA(ADELIA         20090702)               i = 1
+*ROW_METADATA(ADELIA         20090702)               tant_que i <= nbclients
+*ROW_METADATA(ADELIA         20090702)                  appeler_dll 'testdll' 'TstDRelacherSemaphore' semaphore2
+*ROW_METADATA(ADELIA         20090702)                  i = i + 1
+*ROW_METADATA(ADELIA         20090702)               refaire
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               * attente des clients
+*ROW_METADATA(ADELIA         20090702)               i = 1
+*ROW_METADATA(ADELIA         20090702)               tant_que i <= nbclients
+*ROW_METADATA(ADELIA         20090702)                  appeler_dll 'testdll' 'TstDAttendreSemaphore' semaphore1
+*ROW_METADATA(ADELIA         20090702)                  i = i + 1
+*ROW_METADATA(ADELIA         20090702)               refaire
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               appeler_dll 'testdll' 'TstDFermerSemaphore' semaphore1
+*ROW_METADATA(ADELIA         20090702)               appeler_dll 'testdll' 'TstDFermerSemaphore' semaphore2
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV LOCAL
+*ROW_METADATA(ADELIA         20090702)                  lire_sql testdata
+*ROW_METADATA(ADELIA         20090702)                  
+*ROW_METADATA(ADELIA         20090702)                  charger_sql_lst tempolst testlog
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               copier_lst tempolst id_log:liste
+*ROW_METADATA(ADELIA         20090702)               vider_lst  tempolst
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               statut = 'Opérations réussies : ' // &num_alpha(nbsuccess)
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               heure end
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               ecart = &ecart_timestps(start;end;'MS') / 1000
+*ROW_METADATA(ADELIA         20090702)               
+*ROW_METADATA(ADELIA         20090702)               btn_start:activite = *vrai
+*ROW_METADATA(JCV            20090225)            FIN_EVT
+*ROW_METADATA(JCV            20090225)         FIN_OBJET
+*ROW_METADATA(ADELIA         20090630)         DEBUT_OBJET ID_FEN0
+*ROW_METADATA(ADELIA         20090630)            DEBUT_EVT ID_FEN0:Fermeture
+*ROW_METADATA(ADELIA         20090630)               appeler_dll 'vatoolbx' 'VaToolBxOpenFile'  'lock' 'c:\unlock.txt' 'w' i
+*ROW_METADATA(ADELIA         20090630)               appeler_dll 'vatoolbx' 'VaToolBxCloseFile' 'lock' i
+*ROW_METADATA(ADELIA         20090630)               
+*ROW_METADATA(ADELIA         20090630)            FIN_EVT
+*ROW_METADATA(ADELIA         20090630)         FIN_OBJET
+*ROW_METADATA(JCV            20090225)      FIN_GEST_EVT
+*ROW_METADATA(JCV            20090225)      DEBUT_VERIF
+*ROW_METADATA(JCV            20090225)         
+*ROW_METADATA(JCV            20090225)      FIN_VERIF
+*ROW_METADATA(JCV            20090225)      DEBUT_VALID
+*ROW_METADATA(JCV            20090225)         
+*ROW_METADATA(JCV            20090225)      FIN_VALID
+*ROW_METADATA(JCV            20090225)      DEBUT_TRT_GUIDE
+*ROW_METADATA(JCV            20090225)      FIN_TRT_GUIDE
+*ROW_METADATA(JCV            20090225)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

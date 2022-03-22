@@ -1,0 +1,66 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20110322)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20210126)      *
+*ROW_METADATA(ADELIA         20210126)      * Un programme de test qui envoie un mail...
+*ROW_METADATA(ADELIA         20210126)      *
+*ROW_METADATA(ADELIA         20220322)      * Modifié par la correction DEF4
+*ROW_METADATA(ADELIA         20220322)      * 
+*ROW_METADATA(ADELIA         20220322)      * Modifié par la correction DEF3
+*ROW_METADATA(ADELIA         20220322)      * 
+*ROW_METADATA(ADELIA         20220322)      * Modifié par la correction DEF2
+*ROW_METADATA(ADELIA         20220322)      * 
+*ROW_METADATA(ADELIA         20220322)      * Modifié par la correction TESTAGAIN
+*ROW_METADATA(ADELIA         20220304)      * 
+*ROW_METADATA(ADELIA         20220304)      * Modifié par la correction AUTRETEST
+*ROW_METADATA(ADELIA         20210225)      *
+*ROW_METADATA(ADELIA         20210225)      * Modifié par la correction TESTPUSH - 2
+*ROW_METADATA(ADELIA         20210315)      *
+*ROW_METADATA(ADELIA         20210315)      * Modifié par la correction TESTPUSH - 3
+*ROW_METADATA(ADELIA         20210315)      *
+*ROW_METADATA(ADELIA         20210315)      * Modifié par la correction RETEST
+*ROW_METADATA(ADELIA         20210317)      * 
+*ROW_METADATA(ADELIA         20210317)      * Modifié par la correction AGAINANDAGAIN
+*ROW_METADATA(ADELIA         20210317)      * 
+*ROW_METADATA(ADELIA         20210317)      * Modifié par la correction ANDAGAIN (qui l'eu cru)
+*ROW_METADATA(ADELIA         20210317)      * 
+*ROW_METADATA(ADELIA         20210317)      * Modifié par la correction AGAINAGAIN 
+*ROW_METADATA(ADELIA         20210317)      * 
+*ROW_METADATA(ADELIA         20110322)   FIN_DECL
+*ROW_METADATA(ADELIA         20110322)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20110322)      traiter id_wpage1
+*ROW_METADATA(ADELIA         20110322)   FIN_INIT
+*ROW_METADATA(ADELIA         20110322)   DEBUT_RETOUR
+*ROW_METADATA(ADELIA         20110322)      
+*ROW_METADATA(ADELIA         20110322)   FIN_RETOUR
+*ROW_METADATA(ADELIA         20110322)   DEBUT_PAGE ID_WPAGE1
+*ROW_METADATA(ADELIA         20110322)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20110322)         
+*ROW_METADATA(ADELIA         20110322)      FIN_DECL
+*ROW_METADATA(ADELIA         20110322)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20110322)         
+*ROW_METADATA(ADELIA         20110322)      FIN_INIT
+*ROW_METADATA(ADELIA         20110322)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20110322)         DEBUT_OBJET BTN_1
+*ROW_METADATA(ADELIA         20110322)            DEBUT_EVT BTN_1:ONCLICK *BACK_EVT_TYPE(ROLLUP)
+*ROW_METADATA(ADELIA         20110322)               appeler_dll 'vatoolbx' 'VaToolBxSendMailSMTP' 'smtpin.hardis.fr' *blank *blank 'jean-christophe.voogden@hardis.fr' 'jean-christophe.voogden@hardis.fr' *blank *blank *blank 'Mail de test Web' 'Un message incroyable que le monde entier nous envie...' *blank statut
+*ROW_METADATA(ADELIA         20110322)               
+*ROW_METADATA(ADELIA         20110322)               si statut = *blank
+*ROW_METADATA(ADELIA         20110322)                  statut = 'Envoi réussi'
+*ROW_METADATA(ADELIA         20110322)               fin
+*ROW_METADATA(ADELIA         20110322)               
+*ROW_METADATA(ADELIA         20110322)            FIN_EVT
+*ROW_METADATA(ADELIA         20110322)         FIN_OBJET
+*ROW_METADATA(ADELIA         20110322)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20110322)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20110322)         
+*ROW_METADATA(ADELIA         20110322)      FIN_VERIF
+*ROW_METADATA(ADELIA         20110322)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20110322)         
+*ROW_METADATA(ADELIA         20110322)      FIN_VALID
+*ROW_METADATA(ADELIA         20110322)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20110322)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20110322)      DEBUT_RETOUR
+*ROW_METADATA(ADELIA         20110322)         
+*ROW_METADATA(ADELIA         20110322)      FIN_RETOUR
+*ROW_METADATA(ADELIA         20110322)   FIN_PAGE
+*ROW_METADATA(ADELIA                 )FIN_PGM

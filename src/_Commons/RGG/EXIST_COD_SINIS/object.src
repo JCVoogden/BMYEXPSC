@@ -1,0 +1,16 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   * Règle de gestion de type contrôle
+*ROW_METADATA(ADELIA                 )   * Contrôle du TYPE SINISTRE
+*ROW_METADATA(ADELIA                 )   REGLE_GESTION 0015 $$EXIST
+*ROW_METADATA(ADELIA                 )   DECLARER WGCSIN;WG_COD_SIN 2
+*ROW_METADATA(ADELIA                 )   IDENTIFIER RTYPSINL_COD TYPSINL CLE ;WG_COD_SIN
+*ROW_METADATA(ADELIA                 )   WG_COD_SIN = $$EXIST
+*ROW_METADATA(ADELIA                 )   LIRE            RTYPSINL_COD
+*ROW_METADATA(ADELIA                 )   SI              RTYPSINL_COD  N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )     $LIB_SINISTRE = *BLANK
+*ROW_METADATA(ADELIA                 )     INIT_MSG $$EXIST
+*ROW_METADATA(ADELIA                 )     ANOMALIE
+*ROW_METADATA(ADELIA                 )   SINON
+*ROW_METADATA(ADELIA                 )     $LIB_SINISTRE = TLIB_SINISTRE
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

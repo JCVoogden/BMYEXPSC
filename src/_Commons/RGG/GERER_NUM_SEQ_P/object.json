@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "GERER_NUM_SEQ_P",
+  "description" : "gérer numéro de séquence (PM)",
+  "creationDate" : "1996-07-05 09:06:54",
+  "updateDate" : "1996-07-05 09:19:10",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

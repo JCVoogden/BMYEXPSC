@@ -1,0 +1,37 @@
+*
+* Remplacez VUE_???? Par le nom de la vue gérer
+* Niveau I -
+*------------------
+INITIALISER 01
+TRAITER 01
+*-------------------------
+TRANSACTION 01
+SI *F03 OU *F12
+  TERMINER
+FIN
+VERIFIER 01
+INITIALISER 02
+TRAITER 02
+*-------------------------
+TRANSACTION 02
+SI *F03
+  TERMINER
+FIN
+SI *F12
+  TRAITER 01
+FIN
+* Par F13 appel de la procédure de suppression de l'nregistrement
+* Afficher
+SI *F13
+  TRAITER_PROC SUPPRE
+  TRAITER 01
+FIN
+VERIFIER 02
+VALIDER 02
+INITIALISER 01
+TRAITER 01
+*
+DEBUT_PROCEDURE SUPPRE
+*-------------------------  Procédure de suppression
+SUPPRIMER   VUE_????
+FIN_PROCEDURE

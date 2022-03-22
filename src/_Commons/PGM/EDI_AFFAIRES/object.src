@@ -1,0 +1,49 @@
+DEBUT_STD
+XNOM_PGM        = *NOM_PGM
+FIN_STD
+*--------------------------* Lecture 1er enreg du fichier
+LIRE_AVANT VENTE_DD
+TANT_QUE VENTE_DD EXISTE
+  *--------------------------* Détection des ruptures en-tête
+  TRAITER_CHG R_CLIENTS
+  TRAITER_CHG R_FAMILLE
+  *--------------------------* Appel du traitement détail
+  TRAITER_PROC SBRDET
+  *--------------------------* Lecture enreg suivant du fichier
+  LIRE_AVANT VENTE_DD
+  *--------------------------* Détection des ruptures totales
+  TRAITER_TOTAL R_FAMILLE
+  TRAITER_TOTAL R_CLIENTS
+REFAIRE
+TRT_CHANGEMENT R_CLIENTS
+*--------------------------* Procédure en-tête clients
+LIRE CLIENTS_DB
+IMPRIMER ENT_CLIENTS
+ZWTOT_CLIENT = 0
+FIN_TRAITEMENT
+TRT_CHANGEMENT R_FAMILLE
+*--------------------------* Procédure en-tête représentant
+LIRE FAMILLE_DC
+IMPRIMER ENT_FAMILLE
+ZWTOT_FAMILLE = 0
+FIN_TRAITEMENT
+TRT_TOTAL R_FAMILLE
+*--------------------------* Procédure totale représentant
+EDITER TOT_FAMILLE
+FIN_TRAITEMENT
+TRT_TOTAL R_CLIENTS
+*--------------------------* Procédure totale client
+EDITER TOT_CLIENTS
+FIN_TRAITEMENT
+CHANGEMENT_PAGE
+*--------------------------* Procédure changement page
+IMPRIMER ENT_CLIENTS
+IMPRIMER ENT_FAMILLE
+FIN_TRAITEMENT
+DEBUT_PROCEDURE SBRDET
+*--------------------------* Procédure détail
+LIRE       ARTICLE_DA
+IMPRIMER DET_VENTE
+ZWTOT_FAMILLE = ZWTOT_FAMILLE + ZZMHT_VENTE
+ZWTOT_CLIENT = ZWTOT_CLIENT + ZZMHT_VENTE
+FIN_PROCEDURE

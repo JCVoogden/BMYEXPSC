@@ -1,0 +1,1430 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         00000000)   DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)      NUM_BIN_2 CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)      NUM_E(3,0) WTEMP
+*ROW_METADATA(ADELIA         20051014)      
+*ROW_METADATA(ADELIA         20051014)      * !-----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * ! Ces trois listes vont nous permettre de !
+*ROW_METADATA(ADELIA         00000000)      * !   simuler des fichiers.                 !
+*ROW_METADATA(ADELIA         00000000)      * !-----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      LISTE LST_PERSO WCOD_PERSO WNOM_PERSO WPRN_PERSO
+*ROW_METADATA(ADELIA         00000000)      LISTE LST_COMMANDE WCOD_COM WCOD_CLI_COM
+*ROW_METADATA(ADELIA         00000000)      LISTE LST_DET_COM WNUM_DET WCOD_COM_DET WARTICLE WQTE
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !-----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * ! Déclaration de tableaux de compteurs pour le  !
+*ROW_METADATA(ADELIA         00000000)      * !   remplissage des listes.                     !
+*ROW_METADATA(ADELIA         00000000)      * !-----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      NUM_E(3,0) WCOMPTEUR(4)
+*ROW_METADATA(ADELIA         20060626)      NUM_E(3,0) WLIMITE(2)
+*ROW_METADATA(ADELIA         20060626)      
+*ROW_METADATA(ADELIA         20080114)      ALPHA(100) TEXT
+*ROW_METADATA(ADELIA         00000000)   FIN_DECL
+*ROW_METADATA(ADELIA         00000000)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080114)      INITIALISER FEN_ARBRE
+*ROW_METADATA(ADELIA         00000000)      EXECUTER FEN_ARBRE
+*ROW_METADATA(ADELIA         00000000)   FIN_INIT
+*ROW_METADATA(ADELIA         00000000)   DEBUT_FENETRE FEN_ARBRE
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         BOOL CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      DEBUT_INIT
+*ROW_METADATA(ADELIA         00000000)         CODE_RETOUR = *FAUX
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         * !----------------------------!
+*ROW_METADATA(ADELIA         00000000)         * !   Appel de la procédure de !
+*ROW_METADATA(ADELIA         00000000)         * ! remplissage des listes     !
+*ROW_METADATA(ADELIA         00000000)         * !----------------------------!
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         TRAITER_PROC REMPLIR_LISTES
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         * !----------------------------!
+*ROW_METADATA(ADELIA         00000000)         * !   Appel de la procédure de !
+*ROW_METADATA(ADELIA         00000000)         * ! tri des listes             !
+*ROW_METADATA(ADELIA         00000000)         * !----------------------------!
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         TRAITER_PROC TRIER_LISTES
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         * !-------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         * !   Désactivation des contrôles       !
+*ROW_METADATA(ADELIA         00000000)         * ! graphiques, ils seront réactivés    !
+*ROW_METADATA(ADELIA         00000000)         * ! en fonction des actions entreprises !
+*ROW_METADATA(ADELIA         00000000)         * !-------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         BTN_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         BTN_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         BTN_DET_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         CDR_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         CDR_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         CDR_LIG:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         TXT_COD_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         TXT_NOM_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         TXT_PRN_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         TXT_COD_CLI_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         TXT_COD_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         TXT_COD_COM_DET:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         TXT_NUM_LIG:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         TXT_ARTICLE:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         TXT_QTE:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         CHS_COD_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         CHS_NOM_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         CHS_PRN_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         CHS_ARTICLE:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         CHS_COD_CLI_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         CHS_COD_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         CHS_COD_COM_DET:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         CHS_NUM_LIG:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         CHS_QTE:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         LST_LIGNE_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET ARL_EXEMPLE
+*ROW_METADATA(ADELIA         00000000)            * !-------------------------------------!
+*ROW_METADATA(ADELIA         00000000)            * !   Appel de la procédure d'affichage !
+*ROW_METADATA(ADELIA         00000000)            * ! de l'arbre                          !
+*ROW_METADATA(ADELIA         00000000)            * !-------------------------------------!
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            TRAITER_PROC MAJ_ARBRE
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_INIT
+*ROW_METADATA(ADELIA         00000000)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET COL_COD_PERSO
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_COD_PERSO:MNU_MOD
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour modifier une personne, il faut :      !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre d'édition de personnes    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des commandes             !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des lignes de commandes   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les informations de la personne    !
+*ROW_METADATA(ADELIA         00000000)               * !    dans les champs graphiques correspondants !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton du cadre des   !
+*ROW_METADATA(ADELIA         00000000)               * !    personnes à 'Modifier'.                   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Placer le focus sur le champ 'Nom personne'!
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_PERSO
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_PERSO
+*ROW_METADATA(ADELIA         00000000)               BTN_PERSO:TEXTE = 'Modifier'
+*ROW_METADATA(ADELIA         00000000)               APPELER_METHODE CHS_NOM_PERSO METTRE_FOCUS
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_COD_PERSO:MNU_CRE_PERS
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour créer une personne il faut :    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre des personnes       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des commandes       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des lignes de       !
+*ROW_METADATA(ADELIA         00000000)               * !     commande                           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le champ de saisie du code   !
+*ROW_METADATA(ADELIA         00000000)               * !     de personne (désactivé par défaut) !
+*ROW_METADATA(ADELIA         00000000)               * !     et en initialiser la valeur        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton de       !
+*ROW_METADATA(ADELIA         00000000)               * !     validation à 'Créer'               !
+*ROW_METADATA(ADELIA         00000000)               * ! - Mettre le focus sur le champ         !
+*ROW_METADATA(ADELIA         00000000)               * !     'Code personne'                    !
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_PERSO
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_PERSO:VALEUR = *BLANK
+*ROW_METADATA(ADELIA         00000000)               BTN_PERSO:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)               APPELER_METHODE CHS_COD_PERSO METTRE_FOCUS
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_COD_PERSO:MNU_CRE_COM
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour créer une commande pour une          !
+*ROW_METADATA(ADELIA         00000000)               * ! personne donnée il faut :                   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver les cadres personne et         !
+*ROW_METADATA(ADELIA         00000000)               * !    ligne de commande                        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre des commandes            !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les données de la personne        !
+*ROW_METADATA(ADELIA         00000000)               * !    concernée (les données sont chargée      !
+*ROW_METADATA(ADELIA         00000000)               * !    dans le cadre désactivé : il ne          !
+*ROW_METADATA(ADELIA         00000000)               * !    pourra être entrepris aucune action      !
+*ROW_METADATA(ADELIA         00000000)               * !    sur ce cadre pendant la création         !
+*ROW_METADATA(ADELIA         00000000)               * ! - Initialiser la valeur du code client      !
+*ROW_METADATA(ADELIA         00000000)               * !    de la commande avec le code de la        !
+*ROW_METADATA(ADELIA         00000000)               * !    personne concernée                       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le champ de saisie du code de     !
+*ROW_METADATA(ADELIA         00000000)               * !    commande, désactivé par défaut           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton de validation !
+*ROW_METADATA(ADELIA         00000000)               * !    du cadre des commandes à 'Créer'         !
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_PERSO
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_CLI_COM:VALEUR = CHS_COD_PERSO:VALEUR
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_CLI_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               BTN_COM:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_COD_PERSO:MNU_SUPPR
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour supprimer une personne :        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver tous les cadres           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les informations de          !
+*ROW_METADATA(ADELIA         00000000)               * !    la personne dans le cadre désactivé !
+*ROW_METADATA(ADELIA         00000000)               * !    pour empécher la modification des   !
+*ROW_METADATA(ADELIA         00000000)               * !    valeurs                             !
+*ROW_METADATA(ADELIA         00000000)               * ! - Réactiver le bouton de validation    !
+*ROW_METADATA(ADELIA         00000000)               * !    pour permettre de valider la        !
+*ROW_METADATA(ADELIA         00000000)               * !    suppression                         !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton à        !
+*ROW_METADATA(ADELIA         00000000)               * !    'Supprimer'                         !
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_PERSO
+*ROW_METADATA(ADELIA         00000000)               BTN_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)               BTN_PERSO:TEXTE = 'Supprimer'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET COL_NOM_PERSO
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_NOM_PERSO:MNU_MOD
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour modifier une personne, il faut :      !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre d'édition de personnes    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des commandes             !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des lignes de commandes   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les informations de la personne    !
+*ROW_METADATA(ADELIA         00000000)               * !    dans les champs graphiques correspondants !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton du cadre des   !
+*ROW_METADATA(ADELIA         00000000)               * !    personnes à 'Modifier'.                   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Placer le focus sur le champ 'Nom personne'!
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_PERSO
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_PERSO
+*ROW_METADATA(ADELIA         00000000)               BTN_PERSO:TEXTE = 'Modifier'
+*ROW_METADATA(ADELIA         00000000)               APPELER_METHODE CHS_NOM_PERSO METTRE_FOCUS
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_NOM_PERSO:MNU_CRE_PERS
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour créer une personne il faut :    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre des personnes       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des commandes       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des lignes de       !
+*ROW_METADATA(ADELIA         00000000)               * !     commande                           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le champ de saisie du code   !
+*ROW_METADATA(ADELIA         00000000)               * !     de personne (désactivé par défaut) !
+*ROW_METADATA(ADELIA         00000000)               * !     et en initialiser la valeur        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton de       !
+*ROW_METADATA(ADELIA         00000000)               * !     validation à 'Créer'               !
+*ROW_METADATA(ADELIA         00000000)               * ! - Mettre le focus sur le champ         !
+*ROW_METADATA(ADELIA         00000000)               * !     'Code personne'                    !
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_PERSO
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_PERSO:VALEUR = *BLANK
+*ROW_METADATA(ADELIA         00000000)               BTN_PERSO:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)               APPELER_METHODE CHS_COD_PERSO METTRE_FOCUS
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_NOM_PERSO:MNU_CRE_COM
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour créer une commande pour une          !
+*ROW_METADATA(ADELIA         00000000)               * ! personne donnée il faut :                   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver les cadres personne et         !
+*ROW_METADATA(ADELIA         00000000)               * !    ligne de commande                        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre des commandes            !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les données de la personne        !
+*ROW_METADATA(ADELIA         00000000)               * !    concernée (les données sont chargée      !
+*ROW_METADATA(ADELIA         00000000)               * !    dans le cadre désactivé : il ne          !
+*ROW_METADATA(ADELIA         00000000)               * !    pourra être entrepris aucune action      !
+*ROW_METADATA(ADELIA         00000000)               * !    sur ce cadre pendant la création         !
+*ROW_METADATA(ADELIA         00000000)               * ! - Initialiser la valeur du code client      !
+*ROW_METADATA(ADELIA         00000000)               * !    de la commande avec le code de la        !
+*ROW_METADATA(ADELIA         00000000)               * !    personne concernée                       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le champ de saisie du code de     !
+*ROW_METADATA(ADELIA         00000000)               * !    commande, désactivé par défaut           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton de validation !
+*ROW_METADATA(ADELIA         00000000)               * !    du cadre des commandes à 'Créer'         !
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_PERSO
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_CLI_COM:VALEUR = CHS_COD_PERSO:VALEUR
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_CLI_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               BTN_COM:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_NOM_PERSO:MNU_SUPPR
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour supprimer une personne :        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver tous les cadres           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les informations de          !
+*ROW_METADATA(ADELIA         00000000)               * !    la personne dans le cadre désactivé !
+*ROW_METADATA(ADELIA         00000000)               * !    pour empécher la modification des   !
+*ROW_METADATA(ADELIA         00000000)               * !    valeurs                             !
+*ROW_METADATA(ADELIA         00000000)               * ! - Réactiver le bouton de validation    !
+*ROW_METADATA(ADELIA         00000000)               * !    pour permettre de valider la        !
+*ROW_METADATA(ADELIA         00000000)               * !    suppression                         !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton à        !
+*ROW_METADATA(ADELIA         00000000)               * !    'Supprimer'                         !
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_PERSO
+*ROW_METADATA(ADELIA         00000000)               BTN_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)               BTN_PERSO:TEXTE = 'Supprimer'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET COL_PRN_PERSO
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_PRN_PERSO:MNU_MOD
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour modifier une personne, il faut :      !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre d'édition de personnes    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des commandes             !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des lignes de commandes   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les informations de la personne    !
+*ROW_METADATA(ADELIA         00000000)               * !    dans les champs graphiques correspondants !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton du cadre des   !
+*ROW_METADATA(ADELIA         00000000)               * !    personnes à 'Modifier'.                   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Placer le focus sur le champ 'Nom personne'!
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_PERSO
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_PERSO
+*ROW_METADATA(ADELIA         00000000)               BTN_PERSO:TEXTE = 'Modifier'
+*ROW_METADATA(ADELIA         00000000)               APPELER_METHODE CHS_NOM_PERSO METTRE_FOCUS
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_PRN_PERSO:MNU_CRE_PERS
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour créer une personne il faut :    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre des personnes       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des commandes       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des lignes de       !
+*ROW_METADATA(ADELIA         00000000)               * !     commande                           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le champ de saisie du code   !
+*ROW_METADATA(ADELIA         00000000)               * !     de personne (désactivé par défaut) !
+*ROW_METADATA(ADELIA         00000000)               * !     et en initialiser la valeur        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton de       !
+*ROW_METADATA(ADELIA         00000000)               * !     validation à 'Créer'               !
+*ROW_METADATA(ADELIA         00000000)               * ! - Mettre le focus sur le champ         !
+*ROW_METADATA(ADELIA         00000000)               * !     'Code personne'                    !
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_PERSO
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_PERSO:VALEUR = *BLANK
+*ROW_METADATA(ADELIA         00000000)               BTN_PERSO:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)               APPELER_METHODE CHS_COD_PERSO METTRE_FOCUS
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_PRN_PERSO:MNU_CRE_COM
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour créer une commande pour une          !
+*ROW_METADATA(ADELIA         00000000)               * ! personne donnée il faut :                   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver les cadres personne et         !
+*ROW_METADATA(ADELIA         00000000)               * !    ligne de commande                        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre des commandes            !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les données de la personne        !
+*ROW_METADATA(ADELIA         00000000)               * !    concernée (les données sont chargée      !
+*ROW_METADATA(ADELIA         00000000)               * !    dans le cadre désactivé : il ne          !
+*ROW_METADATA(ADELIA         00000000)               * !    pourra être entrepris aucune action      !
+*ROW_METADATA(ADELIA         00000000)               * !    sur ce cadre pendant la création         !
+*ROW_METADATA(ADELIA         00000000)               * ! - Initialiser la valeur du code client      !
+*ROW_METADATA(ADELIA         00000000)               * !    de la commande avec le code de la        !
+*ROW_METADATA(ADELIA         00000000)               * !    personne concernée                       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le champ de saisie du code de     !
+*ROW_METADATA(ADELIA         00000000)               * !    commande, désactivé par défaut           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton de validation !
+*ROW_METADATA(ADELIA         00000000)               * !    du cadre des commandes à 'Créer'         !
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_PERSO
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_CLI_COM:VALEUR = CHS_COD_PERSO:VALEUR
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_CLI_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               BTN_COM:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_PRN_PERSO:MNU_SUPPR
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour supprimer une personne :        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver tous les cadres           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les informations de          !
+*ROW_METADATA(ADELIA         00000000)               * !    la personne dans le cadre désactivé !
+*ROW_METADATA(ADELIA         00000000)               * !    pour empécher la modification des   !
+*ROW_METADATA(ADELIA         00000000)               * !    valeurs                             !
+*ROW_METADATA(ADELIA         00000000)               * ! - Réactiver le bouton de validation    !
+*ROW_METADATA(ADELIA         00000000)               * !    pour permettre de valider la        !
+*ROW_METADATA(ADELIA         00000000)               * !    suppression                         !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton à        !
+*ROW_METADATA(ADELIA         00000000)               * !    'Supprimer'                         !
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_PERSO
+*ROW_METADATA(ADELIA         00000000)               BTN_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)               BTN_PERSO:TEXTE = 'Supprimer'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET COL_COD_COM
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_COD_COM:MNU_MOD
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour modifier une commande, il faut :      !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre d'édition de commandes    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des personnes             !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des lignes de commandes   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les informations de la commande    !
+*ROW_METADATA(ADELIA         00000000)               * !    dans les champs graphiques correspondants !
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_COM
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_COD_COM:MNU_CRE_COM
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour créer une commande pour une          !
+*ROW_METADATA(ADELIA         00000000)               * ! personne donnée il faut :                   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver les cadres personne et         !
+*ROW_METADATA(ADELIA         00000000)               * !    ligne de commande                        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre des commandes            !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les données de la personne        !
+*ROW_METADATA(ADELIA         00000000)               * !    concernée (les données sont chargée      !
+*ROW_METADATA(ADELIA         00000000)               * !    dans le cadre désactivé : il ne          !
+*ROW_METADATA(ADELIA         00000000)               * !    pourra être entrepris aucune action      !
+*ROW_METADATA(ADELIA         00000000)               * !    sur ce cadre pendant la création         !
+*ROW_METADATA(ADELIA         00000000)               * ! - Initialiser la valeur du code client      !
+*ROW_METADATA(ADELIA         00000000)               * !    de la commande avec le code de la        !
+*ROW_METADATA(ADELIA         00000000)               * !    personne concernée                       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le champ de saisie du code de     !
+*ROW_METADATA(ADELIA         00000000)               * !    commande, désactivé par défaut           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton de validation !
+*ROW_METADATA(ADELIA         00000000)               * !    du cadre des commandes à 'Créer'         !
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_PERSO
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_CLI_COM:VALEUR = CHS_COD_PERSO:VALEUR
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_CLI_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               BTN_COM:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_COD_COM:MNU_CRE_DET
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour créer une ligne de commande pour une !
+*ROW_METADATA(ADELIA         00000000)               * ! commande donnée il faut :                   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver les cadres personne et         !
+*ROW_METADATA(ADELIA         00000000)               * !    commande                                 !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre des lignes de commande   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les données de la commande        !
+*ROW_METADATA(ADELIA         00000000)               * !    concernée (les données sont chargée      !
+*ROW_METADATA(ADELIA         00000000)               * !    dans le cadre désactivé : il ne          !
+*ROW_METADATA(ADELIA         00000000)               * !    pourra être entrepris aucune action      !
+*ROW_METADATA(ADELIA         00000000)               * !    sur ce cadre pendant la création)        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Initialiser la valeur du code commande    !
+*ROW_METADATA(ADELIA         00000000)               * !    de la commande avec le code de la        !
+*ROW_METADATA(ADELIA         00000000)               * !    commande concernée                       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton de validation !
+*ROW_METADATA(ADELIA         00000000)               * !    du cadre des lignes de commande à 'Créer'!
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_COM
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_COM_DET:VALEUR = CHS_COD_COM:VALEUR
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_COD_COM:MNU_SUPPR
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour supprimer une commande :        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver tous les cadres           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les informations de          !
+*ROW_METADATA(ADELIA         00000000)               * !    la commande dans le cadre désactivé !
+*ROW_METADATA(ADELIA         00000000)               * !    pour empécher la modification des   !
+*ROW_METADATA(ADELIA         00000000)               * !    valeurs                             !
+*ROW_METADATA(ADELIA         00000000)               * ! - Réactiver le bouton de validation    !
+*ROW_METADATA(ADELIA         00000000)               * !    pour permettre de valider la        !
+*ROW_METADATA(ADELIA         00000000)               * !    suppression                         !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton à        !
+*ROW_METADATA(ADELIA         00000000)               * !    'Supprimer'                         !
+*ROW_METADATA(ADELIA         00000000)               * !----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_COM
+*ROW_METADATA(ADELIA         00000000)               BTN_COM:TEXTE = 'Supprimer'
+*ROW_METADATA(ADELIA         00000000)               BTN_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET COL_NUM_DET
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_NUM_DET:MNU_MOD
+*ROW_METADATA(ADELIA         00000000)               * !-----------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour modifier une ligne de commande, il faut :    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre d'édition de lignes de commandes !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des personnes                    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des commandes                    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les informations de la ligne de commande  !
+*ROW_METADATA(ADELIA         00000000)               * !    dans les champs graphiques correspondants        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton du cadre des lignes   !
+*ROW_METADATA(ADELIA         00000000)               * !    de commande à 'Modifier'.                        !
+*ROW_METADATA(ADELIA         00000000)               * !-----------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_DET
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:TEXTE = 'Modifier'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_NUM_DET:MNU_SUPPR
+*ROW_METADATA(ADELIA         00000000)               * !------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour supprimer une ligne de commande : !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver tous les cadres             !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les informations de            !
+*ROW_METADATA(ADELIA         00000000)               * !    la ligne dans le cadre désactivé      !
+*ROW_METADATA(ADELIA         00000000)               * !    pour empécher la modification des     !
+*ROW_METADATA(ADELIA         00000000)               * !    valeurs                               !
+*ROW_METADATA(ADELIA         00000000)               * ! - Réactiver le bouton de validation      !
+*ROW_METADATA(ADELIA         00000000)               * !    pour permettre de valider la          !
+*ROW_METADATA(ADELIA         00000000)               * !    suppression                           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton à          !
+*ROW_METADATA(ADELIA         00000000)               * !    'Supprimer'                           !
+*ROW_METADATA(ADELIA         00000000)               * !------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_DET
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:TEXTE = 'Supprimer'
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_NUM_DET:MNU_CRE
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour créer une ligne de commande pour une !
+*ROW_METADATA(ADELIA         00000000)               * ! commande donnée il faut :                   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver les cadres personne et         !
+*ROW_METADATA(ADELIA         00000000)               * !    commande                                 !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre des lignes de commande   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les données de la commande        !
+*ROW_METADATA(ADELIA         00000000)               * !    concernée (les données sont chargée      !
+*ROW_METADATA(ADELIA         00000000)               * !    dans le cadre désactivé : il ne          !
+*ROW_METADATA(ADELIA         00000000)               * !    pourra être entrepris aucune action      !
+*ROW_METADATA(ADELIA         00000000)               * !    sur ce cadre pendant la création)        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Initialiser la valeur du code commande    !
+*ROW_METADATA(ADELIA         00000000)               * !    de la commande avec le code de la        !
+*ROW_METADATA(ADELIA         00000000)               * !    commande concernée                       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton de validation !
+*ROW_METADATA(ADELIA         00000000)               * !    du cadre des lignes de commande à 'Créer'!
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_COM
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_COM_DET:VALEUR = CHS_COD_COM:VALEUR
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET COL_ARTICLE
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_ARTICLE:MNU_MOD
+*ROW_METADATA(ADELIA         00000000)               * !-----------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour modifier une ligne de commande, il faut :    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre d'édition de lignes de commandes !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des personnes                    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des commandes                    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les informations de la ligne de commande  !
+*ROW_METADATA(ADELIA         00000000)               * !    dans les champs graphiques correspondants        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton du cadre des lignes   !
+*ROW_METADATA(ADELIA         00000000)               * !    de commande à 'Modifier'.                        !
+*ROW_METADATA(ADELIA         00000000)               * !-----------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_DET
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:TEXTE = 'Modifier'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_ARTICLE:MNU_SUPPR
+*ROW_METADATA(ADELIA         00000000)               * !------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour supprimer une ligne de commande : !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver tous les cadres             !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les informations de            !
+*ROW_METADATA(ADELIA         00000000)               * !    la ligne dans le cadre désactivé      !
+*ROW_METADATA(ADELIA         00000000)               * !    pour empécher la modification des     !
+*ROW_METADATA(ADELIA         00000000)               * !    valeurs                               !
+*ROW_METADATA(ADELIA         00000000)               * ! - Réactiver le bouton de validation      !
+*ROW_METADATA(ADELIA         00000000)               * !    pour permettre de valider la          !
+*ROW_METADATA(ADELIA         00000000)               * !    suppression                           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton à          !
+*ROW_METADATA(ADELIA         00000000)               * !    'Supprimer'                           !
+*ROW_METADATA(ADELIA         00000000)               * !------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_DET
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:TEXTE = 'Supprimer'
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_ARTICLE:MNU_CRE
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour créer une ligne de commande pour une !
+*ROW_METADATA(ADELIA         00000000)               * ! commande donnée il faut :                   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver les cadres personne et         !
+*ROW_METADATA(ADELIA         00000000)               * !    commande                                 !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre des lignes de commande   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les données de la commande        !
+*ROW_METADATA(ADELIA         00000000)               * !    concernée (les données sont chargée      !
+*ROW_METADATA(ADELIA         00000000)               * !    dans le cadre désactivé : il ne          !
+*ROW_METADATA(ADELIA         00000000)               * !    pourra être entrepris aucune action      !
+*ROW_METADATA(ADELIA         00000000)               * !    sur ce cadre pendant la création)        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Initialiser la valeur du code commande    !
+*ROW_METADATA(ADELIA         00000000)               * !    de la commande avec le code de la        !
+*ROW_METADATA(ADELIA         00000000)               * !    commande concernée                       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton de validation !
+*ROW_METADATA(ADELIA         00000000)               * !    du cadre des lignes de commande à 'Créer'!
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_COM
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_COM_DET:VALEUR = CHS_COD_COM:VALEUR
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET COL_QTE
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_QTE:MNU_MOD
+*ROW_METADATA(ADELIA         00000000)               * !-----------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour modifier une ligne de commande, il faut :    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre d'édition de lignes de commandes !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des personnes                    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver celui des commandes                    !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les informations de la ligne de commande  !
+*ROW_METADATA(ADELIA         00000000)               * !    dans les champs graphiques correspondants        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton du cadre des lignes   !
+*ROW_METADATA(ADELIA         00000000)               * !    de commande à 'Modifier'.                        !
+*ROW_METADATA(ADELIA         00000000)               * !-----------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_DET
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:TEXTE = 'Modifier'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_QTE:MNU_SUPPR
+*ROW_METADATA(ADELIA         00000000)               * !------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour supprimer une ligne de commande : !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver tous les cadres             !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les informations de            !
+*ROW_METADATA(ADELIA         00000000)               * !    la ligne dans le cadre désactivé      !
+*ROW_METADATA(ADELIA         00000000)               * !    pour empécher la modification des     !
+*ROW_METADATA(ADELIA         00000000)               * !    valeurs                               !
+*ROW_METADATA(ADELIA         00000000)               * ! - Réactiver le bouton de validation      !
+*ROW_METADATA(ADELIA         00000000)               * !    pour permettre de valider la          !
+*ROW_METADATA(ADELIA         00000000)               * !    suppression                           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton à          !
+*ROW_METADATA(ADELIA         00000000)               * !    'Supprimer'                           !
+*ROW_METADATA(ADELIA         00000000)               * !------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_DET
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:TEXTE = 'Supprimer'
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_QTE:MNU_CRE
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour créer une ligne de commande pour une !
+*ROW_METADATA(ADELIA         00000000)               * ! commande donnée il faut :                   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver les cadres personne et         !
+*ROW_METADATA(ADELIA         00000000)               * !    commande                                 !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre des lignes de commande   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Charger les données de la commande        !
+*ROW_METADATA(ADELIA         00000000)               * !    concernée (les données sont chargée      !
+*ROW_METADATA(ADELIA         00000000)               * !    dans le cadre désactivé : il ne          !
+*ROW_METADATA(ADELIA         00000000)               * !    pourra être entrepris aucune action      !
+*ROW_METADATA(ADELIA         00000000)               * !    sur ce cadre pendant la création)        !
+*ROW_METADATA(ADELIA         00000000)               * ! - Initialiser la valeur du code commande    !
+*ROW_METADATA(ADELIA         00000000)               * !    de la commande avec le code de la        !
+*ROW_METADATA(ADELIA         00000000)               * !    commande concernée                       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton de validation !
+*ROW_METADATA(ADELIA         00000000)               * !    du cadre des lignes de commande à 'Créer'!
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC CHARGER_COM
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_COM_DET:VALEUR = CHS_COD_COM:VALEUR
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET LST_LIGNE_COM
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT LST_LIGNE_COM:MNU_MOD
+*ROW_METADATA(ADELIA         00000000)               * !--------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour modifier une ligne de commande      !
+*ROW_METADATA(ADELIA         00000000)               * ! à partir de la liste des lignes de         !
+*ROW_METADATA(ADELIA         00000000)               * ! commandes du cadre des commandes il faut : !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre d'édition des lignes de !
+*ROW_METADATA(ADELIA         00000000)               * !    commandes                               !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton de           !
+*ROW_METADATA(ADELIA         00000000)               * !    validation le mettre à 'Modifier'       !
+*ROW_METADATA(ADELIA         00000000)               * ! - Trouver quelle est la ligne sélectionnée !
+*ROW_METADATA(ADELIA         00000000)               * !    avec une lecture de la liste graphique  !
+*ROW_METADATA(ADELIA         00000000)               * ! - Initialiser les valeurs des champs du    !
+*ROW_METADATA(ADELIA         00000000)               * !    cadre des lignes de commande            !
+*ROW_METADATA(ADELIA         00000000)               * !--------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:TEXTE = 'Modifier'
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               LECTURE_LST LST_LIGNE_COM:LISTE *SELECT
+*ROW_METADATA(ADELIA         00000000)                  CHS_COD_COM_DET:VALEUR = CHS_COD_COM:VALEUR
+*ROW_METADATA(ADELIA         00000000)                  CHS_NUM_LIG:VALEUR = COL_LST_NUM:VALEUR
+*ROW_METADATA(ADELIA         00000000)                  CHS_ARTICLE:VALEUR = COL_LST_ART:VALEUR
+*ROW_METADATA(ADELIA         00000000)                  CHS_QTE:VALEUR = COL_LST_QTE:VALEUR
+*ROW_METADATA(ADELIA         00000000)               FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT LST_LIGNE_COM:MNU_CRE
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour créer une ligne de commande pour une !
+*ROW_METADATA(ADELIA         00000000)               * ! commande donnée à partir de la liste des    !
+*ROW_METADATA(ADELIA         00000000)               * ! lignes du cadre des commandes il faut :     !
+*ROW_METADATA(ADELIA         00000000)               * ! - Activer le cadre de saisie des            !
+*ROW_METADATA(ADELIA         00000000)               * !    informations de la ligne                 !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton pour le       !
+*ROW_METADATA(ADELIA         00000000)               * !    mettre à 'Créer'                         !
+*ROW_METADATA(ADELIA         00000000)               * ! - Initialiser la valeur du code de commande !
+*ROW_METADATA(ADELIA         00000000)               * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               CHS_COD_COM_DET:VALEUR = CHS_COD_COM:VALEUR
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT LST_LIGNE_COM:MNU_SUPPR
+*ROW_METADATA(ADELIA         00000000)               * !-----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour supprimer une ligne de commande donnée !
+*ROW_METADATA(ADELIA         00000000)               * ! à partir de la liste des lignes du cadre des  !
+*ROW_METADATA(ADELIA         00000000)               * ! commandes il faut :                           !
+*ROW_METADATA(ADELIA         00000000)               * ! - Désactiver le cadre de saisie des           !
+*ROW_METADATA(ADELIA         00000000)               * !    informations de la ligne car il n'y a      !
+*ROW_METADATA(ADELIA         00000000)               * !    aucune information à saisir                !
+*ROW_METADATA(ADELIA         00000000)               * ! - Réactiver le bouton de validation, pour     !
+*ROW_METADATA(ADELIA         00000000)               * !    confirmer la suppression                   !
+*ROW_METADATA(ADELIA         00000000)               * ! - Modifier le texte du bouton de validation   !
+*ROW_METADATA(ADELIA         00000000)               * !    et le mettre à 'Supprimer'                 !
+*ROW_METADATA(ADELIA         00000000)               * ! - Déterminer quel est la ligne concernée et   !
+*ROW_METADATA(ADELIA         00000000)               * !    afficher les valeurs correspondantes dans  !
+*ROW_METADATA(ADELIA         00000000)               * !    le cadre                                   !
+*ROW_METADATA(ADELIA         00000000)               * !-----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)               BTN_DET_COM:TEXTE = 'Supprimer'
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               LECTURE_LST LST_LIGNE_COM:LISTE *SELECT
+*ROW_METADATA(ADELIA         00000000)                  CHS_COD_COM_DET:VALEUR = CHS_COD_COM:VALEUR
+*ROW_METADATA(ADELIA         00000000)                  CHS_NUM_LIG:VALEUR = COL_LST_NUM:VALEUR
+*ROW_METADATA(ADELIA         00000000)                  CHS_ARTICLE:VALEUR = COL_LST_ART:VALEUR
+*ROW_METADATA(ADELIA         00000000)                  CHS_QTE:VALEUR = COL_LST_QTE:VALEUR
+*ROW_METADATA(ADELIA         00000000)               FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET BTN_PERSO
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT BTN_PERSO:BoutonGaucheClic
+*ROW_METADATA(ADELIA         00000000)               * !-------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Lors du 'clic' sur le bouton de validation,   !
+*ROW_METADATA(ADELIA         00000000)               * ! il faut mettre à jour les listes en fonction    !
+*ROW_METADATA(ADELIA         00000000)               * ! de l'action entreprise, c'est ce que fait la    !
+*ROW_METADATA(ADELIA         00000000)               * ! procédure SAUVER_PERSO                          !
+*ROW_METADATA(ADELIA         00000000)               * !   On ne désactive le cadre et on ne réaffiche   !
+*ROW_METADATA(ADELIA         00000000)               * ! l'arbre que si l'opération s'est bien déroulée  !
+*ROW_METADATA(ADELIA         00000000)               * ! (évaluation du CODE_RETOUR)                     !
+*ROW_METADATA(ADELIA         00000000)               * !-------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC SAUVER_PERSO CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)               SI NON CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)                  TRAITER_PROC MAJ_ARBRE
+*ROW_METADATA(ADELIA         00000000)                  TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               FIN
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET BTN_DET_COM
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT BTN_DET_COM:BoutonGaucheClic
+*ROW_METADATA(ADELIA         00000000)               * !-------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Lors du 'clic' sur le bouton de validation,   !
+*ROW_METADATA(ADELIA         00000000)               * ! il faut mettre à jour les listes en fonction    !
+*ROW_METADATA(ADELIA         00000000)               * ! de l'action entreprise, c'est ce que fait la    !
+*ROW_METADATA(ADELIA         00000000)               * ! procédure SAUVER_DET                            !
+*ROW_METADATA(ADELIA         00000000)               * !   On ne désactive le cadre et on ne réaffiche   !
+*ROW_METADATA(ADELIA         00000000)               * ! l'arbre que si l'opération s'est bien déroulée  !
+*ROW_METADATA(ADELIA         00000000)               * ! (évaluation du CODE_RETOUR)                     !
+*ROW_METADATA(ADELIA         00000000)               * !-------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC SAUVER_DET CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)               SI NON CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)                  TRAITER_PROC MAJ_ARBRE
+*ROW_METADATA(ADELIA         00000000)                  TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)                  SI LST_LIGNE_COM:ACTIVITE
+*ROW_METADATA(ADELIA         00000000)                     TRAITER_PROC CHARGER_COM
+*ROW_METADATA(ADELIA         00000000)                  FIN
+*ROW_METADATA(ADELIA         00000000)               FIN
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET BTN_COM
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT BTN_COM:BoutonGaucheClic
+*ROW_METADATA(ADELIA         00000000)               * !-------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Lors du 'clic' sur le bouton de validation,   !
+*ROW_METADATA(ADELIA         00000000)               * ! il faut mettre à jour les listes en fonction    !
+*ROW_METADATA(ADELIA         00000000)               * ! de l'action entreprise, c'est ce que fait la    !
+*ROW_METADATA(ADELIA         00000000)               * ! procédure SAUVER_COM                          !
+*ROW_METADATA(ADELIA         00000000)               * !   On ne désactive le cadre et on ne réaffiche   !
+*ROW_METADATA(ADELIA         00000000)               * ! l'arbre que si l'opération s'est bien déroulée  !
+*ROW_METADATA(ADELIA         00000000)               * ! (évaluation du CODE_RETOUR)                     !
+*ROW_METADATA(ADELIA         00000000)               * !-------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC SAUVER_COM CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               SI NON CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)                  TRAITER_PROC MAJ_ARBRE
+*ROW_METADATA(ADELIA         00000000)                  TRAITER_PROC DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)                  TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)                  TRAITER_PROC DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)               FIN
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET BTN_QUITTER
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT BTN_QUITTER:BoutonGaucheClic
+*ROW_METADATA(ADELIA         00000000)               TERMINER
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         00000000)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_VERIF
+*ROW_METADATA(ADELIA         00000000)      DEBUT_VALID
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_VALID
+*ROW_METADATA(ADELIA         00000000)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         00000000)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         00000000)   FIN_FENETRE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE MAJ_ARBRE
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   On ne désire pas que les différents niveaux      !
+*ROW_METADATA(ADELIA         00000000)      * ! de l'arbre-liste soient expansés on initialise     !
+*ROW_METADATA(ADELIA         00000000)      * ! donc la propriété des colonnes appelée 'expansion' !
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.COL_ARTICLE:EXPANSION = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.COL_COD_CLI_COM:EXPANSION = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.COL_COD_COM:EXPANSION = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.COL_COD_COM_DET:EXPANSION = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.COL_COD_PERSO:EXPANSION = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.COL_NOM_PERSO:EXPANSION = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.COL_NUM_DET:EXPANSION = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.COL_PRN_PERSO:EXPANSION = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.COL_QTE:EXPANSION = *FAUX
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Certaines colonnes devront être fusionnées !
+*ROW_METADATA(ADELIA         00000000)      * ! pour apparaitre au même niveau : appel de la !
+*ROW_METADATA(ADELIA         00000000)      * ! methode 'fusionner'                          !
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      APPELER_METHODE FEN_ARBRE.COL_ARTICLE FUSIONNER CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)      APPELER_METHODE FEN_ARBRE.COL_NUM_DET FUSIONNER CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)      APPELER_METHODE FEN_ARBRE.COL_NOM_PERSO FUSIONNER CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)      APPELER_METHODE FEN_ARBRE.COL_COD_PERSO FUSIONNER CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Début de la lecture des listes en vue du !
+*ROW_METADATA(ADELIA         00000000)      * ! remplissage de l'arbre                     !
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      LIRE_P_ELT LST_COMMANDE
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * ! On vide tout d'abord la liste de l'arbre !
+*ROW_METADATA(ADELIA         00000000)      * !------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      VIDER_LST FEN_ARBRE.ARL_EXEMPLE:LISTE
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * ! On commence une boucle sur les occurences de personnes !
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      LECTURE_LST LST_PERSO
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)         * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         * !   S'il n'y a pas de commande associée à la personne,   !
+*ROW_METADATA(ADELIA         00000000)         * ! il faut éviter la création de sous-éléments en         !
+*ROW_METADATA(ADELIA         00000000)         * ! utilisant la propriété 'coupure', et insérer l'élément !
+*ROW_METADATA(ADELIA         00000000)         * ! correspondant à la personne                            !
+*ROW_METADATA(ADELIA         00000000)         * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)         SI WCOD_PERSO <> WCOD_CLI_COM
+*ROW_METADATA(ADELIA         00000000)            FEN_ARBRE.COL_PRN_PERSO:COUPURE = *VRAI
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT FEN_ARBRE.ARL_EXEMPLE:LISTE
+*ROW_METADATA(ADELIA         00000000)         FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)         * !------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         * !   S'il existe une ou des commandes pour la personne, !
+*ROW_METADATA(ADELIA         00000000)         * ! il faut boucler sur ces commandes                    !
+*ROW_METADATA(ADELIA         00000000)         * !------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)         TANT_QUE WCOD_PERSO = WCOD_CLI_COM ET &CODE_LST(LST_COMMANDE) = *NORMAL
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            * !-------------------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)            * ! Pour chaque commande, on cherche les lignes de commande associées !
+*ROW_METADATA(ADELIA         00000000)            * !-------------------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            WCOMPTEUR(1) = 0
+*ROW_METADATA(ADELIA         00000000)            LECTURE_LST LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)               SI WCOD_COM = WCOD_COM_DET
+*ROW_METADATA(ADELIA         00000000)                  WCOMPTEUR(1) = WCOMPTEUR(1) + 1
+*ROW_METADATA(ADELIA         00000000)                  FEN_ARBRE.COL_PRN_PERSO:COUPURE = *FAUX
+*ROW_METADATA(ADELIA         00000000)                  FEN_ARBRE.COL_COD_COM:COUPURE = *FAUX
+*ROW_METADATA(ADELIA         00000000)                  
+*ROW_METADATA(ADELIA         00000000)                  * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)                  * !   Pour chaque ligne de commande on insère un élément   !
+*ROW_METADATA(ADELIA         00000000)                  * ! (la personne et la commande sont créées en même temps) !
+*ROW_METADATA(ADELIA         00000000)                  * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)                  
+*ROW_METADATA(ADELIA         00000000)                  INSERER_ELT FEN_ARBRE.ARL_EXEMPLE:LISTE
+*ROW_METADATA(ADELIA         00000000)               FIN
+*ROW_METADATA(ADELIA         00000000)            FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            * !---------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)            * !   S'il n'y avait pas de ligne de commande pour la       !
+*ROW_METADATA(ADELIA         00000000)            * ! commande concernée, il faut encore utiliser la          !
+*ROW_METADATA(ADELIA         00000000)            * ! propriété coupure, pour éviter la création de           !
+*ROW_METADATA(ADELIA         00000000)            * ! sous-éléments de la commande, avant d'insérer l'élément !
+*ROW_METADATA(ADELIA         00000000)            * ! correspondant à cette commande                          !
+*ROW_METADATA(ADELIA         00000000)            * !---------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)            
+*ROW_METADATA(ADELIA         00000000)            SI WCOMPTEUR(1) = 0
+*ROW_METADATA(ADELIA         00000000)               FEN_ARBRE.COL_PRN_PERSO:COUPURE = *FAUX
+*ROW_METADATA(ADELIA         00000000)               FEN_ARBRE.COL_COD_COM:COUPURE = *VRAI
+*ROW_METADATA(ADELIA         00000000)               INSERER_ELT FEN_ARBRE.ARL_EXEMPLE:LISTE
+*ROW_METADATA(ADELIA         00000000)            FIN
+*ROW_METADATA(ADELIA         00000000)            LIRE_AV_ELT LST_COMMANDE
+*ROW_METADATA(ADELIA         00000000)         REFAIRE
+*ROW_METADATA(ADELIA         00000000)      FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE ACTIVER_PERSO
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * ! On active les différents contrôles graphiques du cadre !
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.BTN_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CDR_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_COD_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_NOM_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_PRN_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_NOM_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_PRN_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.BTN_PERSO:BOUTON_DEFAUT = *VRAI
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !-----------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * ! On désactive les différents contrôles graphiques du cadre !
+*ROW_METADATA(ADELIA         00000000)      * !-----------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.BTN_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CDR_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_COD_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_NOM_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_PRN_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_COD_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_NOM_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_PRN_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_COD_PERSO:VALEUR = *BLANK
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_NOM_PERSO:VALEUR = *BLANK
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_PRN_PERSO:VALEUR = *BLANK
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE CHARGER_PERSO
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Remplissage des champs du cadre 'Personne'   !
+*ROW_METADATA(ADELIA         00000000)      * ! avec les informations de l'élément sélectionné !
+*ROW_METADATA(ADELIA         00000000)      * ! dans l'arbre                                   !
+*ROW_METADATA(ADELIA         00000000)      * !------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      LECTURE_LST FEN_ARBRE.ARL_EXEMPLE:LISTE *SELECT
+*ROW_METADATA(ADELIA         00000000)         FEN_ARBRE.CHS_COD_PERSO:VALEUR = WCOD_PERSO
+*ROW_METADATA(ADELIA         00000000)         FEN_ARBRE.CHS_NOM_PERSO:VALEUR = WNOM_PERSO
+*ROW_METADATA(ADELIA         00000000)         FEN_ARBRE.CHS_PRN_PERSO:VALEUR = WPRN_PERSO
+*ROW_METADATA(ADELIA         00000000)      FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE SAUVER_PERSO
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         BOOL CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)         PARAM CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Si l'action entreprise est une modification,     !
+*ROW_METADATA(ADELIA         00000000)      * ! il faut rechercher l'enregistrement de la personne !
+*ROW_METADATA(ADELIA         00000000)      * ! dans la liste et mettre à jour cet enregistrement  !
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI FEN_ARBRE.BTN_PERSO:TEXTE = 'Modifier'
+*ROW_METADATA(ADELIA         00000000)         LECTURE_LST LST_PERSO
+*ROW_METADATA(ADELIA         00000000)            SI WCOD_PERSO = FEN_ARBRE.CHS_COD_PERSO:VALEUR
+*ROW_METADATA(ADELIA         00000000)               WNOM_PERSO = FEN_ARBRE.CHS_NOM_PERSO:VALEUR
+*ROW_METADATA(ADELIA         00000000)               WPRN_PERSO = FEN_ARBRE.CHS_PRN_PERSO:VALEUR
+*ROW_METADATA(ADELIA         00000000)               MODIFIER_ELT LST_PERSO
+*ROW_METADATA(ADELIA         00000000)               QUITTER_BOUCLE
+*ROW_METADATA(ADELIA         00000000)            FIN
+*ROW_METADATA(ADELIA         00000000)         FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)         CODE_RETOUR = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Si l'action entreprise est une création,             !
+*ROW_METADATA(ADELIA         00000000)      * ! il faut vérifier que le code entré par                 !
+*ROW_METADATA(ADELIA         00000000)      * ! l'utilisateur n'est pas déjà utilisé, si c'est         !
+*ROW_METADATA(ADELIA         00000000)      * ! le cas, on envoie un message, et l'utilisateur         !
+*ROW_METADATA(ADELIA         00000000)      * ! doit entrer un nouveau code, ou abandonner l'opération !
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI FEN_ARBRE.BTN_PERSO:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)         LIRE_P_ELT LST_PERSO
+*ROW_METADATA(ADELIA         00000000)         TANT_QUE &CODE_LST(LST_PERSO) = *NORMAL -
+*ROW_METADATA(ADELIA         00000000)         ET WCOD_PERSO < FEN_ARBRE.CHS_COD_PERSO:VALEUR
+*ROW_METADATA(ADELIA         00000000)            LIRE_AV_ELT LST_PERSO
+*ROW_METADATA(ADELIA         00000000)         REFAIRE
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)         SI WCOD_PERSO <> FEN_ARBRE.CHS_COD_PERSO:VALEUR
+*ROW_METADATA(ADELIA         00000000)            WCOD_PERSO = FEN_ARBRE.CHS_COD_PERSO:VALEUR
+*ROW_METADATA(ADELIA         00000000)            WNOM_PERSO = FEN_ARBRE.CHS_NOM_PERSO:VALEUR
+*ROW_METADATA(ADELIA         00000000)            WPRN_PERSO = FEN_ARBRE.CHS_PRN_PERSO:VALEUR
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_PERSO
+*ROW_METADATA(ADELIA         00000000)            CODE_RETOUR = *FAUX
+*ROW_METADATA(ADELIA         00000000)         SINON
+*ROW_METADATA(ADELIA         00000000)            ENVOYER_MSG PER0013 FEN_ARBRE.CHS_COD_PERSO:VALEUR *BOITE(*OK)
+*ROW_METADATA(ADELIA         00000000)            CODE_RETOUR = *VRAI
+*ROW_METADATA(ADELIA         00000000)         FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !---------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Si l'action entreprise est une suppression,     !
+*ROW_METADATA(ADELIA         00000000)      * ! il faut rechercher l'enregistrement dans la liste !
+*ROW_METADATA(ADELIA         00000000)      * ! et le supprimer, il faut ensuite supprimer les    !
+*ROW_METADATA(ADELIA         00000000)      * ! commandes associées, et les lignes de commande    !
+*ROW_METADATA(ADELIA         00000000)      * ! associées à ces commandes                         !
+*ROW_METADATA(ADELIA         00000000)      * !---------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI FEN_ARBRE.BTN_PERSO:TEXTE = 'Supprimer'
+*ROW_METADATA(ADELIA         00000000)         LECTURE_LST LST_COMMANDE
+*ROW_METADATA(ADELIA         00000000)            SI WCOD_CLI_COM = WCOD_PERSO
+*ROW_METADATA(ADELIA         00000000)               LECTURE_LST LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)                  SI WCOD_COM_DET = WCOD_COM
+*ROW_METADATA(ADELIA         00000000)                     SUPPRIMER_ELT LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)                  FIN
+*ROW_METADATA(ADELIA         00000000)               FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)               SUPPRIMER_ELT LST_COMMANDE
+*ROW_METADATA(ADELIA         00000000)            FIN
+*ROW_METADATA(ADELIA         00000000)         FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)         LECTURE_LST LST_PERSO
+*ROW_METADATA(ADELIA         00000000)            SI WCOD_PERSO = FEN_ARBRE.CHS_COD_PERSO:VALEUR
+*ROW_METADATA(ADELIA         00000000)               SUPPRIMER_ELT LST_PERSO
+*ROW_METADATA(ADELIA         00000000)               QUITTER_BOUCLE
+*ROW_METADATA(ADELIA         00000000)            FIN
+*ROW_METADATA(ADELIA         00000000)         FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)         CODE_RETOUR = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * ! Aprés toute modification des listes, il faut les trier !
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      TRAITER_PROC TRIER_LISTES
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE ACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * ! On active les différents contrôles graphiques du cadre !
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CDR_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_COD_CLI_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_COD_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.LST_LIGNE_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.BTN_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.BTN_COM:BOUTON_DEFAUT = *VRAI
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE DESACTIVER_COM
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !-----------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * ! On désactive les différents contrôles graphiques du cadre !
+*ROW_METADATA(ADELIA         00000000)      * !-----------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CDR_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_COD_CLI_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_COD_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.LST_LIGNE_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.BTN_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      VIDER_LST FEN_ARBRE.LST_LIGNE_COM:LISTE
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_COD_COM:VALEUR = *BLANK
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_COD_CLI_COM:VALEUR = *BLANK
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE CHARGER_COM
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Tout d'abord nous devons récupérer les           !
+*ROW_METADATA(ADELIA         00000000)      * ! informations générales de la commande sélectionnée !
+*ROW_METADATA(ADELIA         00000000)      * ! dans l'arbre                                       !
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      LECTURE_LST FEN_ARBRE.ARL_EXEMPLE:LISTE *SELECT
+*ROW_METADATA(ADELIA         00000000)         FEN_ARBRE.CHS_COD_COM:VALEUR = WCOD_COM
+*ROW_METADATA(ADELIA         00000000)         FEN_ARBRE.CHS_COD_CLI_COM:VALEUR = WCOD_CLI_COM
+*ROW_METADATA(ADELIA         00000000)      FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Ensuite il faut remplir la liste graphique !
+*ROW_METADATA(ADELIA         00000000)      * ! des lignes de la commande en lisant les      !
+*ROW_METADATA(ADELIA         00000000)      * ! données dans la liste générale des lignes    !
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      VIDER_LST FEN_ARBRE.LST_LIGNE_COM:LISTE
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      LECTURE_LST LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)         SI FEN_ARBRE.CHS_COD_COM:VALEUR = WCOD_COM_DET
+*ROW_METADATA(ADELIA         00000000)            FEN_ARBRE.COL_LST_COD_COM:VALEUR = WCOD_COM_DET
+*ROW_METADATA(ADELIA         00000000)            FEN_ARBRE.COL_LST_NUM:VALEUR = WNUM_DET
+*ROW_METADATA(ADELIA         00000000)            FEN_ARBRE.COL_LST_ART:VALEUR = WARTICLE
+*ROW_METADATA(ADELIA         00000000)            FEN_ARBRE.COL_LST_QTE:VALEUR = WQTE
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT FEN_ARBRE.LST_LIGNE_COM:LISTE
+*ROW_METADATA(ADELIA         00000000)         FIN
+*ROW_METADATA(ADELIA         00000000)      FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE SAUVER_COM
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         BOOL CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)         PARAM CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Si l'action entreprise est une création,             !
+*ROW_METADATA(ADELIA         00000000)      * ! il faut vérifier que le code entré par                 !
+*ROW_METADATA(ADELIA         00000000)      * ! l'utilisateur n'est pas déjà utilisé, si c'est         !
+*ROW_METADATA(ADELIA         00000000)      * ! le cas, on envoie un message, et l'utilisateur         !
+*ROW_METADATA(ADELIA         00000000)      * ! doit entrer un nouveau code, ou abandonner l'opération !
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI FEN_ARBRE.BTN_COM:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)         LIRE_P_ELT LST_COMMANDE
+*ROW_METADATA(ADELIA         00000000)         TANT_QUE &CODE_LST(LST_COMMANDE) = *NORMAL -
+*ROW_METADATA(ADELIA         00000000)         ET WCOD_COM < FEN_ARBRE.CHS_COD_COM:VALEUR
+*ROW_METADATA(ADELIA         00000000)            LIRE_AV_ELT LST_COMMANDE
+*ROW_METADATA(ADELIA         00000000)         REFAIRE
+*ROW_METADATA(ADELIA         00000000)         SI WCOD_COM <> FEN_ARBRE.CHS_COD_COM:VALEUR
+*ROW_METADATA(ADELIA         00000000)            WCOD_COM = FEN_ARBRE.CHS_COD_COM:VALEUR
+*ROW_METADATA(ADELIA         00000000)            WCOD_CLI_COM = FEN_ARBRE.CHS_COD_CLI_COM:VALEUR
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_COMMANDE
+*ROW_METADATA(ADELIA         00000000)         SINON
+*ROW_METADATA(ADELIA         00000000)            ENVOYER_MSG COM0014 FEN_ARBRE.CHS_COD_COM:VALEUR *BOITE(*OK)
+*ROW_METADATA(ADELIA         00000000)            CODE_RETOUR = *VRAI
+*ROW_METADATA(ADELIA         00000000)         FIN
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !---------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Si l'action entreprise est une suppression,     !
+*ROW_METADATA(ADELIA         00000000)      * ! il faut rechercher l'enregistrement dans la liste !
+*ROW_METADATA(ADELIA         00000000)      * ! et le supprimer ainsi que les lignes de commande  !
+*ROW_METADATA(ADELIA         00000000)      * ! associées                                         !
+*ROW_METADATA(ADELIA         00000000)      * !---------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI FEN_ARBRE.BTN_COM:TEXTE = 'Supprimer'
+*ROW_METADATA(ADELIA         00000000)         LECTURE_LST LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)            SI WCOD_COM_DET = FEN_ARBRE.CHS_COD_COM:VALEUR
+*ROW_METADATA(ADELIA         00000000)               SUPPRIMER_ELT LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)            FIN
+*ROW_METADATA(ADELIA         00000000)         FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)         LECTURE_LST LST_COMMANDE
+*ROW_METADATA(ADELIA         00000000)            SI WCOD_COM = FEN_ARBRE.CHS_COD_COM:VALEUR
+*ROW_METADATA(ADELIA         00000000)               SUPPRIMER_ELT LST_COMMANDE
+*ROW_METADATA(ADELIA         00000000)               QUITTER_BOUCLE
+*ROW_METADATA(ADELIA         00000000)            FIN
+*ROW_METADATA(ADELIA         00000000)         FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * ! Aprés toute modification des listes, elles doivent être triées !
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      TRAITER_PROC TRIER_LISTES
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE ACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * ! On active les différents contrôles graphiques du cadre !
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.BTN_DET_COM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CDR_LIG:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_COD_COM_DET:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_NUM_LIG:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_ARTICLE:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_QTE:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_NUM_LIG:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_ARTICLE:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_QTE:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.BTN_DET_COM:BOUTON_DEFAUT = *VRAI
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE DESACTIVER_DET
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !-----------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * ! On désactive les différents contrôles graphiques du cadre !
+*ROW_METADATA(ADELIA         00000000)      * !-----------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.BTN_DET_COM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CDR_LIG:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_COD_COM_DET:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_NUM_LIG:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_ARTICLE:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.TXT_QTE:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_NUM_LIG:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_ARTICLE:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_QTE:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_COD_COM_DET:VALEUR = *BLANK
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_NUM_LIG:VALEUR = 0
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_ARTICLE:VALEUR = *BLANK
+*ROW_METADATA(ADELIA         00000000)      FEN_ARBRE.CHS_QTE:VALEUR = 0
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE CHARGER_DET
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Remplissage des champs du cadre 'Personne'   !
+*ROW_METADATA(ADELIA         00000000)      * ! avec les informations de l'élément sélectionné !
+*ROW_METADATA(ADELIA         00000000)      * ! dans l'arbre                                   !
+*ROW_METADATA(ADELIA         00000000)      * !------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      LECTURE_LST FEN_ARBRE.ARL_EXEMPLE:LISTE *SELECT
+*ROW_METADATA(ADELIA         00000000)         FEN_ARBRE.CHS_COD_COM_DET:VALEUR = WCOD_COM_DET
+*ROW_METADATA(ADELIA         00000000)         FEN_ARBRE.CHS_NUM_LIG:VALEUR = WNUM_DET
+*ROW_METADATA(ADELIA         00000000)         FEN_ARBRE.CHS_ARTICLE:VALEUR = WARTICLE
+*ROW_METADATA(ADELIA         00000000)         FEN_ARBRE.CHS_QTE:VALEUR = WQTE
+*ROW_METADATA(ADELIA         00000000)      FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE SAUVER_DET
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         BOOL CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)         PARAM CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Si l'action entreprise est une modification,     !
+*ROW_METADATA(ADELIA         00000000)      * ! il faut rechercher l'enregistrement de la personne !
+*ROW_METADATA(ADELIA         00000000)      * ! dans la liste et mettre à jour cet enregistrement  !
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI FEN_ARBRE.BTN_DET_COM:TEXTE = 'Modifier'
+*ROW_METADATA(ADELIA         00000000)         LECTURE_LST LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)            SI WCOD_COM_DET = FEN_ARBRE.CHS_COD_COM_DET:VALEUR -
+*ROW_METADATA(ADELIA         00000000)            ET WNUM_DET = FEN_ARBRE.CHS_NUM_LIG:VALEUR
+*ROW_METADATA(ADELIA         00000000)               WARTICLE = FEN_ARBRE.CHS_ARTICLE:VALEUR
+*ROW_METADATA(ADELIA         00000000)               WQTE = FEN_ARBRE.CHS_QTE:VALEUR
+*ROW_METADATA(ADELIA         00000000)               MODIFIER_ELT LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)               QUITTER_BOUCLE
+*ROW_METADATA(ADELIA         00000000)            FIN
+*ROW_METADATA(ADELIA         00000000)         FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)         CODE_RETOUR = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !---------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Si l'action entreprise est une création,        !
+*ROW_METADATA(ADELIA         00000000)      * ! il faut vérifier que le code numéro entrés par    !
+*ROW_METADATA(ADELIA         00000000)      * ! l'utilisateur ne sont pas déjà utilisés, si c'est !
+*ROW_METADATA(ADELIA         00000000)      * ! le cas, on envoie un message, et l'utilisateur    !
+*ROW_METADATA(ADELIA         00000000)      * ! doit entrer un nouveau code et un nouveau numéro, !
+*ROW_METADATA(ADELIA         00000000)      * ! ou abandonner l'opération                         !
+*ROW_METADATA(ADELIA         00000000)      * !---------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI FEN_ARBRE.BTN_DET_COM:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)         LIRE_P_ELT LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)         TANT_QUE WCOD_COM_DET < FEN_ARBRE.CHS_COD_COM_DET:VALEUR
+*ROW_METADATA(ADELIA         00000000)            LIRE_AV_ELT LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)         REFAIRE
+*ROW_METADATA(ADELIA         00000000)         TANT_QUE WNUM_DET < FEN_ARBRE.CHS_NUM_LIG:VALEUR
+*ROW_METADATA(ADELIA         00000000)            LIRE_AV_ELT LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)         REFAIRE
+*ROW_METADATA(ADELIA         00000000)         SI WCOD_COM_DET = FEN_ARBRE.CHS_COD_COM_DET:VALEUR -
+*ROW_METADATA(ADELIA         00000000)         ET WNUM_DET = FEN_ARBRE.CHS_NUM_LIG:VALEUR
+*ROW_METADATA(ADELIA         00000000)            ENVOYER_MSG DET0015 FEN_ARBRE.CHS_NUM_LIG:VALEUR FEN_ARBRE.CHS_COD_COM_DET:VALEUR *BOITE(*OK)
+*ROW_METADATA(ADELIA         00000000)            CODE_RETOUR = *VRAI
+*ROW_METADATA(ADELIA         00000000)         SINON
+*ROW_METADATA(ADELIA         00000000)            WCOD_COM_DET = FEN_ARBRE.CHS_COD_COM_DET:VALEUR
+*ROW_METADATA(ADELIA         00000000)            WNUM_DET = FEN_ARBRE.CHS_NUM_LIG:VALEUR
+*ROW_METADATA(ADELIA         00000000)            WARTICLE = FEN_ARBRE.CHS_ARTICLE:VALEUR
+*ROW_METADATA(ADELIA         00000000)            WQTE = FEN_ARBRE.CHS_QTE:VALEUR
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)         FIN
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !---------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Si l'action entreprise est une suppression,     !
+*ROW_METADATA(ADELIA         00000000)      * ! il faut rechercher l'enregistrement dans la liste !
+*ROW_METADATA(ADELIA         00000000)      * ! et le supprimer                                   !
+*ROW_METADATA(ADELIA         00000000)      * !---------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI FEN_ARBRE.BTN_DET_COM:TEXTE = 'Supprimer'
+*ROW_METADATA(ADELIA         00000000)         LECTURE_LST LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)            SI WCOD_COM_DET = FEN_ARBRE.CHS_COD_COM_DET:VALEUR -
+*ROW_METADATA(ADELIA         00000000)            ET WNUM_DET = FEN_ARBRE.CHS_NUM_LIG:VALEUR
+*ROW_METADATA(ADELIA         00000000)               SUPPRIMER_ELT LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)               QUITTER_BOUCLE
+*ROW_METADATA(ADELIA         00000000)            FIN
+*ROW_METADATA(ADELIA         00000000)         FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)         CODE_RETOUR = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !---------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * ! Aprés toutes modification des listes, il faut les trier !
+*ROW_METADATA(ADELIA         00000000)      * !---------------------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      TRAITER_PROC TRIER_LISTES
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE TRIER_LISTES
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Cette procédure gère le tri des listes    !
+*ROW_METADATA(ADELIA         00000000)      * ! (les listes sont triées pour mieux simuler  !
+*ROW_METADATA(ADELIA         00000000)      * ! le fonctionnement d'un fichier avec fichier !
+*ROW_METADATA(ADELIA         00000000)      * ! logique qui est lui-même trié)              !
+*ROW_METADATA(ADELIA         00000000)      * !---------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      TRIER_LST LST_PERSO WCOD_PERSO, WNOM_PERSO, WPRN_PERSO
+*ROW_METADATA(ADELIA         00000000)      TRIER_LST LST_COMMANDE WCOD_CLI_COM, WCOD_COM
+*ROW_METADATA(ADELIA         00000000)      TRIER_LST LST_DET_COM WCOD_COM_DET, WNUM_DET, WARTICLE, WQTE
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE REMPLIR_LISTES
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !------------------------!
+*ROW_METADATA(ADELIA         00000000)      * ! Remplissage des listes !
+*ROW_METADATA(ADELIA         00000000)      * !------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      VIDER_LST LST_PERSO
+*ROW_METADATA(ADELIA         00000000)      VIDER_LST LST_COMMANDE
+*ROW_METADATA(ADELIA         00000000)      VIDER_LST LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      WCOMPTEUR(1) = 1
+*ROW_METADATA(ADELIA         00000000)      WCOMPTEUR(2) = 1
+*ROW_METADATA(ADELIA         00000000)      WCOMPTEUR(3) = 1
+*ROW_METADATA(ADELIA         00000000)      WCOMPTEUR(4) = 1
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      TANT_QUE WCOMPTEUR(1) < 5
+*ROW_METADATA(ADELIA         00000000)         WNOM_PERSO = 'DUPONT' // WCOMPTEUR(1)
+*ROW_METADATA(ADELIA         00000000)         WPRN_PERSO = 'Pierre' // WCOMPTEUR(1)
+*ROW_METADATA(ADELIA         00000000)         WCOD_PERSO = 'PER' // WCOMPTEUR(1)
+*ROW_METADATA(ADELIA         00000000)         INSERER_ELT LST_PERSO
+*ROW_METADATA(ADELIA         00000000)         WLIMITE(1) = 10 * WCOMPTEUR(1) + WCOMPTEUR(1) * WCOMPTEUR(1)
+*ROW_METADATA(ADELIA         00000000)         WLIMITE(1) = WLIMITE(1) / 5
+*ROW_METADATA(ADELIA         00000000)         RESTE WLIMITE(1)
+*ROW_METADATA(ADELIA         00000000)         TANT_QUE WCOMPTEUR(2) <= WLIMITE(1)
+*ROW_METADATA(ADELIA         00000000)            WCOD_COM = 'COM' // WCOMPTEUR(3)
+*ROW_METADATA(ADELIA         00000000)            WCOD_CLI_COM = WCOD_PERSO
+*ROW_METADATA(ADELIA         00000000)            INSERER_ELT LST_COMMANDE
+*ROW_METADATA(ADELIA         00000000)            WLIMITE(2) = 10 * WCOMPTEUR(2) + WCOMPTEUR(2) * WCOMPTEUR(2)
+*ROW_METADATA(ADELIA         00000000)            WLIMITE(2) = WLIMITE(2) / 6
+*ROW_METADATA(ADELIA         00000000)            RESTE WLIMITE(2)
+*ROW_METADATA(ADELIA         00000000)            TANT_QUE WCOMPTEUR(4) <= WLIMITE(2)
+*ROW_METADATA(ADELIA         00000000)               WNUM_DET = WCOMPTEUR(4)
+*ROW_METADATA(ADELIA         00000000)               WCOD_COM_DET = WCOD_COM
+*ROW_METADATA(ADELIA         00000000)               WTEMP = WLIMITE(1) * WLIMITE(2) - WCOMPTEUR(4)
+*ROW_METADATA(ADELIA         00000000)               WTEMP = WTEMP / WCOMPTEUR(4)
+*ROW_METADATA(ADELIA         00000000)               WQTE = WTEMP
+*ROW_METADATA(ADELIA         00000000)               WTEMP = WTEMP * WCOMPTEUR(4) * WCOMPTEUR(3) * WLIMITE(1)
+*ROW_METADATA(ADELIA         00000000)               WTEMP = WTEMP / 81
+*ROW_METADATA(ADELIA         00000000)               RESTE WTEMP
+*ROW_METADATA(ADELIA         00000000)               WTEMP = WTEMP * 10
+*ROW_METADATA(ADELIA         00000000)               WARTICLE = 'ARTICLE' // WTEMP
+*ROW_METADATA(ADELIA         00000000)               SI WTEMP <> 0
+*ROW_METADATA(ADELIA         00000000)                  INSERER_ELT LST_DET_COM
+*ROW_METADATA(ADELIA         00000000)               FIN
+*ROW_METADATA(ADELIA         00000000)               WCOMPTEUR(4) = WCOMPTEUR(4) + 1
+*ROW_METADATA(ADELIA         00000000)            REFAIRE
+*ROW_METADATA(ADELIA         00000000)            WCOMPTEUR(4) = 1
+*ROW_METADATA(ADELIA         00000000)            WCOMPTEUR(3) = WCOMPTEUR(3) + 1
+*ROW_METADATA(ADELIA         00000000)            WCOMPTEUR(2) = WCOMPTEUR(2) + 1
+*ROW_METADATA(ADELIA         00000000)         REFAIRE
+*ROW_METADATA(ADELIA         00000000)         WCOMPTEUR(2) = 1
+*ROW_METADATA(ADELIA         00000000)         WCOMPTEUR(1) = WCOMPTEUR(1) + 1
+*ROW_METADATA(ADELIA         00000000)      REFAIRE
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

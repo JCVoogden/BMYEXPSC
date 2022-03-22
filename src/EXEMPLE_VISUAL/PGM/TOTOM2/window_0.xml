@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Ma maquette" help="" id="0" name="ID_FEN0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="192"/>
+        <property id="-45" intValue="192"/>
+        <property id="-37" intValue="4"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="640"/>
+        <property id="-3" intValue="480"/>
+        <property id="-2"/>
+        <property id="-1"/>
+        <property id="3" stringValue="Ma maquette"/>
+        <property id="6"/>
+        <property id="7"/>
+        <property id="9"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAtElEQVR4XuXOMRLDQAzDQP//006u1TIpbOZSuECDGQo6zvM8/gliN4jdKN7qLvPmNxTh4BXm3U8owrGrzNsJRTh0h3l/oghH7jIb2x9YzM72Bxaz9bwHFvQQYdSEHiKMmtBDhFETeogwakIPEUZN6CHCqAk9RBg1oYcIoyb0EGHUhB4ijJrQQ4RRE3qIMGpCDxFGTeghwqgJPUQYNaGHCKMm9BBh1IQeIoya0Jvi10/QmmI3L+r79V87jxcvAAAAAElFTkSuQmCC</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="32" intValue="1"/>
+        <property id="33" intValue="1"/>
+    </properties>
+    <menu>
+        <item key1="0" key2="0" name="ID_EVT1" state="4112" text="Option1" type="1"/>
+        <item key1="0" key2="0" name="ID_EVT4" state="4112" text="Option2" type="1"/>
+        <item key1="0" key2="0" name="ID_EVT3" state="4112" text="Option3" type="1"/>
+    </menu>
+    <controls>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ">
+            <properties>
+                <property id="-8" stringValue="Texte"/>
+                <property id="-4" intValue="26"/>
+                <property id="-3" intValue="341"/>
+                <property id="-2" intValue="102"/>
+                <property id="-1" intValue="77"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ0">
+            <properties>
+                <property id="-16" intValue="1"/>
+                <property id="-8" stringValue="Bouton"/>
+                <property id="-4" intValue="46"/>
+                <property id="-3" intValue="150"/>
+                <property id="-2" intValue="260"/>
+                <property id="-1" intValue="149"/>
+            </properties>
+        </control>
+    </controls>
+</window>

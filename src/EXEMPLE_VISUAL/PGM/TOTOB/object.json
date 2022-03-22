@@ -1,0 +1,17 @@
+{
+  "type" : "PGM",
+  "name" : "TOTOB",
+  "description" : "Toto",
+  "creationDate" : "2007-05-25 08:09:38",
+  "updateDate" : "2010-11-17 14:20:39",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TOTOB",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TOTOB",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT",
+  "version" : 12,
+  "release" : 1,
+  "modification" : 2
+}

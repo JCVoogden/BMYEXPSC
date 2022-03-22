@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "PARBUG2",
+  "description" : "PARBUG2",
+  "creationDate" : "2007-10-05 09:09:43",
+  "updateDate" : "2007-10-05 09:09:43",
+  "visibility" : "PRIVATE",
+  "ibmName" : "PARBG2",
+  "programType" : "I",
+  "sourceType" : "MADELIA",
+  "layoutCode" : "PARBG2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

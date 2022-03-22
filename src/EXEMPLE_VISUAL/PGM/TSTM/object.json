@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "TSTM",
+  "description" : "TSTM",
+  "creationDate" : "2007-01-03 11:02:33",
+  "updateDate" : "2008-09-12 14:02:48",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TSTM",
+  "programType" : "I",
+  "sourceType" : "MADELIA",
+  "layoutCode" : "TSTM",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

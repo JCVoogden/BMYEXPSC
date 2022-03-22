@@ -1,0 +1,79 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "CLIENTS_DA",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "PCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DB"
+    },
+    "guideWord" : "POLICE_DB",
+    "fileName" : "POLICEL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 2,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DB",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    }, {
+      "id" : {
+        "code" : "DB",
+        "ordinal" : 2
+      },
+      "guideWord" : "PNUM_POLICE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DC"
+    },
+    "guideWord" : "VEHICULE_DC",
+    "fileName" : "VEHICUL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DC",
+        "ordinal" : 1
+      },
+      "guideWord" : "PNUM_IMA_VEHIC",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "breaks" : [ {
+    "id" : {
+      "guideWord" : "RUPT_CLIENT"
+    },
+    "code" : "01",
+    "viewCode" : "DB",
+    "fields" : [ {
+      "id" : {
+        "guideWord" : "RUPT_CLIENT",
+        "ordinal" : 1
+      },
+      "logicalPropertyId" : 208,
+      "logicalProperty" : "POLICE.COD_CLIENT"
+    } ]
+  } ]
+}

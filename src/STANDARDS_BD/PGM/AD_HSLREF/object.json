@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AD_HSLREF",
+  "description" : "Calcul des noms de fichiers et formats",
+  "creationDate" : "1996-07-09 15:23:45",
+  "updateDate" : "2002-10-24 11:55:53",
+  "visibility" : "PRIVATE",
+  "ibmName" : "HSLREF",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "ASLREF",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

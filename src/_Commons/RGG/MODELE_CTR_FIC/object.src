@@ -1,0 +1,4 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   IDENTIFIER Nom_vue Nom_fichier CLE ;zones clés complémentaires ;$$_ZONE
+*ROW_METADATA(ADELIA                 )   INSERER_RG CTL_EXIST ($$_ZONE ;Nom_vue;Message d'erreur)
+*ROW_METADATA(ADELIA                 )FIN_RGG

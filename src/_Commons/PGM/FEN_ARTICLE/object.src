@@ -1,0 +1,65 @@
+*ROW_METADATA(ADELIA                0)* Fenêtre avec paramètre
+*ROW_METADATA(ADELIA                0)* Mise à jour avec une seule transaction avec réception de paramètre
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)* La variable P_COD_ACTION sert à déterminer si la sorti s'est
+*ROW_METADATA(ADELIA                0)* faites par F03 (EXit) ou par F12 (PRécédent)
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)* La variable P_COD_RETOUR sert à Ppositionner un eventuel problème
+*ROW_METADATA(ADELIA                0)* dans le programme à ramener au programme appelant
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)* Recherchez P_???? et remplacer par une zone de travail que vous
+*ROW_METADATA(ADELIA                0)* avez préalablement créée a la taille de la variable à retourner
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)* Recherchez Z_???? et remplacer la zone écran à retourner
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)RECEVOIR P_COD_RETOUR P_COD_ACTION P_COD_ARTICLE
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)INITIALISER 01
+*ROW_METADATA(ADELIA                0)TRAITER 01
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)INITIALISATION 01
+*ROW_METADATA(ADELIA         20050801)********************
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)EFFACER         1
+*ROW_METADATA(ADELIA                0)GESTION_SFL     1
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)PRESENTER       ARTICLE_S1
+*ROW_METADATA(ADELIA                0)ZW_COD_OPTION   = *BLANK
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)MAJ_SFL
+*ROW_METADATA(ADELIA                0)FIN_GESTION_SFL
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)TRANSACTION 01
+*ROW_METADATA(ADELIA         20050801)********************
+*ROW_METADATA(ADELIA                0)SI *F03 OU *F12
+*ROW_METADATA(ADELIA                0)  TERMINER
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)SI *PAGAV
+*ROW_METADATA(ADELIA                0)  PAGINER_AVANT
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)VERIFIER 01
+*ROW_METADATA(ADELIA                0)SI WCOD_OUI_NON = 'O'
+*ROW_METADATA(ADELIA                0)  TERMINER
+*ROW_METADATA(ADELIA                0)SINON
+*ROW_METADATA(ADELIA                0)  TRAITER 01
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)VERIFICATION 01
+*ROW_METADATA(ADELIA         20050801)********************
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)GESTION_SFL     1
+*ROW_METADATA(ADELIA                0)SI ZW_COD_OPTION = '1'
+*ROW_METADATA(ADELIA                0)  PLACER_A_GAUCHE ZZCOD_ARTICLE P_COD_ARTICLE
+*ROW_METADATA(ADELIA                0)  WCOD_OUI_NON = 'O'
+*ROW_METADATA(ADELIA                0)  QUITTER_SFL
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)FIN_GESTION_SFL
+*ROW_METADATA(ADELIA         20050801)********************
+*ROW_METADATA(ADELIA         20050801)VALIDATION 01
+*ROW_METADATA(ADELIA         20050801)********************
+*ROW_METADATA(ADELIA         20050801)

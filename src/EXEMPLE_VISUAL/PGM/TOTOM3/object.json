@@ -1,0 +1,17 @@
+{
+  "type" : "PGM",
+  "name" : "TOTOM3",
+  "description" : "TOTOM3",
+  "creationDate" : "2007-03-08 14:12:14",
+  "updateDate" : "2007-09-19 13:54:32",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TOTOM3",
+  "programType" : "I",
+  "sourceType" : "MADELIA",
+  "layoutCode" : "TOTOM3",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "version" : 17,
+  "modification" : 1,
+  "buildId" : 2
+}

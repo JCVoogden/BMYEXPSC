@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml report.xsd">
+    <formats>
+        <format blankLinesBefore="1" code="01" guideWord="ENTETE" jumpLinesBefore="1" nbLines="2" shortName="SOR01"/>
+        <format blankLinesBefore="1" code="02" guideWord="DETAIL" nbLines="22" shortName="SOR02"/>
+        <format blankLinesBefore="1" code="03" guideWord="FIN" nbLines="2" shortName="SOR03"/>
+    </formats>
+    <entities>
+        <entity format="02" name="CLIENTS">
+            <properties>
+                <property access="1" name="COD_CLIENT"/>
+            </properties>
+        </entity>
+        <entity format="02" name="EXPERT">
+            <properties>
+                <property access="1" name="COD_EXPERT"/>
+            </properties>
+        </entity>
+        <entity format="02" name="POLICE">
+            <properties>
+                <property access="1" name="COD_CLIENT"/>
+                <property access="2" name="NUM_POLICE"/>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field description="NOM DU PROGRAMME." formatCode="01" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" mode="OUTPUT" type="STRING" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="38" x="28" y="1">
+            <text text="Edition d'un sinistre      Demandé par"/>
+        </field>
+        <field description="UTILISATEUR" formatCode="01" guideWord="XUSER" kind="USER_VARIABLE" layoutCode="XUSER2" length="10" mode="OUTPUT" type="STRING" x="67" y="1">
+            <parameters>
+                <parameter key="DFT" value="*USER"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="4" x="55" y="2">
+            <text text="Le :"/>
+        </field>
+        <field description="N00002" formatCode="01" guideWord="N00002" kind="DATE" layoutCode="N00002" length="6" mode="OUTPUT" type="NUMBER" x="60" y="2">
+            <parameters>
+                <parameter key="EDW" value="'  /  /  '"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="1" x="70" y="2">
+            <text text="à"/>
+        </field>
+        <field description="N00003" formatCode="01" guideWord="N00003" kind="TIME" layoutCode="N00003" length="6" mode="OUTPUT" type="NUMBER" x="72" y="2">
+            <parameters>
+                <parameter key="EDW" value="'  :  :  '"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="31" x="1" y="3">
+            <text text="Numéro du sinistre. . . . . . ."/>
+        </field>
+        <field description="Numéro du sinistre" formatCode="02" guideWord="ZZNUM_SINISTRE" kind="USER_VARIABLE" kinematicLogicalProperty="SINIST.NUM_SINISTRE" layoutCode="ZZCNSI" length="5" mode="OUTPUT" type="STRING" viewCode="DC" x="36" y="3"/>
+        <field formatCode="02" kind="CONSTANT" length="31" x="1" y="4">
+            <text text="Date du sinistre. . . . . . . ."/>
+        </field>
+        <field description="Date du sinistre" formatCode="02" guideWord="ZZDAT_SINISTRE" kind="USER_VARIABLE" kinematicLogicalProperty="SINIST.DAT_SINISTRE" layoutCode="ZZDASI" length="8" mode="OUTPUT" type="NUMBER" viewCode="DC" x="36" y="4">
+            <parameters>
+                <parameter key="EDW" value="'0 /  /    '"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="31" x="1" y="5">
+            <text text="Date déclaration du sinistre. ."/>
+        </field>
+        <field description="Date déclaration du sinistre" formatCode="02" guideWord="ZZDAT_DCL_SINIS" kind="USER_VARIABLE" kinematicLogicalProperty="SINIST.DAT_DCL_SINIS" layoutCode="ZZDDSI" length="8" mode="OUTPUT" type="NUMBER" viewCode="DC" x="36" y="5">
+            <parameters>
+                <parameter key="EDW" value="'0 /  /    '"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="31" x="1" y="6">
+            <text text="Objet réduit du sinistre. . . ."/>
+        </field>
+        <field description="Objet réduit du sinistre" formatCode="02" guideWord="ZZOBJ_SINISTRE" kind="USER_VARIABLE" kinematicLogicalProperty="SINIST.OBJ_SINISTRE" layoutCode="ZZOSIN" length="40" mode="OUTPUT" type="STRING" viewCode="DC" x="36" y="6"/>
+        <field formatCode="02" kind="CONSTANT" length="31" x="1" y="8">
+            <text text="Code client . . . . . . . . . ."/>
+        </field>
+        <field description="Code client" formatCode="02" guideWord="ZZCOD_CLIENT" kind="USER_VARIABLE" kinematicLogicalProperty="SINIST.COD_CLIENT" layoutCode="ZZCCLI" length="6" mode="OUTPUT" type="STRING" viewCode="DC" x="36" y="8">
+            <parameters>
+                <parameter key="EXP" value="000001"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="31" x="1" y="9">
+            <text text="Nom client. . . . . . . . . . ."/>
+        </field>
+        <field description="Nom client" formatCode="02" guideWord="ZZNOM_CLIENT" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.NOM_CLIENT" layoutCode="ZZLCLI" length="30" logicalProperty="CLIENTS.NOM_CLIENT" mode="OUTPUT" type="STRING" viewCode="DA" x="36" y="9">
+            <parameters>
+                <parameter key="EXP" value="HARDIS Progiciel"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="31" x="1" y="10">
+            <text text="Bureau distributeur . . . . . ."/>
+        </field>
+        <field description="Bureau distributeur" formatCode="02" guideWord="ZZBUR_DIS_CLI" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.BUR_DIS_CLI" layoutCode="ZZBDCL" length="30" logicalProperty="CLIENTS.BUR_DIS_CLI" mode="OUTPUT" type="STRING" viewCode="DA" x="36" y="10">
+            <parameters>
+                <parameter key="EXP" value="SEYSSINET-PARISET"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="31" x="1" y="11">
+            <text text="Tél . . . . . . . . . . . . . ."/>
+        </field>
+        <field description="Tél" formatCode="02" guideWord="ZZNUM_TEL_CLI" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.NUM_TEL_CLI" layoutCode="ZZNTCL" length="11" logicalProperty="CLIENTS.NUM_TEL_CLI" mode="OUTPUT" type="STRING" viewCode="DA" x="36" y="11">
+            <parameters>
+                <parameter key="EXP" value="76.70.80.50"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="33" x="1" y="13">
+            <text text="Numéro de la police d'assurance ."/>
+        </field>
+        <field description="Numéro de la police d'assuranc" formatCode="02" guideWord="ZZNUM_POLICE" kind="USER_VARIABLE" kinematicLogicalProperty="SINIST.NUM_POLICE" layoutCode="ZZCPOL" length="5" mode="OUTPUT" type="STRING" viewCode="DC" x="36" y="13"/>
+        <field formatCode="02" kind="CONSTANT" length="31" x="1" y="14">
+            <text text="Date de la police d'assurance ."/>
+        </field>
+        <field description="Date de la police d'assurance" formatCode="02" guideWord="ZZDAT_POLICE" kind="USER_VARIABLE" kinematicLogicalProperty="POLICE.DAT_POLICE" layoutCode="ZZDPOL" length="8" mode="OUTPUT" type="NUMBER" viewCode="DF" x="36" y="14">
+            <parameters>
+                <parameter key="EDW" value="'0 /  /    '"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="33" x="1" y="16">
+            <text text="Numéro immatriculation véhicule ."/>
+        </field>
+        <field description="Numéro immatriculation véhicul" formatCode="02" guideWord="ZZNUM_IMA_VEHIC" kind="VARIABLE" kinematicLogicalProperty="POLICE.NUM_IMA_VEHIC" layoutCode="ZZNIVE" length="15" logicalProperty="POLICE.NUM_IMA_VEHIC" mode="OUTPUT" type="STRING" viewCode="DF" x="36" y="16"/>
+        <field formatCode="02" kind="CONSTANT" length="33" x="1" y="17">
+            <text text="Modèle du véhicule. . . . . . . ."/>
+        </field>
+        <field description="Modèle du véhicule" formatCode="02" guideWord="ZZMDL_VEHICULE" kind="USER_VARIABLE" kinematicLogicalProperty="VEHICU.MDL_VEHICULE" layoutCode="ZZLMVE" length="40" mode="OUTPUT" type="STRING" viewCode="DE" x="36" y="17"/>
+        <field formatCode="02" kind="CONSTANT" length="31" x="1" y="19">
+            <text text="Code du sinistre. . . . . . . ."/>
+        </field>
+        <field description="Code du sinistre" formatCode="02" guideWord="ZZCOD_SINISTRE" kind="USER_VARIABLE" kinematicLogicalProperty="SINIST.COD_SINISTRE" layoutCode="ZZCSIN" length="2" mode="OUTPUT" type="STRING" viewCode="DC" x="36" y="19"/>
+        <field formatCode="02" kind="CONSTANT" length="31" x="1" y="20">
+            <text text="Libellé type de sinistre. . . ."/>
+        </field>
+        <field description="Libellé type de sinistre" formatCode="02" guideWord="ZZLIB_SINISTRE" kind="USER_VARIABLE" kinematicLogicalProperty="TYPSIN.LIB_SINISTRE" layoutCode="ZZLSIN" length="40" mode="OUTPUT" type="STRING" viewCode="DD" x="36" y="20"/>
+        <field formatCode="02" kind="CONSTANT" length="31" x="1" y="22">
+            <text text="Code expert . . . . . . . . . ."/>
+        </field>
+        <field description="Code expert" formatCode="02" guideWord="ZZCOD_EXPERT" kind="USER_VARIABLE" kinematicLogicalProperty="SINIST.COD_EXPERT" layoutCode="ZZCEXP" length="6" mode="OUTPUT" type="STRING" viewCode="DC" x="36" y="22"/>
+        <field formatCode="02" kind="CONSTANT" length="31" x="1" y="23">
+            <text text="Nom expert. . . . . . . . . . ."/>
+        </field>
+        <field description="Nom expert" formatCode="02" guideWord="ZZNOM_EXPERT" kind="VARIABLE" kinematicLogicalProperty="EXPERT.NOM_EXPERT" layoutCode="ZZLEXP" length="30" logicalProperty="EXPERT.NOM_EXPERT" mode="OUTPUT" type="STRING" viewCode="DB" x="36" y="23"/>
+        <field formatCode="02" kind="CONSTANT" length="31" x="1" y="24">
+            <text text="Tél . . . . . . . . . . . . . ."/>
+        </field>
+        <field description="Tél" formatCode="02" guideWord="ZZNUM_TEL_EXP" kind="VARIABLE" kinematicLogicalProperty="EXPERT.NUM_TEL_EXP" layoutCode="ZZNTEX" length="11" logicalProperty="EXPERT.NUM_TEL_EXP" mode="OUTPUT" type="STRING" viewCode="DB" x="36" y="24"/>
+        <field description="NOM DU PROGRAMME." formatCode="03" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" mode="OUTPUT" type="STRING" x="2" y="25">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field formatCode="03" kind="CONSTANT" length="15" x="28" y="25">
+            <text text="Fin de cet état"/>
+        </field>
+        <field formatCode="03" kind="CONSTANT" length="11" x="55" y="25">
+            <text text="Demandé par"/>
+        </field>
+        <field description="UTILISATEUR" formatCode="03" guideWord="XUSER" kind="USER_VARIABLE" layoutCode="XUSER2" length="10" mode="OUTPUT" type="STRING" x="67" y="25">
+            <parameters>
+                <parameter key="DFT" value="*USER"/>
+            </parameters>
+        </field>
+        <field formatCode="03" kind="CONSTANT" length="4" x="55" y="26">
+            <text text="Le :"/>
+        </field>
+        <field description="N00024" formatCode="03" guideWord="N00024" kind="DATE" layoutCode="N00024" length="6" mode="OUTPUT" type="NUMBER" x="60" y="26">
+            <parameters>
+                <parameter key="EDW" value="'  /  /  '"/>
+            </parameters>
+        </field>
+        <field formatCode="03" kind="CONSTANT" length="1" x="70" y="26">
+            <text text="à"/>
+        </field>
+        <field description="N00025" formatCode="03" guideWord="N00025" kind="TIME" layoutCode="N00025" length="6" mode="OUTPUT" type="NUMBER" x="72" y="26">
+            <parameters>
+                <parameter key="EDW" value="'  :  :  '"/>
+            </parameters>
+        </field>
+    </fields>
+</report>

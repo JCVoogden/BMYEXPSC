@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "MODELE_CTR_FICD",
+  "description" : "Modèle contrôle fichier développé (sans macro)",
+  "creationDate" : "1995-06-29 07:24:29",
+  "updateDate" : "1995-06-29 07:24:29",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

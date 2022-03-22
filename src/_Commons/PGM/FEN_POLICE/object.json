@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "FEN_POLICE",
+  "description" : "Fenêtre d'affichage des polices d'un client",
+  "creationDate" : "1995-06-08 07:20:23",
+  "updateDate" : "1995-06-08 07:20:23",
+  "visibility" : "PUBLIC",
+  "ibmName" : "FENPOL",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "FENPOL",
+  "programTemplateName" : "UTI_FEN_APA",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Barre d'outil : démo 2" help="" id="0" name="ID_FEN0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="189"/>
+        <property id="-3" intValue="400"/>
+        <property id="-2" intValue="268"/>
+        <property id="-1" intValue="282"/>
+        <property id="3" stringValue="Barre d'outil : démo 2"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="BARRE_OUTILS" dll="TOOLBAR" help="" kinematic="0" name="BAR">
+            <properties>
+                <property id="-4" intValue="25"/>
+                <property id="-3" intValue="392"/>
+                <property id="-2" intValue="-1"/>
+                <property id="-1" intValue="-1"/>
+                <property id="8"/>
+                <property id="107" intValue="2"/>
+                <property id="400" stringValue="IDF1¤IDF2"/>
+                <property binaryType="bin" id="401">AwEAAAMBAAA=</property>
+                <property id="402" stringValue="¤"/>
+                <property id="403" stringValue="Je suis l'infobulle du bouton 1¤Je suis l'infobulle du bouton 2"/>
+                <property id="404" stringValue="¤"/>
+                <property binaryType="bin" id="405">CQAAAA8AAAA=</property>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CADRE" dll="GROUPBOX" help="" kinematic="0" name="CADRE">
+            <properties>
+                <property id="-8"/>
+                <property id="-4" intValue="79"/>
+                <property id="-3" intValue="324"/>
+                <property id="-2" intValue="53"/>
+                <property id="-1" intValue="33"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="TXT">
+            <properties>
+                <property id="-8"/>
+                <property id="-4" intValue="39"/>
+                <property id="-3" intValue="288"/>
+                <property id="-2" intValue="75"/>
+                <property id="-1" intValue="51"/>
+                <property id="6" intValue="1"/>
+            </properties>
+        </control>
+    </controls>
+</window>

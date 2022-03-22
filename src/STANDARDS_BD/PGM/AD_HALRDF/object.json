@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AD_HALRDF",
+  "description" : "rech. nom display file à partir code maq.   HA£RDF",
+  "creationDate" : "1996-07-09 15:42:43",
+  "updateDate" : "2002-10-24 11:56:33",
+  "visibility" : "PRIVATE",
+  "ibmName" : "HALRDF",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "AALRDF",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

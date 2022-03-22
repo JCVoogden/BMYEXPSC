@@ -1,0 +1,11 @@
+{
+  "type" : "ETA",
+  "name" : "EDI_AFFAIRES",
+  "description" : "Edition du chiffre d'affaires clients",
+  "creationDate" : "1995-06-08 07:02:40",
+  "updateDate" : "1995-06-08 07:02:40",
+  "visibility" : "PUBLIC",
+  "layoutCode" : "EDICA",
+  "reportTypeName" : "LIS_AFF_01",
+  "nature" : "ADELIA"
+}

@@ -1,0 +1,139 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "DA"
+    },
+    "guideWord" : "CLIENTS_DA",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DA",
+        "ordinal" : 1
+      },
+      "guideWord" : "SCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DB"
+    },
+    "guideWord" : "EXPERT_DB",
+    "fileName" : "EXPERTL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DB",
+        "ordinal" : 1
+      },
+      "guideWord" : "SCOD_EXPERT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DC"
+    },
+    "guideWord" : "SINISTRE_DC",
+    "fileName" : "SINISTL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DC",
+        "ordinal" : 1
+      },
+      "guideWord" : "PNUM_SINISTRE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DD"
+    },
+    "guideWord" : "TYPE_SINISTR_DD",
+    "fileName" : "TYPSINL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DD",
+        "ordinal" : 1
+      },
+      "guideWord" : "SCOD_SINISTRE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DE"
+    },
+    "guideWord" : "VEHICULE_DE",
+    "fileName" : "VEHICUL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DE",
+        "ordinal" : 1
+      },
+      "guideWord" : "PNUM_IMA_VEHIC",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "DF"
+    },
+    "guideWord" : "POLICE_DF",
+    "fileName" : "POLICEL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 2,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DF",
+        "ordinal" : 1
+      },
+      "guideWord" : "SCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    }, {
+      "id" : {
+        "code" : "DF",
+        "ordinal" : 2
+      },
+      "guideWord" : "SNUM_POLICE",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "PCOD_CLIENT",
+      "fileName" : ""
+    },
+    "shortName" : "PCCLI",
+    "length" : 6,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCCLI",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "PNUM_SINISTRE",
+      "fileName" : ""
+    },
+    "shortName" : "PCSNI",
+    "length" : 5,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCSNI",
+    "generation" : "NONE"
+  } ]
+}

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="Test conditions débogueur" help="" id="0" name="ID_FEN0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="96"/>
+        <property id="-45" intValue="96"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="281"/>
+        <property id="-3" intValue="400"/>
+        <property id="-2" intValue="257"/>
+        <property id="-1" intValue="687"/>
+        <property id="3" stringValue="Test conditions débogueur"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="22" intValue="384"/>
+        <property id="23" intValue="243"/>
+    </properties>
+    <controls>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_BIN2">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="5 -1 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="171"/>
+                <property id="-2" intValue="12"/>
+                <property id="-1" intValue="95"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_BIN4">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="6 -1 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="171"/>
+                <property id="-2" intValue="37"/>
+                <property id="-1" intValue="95"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_BIN8">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="16 -1 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="171"/>
+                <property id="-2" intValue="62"/>
+                <property id="-1" intValue="95"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_ENT">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-11" intValue="11"/>
+                <property id="-9" stringValue="4 10 0"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="171"/>
+                <property id="-2" intValue="87"/>
+                <property id="-1" intValue="95"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_DEC">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-11" intValue="9"/>
+                <property id="-9" stringValue="4 15 9"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="171"/>
+                <property id="-2" intValue="112"/>
+                <property id="-1" intValue="95"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_DATE">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="0 -1 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="171"/>
+                <property id="-2" intValue="137"/>
+                <property id="-1" intValue="95"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_TIME">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="1 -1 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="171"/>
+                <property id="-2" intValue="162"/>
+                <property id="-1" intValue="95"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_TIMESTAMP">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="8 -1 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="171"/>
+                <property id="-2" intValue="187"/>
+                <property id="-1" intValue="95"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ7">
+            <properties>
+                <property id="-8" stringValue="num_bin_2 :&#13;&#10;"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="74"/>
+                <property id="-2" intValue="12"/>
+                <property id="-1" intValue="11"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ8">
+            <properties>
+                <property id="-8" stringValue="num_bin_4 :&#13;&#10;"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="74"/>
+                <property id="-2" intValue="37"/>
+                <property id="-1" intValue="11"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ9">
+            <properties>
+                <property id="-8" stringValue="num_bin_8 :&#13;&#10;"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="74"/>
+                <property id="-2" intValue="62"/>
+                <property id="-1" intValue="11"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ10">
+            <properties>
+                <property id="-8" stringValue="num_e(10,0) :&#13;&#10;"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="74"/>
+                <property id="-2" intValue="87"/>
+                <property id="-1" intValue="11"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ11">
+            <properties>
+                <property id="-8" stringValue="num_e(15,9) :&#13;&#10;"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="74"/>
+                <property id="-2" intValue="112"/>
+                <property id="-1" intValue="11"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ12">
+            <properties>
+                <property id="-8" stringValue="date :&#13;&#10;"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="74"/>
+                <property id="-2" intValue="137"/>
+                <property id="-1" intValue="11"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ13">
+            <properties>
+                <property id="-8" stringValue="time :&#13;&#10;"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="74"/>
+                <property id="-2" intValue="162"/>
+                <property id="-1" intValue="11"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ14">
+            <properties>
+                <property id="-8" stringValue="timestamp :&#13;&#10;"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="74"/>
+                <property id="-2" intValue="187"/>
+                <property id="-1" intValue="11"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ15">
+            <properties>
+                <property id="-8" stringValue="Client"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="12"/>
+                <property id="-1" intValue="294"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_ALPHA">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 50 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="171"/>
+                <property id="-2" intValue="212"/>
+                <property id="-1" intValue="95"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ0">
+            <properties>
+                <property id="-8" stringValue="alpha :"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="74"/>
+                <property id="-2" intValue="212"/>
+                <property id="-1" intValue="11"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ16">
+            <properties>
+                <property id="-8" stringValue="Serveur"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="46"/>
+                <property id="-1" intValue="294"/>
+            </properties>
+        </control>
+    </controls>
+</window>

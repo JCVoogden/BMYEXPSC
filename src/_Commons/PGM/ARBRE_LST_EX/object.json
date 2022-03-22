@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "ARBRE_LST_EX",
+  "description" : "Utilisation de l'objet Arbre-Liste",
+  "creationDate" : "2000-02-14 10:27:11",
+  "updateDate" : "2008-01-14 10:30:10",
+  "visibility" : "PUBLIC",
+  "ibmName" : "OBJARL",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "OBJARL",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

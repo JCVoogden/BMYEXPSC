@@ -1,0 +1,28 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(JCA            20020425)   DEBUT_DECL
+*ROW_METADATA(JCA            20020425)      *-------------------------------------------------------------*
+*ROW_METADATA(JCA            20020425)      *                                                             *
+*ROW_METADATA(JCA            20020425)      *   Recherche code zone DDS d'une information d'une entité    *
+*ROW_METADATA(JCA            20020425)      *   à partir du code zone DDS d'une information du            *
+*ROW_METADATA(JCA            20020425)      *   dictionnaire                                   *
+*ROW_METADATA(JCA            20020425)      *                                                             *
+*ROW_METADATA(JCA            20020425)      *-------------------------------------------------------------*
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      ALPHA(10) ZONE_DICO
+*ROW_METADATA(JCA            20020425)      ALPHA(10) ZONE 
+*ROW_METADATA(JCA            20020425)      ALPHA(10) FICHIER
+*ROW_METADATA(JCA            20020425)      ALPHA(1) PCODE_RETOUR
+*ROW_METADATA(JCA            20020425)       
+*ROW_METADATA(JCA            20020425)      PARAM ZONE_DICO ZONE FICHIER PCODE_RETOUR                               
+*ROW_METADATA(JCA            20020425)      *                                                              
+*ROW_METADATA(JCA            20020425)      ***** VARIABLES PRIVÉES ******
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)      ALPHA(1) W1                                       
+*ROW_METADATA(JCA            20020425)      *                                                              
+*ROW_METADATA(JCA            20020425)   FIN_DECL
+*ROW_METADATA(JCA            20020425)   DEBUT_INIT
+*ROW_METADATA(JCA            20020425)      PCODE_RETOUR = '0'
+*ROW_METADATA(JCA            20020425)      PLACER_A_GAUCHE FICHIER W1                                     
+*ROW_METADATA(JCA            20020425)      ZONE = W1 // ZONE_DICO    
+*ROW_METADATA(JCA            20020425)   FIN_INIT
+*ROW_METADATA(ADELIA                 )FIN_PGM

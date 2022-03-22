@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "CAN_HAUT",
+  "description" : "Canevas partie haute",
+  "creationDate" : "2004-08-23 15:19:58",
+  "updateDate" : "2004-09-01 08:35:20",
+  "visibility" : "PRIVATE",
+  "ibmName" : "CANHAU",
+  "programType" : "I",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "CANHAU",
+  "level2GenType" : 2,
+  "level2DatabaseGenMode" : "SQL",
+  "keepState" : true
+}

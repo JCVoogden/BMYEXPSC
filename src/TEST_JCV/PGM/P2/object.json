@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "P2",
+  "description" : "P2",
+  "creationDate" : "2008-05-28 08:58:26",
+  "updateDate" : "2008-05-28 08:59:27",
+  "visibility" : "PRIVATE",
+  "ibmName" : "P2",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "P2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT",
+  "unicode" : true
+}

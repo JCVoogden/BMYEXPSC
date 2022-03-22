@@ -1,0 +1,233 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20050321)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20051014)      * num_bin_4 alfred-
+*ROW_METADATA(ADELIA         20051014)      ALPHA(12) RRRRR
+*ROW_METADATA(ADELIA         20051014)      
+*ROW_METADATA(ADELIA         20051014)      
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * ds tutu alfred 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * alpha(10 ) tata(12,12)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * alpha(10) test
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * curseur c1 :test *opt(5) *lignes(1)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * curseur c2 article a, toto b *distinct *col(a.acod_article, b.ttata) *tri(a.acod_article)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * num_e(10,0) toto
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * ref(toto) tptp0
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * chargement cht id_obj0:liste *egal_cle article test 10 *ajout(proc)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * chargement cht id_obj0:liste *direct article toto 10 *ajout(proc)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * chargement cht id_obj0:liste *seq_sans_cle article *ajout(proc)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * chargement cht id_obj0:liste *sql artacle *col(acod_article) 45 *ajout
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * chargement cht id_obj0:liste *sql_d test acod_article :toto 45 *ajout
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * liste toto0 *ref_mld(article)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * liste tutu  *ref_l(toto)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * vue zozo0 *seq article *infsr(proc0)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * table_temp test0 *ref_mld(article)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * objet_graphique(BOUTON) rprp(10,9999)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * ds zob acod_article tata(12,12),1
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * vue test1 *seq toto *infsr(proc0)
+*ROW_METADATA(ADELIA         20050804)      * num_e(15,0) z2
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * liste rororr *ref_mld(ARTICLE)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * liste maliste toto *ref_l(rororr) *ref_mld(article) 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * vue test2 *cle toto ttoto,ttiti *commit
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * vue test3 *direct toto z2 *open *commit
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * vue test4 *seq toto *open
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * rupture z2 *liste(rororr)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * param rororr ttt0 z2
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * ren article (acod_article, z3) 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * num_e(25,5) ttt(1,9)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * alpha(5) ttt0
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * alpha(32700) tt(10,1)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * alpha(5) TTOTO0 
+*ROW_METADATA(ADELIA         20050804)      * alpha(5) ZTOTO
+*ROW_METADATA(ADELIA         20050804)      * alpha(5) TOTO1
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * dsi azzz tata(1)  ttoto ztoto ttt0 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * ds toto *ref_mld(person)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * lda *ref_mld(PERSONN)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * objet_graphique(*fenetre) roro0(1,2)
+*ROW_METADATA(ADELIA         20050804)      * objet_graphique(*item_menu) roro0(1,2)
+*ROW_METADATA(ADELIA         20050804)      * objet_graphique(BOUTON) roro0(1,2)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * num_bin_4 toto2(5,6)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * num_e(10,0) test(5,5)
+*ROW_METADATA(ADELIA         20050804)      *    
+*ROW_METADATA(ADELIA         20050804)      * alpha(10) toto3(10,10)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * alpha(10) toto4
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * alpha(10) toto5(10)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * alpha(10) toto6(10,10)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * ds roro roro,1 roro,1b riri
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * dsi tptptp *ref_mld(toto)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * dtaara(12) toto7 roro,1 roro,1b riri
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * dtaara(12) tptptp0 *ref_mld(toto)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * lda toto toto
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * liste toto7 *ref_mld(article) *ref_l(tata.tutu:liste)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * vue roor *cle toto ttoto, tptp, toto *open *commit
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * vue roor *direct toto toto *open *commit
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * rupture toto toto *sql
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * rupture toto toto *vue(test4)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * rupture toto toto *liste(toto)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * rupture toto toto *liste(toto.riri:liste)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * rupture toto toto *liste(riri:LISTE)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * rupture toto toto *liste(toto.riri:LISTE)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * param toto toto toto toto
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * objet_graphique(*fenetre) toto8
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * objet_graphique(bouton) toto9(10,5)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * curseur c2 :ttoto *opt(1) *lignes(1)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * curseur c1 toto a, toto b *col(a.ttoto,b.ttata)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * curseur c1 toto a, toto b, toto *distinct *cond(vjlmp  vclmdosq'') *tri(a.ttoto,b.ttata) *opt(1) *lignes(1)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * curseur c1 toto a, toto b, toto *distinct *tri(a,b)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * curseur c1 toto *distinct *col(ttoto,ttata) *cond(kdf,slkdl) *maj(ttata)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * curseur c1 toto *distinct *col(ttoto,ttata) *cond(kdf,slkdl) *maj(ttata) *opt(1) *lignes(1)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * curseur c1 toto *distinct *col(ttoto,ttata) *cond(kdf,slkdl) *maj *opt(1) *lignes(1)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * curseur c1 toto *distinct *col(ttoto,ttata) *maj(ttata) *opt(1) *lignes(1)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * curseur c1 toto *col(ttoto,ttata) *maj *lignes(1)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * liste test5 *ref_mld(toto) *ref_l(rororr)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * num_bin_4 afficher
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * liste toto *ref_mld(toto)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * ren toto (ttoto,toto0) (ttata,ruru)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * alpha(12) zozo(12,12)
+*ROW_METADATA(ADELIA         20050804)      * 
+*ROW_METADATA(ADELIA         20050804)      * param zoz
+*ROW_METADATA(ADELIA         20050321)   FIN_DECL
+*ROW_METADATA(ADELIA         20050321)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20050629)      * 
+*ROW_METADATA(ADELIA         20050629)      * liste titi test
+*ROW_METADATA(ADELIA         20050629)      * 
+*ROW_METADATA(ADELIA         20050629)      * 
+*ROW_METADATA(ADELIA         20050629)      * AFFICHER = 1
+*ROW_METADATA(ADELIA         20050629)      * 
+*ROW_METADATA(ADELIA         20050629)      * *vrai = ooo
+*ROW_METADATA(ADELIA         20050629)      * 
+*ROW_METADATA(ADELIA         20050629)      * lire_sql toro 
+*ROW_METADATA(ADELIA         20050629)      
+*ROW_METADATA(ADELIA         20050321)   FIN_INIT
+*ROW_METADATA(ADELIA         20050324)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20050324)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20050629)         * num_bin_4 i
+*ROW_METADATA(ADELIA         20050629)         
+*ROW_METADATA(ADELIA         20050324)      FIN_DECL
+*ROW_METADATA(ADELIA         20050324)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20050804)         
+*ROW_METADATA(ADELIA         20050804)         executer id_fen0
+*ROW_METADATA(ADELIA         20050804)         
+*ROW_METADATA(ADELIA         20050804)         
+*ROW_METADATA(ADELIA                 )         DEBUT_SRV SERV_LOG_1
+*ROW_METADATA(ADELIA         20050617)            *lire_avant zozo 
+*ROW_METADATA(ADELIA         20050617)            
+*ROW_METADATA(ADELIA         20050621)            * ouvrir_sql_c c2
+*ROW_METADATA(ADELIA         20050621)            * lire_av_sql_c c2
+*ROW_METADATA(ADELIA         20050621)            * fermer_sql_c c2
+*ROW_METADATA(ADELIA         20050621)            * 
+*ROW_METADATA(ADELIA         20050621)            * alpha(10) test
+*ROW_METADATA(ADELIA         20050621)            
+*ROW_METADATA(ADELIA                 )         FIN_SRV
+*ROW_METADATA(ADELIA         20050616)         
+*ROW_METADATA(ADELIA         20050616)         
+*ROW_METADATA(ADELIA         20050324)      FIN_INIT
+*ROW_METADATA(ADELIA         20050324)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20050324)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20050324)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20050804)         
+*ROW_METADATA(ADELIA         20050324)      FIN_VERIF
+*ROW_METADATA(ADELIA         20050324)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20050804)         
+*ROW_METADATA(ADELIA         20050324)      FIN_VALID
+*ROW_METADATA(ADELIA         20050324)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20050324)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20050324)   FIN_FENETRE
+*ROW_METADATA(ADELIA         20050616)   DEBUT_PROCEDURE PROC
+*ROW_METADATA(ADELIA         20050616)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20050616)         
+*ROW_METADATA(ADELIA         20050616)      FIN_DECL
+*ROW_METADATA(ADELIA         20050629)      
+*ROW_METADATA(ADELIA         20050616)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         20050616)   DEBUT_PROCEDURE PROC0 *SERVER(SERV_LOG_1)
+*ROW_METADATA(ADELIA         20050616)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20050616)         
+*ROW_METADATA(ADELIA         20050616)      FIN_DECL
+*ROW_METADATA(ADELIA         20050616)      
+*ROW_METADATA(ADELIA         20050616)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

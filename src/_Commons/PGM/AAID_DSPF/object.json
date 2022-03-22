@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AAID_DSPF",
+  "description" : "Aide par DSPF les explications",
+  "creationDate" : "1995-06-08 06:54:24",
+  "updateDate" : "2005-11-07 16:46:33",
+  "visibility" : "PUBLIC",
+  "ibmName" : "AIDEXP",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "AIDEXP",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

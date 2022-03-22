@@ -1,0 +1,11 @@
+{
+  "type" : "ETA",
+  "name" : "EDI_PERSONNE_02",
+  "description" : "Liste des personnes",
+  "creationDate" : "1995-06-08 07:07:33",
+  "updateDate" : "1995-06-08 07:07:33",
+  "visibility" : "PUBLIC",
+  "layoutCode" : "EDIPE2",
+  "reportTypeName" : "EDI_LISTE",
+  "nature" : "ADELIA"
+}

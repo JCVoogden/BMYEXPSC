@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml report.xsd">
+    <entities/>
+    <fields>
+        <field description="EDTCY2" guideWord="CLIENT" kind="VARIABLE" layoutCode="_data" length="41" type="STRING"/>
+        <field description="EDTCY2" guideWord="ID" kind="VARIABLE" layoutCode="_data" type="INT"/>
+        <field description="EDTCY2" guideWord="TITRE_ETAT" kind="VARIABLE" layoutCode="_data" length="161" type="STRING"/>
+        <field description="EDTCY2" guideWord="TITRE_PAGE" kind="VARIABLE" layoutCode="_data" length="161" type="STRING"/>
+        <field description="CommandesClient" guideWord="DATECMD" kind="VARIABLE" layoutCode="_data" type="DATE"/>
+        <field description="CommandesClient" guideWord="IDCLIENT" kind="VARIABLE" layoutCode="_data" type="INT"/>
+        <field description="CommandesClient" guideWord="IDCMD" kind="VARIABLE" layoutCode="_data" type="INT"/>
+        <field description="EDTCY2" kind="CONSTANT" length="2" scale="2">
+            <text text="Id."/>
+        </field>
+        <field description="EDTCY2" kind="CONSTANT" length="3" scale="2">
+            <text text="Nom du client"/>
+        </field>
+        <field description="CommandesClient" kind="CONSTANT" length="2" scale="1">
+            <text text="IDCMD._data"/>
+        </field>
+        <field description="CommandesClient" kind="CONSTANT" length="3" scale="1">
+            <text text="DATECMD._data"/>
+        </field>
+        <field description="CommandesClient" kind="CONSTANT" length="4" scale="1">
+            <text text="IDCLIENT._data"/>
+        </field>
+    </fields>
+</report>

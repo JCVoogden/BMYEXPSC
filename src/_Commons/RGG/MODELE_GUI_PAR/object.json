@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "MODELE_GUI_PAR",
+  "description" : "Modèle guide sur zone paramètre",
+  "creationDate" : "1995-06-29 07:24:40",
+  "updateDate" : "1995-06-29 07:24:40",
+  "visibility" : "PUBLIC",
+  "mrClass" : "GS",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

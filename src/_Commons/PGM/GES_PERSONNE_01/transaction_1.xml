@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Gestion des personnes" format1="01" format2="02" format3="*1" format4="03" functionKeys="  A  X     A            " transactionType="GEST_SFL_03" updateDate="1753-01-01" updateTime="00:00:00" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="*1" eraseInput="false" guideWord="SFL01" help="false" jumpLinesBefore="10" keep="false" lock="false" nbColumns="1" nbLines="12" overlay="false" pagination="DYNAMIC" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="SFL01" subFilePageSize="12" subFileSize="13" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="01" eraseInput="false" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="8" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR01" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="02" eraseInput="false" help="false" jumpLinesBefore="9" keep="false" lock="false" nbColumns="1" nbLines="1" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="CTL01" subFileCode="*1" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="03" eraseInput="false" help="false" jumpLinesBefore="22" keep="false" lock="false" nbColumns="1" nbLines="2" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR03" truncate="false"/>
+    </formats>
+    <entities>
+        <entity access="SEQUENTIAL_WITH_KEY" format="*1" name="PERSONN">
+            <properties>
+                <property access="1" name="NOM_PERS"/>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="NOM DU PROGRAMME." formatCode="01" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="21" x="30" y="1">
+            <text text="Gestion des personnes"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="N00044" formatCode="01" guideWord="N00044" hilight="true" kind="DATE" layoutCode="N00044" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" x="71" y="1">
+            <parameters>
+                <parameter key="EDW" value="'  /  /  '"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="N00045" formatCode="01" guideWord="N00045" hilight="true" kind="TIME" layoutCode="N00045" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" x="71" y="2">
+            <parameters>
+                <parameter key="EDW" value="'  :  :  '"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" layoutCode="*" length="22" x="26" y="3">
+            <text text="Afficher à partir de ."/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Afficher à partir de" formatCode="01" guideWord="ZWAFF_PARTIR" kind="USER_VARIABLE" layoutCode="ZWAPAR" length="30" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="49" y="3"/>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="46" x="2" y="5">
+            <text text="Indiquez vos options, puis appuyez sur ENTREE."/>
+        </field>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="10" x="4" y="6">
+            <text text="2=Modifier"/>
+        </field>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="11" x="16" y="6">
+            <text text="4=Supprimer"/>
+        </field>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="10" x="29" y="6">
+            <text text="5=Afficher"/>
+        </field>
+        <field description="*" formatCode="02" guideWord="*" hilight="true" kind="CONSTANT" layoutCode="*" length="3" x="2" y="9">
+            <text text="Opt"/>
+        </field>
+        <field formatCode="02" hilight="true" kind="CONSTANT" layoutCode="*" length="4" x="6" y="9">
+            <text text="Code"/>
+        </field>
+        <field formatCode="02" hilight="true" kind="CONSTANT" layoutCode="*" length="16" x="18" y="9">
+            <text text="Nom du personnel"/>
+        </field>
+        <field formatCode="02" hilight="true" kind="CONSTANT" layoutCode="*" length="4" x="42" y="9">
+            <text text="Chef"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code de l'option" formatCode="*1" guideWord="ZW_COD_OPTION" kind="USER_VARIABLE" layoutCode="ZWCOPT" length="1" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="3" y="10"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Matricule personnel" formatCode="*1" guideWord="ZZCOD_MAT_PERS" kind="VARIABLE" kinematicLogicalProperty="PERSONN.COD_MAT_PERS" layoutCode="ZZCMAT" length="2" logicalProperty="PERSONN.COD_MAT_PERS" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="12" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="7" y="10">
+            <parameters>
+                <parameter key="EXP" value="01"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom" formatCode="*1" guideWord="ZZNOM_PERS" kind="VARIABLE" kinematicLogicalProperty="PERSONN.NOM_PERS" layoutCode="ZZLPER" length="30" logicalProperty="PERSONN.NOM_PERS" lowerCase="true" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="13" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="11" y="10">
+            <parameters>
+                <parameter key="EXP" value="DUPONT ALBERT"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Matricule personnel" formatCode="*1" guideWord="ZZCOD_MAT_PER2" kind="USER_VARIABLE" kinematicLogicalProperty="PERSONN.COD_MAT_PER2" layoutCode="ZZCMA2" length="2" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="43" y="10">
+            <parameters>
+                <parameter key="EXP" value="01"/>
+            </parameters>
+        </field>
+        <field color="BLUE" formatCode="03" kind="CONSTANT" layoutCode="*" length="7" x="2" y="22">
+            <text text="F3=Exit"/>
+        </field>
+        <field color="BLUE" formatCode="03" kind="CONSTANT" layoutCode="*" length="8" x="11" y="22">
+            <text text="F6=Créer"/>
+        </field>
+        <field color="BLUE" formatCode="03" kind="CONSTANT" layoutCode="*" length="13" x="21" y="22">
+            <text text="F12=Précédent"/>
+        </field>
+    </fields>
+</transaction>

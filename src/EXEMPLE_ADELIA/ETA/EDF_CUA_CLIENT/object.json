@@ -1,0 +1,11 @@
+{
+  "type" : "ETA",
+  "name" : "EDF_CUA_CLIENT",
+  "description" : "Edition de la fiche d'un client",
+  "creationDate" : "1995-06-20 12:08:05",
+  "updateDate" : "1995-06-20 12:12:44",
+  "visibility" : "PRIVATE",
+  "layoutCode" : "ECUA02",
+  "reportTypeName" : "FICHE",
+  "nature" : "ADELIA"
+}

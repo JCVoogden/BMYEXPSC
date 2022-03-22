@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "SA_TEST2",
+  "description" : "aaa",
+  "creationDate" : "2007-02-28 14:51:15",
+  "updateDate" : "2021-02-04 09:13:17",
+  "visibility" : "PRIVATE",
+  "ibmName" : "AAAAAB",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "AAAAAB",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "manageHistoryButtons" : " "
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "MOBTST",
+  "description" : "MOBTST",
+  "creationDate" : "2008-05-06 12:24:24",
+  "updateDate" : "2010-12-15 12:58:14",
+  "visibility" : "PRIVATE",
+  "ibmName" : "MOBTST",
+  "programType" : "I",
+  "sourceType" : "MADELIA",
+  "layoutCode" : "MOBTST",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

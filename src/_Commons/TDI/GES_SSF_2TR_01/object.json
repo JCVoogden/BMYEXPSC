@@ -1,0 +1,9 @@
+{
+  "type" : "TDI",
+  "name" : "GES_SSF_2TR_01",
+  "description" : "Gestion s/fichier (4) Confirmation de suppression",
+  "creationDate" : "1995-06-08 06:51:57",
+  "updateDate" : "1995-06-08 06:51:57",
+  "visibility" : "PUBLIC",
+  "templateType" : "I"
+}

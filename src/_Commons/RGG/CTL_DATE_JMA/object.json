@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CTL_DATE_JMA",
+  "description" : "contrôle date JJ/MM/AA (PM)",
+  "creationDate" : "1996-07-05 09:06:32",
+  "updateDate" : "1996-07-05 09:11:34",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

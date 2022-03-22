@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Liste des clients" format1="E1" format2="C1" format3="*1" format4="B1" functionKeys="  A  A     A        A   " transactionType="GES_POS_IMP_LIS" updateDate="1753-01-01" updateTime="00:00:00" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="*1" eraseInput="false" guideWord="SFL01" help="false" jumpLinesBefore="10" keep="false" lock="false" nbColumns="1" nbLines="12" overlay="true" pagination="DYNAMIC" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="SFL01" subFilePageSize="12" subFileSize="13" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="B1" eraseInput="false" guideWord="FORB1" help="false" jumpLinesBefore="22" keep="false" lock="false" nbColumns="1" nbLines="2" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FORB1" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="C1" eraseInput="false" guideWord="FORC1" help="false" jumpLinesBefore="9" keep="false" lock="false" nbColumns="1" nbLines="1" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FORC1" subFileCode="*1" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="E1" eraseInput="false" guideWord="FORE1" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="8" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FORE1" truncate="false"/>
+    </formats>
+    <entities>
+        <entity access="SEQUENTIAL_WITH_KEY" format="*1" guideWord="CLIENTS" name="CLIENTS">
+            <properties>
+                <property access="1" name="COD_CLIENT"/>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="E1" kind="CONSTANT" layoutCode="*" length="19" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="31" y="1">
+            <text text=" Liste des clients "/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="E1" kind="CONSTANT" layoutCode="*" length="22" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="41" y="3">
+            <text text="Afficher à partir de ."/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="E1" kind="CONSTANT" layoutCode="*" length="71" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="6">
+            <text text="Indiquez vos options, puis appuyez sur ENTREE.                         "/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" description="*" formatCode="E1" guideWord="*" kind="CONSTANT" layoutCode="*" length="10" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="4" y="7">
+            <text text="2=Modifier"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" description="*" formatCode="E1" guideWord="*" kind="CONSTANT" layoutCode="*" length="8" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="17" y="7">
+            <text text="3=Copier"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" description="*" formatCode="E1" guideWord="*" kind="CONSTANT" layoutCode="*" length="11" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="28" y="7">
+            <text text="4=Supprimer"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" description="*" formatCode="E1" guideWord="*" kind="CONSTANT" layoutCode="*" length="10" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="42" y="7">
+            <text text="5=Afficher"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" description="*" formatCode="E1" guideWord="*" kind="CONSTANT" layoutCode="*" length="10" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="55" y="7">
+            <text text="6=Imprimer"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="C1" hilight="true" kind="CONSTANT" layoutCode="*" length="4" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="9">
+            <text text="Opt "/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Option" formatCode="*1" guideWord="ZZ_COD_OPTION" kind="USER_VARIABLE" layoutCode="ZZCOPT" length="2" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" underscore="true" validExtendedFieldName="false" validFieldName="false" x="2" y="10"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="UTILISATEUR" formatCode="E1" guideWord="XUSER" kind="USER_VARIABLE" layoutCode="XUSER" length="10" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="2">
+            <parameters>
+                <parameter key="DFT" value="*USER"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="NOM DU PROGRAMME" formatCode="E1" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Heure du système" formatCode="E1" guideWord="TIME" kind="TIME" layoutCode="TIME" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" x="70" y="2">
+            <parameters>
+                <parameter key="EDW" value="'  :  :  '"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Date du système" formatCode="E1" guideWord="DATE" kind="DATE" layoutCode="DATE" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" x="70" y="1">
+            <parameters>
+                <parameter key="EDW" value="'  /  /  '"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="B1" kind="CONSTANT" layoutCode="*" length="7" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="23">
+            <text text="F3=Exit"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="B1" kind="CONSTANT" layoutCode="*" length="8" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="11" y="23">
+            <text text="F6=Créer"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="B1" kind="CONSTANT" layoutCode="*" length="11" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="21" y="23">
+            <text text="F12=Annuler"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="B1" kind="CONSTANT" layoutCode="*" length="21" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="34" y="23">
+            <text text="F21=Imprimer la liste"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="C1" kind="CONSTANT" layoutCode="*" length="6" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="7" y="9">
+            <text text="Client"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code client" formatCode="*1" guideWord="ZZCOD_CLIENT" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.COD_CLIENT" layoutCode="ZZCCLI" length="6" logicalProperty="CLIENTS.COD_CLIENT" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="18" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="A1" x="7" y="10"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="C1" kind="CONSTANT" layoutCode="*" length="20" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="19" y="9">
+            <text text="Nom    du     client"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom client" formatCode="*1" guideWord="ZZNOM_CLIENT" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.NOM_CLIENT" layoutCode="ZZLCLI" length="30" logicalProperty="CLIENTS.NOM_CLIENT" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="20" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="A1" x="14" y="10"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code client" formatCode="E1" guideWord="ZZCOD_CLIENTV1" kind="VARIABLE" layoutCode="ZZCCLIV1" length="6" logicalProperty="CLIENTS.COD_CLIENT" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" numTextField="18" type="STRING" validExtendedFieldName="false" validFieldName="false" x="64" y="3"/>
+    </fields>
+</transaction>

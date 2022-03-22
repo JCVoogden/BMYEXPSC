@@ -1,0 +1,60 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA                 )   DEBUT_DECL
+*ROW_METADATA(ADELIA                 )      
+*ROW_METADATA(ADELIA                 )   FIN_DECL
+*ROW_METADATA(ADELIA                 )   DEBUT_INIT
+*ROW_METADATA(ADELIA                 )      initialiser TIM_METH_FT
+*ROW_METADATA(ADELIA                 )      executer TIM_METH_FT
+*ROW_METADATA(ADELIA                 )   FIN_INIT
+*ROW_METADATA(ADELIA                 )   DEBUT_FENETRE TIM_METH_FT
+*ROW_METADATA(ADELIA                 )      DEBUT_DECL
+*ROW_METADATA(ADELIA                 )         BOOL raz
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 intervalle
+*ROW_METADATA(ADELIA                 )         NUM_E (8, 0) rang
+*ROW_METADATA(ADELIA                 )      FIN_DECL
+*ROW_METADATA(ADELIA                 )      DEBUT_INIT
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_INIT
+*ROW_METADATA(ADELIA                 )      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET TIM_TEST
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT TIM_TEST:Top
+*ROW_METADATA(ADELIA                 )               col_evt: = 'Top'
+*ROW_METADATA(ADELIA                 )               inserer_elt cnt_container:liste
+*ROW_METADATA(ADELIA                 )               rang = &rang_elt(cnt_container:liste)
+*ROW_METADATA(ADELIA                 )               cnt_container:premiere_ligne_visible = rang 
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_ACTIVITE
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_ACTIVITE:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               tim_test:activite = ckb_activite:
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_INTERVALLE
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_INTERVALLE:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               tim_test:intervalle = ent_intervalle:
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_FT1
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_FT1:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               raz = *FAUX
+*ROW_METADATA(ADELIA                 )               appeler_methode tim_test forcer_top raz intervalle
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_FT2
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_FT2:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               raz = *VRAI
+*ROW_METADATA(ADELIA                 )               intervalle = 10000
+*ROW_METADATA(ADELIA                 )               appeler_methode tim_test FORCER_TOP raz intervalle
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )      FIN_GEST_EVT
+*ROW_METADATA(ADELIA                 )      DEBUT_VERIF
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_VERIF
+*ROW_METADATA(ADELIA                 )      DEBUT_VALID
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_VALID
+*ROW_METADATA(ADELIA                 )      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA                 )      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA                 )   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "EXIST_COD_CLIEN",
+  "description" : "Contrôle existence du code client",
+  "creationDate" : "1995-06-07 12:46:54",
+  "updateDate" : "1995-06-29 07:23:34",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

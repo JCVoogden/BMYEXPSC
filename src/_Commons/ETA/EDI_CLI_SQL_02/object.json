@@ -1,0 +1,11 @@
+{
+  "type" : "ETA",
+  "name" : "EDI_CLI_SQL_02",
+  "description" : "Edition liste clients",
+  "creationDate" : "1995-06-08 07:06:02",
+  "updateDate" : "1995-06-08 07:06:02",
+  "visibility" : "PUBLIC",
+  "layoutCode" : "SQLCL4",
+  "reportTypeName" : "EDI_LISTE",
+  "nature" : "ADELIA"
+}

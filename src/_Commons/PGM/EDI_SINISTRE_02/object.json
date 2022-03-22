@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "EDI_SINISTRE_02",
+  "description" : "Edition de la liste des sinistres",
+  "creationDate" : "1995-06-08 07:10:25",
+  "updateDate" : "1995-06-08 07:10:25",
+  "visibility" : "PUBLIC",
+  "ibmName" : "EDISI2",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "EDISI2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "TEST_POOL_3",
+  "description" : "Test charge partie 2",
+  "creationDate" : "2009-06-04 09:43:15",
+  "updateDate" : "2010-04-26 15:21:44",
+  "visibility" : "PRIVATE",
+  "ibmName" : "TPOOL3",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "TPOOL3",
+  "level2GenType" : 2,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

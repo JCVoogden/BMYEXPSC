@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "ADELIAI2",
+  "description" : "ADELIAI2",
+  "creationDate" : "2008-09-15 07:59:01",
+  "updateDate" : "2021-04-30 12:30:21",
+  "visibility" : "PRIVATE",
+  "ibmName" : "ADI2",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "ADI2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "manageHistoryButtons" : " "
+}

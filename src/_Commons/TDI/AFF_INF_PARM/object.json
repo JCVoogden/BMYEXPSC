@@ -1,0 +1,9 @@
+{
+  "type" : "TDI",
+  "name" : "AFF_INF_PARM",
+  "description" : "Affichage d'une transaction après un paramètre",
+  "creationDate" : "1995-06-08 06:48:41",
+  "updateDate" : "1995-06-08 06:48:41",
+  "visibility" : "PUBLIC",
+  "templateType" : "I"
+}

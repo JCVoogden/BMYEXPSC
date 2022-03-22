@@ -1,0 +1,9 @@
+{
+  "platform" : "CUSTOM",
+  "shell" : "POCKETPC",
+  "xDPI" : 96,
+  "yDPI" : 96,
+  "toolbarHeight" : 26,
+  "screenWidth" : 240,
+  "screenHeight" : 320
+}

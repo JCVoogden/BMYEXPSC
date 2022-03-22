@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "AFF_CLI_SQL_02",
+  "description" : "Chargement sous-fichier par requête SQL dynamique",
+  "creationDate" : "1995-06-08 06:56:27",
+  "updateDate" : "2005-11-08 15:13:19",
+  "visibility" : "PUBLIC",
+  "ibmName" : "SQLCL2",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "SQLCL2",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

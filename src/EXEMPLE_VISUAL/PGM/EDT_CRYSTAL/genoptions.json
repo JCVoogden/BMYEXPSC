@@ -1,0 +1,21 @@
+{
+  "endProgramCode" : "LR",
+  "dateFormat" : "SYSTEM",
+  "ioErrors" : "YES",
+  "fileOptions" : [ {
+    "id" : {
+      "fileName" : "**EDTCR"
+    },
+    "openClose" : true
+  }, {
+    "id" : {
+      "fileName" : "**EDTCY2"
+    },
+    "openClose" : true
+  }, {
+    "id" : {
+      "fileName" : "**EDTSSE"
+    },
+    "openClose" : true
+  } ]
+}

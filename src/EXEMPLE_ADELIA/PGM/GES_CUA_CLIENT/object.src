@@ -1,0 +1,357 @@
+*
+*
+INITIALISER 01
+TRAITER     01
+******************
+TRANSACTION 01
+******************
+SI *F03
+  P_COD_ACTION = 'EX'
+  P_COD_RETOUR = *BLANK
+  TERMINER
+FIN
+*
+SI *F12
+  P_COD_ACTION = 'PR'
+  P_COD_RETOUR = *BLANK
+  TERMINER
+FIN
+SI *F06
+  *
+    *
+    * Mise à blanc de la zone clé
+    *
+    ZZCOD_CLIENT = *BLANK
+    *
+    P_COD_ACTION = 'CR'
+    P_COD_RETOUR = *BLANK
+    APPELER MAJ_CUA_CLIENT P_COD_RETOUR P_COD_ACTION ZZCOD_CLIENT
+    SI *IN90 = '1'
+      *
+      * Erreur dans l'appel du programme
+      *
+      W_FLG_ERREUR = '1'
+    FIN
+    SI W_FLG_ERREUR = '1'
+      ENVOYER_MSG SYS0010
+      TRAITER 01
+    FIN
+    SI P_COD_ACTION = 'EX'
+      *
+      * Retour du programme de création par F3 : Arret du programme de
+      * gestion
+      *
+      P_COD_RETOUR = *BLANK
+      TERMINER
+    FIN
+    INITIALISER 01
+    TRAITER 01
+FIN
+SI *F21
+  ENVOYER_MSG *EFF_TOUT
+  *
+    APPELER EDL_CUA_CLIENT
+    ENVOYER_MSG SYS9901
+    TRAITER 01
+FIN
+SI *PAGAV
+    PAGINER_AVANT
+FIN
+VERIFIER 01
+SI P_COD_ACTION = 'EX'
+  *
+  * Le traitement d'une option s'est terminé par F3=Exit
+  *
+  P_COD_RETOUR = *BLANK
+  TERMINER
+FIN
+SI *DEL04 > 0
+  *
+  * Des éléments ont été placés dans le sous-fichier de confirmation
+  * de suppression ; positionnement en début de liste et envoi de
+  * l'écran
+  *
+  *IN84 = '1'
+  WRAN04 = 1
+  TRAITER 02
+FIN
+SI W_FLG_INIT = '1'
+  *
+  * Réinitialisation à effectuer à la suite d'une copie
+  *
+  INITIALISER 01
+FIN
+*
+* Positionnement dans la liste
+*
+SI ZZCOD_CLIENTV1 <> *BLANK
+  INITIALISER 01
+FIN
+TRAITER 01
+******************
+TRANSACTION 02
+******************
+SI *F12
+  *
+  * Demande de suppression non confirmée
+  *
+  P_COD_ACTION = *BLANK
+  ENVOYER_MSG *EFF_ANCIEN
+  TRAITER 01
+FIN
+VALIDER 01
+SI W_FLG_ERREUR = '0'
+  *
+  * Pas d'erreur pendant la suppression
+  *
+  INITIALISER 01
+FIN
+TRAITER     01
+******************
+INITIALISATION  01
+******************
+P_COD_ACTION = *BLANK
+EFFACER 1
+*
+* La zone clé de la vue de chargement du sous-fichier est
+* remplie avec la valeur de la zone de positionnement
+*
+ZZCOD_CLIENT = ZZCOD_CLIENTV1
+DEBUT_STD 
+XNOM_PGM = *NOM_PGM
+XUSER = *USER
+ZZCOD_CLIENTV1 = *BLANK
+FIN_STD 
+GESTION_SFL     1
+DEBUT_STD 
+PRESENTER CLIENTS
+ZZ_COD_OPTION = *BLANK
+FIN_STD 
+*
+* Pour le cas où la dernière ligne de la page précedente
+* était en erreur
+*
+INVERSER_IMAGE *FAUX ZZ_COD_OPTION
+MAJ_SFL
+FIN_GESTION_SFL
+**********************
+VERIFICATION    01
+**********************
+EFFACER 4
+ENVOYER_MSG *EFF_ANCIEN
+W_FLG_ERREUR = '0'
+W_FLG_INIT = '0'
+*EFF_SFLMSG = '0'
+P_COD_ACTION = *BLANK
+INVERSER_IMAGE *FAUX ZZ_COD_OPTION
+GESTION_SFL     1
+DEBUT_STD 
+FIN_STD 
+W_FLG_OPT_OK = *BLANK
+*
+* Traitement des options standards
+*
+SI ZZ_COD_OPTION = ' 2';'2 '
+    W_FLG_OPT_OK = '1'
+    P_COD_RETOUR = *BLANK
+    P_COD_ACTION = 'MO'
+    APPELER MAJ_CUA_CLIENT P_COD_RETOUR P_COD_ACTION ZZCOD_CLIENT
+    SI *IN90 = '1'
+      *
+      * Appel du programme terminé en erreur
+      *
+      W_FLG_ERREUR = '1'
+    FIN
+    *
+    * Rafraichissement de la ligne modifiée
+    *
+    SI P_COD_ACTION <> 'EX';'PR' ET W_FLG_ERREUR = '0' ET P_COD_RETOUR = *BLANK
+      P_COD_ACTION = *BLANK
+      PLACER_A_GAUCHE ZZCOD_CLIENT W_SV_CLE
+      LIRE VUE_RAFRAICH
+      PRESENTER CLIENTS
+      PLACER_A_GAUCHE W_SV_CLE ZZCOD_CLIENT
+      POSITIONNER_AP CLIENTS
+    FIN
+FIN
+*
+SI ZZ_COD_OPTION = ' 3';'3 '
+    W_FLG_OPT_OK = '1'
+    P_COD_RETOUR = *BLANK
+    P_COD_ACTION = 'CO'
+    W_SV_CLE = ZZCOD_CLIENT
+    APPELER MAJ_CUA_CLIENT P_COD_RETOUR P_COD_ACTION ZZCOD_CLIENT
+    ZZCOD_CLIENT = W_SV_CLE
+    SI *IN90 = '1'
+      *
+      * Appel du programme terminé en erreur
+      *
+      W_FLG_ERREUR = '1'
+    FIN
+    *
+    SI P_COD_ACTION <> 'EX';'PR'
+      W_FLG_INIT = '1'
+    FIN
+FIN
+*
+SI ZZ_COD_OPTION = '4 ';' 4'
+    *
+    * Chargement du sous-fichier de confirmation
+    *
+    P_COD_RETOUR = *BLANK
+    W_FLG_OPT_OK = '1'
+INSERER_RG CREER_LIGNE_SFL (4)
+FIN
+SI ZZ_COD_OPTION = ' 5';'5 '
+    W_FLG_OPT_OK = '1'
+    P_COD_RETOUR = *BLANK
+    P_COD_ACTION = 'VI'
+    APPELER VIS_CUA_CLIENT P_COD_RETOUR P_COD_ACTION ZZCOD_CLIENT
+    SI *IN90 = '1'
+      *
+      * Appel du programme terminé en erreur
+      *
+      W_FLG_ERREUR = '1'
+    FIN
+FIN
+SI ZZ_COD_OPTION = '6 ';' 6'
+    W_FLG_OPT_OK = '1'
+    P_COD_RETOUR = *BLANK
+    APPELER EDF_CUA_CLIENT P_COD_RETOUR ZZCOD_CLIENT
+    SI *IN90 = '1'
+      *
+      * Appel du programme terminé en erreur
+      *
+      W_FLG_ERREUR = '1'
+    FIN
+FIN
+*
+* Traitement des options non standards
+*
+W_FLG_TRT_OPT = '1'
+*
+* Traitement des erreurs
+*
+SI ZZ_COD_OPTION <> *BLANK ET W_FLG_OPT_OK = '1'
+  *
+  * Erreur lors du traitement de l'option
+  *
+  REGLE_GESTION SYS0010 ZZ_COD_OPTION
+  SI W_FLG_ERREUR = '1'
+    ENVOYER_MSG *EFF_TOUT
+    ANOMALIE
+  FIN
+  *
+  REGLE_GESTION CLI0004 ZZ_COD_OPTION
+  *
+  * Elément verrouillé lors de l'appel de l'option
+  *
+  SI P_COD_RETOUR = '2'
+    INIT_MSG ZZCOD_CLIENT
+    ANOMALIE
+  FIN
+  *
+  REGLE_GESTION CLI0001 ZZ_COD_OPTION
+  *
+  * Elément non trouvé lors de l'appel de l'option
+  *
+  SI P_COD_RETOUR = '1'
+    INIT_MSG ZZCOD_CLIENT
+    ANOMALIE
+  FIN
+  *
+  SI P_COD_ACTION = 'PR' OU P_COD_ACTION = 'EX'
+    *
+    * L'option a été terminée par F3=Exit ou F12=Précédent
+    *
+    QUITTER_SFL
+  FIN
+  SI W_FLG_ERREUR = '0' ET P_COD_RETOUR = *BLANK ET ZZ_COD_OPTION <> '4 ';' 4'
+    *
+    * Envoi du message "élément imprimé"
+    *
+    SI ZZ_COD_OPTION = ' 6';'6 '
+      ENVOYER_MSG CLI0002 ZZCOD_CLIENT
+    FIN
+    ZZ_COD_OPTION = *BLANK
+    *
+    * Pour le cas où la ligne précédemment traitée
+    * était en erreur
+    *
+    INVERSER_IMAGE *FAUX ZZ_COD_OPTION
+  FIN
+FIN
+*
+REGLE_GESTION SYS0006 ZZ_COD_OPTION
+SI ZZ_COD_OPTION <> *BLANK ET W_FLG_OPT_OK = *BLANK
+  *
+  * Option saisie incorrecte
+  *
+  INIT_MSG ZZ_COD_OPTION
+  ERREUR
+FIN
+FIN_GESTION_SFL
+**********************
+VALIDATION      01
+**********************
+W_FLG_ERREUR = '0'
+GESTION_SFL     1
+DEBUT_STD 
+RANGER CLIENTS
+FIN_STD 
+SI ZZ_COD_OPTION = '4 ';' 4'
+  *
+  * Appel du programme de maintenance avec code action SU
+  *
+  P_COD_ACTION = 'SU'
+  P_COD_RETOUR = *BLANK
+  APPELER MAJ_CUA_CLIENT P_COD_RETOUR P_COD_ACTION ZZCOD_CLIENT
+  SI *IN90 = '1'
+    *
+    * Erreur lors du traitement de suppression
+    *
+    INVERSER_IMAGE *VRAI ZZ_COD_OPTION
+    ENVOYER_MSG *EFF_TOUT
+    ENVOYER_MSG SYS0010
+INSERER_RG MAJ_LIGNE_SFL (1)
+    W_FLG_ERREUR = '1'
+    QUITTER_SFL
+  FIN
+  SI P_COD_RETOUR = '2'
+    *
+    * Elément verrouillé lors de la suppression
+    *
+    INVERSER_IMAGE *VRAI ZZ_COD_OPTION
+    ENVOYER_MSG *EFF_TOUT
+    ENVOYER_MSG CLI0004 ZZCOD_CLIENT
+INSERER_RG MAJ_LIGNE_SFL (1)
+    W_FLG_ERREUR = '1'
+    QUITTER_SFL
+  FIN
+  *
+  SI P_COD_RETOUR = '1'
+    *
+    * Elément non trouvé lors de la suppression
+    *
+    INVERSER_IMAGE *VRAI ZZ_COD_OPTION
+    ENVOYER_MSG *EFF_TOUT
+    ENVOYER_MSG CLI0001 ZZCOD_CLIENT
+INSERER_RG MAJ_LIGNE_SFL (1)
+    W_FLG_ERREUR = '1'
+    QUITTER_SFL
+  FIN
+  *
+FIN
+FIN_GESTION_SFL
+*
+*
+***************************************************
+TRT_GUIDE 01
+***************************************************
+DEBUT_STD 
+* Guide d'affichage de la fenêtre des CLIENTS
+GUIDE ZZCOD_CLIENTV1
+APPELER FEN_CLIENT P_COD_RETOUR P_COD_ACTION ZZCOD_CLIENTV1
+FIN_GUIDE
+FIN_STD 
+FIN_TRT_GUIDE 

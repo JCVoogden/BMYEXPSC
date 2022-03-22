@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Visualisation des clients" format1="01" format2="*1" format3="02" functionKeys="  A        A            " transactionType="FEN_INTERRO_OPT" updateDate="1753-01-01" updateTime="00:00:00" windowType="WINDOW" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="*1" eraseInput="false" guideWord="SFL01" help="false" jumpLinesBefore="14" keep="false" lock="false" nbColumns="1" nbLines="5" overlay="false" pagination="DYNAMIC" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="SFL01" subFilePageSize="5" subFileSize="6" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="01" eraseInput="false" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="13" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="CTL01" subFileCode="*1" truncate="false"/>
+        <format addMode="false" assume="false" blink="false" clear="false" code="02" eraseInput="false" help="false" jumpLinesBefore="19" keep="false" lock="false" nbColumns="1" nbLines="5" overlay="true" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR02" truncate="false"/>
+    </formats>
+    <entities>
+        <entity access="SEQUENTIAL_WITH_KEY" format="*1" name="CLIENTS">
+            <properties>
+                <property access="1" name="NOM_CLIENT"/>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="45" x="17" y="11">
+            <text text="Indiquez vos options, puis appuyez sur ENTREE"/>
+        </field>
+        <field color="BLUE" formatCode="01" kind="CONSTANT" layoutCode="*" length="9" x="19" y="12">
+            <text text="1=Choisir"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="3" x="15" y="13">
+            <text text="Opt"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="6" x="19" y="13">
+            <text text="Client"/>
+        </field>
+        <field formatCode="01" hilight="true" kind="CONSTANT" layoutCode="*" length="20" x="26" y="13">
+            <text text="Nom    du     client"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code de l'option" formatCode="*1" guideWord="ZW_COD_OPTION" kind="USER_VARIABLE" layoutCode="ZWCOPT" length="1" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="16" y="14"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code client" formatCode="*1" guideWord="ZZCOD_CLIENT" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.COD_CLIENT" layoutCode="ZZCCLI" length="6" logicalProperty="CLIENTS.COD_CLIENT" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="3" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="19" y="14">
+            <parameters>
+                <parameter key="EXP" value="000001"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom client" formatCode="*1" guideWord="ZZNOM_CLIENT" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.NOM_CLIENT" layoutCode="ZZLCLI" length="15" logicalProperty="CLIENTS.NOM_CLIENT" lowerCase="true" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="4" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="*1" x="28" y="14">
+            <parameters>
+                <parameter key="EXP" value="HARDIS Progiciel"/>
+            </parameters>
+        </field>
+        <field color="BLUE" formatCode="02" kind="CONSTANT" layoutCode="*" length="7" x="20" y="19">
+            <text text="F3=Exit"/>
+        </field>
+        <field color="BLUE" formatCode="02" kind="CONSTANT" layoutCode="*" length="13" x="29" y="19">
+            <text text="F12=Précédent"/>
+        </field>
+        <field formatCode="01" kind="FRAME" layoutCode="*" length="51" reverseImage="true" x="13" y="10">
+            <text/>
+        </field>
+        <field formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="11">
+            <text/>
+        </field>
+        <field formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="63" y="11">
+            <text/>
+        </field>
+        <field formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="12">
+            <text/>
+        </field>
+        <field formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="63" y="12">
+            <text/>
+        </field>
+        <field formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="13">
+            <text/>
+        </field>
+        <field formatCode="01" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="63" y="13">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="14">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="63" y="14">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="15">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="63" y="15">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="16">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="63" y="16">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="17">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="63" y="17">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="18">
+            <text/>
+        </field>
+        <field formatCode="*1" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="63" y="18">
+            <text/>
+        </field>
+        <field formatCode="02" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="13" y="19">
+            <text/>
+        </field>
+        <field formatCode="02" kind="WINDOW" layoutCode="*" length="1" reverseImage="true" x="63" y="19">
+            <text/>
+        </field>
+        <field formatCode="02" kind="WINDOW" layoutCode="*" length="51" reverseImage="true" x="13" y="20">
+            <text/>
+        </field>
+    </fields>
+</transaction>

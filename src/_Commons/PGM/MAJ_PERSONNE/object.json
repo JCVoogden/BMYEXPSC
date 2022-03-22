@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "MAJ_PERSONNE",
+  "description" : "Mise à jour / Création de personne",
+  "creationDate" : "1995-06-08 07:37:47",
+  "updateDate" : "1995-06-08 07:37:47",
+  "visibility" : "PUBLIC",
+  "ibmName" : "MAJPER",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "MAJPER",
+  "programTemplateName" : "MAJ_INF_PARM",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

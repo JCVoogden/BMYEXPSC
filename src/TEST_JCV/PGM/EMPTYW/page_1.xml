@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="1" name="ID_WPAGE1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml page.xsd">
+    <properties/>
+    <controls>
+        <control classId="0" className="ENTRYFIELD" error="0" guide="1" kinematic="0" name="CHS_1">
+            <properties>
+                <property id="-100"/>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 15 -1"/>
+                <property id="8"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="0" guide="1" kinematic="0" name="CHS_2">
+            <properties>
+                <property id="-100"/>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 15 -1"/>
+                <property id="8"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="0" guide="1" kinematic="0" name="CHS_3">
+            <properties>
+                <property id="-100"/>
+                <property id="-13" intValue="2"/>
+                <property id="-9" stringValue="2 15 -1"/>
+                <property id="8"/>
+            </properties>
+        </control>
+        <control classId="0" className="ENTRYFIELD" error="0" guide="1" kinematic="0" name="CHS_4">
+            <properties>
+                <property id="-100"/>
+                <property id="-13" intValue="2"/>
+                <property id="-12" intValue="8"/>
+                <property id="-9" stringValue="0 10 0"/>
+                <property id="8"/>
+            </properties>
+        </control>
+    </controls>
+</page>

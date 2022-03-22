@@ -1,0 +1,91 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20080305)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20080421)      num_bin_4 longueur
+*ROW_METADATA(ADELIA         20080421)      bool      succes
+*ROW_METADATA(ADELIA         20080305)   FIN_DECL
+*ROW_METADATA(ADELIA         20080305)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080421)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20080418)      executer    id_fen0
+*ROW_METADATA(ADELIA         20080421)      
+*ROW_METADATA(ADELIA         20080305)   FIN_INIT
+*ROW_METADATA(ADELIA         20080305)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20080305)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20080418)         
+*ROW_METADATA(ADELIA         20080305)      FIN_DECL
+*ROW_METADATA(ADELIA         20080305)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20080418)         ouvrir:activite  = *vrai
+*ROW_METADATA(ADELIA         20080418)         fermer:activite  = *faux
+*ROW_METADATA(ADELIA         20080418)         envoyer:activite = *faux
+*ROW_METADATA(ADELIA         20080305)      FIN_INIT
+*ROW_METADATA(ADELIA         20080305)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20080418)         DEBUT_OBJET OUVRIR
+*ROW_METADATA(ADELIA         20080418)            DEBUT_EVT OUVRIR:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20080418)               serie:numero_port = numport
+*ROW_METADATA(ADELIA         20080418)               
+*ROW_METADATA(ADELIA         20080418)               appeler_methode serie ouvrir succes
+*ROW_METADATA(ADELIA         20080418)               
+*ROW_METADATA(ADELIA         20080418)               si succes
+*ROW_METADATA(ADELIA         20080418)                  statutEnv = 'Succès'
+*ROW_METADATA(ADELIA         20080418)                  ouvrir:activite  = *faux
+*ROW_METADATA(ADELIA         20080418)                  fermer:activite  = *vrai
+*ROW_METADATA(ADELIA         20080421)                  envoyer:activite = *vrai
+*ROW_METADATA(ADELIA         20080421)               sinon
+*ROW_METADATA(ADELIA         20080418)                  statutEnv = 'Echec'
+*ROW_METADATA(ADELIA         20080418)               fin
+*ROW_METADATA(ADELIA         20080418)               
+*ROW_METADATA(ADELIA         20080418)               
+*ROW_METADATA(ADELIA         20080418)            FIN_EVT
+*ROW_METADATA(ADELIA         20080418)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080418)         DEBUT_OBJET FERMER
+*ROW_METADATA(ADELIA         20080418)            DEBUT_EVT FERMER:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20080418)               appeler_methode serie fermer
+*ROW_METADATA(ADELIA         20080418)               
+*ROW_METADATA(ADELIA         20080418)               statutEnv = 'Succès'
+*ROW_METADATA(ADELIA         20080418)               ouvrir:activite  = *vrai
+*ROW_METADATA(ADELIA         20080418)               fermer:activite  = *faux
+*ROW_METADATA(ADELIA         20080418)               envoyer:activite = *faux
+*ROW_METADATA(ADELIA         20080421)               
+*ROW_METADATA(ADELIA         20080418)            FIN_EVT
+*ROW_METADATA(ADELIA         20080418)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080418)         DEBUT_OBJET ENVOYER
+*ROW_METADATA(ADELIA         20080418)            DEBUT_EVT ENVOYER:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20080421)               longueur = &longueur_chaine(donnees)
+*ROW_METADATA(ADELIA         20080421)               appeler_methode serie ecrire_alpha_enc donnees longueur encodage succes
+*ROW_METADATA(ADELIA         20080421)               
+*ROW_METADATA(ADELIA         20080418)               si succes
+*ROW_METADATA(ADELIA         20080418)                  statutEnv = 'Succès'
+*ROW_METADATA(ADELIA         20080418)               sinon
+*ROW_METADATA(ADELIA         20080418)                  statutEnv = 'Echec'
+*ROW_METADATA(ADELIA         20080418)               fin
+*ROW_METADATA(ADELIA         20080418)               
+*ROW_METADATA(ADELIA         20080418)            FIN_EVT
+*ROW_METADATA(ADELIA         20080418)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080421)         DEBUT_OBJET SERIE
+*ROW_METADATA(ADELIA         20080421)            DEBUT_EVT SERIE:PortSerie
+*ROW_METADATA(ADELIA         20080421)               appeler_methode id_fen0.serie lire_alpha_enc recu 250 lgRecu encodage succes
+*ROW_METADATA(ADELIA         20080421)               
+*ROW_METADATA(ADELIA         20080421)               si succes
+*ROW_METADATA(ADELIA         20080421)                  statutRec = 'Succès'
+*ROW_METADATA(ADELIA         20080421)               sinon
+*ROW_METADATA(ADELIA         20080421)                  statutRec = 'Echec'  
+*ROW_METADATA(ADELIA         20080421)                  recu      = '-'
+*ROW_METADATA(ADELIA         20080421)                  lgRecu    = 0
+*ROW_METADATA(ADELIA         20080421)               fin
+*ROW_METADATA(ADELIA         20080421)               
+*ROW_METADATA(ADELIA         20080421)               si non succes ou lgRecu > 0
+*ROW_METADATA(ADELIA         20080421)                  inserer_elt liste:liste
+*ROW_METADATA(ADELIA         20080421)               fin
+*ROW_METADATA(ADELIA         20080421)               
+*ROW_METADATA(ADELIA         20080421)            FIN_EVT
+*ROW_METADATA(ADELIA         20080421)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080305)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20080305)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20080305)         
+*ROW_METADATA(ADELIA         20080305)      FIN_VERIF
+*ROW_METADATA(ADELIA         20080305)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20080305)         
+*ROW_METADATA(ADELIA         20080305)      FIN_VALID
+*ROW_METADATA(ADELIA         20080305)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080305)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080305)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

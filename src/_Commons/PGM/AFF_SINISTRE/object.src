@@ -1,0 +1,14 @@
+*ROW_METADATA(ADELIA         20050316)* Affichage d'une seule transaction avec réception de paramètre
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)* La variable P_COD_ACTION sert à déterminer si la sorti s'est
+*ROW_METADATA(ADELIA                0)* faites par F03 (EXit) ou par F12 (PRécédent)
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)* La variable P_COD_RETOUR sert à Ppositionner un eventuel problème
+*ROW_METADATA(ADELIA                0)* dans le programme à ramener au programme appelant
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)* Recherchez P_???? et remplacer la zone clé du fichier à traiter
+*ROW_METADATA(ADELIA                0)*
+*ROW_METADATA(ADELIA                0)RECEVOIR P_COD_RETOUR P_COD_ACTION SNUM_SINISTRE
+*ROW_METADATA(ADELIA                0)INITIALISER 01
+*ROW_METADATA(ADELIA         20050316)TRAITER 01
+*ROW_METADATA(ADELIA         20050316)AA

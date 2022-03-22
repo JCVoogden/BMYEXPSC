@@ -1,0 +1,28 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(JCA            20020425)   DEBUT_DECL
+*ROW_METADATA(JCA            20020425)      *-------------------------------------------------------------*
+*ROW_METADATA(JCA            20020425)      *                                                             *
+*ROW_METADATA(JCA            20020425)      *   Recherche du nom du fichier écran en fonction du code     *
+*ROW_METADATA(JCA            20020425)      *   maquette                                                  *
+*ROW_METADATA(JCA            20020425)      *                                                             *
+*ROW_METADATA(JCA            20020425)      *-------------------------------------------------------------*
+*ROW_METADATA(JCA            20020425)      *
+*ROW_METADATA(JCA            20020425)      * ATTENTION : Ceci est un programme exemple de personnalisation des
+*ROW_METADATA(JCA            20020425)      *             fonctions spécifiques pour Adélia/IWS. 
+*ROW_METADATA(JCA            20020425)      *
+*ROW_METADATA(JCA            20020425)      *-------------------------------------------------------------*
+*ROW_METADATA(JCA            20020425)      * On recoit en entrée                                         *
+*ROW_METADATA(JCA            20020425)      *   NOM_ECRAN   = code maquette + 'FM'                        *
+*ROW_METADATA(JCA            20020425)      *-------------------------------------------------------------*
+*ROW_METADATA(JCA            20020425)      ALPHA(8) NOM_ECRAN
+*ROW_METADATA(JCA            20020425)      ALPHA(1)  P_COD_RETOUR
+*ROW_METADATA(JCA            20020425)      PARAM NOM_ECRAN P_COD_RETOUR
+*ROW_METADATA(JCA            20020425)      
+*ROW_METADATA(JCA            20020425)   FIN_DECL
+*ROW_METADATA(JCA            20020425)   DEBUT_INIT
+*ROW_METADATA(JCA            20020425)      P_COD_RETOUR = '0'
+*ROW_METADATA(JCA            20020425)      *
+*ROW_METADATA(JCA            20020425)      * On ne fait rien car on rend la même valeur (code maquette + 'FM')
+*ROW_METADATA(JCA            20020425)      *
+*ROW_METADATA(JCA            20020425)   FIN_INIT
+*ROW_METADATA(ADELIA                 )FIN_PGM

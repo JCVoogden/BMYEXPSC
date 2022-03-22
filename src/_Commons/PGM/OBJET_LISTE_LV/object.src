@@ -1,0 +1,385 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         00000000)   DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)   FIN_DECL
+*ROW_METADATA(ADELIA         00000000)   DEBUT_INIT
+*ROW_METADATA(ADELIA         00000000)      INITIALISER FEN_LST_LV_EX
+*ROW_METADATA(ADELIA         00000000)      EXECUTER FEN_LST_LV_EX
+*ROW_METADATA(ADELIA         00000000)   FIN_INIT
+*ROW_METADATA(ADELIA         00000000)   DEBUT_FENETRE FEN_LST_LV_EX
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         BOOL CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)         NUM_BIN_4 RANG
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      DEBUT_INIT
+*ROW_METADATA(ADELIA         00000000)         * !---------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         * !   Désactivation de certains contrôles !
+*ROW_METADATA(ADELIA         00000000)         * ! graphiques qui ne serviront pas tout  !
+*ROW_METADATA(ADELIA         00000000)         * ! de suite                              !
+*ROW_METADATA(ADELIA         00000000)         * !---------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         20040224)         TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         * !---------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         * !   Insertion des valeurs dans la liste !
+*ROW_METADATA(ADELIA         00000000)         * ! des valeurs de la colonne 'sexe'      !
+*ROW_METADATA(ADELIA         00000000)         * !---------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         20040224)         COL_SEXE:VALEUR_COURANTE = 'M'
+*ROW_METADATA(ADELIA         20040224)         INSERER_ELT COL_SEXE:LISTE
+*ROW_METADATA(ADELIA         20040224)         COL_SEXE:VALEUR_COURANTE = 'F'
+*ROW_METADATA(ADELIA         20040224)         INSERER_ELT COL_SEXE:LISTE
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         * !-------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         * !   Insertion des valeurs dans la liste des !
+*ROW_METADATA(ADELIA         00000000)         * ! valeurs de la colonne 'fonction'          !
+*ROW_METADATA(ADELIA         00000000)         * !-------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         20040224)         COL_FONCTION:VALEUR_COURANTE = 'Président'
+*ROW_METADATA(ADELIA         20040224)         INSERER_ELT COL_FONCTION:LISTE
+*ROW_METADATA(ADELIA         20040224)         COL_FONCTION:VALEUR_COURANTE = 'Secrétaire'
+*ROW_METADATA(ADELIA         20040224)         INSERER_ELT COL_FONCTION:LISTE
+*ROW_METADATA(ADELIA         20040224)         COL_FONCTION:VALEUR_COURANTE = 'Stagiaire'
+*ROW_METADATA(ADELIA         20040224)         INSERER_ELT COL_FONCTION:LISTE
+*ROW_METADATA(ADELIA         20040224)         COL_FONCTION:VALEUR_COURANTE = 'Programmeur'
+*ROW_METADATA(ADELIA         20040224)         INSERER_ELT COL_FONCTION:LISTE
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         * !---------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         * !   Insertion des valeurs dans la liste !
+*ROW_METADATA(ADELIA         00000000)         * ! des valeurs 'sexe' du cadre 'personne'!
+*ROW_METADATA(ADELIA         00000000)         * !---------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         20040224)         * LSV_SEXE:VALEUR_COURANTE = 'masculin'
+*ROW_METADATA(ADELIA         20040224)         NOM_SEXE1: = 'Masculin'
+*ROW_METADATA(ADELIA         20040224)         NOM_SEXE2: = 'M'
+*ROW_METADATA(ADELIA         20040224)         INSERER_ELT LSV_SEXE:LISTE
+*ROW_METADATA(ADELIA         20040224)         * LSV_SEXE:VALEUR_COURANTE = 'feminin'
+*ROW_METADATA(ADELIA         20040224)         NOM_SEXE1: = 'Feminin'
+*ROW_METADATA(ADELIA         20040224)         NOM_SEXE2: = 'F'
+*ROW_METADATA(ADELIA         20040224)         INSERER_ELT LSV_SEXE:LISTE
+*ROW_METADATA(ADELIA         20040224)         
+*ROW_METADATA(ADELIA         00000000)         * !-------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         * !   Insertion des valeurs dans la liste des !
+*ROW_METADATA(ADELIA         00000000)         * ! valeurs 'fonction' du cadre 'personne'    !
+*ROW_METADATA(ADELIA         20040224)         * !-------------------------------------------!
+*ROW_METADATA(ADELIA         20040224)         
+*ROW_METADATA(ADELIA         00000000)         LSV_FONC:VALEUR_COURANTE = 'Président'
+*ROW_METADATA(ADELIA         00000000)         INSERER_ELT LSV_FONC:LISTE
+*ROW_METADATA(ADELIA         00000000)         LSV_FONC:VALEUR_COURANTE = 'Secrétaire'
+*ROW_METADATA(ADELIA         00000000)         INSERER_ELT LSV_FONC:LISTE
+*ROW_METADATA(ADELIA         00000000)         LSV_FONC:VALEUR_COURANTE = 'Stagiaire'
+*ROW_METADATA(ADELIA         00000000)         INSERER_ELT LSV_FONC:LISTE
+*ROW_METADATA(ADELIA         00000000)         LSV_FONC:VALEUR_COURANTE = 'Programmeur'
+*ROW_METADATA(ADELIA         00000000)         INSERER_ELT LSV_FONC:LISTE
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         * !-----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         * !   Création de quelques éléments dans la !
+*ROW_METADATA(ADELIA         00000000)         * ! liste graphique                         !
+*ROW_METADATA(ADELIA         00000000)         * !-----------------------------------------!
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         COL_NOM:VALEUR = 'DUPONT'
+*ROW_METADATA(ADELIA         00000000)         COL_PRN:VALEUR = 'Pierre'
+*ROW_METADATA(ADELIA         00000000)         COL_SEXE:VALEUR = 'M'
+*ROW_METADATA(ADELIA         00000000)         COL_FONCTION:VALEUR = 'Président'
+*ROW_METADATA(ADELIA         00000000)         INSERER_ELT LST_EX:LISTE
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         COL_NOM:VALEUR = 'POPOL'
+*ROW_METADATA(ADELIA         00000000)         COL_PRN:VALEUR = 'Perrine'
+*ROW_METADATA(ADELIA         00000000)         COL_SEXE:VALEUR = 'F'
+*ROW_METADATA(ADELIA         00000000)         COL_FONCTION:VALEUR = 'Secrétaire'
+*ROW_METADATA(ADELIA         00000000)         INSERER_ELT LST_EX:LISTE
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         COL_NOM:VALEUR = 'DUPIC'
+*ROW_METADATA(ADELIA         00000000)         COL_PRN:VALEUR = 'Michel'
+*ROW_METADATA(ADELIA         00000000)         COL_SEXE:VALEUR = 'M'
+*ROW_METADATA(ADELIA         00000000)         COL_FONCTION:VALEUR = 'Programmeur'
+*ROW_METADATA(ADELIA         00000000)         INSERER_ELT LST_EX:LISTE
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         COL_NOM:VALEUR = 'BIDOUX'
+*ROW_METADATA(ADELIA         00000000)         COL_PRN:VALEUR = 'Jacques'
+*ROW_METADATA(ADELIA         00000000)         COL_SEXE:VALEUR = 'M'
+*ROW_METADATA(ADELIA         00000000)         COL_FONCTION:VALEUR = 'Stagiaire'
+*ROW_METADATA(ADELIA         00000000)         INSERER_ELT LST_EX:LISTE
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)         * !---------------------------!
+*ROW_METADATA(ADELIA         00000000)         * ! Tri de la liste graphique !
+*ROW_METADATA(ADELIA         00000000)         * !---------------------------!
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         20040224)         TRIER_LST LST_EX:LISTE COL_NOM:VALEUR, COL_PRN:VALEUR, COL_FONCTION:VALEUR, COL_SEXE:VALEUR
+*ROW_METADATA(ADELIA         00000000)      FIN_INIT
+*ROW_METADATA(ADELIA         00000000)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET BTN_QUITTER
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT BTN_QUITTER:BoutonGaucheClic
+*ROW_METADATA(ADELIA         00000000)               TERMINER
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET LST_EX
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT LST_EX:MNU_MOD
+*ROW_METADATA(ADELIA         00000000)               * !-----------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour une modification, on       !
+*ROW_METADATA(ADELIA         00000000)               * ! recherche l'élément sélectionné,  !
+*ROW_METADATA(ADELIA         00000000)               * ! on recopie ses informations dans  !
+*ROW_METADATA(ADELIA         00000000)               * ! le cadre 'personne' en vue de les !
+*ROW_METADATA(ADELIA         00000000)               * ! modifier et le cadre est activé   !
+*ROW_METADATA(ADELIA         00000000)               * ! L'intitulé du bouton est changé en!
+*ROW_METADATA(ADELIA         00000000)               * ! 'Modifier'                        !
+*ROW_METADATA(ADELIA         00000000)               * !-----------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               LECTURE_LST LST_EX:LISTE *SELECT
+*ROW_METADATA(ADELIA         00000000)                  TRAITER_PROC ACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)                  CHS_NOM:VALEUR = COL_NOM:VALEUR
+*ROW_METADATA(ADELIA         20040224)                  CHS_PRN:VALEUR = COL_PRN:VALEUR
+*ROW_METADATA(ADELIA         20040224)               
+*ROW_METADATA(ADELIA         20040224)                  LIRE_P_ELT LSV_SEXE:LISTE
+*ROW_METADATA(ADELIA         20040225)                  TANT_QUE NOM_SEXE2: <> COL_SEXE:VALEUR
+*ROW_METADATA(ADELIA         20040225)                    LIRE_AV_ELT LSV_SEXE:LISTE
+*ROW_METADATA(ADELIA         20040225)                  REFAIRE
+*ROW_METADATA(ADELIA         20040225)                  LSV_SEXE:VALEUR = NOM_SEXE1:
+*ROW_METADATA(ADELIA         20040224)               
+*ROW_METADATA(ADELIA         00000000)                  LSV_FONC:VALEUR = COL_FONCTION:VALEUR
+*ROW_METADATA(ADELIA         00000000)                  BTN_PERSO:TEXTE = 'Modifier'
+*ROW_METADATA(ADELIA         00000000)                  QUITTER_BOUCLE
+*ROW_METADATA(ADELIA         00000000)               FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT LST_EX:MNU_CRE
+*ROW_METADATA(ADELIA         00000000)               * !------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour une création, le cadre des  !
+*ROW_METADATA(ADELIA         00000000)               * ! personnes est désactivé (ce qui    !
+*ROW_METADATA(ADELIA         00000000)               * ! permet de mettre les zones à blanc !
+*ROW_METADATA(ADELIA         00000000)               * ! puis réactivé et le texte du bouton!
+*ROW_METADATA(ADELIA         00000000)               * ! passe à 'Modifier'                 !
+*ROW_METADATA(ADELIA         00000000)               * !------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC ACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               BTN_PERSO:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT LST_EX:MNU_SUPPR
+*ROW_METADATA(ADELIA         00000000)               * !--------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Pour une suppression, on           !
+*ROW_METADATA(ADELIA         00000000)               * ! recherche l'élément sélectionné,     !
+*ROW_METADATA(ADELIA         00000000)               * ! on recopie ses informations dans     !
+*ROW_METADATA(ADELIA         00000000)               * ! le cadre 'personne' désactivé car    !
+*ROW_METADATA(ADELIA         00000000)               * ! aucune modification des informations !
+*ROW_METADATA(ADELIA         00000000)               * ! n'est possible en mode suppression   !
+*ROW_METADATA(ADELIA         00000000)               * ! L'intitulé du bouton est changé en   !
+*ROW_METADATA(ADELIA         00000000)               * ! 'Modifier'                           !
+*ROW_METADATA(ADELIA         00000000)               * !--------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               LECTURE_LST LST_EX:LISTE *SELECT
+*ROW_METADATA(ADELIA         00000000)                  CHS_NOM:VALEUR = COL_NOM:VALEUR
+*ROW_METADATA(ADELIA         20040224)                  CHS_PRN:VALEUR = COL_PRN:VALEUR
+*ROW_METADATA(ADELIA         20040224)               
+*ROW_METADATA(ADELIA         20040225)                  LIRE_P_ELT LSV_SEXE:LISTE
+*ROW_METADATA(ADELIA         20040225)                  TANT_QUE NOM_SEXE2: <> COL_SEXE:VALEUR
+*ROW_METADATA(ADELIA         20040225)                    LIRE_AV_ELT LSV_SEXE:LISTE
+*ROW_METADATA(ADELIA         20040225)                  REFAIRE
+*ROW_METADATA(ADELIA         20040225)                  LSV_SEXE:VALEUR = NOM_SEXE1:
+*ROW_METADATA(ADELIA         20040225)                  
+*ROW_METADATA(ADELIA         00000000)                  LSV_FONC:VALEUR = COL_FONCTION:VALEUR
+*ROW_METADATA(ADELIA         00000000)                  BTN_PERSO:TEXTE = 'Supprimer'
+*ROW_METADATA(ADELIA         00000000)                  BTN_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)                  QUITTER_BOUCLE
+*ROW_METADATA(ADELIA         00000000)               FIN_LECTURE_LST
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET BTN_PERSO
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT BTN_PERSO:BoutonGaucheClic
+*ROW_METADATA(ADELIA         00000000)               * !--------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Ce bouton ne fait que deux actions :     !
+*ROW_METADATA(ADELIA         00000000)               * ! - Il appelle la procédure SAUVER_PERS      !
+*ROW_METADATA(ADELIA         00000000)               * !      qui sauve les modifications           !
+*ROW_METADATA(ADELIA         00000000)               * !      (modif., créat., suppr.)              !
+*ROW_METADATA(ADELIA         00000000)               * ! - Il appelle la procédure de désactivation !
+*ROW_METADATA(ADELIA         00000000)               * !      du cadre 'personne                    !
+*ROW_METADATA(ADELIA         00000000)               * !--------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC SAUVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET COL_FONCTION
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_FONCTION:BoutonGaucheClic
+*ROW_METADATA(ADELIA         00000000)               * !-------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Le 'clic' sur un en-tête de !
+*ROW_METADATA(ADELIA         00000000)               * ! colonne occasionne le tri de  !
+*ROW_METADATA(ADELIA         00000000)               * ! la liste selon cette colonne  !
+*ROW_METADATA(ADELIA         00000000)               * !-------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRIER_LST LST_EX:LISTE COL_FONCTION:VALEUR
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_FONCTION:ActionListeValeurs
+*ROW_METADATA(ADELIA         00000000)               * !------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Au moment d'une action sur la    !
+*ROW_METADATA(ADELIA         00000000)               * ! liste de valeurs, il faut adapter  !
+*ROW_METADATA(ADELIA         00000000)               * ! les options au sexe de la personne !
+*ROW_METADATA(ADELIA         00000000)               * !------------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               RANG = 0
+*ROW_METADATA(ADELIA         00000000)               APPELER_METHODE LST_EX RECUPERER_VALEUR_COLONNES RANG CODE_RETOUR
+*ROW_METADATA(ADELIA         00000000)               SI COL_SEXE:VALEUR = 'M'
+*ROW_METADATA(ADELIA         00000000)                  VIDER_LST COL_FONCTION:LISTE
+*ROW_METADATA(ADELIA         00000000)                  COL_FONCTION:VALEUR_COURANTE = 'Président'
+*ROW_METADATA(ADELIA         00000000)                  INSERER_ELT COL_FONCTION:LISTE
+*ROW_METADATA(ADELIA         00000000)                  COL_FONCTION:VALEUR_COURANTE = 'Programmeur'
+*ROW_METADATA(ADELIA         00000000)                  INSERER_ELT COL_FONCTION:LISTE
+*ROW_METADATA(ADELIA         00000000)                  COL_FONCTION:VALEUR_COURANTE = 'Secrétaire'
+*ROW_METADATA(ADELIA         00000000)                  INSERER_ELT COL_FONCTION:LISTE
+*ROW_METADATA(ADELIA         00000000)                  COL_FONCTION:VALEUR_COURANTE = 'Stagiaire'
+*ROW_METADATA(ADELIA         00000000)                  INSERER_ELT COL_FONCTION:LISTE
+*ROW_METADATA(ADELIA         00000000)               FIN
+*ROW_METADATA(ADELIA         00000000)               SI COL_SEXE:VALEUR = 'F'
+*ROW_METADATA(ADELIA         00000000)                  VIDER_LST COL_FONCTION:LISTE
+*ROW_METADATA(ADELIA         00000000)                  COL_FONCTION:VALEUR_COURANTE = 'Présidente'
+*ROW_METADATA(ADELIA         00000000)                  INSERER_ELT COL_FONCTION:LISTE
+*ROW_METADATA(ADELIA         00000000)                  COL_FONCTION:VALEUR_COURANTE = 'Programmeuse'
+*ROW_METADATA(ADELIA         00000000)                  INSERER_ELT COL_FONCTION:LISTE
+*ROW_METADATA(ADELIA         00000000)                  COL_FONCTION:VALEUR_COURANTE = 'Secrétaire'
+*ROW_METADATA(ADELIA         00000000)                  INSERER_ELT COL_FONCTION:LISTE
+*ROW_METADATA(ADELIA         00000000)                  COL_FONCTION:VALEUR_COURANTE = 'Stagiaire'
+*ROW_METADATA(ADELIA         00000000)                  INSERER_ELT COL_FONCTION:LISTE
+*ROW_METADATA(ADELIA         00000000)               FIN
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET COL_NOM
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_NOM:BoutonGaucheClic
+*ROW_METADATA(ADELIA         00000000)               * !-------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Le 'clic' sur un en-tête de !
+*ROW_METADATA(ADELIA         00000000)               * ! colonne occasionne le tri de  !
+*ROW_METADATA(ADELIA         00000000)               * ! la liste selon cette colonne  !
+*ROW_METADATA(ADELIA         00000000)               * !-------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRIER_LST LST_EX:LISTE COL_NOM:VALEUR
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET COL_PRN
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_PRN:BoutonGaucheClic
+*ROW_METADATA(ADELIA         00000000)               * !-------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Le 'clic' sur un en-tête de !
+*ROW_METADATA(ADELIA         00000000)               * ! colonne occasionne le tri de  !
+*ROW_METADATA(ADELIA         00000000)               * ! la liste selon cette colonne  !
+*ROW_METADATA(ADELIA         00000000)               * !-------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRIER_LST LST_EX:LISTE COL_PRN:VALEUR
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)         DEBUT_OBJET COL_SEXE
+*ROW_METADATA(ADELIA         00000000)            DEBUT_EVT COL_SEXE:BoutonGaucheClic
+*ROW_METADATA(ADELIA         00000000)               * !-------------------------------!
+*ROW_METADATA(ADELIA         00000000)               * !   Le 'clic' sur un en-tête de !
+*ROW_METADATA(ADELIA         00000000)               * ! colonne occasionne le tri de  !
+*ROW_METADATA(ADELIA         00000000)               * ! la liste selon cette colonne  !
+*ROW_METADATA(ADELIA         00000000)               * !-------------------------------!
+*ROW_METADATA(ADELIA         00000000)               
+*ROW_METADATA(ADELIA         00000000)               TRAITER_PROC DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)               TRIER_LST LST_EX:LISTE COL_SEXE:VALEUR
+*ROW_METADATA(ADELIA         00000000)            FIN_EVT
+*ROW_METADATA(ADELIA         00000000)         FIN_OBJET
+*ROW_METADATA(ADELIA         00000000)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         00000000)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_VERIF
+*ROW_METADATA(ADELIA         00000000)      DEBUT_VALID
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_VALID
+*ROW_METADATA(ADELIA         00000000)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         00000000)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         00000000)   FIN_FENETRE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE ACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !---------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Activation des contrôles graphiques !
+*ROW_METADATA(ADELIA         00000000)      * ! du cadre 'personne'                   !
+*ROW_METADATA(ADELIA         00000000)      * !---------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.BTN_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.CDR_PERSO:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.CHS_NOM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.CHS_PRN:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.LSV_FONC:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.LSV_SEXE:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.TXT_FONC:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.TXT_NOM:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.TXT_PRN:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.TXT_SEXE:ACTIVITE = *VRAI
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE DESACTIVER_PERS
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Désactivation des contrôles  !
+*ROW_METADATA(ADELIA         00000000)      * ! graphiques du cadre 'personne' !
+*ROW_METADATA(ADELIA         00000000)      * ! Et mise à *BLANK de certains   !
+*ROW_METADATA(ADELIA         00000000)      * ! champs                         !
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.CHS_NOM:VALEUR = *BLANK
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.CHS_PRN:VALEUR = *BLANK
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.LSV_SEXE:VALEUR = *BLANK
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.LSV_FONC:VALEUR = *BLANK
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.BTN_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.CDR_PERSO:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.CHS_NOM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.CHS_PRN:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.LSV_FONC:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.LSV_SEXE:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.TXT_FONC:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.TXT_NOM:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.TXT_PRN:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)      FEN_LST_LV_EX.TXT_SEXE:ACTIVITE = *FAUX
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         00000000)   DEBUT_PROCEDURE SAUVER_PERS
+*ROW_METADATA(ADELIA         00000000)      DEBUT_DECL
+*ROW_METADATA(ADELIA         00000000)         
+*ROW_METADATA(ADELIA         00000000)      FIN_DECL
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Tout d'abord, il faut déterminer quel    !
+*ROW_METADATA(ADELIA         00000000)      * ! est le mode d'utilisation du cadr personne !
+*ROW_METADATA(ADELIA         00000000)      * ! cette information peut être récupérée      !
+*ROW_METADATA(ADELIA         00000000)      * ! par le texte du bouton de validation       !
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Si le mode d'utilisation est : 'modifier'  !
+*ROW_METADATA(ADELIA         00000000)      * ! alors il faut mettre à jour les informations !
+*ROW_METADATA(ADELIA         00000000)      * ! de l'élément courant de la liste             !
+*ROW_METADATA(ADELIA         00000000)      * !----------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI FEN_LST_LV_EX.BTN_PERSO:TEXTE = 'Modifier'
+*ROW_METADATA(ADELIA         00000000)         FEN_LST_LV_EX.COL_NOM:VALEUR = FEN_LST_LV_EX.CHS_NOM:VALEUR
+*ROW_METADATA(ADELIA         00000000)         FEN_LST_LV_EX.COL_PRN:VALEUR = FEN_LST_LV_EX.CHS_PRN:VALEUR
+*ROW_METADATA(ADELIA         20040301)         FEN_LST_LV_EX.COL_SEXE:VALEUR = FEN_LST_LV_EX.LSV_SEXE:VALEUR
+*ROW_METADATA(ADELIA         00000000)         FEN_LST_LV_EX.COL_FONCTION:VALEUR = FEN_LST_LV_EX.LSV_FONC:VALEUR
+*ROW_METADATA(ADELIA         00000000)         MODIFIER_ELT FEN_LST_LV_EX.LST_EX:LISTE
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Pour créer il suffit d'insérer l'élément !
+*ROW_METADATA(ADELIA         00000000)      * ! dans la liste                              !
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI FEN_LST_LV_EX.BTN_PERSO:TEXTE = 'Créer'
+*ROW_METADATA(ADELIA         00000000)         FEN_LST_LV_EX.COL_NOM:VALEUR = FEN_LST_LV_EX.CHS_NOM:VALEUR
+*ROW_METADATA(ADELIA         00000000)         FEN_LST_LV_EX.COL_PRN:VALEUR = FEN_LST_LV_EX.CHS_PRN:VALEUR
+*ROW_METADATA(ADELIA         20040301)         FEN_LST_LV_EX.COL_SEXE:VALEUR = FEN_LST_LV_EX.LSV_SEXE:VALEUR
+*ROW_METADATA(ADELIA         00000000)         FEN_LST_LV_EX.COL_FONCTION:VALEUR = FEN_LST_LV_EX.LSV_FONC:VALEUR
+*ROW_METADATA(ADELIA         00000000)         INSERER_ELT FEN_LST_LV_EX.LST_EX:LISTE
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      * !   Pour supprimer, il suffit de supprimer   !
+*ROW_METADATA(ADELIA         00000000)      * ! l'élément courant de la liste              !
+*ROW_METADATA(ADELIA         00000000)      * !--------------------------------------------!
+*ROW_METADATA(ADELIA         00000000)      
+*ROW_METADATA(ADELIA         00000000)      SI FEN_LST_LV_EX.BTN_PERSO:TEXTE = 'Supprimer'
+*ROW_METADATA(ADELIA         00000000)         SUPPRIMER_ELT FEN_LST_LV_EX.LST_EX:LISTE
+*ROW_METADATA(ADELIA         00000000)      FIN
+*ROW_METADATA(ADELIA         00000000)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

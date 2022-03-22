@@ -1,0 +1,537 @@
+DECLARER PCRET;P_COD_RETOUR 1
+DECLARER PCACT;P_COD_ACTION 2
+DECLARER I 3;0
+DECLARER WWNBRC;WW_NBR_COL 3;0
+DECLARER WWNBRM;WW_NBR_MAX 3;0
+DECLARER WWNBRL;WW_NBR_LIM 3;0
+DECLARER WWNUML;WW_NUM_LIGNE 4;0
+DECLARER WRAN01 4;0 *NODEF
+DECLARER I1 3;0
+DECLARER I2 3;0
+DECLARER I3 3;0
+DECLARER I4 3;0
+DECLARER I5 3;0
+DECLARER I6 3;0
+DECLARER I7 3;0
+DECLARER I8 3;0
+DECLARER I9 3;0
+DECLARER J1 3;0
+DECLARER J2 3;0
+DECLARER J3 3;0
+DECLARER J4 3;0
+DECLARER J5 3;0
+DECLARER J6 3;0
+DECLARER J7 3;0
+DECLARER J8 3;0
+DECLARER J9 3;0
+INSERER_STD_D
+%QUESTION *LI TITRE_TRS_01
+%%  Indiquez le titre de l'écran
+%CREER_TRS 01 $TITRE_TRS_01 SFL_LATERAL
+%QUESTION *EN ENTITE_GEREE
+%%  Indiquez le nom de l'entité gérée
+%AFFECTER 01 $ENTITE_GEREE $ENTITE_GEREE
+%QUESTION *ON 10
+%%  S'agit-il d'un programme de mise à jour ?
+%TRS 01
+%QUESTION **
+%%  Indiquez les informations que vous souhaitez visualiser sur
+%%  l'écran. Pour cela choisissez  Entités.
+%%  N'indiquez pas de critère de chargement pour le sous-fichier.
+%MESSAGE
+%%  Génération du dessin en cours, veuillez patienter.
+%GENERER_TRS 01
+%QUESTION **
+%%  Utilisez le maquetteur pour modifier le dessin généré ; si vous générez
+%%  sur AS/400, saisissez les références d'aide UIM : nom aide = XXXXXX01 ;
+%%  nom panel groupe = XXXXXX où XXXXXX représente le code maquette.
+%%  Sur AS/400, utilisez le menu de service pour définir l'aide générale.
+%%  Vérifiez la longueur des zones cachées par rapport à celle des
+%%  informations à stocker. Créez des variables pour les entêtes.
+%MESSAGE
+%%  Génération de la cinématique en cours, veuillez patienter.
+%GENERER_CIN
+%QUESTION *ON 01
+%%  Y a t'il au moins une colonne affichée à la fois ?
+%SI 01
+%QUESTION *ON 02
+%%  Y a t'il au moins deux colonnes affichées à la fois ?
+%SI 02
+%QUESTION *ON 03
+%%  Y a t'il au moins trois colonnes affichées à la fois ?
+%SI 03
+%QUESTION *ON 04
+%%  Y a t'il au moins quatre colonnes affichées à la fois ?
+%SI 04
+%QUESTION *ON 05
+%%  Y a t'il au moins cinq colonnes affichées à la fois ?
+%SI 05
+%QUESTION *ON 06
+%%  Y a t'il au moins six colonnes affichées à la fois ?
+%SI 06
+%QUESTION *ON 07
+%%  Y a t'il au moins sept colonnes affichées à la fois ?
+%SI 07
+%QUESTION *ON 08
+%%  Y a t'il au moins huit colonnes affichées à la fois ?
+%SI 08
+%QUESTION *ON 09
+%%  Y a t'il neuf colonnes affichées à la fois ?
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%QUESTION *LI NBR_MAX
+%%  Donnez le nombre maximum de colonnes
+%QUESTION **
+%%  Déclarez le tableau TVA;TAB_VAR contenant les variables du
+%%  sous-fichier et le tableau TEN;TAB_ENT contenant les entêtes.
+%%  Choisissez  Données  pour accéder à l'environnement de
+%%  données.
+DS DSZON TAB_ZONES_1,1 TAB_ZONES_2 TAB_ZONES_3 TAB_ZONES_4 TAB_ZONES_5 TAB_ZONES_6 TAB_ZONES_7 TAB_ZONES_8 TAB_ZONES_9 TAB_VAR,1
+WW_NBR_MAX = $NBR_MAX
+%SI 09
+WW_NBR_COL = 9
+%FIN
+%SI N09
+%SI 08
+WW_NBR_COL = 8
+%FIN
+%SI N08
+%SI 07
+WW_NBR_COL = 7
+%FIN
+%SI N07
+%SI 06
+WW_NBR_COL = 6
+%FIN
+%SI N06
+%SI 05
+WW_NBR_COL = 5
+%FIN
+%SI N05
+%SI 04
+WW_NBR_COL = 4
+%FIN
+%SI N04
+%SI 03
+WW_NBR_COL = 3
+%FIN
+%SI N03
+%SI 02
+WW_NBR_COL = 2
+%FIN
+%SI N02
+%SI 01
+WW_NBR_COL = 1
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+%FIN
+WW_NBR_LIM = WW_NBR_MAX - WW_NBR_COL
+INITIALISER 01
+TRAITER     01
+******************
+TRANSACTION 01
+******************
+INSERER_STD_D
+SI *F03
+  P_COD_ACTION = 'EX'
+  P_COD_RETOUR = *BLANK
+  TERMINER
+FIN
+SI *F04
+  ENVOYER_MSG SYS9900
+  TRAITER 01
+FIN
+SI *F12
+  P_COD_ACTION = 'PR'
+  P_COD_RETOUR = *BLANK
+  TERMINER
+FIN
+SI *F19
+  J1 = I1
+  J2 = I2
+  J3 = I3
+  J4 = I4
+  J5 = I5
+  J6 = I6
+  J7 = I7
+  J8 = I8
+  J9 = I9
+  I1 = I1 - WW_NBR_COL
+  I2 = I2 - WW_NBR_COL
+  I3 = I3 - WW_NBR_COL
+  I4 = I4 - WW_NBR_COL
+  I5 = I5 - WW_NBR_COL
+  I6 = I6 - WW_NBR_COL
+  I7 = I7 - WW_NBR_COL
+  I8 = I8 - WW_NBR_COL
+  I9 = I9 - WW_NBR_COL
+  SI I1 >= 1
+    TRAITER_PROC LATERA
+    ENVOYER_MSG *EFF_TOUT
+  SINON
+    I1 = J1
+    I2 = J2
+    I3 = J3
+    I4 = J4
+    I5 = J5
+    I6 = J6
+    I7 = J7
+    I8 = J8
+    I9 = J9
+    ENVOYER_MSG SYS9904
+  FIN
+  TRAITER 01
+FIN
+SI *F20
+  J1 = I1
+  J2 = I2
+  J3 = I3
+  J4 = I4
+  J5 = I5
+  J6 = I6
+  J7 = I7
+  J8 = I8
+  J9 = I9
+  I1 = I1 + WW_NBR_COL
+  I2 = I2 + WW_NBR_COL
+  I3 = I3 + WW_NBR_COL
+  I4 = I4 + WW_NBR_COL
+  I5 = I5 + WW_NBR_COL
+  I6 = I6 + WW_NBR_COL
+  I7 = I7 + WW_NBR_COL
+  I8 = I8 + WW_NBR_COL
+  I9 = I9 + WW_NBR_COL
+  SI I1 <= WW_NBR_LIM
+    TRAITER_PROC LATERA
+    ENVOYER_MSG *EFF_TOUT
+  SINON
+    I1 = J1
+    I2 = J2
+    I3 = J3
+    I4 = J4
+    I5 = J5
+    I6 = J6
+    I7 = J7
+    I8 = J8
+    I9 = J9
+ENVOYER_MSG SYS9905
+  FIN
+  TRAITER 01
+FIN
+%SI 10
+VERIFIER 01
+VALIDER 01
+%FIN
+TRAITER 01
+INSERER_STD_F
+*****************
+TRT_GUIDE 01
+*****************
+INSERER_STD_D
+INSERER_STD
+SI *F04
+  ENVOYER_MSG  SYS9900
+FIN
+INSERER_STD_F
+FIN_TRT_GUIDE
+******************
+INITIALISATION  01
+******************
+INSERER_STD_D
+DEBUT_STD
+FIN_STD
+EFFACER         1
+*IN08 = '0'
+%QUESTION *VU VUE_REMP
+%%  Donnez le nom de la vue de remplissage
+POSITIONNER_AV $VUE_REMP
+LIRE_AVANT $VUE_REMP
+TANT_QUE $VUE_REMP EXISTE
+  %QUESTION **
+  %%  Vous devez maintenant définir le remplissage du tableau
+  %%  des variables à partir des zones fichiers. Pour cela, saisissez
+  %%  des instructions.
+  %ETIQUETTE BOUCLE_INSTR
+  %QUESTION *IN INSTRUCTION
+  %%  Indiquez une instruction ADELIA
+  $INSTRUCTION
+  %QUESTION *ON 28
+  %%  Y a t'il une autre instruction ADELIA à saisir ?
+  %SI 28
+  %ALLER_A BOUCLE_INSTR
+  %FIN
+  %SI 01
+  %QUESTION *VA VAR_1
+  %%  Donnez le nom de la 1ère variable du sous-fichier
+  $VAR_1 = TAB_VAR(1)
+  %FIN
+  %SI 02
+  %QUESTION *VA VAR_2
+  %%  Donnez le nom de la 2ème variable du sous-fichier
+  $VAR_2 = TAB_VAR(2)
+  %FIN
+  %SI 03
+  %QUESTION *VA VAR_3
+  %%  Donnez le nom de la 3ème variable du sous-fichier
+  $VAR_3 = TAB_VAR(3)
+  %FIN
+  %SI 04
+  %QUESTION *VA VAR_4
+  %%  Donnez le nom de la 4ème variable du sous-fichier
+  $VAR_4 = TAB_VAR(4)
+  %FIN
+  %SI 05
+  %QUESTION *VA VAR_5
+  %%  Donnez le nom de la 5ème variable du sous-fichier
+  $VAR_5 = TAB_VAR(5)
+  %FIN
+  %SI 06
+  %QUESTION *VA VAR_6
+  %%  Donnez le nom de la 6ème variable du sous-fichier
+  $VAR_6 = TAB_VAR(6)
+  %FIN
+  %SI 07
+  %QUESTION *VA VAR_7
+  %%  Donnez le nom de la 7ème variable du sous-fichier
+  $VAR_7 = TAB_VAR(7)
+  %FIN
+  %SI 08
+  %QUESTION *VA VAR_8
+  %%  Donnez le nom de la 8ème variable du sous-fichier
+  $VAR_8 = TAB_VAR(8)
+  %FIN
+  %SI 09
+  %QUESTION *VA VAR_9
+  %%  Donnez le nom de la 9ème variable du sous-fichier
+  $VAR_9 = TAB_VAR(9)
+  %FIN
+INSERER_RG CREER_LIGNE_SFL (1)
+  LIRE_AVANT $VUE_REMP
+REFAIRE
+%SI 01
+%QUESTION *VA VAR_ENT_1
+%%  Donnez le nom de la 1ère variable libellé entete
+$VAR_ENT_1 = TAB_ENT(1)
+%FIN
+%SI 02
+%QUESTION *VA VAR_ENT_2
+%%  Donnez le nom de la 2ème variable libellé entete
+$VAR_ENT_2 = TAB_ENT(2)
+%FIN
+%SI 03
+%QUESTION *VA VAR_ENT_3
+%%  Donnez le nom de la 3ème variable libellé entete
+$VAR_ENT_3 = TAB_ENT(3)
+%FIN
+%SI 04
+%QUESTION *VA VAR_ENT_4
+%%  Donnez le nom de la 4ème variable libellé entete
+$VAR_ENT_4 = TAB_ENT(4)
+%FIN
+%SI 05
+%QUESTION *VA VAR_ENT_5
+%%  Donnez le nom de la 5ème variable libellé entete
+$VAR_ENT_5 = TAB_ENT(5)
+%FIN
+%SI 06
+%QUESTION *VA VAR_ENT_6
+%%  Donnez le nom de la 6ème variable libellé entete
+$VAR_ENT_6 = TAB_ENT(6)
+%FIN
+%SI 07
+%QUESTION *VA VAR_ENT_7
+%%  Donnez le nom de la 7ème variable libellé entete
+$VAR_ENT_7 = TAB_ENT(7)
+%FIN
+%SI 08
+%QUESTION *VA VAR_ENT_8
+%%  Donnez le nom de la 8ème variable libellé entete
+$VAR_ENT_8 = TAB_ENT(8)
+%FIN
+%SI 09
+%QUESTION *VA VAR_ENT_9
+%%  Donnez le nom de la 9ème variable libellé entete
+$VAR_ENT_9 = TAB_ENT(9)
+%FIN
+I1 = 1
+I2 = 2
+I3 = 3
+I4 = 4
+I5 = 5
+I6 = 6
+I7 = 7
+I8 = 8
+I9 = 9
+WRAN01 = 1
+INSERER_STD_F
+%SI 10
+******************
+VALIDATION      01
+******************
+INSERER_STD_D
+DEBUT_STD
+FIN_STD
+GESTION_SFL     1
+%SI 01
+TAB_VAR(I1) = $VAR_1
+%FIN
+%SI 02
+TAB_VAR(I2) = $VAR_2
+%FIN
+%SI 03
+TAB_VAR(I3) = $VAR_3
+%FIN
+%SI 04
+TAB_VAR(I4) = $VAR_4
+%FIN
+%SI 05
+TAB_VAR(I5) = $VAR_5
+%FIN
+%SI 06
+TAB_VAR(I6) = $VAR_6
+%FIN
+%SI 07
+TAB_VAR(I7) = $VAR_7
+%FIN
+%SI 08
+TAB_VAR(I8) = $VAR_8
+%FIN
+%SI 09
+TAB_VAR(I9) = $VAR_9
+%FIN
+LIRE $VUE_REMP
+%QUESTION **
+%%  Vous devez maintenant définir la mise à jour des zones fichier
+%%  à partir du tableau. Pour cela, saisissez des instructions.
+%ETIQUETTE BOUCLE_INST2
+%QUESTION *IN INSTRUCTION
+%%  Indiquez une instruction ADELIA
+$INSTRUCTION
+%QUESTION *ON 28
+%%  Y a t'il une autre instruction ADELIA à saisir ?
+%SI 28
+%ALLER_A BOUCLE_INST2
+%FIN
+SI $VUE_REMP EXISTE
+  METTRE_A_JOUR $VUE_REMP
+SINON
+  CREER $VUE_REMP
+FIN
+DEBUT_STD
+FIN_STD
+FIN_GESTION_SFL
+INSERER_STD_F
+%FIN
+*
+*
+DEBUT_PROCEDURE LATERA
+WW_NUM_LIGNE = 1
+TANT_QUE WW_NUM_LIGNE <= *DEL01
+INSERER_RG LIRE_LIGNE_SFL (1;WW_NUM_LIGNE)
+%SI 01
+TAB_VAR(J1) = $VAR_1
+%FIN
+%SI 02
+TAB_VAR(J2) = $VAR_2
+%FIN
+%SI 03
+TAB_VAR(J3) = $VAR_3
+%FIN
+%SI 04
+TAB_VAR(J4) = $VAR_4
+%FIN
+%SI 05
+TAB_VAR(J5) = $VAR_5
+%FIN
+%SI 06
+TAB_VAR(J6) = $VAR_6
+%FIN
+%SI 07
+TAB_VAR(J7) = $VAR_7
+%FIN
+%SI 08
+TAB_VAR(J8) = $VAR_8
+%FIN
+%SI 09
+TAB_VAR(J9) = $VAR_9
+%FIN
+%SI 01
+$VAR_1 = TAB_VAR(I1)
+%FIN
+%SI 02
+$VAR_2 = TAB_VAR(I2)
+%FIN
+%SI 03
+$VAR_3 = TAB_VAR(I3)
+%FIN
+%SI 04
+$VAR_4 = TAB_VAR(I4)
+%FIN
+%SI 05
+$VAR_5 = TAB_VAR(I5)
+%FIN
+%SI 06
+$VAR_6 = TAB_VAR(I6)
+%FIN
+%SI 07
+$VAR_7 = TAB_VAR(I7)
+%FIN
+%SI 08
+$VAR_8 = TAB_VAR(I8)
+%FIN
+%SI 09
+$VAR_9 = TAB_VAR(I9)
+%FIN
+INSERER_RG MAJ_LIGNE_SFL (1)
+  WW_NUM_LIGNE = WW_NUM_LIGNE + 1
+REFAIRE
+%SI 01
+$VAR_ENT_1 = TAB_ENT(I1)
+%FIN
+%SI 02
+$VAR_ENT_2 = TAB_ENT(I2)
+%FIN
+%SI 03
+$VAR_ENT_3 = TAB_ENT(I3)
+%FIN
+%SI 04
+$VAR_ENT_4 = TAB_ENT(I4)
+%FIN
+%SI 05
+$VAR_ENT_5 = TAB_ENT(I5)
+%FIN
+%SI 06
+$VAR_ENT_6 = TAB_ENT(I6)
+%FIN
+%SI 07
+$VAR_ENT_7 = TAB_ENT(I7)
+%FIN
+%SI 08
+$VAR_ENT_8 = TAB_ENT(I8)
+%FIN
+%SI 09
+$VAR_ENT_9 = TAB_ENT(I9)
+%FIN
+FIN_PROCEDURE
+INSERER_STD_F
+%QUESTION *ON 97
+%%  Voulez-vous générer le niveau II maintenant ?
+%SI 97
+%GENERER_N2 *SOUMIS
+%QUESTION **
+%%             Travaux de génération soumis.
+%%
+%%           Faire ENTREE pour continuer.
+%FIN

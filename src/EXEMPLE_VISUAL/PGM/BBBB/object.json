@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "BBBB",
+  "description" : "BBBB",
+  "creationDate" : "2006-05-04 13:20:04",
+  "updateDate" : "2006-05-04 13:30:55",
+  "visibility" : "PRIVATE",
+  "ibmName" : "BBBB",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "BBBB",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

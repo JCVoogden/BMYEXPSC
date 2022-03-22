@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "VA_HARMRE",
+  "description" : "Mot directeur entité à partir du MD dictionnaire",
+  "creationDate" : "2002-10-24 12:23:47",
+  "updateDate" : "2004-02-19 17:06:38",
+  "visibility" : "PRIVATE",
+  "ibmName" : "HARMRE",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "HARMRE",
+  "level2GenType" : 2,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

@@ -1,0 +1,13 @@
+               Aide par Display File
+
+7 variables ont été définies sur cette transaction. Elle sont toutes
+en Entrée/Sortie, seule la première est affichable.
+Il n'y a pas d'aide associée à la transaction par contre une aide sur
+zone est associée à toutes les variables. Sur les caractéristiques de
+chaque variable il faudra faire F17 aide sur zone.
+Il faut avant cela avoir précisé dans les standards de génération
+(Option 11) Aide sur zone "D". Il faut aussi que la maquette soit
+définie avec Aide sur zone. . : Oui
+Les noms de format doivent correspondre à ceux définis dans la
+maquette AIDVEN. Le nom du fichier DSPF doit être AIDVENFM qui est
+le nom donné par ADELIA (MAQUETTE + FM)

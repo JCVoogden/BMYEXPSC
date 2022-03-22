@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "EDI_TABLE_2D",
+  "description" : "Edition d'une table à 2 dimensions",
+  "creationDate" : "1995-06-08 07:11:25",
+  "updateDate" : "1995-06-08 07:11:25",
+  "visibility" : "PUBLIC",
+  "ibmName" : "EDICAT",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "EDICAT",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

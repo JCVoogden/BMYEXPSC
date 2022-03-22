@@ -1,0 +1,10 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20080910)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20080910)      bool       res
+*ROW_METADATA(ADELIA         20080910)      alpha(250) buf
+*ROW_METADATA(ADELIA         20080910)   FIN_DECL
+*ROW_METADATA(ADELIA         20080910)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080910)      APPELER_DLL 'VaConsul' 'VaConsulSendMail' 'mailnotes2' 'jean-christophe.voogden@hardis.fr' 'jean-christophe.voogden@hardis.fr' 'éàiôù' 'éàiôù' *blank *blank res buf 250
+*ROW_METADATA(ADELIA         20080910)      
+*ROW_METADATA(ADELIA         20080910)   FIN_INIT
+*ROW_METADATA(ADELIA                 )FIN_PGM

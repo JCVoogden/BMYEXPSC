@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="TEST" help="" id="0" name="ID_FEN0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="96"/>
+        <property id="-45" intValue="96"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="288"/>
+        <property id="-3" intValue="320"/>
+        <property id="-2" intValue="225"/>
+        <property id="-1" intValue="306"/>
+        <property id="3" stringValue="TEST"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="22" intValue="312"/>
+        <property id="23" intValue="241"/>
+    </properties>
+    <menu>
+        <item key1="0" key2="0" name="ID_EVT2" state="4112" text="Texte" type="1"/>
+        <item key1="0" key2="0" name="ID_EVT3" state="4112" text="Texte" type="1"/>
+        <item binaryType="dib" key1="0" key2="0" mimeType="image/png" name="ID_EVT4" state="4112" text="Image" type="3">iVBORw0KGgoAAAANSUhEUgAAAD8AAAAQCAIAAAAuxzBrAAAA+klEQVR4XtVSURaDIAzr0T2aR5tYjSGFrnxt5vEeaRpK2LT9zTAVCLZtx3K+3eSvYCoQPP2xHNr+A5gKN2L0+AA7kStL4OOVUabCCUSX9PKAeEFUlsDHK6NMhROee78Tm2/hH4gXRGUJq8dNBfrh9z49yscZLhPFy68iKyJeZ0anmggGSHQQ66M35wTcnfGktcB9A/LorjxmGpQrrItn1ppxhnVF+GacoPQWEIeKgpL1mSfhKFUEa8UoOhPvAjJLlApPWmIDOs+jhnACN7AnXtCNLvCkVeLX1idDOVzuaTYaNFS8BIaeoi0amnht5ejygN/CVHgVTIVX4QOBz/Lb71PVWAAAAABJRU5ErkJggg==</item>
+    </menu>
+    <controls>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ">
+            <properties>
+                <property id="-8" stringValue="TEST"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="68"/>
+                <property id="-2" intValue="21"/>
+                <property id="-1" intValue="20"/>
+            </properties>
+        </control>
+        <control associatedVariable="ZTEST" className="CHAMP_DE_SAISIE" dll="ENTFIELD" help="" kinematic="1" logicalProperty="TEST.TEST" name="ZTEST">
+            <properties>
+                <property id="-13" intValue="2"/>
+                <property id="-12" intValue="1"/>
+                <property id="-9" stringValue="2 10 -1"/>
+                <property id="-4" intValue="20"/>
+                <property id="-3" intValue="84"/>
+                <property id="-2" intValue="18"/>
+                <property id="-1" intValue="101"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ0">
+            <properties>
+                <property id="-8" stringValue="Insérer"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="17"/>
+                <property id="-1" intValue="205"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ1">
+            <properties>
+                <property id="-8" stringValue="Lire"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="49"/>
+                <property id="-1" intValue="205"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_OBJ2">
+            <properties>
+                <property id="-8" stringValue="SQLCODE"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="74"/>
+                <property id="-2" intValue="54"/>
+                <property id="-1" intValue="21"/>
+            </properties>
+        </control>
+        <control associatedVariable="SQLCODE" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="ID_OBJ3">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="6 -1 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="90"/>
+                <property id="-2" intValue="54"/>
+                <property id="-1" intValue="101"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="0" name="TEST">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 15 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="90"/>
+                <property id="-2" intValue="136"/>
+                <property id="-1" intValue="65"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="LISTE" dll="CONTAINR" help="" kinematic="0" name="ID_OBJ4">
+            <properties>
+                <property id="-4" intValue="72"/>
+                <property id="-3" intValue="150"/>
+                <property id="-2" intValue="96"/>
+                <property id="-1" intValue="166"/>
+                <property id="6"/>
+            </properties>
+        </control>
+    </controls>
+</window>

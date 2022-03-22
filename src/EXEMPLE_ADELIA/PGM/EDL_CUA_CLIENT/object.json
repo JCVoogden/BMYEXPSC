@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "EDL_CUA_CLIENT",
+  "description" : "Edition liste des clients CUA",
+  "creationDate" : "1995-06-20 07:22:45",
+  "updateDate" : "1995-06-20 07:22:45",
+  "visibility" : "PRIVATE",
+  "ibmName" : "ECUA01",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "ECUA01",
+  "programTemplateName" : "CUA_EDT_LIST",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

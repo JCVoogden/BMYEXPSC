@@ -1,0 +1,16 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   * Règle de gestion de type contrôle
+*ROW_METADATA(ADELIA                 )   * Contrôle du CODE ECHEANCE
+*ROW_METADATA(ADELIA                 )   REGLE_GESTION 0013 $$EXIST
+*ROW_METADATA(ADELIA                 )   DECLARER WGCECH;WG_COD_ECH 5
+*ROW_METADATA(ADELIA                 )   IDENTIFIER RAVIECHL_COD AVIECHL CLE ;WG_COD_ECH
+*ROW_METADATA(ADELIA                 )   WG_COD_ECH = $$EXIST
+*ROW_METADATA(ADELIA                 )   LIRE            RAVIECHL_COD
+*ROW_METADATA(ADELIA                 )   SI              RAVIECHL_COD  N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )   * Affectation zones à blanc
+*ROW_METADATA(ADELIA                 )     INIT_MSG $$EXIST
+*ROW_METADATA(ADELIA                 )     ANOMALIE
+*ROW_METADATA(ADELIA                 )   SINON
+*ROW_METADATA(ADELIA                 )   * Affectation des zones
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

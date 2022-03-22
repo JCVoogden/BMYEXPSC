@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "EXIST_COD_SINIC",
+  "description" : "Contrôle existence d'un sinistre pour un client",
+  "creationDate" : "1995-06-07 12:47:08",
+  "updateDate" : "1995-06-29 07:23:48",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

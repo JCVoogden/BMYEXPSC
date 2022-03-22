@@ -1,0 +1,16 @@
+{
+  "type" : "PGM",
+  "name" : "ARBO_WEB",
+  "description" : "Programme exemple gérant une arborescence",
+  "creationDate" : "2004-09-03 14:12:39",
+  "updateDate" : "2004-09-14 09:48:45",
+  "visibility" : "PRIVATE",
+  "ibmName" : "arborescence",
+  "programType" : "I",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "ARBOW",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "keepState" : true,
+  "canvasName" : "CANEVAS_EXEMPLE"
+}

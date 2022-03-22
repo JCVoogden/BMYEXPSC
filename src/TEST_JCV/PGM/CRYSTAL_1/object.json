@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "CRYSTAL_1",
+  "description" : "CRYSTAL_1",
+  "creationDate" : "2008-04-30 15:20:02",
+  "updateDate" : "2008-04-30 15:26:18",
+  "visibility" : "PRIVATE",
+  "ibmName" : "CRYS01",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "CRYS01",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT",
+  "unicode" : true
+}

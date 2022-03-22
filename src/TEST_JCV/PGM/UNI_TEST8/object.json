@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "UNI_TEST8",
+  "description" : "Test Unicode 8",
+  "creationDate" : "2008-04-17 13:16:53",
+  "updateDate" : "2008-04-18 08:20:54",
+  "visibility" : "PRIVATE",
+  "ibmName" : "UNTST8",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "UNTST8",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "unicode" : true
+}

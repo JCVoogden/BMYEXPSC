@@ -1,0 +1,11 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   DECLARER WGCPER;WG_COD_PER 2
+*ROW_METADATA(ADELIA                 )   IDENTIFIER RPERSONNL_COD PERSONNL CLE ;WG_COD_PER
+*ROW_METADATA(ADELIA                 )   WG_COD_PER = $COD_MAT_PERS
+*ROW_METADATA(ADELIA                 )   LIRE            RPERSONNL_COD
+*ROW_METADATA(ADELIA                 )   SI              RPERSONNL_COD  N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )     $$NOM_PERS = *BLANK
+*ROW_METADATA(ADELIA                 )   SINON
+*ROW_METADATA(ADELIA                 )     $$NOM_PERS = PNOM_PERS
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

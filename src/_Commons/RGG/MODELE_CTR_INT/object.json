@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "MODELE_CTR_INT",
+  "description" : "Modèle R.G de controle d'intégrité",
+  "creationDate" : "1995-06-29 07:24:32",
+  "updateDate" : "1995-06-29 07:24:32",
+  "visibility" : "PUBLIC",
+  "mrClass" : "VE",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

@@ -1,0 +1,13 @@
+{
+  "height" : 24,
+  "width" : 80,
+  "chgtInputDefault" : "N",
+  "rollUp" : "false",
+  "rollDown" : "false",
+  "printKey" : "false",
+  "helpKey" : "false",
+  "functionKeys" : "                        ",
+  "errorMode" : "O",
+  "errorMessageLine" : 24,
+  "zoneHelp" : ""
+}

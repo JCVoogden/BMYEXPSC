@@ -1,0 +1,43 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20100521)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      alpha(4096) test
+*ROW_METADATA(ADELIA         20100521)      bool        rc
+*ROW_METADATA(ADELIA         20100521)   FIN_DECL
+*ROW_METADATA(ADELIA         20100521)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      traiter_proc activate_key 7 'LY08TML' rc test
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      test = *blank
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)   FIN_INIT
+*ROW_METADATA(ADELIA         20100521)   DEBUT_PROCEDURE ACTIVATE_KEY *PUBLIC
+*ROW_METADATA(ADELIA         20100521)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20100521)         
+*ROW_METADATA(ADELIA         20100524)         num_bin_4    licenceNumber
+*ROW_METADATA(ADELIA         20100521)         alpha(128)   serialNumber
+*ROW_METADATA(ADELIA         20100521)         bool         returnCode
+*ROW_METADATA(ADELIA         20100521)         alpha(4096)  licenceData
+*ROW_METADATA(ADELIA         20100521)         
+*ROW_METADATA(ADELIA         20100521)         param licenceNumber serialNumber returnCode licenceData
+*ROW_METADATA(ADELIA         20100521)      FIN_DECL
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      /* invocation du service web
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      sw_appeler ws_licence_srv activateKey licenceNumber serialNumber
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      si *code_retour = *normal
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)         /* interrogation du résultat complexe
+*ROW_METADATA(ADELIA         20100521)         sw_recup_val ws_licence_srv activateKey /activateKeyReturn/returnCode  *texte returnCode
+*ROW_METADATA(ADELIA         20100521)         sw_recup_val ws_licence_srv activateKey /activateKeyReturn/licenceData *texte licenceData
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      fin
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      /* libération des ressources
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)      sw_liberer_res ws_licence_srv activateKey
+*ROW_METADATA(ADELIA         20100521)      
+*ROW_METADATA(ADELIA         20100521)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

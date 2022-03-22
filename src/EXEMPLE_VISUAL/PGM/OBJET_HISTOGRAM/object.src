@@ -1,0 +1,195 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA                 )   DEBUT_DECL
+*ROW_METADATA(ADELIA                 )      
+*ROW_METADATA(ADELIA                 )   FIN_DECL
+*ROW_METADATA(ADELIA                 )   DEBUT_INIT
+*ROW_METADATA(ADELIA                 )      
+*ROW_METADATA(ADELIA                 )      INITIALISER FEN_HST
+*ROW_METADATA(ADELIA                 )      EXECUTER FEN_HST
+*ROW_METADATA(ADELIA                 )   FIN_INIT
+*ROW_METADATA(ADELIA                 )   DEBUT_FENETRE FEN_HST
+*ROW_METADATA(ADELIA                 )      DEBUT_DECL
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Déclaration des paramètres du graphique *
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 NB_SERIES   
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 NB_POINTS
+*ROW_METADATA(ADELIA                 )         NUM_BIN_4 NUM_SERIE
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Déclaration du tableau contenant les valeurs des points de chaque série *   
+*ROW_METADATA(ADELIA                 )         NUM_E(15,4) TAB_VALP(4)
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Déclaration du tableau contenant les valeurs des bordures d'erreurs de chaque série *
+*ROW_METADATA(ADELIA                 )         NUM_E(15,4) TAB_ERR(4)
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Déclaration d'un tableau d'erreurs vide *
+*ROW_METADATA(ADELIA                 )         NUM_E(15,4) TAB_ERR_VIDE(4)
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Déclaration du tableau contenant les valeurs des labels associés à chaque point *
+*ROW_METADATA(ADELIA                 )         ALPHA(250) TAB_LAB(4)
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Déclaration du tableau contenant les valeurs des légendes associées à chaque série *
+*ROW_METADATA(ADELIA                 )         ALPHA(250) TAB_LEG(3)
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Déclaration du tableau contenant les valeurs des étiquettes associées à chaque série *
+*ROW_METADATA(ADELIA                 )         ALPHA(250) TAB_ETQ(4)
+*ROW_METADATA(ADELIA                 )      FIN_DECL
+*ROW_METADATA(ADELIA                 )      DEBUT_INIT
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         * Initialisation du nombre de séries et du nombre de points *
+*ROW_METADATA(ADELIA                 )         NB_SERIES=3
+*ROW_METADATA(ADELIA                 )         NB_POINTS=4
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET CBX_GRP
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )            * Insertion dans la liste de valeur, des propriétés de groupement d'un histogramme *
+*ROW_METADATA(ADELIA                 )            CBX_GRP:VALEUR_COURANTE='SIMPLE'
+*ROW_METADATA(ADELIA                 )            INSERER_ELT FEN_HST.CBX_GRP:LISTE
+*ROW_METADATA(ADELIA                 )            CBX_GRP:VALEUR_COURANTE='EMPILE'
+*ROW_METADATA(ADELIA                 )            INSERER_ELT FEN_HST.CBX_GRP:LISTE
+*ROW_METADATA(ADELIA                 )            CBX_GRP:VALEUR_COURANTE='EMPILE_POURC'
+*ROW_METADATA(ADELIA                 )            INSERER_ELT FEN_HST.CBX_GRP:LISTE
+*ROW_METADATA(ADELIA                 )            
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_INIT
+*ROW_METADATA(ADELIA                 )      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_GRPH
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_GRPH:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Initialisation des légendes et des étiquettes *
+*ROW_METADATA(ADELIA                 )               TAB_LEG(1)=CHS_LEG1:VALEUR
+*ROW_METADATA(ADELIA                 )               TAB_LEG(2)=CHS_LEG2:VALEUR
+*ROW_METADATA(ADELIA                 )               TAB_LEG(3)=CHS_LEG3:VALEUR
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               TAB_ETQ(1)=CHS_ETQ1:VALEUR
+*ROW_METADATA(ADELIA                 )               TAB_ETQ(2)=CHS_ETQ2:VALEUR
+*ROW_METADATA(ADELIA                 )               TAB_ETQ(3)=CHS_ETQ3:VALEUR
+*ROW_METADATA(ADELIA                 )               TAB_ETQ(4)=CHS_ETQ4:VALEUR
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Appel de la méthode qui permet d'initialiser le graphique *
+*ROW_METADATA(ADELIA                 )               APPELER_METHODE HST_DEMO DEFINIR_GRAPHIQUE NB_SERIES NB_POINTS TAB_ETQ TAB_LEG
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_DON
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_DON:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               * Affectation du numéro de la serie que l'on va dessiner *
+*ROW_METADATA(ADELIA                 )               num_Serie = CHS_NUMS:VALEUR
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Initialisation des valeurs de la serie 'num_serie' *
+*ROW_METADATA(ADELIA                 )               tab_ValP(1) = CHS_VALP1:VALEUR
+*ROW_METADATA(ADELIA                 )               tab_ValP(2) = CHS_VALP2:VALEUR
+*ROW_METADATA(ADELIA                 )               tab_ValP(3) = CHS_VALP3:VALEUR
+*ROW_METADATA(ADELIA                 )               tab_ValP(4) = CHS_VALP4:VALEUR
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               tab_Lab(1) = CHS_LAB1:VALEUR
+*ROW_METADATA(ADELIA                 )               tab_Lab(2) = CHS_LAB2:VALEUR
+*ROW_METADATA(ADELIA                 )               tab_Lab(3) = CHS_LAB3:VALEUR
+*ROW_METADATA(ADELIA                 )               tab_Lab(4) = CHS_LAB4:VALEUR
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               tab_Err(1) = CHS_ERR1:VALEUR
+*ROW_METADATA(ADELIA                 )               tab_Err(2) = CHS_ERR2:VALEUR
+*ROW_METADATA(ADELIA                 )               tab_Err(3) = CHS_ERR3:VALEUR
+*ROW_METADATA(ADELIA                 )               tab_Err(4) = CHS_ERR4:VALEUR
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Case des erreurs coché *  
+*ROW_METADATA(ADELIA                 )               SI CAC_ERR:VALEUR=*VRAI
+*ROW_METADATA(ADELIA                 )                  * Le tableau 'tab_err' est pris comme paramètre ( Les barres d'erreurs sont inserer) *
+*ROW_METADATA(ADELIA                 )                  appeler_methode HST_DEMO DEFINIR_DONNEES num_Serie tab_ValP tab_Lab tab_Err
+*ROW_METADATA(ADELIA                 )               * Case des erreurs décoché *
+*ROW_METADATA(ADELIA                 )               SINON
+*ROW_METADATA(ADELIA                 )                  * Le tableau 'tab_err_vide' est pris comme paramètre (aucune barre d'erreur n'est affiché) *
+*ROW_METADATA(ADELIA                 )                  appeler_methode HST_DEMO DEFINIR_DONNEES num_Serie tab_ValP tab_LaB tab_Err_vide
+*ROW_METADATA(ADELIA                 )               FIN            
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET CAC_ERR
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT CAC_ERR:ChangementValeur
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Les champs de saisie concernant les barres d'erreurs sont inactivées quand la case 'CAC_ERR' est décoché * 
+*ROW_METADATA(ADELIA                 )               CHS_ERR1:ACTIVITE=CAC_ERR:VALEUR
+*ROW_METADATA(ADELIA                 )               CHS_ERR2:ACTIVITE=CAC_ERR:VALEUR
+*ROW_METADATA(ADELIA                 )               CHS_ERR3:ACTIVITE=CAC_ERR:VALEUR
+*ROW_METADATA(ADELIA                 )               CHS_ERR4:ACTIVITE=CAC_ERR:VALEUR
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET HST_DEMO
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT HST_DEMO:HotHit
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Lors d'un clic sur un point, les propriété 'SERIE_CLIQUEE' et 'POINT_CLIQUE' reçoivent le numéro de la série et le numéro du point *
+*ROW_METADATA(ADELIA                 )               TXT_PT:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA                 )               TXT_NUMS:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA                 )               CHO_PT:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA                 )               CHO_NUMS:VISIBILITE=*VRAI
+*ROW_METADATA(ADELIA                 )               CHO_NUMS:VALEUR=HST_DEMO:SERIE_CLIQUEE
+*ROW_METADATA(ADELIA                 )               CHO_PT:VALEUR=HST_DEMO:POINT_CLIQUE
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_QUITTER
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_QUITTER:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               TERMINER
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_GRY
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_GRY:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Insertion ou non de la grille sur l'axe Y *
+*ROW_METADATA(ADELIA                 )               SI HST_DEMO:MONTRER_GRILLE_Y=*FAUX
+*ROW_METADATA(ADELIA                 )                  HST_DEMO:MONTRER_GRILLE_Y=*VRAI
+*ROW_METADATA(ADELIA                 )               SINON
+*ROW_METADATA(ADELIA                 )                  HST_DEMO:MONTRER_GRILLE_Y=*FAUX
+*ROW_METADATA(ADELIA                 )               FIN
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_ETQ
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_ETQ:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Insertion ou non des étiquettes sur l'axe des X *
+*ROW_METADATA(ADELIA                 )               SI HST_DEMO:MONTRER_ETIQUETTES_X=*VRAI
+*ROW_METADATA(ADELIA                 )                  HST_DEMO:MONTRER_ETIQUETTES_X=*FAUX
+*ROW_METADATA(ADELIA                 )               SINON
+*ROW_METADATA(ADELIA                 )                  HST_DEMO:MONTRER_ETIQUETTES_X=*VRAI
+*ROW_METADATA(ADELIA                 )               FIN
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET CBX_GRP
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT CBX_GRP:Selection
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Changement du mode de groupement lors de la sélection d'une valeur de la liste *
+*ROW_METADATA(ADELIA                 )               SI CBX_GRP:VALEUR='SIMPLE'
+*ROW_METADATA(ADELIA                 )                  HST_DEMO:GROUPEMENT=_HST_GROUP_SIMPLE
+*ROW_METADATA(ADELIA                 )               SINON
+*ROW_METADATA(ADELIA                 )                  SI CBX_GRP:VALEUR='EMPILE'
+*ROW_METADATA(ADELIA                 )                     HST_DEMO:GROUPEMENT=_HST_GROUP_EMPILE
+*ROW_METADATA(ADELIA                 )                  SINON
+*ROW_METADATA(ADELIA                 )                      HST_DEMO:GROUPEMENT=_HST_GROUP_EMPILE_POURC
+*ROW_METADATA(ADELIA                 )                  FIN
+*ROW_METADATA(ADELIA                 )               FIN
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )         DEBUT_OBJET BTN_LAB
+*ROW_METADATA(ADELIA                 )            DEBUT_EVT BTN_LAB:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               
+*ROW_METADATA(ADELIA                 )               * Insertion ou non des labels sur chaque point *
+*ROW_METADATA(ADELIA                 )               SI HST_DEMO:LABELS_ACTIVEES=*VRAI
+*ROW_METADATA(ADELIA                 )                  HST_DEMO:LABELS_ACTIVEES=*FAUX
+*ROW_METADATA(ADELIA                 )               SINON
+*ROW_METADATA(ADELIA                 )                  HST_DEMO:LABELS_ACTIVEES=*VRAI
+*ROW_METADATA(ADELIA                 )               FIN
+*ROW_METADATA(ADELIA                 )            FIN_EVT
+*ROW_METADATA(ADELIA                 )         FIN_OBJET
+*ROW_METADATA(ADELIA                 )      FIN_GEST_EVT
+*ROW_METADATA(ADELIA                 )      DEBUT_VERIF
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_VERIF
+*ROW_METADATA(ADELIA                 )      DEBUT_VALID
+*ROW_METADATA(ADELIA                 )         
+*ROW_METADATA(ADELIA                 )      FIN_VALID
+*ROW_METADATA(ADELIA                 )      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA                 )      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA                 )   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

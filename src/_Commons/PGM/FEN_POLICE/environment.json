@@ -1,0 +1,76 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "*1"
+    },
+    "guideWord" : "POLICE_S1",
+    "fileName" : "POLICEL",
+    "access" : "SEQUENTIAL_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "*1",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZWAFF_PARTIR",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "P_COD_ACTION",
+      "fileName" : ""
+    },
+    "shortName" : "PCACT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_ACTION",
+    "rename" : "PCACT",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "P_COD_RETOUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCRET",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "designation" : "P_COD_RETOUR",
+    "rename" : "PCRET",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "PP_NUM_POLICE",
+      "fileName" : ""
+    },
+    "shortName" : "PPPOL",
+    "length" : 5,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PPPOL",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "PPAR_AFFI",
+      "fileName" : ""
+    },
+    "shortName" : "PPAFF",
+    "length" : 6,
+    "type" : "ALPHANUMERIC",
+    "designation" : "PPAR_AFFI",
+    "rename" : "PPAFF",
+    "generation" : "LEVEL1"
+  }, {
+    "id" : {
+      "guideWord" : "WCOD_OUI_NON",
+      "fileName" : ""
+    },
+    "shortName" : "WWCON",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "designation" : "WCOD_OUI_NON",
+    "rename" : "WWCON",
+    "generation" : "LEVEL1"
+  } ]
+}

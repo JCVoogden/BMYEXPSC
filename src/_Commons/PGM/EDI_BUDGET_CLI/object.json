@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "EDI_BUDGET_CLI",
+  "description" : "Exemple de matching (Lecture 2 fichiers, rupture)",
+  "creationDate" : "1995-06-08 07:04:15",
+  "updateDate" : "2005-11-09 14:12:55",
+  "visibility" : "PUBLIC",
+  "ibmName" : "EDIBUD",
+  "programType" : "B",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "EDIBUD",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

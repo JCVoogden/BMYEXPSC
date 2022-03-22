@@ -1,0 +1,35 @@
+DEBUT_STD
+XNOM_PGM        = *NOM_PGM
+XUSER           = *USER
+FIN_STD
+*--------------------------* Edition en-tête
+EDITER ENTETE
+*--------------------------* Boucle de lecture du fichier
+LIRE_AVANT PERSONN_DA
+PRESENTER  PERSONN_DA
+TANT_QUE PERSONN_DA EXISTE
+*--------------------------* Appel de la procédure Détail
+  TRAITER_PROC SBRDET
+  LIRE_AVANT PERSONN_DA
+  PRESENTER  PERSONN_DA
+REFAIRE
+*--------------------------* Edition du compteur de totalisation
+EDITER TOTAL
+*--------------------------* Edition Fin de cet état
+EDITER FIN
+CHANGEMENT_PAGE
+*--------------------------* Procédure changement page
+EDITER   ENTETE
+FIN_TRAITEMENT
+DEBUT_PROCEDURE SBRDET
+*--------------------------* Procédure Détail
+LIRE PERSONN_01
+SI PERSONN_01  EXISTE
+  ZNOM_HIERARCHIE = PNOM_PERS
+SINON
+  ZNOM_HIERARCHIE = *BLANK
+  ZNOM_HIERARCHIE = 'Pas de chef'
+FIN
+ZWTOT_01 = ZWTOT_01 + 1
+EDITER DETAIL
+FIN_PROCEDURE

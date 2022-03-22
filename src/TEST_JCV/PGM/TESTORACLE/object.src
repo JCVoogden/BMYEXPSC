@@ -1,0 +1,43 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20081128)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20081128)      curseur c1 sql_base *cond(b1 > :b1) *lignes(1) *maj
+*ROW_METADATA(ADELIA         20081128)   FIN_DECL
+*ROW_METADATA(ADELIA         20081128)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20081128)      executer id_fen0
+*ROW_METADATA(ADELIA         20081128)   FIN_INIT
+*ROW_METADATA(ADELIA         20081128)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20081128)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20081128)         
+*ROW_METADATA(ADELIA         20081128)      FIN_DECL
+*ROW_METADATA(ADELIA         20081128)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20081128)         
+*ROW_METADATA(ADELIA         20081128)      FIN_INIT
+*ROW_METADATA(ADELIA         20081128)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20081128)         DEBUT_OBJET ID_OBJ
+*ROW_METADATA(ADELIA         20081128)            DEBUT_EVT ID_OBJ:BoutonGaucheClic
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20081128)                  ouvrir_sql_c c1
+*ROW_METADATA(ADELIA         20081128)                  id_sqlcode:texte = &num_alpha(*sqlcode)
+*ROW_METADATA(ADELIA         20081128)                  
+*ROW_METADATA(ADELIA         20081128)                  si *sqlcode = 0
+*ROW_METADATA(ADELIA         20081128)                     lire_av_sql_c c1
+*ROW_METADATA(ADELIA         20081128)                     fermer_sql_c c1
+*ROW_METADATA(ADELIA         20081128)                  fin
+*ROW_METADATA(ADELIA         20081128)                  
+*ROW_METADATA(ADELIA         20081128)                  annuler_maj
+*ROW_METADATA(ADELIA         20081128)                  
+*ROW_METADATA(ADELIA         20081128)                  presenter sql_base
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20081128)            FIN_EVT
+*ROW_METADATA(ADELIA         20081128)         FIN_OBJET
+*ROW_METADATA(ADELIA         20081128)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20081128)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20081128)         
+*ROW_METADATA(ADELIA         20081128)      FIN_VERIF
+*ROW_METADATA(ADELIA         20081128)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20081128)         
+*ROW_METADATA(ADELIA         20081128)      FIN_VALID
+*ROW_METADATA(ADELIA         20081128)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20081128)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20081128)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

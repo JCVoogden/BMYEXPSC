@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "MULTI1",
+  "description" : "Test1",
+  "creationDate" : "2007-11-15 12:11:25",
+  "updateDate" : "2007-11-15 12:58:57",
+  "visibility" : "PRIVATE",
+  "ibmName" : "MULTI1",
+  "programType" : "I",
+  "sourceType" : "MADELIA",
+  "layoutCode" : "MULTI1",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

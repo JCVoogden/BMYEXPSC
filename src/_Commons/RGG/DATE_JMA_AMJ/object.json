@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "DATE_JMA_AMJ",
+  "description" : "Inversion date JMA en AMJ",
+  "creationDate" : "1995-06-29 07:23:05",
+  "updateDate" : "1995-12-12 12:46:36",
+  "visibility" : "PUBLIC",
+  "mrClass" : "VP",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Mise à jour détail du véhicule" format1="02" functionKeys="  A        AX           " transactionType="SAISIE_SUPP" updateDate="1753-01-01" updateTime="00:00:00" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="02" eraseInput="false" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="23" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR02" truncate="false"/>
+    </formats>
+    <entities>
+        <entity format="02" name="VEHICU">
+            <properties>
+                <property access="1" name="NUM_IMA_VEHIC"/>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="NOM DU PROGRAMME" formatCode="02" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field formatCode="02" hilight="true" kind="CONSTANT" layoutCode="*" length="30" x="26" y="1">
+            <text text="Mise à jour détail du véhicule"/>
+        </field>
+        <field formatCode="02" kind="CONSTANT" layoutCode="*" length="30" x="2" y="3">
+            <text text="Numéro immatriculation véhicul"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Numéro immatriculation véhicul" formatCode="02" guideWord="ZZNUM_IMA_VEHIC" kind="VARIABLE" layoutCode="ZZNIVE" length="15" logicalProperty="VEHICU.NUM_IMA_VEHIC" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="9" type="STRING" underscore="true" validExtendedFieldName="false" validFieldName="false" x="33" y="3"/>
+        <field formatCode="02" kind="CONSTANT" layoutCode="*" length="30" x="2" y="4">
+            <text text="Marque du véhicule . . . . . ."/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Marque du véhicule" formatCode="02" guideWord="ZZMAR_VEHICULE" kind="VARIABLE" kinematicLogicalProperty="VEHICU.MAR_VEHICULE" layoutCode="ZZLVEH" length="40" logicalProperty="VEHICU.MAR_VEHICULE" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" numTextField="11" type="STRING" underscore="true" validExtendedFieldName="false" validFieldName="false" viewCode="DA" x="33" y="4"/>
+        <field formatCode="02" kind="CONSTANT" layoutCode="*" length="30" x="2" y="5">
+            <text text="Modèle du véhicule . . . . . ."/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Modèle du véhicule" formatCode="02" guideWord="ZZMDL_VEHICULE" kind="VARIABLE" kinematicLogicalProperty="VEHICU.MDL_VEHICULE" layoutCode="ZZLMVE" length="40" logicalProperty="VEHICU.MDL_VEHICULE" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" numTextField="13" type="STRING" underscore="true" validExtendedFieldName="false" validFieldName="false" viewCode="DA" x="33" y="5"/>
+        <field formatCode="02" kind="CONSTANT" layoutCode="*" length="30" x="2" y="6">
+            <text text="Puissance du véhicule. . . . ."/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Puissance du véhicule" formatCode="02" guideWord="ZZPUI_VEHICULE" kind="VARIABLE" kinematicLogicalProperty="VEHICU.PUI_VEHICULE" layoutCode="ZZWVEH" length="40" logicalProperty="VEHICU.PUI_VEHICULE" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" numTextField="15" type="STRING" underscore="true" validExtendedFieldName="false" validFieldName="false" viewCode="DA" x="33" y="6"/>
+        <field color="BLUE" formatCode="02" kind="CONSTANT" layoutCode="*" length="7" x="2" y="23">
+            <text text="F3=Exit"/>
+        </field>
+        <field color="BLUE" formatCode="02" kind="CONSTANT" layoutCode="*" length="11" x="11" y="23">
+            <text text="F12=Annuler"/>
+        </field>
+        <field color="BLUE" formatCode="02" kind="CONSTANT" layoutCode="*" length="13" x="24" y="23">
+            <text text="F13=Supprimer"/>
+        </field>
+    </fields>
+</transaction>

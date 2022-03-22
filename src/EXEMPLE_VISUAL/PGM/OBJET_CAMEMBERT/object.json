@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "OBJET_CAMEMBERT",
+  "description" : "Utilisation de l'objet camembert",
+  "creationDate" : "1999-01-27 15:32:56",
+  "updateDate" : "1999-01-28 17:52:39",
+  "visibility" : "PRIVATE",
+  "ibmName" : "OBJCMB",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "OBJCMB",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

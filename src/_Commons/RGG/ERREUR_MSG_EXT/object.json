@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "ERREUR_MSG_EXT",
+  "description" : "Erreur message externe",
+  "creationDate" : "1996-07-05 09:06:53",
+  "updateDate" : "1996-07-05 09:18:54",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

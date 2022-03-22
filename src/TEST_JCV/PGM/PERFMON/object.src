@@ -1,0 +1,93 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20090514)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20090514)      num_bin_4 cpu
+*ROW_METADATA(ADELIA         20100127)      num_bin_4 mem
+*ROW_METADATA(ADELIA         20100127)      bool      rc
+*ROW_METADATA(ADELIA         20090514)   FIN_DECL
+*ROW_METADATA(ADELIA         20090514)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20090514)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20090514)      executer    id_fen0
+*ROW_METADATA(ADELIA         20090514)   FIN_INIT
+*ROW_METADATA(ADELIA         20090514)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20090514)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20090514)         
+*ROW_METADATA(ADELIA         20090514)      FIN_DECL
+*ROW_METADATA(ADELIA         20090514)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20090514)         * initialisation des sliders
+*ROW_METADATA(ADELIA         20090514)         id_cpu:valeur_max = 100
+*ROW_METADATA(ADELIA         20090514)         id_mem:valeur_max = 100
+*ROW_METADATA(ADELIA         20090514)         
+*ROW_METADATA(ADELIA         20090514)         traiter_proc demarrer
+*ROW_METADATA(ADELIA         20090514)         traiter_proc collecter
+*ROW_METADATA(ADELIA         20090514)         
+*ROW_METADATA(ADELIA         20090514)      FIN_INIT
+*ROW_METADATA(ADELIA         20090514)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20100127)         DEBUT_OBJET ID_TIMER
+*ROW_METADATA(ADELIA         20100127)            DEBUT_EVT ID_TIMER:Top
+*ROW_METADATA(ADELIA         20090514)               traiter_proc collecter
+*ROW_METADATA(ADELIA         20090514)               
+*ROW_METADATA(ADELIA         20100127)            FIN_EVT
+*ROW_METADATA(ADELIA         20100127)         FIN_OBJET
+*ROW_METADATA(ADELIA         20090514)         DEBUT_OBJET ID_FEN0
+*ROW_METADATA(ADELIA         20090514)            DEBUT_EVT ID_FEN0:Fermeture
+*ROW_METADATA(ADELIA         20090514)               traiter_proc arreter
+*ROW_METADATA(ADELIA         20090514)               
+*ROW_METADATA(ADELIA         20090514)            FIN_EVT
+*ROW_METADATA(ADELIA         20090514)         FIN_OBJET
+*ROW_METADATA(ADELIA         20100127)         DEBUT_OBJET ID_START
+*ROW_METADATA(ADELIA         20100127)            DEBUT_EVT ID_START:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20100127)               si id_pid:activite = *vrai
+*ROW_METADATA(ADELIA         20100127)                  appeler_dll 'perfad.dll' 'start_process_collect' pid rc
+*ROW_METADATA(ADELIA         20100127)                  
+*ROW_METADATA(ADELIA         20100127)                  si rc
+*ROW_METADATA(ADELIA         20100127)                     id_pid:activite = *faux
+*ROW_METADATA(ADELIA         20100127)                     id_start:texte  = 'Stop'
+*ROW_METADATA(ADELIA         20100127)                  fin
+*ROW_METADATA(ADELIA         20100127)               sinon
+*ROW_METADATA(ADELIA         20100127)                  appeler_dll 'perfad.dll' 'stop_process_collect' pid rc
+*ROW_METADATA(ADELIA         20100127)                  
+*ROW_METADATA(ADELIA         20100127)                  id_pid:activite = *vrai
+*ROW_METADATA(ADELIA         20100127)                  id_start:texte  = 'Start'
+*ROW_METADATA(ADELIA         20100127)               fin
+*ROW_METADATA(ADELIA         20100127)            FIN_EVT
+*ROW_METADATA(ADELIA         20100127)         FIN_OBJET
+*ROW_METADATA(ADELIA         20090514)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20090514)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20090514)         
+*ROW_METADATA(ADELIA         20090514)      FIN_VERIF
+*ROW_METADATA(ADELIA         20090514)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20090514)         
+*ROW_METADATA(ADELIA         20090514)      FIN_VALID
+*ROW_METADATA(ADELIA         20090514)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20090514)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20090514)   FIN_FENETRE
+*ROW_METADATA(ADELIA         20090514)   DEBUT_PROCEDURE DEMARRER
+*ROW_METADATA(ADELIA         20090514)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20090514)         
+*ROW_METADATA(ADELIA         20090514)      FIN_DECL
+*ROW_METADATA(ADELIA         20090514)      * démarrage de la collection des données...
+*ROW_METADATA(ADELIA         20100127)      appeler_dll 'perfad.dll' 'start_collect'
+*ROW_METADATA(ADELIA         20100127)      
+*ROW_METADATA(ADELIA         20100127)      id_fen0.id_timer:activite = *vrai
+*ROW_METADATA(ADELIA         20090514)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         20090514)   DEBUT_PROCEDURE COLLECTER
+*ROW_METADATA(ADELIA         20090514)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20090514)         num_bin_4 i
+*ROW_METADATA(ADELIA         20090514)         num_bin_4 j
+*ROW_METADATA(ADELIA         20090514)         
+*ROW_METADATA(ADELIA         20090514)      FIN_DECL
+*ROW_METADATA(ADELIA         20090514)      * collection
+*ROW_METADATA(ADELIA         20100127)      appeler_dll 'perfad.dll' 'collect_data' cpu mem ppid
+*ROW_METADATA(ADELIA         20090514)      id_fen0.id_cpu:valeur_indicateur = cpu
+*ROW_METADATA(ADELIA         20090514)      id_fen0.id_mem:valeur_indicateur = mem
+*ROW_METADATA(ADELIA         20090514)      id_fen0.cd_cpu:texte = 'Processeur (' /// &num_alpha(cpu) /// '%)'
+*ROW_METADATA(ADELIA         20100127)      id_fen0.cd_mem:texte = 'Mémoire (' /// &num_alpha(mem) /// '%)'
+*ROW_METADATA(ADELIA         20090514)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA         20090514)   DEBUT_PROCEDURE ARRETER
+*ROW_METADATA(ADELIA         20090514)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20090514)         
+*ROW_METADATA(ADELIA         20090514)      FIN_DECL
+*ROW_METADATA(ADELIA         20100127)      * arrêt de la collection des données...
+*ROW_METADATA(ADELIA         20100127)      appeler_dll 'perfad.dll' 'stop_collect'
+*ROW_METADATA(ADELIA         20090514)   FIN_PROCEDURE
+*ROW_METADATA(ADELIA                 )FIN_PGM

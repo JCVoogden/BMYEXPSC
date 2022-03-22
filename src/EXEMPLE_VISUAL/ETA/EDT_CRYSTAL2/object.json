@@ -1,0 +1,10 @@
+{
+  "type" : "ETA",
+  "name" : "EDT_CRYSTAL2",
+  "description" : "Exemple edtion Crystal Reports (c) avec sous-états",
+  "creationDate" : "2004-06-14 14:57:04",
+  "updateDate" : "2004-06-21 15:10:30",
+  "visibility" : "PRIVATE",
+  "layoutCode" : "EDTCY2",
+  "nature" : "CRYSTAL"
+}

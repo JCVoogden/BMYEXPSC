@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "EDT_CRYSTAL_IHM",
+  "description" : "Interface du programme d'édition",
+  "creationDate" : "2004-06-11 14:14:25",
+  "updateDate" : "2005-08-10 16:28:00",
+  "visibility" : "PRIVATE",
+  "ibmName" : "EDTIHM",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "EDTIHM",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "OBJET_HISTOGRAM",
+  "description" : "Utilisation de l'objet histogramme",
+  "creationDate" : "1999-01-27 15:33:20",
+  "updateDate" : "1999-01-28 17:53:16",
+  "visibility" : "PRIVATE",
+  "ibmName" : "OBJHST",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "OBJHST",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

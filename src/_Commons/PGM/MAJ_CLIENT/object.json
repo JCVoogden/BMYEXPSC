@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "MAJ_CLIENT",
+  "description" : "Mise à jours des clients",
+  "creationDate" : "1995-06-08 07:33:33",
+  "updateDate" : "1995-06-08 07:33:33",
+  "visibility" : "PUBLIC",
+  "ibmName" : "MAJCLI",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "MAJCLI",
+  "programTemplateName" : "SAI_2T_F6",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

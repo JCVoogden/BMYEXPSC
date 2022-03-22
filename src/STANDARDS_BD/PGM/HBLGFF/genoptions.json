@@ -1,0 +1,15 @@
+{
+  "endProgramCode" : "LR",
+  "dateFormat" : "SYSTEM",
+  "ioErrors" : "YES",
+  "fileOptions" : [ {
+    "id" : {
+      "fileName" : "FICHIEL1"
+    },
+    "infoDs" : true
+  }, {
+    "id" : {
+      "fileName" : "FICHIEL3"
+    }
+  } ]
+}

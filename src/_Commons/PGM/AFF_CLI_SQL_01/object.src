@@ -1,0 +1,76 @@
+*ROW_METADATA(ADELIA         20070619)INITIALISER 01
+*ROW_METADATA(ADELIA                0)TRAITER 01
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)INITIALISATION 01
+*ROW_METADATA(ADELIA         20070731)********************
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)XNOM_PGM        = *NOM_PGM
+*ROW_METADATA(ADELIA                0)ZZCOD_REGLEMENT = *BLANK
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)TRANSACTION 01
+*ROW_METADATA(ADELIA         20070731)********************
+*ROW_METADATA(ADELIA                0)SI *F03 OU *F12
+*ROW_METADATA(ADELIA                0)  TERMINER
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)VERIFIER 01
+*ROW_METADATA(ADELIA                0)INITIALISER 02
+*ROW_METADATA(ADELIA                0)TRAITER 02
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)VERIFICATION 01
+*ROW_METADATA(ADELIA         20070731)********************
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)REGLE_GESTION MSG0001 ZZCOD_REGLEMENT
+*ROW_METADATA(ADELIA                0)SI ZZCOD_REGLEMENT = *BLANK
+*ROW_METADATA(ADELIA                0)  ANOMALIE
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)* Contrôle d'existence du code règlement
+*ROW_METADATA(ADELIA                0)REGLE_GESTION MOD0001 ZZCOD_REGLEMENT
+*ROW_METADATA(ADELIA                0)LIRE            REGLEMT_DA
+*ROW_METADATA(ADELIA                0)SI REGLEMT_DA N_EXISTE_PAS
+*ROW_METADATA(ADELIA                0)  INIT_MSG ZZCOD_REGLEMENT
+*ROW_METADATA(ADELIA                0)  ANOMALIE
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)TRT_GUIDE 01
+*ROW_METADATA(ADELIA         20070731)********************
+*ROW_METADATA(ADELIA                0)* Guide d'affichage de la fenêtre des REGLEMENTS
+*ROW_METADATA(ADELIA                0)GUIDE ZZCOD_REGLEMENT
+*ROW_METADATA(ADELIA                0)APPELER FEN_REGLEMENT P_COD_RETOUR P_COD_ACTION ZZCOD_REGLEMENT
+*ROW_METADATA(ADELIA                0)FIN_GUIDE
+*ROW_METADATA(ADELIA                0)FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)INITIALISATION 02
+*ROW_METADATA(ADELIA         20070731)********************
+*ROW_METADATA(ADELIA                0)
+*ROW_METADATA(ADELIA                0)* Ecriture de la requête SQL statique
+*ROW_METADATA(ADELIA                0)* pour chargement du sous-fichier *1
+*ROW_METADATA(ADELIA                0)SQL_SFL 1 ZZCOD_CLIENT ZZNOM_CLIENT ZZBUR_DIS_CLI VARI1(1,1)
+*ROW_METADATA(ADELIA                0)+ SELECT CCCLI, CLCLI, CBDCL FROM CLIENTS
+*ROW_METADATA(ADELIA                0)+ WHERE CCRGT = :ZZCOD_REGLEMENT
+*ROW_METADATA(ADELIA                0)F_SQL_SFL
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)LIRE            REGLEMT_DA
+*ROW_METADATA(ADELIA                0)PRESENTER       REGLEMT_DA
+*ROW_METADATA(ADELIA                0)XNOM_PGM        = *NOM_PGM
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)EFFACER         1
+*ROW_METADATA(ADELIA                0)GESTION_SFL     1
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)MAJ_SFL
+*ROW_METADATA(ADELIA                0)FIN_GESTION_SFL
+*ROW_METADATA(ADELIA                0)
+*ROW_METADATA(ADELIA                0)********************
+*ROW_METADATA(ADELIA                0)TRANSACTION 02
+*ROW_METADATA(ADELIA         20070731)********************
+*ROW_METADATA(ADELIA                0)SI *F03
+*ROW_METADATA(ADELIA                0)  TERMINER
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)SI *F12
+*ROW_METADATA(ADELIA                0)  TRAITER 01
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)INITIALISER 01
+*ROW_METADATA(ADELIA                0)TRAITER 01
+*ROW_METADATA(ADELIA                0)

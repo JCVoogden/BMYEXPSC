@@ -1,0 +1,75 @@
+*ROW_METADATA(ADELIA                0)DEBUT_STD
+*ROW_METADATA(ADELIA                0)XNOM_PGM        = *NOM_PGM
+*ROW_METADATA(ADELIA                0)XUSER           = *USER
+*ROW_METADATA(ADELIA                0)FIN_STD
+*ROW_METADATA(ADELIA                0)*--------------------------* Edition de l'en-tête
+*ROW_METADATA(ADELIA                0)EDITER ENTETE
+*ROW_METADATA(ADELIA                0)*--------------------------* Lecture 1er enreg des fichiers
+*ROW_METADATA(ADELIA                0)LIRE_AVANT VENTE_01
+*ROW_METADATA(ADELIA                0)LIRE_AVANT BUDGET_02
+*ROW_METADATA(ADELIA                0)*--------------------------* Appel de la procédure de test
+*ROW_METADATA(ADELIA                0)TRAITER_PROC SBTEST
+*ROW_METADATA(ADELIA                0)TANT_QUE VENTE_01 EXISTE OU BUDGET_02 EXISTE
+*ROW_METADATA(ADELIA                0)  *--------------------------* Détection des ruptures
+*ROW_METADATA(ADELIA                0)  TRAITER_CHG RUP_CLIENT
+*ROW_METADATA(ADELIA                0)  *--------------------------* Appel du traitement détail
+*ROW_METADATA(ADELIA                0)  TRAITER_PROC SBRDET
+*ROW_METADATA(ADELIA                0)  *--------------------------* Appel de la procédure de test
+*ROW_METADATA(ADELIA                0)  TRAITER_PROC SBTEST
+*ROW_METADATA(ADELIA                0)  *--------------------------* Détection des ruptures totales
+*ROW_METADATA(ADELIA                0)  TRAITER_TOTAL RUP_CLIENT
+*ROW_METADATA(ADELIA                0)REFAIRE
+*ROW_METADATA(ADELIA                0)EDITER TOTAL
+*ROW_METADATA(ADELIA                0)CHANGEMENT_PAGE
+*ROW_METADATA(ADELIA                0)*--------------------------* Procédure changement page
+*ROW_METADATA(ADELIA                0)EDITER ENTETE
+*ROW_METADATA(ADELIA                0)FIN_TRAITEMENT
+*ROW_METADATA(ADELIA         20051109)DEBUT_PROCEDURE SBTEST
+*ROW_METADATA(ADELIA                0)*--------------------------* Procedure contrôle argument de rupture
+*ROW_METADATA(ADELIA                0)SI VENTE_01 N_EXISTE_PAS ET VCOD_CLIENT <> *HIVAL
+*ROW_METADATA(ADELIA                0)  VCOD_CLIENT = *HIVAL
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)SI BUDGET_02 N_EXISTE_PAS ET BCOD_CLIENT <> *HIVAL
+*ROW_METADATA(ADELIA                0)  BCOD_CLIENT = *HIVAL
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)SI VCOD_CLIENT < BCOD_CLIENT
+*ROW_METADATA(ADELIA                0)  CCOD_CLIENT = VCOD_CLIENT
+*ROW_METADATA(ADELIA                0)SINON
+*ROW_METADATA(ADELIA                0)  CCOD_CLIENT = BCOD_CLIENT
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)FIN_PROCEDURE
+*ROW_METADATA(ADELIA                0)DEBUT_PROCEDURE SBRDET
+*ROW_METADATA(ADELIA                0)*--------------------------* Procédure détail
+*ROW_METADATA(ADELIA                0)SI VCOD_CLIENT = BCOD_CLIENT
+*ROW_METADATA(ADELIA                0)  ZWMHT_CAF_CLI = VMHT_VENTE + ZWMHT_CAF_CLI
+*ROW_METADATA(ADELIA                0)  ZWMHT_BUD_CLI = BMHT_BUD_CLI + ZWMHT_BUD_CLI
+*ROW_METADATA(ADELIA                0)  LIRE_AVANT VENTE_01
+*ROW_METADATA(ADELIA                0)  LIRE_AVANT BUDGET_02
+*ROW_METADATA(ADELIA                0)SINON
+*ROW_METADATA(ADELIA                0)  SI VCOD_CLIENT < BCOD_CLIENT
+*ROW_METADATA(ADELIA                0)    ZWMHT_CAF_CLI = VMHT_VENTE + ZWMHT_CAF_CLI
+*ROW_METADATA(ADELIA                0)    LIRE_AVANT VENTE_01
+*ROW_METADATA(ADELIA                0)  SINON
+*ROW_METADATA(ADELIA                0)    ZWMHT_BUD_CLI = BMHT_BUD_CLI + ZWMHT_BUD_CLI
+*ROW_METADATA(ADELIA                0)    LIRE_AVANT BUDGET_02
+*ROW_METADATA(ADELIA                0)  FIN
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)FIN_PROCEDURE
+*ROW_METADATA(ADELIA                0)TRT_CHANGEMENT RUP_CLIENT
+*ROW_METADATA(ADELIA                0)*--------------------------* Procédure en-tête
+*ROW_METADATA(ADELIA                0)LIRE       CLIENTS_DA
+*ROW_METADATA(ADELIA                0)PRESENTER  CLIENTS_DA
+*ROW_METADATA(ADELIA                0)FIN_TRAITEMENT
+*ROW_METADATA(ADELIA                0)TRT_TOTAL RUP_CLIENT
+*ROW_METADATA(ADELIA                0)*--------------------------* Procédure total
+*ROW_METADATA(ADELIA                0)ZWMHT_ECART = ZWMHT_BUD_CLI - ZWMHT_CAF_CLI
+*ROW_METADATA(ADELIA                0)SI ZWMHT_BUD_CLI <> 0
+*ROW_METADATA(ADELIA                0)  ZWPER_ECART = (ZWMHT_ECART / ZWMHT_BUD_CLI) * 100
+*ROW_METADATA(ADELIA                0)FIN
+*ROW_METADATA(ADELIA                0)EDITER DETAIL
+*ROW_METADATA(ADELIA                0)ZWTOT_REALISE = ZWTOT_REALISE + ZWMHT_CAF_CLI
+*ROW_METADATA(ADELIA                0)ZWTOT_BUDGET  = ZWTOT_BUDGET + ZWMHT_BUD_CLI
+*ROW_METADATA(ADELIA                0)ZWMHT_CAF_CLI = 0
+*ROW_METADATA(ADELIA                0)ZWMHT_BUD_CLI = 0
+*ROW_METADATA(ADELIA                0)ZWPER_ECART = 0
+*ROW_METADATA(ADELIA                0)FIN_TRAITEMENT

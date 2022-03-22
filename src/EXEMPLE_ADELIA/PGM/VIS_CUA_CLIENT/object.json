@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "VIS_CUA_CLIENT",
+  "description" : "Visualisation d'un client CUA",
+  "creationDate" : "1995-06-20 07:24:15",
+  "updateDate" : "1995-06-20 07:24:15",
+  "visibility" : "PRIVATE",
+  "ibmName" : "VCUA01",
+  "programType" : "I",
+  "sourceType" : "ADELIA",
+  "layoutCode" : "VCUA01",
+  "programTemplateName" : "CUA_VISU",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

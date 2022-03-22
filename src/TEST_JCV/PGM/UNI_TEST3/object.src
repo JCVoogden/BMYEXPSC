@@ -1,0 +1,114 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20080305)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20080305)      num_bin_4  code
+*ROW_METADATA(ADELIA         20080407)      curseur c1 ansi_unicode
+*ROW_METADATA(ADELIA         20080407)      num_bin_4  progression
+*ROW_METADATA(ADELIA         20080408)      num_bin_4  calcul
+*ROW_METADATA(ADELIA         20080408)      num_bin_4  rc
+*ROW_METADATA(ADELIA         20080305)      
+*ROW_METADATA(ADELIA         20080305)   FIN_DECL
+*ROW_METADATA(ADELIA         20080305)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20080305)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20080305)      executer    id_fen0
+*ROW_METADATA(ADELIA         20080305)      
+*ROW_METADATA(ADELIA         20080305)   FIN_INIT
+*ROW_METADATA(ADELIA         20080305)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20080305)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20080305)         
+*ROW_METADATA(ADELIA         20080305)      FIN_DECL
+*ROW_METADATA(ADELIA         20080305)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20080408)         
+*ROW_METADATA(ADELIA         20080408)         * visible     = 1
+*ROW_METADATA(ADELIA         20080408)         * actif       = 2
+*ROW_METADATA(ADELIA         20080408)         * suppesp     = 4
+*ROW_METADATA(ADELIA         20080408)         * largspec    = 8
+*ROW_METADATA(ADELIA         20080408)         * bouton      = 256
+*ROW_METADATA(ADELIA         20080408)         * bascule     = 512
+*ROW_METADATA(ADELIA         20080408)         * option      = 1024
+*ROW_METADATA(ADELIA         20080408)         * separateur  = 2048
+*ROW_METADATA(ADELIA         20080408)         * releve      = 4096
+*ROW_METADATA(ADELIA         20080408)         * enfonce     = 8192
+*ROW_METADATA(ADELIA         20080408)         * indetermine = 16384
+*ROW_METADATA(ADELIA         20080408)         
+*ROW_METADATA(ADELIA         20080408)         
+*ROW_METADATA(ADELIA         20080408)         appeler_methode bar fixer_styles_outil 'ouvrir' 259 rc
+*ROW_METADATA(ADELIA         20080408)         appeler_methode bar fixer_styles_outil 'lire'   257 rc
+*ROW_METADATA(ADELIA         20080408)         appeler_methode bar fixer_styles_outil 'fermer' 257 rc
+*ROW_METADATA(ADELIA         20080408)         
+*ROW_METADATA(ADELIA         20080408)         
+*ROW_METADATA(ADELIA         20080305)      FIN_INIT
+*ROW_METADATA(ADELIA         20080305)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20080404)         DEBUT_OBJET ID_LST
+*ROW_METADATA(ADELIA         20080404)            DEBUT_EVT ID_LST:Selection
+*ROW_METADATA(ADELIA         20080404)               rapatrier ansi_unicode
+*ROW_METADATA(ADELIA         20080404)               presenter ansi_unicode
+*ROW_METADATA(ADELIA         20080404)            FIN_EVT
+*ROW_METADATA(ADELIA         20080404)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080407)         DEBUT_OBJET ID_OBJ7
+*ROW_METADATA(ADELIA         20080407)            DEBUT_EVT ID_OBJ7:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20080407)               APPELER_METHODE ID_BMP CHARGER_BITMAP NOM_BMP
+*ROW_METADATA(ADELIA         20080407)            FIN_EVT
+*ROW_METADATA(ADELIA         20080407)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080408)         DEBUT_OBJET BAR
+*ROW_METADATA(ADELIA         20080408)            DEBUT_EVT BAR:ClicOutil
+*ROW_METADATA(ADELIA         20080408)               
+*ROW_METADATA(ADELIA         20080408)               choix_selon bar:nom_outil
+*ROW_METADATA(ADELIA         20080408)                  
+*ROW_METADATA(ADELIA         20080408)               si_valeur 'OUVRIR'
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080408)                     ouvrir_sql_c c1
+*ROW_METADATA(ADELIA         20080408)                     code = *sqlcode
+*ROW_METADATA(ADELIA         20080408)                     sqlcode:texte = code   
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20080408)               
+*ROW_METADATA(ADELIA         20080408)                  appeler_methode bar fixer_styles_outil 'ouvrir' 257 rc
+*ROW_METADATA(ADELIA         20080408)                  appeler_methode bar fixer_styles_outil 'lire'   259 rc
+*ROW_METADATA(ADELIA         20080408)                  appeler_methode bar fixer_styles_outil 'fermer' 259 rc
+*ROW_METADATA(ADELIA         20080408)                  
+*ROW_METADATA(ADELIA         20080408)               si_valeur 'LIRE'
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080408)                     lire_av_sql_c c1
+*ROW_METADATA(ADELIA         20080408)                     code = *sqlcode
+*ROW_METADATA(ADELIA         20080408)                     sqlcode:texte      = code
+*ROW_METADATA(ADELIA         20080408)                     presenter ansi_unicode
+*ROW_METADATA(ADELIA         20080408)                     id_obj:texte = 'Texte cadre : ' // zunicode
+*ROW_METADATA(ADELIA         20080408)                     inserer_elt id_lst:liste
+*ROW_METADATA(ADELIA         20080408)                  
+*ROW_METADATA(ADELIA         20080408)                     progression = progression + 1
+*ROW_METADATA(ADELIA         20080408)                     calcul = progression / 6
+*ROW_METADATA(ADELIA         20080408)                     reste id_slider:valeur
+*ROW_METADATA(ADELIA         20080408)                  
+*ROW_METADATA(ADELIA         20080408)                     calcul = progression / 6
+*ROW_METADATA(ADELIA         20080408)                     reste id_progress:valeur_indicateur
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20080408)               
+*ROW_METADATA(ADELIA         20080408)               si_valeur 'FERMER'
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20080408)                     fermer_sql_c c1
+*ROW_METADATA(ADELIA         20080408)                     code = *sqlcode
+*ROW_METADATA(ADELIA         20080408)                     sqlcode:texte = code
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20080408)               
+*ROW_METADATA(ADELIA         20080408)                  appeler_methode bar fixer_styles_outil 'ouvrir' 259 rc
+*ROW_METADATA(ADELIA         20080408)                  appeler_methode bar fixer_styles_outil 'lire'   257 rc
+*ROW_METADATA(ADELIA         20080408)                  appeler_methode bar fixer_styles_outil 'fermer' 257 rc
+*ROW_METADATA(ADELIA         20080408)               
+*ROW_METADATA(ADELIA         20080408)               si_valeur 'QUITTER'
+*ROW_METADATA(ADELIA         20080408)                  terminer
+*ROW_METADATA(ADELIA         20080408)               
+*ROW_METADATA(ADELIA         20080408)               fin_choix_selon
+*ROW_METADATA(ADELIA         20080408)               
+*ROW_METADATA(ADELIA         20080408)               
+*ROW_METADATA(ADELIA         20080408)            FIN_EVT
+*ROW_METADATA(ADELIA         20080408)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080305)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20080305)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20080305)         
+*ROW_METADATA(ADELIA         20080305)      FIN_VERIF
+*ROW_METADATA(ADELIA         20080305)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20080305)         
+*ROW_METADATA(ADELIA         20080305)      FIN_VALID
+*ROW_METADATA(ADELIA         20080305)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080305)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080305)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

@@ -1,0 +1,126 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "*1"
+    },
+    "guideWord" : "CLIENTS_S1",
+    "fileName" : "CLIENTL1",
+    "access" : "SEQUENTIAL_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "*1",
+        "ordinal" : 1
+      },
+      "guideWord" : "CNOM_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "*4"
+    },
+    "guideWord" : "SFL04",
+    "access" : "NONE",
+    "update" : "NO_UPDATE",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "code" : "01"
+    },
+    "guideWord" : "VUE_SUPPRESSION",
+    "fileName" : "CLIENTSL",
+    "access" : "BY_KEY",
+    "update" : "UPDATE_ONLY",
+    "generation" : "NONE",
+    "accesses" : [ {
+      "id" : {
+        "code" : "01",
+        "ordinal" : 1
+      },
+      "guideWord" : "ZZCOD_CLIENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "GA"
+    },
+    "guideWord" : "VUE_MANUEL_SFL1",
+    "fileName" : "*1",
+    "access" : "DIRECT",
+    "update" : "UPDATE_ONLY",
+    "generation" : "LEVEL1",
+    "accesses" : [ {
+      "id" : {
+        "code" : "GA",
+        "ordinal" : 1
+      },
+      "guideWord" : "CLE_RANG_SFL1",
+      "type" : "ALPHANUMERIC"
+    } ]
+  }, {
+    "id" : {
+      "code" : "GB"
+    },
+    "guideWord" : "VUE_MANUEL_SFL4",
+    "fileName" : "*4",
+    "access" : "DIRECT",
+    "update" : "UPDATE_ONLY",
+    "nbKeys" : 1,
+    "generation" : "LEVEL1",
+    "accesses" : [ {
+      "id" : {
+        "code" : "GB",
+        "ordinal" : 1
+      },
+      "guideWord" : "CLE_RANG_SFL4",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "CLE_RANG_SFL1",
+      "fileName" : ""
+    },
+    "shortName" : "WRAN01",
+    "length" : 4,
+    "type" : "NUMERIC",
+    "designation" : "CLE_RANG_SFL1",
+    "rename" : "WRAN01",
+    "generation" : "LEVEL1",
+    "reference" : "*NODEF"
+  }, {
+    "id" : {
+      "guideWord" : "CLE_RANG_SFL4",
+      "fileName" : ""
+    },
+    "shortName" : "WRAN04",
+    "length" : 4,
+    "type" : "NUMERIC",
+    "designation" : "CLE_RANG_SFL2",
+    "rename" : "WRAN04",
+    "generation" : "NONE",
+    "reference" : "*NODEF"
+  }, {
+    "id" : {
+      "guideWord" : "NOMDS",
+      "fileName" : ""
+    },
+    "shortName" : "NOMDS",
+    "length" : 5,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE",
+    "reference" : "*NODEF"
+  }, {
+    "id" : {
+      "guideWord" : "TB_LIB_TRUC",
+      "fileName" : ""
+    },
+    "shortName" : "TB_LIB_TRU",
+    "length" : 5,
+    "type" : "ALPHANUMERIC",
+    "generation" : "NONE",
+    "dim1" : 8
+  } ]
+}

@@ -1,0 +1,32 @@
+{
+  "views" : [ {
+    "id" : {
+      "code" : "DB"
+    },
+    "guideWord" : "REGLEMT_DB",
+    "fileName" : "REGLEMTL",
+    "access" : "BY_KEY",
+    "update" : "NO_UPDATE",
+    "nbKeys" : 1,
+    "generation" : "KINEMATIC",
+    "accesses" : [ {
+      "id" : {
+        "code" : "DB",
+        "ordinal" : 1
+      },
+      "guideWord" : "PCOD_REGLEMENT",
+      "type" : "ALPHANUMERIC"
+    } ]
+  } ],
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "PCOD_REGLEMENT",
+      "fileName" : ""
+    },
+    "shortName" : "PCRGT",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCRGT",
+    "generation" : "NONE"
+  } ]
+}

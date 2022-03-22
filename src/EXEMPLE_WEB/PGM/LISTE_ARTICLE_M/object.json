@@ -1,0 +1,16 @@
+{
+  "type" : "PGM",
+  "name" : "LISTE_ARTICLE_M",
+  "description" : "Liste des articles avec menu",
+  "creationDate" : "2004-09-07 13:01:34",
+  "updateDate" : "2004-09-14 15:00:40",
+  "visibility" : "PRIVATE",
+  "ibmName" : "ListeArticlesMenu",
+  "programType" : "I",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "LSTARM",
+  "level2GenType" : 2,
+  "level2DatabaseGenMode" : "SQL",
+  "keepState" : true,
+  "canvasName" : "CANEVAS_EXEMPLE"
+}

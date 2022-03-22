@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "CTL_EXIST",
+  "description" : "Contrôle existence (PM)",
+  "creationDate" : "1996-07-05 09:06:37",
+  "updateDate" : "1996-07-05 09:13:05",
+  "visibility" : "PUBLIC",
+  "mrClass" : "PM",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

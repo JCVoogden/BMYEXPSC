@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transaction description="Saisie détail expert" format1="02" functionKeys="  A        AX           " transactionType="SAISIE_SUPP" updateDate="2005-11-10" updateTime="00:00:00" windowType="SCREEN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml transaction.xsd">
+    <formats>
+        <format addMode="false" assume="false" blink="false" clear="false" code="02" eraseInput="false" help="false" jumpLinesBefore="1" keep="false" lock="false" nbColumns="1" nbLines="23" overlay="false" protect="false" putOvr="true" rollDown="false" rollUp="false" shortName="FOR02" truncate="false"/>
+    </formats>
+    <entities>
+        <entity format="02" name="EXPERT">
+            <properties>
+                <property access="1" name="COD_EXPERT"/>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="NOM DU PROGRAMME." formatCode="02" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="STRING" validExtendedFieldName="false" validFieldName="false" x="2" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="02" hilight="true" kind="CONSTANT" layoutCode="*" length="20" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="31" y="1">
+            <text text="Saisie détail expert"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="N00010" formatCode="02" guideWord="N00010" hilight="true" kind="DATE" layoutCode="N00010" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" x="71" y="1">
+            <parameters>
+                <parameter key="EDW" value="'  /  /  '"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="N00011" formatCode="02" guideWord="N00011" hilight="true" kind="TIME" layoutCode="N00011" length="6" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" type="NUMBER" validExtendedFieldName="false" validFieldName="false" x="71" y="2">
+            <parameters>
+                <parameter key="EDW" value="'  :  :  '"/>
+            </parameters>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="02" kind="CONSTANT" layoutCode="*" length="30" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="3">
+            <text text="Code expert . . . . . . . . .:"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code expert" formatCode="02" guideWord="ZZCOD_EXPERT" kind="VARIABLE" layoutCode="ZZCEXP" length="6" logicalProperty="EXPERT.COD_EXPERT" lowerCase="false" mandatoryFieldEnd="false" mode="OUTPUT" numTextField="13" type="STRING" validExtendedFieldName="false" validFieldName="false" x="33" y="3"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="02" kind="CONSTANT" layoutCode="*" length="30" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="4">
+            <text text="Nom expert. . . . . . . . . . "/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Nom expert" formatCode="02" guideWord="ZZNOM_EXPERT" kind="VARIABLE" kinematicLogicalProperty="EXPERT.NOM_EXPERT" layoutCode="ZZLEXP" length="30" logicalProperty="EXPERT.NOM_EXPERT" lowerCase="true" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" numTextField="15" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="DA" x="33" y="4"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="02" kind="CONSTANT" layoutCode="*" length="30" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="5">
+            <text text="Adresse 1 . . . . . . . . . . "/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Adresse 1" formatCode="02" guideWord="ZZADR_01_EXP" kind="VARIABLE" kinematicLogicalProperty="EXPERT.ADR_01_EXP" layoutCode="ZZL1EX" length="30" logicalProperty="EXPERT.ADR_01_EXP" lowerCase="true" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" numTextField="17" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="DA" x="33" y="5"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="02" kind="CONSTANT" layoutCode="*" length="30" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="6">
+            <text text="Adresse 2 . . . . . . . . . . "/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Adresse 2" formatCode="02" guideWord="ZZADR_02_EXP" kind="VARIABLE" kinematicLogicalProperty="EXPERT.ADR_02_EXP" layoutCode="ZZL2EX" length="30" logicalProperty="EXPERT.ADR_02_EXP" lowerCase="true" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" numTextField="19" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="DA" x="33" y="6"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="02" kind="CONSTANT" layoutCode="*" length="30" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="7">
+            <text text="Code postal . . . . . . . . . "/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Code postal" formatCode="02" guideWord="ZZCOD_POS_EXP" kind="VARIABLE" kinematicLogicalProperty="EXPERT.COD_POS_EXP" layoutCode="ZZCPEX" length="5" logicalProperty="EXPERT.COD_POS_EXP" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" numTextField="21" type="NUMBER" validExtendedFieldName="false" validFieldName="false" viewCode="DA" x="33" y="7"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="02" kind="CONSTANT" layoutCode="*" length="30" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="8">
+            <text text="Bureau distributeur . . . . . "/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Bureau distributeur" formatCode="02" guideWord="ZZBUR_DIS_EXP" kind="VARIABLE" kinematicLogicalProperty="EXPERT.BUR_DIS_EXP" layoutCode="ZZBDEX" length="30" logicalProperty="EXPERT.BUR_DIS_EXP" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" numTextField="23" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="DA" x="33" y="8"/>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" formatCode="02" kind="CONSTANT" layoutCode="*" length="30" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="9">
+            <text text="Tél . . . . . . . . . . . . . "/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" completeWithBlanks="false" completeWithZeros="false" description="Tél" formatCode="02" guideWord="ZZNUM_TEL_EXP" kind="VARIABLE" kinematicLogicalProperty="EXPERT.NUM_TEL_EXP" layoutCode="ZZNTEX" length="11" logicalProperty="EXPERT.NUM_TEL_EXP" lowerCase="false" mandatoryFieldEnd="false" mode="INPUT_OUTPUT" numTextField="25" type="STRING" validExtendedFieldName="false" validFieldName="false" viewCode="DA" x="33" y="9"/>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="02" kind="CONSTANT" layoutCode="*" length="7" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="2" y="22">
+            <text text="F3=Exit"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="02" kind="CONSTANT" layoutCode="*" length="13" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="11" y="22">
+            <text text="F12=Précédent"/>
+        </field>
+        <field allowBlanks="false" automaticForward="false" color="BLUE" completeWithBlanks="false" completeWithZeros="false" formatCode="02" kind="CONSTANT" layoutCode="*" length="13" lowerCase="false" mandatoryFieldEnd="false" validExtendedFieldName="false" validFieldName="false" x="26" y="22">
+            <text text="F13=Supprimer"/>
+        </field>
+    </fields>
+</transaction>

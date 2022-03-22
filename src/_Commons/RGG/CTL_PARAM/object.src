@@ -1,0 +1,18 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   DECLARER WCLPA1;W_CLE_PAR1 :03
+*ROW_METADATA(ADELIA                 )   DECLARER WCLPA2;W_CLE_PAR2 :04
+*ROW_METADATA(ADELIA                 )   IDENTIFIER PARAMETRE :01 CLE ;W_CLE_PAR1 ;W_CLE_PAR2
+*ROW_METADATA(ADELIA                 )   W_CLE_PAR1 = *BLANK
+*ROW_METADATA(ADELIA                 )   W_CLE_PAR2 = *BLANK
+*ROW_METADATA(ADELIA                 )   W_CLE_PAR1 = ':02'
+*ROW_METADATA(ADELIA                 )   W_CLE_PAR2 = :05
+*ROW_METADATA(ADELIA                 )   REGLE_GESTION :06 :05
+*ROW_METADATA(ADELIA                 )   LIRE PARAMETRE
+*ROW_METADATA(ADELIA                 )   SI PARAMETRE N_EXISTE_PAS
+*ROW_METADATA(ADELIA                 )   :07 = *BLANK
+*ROW_METADATA(ADELIA                 )   INIT_MSG :05
+*ROW_METADATA(ADELIA                 )   ANOMALIE
+*ROW_METADATA(ADELIA                 )   SINON
+*ROW_METADATA(ADELIA                 )   :07 = :08
+*ROW_METADATA(ADELIA                 )   FIN
+*ROW_METADATA(ADELIA                 )FIN_RGG

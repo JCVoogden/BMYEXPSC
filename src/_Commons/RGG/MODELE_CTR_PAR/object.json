@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "MODELE_CTR_PAR",
+  "description" : "Modèle controle paramètre",
+  "creationDate" : "1995-06-29 07:24:34",
+  "updateDate" : "1995-06-29 07:24:34",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

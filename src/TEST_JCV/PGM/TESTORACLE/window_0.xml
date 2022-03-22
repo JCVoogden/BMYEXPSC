@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window description="TEST Oracle" help="" id="0" name="ID_FEN0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml window.xsd">
+    <properties>
+        <property id="-46" intValue="96"/>
+        <property id="-45" intValue="96"/>
+        <property id="-19" intValue="1048584"/>
+        <property id="-4" intValue="84"/>
+        <property id="-3" intValue="567"/>
+        <property id="-2" intValue="226"/>
+        <property id="-1" intValue="124"/>
+        <property id="3" stringValue="TEST Oracle"/>
+        <property binaryType="icon" id="10" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAwklEQVR4Xu2OCwqEMAwFPXqP1pu5DKxSHttsahL2gwMBNe/F2babL2RPmBB7BPrPuYzeXIJ+7z0koTeXoI9AREJvLnH0IxJyco2xf1ViOLcOfWNc6M0UuKs/mqHdE2v3DrqtNZeEdk/YWXsLemkCVmYGnVQBK/cK8ukCVlYhWyJg5UfIlQlYnQMypQJWD9iXCHghmyagzx7Ipgjou36bQS4soJD15smlCwB5T4fMfwp44e4t8DsCVeMV2AhWjf7r4zwAlC7rhv55wFkAAAAASUVORK5CYII=</property>
+        <property binaryType="icon" id="11" mimeType="image/png">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVR4Xq2MQQrAQAwC9/+vys+2pEiJibKldMCLmbjWT+yXsewT6SCS7g/SiQg7MuROdjngRobsuhLCygrcCCXYEfSEEuwIOkIJI+1OlPc50EFPDKGIdCs90Z0HyKojSKhAVh1Bwgk58CE3FyXG6upX9HSDAAAAAElFTkSuQmCC</property>
+        <property id="22" intValue="559"/>
+        <property id="23" intValue="50"/>
+    </properties>
+    <controls>
+        <control associatedVariable="ZB1" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="1" logicalProperty="SQL_BASE.B1_SQL_BASE" name="ZB1">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="6 9 0"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="90"/>
+                <property id="-2" intValue="16"/>
+                <property id="-1" intValue="18"/>
+            </properties>
+        </control>
+        <control associatedVariable="ZB2" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="1" logicalProperty="SQL_BASE.B2_SQL_BASE" name="ZB2">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="2 25 -1"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="149"/>
+                <property id="-2" intValue="16"/>
+                <property id="-1" intValue="110"/>
+            </properties>
+        </control>
+        <control associatedVariable="ZB3" className="CHAMP_EN_SORTIE" dll="LABELOUT" help="" kinematic="1" logicalProperty="SQL_BASE.B3_SQL_BASE" name="ZB3">
+            <properties>
+                <property id="-13" intValue="1"/>
+                <property id="-9" stringValue="4 15 5"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="112"/>
+                <property id="-2" intValue="16"/>
+                <property id="-1" intValue="286"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="TEXTE" dll="TSTATIC" help="" kinematic="0" name="ID_SQLCODE">
+            <properties>
+                <property id="-8"/>
+                <property id="-4" intValue="13"/>
+                <property id="-3" intValue="55"/>
+                <property id="-2" intValue="16"/>
+                <property id="-1" intValue="485"/>
+                <property id="4" intValue="255"/>
+            </properties>
+        </control>
+        <control associatedVariable="" className="BOUTON" dll="BOUTON" help="" kinematic="0" name="ID_OBJ">
+            <properties>
+                <property id="-8" stringValue="Go"/>
+                <property id="-4" intValue="23"/>
+                <property id="-3" intValue="75"/>
+                <property id="-2" intValue="12"/>
+                <property id="-1" intValue="395"/>
+            </properties>
+        </control>
+    </controls>
+</window>

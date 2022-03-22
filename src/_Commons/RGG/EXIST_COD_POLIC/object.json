@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "EXIST_COD_POLIC",
+  "description" : "Contrôle existence du code de la police",
+  "creationDate" : "1995-06-07 12:47:02",
+  "updateDate" : "1995-06-29 07:23:43",
+  "visibility" : "PUBLIC",
+  "mrClass" : "CT",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

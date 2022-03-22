@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "UNI_TEST11",
+  "description" : "Test Unicode 11",
+  "creationDate" : "2008-04-18 12:12:12",
+  "updateDate" : "2008-04-21 13:47:10",
+  "visibility" : "PRIVATE",
+  "ibmName" : "UNTS11",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "UNTS11",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "unicode" : true
+}

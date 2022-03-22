@@ -1,0 +1,188 @@
+{
+  "variables" : [ {
+    "id" : {
+      "guideWord" : "C1",
+      "fileName" : ""
+    },
+    "shortName" : "C1",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "rename" : "C1",
+    "generation" : "NONE",
+    "dim1" : 26
+  }, {
+    "id" : {
+      "guideWord" : "C2",
+      "fileName" : ""
+    },
+    "shortName" : "C2",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "rename" : "C2",
+    "generation" : "NONE",
+    "dim1" : 26
+  }, {
+    "id" : {
+      "guideWord" : "CPT",
+      "fileName" : ""
+    },
+    "shortName" : "CPT",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "rename" : "CPT",
+    "generation" : "NONE",
+    "dim1" : 11
+  }, {
+    "id" : {
+      "guideWord" : "I",
+      "fileName" : ""
+    },
+    "shortName" : "I",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "rename" : "I",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "J",
+      "fileName" : ""
+    },
+    "shortName" : "J",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "rename" : "J",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "NCP",
+      "fileName" : ""
+    },
+    "shortName" : "NCP",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "rename" : "NCP",
+    "generation" : "NONE",
+    "dim1" : 15
+  }, {
+    "id" : {
+      "guideWord" : "PCLE_RIB",
+      "fileName" : ""
+    },
+    "shortName" : "PCLRIB",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "rename" : "PCLRIB",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "PCODE_BANQUE",
+      "fileName" : ""
+    },
+    "shortName" : "PCOBAN",
+    "length" : 5,
+    "type" : "NUMERIC",
+    "rename" : "PCOBAN",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "PCODE_COMPTE",
+      "fileName" : ""
+    },
+    "shortName" : "PCOCPT",
+    "length" : 11,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCOCPT",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "PCODE_ERREUR",
+      "fileName" : ""
+    },
+    "shortName" : "PCOERR",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "rename" : "PCOERR",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "PCODE_GUICHET",
+      "fileName" : ""
+    },
+    "shortName" : "PCOGUI",
+    "length" : 5,
+    "type" : "NUMERIC",
+    "rename" : "PCOGUI",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "TNC",
+      "fileName" : ""
+    },
+    "shortName" : "TNC",
+    "length" : 1,
+    "type" : "ALPHANUMERIC",
+    "rename" : "TNC",
+    "generation" : "NONE",
+    "dim1" : 11
+  }, {
+    "id" : {
+      "guideWord" : "WA2",
+      "fileName" : ""
+    },
+    "shortName" : "WA2",
+    "length" : 2,
+    "type" : "ALPHANUMERIC",
+    "rename" : "WA2",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "WCODE_RIB",
+      "fileName" : ""
+    },
+    "shortName" : "WCORIB",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "rename" : "WCORIB",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "WN10",
+      "fileName" : ""
+    },
+    "shortName" : "WN10",
+    "length" : 10,
+    "type" : "NUMERIC",
+    "rename" : "WN10",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "WN20",
+      "fileName" : ""
+    },
+    "shortName" : "WN20",
+    "length" : 2,
+    "type" : "NUMERIC",
+    "rename" : "WN20",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "WNN15",
+      "fileName" : ""
+    },
+    "shortName" : "WNN15",
+    "length" : 15,
+    "type" : "NUMERIC",
+    "rename" : "WNN15",
+    "generation" : "NONE"
+  }, {
+    "id" : {
+      "guideWord" : "WNZ15",
+      "fileName" : ""
+    },
+    "shortName" : "WNZ15",
+    "length" : 15,
+    "type" : "ALPHANUMERIC",
+    "rename" : "WNZ15",
+    "generation" : "NONE"
+  } ]
+}

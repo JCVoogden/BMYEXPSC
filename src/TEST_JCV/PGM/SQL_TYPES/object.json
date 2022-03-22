@@ -1,0 +1,15 @@
+{
+  "type" : "PGM",
+  "name" : "SQL_TYPES",
+  "description" : "Test des types étendu",
+  "creationDate" : "2006-10-16 09:51:26",
+  "updateDate" : "2012-07-17 13:21:51",
+  "visibility" : "PRIVATE",
+  "ibmName" : "SQLTYP",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "SQLTYP",
+  "level2GenType" : 2,
+  "level2DatabaseGenMode" : "SQL",
+  "manageHistoryButtons" : " "
+}

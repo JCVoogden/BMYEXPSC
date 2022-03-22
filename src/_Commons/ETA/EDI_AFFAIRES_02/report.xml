@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.hardis.fr/xml report.xsd">
+    <formats>
+        <format blankLinesBefore="1" code="01" guideWord="ENTETE_01" jumpLinesBefore="1" nbLines="7" shortName="SOR01"/>
+        <format blankLinesBefore="1" code="02" guideWord="DETAIL" nbLines="1" shortName="SOR02"/>
+        <format blankLinesBefore="1" code="03" guideWord="FIN_CADRE_01" nbLines="1" shortName="SOR03"/>
+        <format blankLinesBefore="1" code="04" guideWord="ENT_RECAP" nbLines="1" shortName="SOR04"/>
+        <format blankLinesBefore="1" code="05" guideWord="DET_RECAP" nbLines="1" shortName="SOR05"/>
+        <format blankLinesBefore="1" code="06" guideWord="TOT_RECAP" nbLines="1" shortName="SOR06"/>
+    </formats>
+    <entities>
+        <entity format="02" name="ARTICLE">
+            <properties>
+                <property access="1" name="COD_ARTICLE"/>
+            </properties>
+        </entity>
+        <entity format="01" name="CLIENTS">
+            <properties>
+                <property access="1" name="COD_CLIENT"/>
+            </properties>
+        </entity>
+        <entity format="02" name="VENTE">
+            <properties>
+                <property access="1" name="COD_CLIENT"/>
+                <property access="2" name="COD_FAMILLE"/>
+            </properties>
+        </entity>
+    </entities>
+    <fields>
+        <field description="NOM DU PROGRAMME." formatCode="01" guideWord="XNOM_PGM" kind="USER_VARIABLE" layoutCode="XLIPGM" length="10" mode="OUTPUT" type="STRING" x="1" y="1">
+            <parameters>
+                <parameter key="DFT" value="*NOM_PGM"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="42" x="26" y="1">
+            <text text="Edition du chiffre d'affaires       Page :"/>
+        </field>
+        <field description="N00002" editCode="CODE_Z" formatCode="01" guideWord="N00002" kind="PAGE" layoutCode="N00002" length="4" mode="OUTPUT" type="NUMBER" x="69" y="1"/>
+        <field description="UTILISATEUR" formatCode="01" guideWord="XUSER" kind="USER_VARIABLE" layoutCode="XUSER2" length="10" mode="OUTPUT" type="STRING" x="1" y="2">
+            <parameters>
+                <parameter key="DFT" value="*USER"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="2" x="62" y="2">
+            <text text="Le"/>
+        </field>
+        <field description="N00003" formatCode="01" guideWord="N00003" kind="DATE" layoutCode="N00003" length="6" mode="OUTPUT" type="NUMBER" x="65" y="2">
+            <parameters>
+                <parameter key="EDW" value="'  /  /  '"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="30" x="1" y="3">
+            <text text="Code client..................."/>
+        </field>
+        <field description="Code client" formatCode="01" guideWord="ZZCOD_CLIENT" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.COD_CLIENT" layoutCode="ZZCCLI" length="6" logicalProperty="CLIENTS.COD_CLIENT" mode="OUTPUT" type="STRING" viewCode="DB" x="32" y="3">
+            <parameters>
+                <parameter key="EXP" value="000001"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="30" x="1" y="4">
+            <text text="Nom client...................."/>
+        </field>
+        <field description="Nom client" formatCode="01" guideWord="ZZNOM_CLIENT" kind="VARIABLE" kinematicLogicalProperty="CLIENTS.NOM_CLIENT" layoutCode="ZZLCLI" length="30" logicalProperty="CLIENTS.NOM_CLIENT" mode="OUTPUT" type="STRING" viewCode="DB" x="32" y="4">
+            <parameters>
+                <parameter key="EXP" value="HARDIS Progiciel"/>
+            </parameters>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="72" x="2" y="5">
+            <text text="------------------------------------------------------------------------"/>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="33" x="1" y="6">
+            <text text="! Date vente ! Article    Libellé"/>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="17" x="58" y="6">
+            <text text="!    Montant HT !"/>
+        </field>
+        <field formatCode="01" kind="CONSTANT" length="72" x="2" y="7">
+            <text text="------------------------------------------------------------------------"/>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="1" x="1" y="8">
+            <text text="!"/>
+        </field>
+        <field description="Date de la vente" editCode="CODE_Y" formatCode="02" guideWord="ZZDAT_VENTE" kind="VARIABLE" kinematicLogicalProperty="VENTE.DAT_VENTE" layoutCode="ZZDVEN" length="6" logicalProperty="VENTE.DAT_VENTE" mode="OUTPUT" type="NUMBER" viewCode="DD" x="4" y="8">
+            <parameters>
+                <parameter key="EXP" value="150192"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="1" x="14" y="8">
+            <text text="!"/>
+        </field>
+        <field description="Code article" formatCode="02" guideWord="ZZCOD_ARTICLE" kind="VARIABLE" kinematicLogicalProperty="VENTE.COD_ARTICLE" layoutCode="ZZCART" length="10" logicalProperty="VENTE.COD_ARTICLE" mode="OUTPUT" type="STRING" viewCode="DD" x="16" y="8">
+            <parameters>
+                <parameter key="EXP" value="40R5224"/>
+            </parameters>
+        </field>
+        <field description="Libellé article" formatCode="02" guideWord="ZZLIB_ARTICLE" kind="VARIABLE" kinematicLogicalProperty="ARTICLE.LIB_ARTICLE" layoutCode="ZZLART" length="30" logicalProperty="ARTICLE.LIB_ARTICLE" mode="OUTPUT" type="STRING" viewCode="DA" x="27" y="8">
+            <parameters>
+                <parameter key="EXP" value="Ruban 5224"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="1" x="58" y="8">
+            <text text="!"/>
+        </field>
+        <field description="Montant de la vente" editCode="CODE_L" formatCode="02" guideWord="ZZMHT_VENTE" kind="VARIABLE" kinematicLogicalProperty="VENTE.MHT_VENTE" layoutCode="ZZTHTV" length="11" logicalProperty="VENTE.MHT_VENTE" mode="OUTPUT" scale="2" type="NUMBER" viewCode="DD" x="60" y="8">
+            <parameters>
+                <parameter key="EXP" value="1520,00"/>
+            </parameters>
+        </field>
+        <field formatCode="02" kind="CONSTANT" length="1" x="74" y="8">
+            <text text="!"/>
+        </field>
+        <field formatCode="03" kind="CONSTANT" length="72" x="2" y="9">
+            <text text="------------------------------------------------------------------------"/>
+        </field>
+        <field formatCode="04" kind="CONSTANT" length="4" x="40" y="10">
+            <text text="Code"/>
+        </field>
+        <field formatCode="04" kind="CONSTANT" length="17" x="56" y="10">
+            <text text="Total par famille"/>
+        </field>
+        <field description="Code famille" formatCode="05" guideWord="ZZCOD_FAMILLE" kind="USER_VARIABLE" layoutCode="ZZCFAM" length="2" mode="OUTPUT" type="STRING" x="41" y="11">
+            <parameters>
+                <parameter key="EXP" value="10"/>
+            </parameters>
+        </field>
+        <field description="Total famille" editCode="CODE_K" formatCode="05" guideWord="ZWTOT_FAMILLE" kind="USER_VARIABLE" layoutCode="ZWTFAM" length="11" mode="OUTPUT" scale="2" type="NUMBER" x="59" y="11"/>
+        <field description="Total client" editCode="CODE_K" formatCode="06" guideWord="ZWTOT_CLIENT" kind="USER_VARIABLE" layoutCode="ZWTCLI" length="11" mode="OUTPUT" scale="2" type="NUMBER" x="59" y="12">
+            <parameters>
+                <parameter key="EXP" value="1520,00"/>
+            </parameters>
+        </field>
+    </fields>
+</report>

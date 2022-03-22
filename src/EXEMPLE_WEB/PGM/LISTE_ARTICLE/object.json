@@ -1,0 +1,16 @@
+{
+  "type" : "PGM",
+  "name" : "LISTE_ARTICLE",
+  "description" : "Liste des articles",
+  "creationDate" : "2004-09-01 08:58:00",
+  "updateDate" : "2004-09-14 09:31:01",
+  "visibility" : "PRIVATE",
+  "ibmName" : "ListeArticles",
+  "programType" : "I",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "LSTART",
+  "level2GenType" : 2,
+  "level2DatabaseGenMode" : "SQL",
+  "keepState" : true,
+  "canvasName" : "CANEVAS_EXEMPLE"
+}

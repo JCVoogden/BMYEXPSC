@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "WADEL",
+  "description" : "WADEL",
+  "creationDate" : "2006-07-05 14:34:31",
+  "updateDate" : "2006-07-05 16:19:30",
+  "visibility" : "PRIVATE",
+  "ibmName" : "WADEL",
+  "programType" : "I",
+  "sourceType" : "WADELIA",
+  "layoutCode" : "WADEL",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

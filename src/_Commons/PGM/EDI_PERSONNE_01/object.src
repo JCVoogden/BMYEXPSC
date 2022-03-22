@@ -1,0 +1,22 @@
+DEBUT_STD
+XNOM_PGM        = *NOM_PGM
+XUSER           = *USER
+FIN_STD
+*--------------------------* Réception du paramètre
+RECEVOIR PCOD_MAT_PERS
+*--------------------------* Edition en-tête
+EDITER ENTETE
+*--------------------------* Edition Détail
+LIRE PERSONN_DA
+PRESENTER  PERSONN_DA
+PCOD_MAT_PERS = PCOD_MAT_PER2
+LIRE PERSONN_DA
+SI PERSONN_DA  EXISTE
+  ZNOM_HIERARCHIE = PNOM_PERS
+SINON
+  ZNOM_HIERARCHIE = *BLANK
+  ZNOM_HIERARCHIE = 'Pas de chef'
+FIN
+EDITER DETAIL
+*--------------------------* Edition Fin de page
+EDITER FIN

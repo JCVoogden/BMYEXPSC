@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "P3",
+  "description" : "P3",
+  "creationDate" : "2008-05-28 08:58:36",
+  "updateDate" : "2008-05-28 09:05:11",
+  "visibility" : "PRIVATE",
+  "ibmName" : "P3",
+  "programType" : "B",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "P3",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "DEFAULT"
+}

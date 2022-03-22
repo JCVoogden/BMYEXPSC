@@ -1,0 +1,14 @@
+{
+  "type" : "PGM",
+  "name" : "RADIO_BOUTON",
+  "description" : "RADIO_BOUTON",
+  "creationDate" : "2009-05-26 11:41:14",
+  "updateDate" : "2009-05-26 12:49:56",
+  "visibility" : "PRIVATE",
+  "ibmName" : "RDB",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "RDB",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE"
+}

@@ -1,0 +1,11 @@
+{
+  "type" : "RGG",
+  "name" : "MODELE_REC_PAR",
+  "description" : "Modèle pour récupération d'un paramètre",
+  "creationDate" : "1995-06-29 07:24:47",
+  "updateDate" : "1995-06-29 07:24:47",
+  "visibility" : "PUBLIC",
+  "mrClass" : "IP",
+  "formal" : true,
+  "types" : [ "ADELIA" ]
+}

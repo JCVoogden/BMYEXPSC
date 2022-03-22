@@ -1,0 +1,54 @@
+*ROW_METADATA(ADELIA                 )DEBUT_PGM
+*ROW_METADATA(ADELIA         20080307)   DEBUT_DECL
+*ROW_METADATA(ADELIA         20100804)      LISTE TOTO COLONNE COLONNE2
+*ROW_METADATA(ADELIA         20090615)      
+*ROW_METADATA(ADELIA         20090615)      image tototo
+*ROW_METADATA(ADELIA         20090615)      image totota
+*ROW_METADATA(ADELIA         20090615)      
+*ROW_METADATA(ADELIA         20080307)   FIN_DECL
+*ROW_METADATA(ADELIA         20080307)   DEBUT_INIT
+*ROW_METADATA(ADELIA         20090615)      tototo = totota
+*ROW_METADATA(ADELIA         20090615)      
+*ROW_METADATA(ADELIA         20090615)      initialiser id_fen0
+*ROW_METADATA(ADELIA         20080307)      executer    id_fen0
+*ROW_METADATA(ADELIA         20080326)      
+*ROW_METADATA(ADELIA         20080307)   FIN_INIT
+*ROW_METADATA(ADELIA         20080307)   DEBUT_FENETRE ID_FEN0
+*ROW_METADATA(ADELIA         20080307)      DEBUT_DECL
+*ROW_METADATA(ADELIA         20080326)         
+*ROW_METADATA(ADELIA         20080307)      FIN_DECL
+*ROW_METADATA(ADELIA         20080307)      DEBUT_INIT
+*ROW_METADATA(ADELIA         20100804)         
+*ROW_METADATA(ADELIA         20080307)      FIN_INIT
+*ROW_METADATA(ADELIA         20080307)      DEBUT_GEST_EVT
+*ROW_METADATA(ADELIA         20100804)         DEBUT_OBJET ID_OBJ
+*ROW_METADATA(ADELIA         20100804)            DEBUT_EVT ID_OBJ:BoutonGaucheClic
+*ROW_METADATA(ADELIA         20100804)               colonne = 'aaaaaaaaaaaaaaa'
+*ROW_METADATA(ADELIA         20100804)               colonne2 = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+*ROW_METADATA(ADELIA         20100804)               inserer_elt toto
+*ROW_METADATA(ADELIA                 )               DEBUT_SRV CENTRAL
+*ROW_METADATA(ADELIA         20100804)                  
+*ROW_METADATA(ADELIA         20100804)                  lecture_lst toto
+*ROW_METADATA(ADELIA         20100804)                     colonne2 = colonne
+*ROW_METADATA(ADELIA         20100804)                  fin_lecture_lst
+*ROW_METADATA(ADELIA         20100804)                  
+*ROW_METADATA(ADELIA         20100804)                  colonne = 'bbbbbbbbbbbbbbb'
+*ROW_METADATA(ADELIA         20100804)                  colonne2 = 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'
+*ROW_METADATA(ADELIA         20100804)                  inserer_elt toto
+*ROW_METADATA(ADELIA                 )               FIN_SRV
+*ROW_METADATA(ADELIA         20100804)               
+*ROW_METADATA(ADELIA         20100804)               copier_lst toto id_lst:liste
+*ROW_METADATA(ADELIA         20100804)               
+*ROW_METADATA(ADELIA         20100804)            FIN_EVT
+*ROW_METADATA(ADELIA         20100804)         FIN_OBJET
+*ROW_METADATA(ADELIA         20080307)      FIN_GEST_EVT
+*ROW_METADATA(ADELIA         20080307)      DEBUT_VERIF
+*ROW_METADATA(ADELIA         20080307)         
+*ROW_METADATA(ADELIA         20080307)      FIN_VERIF
+*ROW_METADATA(ADELIA         20080307)      DEBUT_VALID
+*ROW_METADATA(ADELIA         20080307)         
+*ROW_METADATA(ADELIA         20080307)      FIN_VALID
+*ROW_METADATA(ADELIA         20080307)      DEBUT_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080307)      FIN_TRT_GUIDE
+*ROW_METADATA(ADELIA         20080307)   FIN_FENETRE
+*ROW_METADATA(ADELIA                 )FIN_PGM

@@ -1,0 +1,104 @@
+*----------------------------------------------------------------*
+* Titre : Mise à jour d'un fichier                               *
+*----------------------------------------------------------------*
+* Créé par BDC le 04/08/92 . Dernière modif par xxx le xx/xx/xx  *
+*----------------------------------------------------------------*
+RECEVOIR  P_COD_RETOUR P_COD_ACTION P_NOM_ENTITE
+INITIALISER 01
+SI P_COD_RETOUR <> *BLANK
+  *
+  * Problème lors de l'initialisation (par exemple verrouillage), le
+  * contrôle est rendu au programme appelant avec le code retour
+  * renseigné
+  *
+  TERMINER
+FIN
+TRAITER 01
+******************
+TRANSACTION 01
+******************
+SI *F03
+  SI P_COD_ACTION = 'MO'
+    LIBERER FICHIEL1_DA
+  FIN
+  P_COD_ACTION = 'EX'
+  TERMINER
+FIN
+SI *F12
+  SI P_COD_ACTION = 'MO'
+    LIBERER FICHIEL1_DA
+  FIN
+  P_COD_ACTION = 'PR'
+  TERMINER
+FIN
+VERIFIER 01
+VALIDER 01
+TERMINER
+******************
+INITIALISATION 01
+******************
+*
+* En cas de modification la zone écran clé est protégée sinon
+* elle est accessible.
+*
+ZZ_NOM_ENTITE = P_NOM_ENTITE
+SI P_COD_ACTION = 'MO'
+  PROTEGER *VRAI ZZ_NOM_ENTITE
+  SOULIGNER *FAUX ZZ_NOM_ENTITE
+  POS_CURSEUR ZFI_LIB_FICHIER
+SINON
+  PROTEGER *FAUX ZZ_NOM_ENTITE
+  SOULIGNER *VRAI ZZ_NOM_ENTITE
+  POS_CURSEUR ZZ_NOM_ENTITE
+FIN
+DEBUT_STD
+LIRE            FICHIEL1_DA
+PRESENTER       FICHIEL1_DA
+XNOM_PGM        = *NOM_PGM
+FIN_STD
+*
+* Test d'existence en cas de mise à jour
+*
+SI FICHIEL1_DA N_EXISTE_PAS ET P_COD_ACTION = 'MO'
+  P_COD_RETOUR = '1'
+FIN
+*
+* Test du verrouillage par un autre travail
+*
+SI *BLOQUE = '1'
+  P_COD_RETOUR = '2'
+FIN
+***************
+VERIFICATION 01
+***************
+*
+* Test de non existence en cas de création
+*
+SI P_COD_ACTION = 'CR'
+  *
+  * Test de non existence en cas de création
+  *
+  REGLE_GESTION 0003 ZZ_NOM_ENTITE
+  LIRE VUE_CTR_N_EX
+  SI VUE_CTR_N_EX EXISTE
+    ENVOYER_MSG *EFF_TOUT
+    INIT_MSG ZZ_NOM_ENTITE
+    ANOMALIE
+  FIN
+FIN
+DEBUT_STD
+FIN_STD
+******************
+VALIDATION      01
+******************
+DEBUT_STD
+RANGER          FICHIEL1_DA
+FIN_STD
+*****************
+TRT_GUIDE 01
+*****************
+GUIDE ZFI_COD_PREFIXE
+APPELER HBLVPF P_COD_RETOUR P_COD_ACTION
+FIN_GUIDE
+ENVOYER_MSG SYS9900
+FIN_TRT_GUIDE

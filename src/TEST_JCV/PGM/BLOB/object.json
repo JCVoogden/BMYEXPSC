@@ -1,0 +1,19 @@
+{
+  "type" : "PGM",
+  "name" : "BLOB",
+  "description" : "BLOB",
+  "creationDate" : "2019-07-05 15:11:25",
+  "updateDate" : "2019-07-05 15:11:25",
+  "visibility" : "PRIVATE",
+  "ibmName" : "BLOB",
+  "programType" : "I",
+  "sourceType" : "VADELIA",
+  "layoutCode" : "BLOB",
+  "level2GenType" : 1,
+  "level2DatabaseGenMode" : "NATIVE",
+  "version" : 12,
+  "release" : 1,
+  "modification" : 2,
+  "buildId" : -1,
+  "manageHistoryButtons" : "N"
+}

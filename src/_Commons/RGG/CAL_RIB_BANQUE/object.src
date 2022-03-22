@@ -1,0 +1,8 @@
+*ROW_METADATA(ADELIA                 )DEBUT_RGG
+*ROW_METADATA(ADELIA                 )   DECLARER WCBAN;W_COD_BANQUE 5;0
+*ROW_METADATA(ADELIA                 )   *
+*ROW_METADATA(ADELIA                 )   * Transfert code banque saisi dans zone de travail pour calcul
+*ROW_METADATA(ADELIA                 )   * Clé RIB.
+*ROW_METADATA(ADELIA                 )   *
+*ROW_METADATA(ADELIA                 )   W_COD_BANQUE = $$COD_BANQUE
+*ROW_METADATA(ADELIA                 )FIN_RGG
